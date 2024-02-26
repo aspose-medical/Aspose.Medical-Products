@@ -13,7 +13,7 @@ description: Create DICOM and other medical format processing applications using
 
 {{< blocks/products/pf/product-card-row title="Aspose.Medical High Code APIs Include" >}}
 
-{{< blocks/products/pf/product pfName="Aspose.Medical for " title=".NET" imgSrc="/medical/images/aspose_medical-for-net.svg" productLink="https://products.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/product pfName="Aspose.Medical for " title=".NET" imgSrc="/medical/images/aspose_medical-for-net.svg" productLink="/medical/net/" >}}
 On-Premise .NET APIs to manipulate DICOM and other medical formats within Windows, Web, iOS & Android-based applications.
 {{< /blocks/products/pf/product >}}
 

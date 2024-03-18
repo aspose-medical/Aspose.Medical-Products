@@ -11,7 +11,7 @@ description: C# ASP.NET VB.NET library to work with DICOM medical files.
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="Aspose.Medical Features">}}
+{{< blocks/products/pf/feature-page-section h2="Aspose.Medical for .NET Features">}}
 
 <p>Aspose.Medical for .NET is a powerful medical data processing API designed for various management and manipulation tasks across diverse medical file formats. The API enables you to:</p>
 

@@ -2,7 +2,7 @@
 title: .NET API to convert DICOM to JSON - Aspose.Medical
 weight: 4000
 
-description: Information about Aspose Medical .NET API to convert DICOM to JSON
+description: Information about Aspose.Medical for .NET API to convert DICOM to JSON
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

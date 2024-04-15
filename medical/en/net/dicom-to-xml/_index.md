@@ -2,7 +2,7 @@
 title: .NET API to convert DICOM to XML - Aspose.Medical
 weight: 3000
 
-description: Information about Aspose Medical .NET API to convert DICOM to XML
+description: Information about Aspose.Medical for .NET API to convert DICOM to XML
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

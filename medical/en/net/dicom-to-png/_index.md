@@ -2,7 +2,7 @@
 title: .NET API to convert DICOM to PNG - Aspose.Medical
 weight: 11000
 
-description: Information about Aspose Medical .NET API to convert DICOM to PNG
+description: Information about Aspose.Medical for .NET API to convert DICOM to PNG
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

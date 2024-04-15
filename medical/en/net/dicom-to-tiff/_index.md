@@ -2,7 +2,7 @@
 title: .NET API to convert DICOM to TIFF - Aspose.Medical
 weight: 12000
 
-description: Information about Aspose Medical .NET API to convert DICOM to TIFF
+description: Information about Aspose.Medical for .NET API to convert DICOM to TIFF
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

@@ -2,7 +2,7 @@
 title: .NET API to process Jpeg2000 image format - Aspose.Medical
 weight: 2000
 
-description: Aspose.Medical for .NET API to process Jpeg2000 image format 
+description: Aspose.Medical for .NET API to process Jpeg2000 image format
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

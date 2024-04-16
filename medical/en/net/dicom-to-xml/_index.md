@@ -2,7 +2,7 @@
 title: .NET API to convert DICOM to XML - Aspose.Medical
 weight: 3000
 
-description: Information about Aspose Medical .NET API to convert DICOM to XML
+description: Information about Aspose.Medical for .NET API to convert DICOM to XML
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -17,10 +17,10 @@ description: Information about Aspose Medical .NET API to convert DICOM to XML
 
 <ul>
 <li>Standard and Custom DICOM to XML Conversion: Aspose.Medical for .NET offers flexibility in converting DICOM to XML. Choose from DICOM to XML conversion according to the specifications. Alternatively, create custom mappings to tailor the XML output to your requirements.</li>
-<li>Selective Data Extraction:  Extract specific data elements you need from DICOM files. Instead of converting the entire file, choose to target relevant patient demographics, diagnosis codes, image descriptions, or specific tags based on your requirements. </li>
-<li>Flexible XML Structure Customization:  Define the structure of the resulting XML file to match your specific needs.</li>
-<li>Batch Processing for High Throughput:  Process large volumes of DICOM files efficiently. Aspose.Medical supports batch processing, allowing you to convert numerous files at once.</li>
-<li>Seamless Integration with .NET Applications:  Easily integrate DICOM to XML conversion capabilities into your existing .NET applications.</li>
+<li>Selective Data Extraction: Extract specific data elements you need from DICOM files. Instead of converting the entire file, choose to target relevant patient demographics, diagnosis codes, image descriptions, or specific tags based on your requirements. </li>
+<li>Flexible XML Structure Customization: Define the structure of the resulting XML file to match your specific needs.</li>
+<li>Batch Processing for High Throughput: Process large volumes of DICOM files efficiently. Aspose.Medical supports batch processing, allowing you to convert numerous files at once.</li>
+<li>Seamless Integration with .NET Applications: Easily integrate DICOM to XML conversion capabilities into your existing .NET applications.</li>
 </ul>
 
 {{< /blocks/products/pf/feature-page-section >}}

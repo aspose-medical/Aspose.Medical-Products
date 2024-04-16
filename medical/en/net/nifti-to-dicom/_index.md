@@ -2,7 +2,7 @@
 title: .NET API to convert NIfTI to DICOM - Aspose.Medical
 weight: 10000
 
-description: Information about Aspose Medical .NET API to convert NIfTI to DICOM
+description: Information about Aspose.Medical for .NET API to convert NIfTI to DICOM
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

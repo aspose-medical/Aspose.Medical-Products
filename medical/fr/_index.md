@@ -1,0 +1,24 @@
+---
+title: Solution de format de fichier médical sur site 
+weight: 1000
+
+description: Créez des applications DICOM et d’autres applications de traitement de formats médicaux à l’aide des API Aspose Medical On-Premise
+---
+
+{{< blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/pf/upper-banner h1="Solution de format de fichier médical DICOM" h2="Aspose.Medical fournit des solutions complètes et efficaces de traitement DICOM et d’autres formats de fichiers médicaux" logoImageSrc="/medical/images/aspose_medical-brand.svg" imageAlt="Aspose.Medical Famille de produits" subTitlepfName="Aspose.Medical">}}
+
+{{< blocks/products/pf/main-container >}}
+
+{{< blocks/products/pf/product-card-row title="Aspose.Medical API High Code incluent" >}}
+
+{{< blocks/products/pf/product pfName="Aspose.Medical for " title=".NET" imgSrc="/medical/images/aspose_medical-for-net.svg" productLink="/medical/net/" >}}
+API .NET sur site pour manipuler DICOM et d’autres formats médicaux dans les applications Windows, Web, iOS et Android.
+{{< /blocks/products/pf/product >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

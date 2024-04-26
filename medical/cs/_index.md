@@ -17,6 +17,10 @@ description: Vytvářejte DICOM a další aplikace pro zpracování lékařskýc
 On-Premise .NET API pro manipulaci s DICOM a dalšími lékařskými formáty v aplikacích založených na Windows, webu, iOS a Androidu.
 {{< /blocks/products/pf/product >}}
 
+{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
+Nativní rozhraní Java API pro manipulaci s DICOM a dalšími lékařskými formáty pro vývoj desktopových, webových a mobilních aplikací.
+{{< /blocks/products/pf/product >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

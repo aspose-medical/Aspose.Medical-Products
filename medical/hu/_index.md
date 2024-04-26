@@ -17,6 +17,10 @@ description: DICOM és más orvosi formátumfeldolgozó alkalmazások létrehoz�
 On-Premise API-k .NET a DICOM és más orvosi formátumok manipulálására Windows, Web, iOS és Android alapú alkalmazásokban.
 {{< /blocks/products/pf/product >}}
 
+{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
+Natív Java API-k a DICOM és más orvosi formátumok manipulálására asztali, webes és mobil alkalmazások fejlesztéséhez.
+{{< /blocks/products/pf/product >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

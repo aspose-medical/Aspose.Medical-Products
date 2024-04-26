@@ -17,6 +17,10 @@ description: Создание приложений для обработки DIC
 On-Premise .NET API для управления DICOM и другими медицинскими форматами в приложениях на базе Windows, Web, iOS и Android.
 {{< /blocks/products/pf/product >}}
 
+{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
+Нативные API Java для работы с DICOM и другими медицинскими форматами для разработки настольных, веб-приложений, мобильных приложений.
+{{< /blocks/products/pf/product >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

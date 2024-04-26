@@ -17,6 +17,10 @@ description: Tạo DICOM và các ứng dụng xử lý định dạng y tế kh
 API .NET tại chỗ để thao tác DICOM và các định dạng y tế khác trong các ứng dụng dựa trên Windows, Web, iOS và Android.
 {{< /blocks/products/pf/product >}}
 
+{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
+API Java gốc để thao tác DICOM và các định dạng y tế khác để phát triển các ứng dụng máy tính để bàn, web, di động.
+{{< /blocks/products/pf/product >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

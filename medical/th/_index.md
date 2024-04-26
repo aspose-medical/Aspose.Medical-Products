@@ -17,6 +17,10 @@ description: สร้าง DICOM และแอปพลิเคชันก
 .NET API ภายในองค์กรเพื่อจัดการ DICOM และรูปแบบทางการแพทย์อื่นๆ ภายในแอปพลิเคชันที่ใช้ Windows, เว็บ, iOS และ Android
 {{< /blocks/products/pf/product >}}
 
+{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
+Native Java APIs เพื่อจัดการ DICOM และรูปแบบทางการแพทย์อื่นๆ เพื่อพัฒนาเดสก์ท็อป เว็บ แอปพลิเคชันมือถือ
+{{< /blocks/products/pf/product >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

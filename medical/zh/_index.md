@@ -17,7 +17,7 @@ description: 使用 Aspose Medical On-Premise API 创建 DICOM 和其他医疗�
 本地.NET API，用于在基于 Windows、Web、iOS 和 Android 的应用程序中操作 DICOM 和其他医疗格式。
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/product pfName="Aspose.Medical for " title=".NET" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
+{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
 原生 Java API，用于操作 DICOM 和其他医疗格式来开发桌面、Web、移动应用程序。
 {{< /blocks/products/pf/product >}}
 

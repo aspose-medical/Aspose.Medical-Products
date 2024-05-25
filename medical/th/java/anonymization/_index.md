@@ -2,18 +2,18 @@
 title: Java API เพื่อทําให้ไฟล์ DICOM เป็นนิรนาม - Aspose.Medical
 weight: 1000
 
-description: Aspose.Medical for Java API เพื่อลบข้อมูลระบุชื่อ DICOM 
+description: Aspose.Medical สําหรับ Java API เพื่อทําให้ DICOM เป็นนิรนาม 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API เพื่อลบข้อมูลระบุชื่อ DICOM" h2="ปกป้องความเป็นส่วนตัวของผู้ป่วยได้อย่างง่ายดายด้วยการไม่เปิดเผยตัวตน DICOM ของเรา" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical สําหรับ Java API เพื่อทําให้ DICOM เป็นนิรนาม" h2="ปกป้องความเป็นส่วนตัวของผู้ป่วยได้อย่างง่ายดายด้วยการไม่เปิดเผยตัวตน DICOM ของเรา" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="คุณสมบัติการไม่เปิดเผยตัวตนของ DICOM">}}
 
-<p>Aspose.Medical for Java DICOM Anonymization API ช่วยให้บุคลากรทางการแพทย์และนักพัฒนาสามารถปกป้องความเป็นส่วนตัวของผู้ป่วยได้อย่างง่ายดาย ผสานรวมความสามารถในการลบข้อมูลระบุชื่อเข้ากับแอปพลิเคชันของคุณได้อย่างราบรื่น และรับรองการปฏิบัติตามกฎระเบียบด้านการปกป้องข้อมูล API ช่วยให้คุณสามารถ:</p>
+<p>Aspose.Medical สําหรับ Java DICOM Anonymization API ช่วยให้บุคลากรทางการแพทย์และนักพัฒนาสามารถปกป้องความเป็นส่วนตัวของผู้ป่วยได้อย่างง่ายดาย ผสานรวมความสามารถในการลบข้อมูลระบุชื่อเข้ากับแอปพลิเคชันของคุณได้อย่างราบรื่น และรับรองการปฏิบัติตามกฎระเบียบด้านการปกป้องข้อมูล API ช่วยให้คุณสามารถ:</p>
 
 <ul>
 <li>ลบข้อมูลระบุตัวผู้ป่วย (PII) ออกจากไฟล์ DICOM รวมถึงชื่อ วันเดือนปีเกิด ที่อยู่ และหมายเลขประกันสังคม</li>

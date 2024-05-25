@@ -7,7 +7,7 @@ description: اطلاعات در مورد API Aspose.Medical for .NET برای �
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net api برای convet nifti به decom" h2="تبدیل NIfTI به DICOM برای پردازش و ذخیره نتایج مطالعه" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API برای Convet NIfTI به DICOM" h2="تبدیل NIfTI به DICOM برای پردازش و ذخیره نتایج مطالعه" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 

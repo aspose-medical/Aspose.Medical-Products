@@ -2,12 +2,12 @@
 title: Java API 匿名化 DICOM 文件 - Aspose.Medical
 weight: 1000
 
-description: Aspose.Medical for Java API 匿名化 DICOM 
+description: Aspose.Medical Java API 匿名化 DICOM 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API 匿名化 DICOM" h2="通过我们的DICOM匿名化轻松保护患者隐私" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical Java API 匿名化 DICOM" h2="通过我们的DICOM匿名化轻松保护患者隐私" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 

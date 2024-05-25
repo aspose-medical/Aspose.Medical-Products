@@ -2,18 +2,18 @@
 title: Java API για την επεξεργασία μορφής εικόνας Jpeg2000 - Aspose.Medical
 weight: 2000
 
-description: Aspose.Medical for Java API για την επεξεργασία μορφής εικόνας Jpeg2000
+description: Aspose.Medical για το Java API για την επεξεργασία μορφής εικόνας Jpeg2000
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java υποστήριξη Jpeg2000" h2="Βελτιστοποιήστε τις λύσεις υγειονομικής περίθαλψης ελαχιστοποιώντας τις απαιτήσεις αποθήκευσης και επιταχύνοντας τη μετάδοση εικόνας με Aspose.Medical δυνατότητες Jpeg2000" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical για υποστήριξη Java Jpeg2000" h2="Βελτιστοποιήστε τις λύσεις υγειονομικής περίθαλψης ελαχιστοποιώντας τις απαιτήσεις αποθήκευσης και επιταχύνοντας τη μετάδοση εικόνας με Aspose.Medical δυνατότητες Jpeg2000" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Χαρακτηριστικά DICOM Jpeg2000">}}
 
-<p>Aspose.Medical for Java API DICOM σας δίνει τη δυνατότητα να:</p>
+<p>Aspose.Medical για Java DICOM API σας δίνει τη δυνατότητα να:</p>
 
 <ul>
 <li>Μετατροπή εικόνων DICOM σε μορφή JPEG2000: Μειώστε τα μεγέθη αρχείων έως και 10 φορές, διατηρώντας παράλληλα την πλήρη ποιότητα εικόνας, ιδανική για αρχειοθέτηση, μετάδοση ή κοινή χρήση εικόνων.</li>

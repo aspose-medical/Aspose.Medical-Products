@@ -1,8 +1,8 @@
 ---
-title: Interfejs API przetwarzania dokumentów medycznych w języku Java DICOM — Aspose 
+title: Interfejs API przetwarzania dokumentów medycznych Java DICOM - Aspose 
 weight: 1000
 
-description: Biblioteka języka Java do pracy z plikami medycznymi DICOM. 
+description: Biblioteka Java do pracy z plikami medycznymi DICOM. 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

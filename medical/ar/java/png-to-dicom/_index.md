@@ -2,18 +2,18 @@
 title: Java API لتحويل PNG إلى DICOM - Aspose.Medical
 weight: 13000
 
-description: معلومات حول Aspose.Medical for Java API لتحويل PNG إلى DICOM
+description: معلومات حول Aspose.Medical Java API لتحويل PNG إلى DICOM
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API للطمع PNG إلى DICOM" h2="تحويل صور PNG بسلاسة إلى تنسيق DICOM" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical لواجهة برمجة تطبيقات Java للطمع في PNG إلى DICOM" h2="تحويل صور PNG بسلاسة إلى تنسيق DICOM" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="ميزات PNG إلى DICOM">}}
 
-<p>قم بتحويل ملفات PNG بتنسيق DICOM دون عناء. Aspose.Medical for Java PNG إلى DICOM تمكنك من:</p>
+<p>قم بتحويل ملفات PNG بتنسيق DICOM دون عناء. Aspose.Medical ل Java PNG إلى DICOM تمكنك من:</p>
 
 <ul>
 <li>دمج الصور الخارجية في مهام سير عمل DICOM: يتيح لك Aspose.Medical دمج بيانات الصور الخارجية بسلاسة ، مثل الصور السريرية أو شرائح علم الأمراض الملتقطة بتنسيق PNG ، في مهام سير عمل DICOM. من خلال تحويل PNG إلى DICOM ، يمكنك دمج هذه المعلومات المرئية القيمة لتحليل شامل للمرضى وإدارة الحالات بتنسيق موحد.</li>

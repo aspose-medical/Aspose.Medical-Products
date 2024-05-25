@@ -1,19 +1,19 @@
 ---
-title: Java API για τη μετατροπή DICOM σε NIfTI - Aspose.Medical
+title: Java API για μετατροπή DICOM σε NIfTI - Aspose.Medical
 weight: 9000
 
-description: Πληροφορίες σχετικά με Aspose.Medical for Java API για τη μετατροπή DICOM σε NIfTI
+description: Πληροφορίες σχετικά με Aspose.Medical για Java API για τη μετατροπή DICOM σε NIfTI
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API to convette decom to nifti" h2="Μετατροπή DICOM σε NIfTI για ανάλυση μελετών νευροαπεικόνισης" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical για το Java API για τη μετατροπή του DICOM στο NIfTI" h2="Μετατροπή DICOM σε NIfTI για ανάλυση μελετών νευροαπεικόνισης" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Χαρακτηριστικά DICOM σε NIfTI">}}
 
-<p>Πολλές μελέτες παρουσιάζονται και αποθηκεύονται σε μορφή DICOM, ενώ η μορφή NIfTY χρησιμοποιείται ευρέως για μελέτες νευροαπεικόνισης. Μετατρέψτε το DICOM σε NIfTY για να χρησιμοποιήσετε εξειδικευμένο λογισμικό ανάλυσης δεδομένων νευροαπεικόνισης. Το Aspose.Medical for Java DICOM to NIfTY σας δίνει τη δυνατότητα να:</p>
+<p>Πολλές μελέτες παρουσιάζονται και αποθηκεύονται σε μορφή DICOM, ενώ η μορφή NIfTI χρησιμοποιείται ευρέως για μελέτες νευροαπεικόνισης. Μετατρέψτε το DICOM σε NIfTI για να χρησιμοποιήσετε εξειδικευμένο λογισμικό ανάλυσης δεδομένων νευροαπεικόνισης. Aspose.Medical για Java DICOM να NIfTI σας δίνει τη δυνατότητα να:</p>
 
 <ul>
 <li>Βελτιώστε την προσβασιμότητα και τη συνεργασία δεδομένων: Το NIfTI προσφέρει μια πιο φιλική προς το χρήστη και ανοιχτή μορφή από το DICOM. Η μετατροπή του Aspose.Medical επιτρέπει στους ερευνητές και τους κλινικούς ιατρούς να μοιράζονται δεδομένα νευροαπεικόνισης πιο αποτελεσματικά.</li>

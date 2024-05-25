@@ -7,13 +7,13 @@ description: Informasi tentang Aspose.Medical for .NET API untuk mengonversi DIC
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net api ke convette decom ke nifti" h2="Konversi DICOM ke NIfTI untuk menganalisis studi neuroimaging" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API untuk menghubungkan DICOM ke NIfTI" h2="Konversi DICOM ke NIfTI untuk menganalisis studi neuroimaging" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Fitur DICOM ke NIfTI">}}
 
-<p>Banyak penelitian disajikan dan disimpan dalam format DICOM, sedangkan format NIfTY banyak digunakan untuk studi neuroimaging. Konversi DICOM ke NIfTY untuk menggunakan perangkat lunak analisis data neuroimaging khusus. Aspose.Medical for .NET DICOM ke NIfTY memberdayakan Anda untuk:</p>
+<p>Banyak penelitian disajikan dan disimpan dalam format DICOM, sedangkan format NIfTI banyak digunakan untuk studi neuroimaging. Konversi DICOM ke NIfTI untuk menggunakan perangkat lunak analisis data neuroimaging khusus. Aspose.Medical for .NET DICOM ke NIfTI memberdayakan Anda untuk:</p>
 
 <ul>
 <li>Tingkatkan Aksesibilitas dan Kolaborasi Data: NIfTI menawarkan format yang lebih ramah pengguna dan terbuka daripada DICOM. Konversi Aspose.Medical memungkinkan peneliti dan dokter untuk berbagi data neuroimaging secara lebih efisien.</li>

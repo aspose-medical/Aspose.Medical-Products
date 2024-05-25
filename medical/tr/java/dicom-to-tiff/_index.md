@@ -1,19 +1,19 @@
 ---
-title: DICOM'u TIFF'e dönüştürmek için API Java - Aspose.Medical
+title: DICOM'u TIFF'e dönüştürmek için Java API - Aspose.Medical
 weight: 12000
 
-description: DICOM'u TIFF'ye dönüştürmek için Aspose.Medical for Java API hakkında bilgi
+description: Java API'sini DICOM'u TIFF'ye Aspose.Medical dönüştüreceğiniz hakkında bilgi
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM'u TIFF'e dönüştürmek için Aspose.Medical for Java API" h2="Daha kolay görüntü paylaşımı için DICOM'u TIFF'e dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Java API'sinin DICOM'u TIFF'e dönüştürmesi için Aspose.Medical" h2="Daha kolay görüntü paylaşımı için DICOM'u TIFF'e dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM'dan TIFF'e Özellikler">}}
 
-<p>DICOM dosyalarını zahmetsizce TIFF formatına dönüştürün. Aspose.Medical for Java DICOM'dan TIFF'e şunları yapmanızı sağlar:</p>
+<p>DICOM dosyalarını zahmetsizce TIFF formatına dönüştürün. Java DICOM'dan TIFF'e Aspose.Medical şunları yapmanızı sağlar:</p>
 
 <ul>
 <li>Basitleştirilmiş Görüntü Paylaşımı ve İşbirliği: Aspose.Medical DICOM'dan TIFF'e dönüştürme, tıbbi görüntüleri evrensel olarak tanınan bir TIFF formatına dönüştürmenize olanak tanır. Bu, daha kolay konsültasyon, işbirliği ve gelişmiş iletişim için hastalar, meslektaşlar ve uzmanlarla görüntü paylaşımını basitleştirir.</li>

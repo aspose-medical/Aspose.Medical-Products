@@ -1,19 +1,19 @@
 ---
-title: Java API pro anonymizaci souborů DICOM – Aspose.Medical
+title: Java API pro anonymizaci souborů DICOM - Aspose.Medical
 weight: 1000
 
-description: Aspose.Medical for Java API pro anonymizaci DICOM 
+description: Aspose.Medical pro Java API pro anonymizaci DICOM 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API pro anonymizaci DICOM" h2="Chraňte soukromí pacientů bez námahy pomocí naší anonymizace DICOM" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical pro Java API pro anonymizaci DICOM" h2="Chraňte soukromí pacientů bez námahy pomocí naší anonymizace DICOM" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Funkce anonymizace DICOM">}}
 
-<p>Aspose.Medical for Java DICOM Anonymizization API umožňuje zdravotnickým pracovníkům a vývojářům bez námahy chránit soukromí pacientů. Bezproblémově integrujte možnosti anonymizace do svých aplikací a zajistěte soulad s předpisy o ochraně dat. Rozhraní API umožňuje:</p>
+<p>Aspose.Medical pro Java DICOM Anonymizization API umožňuje zdravotnickým pracovníkům a vývojářům bez námahy chránit soukromí pacientů. Bezproblémově integrujte možnosti anonymizace do svých aplikací a zajistěte soulad s předpisy o ochraně dat. Rozhraní API umožňuje:</p>
 
 <ul>
 <li>Odeberte identifikační údaje pacienta (PII) ze souborů DICOM, včetně jména, data narození, adresy a čísla sociálního pojištění.</li>

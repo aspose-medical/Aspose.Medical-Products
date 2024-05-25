@@ -13,14 +13,14 @@ description: Informations sur Aspose.Medical for .NET API pour convertir DICOM e
 
 {{< blocks/products/pf/feature-page-section h2="Fonctionnalités DICOM vers XML">}}
 
-<p>Convertissez sans effort les fichiers DICOM, le format standard pour les images et les données médicales, en un format XML universellement lisible. Aspose.Medical for .NET DICOM to XML vous permet de :</p>
+<p>Convertissez sans effort les fichiers DICOM, le format standard pour les images et les données médicales, en un format XML universellement lisible. Aspose.Medical for .NET DICOM en XML vous permet de :</p>
 
 <ul>
-<li>Conversion DICOM en XML standard et personnalisée : Aspose.Medical for .NET offre une flexibilité dans la conversion de DICOM en XML. Choisissez entre la conversion DICOM en XML en fonction des spécifications. Vous pouvez également créer des mappages personnalisés pour adapter la sortie XML à vos besoins.</li>
-<li>Extraction sélective des données : extrayez les éléments de données spécifiques dont vous avez besoin à partir de fichiers DICOM. Au lieu de convertir l’intégralité du fichier, choisissez de cibler les données démographiques pertinentes sur les patients, les codes de diagnostic, les descriptions d’images ou les balises spécifiques en fonction de vos besoins.</li>
-<li>Personnalisation flexible de la structure XML : définissez la structure du fichier XML résultant pour répondre à vos besoins spécifiques.</li>
-<li>Traitement par lots pour un débit élevé : traitez efficacement de grands volumes de fichiers DICOM. Aspose.Medical prend en charge le traitement par lots, ce qui vous permet de convertir de nombreux fichiers à la fois.</li>
-<li>Intégration transparente avec les applications .NET : intégrez facilement les capacités de conversion DICOM en XML dans vos applications .NET existantes.</li>
+<li>Conversion DICOM standard et personnalisée en XML : Aspose.Medical for .NET offre une flexibilité dans la conversion de DICOM en XML. Choisissez entre la conversion DICOM en XML selon les spécifications. Vous pouvez également créer des mappages personnalisés pour adapter la sortie XML à vos besoins.</li>
+<li>Extraction sélective des données : extrayez les éléments de données spécifiques dont vous avez besoin à partir des fichiers DICOM. Au lieu de convertir l’intégralité du fichier, choisissez de cibler les données démographiques pertinentes sur les patients, les codes de diagnostic, les descriptions d’images ou les balises spécifiques en fonction de vos besoins.</li>
+<li>Personnalisation flexible de la structure XML : Définissez la structure du fichier XML résultant en fonction de vos besoins spécifiques.</li>
+<li>Traitement par lots pour un débit élevé : Traitez efficacement de grands volumes de fichiers DICOM. Aspose.Medical prend en charge le traitement par lots, ce qui vous permet de convertir de nombreux fichiers à la fois.</li>
+<li>Intégration transparente avec les applications .NET : Intégrez facilement les capacités de conversion DICOM en XML dans vos applications .NET existantes.</li>
 </ul>
 
 {{< /blocks/products/pf/feature-page-section >}}

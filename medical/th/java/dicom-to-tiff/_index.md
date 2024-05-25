@@ -7,13 +7,13 @@ description: ข้อมูลเกี่ยวกับ Aspose.Medical for Ja
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API เพื่อ convet DICOM เป็น TIFF" h2="แปลง DICOM เป็น TIFF เพื่อการแชร์ภาพที่ง่ายขึ้น" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical สําหรับ Java API เพื่อ convet DICOM เป็น TIFF" h2="แปลง DICOM เป็น TIFF เพื่อการแชร์ภาพที่ง่ายขึ้น" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM ถึง TIFF คุณสมบัติ">}}
 
-<p>แปลงไฟล์ DICOM รูปแบบ TIFF ได้อย่างง่ายดาย Aspose.Medical for Java DICOM เป็น TIFF ช่วยให้คุณ:</p>
+<p>แปลงไฟล์ DICOM รูปแบบ TIFF ได้อย่างง่ายดาย Aspose.Medical สําหรับ Java DICOM เป็น TIFF ช่วยให้คุณ:</p>
 
 <ul>
 <li>การแบ่งปันและการทํางานร่วมกัน Aspose.Medical รูปภาพที่ง่ายขึ้น: การแปลง DICOM เป็น TIFF ช่วยให้คุณสามารถแปลงภาพทางการแพทย์เป็นรูปแบบ TIFF ที่ได้รับการยอมรับในระดับสากล สิ่งนี้ช่วยลดความยุ่งยากในการแบ่งปันภาพกับผู้ป่วยเพื่อนร่วมงานและผู้เชี่ยวชาญเพื่อการให้คําปรึกษาการทํางานร่วมกันและการสื่อสารที่ดีขึ้น</li>

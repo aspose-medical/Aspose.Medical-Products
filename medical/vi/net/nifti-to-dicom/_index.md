@@ -7,7 +7,7 @@ description: Thông tin về API Aspose.Medical for .NET để chuyển đổi N
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API để convet nifti để decom" h2="Chuyển đổi NIfTI sang DICOM để xử lý và lưu trữ kết quả học tập" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API để chuyển NIfTI sang DICOM" h2="Chuyển đổi NIfTI sang DICOM để xử lý và lưu trữ kết quả học tập" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 

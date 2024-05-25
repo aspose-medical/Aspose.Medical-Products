@@ -1,19 +1,19 @@
 ---
-title: Java API untuk mengonversi JPG ke DICOM - Aspose.Medical
+title: Java API untuk mengkonversi JPG ke DICOM - Aspose.Medical
 weight: 8000
 
-description: Informasi tentang Aspose.Medical for Java API untuk mengonversi JPG ke DICOM
+description: Di bawah ini Aspose.Medical untuk Java API untuk mengonversi JPG ke DICOM
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API untuk menghubungkan JPG ke DICOM" h2="Konversi Gambar JPG ke Format DICOM dengan Mulus" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical untuk Java API untuk menghubungkan JPG ke DICOM" h2="Konversi Gambar JPG ke Format DICOM dengan Mulus" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Fitur JPG ke DICOM">}}
 
-<p>Konversi file JPG dengan mudah, format DICOM. Aspose.Medical for Java JPG ke DICOM memberdayakan Anda untuk:</p>
+<p>Konversi file JPG dengan mudah, format DICOM. Aspose.Medical untuk Java JPG ke DICOM memberdayakan Anda untuk:</p>
 
 <ul>
 <li>Gabungkan Gambar Eksternal ke dalam Alur Kerja DICOM: Aspose.Medical memungkinkan Anda mengintegrasikan data gambar eksternal dengan mulus, seperti foto klinis atau slide patologi yang diambil dalam format JPG, ke dalam alur kerja DICOM Anda. Dengan mengonversi JPG ke DICOM, Anda dapat memasukkan informasi visual yang berharga ini untuk analisis pasien yang komprehensif dan manajemen kasus dalam format standar.</li>

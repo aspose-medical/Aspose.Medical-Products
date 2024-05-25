@@ -1,8 +1,8 @@
 ---
-title: Java API επεξεργασίας ιατρικών εγγράφων DICOM - Aspose 
+title: Java DICOM API επεξεργασίας ιατρικών εγγράφων - Aspose 
 weight: 1000
 
-description: Java βιβλιοθήκη για να συνεργαστεί με ιατρικά αρχεία DICOM. 
+description: Βιβλιοθήκη Java για εργασία με ιατρικά αρχεία DICOM. 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

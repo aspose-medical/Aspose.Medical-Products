@@ -7,13 +7,13 @@ description: DICOM Aspose.Medical for .NET NIfTI に変換するための API �
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API から Convette Decom to Nifti へ" h2="DICOM を NIfTI に変換してニューロイメージング研究を解析" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM を NIfTI に変換するための API Aspose.Medical for .NET" h2="DICOM を NIfTI に変換してニューロイメージング研究を解析" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM から NIfTI への機能">}}
 
-<p>多くの研究はDICOM形式で提示および保存されていますが、NIfTY形式は神経画像研究に広く使用されています。DICOMをNIfTYに変換して、専用のニューロイメージングデータ解析ソフトウェアを使用します。DICOM から NIfTY へのAspose.Medical for .NETにより、次のことが可能になります。</p>
+<p>多くの研究はDICOM形式で提示および保存されていますが、NIfTI形式は神経画像研究に広く使用されています。DICOMをNIfTIに変換して、専用のニューロイメージングデータ解析ソフトウェアを使用します。DICOM から NIfTI へのAspose.Medical for .NETにより、次のことが可能になります。</p>
 
 <ul>
 <li>データのアクセシビリティとコラボレーションの強化:NIfTIは、DICOMよりもユーザーフレンドリーでオープンなフォーマットを提供します。Aspose.Medicalの変換により、研究者と臨床医は神経画像データをより効率的に共有できます。</li>

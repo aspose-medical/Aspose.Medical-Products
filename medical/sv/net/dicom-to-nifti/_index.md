@@ -7,13 +7,13 @@ description: Information om Aspose.Medical for .NET API för att konvertera DICO
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API för att convette decom till nifti" h2="Konvertera DICOM till NIfTI för att analysera neuroradiologiska studier" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API för att verifiera DICOM till NIfTI" h2="Konvertera DICOM till NIfTI för att analysera neuroradiologiska studier" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM till NIfTI-funktioner">}}
 
-<p>Många studier presenteras och lagras i DICOM-formatet, medan NIfTY-formatet används i stor utsträckning för neuroradiologiska studier. Konvertera DICOM till NIfTY för att använda specialiserad programvara för analys av neurobildningsdata. Aspose.Medical for .NET DICOM till NIfTY ger dig möjlighet att:</p>
+<p>Många studier presenteras och lagras i DICOM-formatet, medan NIfTI-formatet används i stor utsträckning för neuroradiologiska studier. Konvertera DICOM till NIfTI för att använda specialiserad programvara för analys av neurobildningsdata. Aspose.Medical for .NET DICOM till NIfTI ger dig möjlighet att:</p>
 
 <ul>
 <li>Förbättra datatillgänglighet och samarbete: NIfTI erbjuder ett mer användarvänligt och öppet format än DICOM. Aspose.Medical konvertering gör det möjligt för forskare och kliniker att dela hjärnavbildningsdata mer effektivt.</li>

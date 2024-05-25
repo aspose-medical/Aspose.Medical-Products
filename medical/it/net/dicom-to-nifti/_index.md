@@ -7,13 +7,13 @@ description: Informazioni sull Aspose.Medical for .NET API per convertire DICOM 
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API per convette, decom to nifti" h2="Converti DICOM in NIfTI per analizzare gli studi di neuroimaging" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API per convet DICOM in NIfTI" h2="Converti DICOM in NIfTI per analizzare gli studi di neuroimaging" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Caratteristiche da DICOM a NIfTI">}}
 
-<p>Molti studi sono presentati e archiviati nel formato DICOM, mentre il formato NIfTY è ampiamente utilizzato per gli studi di neuroimaging. Converti DICOM in NIfTY per utilizzare un software specializzato per l'analisi dei dati di neuroimaging. Aspose.Medical for .NET DICOM to NIfTY ti consente di:</p>
+<p>Molti studi sono presentati e archiviati nel formato DICOM, mentre il formato NIfTI è ampiamente utilizzato per gli studi di neuroimaging. Converti DICOM in NIfTI per utilizzare un software specializzato per l'analisi dei dati di neuroimaging. Aspose.Medical for .NET DICOM to NIfTI ti consente di:</p>
 
 <ul>
 <li>Migliorare l'accessibilità e la collaborazione dei dati: NIfTI offre un formato più intuitivo e aperto rispetto a DICOM. La conversione di Aspose.Medical consente a ricercatori e medici di condividere i dati di neuroimaging in modo più efficiente.</li>

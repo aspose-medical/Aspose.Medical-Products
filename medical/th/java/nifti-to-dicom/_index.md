@@ -7,13 +7,13 @@ description: ข้อมูลเกี่ยวกับ Aspose.Medical for Ja
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API เพื่อเรียกประชุม NIFTI ไปยัง DECOM" h2="แปลง NIfTI เป็น DICOM เพื่อประมวลผลและจัดเก็บผลการศึกษา" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical สําหรับ Java API เพื่อเรียกประชุม NIfTI เป็น DICOM" h2="แปลง NIfTI เป็น DICOM เพื่อประมวลผลและจัดเก็บผลการศึกษา" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="NIfTI ถึง DICOM คุณสมบัติ">}}
 
-<p>ในขณะที่ DICOM ยังคงเป็นมาตรฐานอุตสาหกรรมสําหรับการถ่ายภาพทางการแพทย์ NIfTI เป็นเลิศในการวิจัยเกี่ยวกับระบบประสาท อย่างไรก็ตาม เครื่องมือวิเคราะห์เฉพาะทางจํานวนมากต้องการข้อมูล DICOM Aspose.Medical for Java NIfTI to DICOM ช่วยให้คุณสามารถเชื่อมช่องว่างนี้และปลดล็อกศักยภาพทั้งหมดของข้อมูลการสร้างภาพประสาทของคุณและช่วยให้คุณ:</p>
+<p>ในขณะที่ DICOM ยังคงเป็นมาตรฐานอุตสาหกรรมสําหรับการถ่ายภาพทางการแพทย์ NIfTI เป็นเลิศในการวิจัยเกี่ยวกับระบบประสาท อย่างไรก็ตาม เครื่องมือวิเคราะห์เฉพาะทางจํานวนมากต้องการข้อมูล DICOM Aspose.Medical สําหรับ Java NIfTI เป็น DICOM ช่วยให้คุณสามารถเชื่อมช่องว่างนี้และปลดล็อกศักยภาพทั้งหมดของข้อมูลการสร้างภาพประสาทของคุณและช่วยให้คุณ:</p>
 
 <ul>
 <li>อํานวยความสะดวกในการผสานรวมกับเวิร์กโฟลว์ที่ใช้ DICOM: แปลงข้อมูล NIfTI ของคุณเป็นรูปแบบ DICOM ทําให้สามารถรวมเข้ากับ PACS (Picture Archiving and Communication System) และเครื่องมือวิเคราะห์ที่ใช้ DICOM อื่นๆ ได้อย่างง่ายดาย สิ่งนี้ช่วยให้คุณสามารถใช้ประโยชน์จากฟังก์ชันการทํางานที่กว้างขวางและความเข้ากันได้ที่ระบบเหล่านี้มีให้สําหรับการประมวลผลภาพขั้นสูงการสร้างภาพและการวิเคราะห์ร่วมกันภายในระบบนิเวศการถ่ายภาพทางการแพทย์ที่กว้างขึ้น</li>

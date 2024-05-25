@@ -2,18 +2,18 @@
 title: Java API om DICOM-bestanden te anonimiseren - Aspose.Medical
 weight: 1000
 
-description: Aspose.Medical for Java API om DICOM te anonimiseren 
+description: Aspose.Medical voor Java API om DICOM te anonimiseren 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API om DICOM te anonimiseren" h2="Bescherm de privacy van patiënten moeiteloos met onze DICOM-anonimisering" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical voor Java API om DICOM te anonimiseren" h2="Bescherm de privacy van patiënten moeiteloos met onze DICOM-anonimisering" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM-anonimiseringsfuncties">}}
 
-<p>Aspose.Medical for Java DICOM Anonymization API stelt zorgprofessionals en ontwikkelaars in staat om de privacy van patiënten moeiteloos te beschermen. Integreer anonimiseringsmogelijkheden naadloos in uw applicaties en zorg ervoor dat u voldoet aan de regelgeving inzake gegevensbescherming. Met de API kunt u:</p>
+<p>Aspose.Medical voor Java DICOM Anonymization API stelt zorgprofessionals en ontwikkelaars in staat om de privacy van patiënten moeiteloos te beschermen. Integreer anonimiseringsmogelijkheden naadloos in uw applicaties en zorg ervoor dat u voldoet aan de regelgeving inzake gegevensbescherming. Met de API kunt u:</p>
 
 <ul>
 <li>Verwijder patiëntidentificatiegegevens (PII) uit DICOM-bestanden, waaronder naam, geboortedatum, adres en burgerservicenummer.</li>

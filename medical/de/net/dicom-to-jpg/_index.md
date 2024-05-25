@@ -13,12 +13,12 @@ description: Informationen über Aspose.Medical for .NET API zum Konvertieren vo
 
 {{< blocks/products/pf/feature-page-section h2="DICOM-zu-JPG-Funktionen">}}
 
-<p>Konvertieren Sie mühelos DICOM-Dateien im JPG-Format. Aspose.Medical for .NET DICOM zu JPG ermöglicht Ihnen:</p>
+<p>Konvertieren Sie mühelos DICOM-Dateien im JPG-Format. Aspose.Medical for .NET DICOM to JPG ermöglicht Ihnen:</p>
 
 <ul>
-<li>Vereinfachte Bildfreigabe und Zusammenarbeit: Aspose.Medical Konvertierung von DICOM in JPG ermöglicht es Ihnen, medizinische Bilder in ein allgemein anerkanntes JPG-Format zu konvertieren. Dies vereinfacht den Bildaustausch mit Patienten, Kollegen und Spezialisten und erleichtert so die Beratung, Zusammenarbeit und verbesserte Kommunikation.</li>
-<li>Verbesserte Zugänglichkeit und Plattformunabhängigkeit: JPG ist ein weit verbreitetes Bildformat auf verschiedenen Plattformen und Geräten, einschließlich Smartphones, Tablets und Webbrowsern. Die Konvertierung von DICOM in JPG ermöglicht einen einfacheren Zugriff auf medizinische Bilder, ohne dass spezielle DICOM-Viewer erforderlich sind. Dies fördert eine bessere Erreichbarkeit für Patienten und Fernkonsultationen.</li>
-<li>Stapelverarbeitung mit Fortschrittsverfolgung: Verarbeiten Sie große Mengen an DICOM-Dateien effizient mit Batch-Konvertierungsfunktionen. Aspose.Medical bietet Funktionen zur Fortschrittsverfolgung, die Einblicke in den Konvertierungsprozess bieten, sodass Sie die Fertigstellungszeit abschätzen und potenzielle Fehler überwachen können.</li>
+<li>Vereinfachte Bildfreigabe und Zusammenarbeit: Aspose.Medical DICOM-zu-JPG-Konvertierung ermöglicht es Ihnen, medizinische Bilder in ein allgemein anerkanntes JPG-Format zu konvertieren. Dies vereinfacht die Bildfreigabe mit Patienten, Kollegen und Spezialisten für eine einfachere Beratung, Zusammenarbeit und verbesserte Kommunikation.</li>
+<li>Verbesserte Zugänglichkeit und Plattformunabhängigkeit: JPG ist ein weit verbreitetes Bildformat auf verschiedenen Plattformen und Geräten, einschließlich Smartphones, Tablets und Webbrowsern. Die Konvertierung von DICOM in JPG ermöglicht einen einfacheren Zugriff auf medizinische Bilder, ohne dass spezielle DICOM-Viewer erforderlich sind. Dies fördert eine bessere Zugänglichkeit für Patienten und Fernkonsultationen.</li>
+<li>Stapelverarbeitung mit Fortschrittsverfolgung: Verarbeiten Sie große Mengen von DICOM-Dateien effizient mit Stapelkonvertierungsfunktionen. Aspose.Medical bietet Funktionen zur Fortschrittsverfolgung, die Einblicke in den Konvertierungsprozess geben, sodass Sie die Fertigstellungszeit abschätzen und potenzielle Fehler überwachen können.</li>
 <li>Unterstützung für verschiedene DICOM-Bildformate: Aspose.Medical unterstützt die Konvertierung einer Vielzahl von DICOM-Bildformaten, einschließlich häufig verwendeter Modalitäten wie Röntgen, CT, MRT und Ultraschall. Dies gewährleistet die Kompatibilität mit verschiedenen medizinischen Bildgebungsgeräten und ermöglicht es Ihnen, verschiedene DICOM-Dateien in ein zugängliches JPG-Format zu konvertieren.</li>
 </ul>
 

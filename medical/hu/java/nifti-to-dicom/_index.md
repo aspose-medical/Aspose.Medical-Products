@@ -1,19 +1,19 @@
 ---
-title: Java API a NIfTI DICOM-ra konvertálásához - Aspose.Medical
+title: Java API a NIfTI konvertálásához DICOM-ba - Aspose.Medical
 weight: 10000
 
-description: Információ Aspose.Medical for Java API-ról a NIfTI DICOM-ra konvertálásához
+description: Információ a Aspose.Medical for Java API-ról az NIfTI DICOM-ra konvertálásához
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API-t a Nifti Decomhoz való konvekciójához" h2="Konvertálja a NIfTI-t DICOM-ba a vizsgálati eredmények feldolgozásához és tárolásához" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical a Java API-hoz a NIfTI és a DICOM összekapcsolásához" h2="Konvertálja a NIfTI-t DICOM-ba a vizsgálati eredmények feldolgozásához és tárolásához" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="NIfTI to DICOM funkciók">}}
 
-<p>Míg a DICOM továbbra is az orvosi képalkotás iparági szabványa, a NIfTI kiemelkedik a neuroimaging kutatásában. Számos speciális elemzőeszköz azonban DICOM-adatokat igényel. Aspose.Medical for Java NIfTI to DICOM lehetővé teszi, hogy áthidalja ezt a szakadékot, és felszabadítsa a neuroimaging adatok teljes potenciálját, és felhatalmazza Önt:</p>
+<p>Míg a DICOM továbbra is az orvosi képalkotás iparági szabványa, a NIfTI kiemelkedik a neuroimaging kutatásában. Számos speciális elemzőeszköz azonban DICOM-adatokat igényel. Aspose.Medical a Java NIfTI to DICOM lehetővé teszi, hogy áthidalja ezt a szakadékot, és felszabadítsa az idegi képalkotó adatok teljes potenciálját, és felhatalmazza Önt:</p>
 
 <ul>
 <li>A DICOM-alapú munkafolyamatokkal való integráció megkönnyítése: Konvertálja NIfTI adatait DICOM formátumba, lehetővé téve a PACS-szal (Picture Archiving and Communication System) és más DICOM-alapú elemzőeszközökkel való könnyű integrációt. Ez lehetővé teszi, hogy kihasználja azt a kiterjedt funkcionalitást és kompatibilitást, amelyet ezek a rendszerek kínálnak a fejlett képfeldolgozáshoz, vizualizációhoz és együttműködésen alapuló elemzéshez a szélesebb orvosi képalkotó ökoszisztémán belül.</li>

@@ -2,18 +2,18 @@
 title: Java API a TIFF konvertálásához DICOM-ba - Aspose.Medical
 weight: 14000
 
-description: Információ Aspose.Medical for Java TIFF DICOM formátumba konvertálására szolgáló API-ról
+description: Információ a Aspose.Medical for Java API TIFF konvertálásához DICOM formátumba
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API-t a TIFF és a DICOM összekapcsolásához" h2="TIFF-képek zökkenőmentes konvertálása DICOM formátumba" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical a Java API-hoz a TIFF és a DICOM összekapcsolásához" h2="TIFF-képek zökkenőmentes konvertálása DICOM formátumba" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="TIFF–DICOM funkciók">}}
 
-<p>Könnyedén konvertálhatja a TIFF fájlokat DICOM formátumban. Aspose.Medical for Java TIFF to DICOM a következőket teszi lehetővé:</p>
+<p>Könnyedén konvertálhatja a TIFF fájlokat DICOM formátumban. Aspose.Medical for Java TIFF to DICOM lehetővé teszi, hogy:</p>
 
 <ul>
 <li>Külső képek beépítése DICOM-munkafolyamatokba: Aspose.Medical lehetővé teszi a külső képadatok, például a TIFF formátumban rögzített klinikai fényképek vagy patológiai diák zökkenőmentes integrálását a DICOM-munkafolyamatokba. A TIFF DICOM formátumba konvertálásával ezt az értékes vizuális információt beépítheti az átfogó betegelemzéshez és esetkezeléshez egy szabványosított formátumba.</li>

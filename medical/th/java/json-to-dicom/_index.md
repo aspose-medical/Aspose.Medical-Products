@@ -2,18 +2,18 @@
 title: Java API เพื่อแปลง XML เป็น DICOM - Aspose.Medical
 weight: 6000
 
-description: ข้อมูลเกี่ยวกับ Aspose.Medical for Java API เพื่อแปลง XML เป็น DICOM
+description: ข้อมูลเกี่ยวกับ Aspose.Medical สําหรับ Java API เพื่อแปลง XML เป็น DICOM
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API เพื่อ convet XML เป็น DICOM" h2="สร้าง DICOM ที่ถูกต้องจากแหล่ง XML" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical สําหรับ Java API เพื่อ convet XML เป็น DICOM" h2="สร้าง DICOM ที่ถูกต้องจากแหล่ง XML" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="XML ถึง DICOM คุณสมบัติ">}}
 
-<p>แปลงไฟล์ XML รูปแบบ DICOM ได้อย่างง่ายดาย Aspose.Medical for Java XML เป็น DICOM ช่วยให้คุณ:</p>
+<p>แปลงไฟล์ XML รูปแบบ DICOM ได้อย่างง่ายดาย Aspose.Medical สําหรับ Java XML เป็น DICOM ช่วยให้คุณ:</p>
 
 <ul>
 <li>การแยกวิเคราะห์ XML และการแมปข้อมูลที่ยืดหยุ่น: แมปองค์ประกอบข้อมูลภายในแหล่งข้อมูล XML กับแท็ก DICOM ที่เกี่ยวข้องอย่างแม่นยําเพื่อการแปลงที่มีประสิทธิภาพ สิ่งนี้ทําให้มั่นใจได้ถึงความเข้ากันได้กับรูปแบบ XML ที่หลากหลายและรูปแบบการจัดระเบียบข้อมูล</li>

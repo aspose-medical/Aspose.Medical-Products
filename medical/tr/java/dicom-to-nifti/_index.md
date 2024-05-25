@@ -2,18 +2,18 @@
 title: DICOM'u NIfTI'ye dönüştürmek için Java API - Aspose.Medical
 weight: 9000
 
-description: DICOM'u NIfTI'ye dönüştürmek için Aspose.Medical for Java API hakkında bilgi
+description: Java API for DICOM'u NIfTI'ye Aspose.Medical dönüştüreceği hakkında bilgi
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API'si decom'u nifti'ye dönüştürmek için" h2="Nörogörüntüleme çalışmalarını analiz etmek için DICOM'u NIfTI'ye dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Java API'sinin DICOM'u NIfTI'ye dönüştürmesi için Aspose.Medical" h2="Nörogörüntüleme çalışmalarını analiz etmek için DICOM'u NIfTI'ye dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM - NIfTI Özellikleri">}}
 
-<p>Birçok çalışma DICOM formatında sunulur ve saklanırken, NIfTY formatı nörogörüntüleme çalışmaları için yaygın olarak kullanılmaktadır. Özel beyin görüntüleme veri analizi yazılımını kullanmak için DICOM'u NIfTY'ye dönüştürün. Aspose.Medical for Java DICOM'dan NIfTY'ye şunları yapmanızı sağlar:</p>
+<p>Birçok çalışma DICOM formatında sunulur ve saklanırken, NIfTI formatı nörogörüntüleme çalışmaları için yaygın olarak kullanılmaktadır. Özel beyin görüntüleme veri analizi yazılımını kullanmak için DICOM'u NIfTI'ye dönüştürün. Java DICOM'dan NIfTI'ye Aspose.Medical size şunları sağlar:</p>
 
 <ul>
 <li>Veri Erişilebilirliğini ve İşbirliğini Geliştirin: NIfTI, DICOM'dan daha kullanıcı dostu ve açık bir format sunar. Aspose.Medical' dönüşümü, araştırmacıların ve klinisyenlerin nörogörüntüleme verilerini daha verimli bir şekilde paylaşmasını sağlar.</li>

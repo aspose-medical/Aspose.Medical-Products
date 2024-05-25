@@ -7,7 +7,7 @@ description: Informasi tentang Aspose.Medical for .NET API untuk mengonversi NIf
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net api untuk convet nifti untuk decom" h2="Konversi NIfTI ke DICOM untuk memproses dan menyimpan hasil studi" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API untuk convet NIfTI ke DICOM" h2="Konversi NIfTI ke DICOM untuk memproses dan menyimpan hasil studi" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 

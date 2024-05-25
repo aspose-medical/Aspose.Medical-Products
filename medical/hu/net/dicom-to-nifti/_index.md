@@ -7,13 +7,13 @@ description: Információ Aspose.Medical for .NET API-ról a DICOM NIfTI formát
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API a Convette Decom-hoz a Nifti-hez" h2="Konvertálja a DICOM-ot NIfTI-be a neuroimaging vizsgálatok elemzéséhez" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API-t a DICOM és a NIfTI összekapcsolásához" h2="Konvertálja a DICOM-ot NIfTI-be a neuroimaging vizsgálatok elemzéséhez" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM to NIfTI funkciók">}}
 
-<p>Számos tanulmányt DICOM formátumban mutatnak be és tárolnak, míg a NIfTY formátumot széles körben használják neuroimaging vizsgálatokhoz. Konvertálja a DICOM-ot NIfTY-re speciális neuroimaging adatelemző szoftver használatához. Aspose.Medical for .NET DICOM to NIfTY felhatalmazza Önt:</p>
+<p>Számos tanulmányt DICOM formátumban mutatnak be és tárolnak, míg a NIfTI formátumot széles körben használják neuroimaging vizsgálatokhoz. Konvertálja a DICOM-ot NIfTI-re speciális neuroimaging adatelemző szoftver használatához. Aspose.Medical for .NET DICOM to NIfTI felhatalmazza Önt:</p>
 
 <ul>
 <li>Az adatok hozzáférhetőségének és együttműködésének javítása: A NIfTI felhasználóbarátabb és nyitottabb formátumot kínál, mint a DICOM. Aspose.Medical átalakítása lehetővé teszi a kutatók és klinikusok számára, hogy hatékonyabban osszák meg a neuroimaging adatokat.</li>

@@ -7,13 +7,13 @@ description: Информация о Aspose.Medical for .NET API для конв
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net api to convette decom to nifti" h2="Преобразование DICOM в NIfTI для анализа нейровизуализационных исследований" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API для подключения DICOM к NIfTI" h2="Преобразование DICOM в NIfTI для анализа нейровизуализационных исследований" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Особенности DICOM в NIfTI">}}
 
-<p>Многие исследования представлены и хранятся в формате DICOM, в то время как формат NIfTY широко используется для нейровизуализационных исследований. Преобразуйте DICOM в NIfTY для использования специализированного программного обеспечения для анализа данных нейровизуализации. Aspose.Medical for .NET DICOM to NIfTY дает вам возможность:</p>
+<p>Многие исследования представлены и хранятся в формате DICOM, в то время как формат NIfTI широко используется для нейровизуализационных исследований. Преобразуйте DICOM в NIfTI для использования специализированного программного обеспечения для анализа данных нейровизуализации. Aspose.Medical for .NET DICOM to NIfTI дает вам возможность:</p>
 
 <ul>
 <li>Повышение доступности данных и совместной работы: NIfTI предлагает более удобный и открытый формат, чем DICOM. Преобразование Aspose.Medical позволяет исследователям и клиницистам более эффективно обмениваться данными нейровизуализации.</li>

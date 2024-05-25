@@ -1,19 +1,19 @@
 ---
-title: DICOM 파일을 익명화하는 API Java - Aspose.Medical
+title: DICOM 파일을 익명화하는 Java API - Aspose.Medical
 weight: 1000
 
-description: DICOM을 익명화하는 API Aspose.Medical for Java 
+description: DICOM을 익명화하는 Java API Aspose.Medical 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM을 익명화하는 API Aspose.Medical for Java" h2="DICOM 익명화로 환자 개인 정보를 손쉽게 보호하십시오." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM을 익명화하는 Java API Aspose.Medical" h2="DICOM 익명화로 환자 개인 정보를 손쉽게 보호하십시오." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM 익명화 기능">}}
 
-<p>DICOM 익명화 API Aspose.Medical for Java 의료 전문가와 개발자가 환자의 개인 정보를 손쉽게 보호할 수 있도록 지원합니다. 익명화 기능을 애플리케이션에 원활하게 통합하고 데이터 보호 규정을 준수할 수 있습니다. API를 사용하면 다음을 수행할 수 있습니다.</p>
+<p>Aspose.Medical for Java DICOM Anonymization API를 사용하면 의료 전문가와 개발자가 환자의 개인 정보를 손쉽게 보호할 수 있습니다. 익명화 기능을 애플리케이션에 원활하게 통합하고 데이터 보호 규정을 준수할 수 있습니다. API를 사용하면 다음을 수행할 수 있습니다.</p>
 
 <ul>
 <li>DICOM 파일에서 이름, 생년월일, 주소 및 주민등록번호를 포함한 PII(환자 식별 정보)를 제거합니다.</li>

@@ -1,13 +1,13 @@
 ---
-title: Java 处理 Jpeg2000 图像格式的 API - Aspose.Medical
+title: Java API 处理 Jpeg2000 图像格式 - Aspose.Medical
 weight: 2000
 
-description: Aspose.Medical for Java API 处理 Jpeg2000 图像格式
+description: Aspose.Medical Java API 处理 Jpeg2000 图像格式
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java 支持 Jpeg2000" h2="通过 Jpeg2000 Aspose.Medical功能最大限度地降低存储需求并加速图像传输，从而简化您的医疗保健解决方案" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java Jpeg2000 支持" h2="通过 Jpeg2000 Aspose.Medical功能最大限度地降低存储需求并加速图像传输，从而简化您的医疗保健解决方案" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 

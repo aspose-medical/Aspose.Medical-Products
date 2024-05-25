@@ -1,19 +1,19 @@
 ---
-title: NIfTI - DICOM dönüştürmek için Java API - Aspose.Medical
+title: NIfTI ' i DICOM 'e dönüştürmek için Java API - Aspose.Medical
 weight: 10000
 
-description: NIfTI'i DICOM'a dönüştürmek için Aspose.Medical for Java API hakkında bilgi
+description: Java API for NIfTI öğesini DICOM birimine Aspose.Medical dönüştüreceği hakkında bilgi
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net Nifti'yi decom'a dönüştürmek için API" h2="Çalışma sonuçlarını işlemek ve depolamak için NIfTI'yi DICOM'a dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Java API'sinin NIfTI'yi DICOM'a dönüştürmesi için Aspose.Medical" h2="Çalışma sonuçlarını işlemek ve depolamak için NIfTI'yi DICOM'a dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="NIfTI - DICOM Özellikleri">}}
 
-<p>DICOM, tıbbi görüntüleme için endüstri standardı olmaya devam ederken, NIfTI nörogörüntüleme araştırmalarında üstündür. Bununla birlikte, birçok özel analiz aracı DICOM verileri gerektirir. NIfTI'dan DICOM'a Aspose.Medical for Java, bu boşluğu doldurmanıza ve nörogörüntüleme verilerinizin tüm potansiyelini ortaya çıkarmanıza yardımcı olur ve şunları yapmanızı sağlar:</p>
+<p>DICOM, tıbbi görüntüleme için endüstri standardı olmaya devam ederken, NIfTI nörogörüntüleme araştırmalarında üstündür. Bununla birlikte, birçok özel analiz aracı DICOM verileri gerektirir. Aspose.Medical for Java NIfTI to DICOM, bu boşluğu doldurmanıza ve nörogörüntüleme verilerinizin tüm potansiyelini ortaya çıkarmanıza yardımcı olur ve şunları yapmanızı sağlar:</p>
 
 <ul>
 <li>DICOM Tabanlı İş Akışlarıyla Entegrasyonu Kolaylaştırın: NIfTI verilerinizi DICOM formatına dönüştürerek PACS (Görüntü Arşivleme ve İletişim Sistemi) ve diğer DICOM tabanlı analiz araçlarıyla zahmetsiz entegrasyon sağlayın. Bu, daha geniş tıbbi görüntüleme ekosistemi içinde gelişmiş görüntü işleme, görselleştirme ve işbirliğine dayalı analiz için bu sistemlerin sunduğu kapsamlı işlevsellik ve uyumluluktan yararlanmanıza olanak tanır.</li>

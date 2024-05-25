@@ -1,13 +1,13 @@
 ---
-title: Java API a DICOM-fájlok anonimizálásához - Aspose.Medical
+title: Java API a DICOM fájlok anonimizálásához - Aspose.Medical
 weight: 1000
 
-description: Aspose.Medical for Java API a DICOM anonimizálásához 
+description: Aspose.Medical a Java API-hoz a DICOM anonimizálásához 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API a DICOM anonimizálásához" h2="Védje könnyedén a páciensek adatait DICOM anonimizálásunkkal" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical a Java API-hoz a DICOM anonimizálásához" h2="Védje könnyedén a páciensek adatait DICOM anonimizálásunkkal" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 

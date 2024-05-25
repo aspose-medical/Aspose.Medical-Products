@@ -7,13 +7,13 @@ description: ข้อมูลเกี่ยวกับ Aspose.Medical for .N
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API เพื่อ convette Decom ไปยัง NIFTI" h2="แปลง DICOM เป็น NIfTI เพื่อวิเคราะห์การศึกษาเกี่ยวกับระบบประสาท" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API เพื่อเรียก DICOM เป็น NIfTI" h2="แปลง DICOM เป็น NIfTI เพื่อวิเคราะห์การศึกษาเกี่ยวกับระบบประสาท" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="คุณสมบัติ DICOM ถึง NIfTI">}}
 
-<p>การศึกษาจํานวนมากถูกนําเสนอและจัดเก็บในรูปแบบ DICOM ในขณะที่รูปแบบ NIfTY ใช้กันอย่างแพร่หลายสําหรับการศึกษาเกี่ยวกับระบบประสาท แปลง DICOM เป็น NIfTY เพื่อใช้ซอฟต์แวร์วิเคราะห์ข้อมูลการถ่ายภาพระบบประสาทแบบพิเศษ Aspose.Medical for .NET DICOM เป็น NIfTY ช่วยให้คุณ:</p>
+<p>การศึกษาจํานวนมากถูกนําเสนอและจัดเก็บในรูปแบบ DICOM ในขณะที่รูปแบบ NIfTI ใช้กันอย่างแพร่หลายสําหรับการศึกษาเกี่ยวกับระบบประสาท แปลง DICOM เป็น NIfTI เพื่อใช้ซอฟต์แวร์วิเคราะห์ข้อมูลการถ่ายภาพระบบประสาทแบบพิเศษ Aspose.Medical for .NET DICOM เป็น NIfTI ช่วยให้คุณ:</p>
 
 <ul>
 <li>ปรับปรุงการเข้าถึงข้อมูลและการทํางานร่วมกัน: NIfTI นําเสนอรูปแบบที่ใช้งานง่ายและเปิดกว้างกว่า DICOM การแปลงของ Aspose.Medical ช่วยให้นักวิจัยและแพทย์สามารถแบ่งปันข้อมูลเกี่ยวกับการสร้างภาพประสาทได้อย่างมีประสิทธิภาพมากขึ้น</li>

@@ -2,7 +2,7 @@
 title: Java DICOM API för behandling av medicinska dokument - Aspose 
 weight: 1000
 
-description: Java bibliotek för att arbeta med DICOM-medicinska filer. 
+description: Java-bibliotek för att arbeta med DICOM-medicinska filer. 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,7 +13,7 @@ description: Java bibliotek för att arbeta med DICOM-medicinska filer.
 
 {{< blocks/products/pf/feature-page-section h2="Aspose.Medical for Java Funktioner">}}
 
-<p>Aspose.Medical for Java är ett kraftfullt API för behandling av medicinska data som är utformat för olika hanterings- och manipuleringsuppgifter i olika medicinska filformat. Med API:et kan du:</p>
+<p>Aspose.Medical för Java är ett kraftfullt API för medicinsk databehandling som är utformat för olika hanterings- och manipuleringsuppgifter i olika medicinska filformat. Med API:et kan du:</p>
 
 <ul>
 <li>Formatkonvertering: Detta inkluderar konvertering av DICOM-filer till andra vanliga format som JPEG, PNG, XML, JSON eller NIfTI för ytterligare analys, visualisering eller delning.</li>

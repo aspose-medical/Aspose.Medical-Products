@@ -1,19 +1,19 @@
 ---
-title: Java API转换为JPG-Aspose.Medical
+title: Java API 转换为 JPG - Aspose.Medical
 weight: 7000
 
-description: 有关将DICOM转换为JPG的Aspose.Medical for Java API的信息
+description: 有关Java API将DICOM转换为JPG的Aspose.Medical信息
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API 将 DICOM 转换为 JPG" h2="将DICOM转换为JPG以便于图像共享" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical Java API 将 DICOM 转换为 JPG" h2="将DICOM转换为JPG以便于图像共享" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM转JPG功能">}}
 
-<p>毫不费力地转换DICOM文件JPG格式。Aspose.Medical for Java DICOM 转 JPG 使您能够：</p>
+<p>毫不费力地转换DICOM文件JPG格式。Aspose.Medical for Java DICOM to JPG 使您能够：</p>
 
 <ul>
 <li>简化的图像共享和协作： Aspose.Medical DICOM 到 JPG 的转换允许您将医学图像转换为普遍认可的 JPG 格式。这简化了与患者、同事和专家的图像共享，以便于咨询、协作和改善沟通。</li>

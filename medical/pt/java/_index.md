@@ -1,13 +1,13 @@
 ---
-title: Java DICOM Medical Document Processing API - Aspose 
+title: Java DICOM API de Processamento de Documentos Médicos - Aspose 
 weight: 1000
 
-description: Biblioteca de Java para trabalhar com arquivos médicos DICOM. 
+description: Biblioteca Java para trabalhar com arquivos médicos DICOM. 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Java API para processar arquivos médicos DICOM" h2="Processe, analise e visualize dados médicos em vários formatos sem software externo. Gere relatórios abrangentes para exploração de dados perspicaz." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="API Java para processar arquivos médicos DICOM" h2="Processe, analise e visualize dados médicos em vários formatos sem software externo. Gere relatórios abrangentes para exploração de dados perspicaz." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 

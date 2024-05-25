@@ -1,19 +1,19 @@
 ---
-title: Java API xử lý tài liệu y tế DICOM - Aspose 
+title: API xử lý tài liệu y tế Java DICOM - Aspose 
 weight: 1000
 
-description: Thư viện C # ASPJava VBJava để làm việc với các tệp y tế DICOM. 
+description: Thư viện Java để làm việc với các tệp y tế DICOM. 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="API Java để xử lý hồ sơ y tế DICOM" h2="Xử lý, phân tích và trực quan hóa dữ liệu y tế ở nhiều định dạng khác nhau mà không cần phần mềm bên ngoài. Tạo báo cáo toàn diện để khám phá dữ liệu chuyên sâu." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="API Java để xử lý các tệp y tế DICOM" h2="Xử lý, phân tích và trực quan hóa dữ liệu y tế ở nhiều định dạng khác nhau mà không cần phần mềm bên ngoài. Tạo báo cáo toàn diện để khám phá dữ liệu chuyên sâu." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Aspose.Medical for Java Tính năng">}}
 
-<p>Aspose.Medical for Java là một API xử lý dữ liệu y tế mạnh mẽ được thiết kế cho các nhiệm vụ quản lý và thao tác khác nhau trên các định dạng tệp y tế đa dạng. API cho phép bạn:</p>
+<p>Aspose.Medical for Java là một API xử lý dữ liệu y tế mạnh mẽ được thiết kế cho các tác vụ quản lý và thao tác khác nhau trên các định dạng tệp y tế khác nhau. API cho phép bạn:</p>
 
 <ul>
 <li>Chuyển đổi định dạng: Điều này bao gồm chuyển đổi các tệp DICOM sang các định dạng thường được sử dụng khác như JPEG, PNG, XML, JSON hoặc NIfTI để phân tích, trực quan hóa hoặc chia sẻ thêm.</li>

@@ -2,12 +2,12 @@
 title: On-Premise-Lösung für medizinische Dateiformate 
 weight: 1000
 
-description: Erstellen Sie DICOM- und andere Anwendungen für die Verarbeitung medizinischer Formate mit Aspose Medical On-Premise-APIs
+description: Erstellen Sie DICOM- und andere Anwendungen zur Verarbeitung medizinischer Formate mit Aspose Medical On-Premise-APIs
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM-Lösung für medizinische Dateiformate" h2="Aspose.Medical bietet vollständige und effiziente Lösungen für die Verarbeitung von DICOM- und anderen medizinischen Dateiformaten" logoImageSrc="/medical/images/aspose_medical-brand.svg" imageAlt="Aspose.Medical Produktfamilie" subTitlepfName="Aspose.Medical">}}
+{{< blocks/products/pf/upper-banner h1="DICOM-Lösung für das medizinische Dateiformat" h2="Aspose.Medical bietet vollständige und effiziente Lösungen für die Verarbeitung von DICOM- und anderen medizinischen Dateiformaten" logoImageSrc="/medical/images/aspose_medical-brand.svg" imageAlt="Aspose.Medical Produktfamilie" subTitlepfName="Aspose.Medical">}}
 
 {{< blocks/products/pf/main-container >}}
 
@@ -18,7 +18,7 @@ On-Premise-.NET-APIs zur Manipulation von DICOM und anderen medizinischen Format
 {{< /blocks/products/pf/product >}}
 
 {{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
-Native Java-APIs zur Bearbeitung von DICOM und anderen medizinischen Formaten zur Entwicklung von Desktop-, Web- und mobilen Anwendungen.
+Native Java-APIs zur Manipulation von DICOM und anderen medizinischen Formaten zur Entwicklung von Desktop-, Web- und mobilen Anwendungen.
 {{< /blocks/products/pf/product >}}
 
 {{< /blocks/products/pf/main-container >}}

@@ -7,7 +7,7 @@ description: DICOM医療ファイルを操作するためのJavaライブラリ�
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM医療ファイルを処理するためのJava API" h2="外部ソフトウェアを使用せずに、さまざまな形式の医療データを処理、分析、視覚化します。洞察に満ちたデータ探索のための包括的なレポートを生成します。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM医療ファイルを処理するためのJavaAPI" h2="外部ソフトウェアを使用せずに、さまざまな形式の医療データを処理、分析、視覚化します。洞察に満ちたデータ探索のための包括的なレポートを生成します。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 

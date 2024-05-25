@@ -2,18 +2,18 @@
 title: Java API pro převod JPG na DICOM - Aspose.Medical
 weight: 8000
 
-description: Informace o Aspose.Medical for Java API pro převod JPG na DICOM
+description: Informace o Aspose.Medical pro Java API pro převod JPG na DICOM
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API pro převod JPG na DICOM" h2="Bezproblémový převod obrázků JPG do formátu DICOM" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical pro Java API pro převod JPG na DICOM" h2="Bezproblémový převod obrázků JPG do formátu DICOM" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Funkce JPG na DICOM">}}
 
-<p>Bez námahy převádějte soubory JPG ve formátu DICOM. Aspose.Medical for Java JPG na DICOM vám umožní:</p>
+<p>Bez námahy převádějte soubory JPG ve formátu DICOM. Aspose.Medical pro Java JPG na DICOM vám umožňuje:</p>
 
 <ul>
 <li>Začlenění externích snímků do pracovních postupů DICOM: Aspose.Medical umožňuje bezproblémově integrovat externí obrazová data, jako jsou klinické fotografie nebo patologické preparáty zachycené ve formátu JPG, do pracovních postupů DICOM. Převodem JPG na DICOM můžete tyto cenné vizuální informace začlenit pro komplexní analýzu pacientů a správu případů ve standardizovaném formátu.</li>

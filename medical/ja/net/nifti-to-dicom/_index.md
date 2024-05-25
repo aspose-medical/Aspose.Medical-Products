@@ -7,7 +7,7 @@ description: NIfTIをDICOMに変換するためのAspose.Medical for .NET APIに
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net NIFTI を Decom に変換する API" h2="NIfTIをDICOMに変換して、スタディ結果を処理および保存" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="NIfTI を DICOM に変換するための API Aspose.Medical for .NET" h2="NIfTIをDICOMに変換して、スタディ結果を処理および保存" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 

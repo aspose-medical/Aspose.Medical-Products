@@ -7,13 +7,13 @@ description: Thông tin về API Aspose.Medical for .NET để chuyển đổi D
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API để Convette Decom đến Nifti" h2="Chuyển đổi DICOM sang NIfTI để phân tích các nghiên cứu hình ảnh thần kinh" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API để biến DICOM thành NIfTI" h2="Chuyển đổi DICOM sang NIfTI để phân tích các nghiên cứu hình ảnh thần kinh" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Các tính năng của DICOM sang NIfTI">}}
 
-<p>Nhiều nghiên cứu được trình bày và lưu trữ ở định dạng DICOM, trong khi định dạng NIfTY được sử dụng rộng rãi cho các nghiên cứu hình ảnh thần kinh. Chuyển đổi DICOM sang NIfTY để sử dụng phần mềm phân tích dữ liệu hình ảnh thần kinh chuyên dụng. Aspose.Medical for .NET DICOM to NIfTY trao quyền cho bạn:</p>
+<p>Nhiều nghiên cứu được trình bày và lưu trữ ở định dạng DICOM, trong khi định dạng NIfTI được sử dụng rộng rãi cho các nghiên cứu hình ảnh thần kinh. Chuyển đổi DICOM sang NIfTI để sử dụng phần mềm phân tích dữ liệu hình ảnh thần kinh chuyên dụng. Aspose.Medical for .NET DICOM to NIfTI trao quyền cho bạn:</p>
 
 <ul>
 <li>Tăng cường khả năng truy cập và cộng tác dữ liệu: NIfTI cung cấp định dạng mở và thân thiện với người dùng hơn DICOM. Chuyển đổi Aspose.Medical cho phép các nhà nghiên cứu và bác sĩ lâm sàng chia sẻ dữ liệu hình ảnh thần kinh hiệu quả hơn.</li>

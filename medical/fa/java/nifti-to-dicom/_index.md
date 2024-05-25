@@ -1,19 +1,19 @@
 ---
-title: Java API برای تبدیل NIfTI به DICOM - Aspose.Medical
+title: API جاوا برای تبدیل NIfTI به DICOM - Aspose.Medical
 weight: 10000
 
-description: اطلاعات در مورد API Aspose.Medical for Java برای تبدیل NIfTI به DICOM
+description: اطلاعات در مورد Aspose.Medical برای API جاوا برای تبدیل NIfTI به DICOM
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net api برای convet nifti به decom" h2="تبدیل NIfTI به DICOM برای پردازش و ذخیره نتایج مطالعه" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical برای جاوا API برای convet NIfTI به DICOM" h2="تبدیل NIfTI به DICOM برای پردازش و ذخیره نتایج مطالعه" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="NIfTI به ویژگی های DICOM">}}
 
-<p>در حالی که DICOM استاندارد صنعت برای تصویربرداری پزشکی است، NIfTI در تحقیقات تصویربرداری عصبی برتری دارد. با این حال، بسیاری از ابزارهای تجزیه و تحلیل تخصصی نیاز به داده های DICOM دارند. Aspose.Medical for Java NIfTI به DICOM شما را قادر می سازد تا این شکاف را پر کنید و پتانسیل کامل داده های تصویربرداری عصبی خود را باز کنید و شما را قادر می سازد:</p>
+<p>در حالی که DICOM استاندارد صنعت برای تصویربرداری پزشکی است، NIfTI در تحقیقات تصویربرداری عصبی برتری دارد. با این حال، بسیاری از ابزارهای تجزیه و تحلیل تخصصی نیاز به داده های DICOM دارند. Aspose.Medical برای Java NIfTI به DICOM شما را قادر می سازد تا این شکاف را پر کنید و پتانسیل کامل داده های تصویربرداری عصبی خود را باز کنید و شما را قادر می سازد:</p>
 
 <ul>
 <li>تسهیل ادغام با گردش کار مبتنی بر DICOM: داده های NIfTI خود را به فرمت DICOM تبدیل کنید و ادغام اسان با PACS (سیستم ارشیو تصویر و ارتباطات) و سایر ابزارهای تجزیه و تحلیل مبتنی بر DICOM را امکان پذیر کنید. این به شما اجازه می دهد تا از قابلیت های گسترده و سازگاری این سیستم ها برای پردازش تصویر پیشرفته، تجسم و تجزیه و تحلیل مشترک در اکوسیستم تصویربرداری پزشکی گسترده تر استفاده کنید.</li>

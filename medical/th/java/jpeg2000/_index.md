@@ -2,7 +2,7 @@
 title: Java API เพื่อประมวลผลรูปแบบภาพ Jpeg2000 - Aspose.Medical
 weight: 2000
 
-description: Aspose.Medical for Java API เพื่อประมวลผลรูปแบบภาพ Jpeg2000
+description: Aspose.Medical สําหรับ Java API เพื่อประมวลผลรูปแบบภาพ Jpeg2000
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,7 +13,7 @@ description: Aspose.Medical for Java API เพื่อประมวลผล
 
 {{< blocks/products/pf/feature-page-section h2="คุณสมบัติ DICOM Jpeg2000">}}
 
-<p>Aspose.Medical for Java DICOM API ช่วยให้คุณสามารถ:</p>
+<p>Aspose.Medical สําหรับ Java DICOM API ช่วยให้คุณสามารถ:</p>
 
 <ul>
 <li>แปลงรูปภาพ DICOM เป็นรูปแบบ JPEG2000: ลดขนาดไฟล์ได้ถึง 10 เท่าในขณะที่รักษาคุณภาพของภาพเต็มรูปแบบ เหมาะสําหรับการเก็บถาวร ส่ง หรือแชร์รูปภาพ</li>

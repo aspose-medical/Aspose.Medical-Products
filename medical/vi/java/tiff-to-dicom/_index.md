@@ -2,18 +2,18 @@
 title: Java API để chuyển đổi TIFF sang DICOM - Aspose.Medical
 weight: 14000
 
-description: Thông tin về API Aspose.Medical for Java để chuyển đổi TIFF sang DICOM
+description: Thông tin về Aspose.Medical cho Java API để chuyển đổi TIFF sang DICOM
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="API Aspose.Medical for Java để chuyển TIFF sang DICOM" h2="Chuyển đổi liền mạch hình ảnh TIFF sang định dạng DICOM" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical cho Java API để phù hợp với TIFF đến DICOM" h2="Chuyển đổi liền mạch hình ảnh TIFF sang định dạng DICOM" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Các tính năng của TIFF to DICOM">}}
 
-<p>Dễ dàng chuyển đổi các tệp TIFF định dạng DICOM. Aspose.Medical for Java TIFF to DICOM trao quyền cho bạn:</p>
+<p>Dễ dàng chuyển đổi các tệp TIFF định dạng DICOM. Aspose.Medical cho Java TIFF to DICOM trao quyền cho bạn:</p>
 
 <ul>
 <li>Kết hợp hình ảnh bên ngoài vào quy trình làm việc DICOM: Aspose.Medical cho phép bạn tích hợp liền mạch dữ liệu hình ảnh bên ngoài, chẳng hạn như ảnh lâm sàng hoặc slide bệnh lý được chụp ở định dạng TIFF, vào quy trình làm việc DICOM của bạn. Bằng cách chuyển đổi TIFF sang DICOM, bạn có thể kết hợp thông tin trực quan có giá trị này để phân tích bệnh nhân toàn diện và quản lý trường hợp trong một định dạng tiêu chuẩn.</li>

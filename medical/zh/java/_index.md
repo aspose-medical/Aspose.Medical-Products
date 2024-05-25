@@ -2,12 +2,12 @@
 title: Java DICOM 医疗文档处理 API - Aspose 
 weight: 1000
 
-description: Java用于处理 DICOM 医疗文件的库。 
+description: Java 库用于处理 DICOM 医疗文件。 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Java API 处理 DICOM Medical 文件" h2="无需外部软件即可处理、分析和可视化各种格式的医疗数据。生成全面的报告，以便进行富有洞察力的数据探索。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="用于处理 DICOM Medical 文件的 Java API" h2="无需外部软件即可处理、分析和可视化各种格式的医疗数据。生成全面的报告，以便进行富有洞察力的数据探索。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 

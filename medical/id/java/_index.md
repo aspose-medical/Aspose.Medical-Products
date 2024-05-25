@@ -1,13 +1,13 @@
 ---
-title: Java API Pemrosesan Dokumen Medis DICOM - Aspose 
+title: API Pemrosesan Dokumen Medis Java DICOM - Aspose 
 weight: 1000
 
-description: Java perpustakaan untuk bekerja dengan file medis DICOM. 
+description: Perpustakaan Java untuk bekerja dengan file medis DICOM. 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Java API untuk Memproses File Medis DICOM" h2="Memproses, menganalisis, dan memvisualisasikan data medis dalam berbagai format tanpa perangkat lunak eksternal. Buat laporan komprehensif untuk eksplorasi data yang berwawasan." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="API Java untuk Memproses File Medis DICOM" h2="Memproses, menganalisis, dan memvisualisasikan data medis dalam berbagai format tanpa perangkat lunak eksternal. Buat laporan komprehensif untuk eksplorasi data yang berwawasan." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 

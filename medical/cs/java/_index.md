@@ -2,7 +2,7 @@
 title: Java DICOM Rozhraní API pro zpracování lékařských dokumentů - Aspose 
 weight: 1000
 
-description: Knihovna Java pro práci se zdravotnickými soubory DICOM. 
+description: Knihovna Java pro práci s lékařskými soubory DICOM. 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}

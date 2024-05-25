@@ -13,7 +13,7 @@ description: Information about Aspose.Medical for Java API to convert DICOM to N
 
 {{< blocks/products/pf/feature-page-section h2="DICOM to NIfTI Features">}}
 
-<p>Many studies are presented and stored in the DICOM format, while the NIfTY format is widely used for neuroimaging studies. Convert DICOM to NIfTY to use specialized neuroimaging data analysis software. Aspose.Medical for Java DICOM to NIfTY empowers you to:</p>
+<p>Many studies are presented and stored in the DICOM format, while the NIfTI format is widely used for neuroimaging studies. Convert DICOM to NIfTI to use specialized neuroimaging data analysis software. Aspose.Medical for Java DICOM to NIfTI empowers you to:</p>
 
 <ul>
 <li>Enhance Data Accessibility and Collaboration: NIfTI offers a more user-friendly and open format than DICOM. Aspose.Medical' conversion enables researchers and clinicians to share neuroimaging data more efficiently.</li>

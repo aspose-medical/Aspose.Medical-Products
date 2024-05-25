@@ -1,19 +1,19 @@
 ---
-title: Java DICOM معالجة المستندات الطبية API - Aspose 
+title: جافا DICOM معالجة الوثائق الطبية API - Aspose 
 weight: 1000
 
-description: مكتبة Java للعمل مع ملفات DICOM الطبية. 
+description: مكتبة Java للعمل مع الملفات الطبية DICOM. 
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Java API لمعالجة ملفات DICOM الطبية" h2="معالجة البيانات الطبية وتحليلها وتصورها بتنسيقات مختلفة بدون برامج خارجية. إنشاء تقارير شاملة لاستكشاف البيانات الثاقبة." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="واجهة برمجة تطبيقات Java لمعالجة ملفات DICOM الطبية" h2="معالجة البيانات الطبية وتحليلها وتصورها بتنسيقات مختلفة بدون برامج خارجية. إنشاء تقارير شاملة لاستكشاف البيانات الثاقبة." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Aspose.Medical for Java ملامح">}}
 
-<p>Aspose.Medical for Java هي واجهة برمجة تطبيقات قوية لمعالجة البيانات الطبية مصممة لمختلف مهام الإدارة والمعالجة عبر تنسيقات الملفات الطبية المتنوعة. تمكنك واجهة برمجة التطبيقات من:</p>
+<p>Aspose.Medical ل Java هي واجهة برمجة تطبيقات قوية لمعالجة البيانات الطبية مصممة لمختلف مهام الإدارة والمعالجة عبر تنسيقات الملفات الطبية المتنوعة. تمكنك واجهة برمجة التطبيقات من:</p>
 
 <ul>
 <li>تحويل التنسيق: يتضمن ذلك تحويل ملفات DICOM إلى تنسيقات أخرى شائعة الاستخدام مثل JPEG أو PNG أو XML أو JSON أو NIfTI لمزيد من التحليل أو التصور أو المشاركة.</li>

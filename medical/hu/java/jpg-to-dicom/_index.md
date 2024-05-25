@@ -2,18 +2,18 @@
 title: Java API a JPG konvertálásához DICOM - Aspose.Medical
 weight: 8000
 
-description: Információ Aspose.Medical for Java API-ról a JPG konvertálásához DICOM formátumba
+description: Információ a Aspose.Medical for Java API JPG DICOM formátumba konvertálásához
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java API-t a JPG DICOM-hoz való hozzárendeléséhez" h2="JPG képek zökkenőmentes konvertálása DICOM formátumba" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical a Java API-hoz a JPG és a DICOM összekapcsolásához" h2="JPG képek zökkenőmentes konvertálása DICOM formátumba" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="JPG-ről DICOM-ra Jellemzők">}}
 
-<p>Könnyedén konvertálja a JPG fájlokat DICOM formátumban. Aspose.Medical for Java JPG to DICOM lehetővé teszi, hogy:</p>
+<p>Könnyedén konvertálja a JPG fájlokat DICOM formátumban. Aspose.Medical a Java JPG to DICOM lehetővé teszi, hogy:</p>
 
 <ul>
 <li>Külső képek beépítése DICOM-munkafolyamatokba: Aspose.Medical lehetővé teszi a külső képadatok, például a JPG formátumban rögzített klinikai fényképek vagy patológiai diák zökkenőmentes integrálását a DICOM-munkafolyamatokba. A JPG DICOM formátumba konvertálásával ezt az értékes vizuális információt beépítheti az átfogó betegelemzéshez és esetkezeléshez egy szabványosított formátumban.</li>

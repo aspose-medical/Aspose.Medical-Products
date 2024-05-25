@@ -1,19 +1,19 @@
 ---
-title: Java TIFFをDICOMに変換するAPI - Aspose.Medical
+title: TIFFをDICOMに変換するJavaAPI-Aspose.Medical
 weight: 14000
 
-description: TIFF Aspose.Medical for Java DICOMに変換するためのAPIに関する情報
+description: TIFFをDICOMに変換するためのAspose.Medical for Java APIに関する情報
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java TIFFをDICOMに変換するAPI" h2="TIFF画像をDICOM形式にシームレスに変換" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="TIFFをDICOMに変換するためのJavaAPIのAspose.Medical" h2="TIFF画像をDICOM形式にシームレスに変換" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="TIFFからDICOMへの機能">}}
 
-<p>TIFFファイルのDICOM形式を簡単に変換します。Aspose.Medical for Java TIFF から DICOM への変換により、次のことが可能になります。</p>
+<p>TIFFファイルのDICOM形式を簡単に変換します。Aspose.Medical for Java TIFF to DICOMを使用すると、次のことが可能になります。</p>
 
 <ul>
 <li>DICOMワークフローへの外部画像の組み込み:Aspose.Medicalを使用すると、臨床写真やTIFF形式でキャプチャされた病理スライドなどの外部画像データをDICOMワークフローにシームレスに統合できます。TIFFをDICOMに変換することで、この貴重な視覚情報を、標準化されたフォーマット内で包括的な患者分析と症例管理に組み込むことができます。</li>

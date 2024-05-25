@@ -1,19 +1,19 @@
 ---
-title: Java API para converter NIfTI em DICOM - Aspose.Medical
+title: API Java para converter NIfTI em DICOM - Aspose.Medical
 weight: 10000
 
-description: Informações sobre Aspose.Medical for Java API para converter NIfTI em DICOM
+description: Informações sobre Aspose.Medical para que a API Java converta NIfTI em DICOM
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API para convet Nifti para Decom" h2="Converter NIfTI em DICOM para processar e armazenar resultados de estudos" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical para que a API Java convete NIfTI para DICOM" h2="Converter NIfTI em DICOM para processar e armazenar resultados de estudos" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Recursos do NIfTI para DICOM">}}
 
-<p>Embora o DICOM continue sendo o padrão da indústria para imagens médicas, o NIfTI se destaca na pesquisa de neuroimagem. No entanto, muitas ferramentas de análise especializadas requerem dados DICOM. Aspose.Medical for Java NIfTI to DICOM permite que você preencha essa lacuna e libere todo o potencial de seus dados de neuroimagem e permite que você:</p>
+<p>Embora o DICOM continue sendo o padrão da indústria para imagens médicas, o NIfTI se destaca na pesquisa de neuroimagem. No entanto, muitas ferramentas de análise especializadas requerem dados DICOM. Aspose.Medical para Java NIfTI para DICOM capacita você a preencher essa lacuna e desbloquear todo o potencial de seus dados de neuroimagem e capacita você a:</p>
 
 <ul>
 <li>Facilite a integração com fluxos de trabalho baseados em DICOM: converta seus dados NIfTI em formato DICOM, permitindo integração sem esforço com PACS (Picture Archiving and Communication System) e outras ferramentas de análise baseadas em DICOM. Isso permite que você aproveite a ampla funcionalidade e compatibilidade que esses sistemas oferecem para processamento avançado de imagens, visualização e análise colaborativa dentro do ecossistema mais amplo de imagens médicas.</li>

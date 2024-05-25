@@ -1,19 +1,19 @@
 ---
-title: Java NIfTI を DICOM に変換する API - Aspose.Medical
+title: NIfTIをDICOMに変換するJava API - Aspose.Medical
 weight: 10000
 
-description: NIfTIをDICOMに変換するためのAspose.Medical for Java APIに関する情報
+description: NIfTIをDICOMに変換するためのJava APIのAspose.Medicalに関する情報
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net NIFTI を Decom に変換する API" h2="NIfTIをDICOMに変換して、スタディ結果を処理および保存" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="NIfTI を DICOM に変換するための Java API のAspose.Medical" h2="NIfTIをDICOMに変換して、スタディ結果を処理および保存" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="NIfTIからDICOMへの機能">}}
 
-<p>DICOMは依然として医用画像の業界標準ですが、NIfTIは神経画像研究に優れています。ただし、多くの特殊な分析ツールでは、DICOMデータが必要です。Aspose.Medical for Java NIfTI to DICOMは、このギャップを埋め、ニューロイメージングデータの可能性を最大限に引き出すことを可能にし、次のことを可能にします。</p>
+<p>DICOMは依然として医用画像の業界標準ですが、NIfTIは神経画像研究に優れています。ただし、多くの特殊な分析ツールでは、DICOMデータが必要です。Aspose.Medical for Java NIfTI to DICOMは、このギャップを埋め、ニューロイメージングデータの可能性を最大限に引き出すための力となり、以下のことを可能にします。</p>
 
 <ul>
 <li>DICOMベースのワークフローとの統合を促進:NIfTIデータをDICOM形式に変換し、PACS(Picture Archiving and Communication System)やその他のDICOMベースの分析ツールと簡単に統合できます。これにより、これらのシステムが提供する広範な機能と互換性を活用して、より広範な医用画像エコシステム内で高度な画像処理、視覚化、および共同分析を行うことができます。</li>

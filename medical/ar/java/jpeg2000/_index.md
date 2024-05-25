@@ -1,19 +1,19 @@
 ---
-title: Java API لمعالجة تنسيق صورة Jpeg2000 - Aspose.Medical
+title: واجهة برمجة تطبيقات Java لمعالجة تنسيق صورة Jpeg2000 - Aspose.Medical
 weight: 2000
 
-description: Aspose.Medical for Java API لمعالجة تنسيق صورة Jpeg2000
+description: Aspose.Medical لواجهة برمجة تطبيقات Java لمعالجة تنسيق صورة Jpeg2000
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java دعم Jpeg2000" h2="قم بتبسيط حلول الرعاية الصحية الخاصة بك عن طريق تقليل متطلبات التخزين وتسريع نقل الصور باستخدام ميزات Jpeg2000 Aspose.Medical" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical لدعم Java Jpeg2000" h2="قم بتبسيط حلول الرعاية الصحية الخاصة بك عن طريق تقليل متطلبات التخزين وتسريع نقل الصور باستخدام ميزات Jpeg2000 Aspose.Medical" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="ميزات DICOM Jpeg2000">}}
 
-<p>Aspose.Medical for Java DICOM API تمكنك من:</p>
+<p>Aspose.Medical لواجهة برمجة تطبيقات Java DICOM API تمكنك من:</p>
 
 <ul>
 <li>تحويل صور DICOM إلى تنسيق JPEG2000: قلل أحجام الملفات بما يصل إلى 10 مرات مع الحفاظ على جودة الصورة الكاملة ، وهو مثالي لأرشفة الصور أو نقلها أو مشاركتها.</li>

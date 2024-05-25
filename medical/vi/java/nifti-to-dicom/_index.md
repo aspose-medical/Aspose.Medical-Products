@@ -2,18 +2,18 @@
 title: Java API để chuyển đổi NIfTI sang DICOM - Aspose.Medical
 weight: 10000
 
-description: Thông tin về API Aspose.Medical for Java để chuyển đổi NIfTI sang DICOM
+description: Thông tin về Aspose.Medical cho Java API để chuyển đổi NIfTI sang DICOM
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API để convet nifti để decom" h2="Chuyển đổi NIfTI sang DICOM để xử lý và lưu trữ kết quả học tập" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical cho API Java để chuyển NIfTI sang DICOM" h2="Chuyển đổi NIfTI sang DICOM để xử lý và lưu trữ kết quả học tập" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Các tính năng của NIfTI to DICOM">}}
 
-<p>Trong khi DICOM vẫn là tiêu chuẩn công nghiệp cho hình ảnh y tế, NIfTI vượt trội trong nghiên cứu hình ảnh thần kinh. Tuy nhiên, nhiều công cụ phân tích chuyên ngành yêu cầu dữ liệu DICOM. Aspose.Medical for Java NIfTI đến DICOM cho phép bạn thu hẹp khoảng cách này và mở khóa toàn bộ tiềm năng của dữ liệu hình ảnh thần kinh của bạn và trao quyền cho bạn:</p>
+<p>Trong khi DICOM vẫn là tiêu chuẩn công nghiệp cho hình ảnh y tế, NIfTI vượt trội trong nghiên cứu hình ảnh thần kinh. Tuy nhiên, nhiều công cụ phân tích chuyên ngành yêu cầu dữ liệu DICOM. Aspose.Medical cho Java NIfTI đến DICOM cho phép bạn thu hẹp khoảng cách này và mở khóa toàn bộ tiềm năng của dữ liệu hình ảnh thần kinh của bạn và trao quyền cho bạn:</p>
 
 <ul>
 <li>Tạo điều kiện tích hợp với quy trình làm việc dựa trên DICOM: Chuyển đổi dữ liệu NIfTI của bạn sang định dạng DICOM, cho phép tích hợp dễ dàng với PACS (Hệ thống lưu trữ và truyền thông hình ảnh) và các công cụ phân tích dựa trên DICOM khác. Điều này cho phép bạn tận dụng chức năng mở rộng và khả năng tương thích mà các hệ thống này cung cấp để xử lý hình ảnh nâng cao, trực quan hóa và phân tích cộng tác trong hệ sinh thái hình ảnh y tế rộng lớn hơn.</li>

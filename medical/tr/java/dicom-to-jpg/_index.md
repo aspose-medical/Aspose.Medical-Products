@@ -1,19 +1,19 @@
 ---
-title: DICOM'u JPG'ye dönüştürmek için API Java - Aspose.Medical
+title: DICOM'u JPG'ye dönüştürmek için Java API - Aspose.Medical
 weight: 7000
 
-description: DICOM'u JPG'ye dönüştürmek için Aspose.Medical for Java API hakkında bilgi
+description: Java API'nin DICOM'u JPG'ye Aspose.Medical dönüştüreceği hakkında bilgi
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM'u JPG'ye dönüştürmek için Aspose.Medical for Java API" h2="Daha kolay görüntü paylaşımı için DICOM'u JPG'ye dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Java API'sinin DICOM'u JPG'ye dönüştürmesi Aspose.Medical" h2="Daha kolay görüntü paylaşımı için DICOM'u JPG'ye dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM'dan JPG'ye Özellikler">}}
 
-<p>DICOM dosyalarını zahmetsizce JPG formatına dönüştürün. Aspose.Medical for Java DICOM'dan JPG'ye şunları yapmanızı sağlar:</p>
+<p>DICOM dosyalarını zahmetsizce JPG formatına dönüştürün. Java DICOM to JPG için Aspose.Medical şunları yapmanızı sağlar:</p>
 
 <ul>
 <li>Basitleştirilmiş Görüntü Paylaşımı ve İşbirliği: Aspose.Medical DICOM'dan JPG'ye dönüştürme, tıbbi görüntüleri evrensel olarak tanınan bir JPG formatına dönüştürmenize olanak tanır. Bu, daha kolay konsültasyon, işbirliği ve gelişmiş iletişim için hastalar, meslektaşlar ve uzmanlarla görüntü paylaşımını basitleştirir.</li>

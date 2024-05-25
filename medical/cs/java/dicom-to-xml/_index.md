@@ -2,18 +2,18 @@
 title: Java API pro převod DICOM na XML - Aspose.Medical
 weight: 3000
 
-description: Informace o rozhraní API Aspose.Medical for Java převod DICOM na XML
+description: Informace o Aspose.Medical pro Java API pro převod DICOM na XML
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Aspose.Medical for Java rozhraní API pro převod DICOM na XML" h2="Převod DICOM na XML pro zjednodušení přenosu a zpracování lékařských dat" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical pro rozhraní Java API pro převod DICOM na XML" h2="Převod DICOM na XML pro zjednodušení přenosu a zpracování lékařských dat" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Funkce DICOM na XML">}}
 
-<p>Bez námahy převádějte soubory DICOM, standardní formát pro lékařské snímky a data, do univerzálně čitelného formátu XML. Aspose.Medical for Java DICOM na XML umožňuje:</p>
+<p>Bez námahy převádějte soubory DICOM, standardní formát pro lékařské snímky a data, do univerzálně čitelného formátu XML. Aspose.Medical pro Java DICOM do XML vám umožňuje:</p>
 
 <ul>
 <li>Standardní a vlastní převod DICOM na XML: Aspose.Medical for Java nabízí flexibilitu při převodu DICOM na XML. Vyberte si z převodu DICOM na XML podle specifikací. Případně můžete vytvořit vlastní mapování pro přizpůsobení výstupu XML vašim požadavkům.</li>

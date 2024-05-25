@@ -7,7 +7,7 @@ description: ข้อมูลเกี่ยวกับ Aspose.Medical for .N
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API เพื่อเรียกประชุม NIFTI ไปยัง DECOM" h2="แปลง NIfTI เป็น DICOM เพื่อประมวลผลและจัดเก็บผลการศึกษา" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API เพื่อเรียกประชุม NIfTI เป็น DICOM" h2="แปลง NIfTI เป็น DICOM เพื่อประมวลผลและจัดเก็บผลการศึกษา" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 

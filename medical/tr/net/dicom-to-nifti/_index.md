@@ -7,13 +7,13 @@ description: DICOM'u NIfTI'ye dönüştürmek için Aspose.Medical for .NET API 
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API'si decom'u nifti'ye dönüştürmek için" h2="Nörogörüntüleme çalışmalarını analiz etmek için DICOM'u NIfTI'ye dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM'u NIfTI'ye dönüştürmek için Aspose.Medical for .NET API" h2="Nörogörüntüleme çalışmalarını analiz etmek için DICOM'u NIfTI'ye dönüştürün" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM - NIfTI Özellikleri">}}
 
-<p>Birçok çalışma DICOM formatında sunulur ve saklanırken, NIfTY formatı nörogörüntüleme çalışmaları için yaygın olarak kullanılmaktadır. Özel beyin görüntüleme veri analizi yazılımını kullanmak için DICOM'u NIfTY'ye dönüştürün. Aspose.Medical for .NET DICOM'dan NIfTY'ye şunları yapmanızı sağlar:</p>
+<p>Birçok çalışma DICOM formatında sunulur ve saklanırken, NIfTI formatı nörogörüntüleme çalışmaları için yaygın olarak kullanılmaktadır. Özel beyin görüntüleme veri analizi yazılımını kullanmak için DICOM'u NIfTI'ye dönüştürün. Aspose.Medical for .NET DICOM'dan NIfTI'ye şunları yapmanızı sağlar:</p>
 
 <ul>
 <li>Veri Erişilebilirliğini ve İşbirliğini Geliştirin: NIfTI, DICOM'dan daha kullanıcı dostu ve açık bir format sunar. Aspose.Medical' dönüşümü, araştırmacıların ve klinisyenlerin nörogörüntüleme verilerini daha verimli bir şekilde paylaşmasını sağlar.</li>

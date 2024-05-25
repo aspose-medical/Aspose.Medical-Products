@@ -2,18 +2,18 @@
 title: Java API om DICOM naar NIfTI te converteren - Aspose.Medical
 weight: 9000
 
-description: Informatie over Aspose.Medical for Java API om DICOM naar NIfTI te converteren
+description: Informatie over Aspose.Medical voor Java API om DICOM naar NIfTI te converteren
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API naar Convette Decom naar Nifti" h2="Converteer DICOM naar NIfTI om neuroimaging-onderzoeken te analyseren" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical voor Java API om DICOM te convet naar NIfTI" h2="Converteer DICOM naar NIfTI om neuroimaging-onderzoeken te analyseren" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM naar NIfTI-functies">}}
 
-<p>Veel onderzoeken worden gepresenteerd en opgeslagen in het DICOM-formaat, terwijl het NIfTY-formaat veel wordt gebruikt voor neuroimaging-onderzoeken. Converteer DICOM naar NIfTY om gespecialiseerde software voor neuroimaging-gegevensanalyse te gebruiken. Aspose.Medical for Java DICOM to NIfTY stelt u in staat om:</p>
+<p>Veel onderzoeken worden gepresenteerd en opgeslagen in het DICOM-formaat, terwijl het NIfTI-formaat veel wordt gebruikt voor neuroimaging-onderzoeken. Converteer DICOM naar NIfTI om gespecialiseerde software voor neuroimaging-gegevensanalyse te gebruiken. Aspose.Medical voor Java DICOM to NIfTI stelt u in staat om:</p>
 
 <ul>
 <li>Verbeter de toegankelijkheid en samenwerking van gegevens: NIfTI biedt een gebruiksvriendelijker en opener formaat dan DICOM. Aspose.Medical' conversie stelt onderzoekers en clinici in staat om neuroimaging-gegevens efficiënter te delen.</li>

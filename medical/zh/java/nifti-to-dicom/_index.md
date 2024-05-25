@@ -1,19 +1,19 @@
 ---
-title: Java 将NIfTI转换为DICOM的API - Aspose.Medical
+title: 将NIfTI转换为DICOM的Java API - Aspose.Medical
 weight: 10000
 
-description: 有关将NIfTI转换为DICOM Aspose.Medical for Java API的信息
+description: 有关将NIfTI转换为DICOM的Java API的Aspose.Medical信息
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net API to convet nifti to decom" h2="将NIfTI转换为DICOM以处理和存储研究结果" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical Java API 将 NIfTI 转换为 DICOM" h2="将NIfTI转换为DICOM以处理和存储研究结果" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for Java" >}}
 
 {{< blocks/products/pf/feature-page-section h2="NIfTI 到 DICOM 功能">}}
 
-<p>虽然 DICOM 仍然是医学成像的行业标准，但 NIfTI 在神经成像研究方面表现出色。但是，许多专用分析工具都需要 DICOM 数据。Aspose.Medical for Java NIfTI到DICOM使您能够弥合这一差距，释放神经影像数据的全部潜力，并使您能够：</p>
+<p>虽然 DICOM 仍然是医学成像的行业标准，但 NIfTI 在神经成像研究方面表现出色。但是，许多专用分析工具都需要 DICOM 数据。Aspose.Medical for Java NIfTI to DICOM 使您能够弥合这一差距，释放神经影像数据的全部潜力，并使您能够：</p>
 
 <ul>
 <li>促进与基于 DICOM 的工作流程的集成：将您的 NIfTI 数据转换为 DICOM 格式，从而轻松与 PACS（图片存档和通信系统）和其他基于 DICOM 的分析工具集成。这使您能够利用这些系统提供的广泛功能和兼容性，在更广泛的医学成像生态系统中进行高级图像处理、可视化和协作分析。</li>

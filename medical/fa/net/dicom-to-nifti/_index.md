@@ -7,13 +7,13 @@ description: اطلاعات در مورد API Aspose.Medical for .NET برای �
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Espose_medical_for_net api برای convette decom به nifti" h2="تبدیل DICOM به NIfTI برای تجزیه و تحلیل مطالعات تصویربرداری عصبی" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Aspose.Medical for .NET API برای convet DICOM به NIfTI" h2="تبدیل DICOM به NIfTI برای تجزیه و تحلیل مطالعات تصویربرداری عصبی" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM به ویژگی های NIfTI">}}
 
-<p>بسیاری از مطالعات در فرمت DICOM ارائه و ذخیره می شوند، در حالی که فرمت NIfTY به طور گسترده ای برای مطالعات تصویربرداری عصبی استفاده می شود. تبدیل DICOM به NIfTY برای استفاده از نرم افزار تجزیه و تحلیل داده های تصویربرداری عصبی تخصصی. Aspose.Medical for .NET DICOM to NIfTY شما را قادر می سازد تا:</p>
+<p>بسیاری از مطالعات در فرمت DICOM ارائه و ذخیره می شوند، در حالی که فرمت NIfTI به طور گسترده ای برای مطالعات تصویربرداری عصبی استفاده می شود. تبدیل DICOM به NIfTI برای استفاده از نرم افزار تجزیه و تحلیل داده های تصویربرداری عصبی تخصصی. Aspose.Medical for .NET DICOM to NIfTI شما را قادر می سازد تا:</p>
 
 <ul>
 <li>افزایش دسترسی و همکاری با داده ها: NIfTI فرمت کاربر پسند تر و بازتری نسبت به DICOM ارائه می دهد. تبدیل Aspose.Medical محققان و پزشکان را قادر می سازد تا داده های تصویربرداری عصبی را به طور موثر تر به اشتراک بگذارند.</li>

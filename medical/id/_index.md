@@ -17,10 +17,6 @@ description: Buat DICOM dan aplikasi pemrosesan format medis lainnya menggunakan
 API .NET Lokal untuk memanipulasi DICOM dan format medis lainnya dalam aplikasi berbasis Windows, Web, iOS & Android.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
-API Java asli untuk memanipulasi DICOM dan format medis lainnya untuk mengembangkan aplikasi desktop, web, seluler.
-{{< /blocks/products/pf/product >}}
-
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

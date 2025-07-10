@@ -17,10 +17,6 @@ description: Aspose Medical On-Premise API'lerini kullanarak DICOM ve diğer tı
 Windows, Web, iOS ve Android tabanlı uygulamalarda DICOM ve diğer tıbbi formatları işlemek için On-Premise API'ler .NET.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
-Masaüstü, web, mobil uygulamalar geliştirmek için DICOM ve diğer tıbbi formatları işlemek için yerel Java API'leri.
-{{< /blocks/products/pf/product >}}
-
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

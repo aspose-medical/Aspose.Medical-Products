@@ -17,10 +17,6 @@ description: Aspose Medical On-Premise API का उपयोग करके D
 विंडोज, वेब, आईओएस और एंड्रॉइड-आधारित अनुप्रयोगों के भीतर डीआईसीओएम और अन्य चिकित्सा प्रारूपों में हेरफेर करने के लिए एपीआई .NET ऑन-प्रिमाइसेस।
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
-डेस्कटॉप, वेब, मोबाइल एप्लिकेशन विकसित करने के लिए DICOM और अन्य चिकित्सा प्रारूपों में हेरफेर करने के लिए मूल Java APIs।
-{{< /blocks/products/pf/product >}}
-
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

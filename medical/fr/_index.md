@@ -17,10 +17,6 @@ description: Créez des applications de traitement DICOM et d’autres formats m
 API de .NET sur site pour manipuler DICOM et d’autres formats médicaux dans les applications Windows, Web, iOS et Android.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
-API Java natives pour manipuler DICOM et d’autres formats médicaux afin de développer des applications de bureau, Web et mobiles.
-{{< /blocks/products/pf/product >}}
-
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

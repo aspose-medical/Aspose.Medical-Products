@@ -17,10 +17,6 @@ description: ایجاد DICOM و دیگر برنامه های کاربردی پ�
 On-Premise api ها .NET تا DICOM و سایر فرمت های پزشکی را در برنامه های مبتنی بر ویندوز، وب، iOS و Android دستکاری کند.
 {{< /blocks/products/pf/product >}}
 
-{{< blocks/products/pf/product pfName="Aspose.Medical for " title="Java" imgSrc="/medical/images/aspose_medical-for-java.svg" productLink="/medical/java/" >}}
-API های بومی جاوا برای دستکاری DICOM و سایر فرمت های پزشکی برای توسعه برنامه های دسکتاپ، وب و تلفن همراه.
-{{< /blocks/products/pf/product >}}
-
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

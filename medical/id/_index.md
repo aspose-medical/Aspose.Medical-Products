@@ -17,6 +17,8 @@ description: Buat DICOM dan aplikasi pemrosesan format medis lainnya menggunakan
 API .NET Lokal untuk memanipulasi DICOM dan format medis lainnya dalam aplikasi berbasis Windows, Web, iOS & Android.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

@@ -17,6 +17,8 @@ description: ایجاد DICOM و دیگر برنامه های کاربردی پ�
 On-Premise api ها .NET تا DICOM و سایر فرمت های پزشکی را در برنامه های مبتنی بر ویندوز، وب، iOS و Android دستکاری کند.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

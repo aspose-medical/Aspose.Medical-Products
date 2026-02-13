@@ -17,6 +17,8 @@ description: Vytvářejte DICOM a další aplikace pro zpracování lékařskýc
 On-Premise .NET API pro manipulaci s DICOM a dalšími lékařskými formáty v aplikacích založených na Windows, webu, iOS a Androidu.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

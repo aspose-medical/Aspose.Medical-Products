@@ -17,6 +17,8 @@ description: DICOM és más orvosi formátumfeldolgozó alkalmazások létrehoz�
 On-Premise API-k .NET a DICOM és más orvosi formátumok manipulálására Windows, Web, iOS és Android alapú alkalmazásokban.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

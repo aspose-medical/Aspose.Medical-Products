@@ -17,6 +17,8 @@ description: Δημιουργήστε DICOM και άλλες εφαρμογές
 On-Premise .NET API για χειρισμό DICOM και άλλων ιατρικών μορφών σε εφαρμογές που βασίζονται σε Windows, Web, iOS & Android.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

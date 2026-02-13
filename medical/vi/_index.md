@@ -17,6 +17,8 @@ description: Tạo DICOM và các ứng dụng xử lý định dạng y tế kh
 API .NET tại chỗ để thao tác DICOM và các định dạng y tế khác trong các ứng dụng dựa trên Windows, Web, iOS và Android.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

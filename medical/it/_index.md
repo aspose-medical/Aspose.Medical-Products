@@ -17,6 +17,8 @@ description: Crea applicazioni DICOM e altre applicazioni di elaborazione di for
 API .NET on-premise per manipolare DICOM e altri formati medici all'interno di applicazioni basate su Windows, Web, iOS e Android.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

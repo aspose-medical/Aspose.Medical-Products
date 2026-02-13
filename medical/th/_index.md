@@ -17,6 +17,8 @@ description: สร้าง DICOM และแอปพลิเคชันก
 .NET API ภายในองค์กรเพื่อจัดการ DICOM และรูปแบบทางการแพทย์อื่นๆ ภายในแอปพลิเคชันที่ใช้ Windows, เว็บ, iOS และ Android
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

@@ -17,6 +17,8 @@ description: إنشاء DICOM وتطبيقات معالجة التنسيق ال�
 واجهات برمجة التطبيقات .NET المحلية لمعالجة DICOM والتنسيقات الطبية الأخرى داخل التطبيقات المستندة إلى Windows و Web و iOS و Android.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

@@ -17,6 +17,8 @@ description: Создание приложений для обработки DIC
 On-Premise .NET API для управления DICOM и другими медицинскими форматами в приложениях на базе Windows, Web, iOS и Android.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

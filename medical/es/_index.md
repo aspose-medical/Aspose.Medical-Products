@@ -17,6 +17,8 @@ description: Cree DICOM y otras aplicaciones de procesamiento de formatos médic
 On-Premise .NET APIs para manipular DICOM y otros formatos médicos dentro de aplicaciones basadas en Windows, Web, iOS y Android.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

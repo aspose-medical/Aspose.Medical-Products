@@ -17,6 +17,8 @@ description: Maak DICOM en andere toepassingen voor het verwerken van medische f
 On-Premise .NET API's om DICOM en andere medische formaten te manipuleren binnen Windows-, web-, iOS- en Android-gebaseerde applicaties.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

@@ -17,6 +17,8 @@ description: Twórz aplikacje do przetwarzania DICOM i innych formatów medyczny
 Lokalne interfejsy API .NET do manipulowania DICOM i innymi formatami medycznymi w aplikacjach opartych na systemach Windows, Web, iOS i Android.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

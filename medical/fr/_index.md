@@ -17,6 +17,8 @@ description: Créez des applications de traitement DICOM et d’autres formats m
 API de .NET sur site pour manipuler DICOM et d’autres formats médicaux dans les applications Windows, Web, iOS et Android.
 {{< /blocks/products/pf/product >}}
 
+{{< /blocks/products/pf/product-card-row >}}
+
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

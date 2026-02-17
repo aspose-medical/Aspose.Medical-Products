@@ -452,6 +452,19 @@ image.Save("chest_xray.png");</code></pre>
     <p>
      Different medical imaging systems and archives may require specific DICOM transfer syntaxes. Aspose.Medical for .NET enables transcoding between various transfer syntaxes including uncompressed formats, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG-LS, and RLE. This is essential for PACS integration, archive optimization, and ensuring compatibility across different healthcare systems. All codecs are implemented in pure .NET, guaranteeing consistent behavior across all platforms.
     </p>
+    <div class="codeblock" id="code">
+     <h3>
+      Transcode DICOM to JPEG 2000 - C#
+     </h3>
+     <pre><code class="cs">// Load existing DICOM file
+using var dicomFile = DicomFile.Open("input.dcm");
+
+// Transcode to JPEG 2000 Lossy Transfer Syntax
+var transcodedFile = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+
+// Save the transcoded file
+transcodedFile.Save("output.dcm");</code></pre>
+    </div>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
@@ -460,6 +473,26 @@ image.Save("chest_xray.png");</code></pre>
     <p>
      Modern healthcare systems increasingly rely on web services and APIs for data exchange. Aspose.Medical for .NET provides full support for serializing DICOM data to JSON (per the DICOM JSON Model) and XML formats. This enables seamless integration with RESTful APIs, FHIR-based systems, and web applications. The serialization is bidirectional - you can also parse JSON and XML back into DICOM datasets.
     </p>
+    <div class="codeblock" id="code">
+     <h3>
+      Serialize DICOM to JSON and XML - C#
+     </h3>
+     <pre><code class="cs">// Load the DICOM file
+using var dicomFile = DicomFile.Open("patient_scan.dcm");
+var dataset = dicomFile.Dataset;
+
+// Serialize DICOM dataset to JSON (DICOM JSON Model)
+string json = DicomJsonSerializer.Serialize(dataset, writeIndented: true);
+
+// Serialize DICOM dataset to XML
+string xml = DicomXmlSerializer.Serialize(dataset);
+
+// Deserialize JSON back to DICOM dataset
+var restoredFromJson = DicomJsonSerializer.Deserialize(json);
+
+// Deserialize XML back to DICOM dataset
+var restoredFromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
+    </div>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">

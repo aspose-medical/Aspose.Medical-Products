@@ -1,12 +1,12 @@
 ---
 title: Convert DICOM to JPG in C# .NET | Aspose.Medical
 weight: 7000
-description: Convert DICOM to JPG in C# .NET with window/level control, overlay rendering, and multi-frame support. Render medical images using the full DICOM LUT pipeline with Aspose.Medical API.
+description: Render DICOM images to pixel data in C# .NET with window/level control, overlay rendering, and multi-frame support. Use the full DICOM LUT pipeline with Aspose.Medical API and save to JPG.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Convert DICOM to JPG in .NET C#" h2="Render DICOM images to JPG with full grayscale pipeline support including window/level, modality LUT, VOI LUT, and overlay rendering. Process single-frame and multi-frame DICOM files." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="Convert DICOM to JPG in .NET C#" h2="Render DICOM images to raw pixel data with full grayscale pipeline support including window/level, modality LUT, VOI LUT, and overlay rendering. Save to JPG using any .NET imaging library." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
@@ -21,27 +21,69 @@ description: Convert DICOM to JPG in C# .NET with window/level control, overlay 
 <li><strong>Output LUT</strong> &mdash; converts grayscale values to RGB for display, with optional colorization using custom color maps or Palette Color tables.</li>
 </ol>
 
-<p>The rendered output is an <code>IRawImage</code> in BGRA32 format (8-bit per channel), which can be saved directly to JPG, PNG, or any other image format.</p>
+<p>The rendered output is an <code>IRawImage</code> &mdash; a BGRA32 pixel buffer (8-bit per channel) with <code>Width</code>, <code>Height</code>, and a <code>Pixels</code> array. You can then save this pixel data to JPG using any .NET imaging library such as <code>System.Drawing</code>, <code>SkiaSharp</code>, or <code>ImageSharp</code>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Convert DICOM to JPG in C#">}}
+{{< blocks/products/pf/feature-page-section h2="Render DICOM to Pixel Data in C#">}}
 
-<p>The simplest way to convert a DICOM file to JPG is to load the file, render the first frame, and save the result:</p>
+<p>Load a DICOM file and render a frame to an <code>IRawImage</code> containing BGRA32 pixel data:</p>
 
 <div class="codeblock" id="code">
- <h3>Convert DICOM to JPG - C#</h3>
- <pre><code class="cs">// Load a DICOM file
+ <h3>Render DICOM image - C#</h3>
+ <pre><code class="cs">using Aspose.Medical.Dicom;
+using Aspose.Medical.Imaging;
+
+// Load a DICOM file
 DicomFile dicomFile = DicomFile.Open("ct_scan.dcm");
 
-// Render the first frame (index 0)
-var image = dicomFile.RenderImage(0);
+// Render the first frame (index 0) through the full LUT pipeline
+IRawImage image = dicomFile.RenderImage(0);
 
-// Save as JPG
-image.Save("ct_scan.jpg");</code></pre>
+// Access the rendered pixel data
+int width = image.Width;
+int height = image.Height;
+Bgra32[] pixels = image.Pixels; // BGRA32 pixel buffer</code></pre>
 </div>
 
-<p>The <code>RenderImage</code> method automatically applies the full grayscale pipeline using the window/level values and LUT parameters stored in the DICOM file. For most images, this produces a correctly windowed result without any manual configuration.</p>
+<p>The <code>RenderImage</code> method automatically applies the full grayscale pipeline using the window/level values and LUT parameters stored in the DICOM file.</p>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Save Rendered Image as JPG">}}
+
+<p>The <code>IRawImage</code> provides raw BGRA32 pixel data that can be saved to JPG using any .NET imaging library. Here is an example using <code>System.Drawing</code>:</p>
+
+<div class="codeblock" id="code">
+ <h3>Save rendered DICOM frame as JPG - C#</h3>
+ <pre><code class="cs">using System.Drawing;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
+using Aspose.Medical.Dicom;
+using Aspose.Medical.Imaging;
+using Aspose.Medical.Imaging.PixelFormats;
+
+DicomFile dicomFile = DicomFile.Open("ct_scan.dcm");
+IRawImage image = dicomFile.RenderImage(0);
+
+// Create a Bitmap from the BGRA32 pixel data
+using var bitmap = new Bitmap(image.Width, image.Height, PixelFormat.Format32bppArgb);
+var bitmapData = bitmap.LockBits(
+    new Rectangle(0, 0, image.Width, image.Height),
+    ImageLockMode.WriteOnly,
+    PixelFormat.Format32bppArgb);
+
+// Copy BGRA32 pixels to the bitmap
+MemoryMarshal.AsBytes(image.Pixels.AsSpan())
+    .CopyTo(new Span&lt;byte&gt;(
+        (void*)bitmapData.Scan0,
+        bitmapData.Stride * bitmapData.Height));
+
+bitmap.UnlockBits(bitmapData);
+
+// Save as JPG
+bitmap.Save("ct_scan.jpg", ImageFormat.Jpeg);</code></pre>
+</div>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -64,7 +106,7 @@ var softTissue = new GrayscaleRenderOptions
     WindowCenter = 40,
     WindowWidth = 400
 };
-dicomFile.RenderImage(softTissue, 0).Save("soft_tissue.jpg");
+IRawImage softTissueImage = dicomFile.RenderImage(softTissue, 0);
 
 // Bone window: center=400, width=1800
 var bone = new GrayscaleRenderOptions
@@ -72,7 +114,7 @@ var bone = new GrayscaleRenderOptions
     WindowCenter = 400,
     WindowWidth = 1800
 };
-dicomFile.RenderImage(bone, 0).Save("bone.jpg");
+IRawImage boneImage = dicomFile.RenderImage(bone, 0);
 
 // Lung window: center=-600, width=1500
 var lung = new GrayscaleRenderOptions
@@ -80,7 +122,7 @@ var lung = new GrayscaleRenderOptions
     WindowCenter = -600,
     WindowWidth = 1500
 };
-dicomFile.RenderImage(lung, 0).Save("lung.jpg");</code></pre>
+IRawImage lungImage = dicomFile.RenderImage(lung, 0);</code></pre>
 </div>
 
 <p>Common CT window presets:</p>
@@ -107,7 +149,7 @@ dicomFile.RenderImage(lung, 0).Save("lung.jpg");</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="Grayscale Render Options">}}
 
-<p>The <code>GrayscaleRenderOptions</code> class provides full control over the grayscale rendering pipeline. You can configure window/level, rescale parameters, image inversion, and bit depth:</p>
+<p>The <code>GrayscaleRenderOptions</code> class provides full control over the grayscale rendering pipeline:</p>
 
 <table class="table table-bordered">
 <thead>
@@ -138,8 +180,7 @@ var options = new GrayscaleRenderOptions
     Invert = true
 };
 
-var image = dicomFile.RenderImage(options, 0);
-image.Save("xray_inverted.jpg");</code></pre>
+IRawImage image = dicomFile.RenderImage(options, 0);</code></pre>
 </div>
 
 <p>Use <code>RenderOptionsFactory.Create(pixelData)</code> to automatically populate render options from the DICOM dataset's pixel data attributes, including bit depth, rescale parameters, window/level, and inversion settings.</p>
@@ -160,61 +201,39 @@ var withOverlays = new RenderOptions
     ShowOverlays = true,
     OverlayColor = Bgra32.White
 };
-dicomFile.RenderImage(withOverlays, 0).Save("with_overlays.jpg");
+IRawImage imageWithOverlays = dicomFile.RenderImage(withOverlays, 0);
 
 // Render without overlays for a clean image
 var noOverlays = new RenderOptions
 {
     ShowOverlays = false
 };
-dicomFile.RenderImage(noOverlays, 0).Save("clean_image.jpg");</code></pre>
+IRawImage cleanImage = dicomFile.RenderImage(noOverlays, 0);</code></pre>
 </div>
 
 <p>DICOM supports two overlay types: <strong>Graphics</strong> overlays (annotations, measurements) and <strong>Region of Interest</strong> (ROI) overlays. Both types are controlled by the <code>ShowOverlays</code> setting.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Multi-Frame DICOM to JPG">}}
+{{< blocks/products/pf/feature-page-section h2="Multi-Frame DICOM Rendering">}}
 
-<p>Many DICOM files from CT, MRI, and ultrasound contain multiple frames (slices). You can check the number of frames and convert each one individually or process them all in a batch:</p>
+<p>Many DICOM files from CT, MRI, and ultrasound contain multiple frames (slices). You can check the number of frames and render each one individually:</p>
 
 <div class="codeblock" id="code">
- <h3>Convert multi-frame DICOM to JPG - C#</h3>
+ <h3>Render all frames from multi-frame DICOM - C#</h3>
  <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("ct_series.dcm");
 
 int totalFrames = dicomFile.NumberOfFrames;
 Console.WriteLine($"Total frames: {totalFrames}");
 
-// Convert all frames to individual JPG files
+// Render all frames to pixel data
 for (int i = 0; i < totalFrames; i++)
 {
-    var image = dicomFile.RenderImage(i);
-    image.Save($"frame_{i:D4}.jpg");
-    Console.WriteLine($"Frame {i + 1}/{totalFrames}: {image.Width}x{image.Height}");
+    IRawImage image = dicomFile.RenderImage(i);
+    Console.WriteLine($"Frame {i}: {image.Width}x{image.Height}");
+
+    // Save each frame as JPG using your preferred imaging library
 }</code></pre>
-</div>
-
-{{< /blocks/products/pf/feature-page-section >}}
-
-{{< blocks/products/pf/feature-page-section h2="Access Rendered Image Pixels">}}
-
-<p>The rendered <code>IRawImage</code> provides direct access to pixel data in BGRA32 format. This is useful when you need to post-process the image, analyze pixel values, or integrate with custom image processing pipelines:</p>
-
-<div class="codeblock" id="code">
- <h3>Access rendered pixel data - C#</h3>
- <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("scan.dcm");
-IRawImage image = dicomFile.RenderImage(0);
-
-// Image dimensions
-int width = image.Width;
-int height = image.Height;
-
-// Access a specific pixel (BGRA32 format)
-Bgra32 pixel = image[10, 10];
-Console.WriteLine($"Pixel at (10,10): R={pixel.R}, G={pixel.G}, B={pixel.B}, A={pixel.A}");
-
-// Access the entire pixel buffer
-Bgra32[] pixels = image.Pixels;</code></pre>
 </div>
 
 {{< /blocks/products/pf/feature-page-section >}}

@@ -27,7 +27,6 @@ description: Pustaka .NET murni untuk pencitraan medis DICOM. Baca, tulis, anoni
     <li>Dukungan penuh untuk gambar DICOM multi-frame dan overlay gambar.</li>
     <li>Pemrosesan gambar lanjutan dengan tabel pencarian modalitas dan VOI untuk windowing dan leveling yang tepat.</li>
     <li>Dukungan HTJ2K (High-Throughput JPEG 2000) untuk kompresi pencitraan medis generasi berikutnya.</li>
-    <li><strong>Segera hadir:</strong> Konversi DICOM ke NIfTI untuk aplikasi neuroimaging dan penelitian.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: Pustaka .NET murni untuk pencitraan medis DICOM. Baca, tulis, anoni
     </li>
     <li>
      DICOM ke JSON &amp; XML
-    </li>
-    <li>
-     DICOM ke NIfTI (segera hadir)
     </li>
     <li>
      Konversi Sintaks Transfer
@@ -246,12 +242,6 @@ description: Pustaka .NET murni untuk pencitraan medis DICOM. Baca, tulis, anoni
       Pencitraan Medis:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Neuroimaging (segera hadir):
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      Sistem perawatan kesehatan modern semakin bergantung pada layanan web dan API untuk pertukaran data. Aspose.Medical for .NET menyediakan dukungan penuh untuk menserialisasi data DICOM ke JSON (per Model JSON DICOM) dan format XML. Ini memungkinkan integrasi yang mulus dengan API RESTful, sistem berbasis FHIR, dan aplikasi web. Serialisasi bersifat bidireksional - Anda juga dapat mengurai JSON dan XML kembali ke dataset DICOM.
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     Dukungan Format NIfTI untuk Neuroimaging (Segera Hadir)
-    </h2>
-    <p>
-     Dukungan untuk konversi antara format DICOM dan NIfTI (Neuroimaging Informatics Technology Initiative) ada dalam roadmap. NIfTI adalah format standar untuk penelitian pencitraan otak, dan kemampuan yang akan datang untuk mengkonversi data DICOM klinis ke NIfTI akan membuka kemungkinan untuk analisis lanjutan, pembelajaran mesin, dan alur kerja penelitian.
     </p>
    </div>
   </div>

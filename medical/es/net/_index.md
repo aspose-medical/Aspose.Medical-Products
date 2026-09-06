@@ -27,7 +27,6 @@ description: Biblioteca .NET pura para imágenes médicas DICOM. Lea, escriba, a
     <li>Soporte completo para imágenes DICOM multitrama y superposiciones de imágenes.</li>
     <li>Procesamiento avanzado de imágenes con tablas de consulta de modalidad y VOI para ajuste correcto de ventana y nivel.</li>
     <li>Soporte HTJ2K (High-Throughput JPEG 2000) para compresión de imágenes médicas de próxima generación.</li>
-    <li><strong>Próximamente:</strong> Conversión de DICOM a NIfTI para neuroimagen y aplicaciones de investigación.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: Biblioteca .NET pura para imágenes médicas DICOM. Lea, escriba, a
     </li>
     <li>
      DICOM a JSON y XML
-    </li>
-    <li>
-     DICOM a NIfTI (próximamente)
     </li>
     <li>
      Conversión de sintaxis de transferencia
@@ -246,12 +242,6 @@ description: Biblioteca .NET pura para imágenes médicas DICOM. Lea, escriba, a
       Imágenes médicas:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Neuroimagen (próximamente):
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      Los sistemas sanitarios modernos dependen cada vez más de servicios web y APIs para el intercambio de datos. Aspose.Medical for .NET proporciona soporte completo para serializar datos DICOM a formatos JSON (según el DICOM JSON Model) y XML. Esto permite una integración perfecta con APIs RESTful, sistemas basados en FHIR y aplicaciones web. La serialización es bidireccional — también puede analizar JSON y XML de vuelta a conjuntos de datos DICOM.
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     Soporte del formato NIfTI para neuroimagen (próximamente)
-    </h2>
-    <p>
-     El soporte para la conversión entre formatos DICOM y NIfTI (Neuroimaging Informatics Technology Initiative) está en la hoja de ruta. NIfTI es el formato estándar para la investigación en imágenes cerebrales, y la próxima capacidad de convertir datos clínicos DICOM a NIfTI abrirá posibilidades para análisis avanzado, aprendizaje automático y flujos de trabajo de investigación.
     </p>
    </div>
   </div>

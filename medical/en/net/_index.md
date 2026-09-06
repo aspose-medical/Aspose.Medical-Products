@@ -27,7 +27,6 @@ description: Pure .NET library for DICOM medical imaging. Read, write, anonymize
     <li>Full support for multi-frame DICOM images and image overlays.</li>
     <li>Advanced image processing with modality and VOI lookup tables for proper windowing and leveling.</li>
     <li>HTJ2K (High-Throughput JPEG 2000) support for next-generation medical imaging compression.</li>
-    <li><strong>Coming soon:</strong> DICOM to NIfTI conversion for neuroimaging and research applications.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: Pure .NET library for DICOM medical imaging. Read, write, anonymize
     </li>
     <li>
      DICOM to JSON &amp; XML
-    </li>
-    <li>
-     DICOM to NIfTI (coming soon)
     </li>
     <li>
      Transfer Syntax Conversion
@@ -246,12 +242,6 @@ description: Pure .NET library for DICOM medical imaging. Read, write, anonymize
       Medical Imaging:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Neuroimaging (coming soon):
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -493,14 +483,6 @@ var restoredFromJson = DicomJsonSerializer.Deserialize(json);
 // Deserialize XML back to DICOM dataset
 var restoredFromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
     </div>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     NIfTI Format Support for Neuroimaging (Coming Soon)
-    </h2>
-    <p>
-     Support for conversion between DICOM and NIfTI (Neuroimaging Informatics Technology Initiative) formats is on the roadmap. NIfTI is the standard format for brain imaging research, and the upcoming ability to convert clinical DICOM data to NIfTI will open up possibilities for advanced analysis, machine learning, and research workflows.
-    </p>
    </div>
   </div>
  </div>

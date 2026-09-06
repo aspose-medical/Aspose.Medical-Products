@@ -27,7 +27,6 @@ description: DICOM tıbbi görüntüleme için saf .NET kütüphanesi. Harici ba
     <li>Çok çerçeveli DICOM görüntüleri ve görüntü kaplamaları için tam destek.</li>
     <li>Uygun pencere ve seviye ayarı için modalite ve VOI arama tabloları ile gelişmiş görüntü işleme.</li>
     <li>Yeni nesil tıbbi görüntüleme sıkıştırması için HTJ2K (Yüksek Verimli JPEG 2000) desteği.</li>
-    <li><strong>Yakında geliyor:</strong> Nörogörüntüleme ve araştırma uygulamaları için DICOM'dan NIfTI'ye dönüştürme.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: DICOM tıbbi görüntüleme için saf .NET kütüphanesi. Harici ba
     </li>
     <li>
      DICOM'dan JSON ve XML'e
-    </li>
-    <li>
-     DICOM'dan NIfTI'ye (yakında)
     </li>
     <li>
      Aktarım Sözdizimi Dönüştürme
@@ -246,12 +242,6 @@ description: DICOM tıbbi görüntüleme için saf .NET kütüphanesi. Harici ba
       Tıbbi Görüntüleme:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Nörogörüntüleme (yakında):
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      Modern sağlık sistemleri, veri değişimi için web servislerine ve API'lere giderek daha fazla güvenmektedir. Aspose.Medical for .NET, DICOM verilerini JSON (DICOM JSON Modeline göre) ve XML formatlarına serileştirmek için tam destek sağlar. Bu, RESTful API'ler, FHIR tabanlı sistemler ve web uygulamalarıyla sorunsuz entegrasyon sağlar. Serileştirme çift yönlüdür - JSON ve XML'i tekrar DICOM veri kümelerine ayrıştırabilirsiniz.
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     Nörogörüntüleme için NIfTI Format Desteği (Yakında Geliyor)
-    </h2>
-    <p>
-     DICOM ve NIfTI (Neuroimaging Informatics Technology Initiative) formatları arasında dönüştürme desteği yol haritasında. NIfTI, beyin görüntüleme araştırması için standart formattır ve klinik DICOM verilerini NIfTI'ye dönüştürme yeteneği, gelişmiş analiz, makine öğrenimi ve araştırma iş akışları için olanaklar açacaktır.
     </p>
    </div>
   </div>

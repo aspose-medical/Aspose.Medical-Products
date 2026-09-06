@@ -27,7 +27,6 @@ description: Bibliothèque .NET pure pour l'imagerie médicale DICOM. Lecture, �
     <li>Prise en charge complète des images DICOM multi-frames et des superpositions d'images.</li>
     <li>Traitement d'image avancé avec tables de correspondance de modalité et VOI pour un réglage correct de la fenêtre et du niveau.</li>
     <li>Prise en charge HTJ2K (High-Throughput JPEG 2000) pour la compression d'images médicales de nouvelle génération.</li>
-    <li><strong>Bientôt disponible :</strong> Conversion DICOM vers NIfTI pour la neuro-imagerie et les applications de recherche.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: Bibliothèque .NET pure pour l'imagerie médicale DICOM. Lecture, �
     </li>
     <li>
      DICOM vers JSON et XML
-    </li>
-    <li>
-     DICOM vers NIfTI (bientôt)
     </li>
     <li>
      Conversion de syntaxe de transfert
@@ -246,12 +242,6 @@ description: Bibliothèque .NET pure pour l'imagerie médicale DICOM. Lecture, �
       Imagerie médicale :
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Neuro-imagerie (bientôt) :
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      Les systèmes de santé modernes s'appuient de plus en plus sur les services web et les APIs pour l'échange de données. Aspose.Medical for .NET offre une prise en charge complète de la sérialisation des données DICOM aux formats JSON (selon le DICOM JSON Model) et XML. Cela permet une intégration transparente avec les APIs RESTful, les systèmes basés sur FHIR et les applications web. La sérialisation est bidirectionnelle — vous pouvez également analyser du JSON et du XML pour les reconvertir en ensembles de données DICOM.
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     Prise en charge du format NIfTI pour la neuro-imagerie (bientôt disponible)
-    </h2>
-    <p>
-     La prise en charge de la conversion entre les formats DICOM et NIfTI (Neuroimaging Informatics Technology Initiative) est prévue dans la feuille de route. NIfTI est le format standard pour la recherche en imagerie cérébrale, et la future capacité de convertir des données cliniques DICOM en NIfTI ouvrira des possibilités pour l'analyse avancée, l'apprentissage automatique et les flux de travail de recherche.
     </p>
    </div>
   </div>

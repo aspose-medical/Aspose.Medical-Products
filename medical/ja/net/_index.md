@@ -27,7 +27,6 @@ description: DICOM医療画像処理のための純粋な.NETライブラリ。�
     <li>マルチフレームDICOM画像および画像オーバーレイを完全にサポートします。</li>
     <li>適切なウィンドウイングとレベリングのためのモダリティとVOIルックアップテーブルを使用した高度な画像処理。</li>
     <li>次世代医療画像圧縮のためのHTJ2K（High-Throughput JPEG 2000）サポート。</li>
-    <li><strong>近日公開予定:</strong> 神経画像および研究アプリケーション向けのDICOMからNIfTIへの変換。</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: DICOM医療画像処理のための純粋な.NETライブラリ。�
     </li>
     <li>
      DICOMからJSONとXML
-    </li>
-    <li>
-     DICOMからNIfTI（近日公開予定）
     </li>
     <li>
      転送構文変換
@@ -246,12 +242,6 @@ description: DICOM医療画像処理のための純粋な.NETライブラリ。�
       医療画像:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      神経画像（近日公開予定）:
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      最新の医療システムは、データ交換のためにWebサービスとAPIにますます依存しています。Aspose.Medical for .NETは、DICOMデータをJSON（DICOM JSONモデルに準拠）およびXML形式にシリアル化するための完全なサポートを提供します。これにより、RESTful API、FHIRベースのシステム、およびWebアプリケーションとのシームレスな統合が可能になります。シリアル化は双方向です - JSONとXMLをDICOMデータセットに戻すこともできます。
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     神経画像のためのNIfTI形式サポート（近日公開予定）
-    </h2>
-    <p>
-     DICOMとNIfTI（Neuroimaging Informatics Technology Initiative）形式間の変換のサポートがロードマップに含まれています。NIfTIは脳画像研究の標準形式であり、臨床DICOMデータをNIfTIに変換する今後の機能により、高度な分析、機械学習、および研究ワークフローの可能性が開かれます。
     </p>
    </div>
   </div>

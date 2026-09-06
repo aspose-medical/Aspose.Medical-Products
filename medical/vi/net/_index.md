@@ -27,7 +27,6 @@ description: Thư viện .NET thuần túy cho hình ảnh y tế DICOM. Đọc,
     <li>Hỗ trợ đầy đủ cho hình ảnh DICOM nhiều khung hình và lớp phủ hình ảnh.</li>
     <li>Xử lý hình ảnh nâng cao với bảng tra cứu phương thức và VOI để cửa sổ và san bằng thích hợp.</li>
     <li>Hỗ trợ HTJ2K (High-Throughput JPEG 2000) cho nén hình ảnh y tế thế hệ tiếp theo.</li>
-    <li><strong>Sắp ra mắt:</strong> Chuyển đổi DICOM sang NIfTI cho các ứng dụng hình ảnh thần kinh và nghiên cứu.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: Thư viện .NET thuần túy cho hình ảnh y tế DICOM. Đọc,
     </li>
     <li>
      DICOM sang JSON &amp; XML
-    </li>
-    <li>
-     DICOM sang NIfTI (sắp ra mắt)
     </li>
     <li>
      Chuyển đổi Cú pháp Truyền
@@ -246,12 +242,6 @@ description: Thư viện .NET thuần túy cho hình ảnh y tế DICOM. Đọc,
       Hình ảnh Y tế:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Hình ảnh Thần kinh (sắp ra mắt):
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      Các hệ thống chăm sóc sức khỏe hiện đại ngày càng dựa vào các dịch vụ web và API để trao đổi dữ liệu. Aspose.Medical for .NET cung cấp hỗ trợ đầy đủ để tuần tự hóa dữ liệu DICOM sang JSON (theo Mô hình JSON DICOM) và định dạng XML. Điều này cho phép tích hợp liền mạch với các API RESTful, hệ thống dựa trên FHIR và ứng dụng web. Tuần tự hóa là hai chiều - bạn cũng có thể phân tích cú pháp JSON và XML trở lại thành các bộ dữ liệu DICOM.
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     Hỗ trợ Định dạng NIfTI cho Hình ảnh Thần kinh (Sắp ra mắt)
-    </h2>
-    <p>
-     Hỗ trợ chuyển đổi giữa DICOM và NIfTI (Neuroimaging Informatics Technology Initiative) nằm trong lộ trình. NIfTI là định dạng tiêu chuẩn cho nghiên cứu hình ảnh não bộ và khả năng sắp tới để chuyển đổi dữ liệu DICOM lâm sàng sang NIfTI sẽ mở ra khả năng phân tích nâng cao, học máy và quy trình nghiên cứu.
     </p>
    </div>
   </div>

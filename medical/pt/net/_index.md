@@ -27,7 +27,6 @@ description: Biblioteca .NET pura para imagem médica DICOM. Leitura, escrita, a
     <li>Suporte completo para imagens DICOM multi-frame e overlays de imagem.</li>
     <li>Processamento avançado de imagens com tabelas de lookup de modalidade e VOI para windowing e leveling adequados.</li>
     <li>Suporte HTJ2K (High-Throughput JPEG 2000) para compressão de imagem médica de próxima geração.</li>
-    <li><strong>Em breve:</strong> conversão de DICOM para NIfTI para aplicações de neuroimagem e pesquisa.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: Biblioteca .NET pura para imagem médica DICOM. Leitura, escrita, a
     </li>
     <li>
      DICOM para JSON e XML
-    </li>
-    <li>
-     DICOM para NIfTI (em breve)
     </li>
     <li>
      Conversão de sintaxe de transferência
@@ -246,12 +242,6 @@ description: Biblioteca .NET pura para imagem médica DICOM. Leitura, escrita, a
       Imagem médica:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Neuroimagem (em breve):
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      Os sistemas de saúde modernos dependem cada vez mais de serviços web e APIs para troca de dados. Aspose.Medical for .NET fornece suporte completo para serialização de dados DICOM para JSON (conforme o modelo JSON DICOM) e formatos XML. Isso permite integração perfeita com APIs RESTful, sistemas baseados em FHIR e aplicações web. A serialização é bidirecional - você também pode analisar JSON e XML de volta para datasets DICOM.
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     Suporte ao formato NIfTI para neuroimagem (em breve)
-    </h2>
-    <p>
-     O suporte para conversão entre DICOM e NIfTI (Neuroimaging Informatics Technology Initiative) está no roadmap. NIfTI é o formato padrão para pesquisa de imagem cerebral, e a futura capacidade de converter dados DICOM clínicos para NIfTI abrirá possibilidades para análises avançadas, aprendizado de máquina e fluxos de trabalho de pesquisa.
     </p>
    </div>
   </div>

@@ -27,7 +27,6 @@ description: Rent .NET-bibliotek för DICOM medicinsk bildbehandling. Läs, skri
     <li>Fullt stöd för multi-frame DICOM-bilder och bildöverlagringar.</li>
     <li>Avancerad bildbehandling med modalitets- och VOI-uppslagstabeller för korrekt fönstring och nivåjustering.</li>
     <li>HTJ2K (High-Throughput JPEG 2000) stöd för nästa generations medicinsk bildkomprimering.</li>
-    <li><strong>Kommer snart:</strong> DICOM till NIfTI-konvertering för neuroavbildning och forskningsapplikationer.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: Rent .NET-bibliotek för DICOM medicinsk bildbehandling. Läs, skri
     </li>
     <li>
      DICOM till JSON och XML
-    </li>
-    <li>
-     DICOM till NIfTI (kommer snart)
     </li>
     <li>
      Överföringssyntaxkonvertering
@@ -246,12 +242,6 @@ description: Rent .NET-bibliotek för DICOM medicinsk bildbehandling. Läs, skri
       Medicinsk bildbehandling:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Neuroavbildning (kommer snart):
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      Moderna vårdsystem förlitar sig alltmer på webbtjänster och API:er för datautbyte. Aspose.Medical for .NET ger fullt stöd för serialisering av DICOM-data till JSON (enligt DICOM JSON-modellen) och XML-format. Detta möjliggör sömlös integration med RESTful API:er, FHIR-baserade system och webbapplikationer. Serialiseringen är dubbelriktad - du kan också tolka JSON och XML tillbaka till DICOM-dataset.
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     NIfTI-formatstöd för neuroavbildning (kommer snart)
-    </h2>
-    <p>
-     Stöd för konvertering mellan DICOM och NIfTI (Neuroimaging Informatics Technology Initiative) format finns i färdplanen. NIfTI är standardformatet för hjärnavbildningsforskning, och den kommande förmågan att konvertera klinisk DICOM-data till NIfTI kommer att öppna möjligheter för avancerad analys, maskininlärning och forskningsarbetsflöden.
     </p>
    </div>
   </div>

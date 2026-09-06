@@ -27,7 +27,6 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. DICOM fájlok 
     <li>Teljes támogatás többkockás DICOM képekhez és képátfedésekhez.</li>
     <li>Fejlett képfeldolgozás modalitás és VOI keresési táblákkal a megfelelő ablak és szint beállításához.</li>
     <li>HTJ2K (High-Throughput JPEG 2000) támogatás az új generációs orvosi képalkotási tömörítéshez.</li>
-    <li><strong>Hamarosan elérhető:</strong> DICOM NIfTI konverzió neuroimaging és kutatási alkalmazásokhoz.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. DICOM fájlok 
     </li>
     <li>
      DICOM JSON-ba és XML-be
-    </li>
-    <li>
-     DICOM NIfTI-be (hamarosan elérhető)
     </li>
     <li>
      Átviteli szintaxis konverzió
@@ -246,12 +242,6 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. DICOM fájlok 
       Orvosi képalkotás:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Neuroimaging (hamarosan elérhető):
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      A modern egészségügyi rendszerek egyre inkább webszolgáltatásokra és API-kra támaszkodnak az adatcserében. Az Aspose.Medical for .NET teljes támogatást nyújt a DICOM adatok JSON-ba (a DICOM JSON modell szerint) és XML formátumokba való szerializálásához. Ez lehetővé teszi a zökkenőmentes integrációt RESTful API-kkal, FHIR alapú rendszerekkel és webes alkalmazásokkal. A szerializáció kétirányú - JSON-t és XML-t is visszaelemezhet DICOM adathalmazokká.
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     NIfTI formátum támogatás neuroimaginghez (hamarosan elérhető)
-    </h2>
-    <p>
-     A DICOM és NIfTI (Neuroimaging Informatics Technology Initiative) formátumok közötti konverzió támogatása a tervben szerepel. A NIfTI az agyi képalkotás kutatásának szabványos formátuma, és a hamarosan elérhető képesség a klinikai DICOM adatok NIfTI-vé való konvertálására lehetőségeket nyit a fejlett elemzéshez, gépi tanuláshoz és kutatási munkafolyamatokhoz.
     </p>
    </div>
   </div>

@@ -27,7 +27,6 @@ description: Čistá knihovna .NET pro lékařské zobrazování DICOM. Čtení,
     <li>Plná podpora víceframových obrazů DICOM a obrazových překryvů.</li>
     <li>Pokročilé zpracování obrazu s modalitními a VOI vyhledávacími tabulkami pro správné nastavení okna a úrovní.</li>
     <li>Podpora HTJ2K (High-Throughput JPEG 2000) pro kompresi lékařského zobrazování nové generace.</li>
-    <li><strong>Již brzy:</strong> Konverze DICOM do NIfTI pro neuroimaging a výzkumné aplikace.</li>
 </ul>
 </p>
 
@@ -94,9 +93,6 @@ description: Čistá knihovna .NET pro lékařské zobrazování DICOM. Čtení,
     </li>
     <li>
      DICOM do JSON a XML
-    </li>
-    <li>
-     DICOM do NIfTI (již brzy)
     </li>
     <li>
      Konverze transferové syntaxe
@@ -246,12 +242,6 @@ description: Čistá knihovna .NET pro lékařské zobrazování DICOM. Čtení,
       Lékařské zobrazování:
      </b>
      DICOM (.dcm)
-    </li>
-    <li>
-     <b>
-      Neuroimaging (již brzy):
-     </b>
-     NIfTI (.nii, .nii.gz)
     </li>
     <li>
      <b>
@@ -459,14 +449,6 @@ image.Save("chest_xray.png");</code></pre>
     </h2>
     <p>
      Moderní zdravotnické systémy stále více spoléhají na webové služby a API pro výměnu dat. Aspose.Medical for .NET poskytuje plnou podporu pro serializaci dat DICOM do JSON (podle DICOM JSON Model) a formátů XML. To umožňuje bezproblémovou integraci s RESTful API, systémy založenými na FHIR a webovými aplikacemi. Serializace je obousměrná - můžete také analyzovat JSON a XML zpět do datových sad DICOM.
-    </p>
-   </div>
-   <div class="col-lg-12">
-    <h2 class="h2title">
-     Podpora formátu NIfTI pro neuroimaging (již brzy)
-    </h2>
-    <p>
-     Podpora pro konverzi mezi formáty DICOM a NIfTI (Neuroimaging Informatics Technology Initiative) je na plánu. NIfTI je standardní formát pro výzkum mozkového zobrazování a nadcházející schopnost konvertovat klinická data DICOM do NIfTI otevře možnosti pro pokročilou analýzu, strojové učení a výzkumné pracovní postupy.
     </p>
    </div>
   </div>

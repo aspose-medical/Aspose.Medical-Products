@@ -1,61 +1,226 @@
 ---
-title: DICOM転送構文変換 -  Aspose.Medical
+title: C# .NET における DICOM 転送構文変換 | Aspose.Medical
 weight: 16000
-
-description: DICOM転送構文変換 -  Aspose.Medical
+description: C# .NET で DICOM ファイルを転送構文間でトランスコードします。Aspose.Medical API を使用して JPEG、JPEG 2000、JPEG-LS、RLE、非圧縮形式をサポートします。
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM転送構文変換" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="C# .NET における DICOM 転送構文変換" h2="非圧縮、JPEG、JPEG 2000、JPEG-LS、RLE の転送構文間で DICOM ファイルをトランスコードします。ネイティブ依存なしの純粋な .NET ライブラリです。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
-{{< blocks/products/pf/feature-page-section-no-header >}}
+{{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-<p>医学におけるデジタルイメージングと通信（DICOM）は、医療イメージング情報と関連データを管理するための標準プロトコルです。 DICOMフレームワーク内の重要な要素は、異なるシステム間でDICOMファイルを交換するためのエンコーディングルールを定義する転送構文です。 転送構文は、バイトの順序付け（エンディアンネス）、値表現（VR）エンコード（暗黙的または明示的）、圧縮スキームなどの側面など、データ要素のシリアル化方法を指定します。</p>
+{{< blocks/products/pf/feature-page-section h2="転送構文とは何ですか？">}}
 
-<p>転送構文は、DICOMファイルの読み取り、解釈、および医療イメージング機器とソフトウェアによって処理される方法に影響します。 受信システムが画像データを正しくデコードして表示できるかどうかを判断します。 転送構文の影響を受ける主要なコンポーネントには以下が含まれます。</p>
+<p><strong>Transfer Syntax</strong> は、DICOM データが保存および送信のためにどのようにエンコードされるかを定義します。バイト順（エンディアン）、Value Representation が明示的か暗黙的か、そしてピクセルデータに適用される圧縮アルゴリズムという、3 つの主要な側面を指定します。すべての DICOM ファイルは File Meta Information ヘッダーで転送構文を宣言しています。</p>
 
-<ul>
+<p>さまざまな医療機器、PACS サーバー、ビューイングアプリケーションは、異なる転送構文セットをサポートしています。<strong>Aspose.Medical for .NET</strong> は <code>Transcode</code> メソッドを提供し、転送構文間の変換を可能にし、相互運用性、ストレージ最適化、処理ツールとの互換性を実現します &mdash; すべてネイティブ依存なしの純粋な .NET ライブラリです。</p>
 
-<li><b> byte ordering（endianness）</b>：バイトがより大きな数値に配置されるシーケンスを決定します。 2つの主要なタイプは、リトルエンディアン（最初に最も有意なバイト）とビッグエンディアン（最も有意なバイト）です。</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b>値表現（VR）エンコード</b>：VRがデータストリーム（明示的なVR）で明示的に記載されているか、暗黙的（暗黙のVR）で明示的に記載されているかを指定します。 VRは、各データ要素のデータ型と形式を定義します。これは、正確な解釈に重要です。</li>
+{{< blocks/products/pf/feature-page-section h2="C# で DICOM ファイルをトランスコード">}}
 
-<li><b>圧縮</b>：アルゴリズムを適用して、画像データのサイズを縮小します。 DICOMの一般的な圧縮方法には、JPEGベースライン（損失）、JPEGロスレス、JPEG 2000（損失とロスレスの両方）、および倍長エンコード（RLE）が含まれます。</li>
+<p><code>DicomFile.Transcode</code> メソッドは、DICOM ファイルを現在の転送構文からサポートされている任意の対象構文へ変換します。このメソッドは新しい <code>DicomFile</code> インスタンスを返します &mdash; 元のファイルは変更されません。</p>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>基本的な DICOM トランスコーディング - C#</h3>
+ <pre><code class="cs">// Load a DICOM file (any transfer syntax)
+DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<p>いくつかの状況では、ある転送構文から別のものに変換する必要があるかもしれません。</p>
+// Transcode to JPEG 2000 Lossy for storage optimization
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("compressed.dcm");
 
-<ul>
+// Transcode to Explicit VR Little Endian (uncompressed) for maximum compatibility
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-<li><b>システム間の相互運用性</b>：異なる医療機器とソフトウェアアプリケーションは、さまざまな転送構文セットをサポートする場合があります。 シームレスな通信とデータ交換を確保するには、受信システムによってサポートされる転送構文への変換が必要です。</li>
+<p><code>Dataset</code> レベルでも直接トランスコードできます：</p>
 
-<li><b>ストレージの最適化</b>：圧縮転送構文に変換すると、ファイルサイズが縮小され、ストレージスペースが節約され、ネットワーク上の送信時間が改善されます。 たとえば、アーカイブシステムは、サイズの縮小と画像の忠実度のバランスをとるために、ロスレス圧縮を好む場合があります。</li>
+<div class="codeblock" id="code">
+ <h3>Dataset をトランスコード - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<li><b>処理ツールとの互換性</b>：一部の画像処理アルゴリズムまたは診断ツールには、正しく機能するために、しばしば非圧縮または特定のタイプの圧縮を使用して、特定の転送構文の画像が必要です。</li>
+// Transcode the dataset to RLE Lossless
+Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
 
-<li><b>規制およびコンプライアンス要件</b>：特定の地域または医療機関は、法的、コンプライアンス、または標準化の理由で特定の転送構文の使用を義務付ける場合があります。</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-</ul>
+{{< blocks/products/pf/feature-page-section h2="サポートされている転送構文">}}
 
-<p>基礎となる画像データとメタデータを不可欠な情報を失うことなく正確に変換できる場合、転送構文間の変換が可能です。 非圧縮画像およびロスレスメソッド（JPEGロスレスやRLEなど）を使用して圧縮された画像の場合、変換は一般に簡単です。 ピクセルデータは、画質を分解することなく、分解して目的の転送構文に再エンコードすることができます。</p>
+<p>以下の表は、標準的な DICOM 画像データ転送構文と、Aspose.Medical for .NET における現在のサポート状況を示しています。サポートされているすべてのコーデックは純粋な C# で実装されており、完全にプラットフォームに依存しません。</p>
 
-<p>ただし、特定のシナリオでは、変換が複雑になり、不可能になります。</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>転送構文</th>
+<th>UID</th>
+<th>タイプ</th>
+<th>ステータス</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4"><strong>非圧縮</strong></td></tr>
+<tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>非圧縮</td><td>サポート</td></tr>
+<tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>非圧縮</td><td>サポート</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>非圧縮</td><td>サポート</td></tr>
+<tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>サポート</td></tr>
+<tr><td colspan="4"><strong>JPEG</strong></td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>非可逆、8 ビット</td><td>サポート</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>非可逆、12 ビット</td><td>未サポート</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>ロスレス</td><td>サポート (8 ビットのみ)</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>ロスレス</td><td>サポート (8 ビットのみ)</td></tr>
+<tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
+<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>ロスレス</td><td>サポート</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>ほぼロスレス</td><td>サポート</td></tr>
+<tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>ロスレス</td><td>サポート (読み取り 8/16 ビット、書き込み 8 ビット)</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>ロスリーまたはロスレス</td><td>サポート (読み取り 8/16 ビット、書き込み 8 ビット)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>ロスレス</td><td>サポート (読み取り 8/16 ビット、書き込み 8 ビット)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>ロスリーまたはロスレス</td><td>サポート (読み取り 8/16 ビット、書き込み 8 ビット)</td></tr>
+<tr><td colspan="4"><strong>RLE</strong></td></tr>
+<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>ロスレス</td><td>サポート</td></tr>
+<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>ロスレス</td><td>近日公開</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>ロスレス</td><td>近日公開</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>ロスリーまたはロスレス</td><td>近日公開</td></tr>
+<tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>ロスレス</td><td>近日公開</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>ロスレス</td><td>近日公開</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>ロスリーまたはロスレス</td><td>近日公開</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li><b>紛失した圧縮</b>：損失アルゴリズム（損失設定を備えたJPEGベースラインなど）を使用して圧縮された画像は、より小さなファイルサイズを達成するためにいくつかの画像データを永久に失います。 これらの画像を別の転送構文に変換することは、失われた情報を回復することはできません。 画像を減圧して再エンコードすることはできますが、品質の低下は残り、さらなる損失のある圧縮は損失を悪化させる可能性があります。</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b>サポートされていないまたは独自の圧縮スキーム</b>：一部の画像は、広くサポートされていない非標準または独自の圧縮アルゴリズムを使用する場合があります。 適切な減圧ツールまたはライブラリがなければ、これらの画像を変換することは実行不可能です。</li>
+{{< blocks/products/pf/feature-page-section h2="一般的なトランスコーディングシナリオ">}}
 
-<li><b>暗号化または破損したデータ</b>：DICOMファイルがセキュリティのために暗号化されているか、破損している場合、ファイルが復号化または修理されるまで変換が続行できません。</li>
+<p>ワークフローごとに異なるトランスコード戦略が必要です。代表的なシナリオを以下に示します。</p>
 
-<li><b>メタデータ保存</b>：特定のデータ要素、特にプライベートまたはベンダー固有のタグは、ターゲット転送構文または変換ツールがそれらをサポートしていない場合、変換中に正確に保存できない場合があります。</li>
+<div class="codeblock" id="code">
+ <h3>処理用にデコード - C#</h3>
+ <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
+DicomFile dicomFile = DicomFile.Open("compressed.dcm");
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>アーカイブ保存用に圧縮 - C#</h3>
+ <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
+DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
-<p>実際には、成功した変換は、使用されるソフトウェアツールまたはライブラリの機能に依存します。 このような変換は、非圧縮形式と損失のない圧縮形式の間で一般的に可能ですが、紛失した圧縮またはサポートされていないエンコードスキームを扱う場合、それらは実行可能または推奨されない場合があります。 転送構文の技術的ニュアンスと変換プロセスの制限を理解することは、医療イメージングデータの完全性と使いやすさを維持するために重要です。</p>
+// Option 1: JPEG 2000 Lossless — best compression ratio
+DicomFile j2kArchive = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossless);
 
-{{< /blocks/products/pf/feature-page-section-no-header >}}
+// Option 2: JPEG-LS Lossless — fast encode/decode
+DicomFile jlsArchive = dicomFile.Transcode(TransferSyntax.JpegLsLossless);
+
+// Option 3: RLE Lossless — universal compatibility
+DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
+
+<div class="codeblock" id="code">
+ <h3>ネットワーク転送用に圧縮 - C#</h3>
+ <pre><code class="cs">// Lossy compression for fast transmission (smaller file size)
+DicomFile dicomFile = DicomFile.Open("large_study.dcm");
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("for_transmission.dcm");</code></pre>
+</div>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="転送構文プロパティの確認">}}
+
+<p><code>TransferSyntax</code> クラスは、エンコード特性を示すプロパティを公開します。これらを使用してファイルの現在の転送構文を確認したり、適切な対象構文を選択したりできます。</p>
+
+<div class="codeblock" id="code">
+ <h3>転送構文プロパティの読み取り - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
+TransferSyntax? ts = dicomFile.MetaInfo.TransferSyntax;
+if (ts is null)
+    return; // the file meta information carries no transfer syntax
+
+Console.WriteLine($"Transfer Syntax: {ts}");
+Console.WriteLine($"UID: {ts.Uid}");
+Console.WriteLine($"Explicit VR: {ts.IsExplicitVr}");
+Console.WriteLine($"Little Endian: {ts.IsLittleEndian}");
+Console.WriteLine($"Encapsulated: {ts.IsEncapsulated}");
+Console.WriteLine($"Lossy: {ts.IsLossy}");
+Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
+</div>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>プロパティ</th>
+<th>タイプ</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>転送構文の固有識別子</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Value Representation が明示的にエンコードされているかどうか</td></tr>
+<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>バイト順がリトルエンディアンかどうか</td></tr>
+<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>ピクセルデータがカプセル化（圧縮）されているかどうか</td></tr>
+<tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>圧縮方式がロッシーかどうか</td></tr>
+<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>構文が Deflate 圧縮を使用しているかどうか</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>転送構文が DICOM 標準で廃止されているかどうか</td></tr>
+<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>ロッシー圧縮方式の ISO 標準識別子</td></tr>
+</tbody>
+</table>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="ロッシー圧縮とロスレス圧縮の比較">}}
+
+<p>DICOM ファイルをトランスコードする際、ロッシー圧縮とロスレス圧縮の違いを理解することは重要です。</p>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>側面</th>
+<th>ロスレス</th>
+<th>ロッシー</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>画像品質</td><td>ピクセル単位で完全一致 &mdash; 元データが完全に保持される</td><td>サイズ縮小のためにデータが一部永久に失われる</td></tr>
+<tr><td>圧縮率</td><td>通常 2:1〜3:1</td><td>通常 10:1〜30:1 以上</td></tr>
+<tr><td>往復安全性</td><td>はい &mdash; デコードすればピクセルが完全に同一</td><td>いいえ &mdash; ロッシー再エンコードごとに品質がさらに劣化</td></tr>
+<tr><td>利用シーン</td><td>アーカイブ、診断、法的記録</td><td>予備審査、遠隔医療、ネットワーク転送</td></tr>
+<tr><td>サポートされるコーデック</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+</tbody>
+</table>
+
+<p><strong>重要:</strong> ロッシー圧縮されたファイルをロスレス構文にトランスコードしても、失われたデータは復元されません。元のロッシー圧縮による品質低下は永久的です。</p>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/pf/support-learning-resources >}}
+{{< blocks/products/pf/slr-tab tabTitle="学習リソース" tabId="resources" >}}
+{{< blocks/products/pf/slr-element name="ドキュメント" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="ソースコード" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="API リファレンス" href="https://reference.aspose.com/medical/net/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="製品サポート" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="無料サポート" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="有料サポート" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="ブログ" href="https://blog.aspose.com/category/medical/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="なぜ Aspose.Medical for .NET なのか？" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="導入実績" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="成功事例" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< /blocks/products/pf/support-learning-resources >}}
+
+{{< blocks/products/pf/download-section downloadFreeTrialLink="https://downloads.aspose.com/medical/net" pricingInformationLink="https://purchase.aspose.com/pricing/medical/net" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

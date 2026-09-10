@@ -1,61 +1,226 @@
 ---
-title: DICOM स्थानांतरण वाक्यविन्यास रूपांतरण - Aspose.Medical
+title: C# .NET में DICOM ट्रांसफ़र सिंटैक्स रूपांतरण | Aspose.Medical
 weight: 16000
-
-description: DICOM स्थानांतरण वाक्यविन्यास रूपांतरण - Aspose.Medical
+description: C# .NET में ट्रांसफ़र सिंटैक्स के बीच DICOM फ़ाइलों को ट्रांसकोड करें। JPEG, JPEG 2000, JPEG-LS, RLE, और अनकम्प्रेस्ड फ़ॉर्मैट्स के लिए Aspose.Medical API के साथ समर्थन।
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM स्थानांतरण वाक्यविन्यास रूपांतरण" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1=".NET C# में DICOM ट्रांसफ़र सिंटैक्स रूपांतरण" h2="अनकम्प्रेस्ड, JPEG, JPEG 2000, JPEG-LS, और RLE ट्रांसफ़र सिंटैक्स के बीच DICOM फ़ाइलों को ट्रांसकोड करें। शुद्ध .NET लाइब्रेरी जिसमें कोई नेटिव निर्भरता नहीं है।" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
-{{< blocks/products/pf/feature-page-section-no-header >}}
+{{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-<p>मेडिसिन में डिजिटल इमेजिंग और संचार (DICOM) चिकित्सा इमेजिंग जानकारी और संबंधित डेटा के प्रबंधन के लिए मानक प्रोटोकॉल है। DICOM फ्रेमवर्क के भीतर एक निर्णायक तत्व स्थानांतरण सिंटैक्स है, जो विभिन्न प्रणालियों के बीच DICOM फ़ाइलों के आदान -प्रदान के लिए एन्कोडिंग नियमों को परिभाषित करता है। ट्रांसफर सिंटैक्स निर्दिष्ट करता है कि कैसे डेटा तत्वों को क्रमबद्ध किया जाता है, जिसमें बाइट ऑर्डरिंग (एंडियननेस), वैल्यू प्रतिनिधित्व (वीआर) एन्कोडिंग (निहित या स्पष्ट), और संपीड़न योजनाओं जैसे पहलू शामिल हैं।</p>
+{{< blocks/products/pf/feature-page-section h2="ट्रांसफ़र सिंटैक्स क्या है?">}}
 
-<p>ट्रांसफर सिंटैक्स प्रभावित करता है कि कैसे DICOM फ़ाइलें पढ़ी जाती हैं, व्याख्या की जाती हैं और चिकित्सा इमेजिंग उपकरण और सॉफ्टवेयर द्वारा संसाधित की जाती हैं। यह निर्धारित करता है कि क्या एक प्राप्त प्रणाली सही ढंग से डिकोड कर सकती है और छवि डेटा प्रदर्शित कर सकती है। ट्रांसफर सिंटैक्स से प्रभावित प्रमुख घटकों में शामिल हैं:</p>
+<p>A <strong>ट्रांसफ़र सिंटैक्स</strong> यह निर्धारित करता है कि DICOM डेटा को संग्रहीत करने और स्थानांतरित करने के लिए कैसे एन्कोड किया जाता है। यह तीन प्रमुख पहलुओं को निर्दिष्ट करता है: बाइट क्रम (एंडियननेस), वैल्यू रिप्रेजेंटेशन्स explicit या implicit हैं, तथा पिक्सेल डेटा पर लागू संपीड़न एल्गोरिदम। प्रत्येक DICOM फ़ाइल अपने ट्रांसफ़र सिंटैक्स को फ़ाइल मेटा इनफ़ॉर्मेशन हेडर में घोषित करती है।</p>
 
-<ul>
+<p>विभिन्न मेडिकल डिवाइस, PACS सर्वर, और व्यूइंग एप्लिकेशन विभिन्न ट्रांसफ़र सिंटैक्स सेटों का समर्थन करते हैं। <strong>Aspose.Medical for .NET</strong> <code>Transcode</code> मेथड प्रदान करता है जो ट्रांसफ़र सिंटैक्स के बीच रूपांतरण करता है, जिससे इंटरऑपरेबिलिटी, स्टोरेज ऑप्टिमाइजेशन, और प्रोसेसिंग टूल्स के साथ संगतता संभव होती है &mdash; यह सब शुद्ध .NET लाइब्रेरी में बिना किसी नेटिव डिपेंडेंसी के।</p>
 
-<li><b> बाइट ऑर्डरिंग (एंडियननेस) </b>: उस अनुक्रम को निर्देशित करता है जिसमें बाइट्स को बड़े संख्यात्मक मूल्यों में व्यवस्थित किया जाता है। दो प्राथमिक प्रकार थोड़ा एंडियन (कम से कम महत्वपूर्ण बाइट पहले) और बिग एंडियन (सबसे महत्वपूर्ण बाइट पहले) हैं।</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> मान प्रतिनिधित्व (वीआर) एन्कोडिंग </b>: निर्दिष्ट करता है कि क्या वीआर स्पष्ट रूप से डेटा स्ट्रीम (स्पष्ट वीआर) या निहित (निहित वीआर) में कहा गया है। वीआर प्रत्येक डेटा तत्व के डेटा प्रकार और प्रारूप को परिभाषित करता है, जो सटीक व्याख्या के लिए महत्वपूर्ण है।</li>
+{{< blocks/products/pf/feature-page-section h2="C# में DICOM फ़ाइल को ट्रांसकोड करें">}}
 
-<li><b> संपीड़न </b>: छवि डेटा के आकार को कम करने के लिए एल्गोरिदम लागू करना शामिल है। DICOM में सामान्य संपीड़न विधियों में JPEG बेसलाइन (हानि), JPEG दोषरहित, JPEG 2000 (दोनों हानि और दोषरहित), और रन-लंबाई एन्कोडिंग (RLE) शामिल हैं।</li>
+<p><code>DicomFile.Transcode</code> मेथड एक DICOM फ़ाइल को उसकी वर्तमान ट्रांसफ़र सिंटैक्स से किसी भी समर्थित लक्ष्य सिंटैक्स में परिवर्तित करता है। मेथड एक नया <code>DicomFile</code> इंस्टेंस लौटाता है — मूल फ़ाइल अपरिवर्तित रहती है:</p>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>बेसिक DICOM ट्रांसकोडिंग - C#</h3>
+ <pre><code class="cs">// Load a DICOM file (any transfer syntax)
+DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<p>आपको कई स्थितियों में एक ट्रांसफर सिंटैक्स से दूसरे में कनवर्ट करने की आवश्यकता हो सकती है:</p>
+// Transcode to JPEG 2000 Lossy for storage optimization
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("compressed.dcm");
 
-<ul>
+// Transcode to Explicit VR Little Endian (uncompressed) for maximum compatibility
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-<li><b> सिस्टम के बीच इंटरऑपरेबिलिटी </b>: विभिन्न चिकित्सा उपकरण और सॉफ्टवेयर एप्लिकेशन ट्रांसफर सिंटैक्स के विभिन्न सेटों का समर्थन कर सकते हैं। निर्बाध संचार और डेटा एक्सचेंज सुनिश्चित करने के लिए, प्राप्त प्रणाली द्वारा समर्थित एक स्थानांतरण वाक्यविन्यास में परिवर्तित करना अक्सर आवश्यक होता है।</li>
+<p>आप सीधे <code>Dataset</code> स्तर पर भी ट्रांसकोड कर सकते हैं:</p>
 
-<li><b> स्टोरेज ऑप्टिमाइज़ेशन </b>: एक संपीड़ित ट्रांसफर सिंटैक्स में परिवर्तित करना फ़ाइल आकार को कम करता है, स्टोरेज स्पेस को बचाता है और नेटवर्क पर ट्रांसमिशन समय में सुधार करता है। उदाहरण के लिए, संग्रह प्रणाली छवि निष्ठा के साथ आकार में कमी को संतुलित करने के लिए दोषरहित संपीड़न पसंद कर सकती है।</li>
+<div class="codeblock" id="code">
+ <h3>Dataset को ट्रांसकोड करें - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<li><b> प्रसंस्करण टूल के साथ संगतता</li>
+// Transcode the dataset to RLE Lossless
+Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
 
-<li><b> विनियामक और अनुपालन आवश्यकताएँ </b>: कुछ क्षेत्र या स्वास्थ्य सेवा संस्थान कानूनी, अनुपालन या मानकीकरण कारणों के लिए विशिष्ट हस्तांतरण सिंटैक्स के उपयोग को अनिवार्य कर सकते हैं।</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-</ul>
+{{< blocks/products/pf/feature-page-section h2="समर्थित ट्रांसफ़र सिंटैक्स">}}
 
-<p>ट्रांसफर सिंटैक्स के बीच रूपांतरण संभव है जब अंतर्निहित छवि डेटा और मेटाडेटा को आवश्यक जानकारी के नुकसान के बिना सटीक रूप से बदल दिया जा सकता है। असम्पीडित छवियों और उन लोगों के लिए जो दोषरहित तरीकों (जैसे JPEG दोषरहित या RLE) का उपयोग करके संपीड़ित हैं, रूपांतरण आम तौर पर सीधा है। पिक्सेल डेटा को विघटित किया जा सकता है और छवि गुणवत्ता के किसी भी क्षरण के बिना वांछित स्थानांतरण सिंटैक्स में फिर से एन्कोड किया जा सकता है।</p>
+<p>नीचे दी गई तालिका में सभी मानक DICOM इमेज डेटा ट्रांसफ़र सिंटैक्स और .NET के लिए Aspose.Medical में उनका वर्तमान समर्थन स्थिति दर्शाई गई है। सभी समर्थित कोडेक शुद्ध C# में लागू किए गये हैं और पूरी तरह प्लेटफ़ॉर्म-निर्भर नहीं हैं।</p>
 
-<p>हालांकि, रूपांतरण कुछ परिदृश्यों में जटिल या असंभव हो जाता है:</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>ट्रांसफ़र सिंटैक्स</th>
+<th>UID</th>
+<th>प्रकार</th>
+<th>स्थिति</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4"><strong>अनकम्प्रेस्ड</strong></td></tr>
+<tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>अनकम्प्रेस्ड</td><td>समर्थित</td></tr>
+<tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>अनकम्प्रेस्ड</td><td>समर्थित</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>अनकम्प्रेस्ड</td><td>समर्थित</td></tr>
+<tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>डिफ्लेटेड</td><td>समर्थित</td></tr>
+<tr><td colspan="4"><strong>JPEG</strong></td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Lossy, 8-बिट</td><td>समर्थित</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Lossy, 12-बिट</td><td>समर्थित नहीं</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Lossless</td><td>समर्थित (सिर्फ 8-बिट)</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Lossless</td><td>समर्थित (सिर्फ 8-बिट)</td></tr>
+<tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
+<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Lossless</td><td>समर्थित</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Near-lossless</td><td>समर्थित</td></tr>
+<tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>समर्थित (पढ़ना 8/16-बिट, लिखना 8-बिट)</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>समर्थित (पढ़ना 8/16-बिट, लिखना 8-बिट)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>समर्थित (पढ़ना 8/16-बिट, लिखना 8-बिट)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy or lossless</td><td>समर्थित (पढ़ना 8/16-बिट, लिखना 8-बिट)</td></tr>
+<tr><td colspan="4"><strong>RLE</strong></td></tr>
+<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Lossless</td><td>समर्थित</td></tr>
+<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>शीघ्र उपलब्ध</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>शीघ्र उपलब्ध</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Lossy or lossless</td><td>शीघ्र उपलब्ध</td></tr>
+<tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Lossless</td><td>शीघ्र उपलब्ध</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Lossless</td><td>शीघ्र उपलब्ध</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Lossy or lossless</td><td>शीघ्र उपलब्ध</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li><b> हानि संपीड़न </b>: हानि एल्गोरिदम (जैसे कि हानिपूर्ण सेटिंग्स के साथ JPEG बेसलाइन) का उपयोग करके संपीड़ित छवियां स्थायी रूप से छोटे फ़ाइल आकारों को प्राप्त करने के लिए कुछ छवि डेटा खो देती हैं। इन छवियों को एक अलग ट्रांसफर सिंटैक्स में परिवर्तित करना खोई हुई जानकारी को पुनर्प्राप्त नहीं कर सकता है। जब आप छवि को डिकम्प्रेस कर सकते हैं और फिर से एनकोड कर सकते हैं, तो गुणवत्ता में गिरावट बनी हुई है, और आगे हानिपूर्ण संपीड़न नुकसान को बढ़ा सकता है।</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> असमर्थित या मालिकाना संपीड़न योजनाएं </b>: कुछ चित्र गैर-मानक या मालिकाना संपीड़न एल्गोरिदम का उपयोग कर सकते हैं जो व्यापक रूप से समर्थित नहीं हैं। उपयुक्त विघटन उपकरण या पुस्तकालयों के बिना, इन छवियों को परिवर्तित करना संभव नहीं है।</li>
+{{< blocks/products/pf/feature-page-section h2="सामान्य ट्रांसकोडिंग परिदृश्य">}}
 
-<li><b> एन्क्रिप्टेड या दूषित डेटा </b>: यदि DICOM फ़ाइल सुरक्षा के लिए एन्क्रिप्टेड है या दूषित हो गया है, तो रूपांतरण तब तक आगे नहीं बढ़ सकता है जब तक कि फ़ाइल को डिक्रिप्ट या मरम्मत नहीं किया जाता है।</li>
+<p>विभिन्न वर्कफ़्लोज़ को विभिन्न ट्रांसकोडिंग रणनीतियों की आवश्यकता होती है। यहाँ सबसे सामान्य परिदृश्य हैं:</p>
 
-<li><b> मेटाडेटा संरक्षण </b>: कुछ डेटा तत्व, विशेष रूप से निजी या विक्रेता-विशिष्ट टैग, रूपांतरण के दौरान सटीक रूप से संरक्षित नहीं किया जा सकता है यदि लक्ष्य हस्तांतरण सिंटैक्स या रूपांतरण उपकरण उनका समर्थन नहीं करता है।</li>
+<div class="codeblock" id="code">
+ <h3>प्रोसेसिंग के लिए डिकम्प्रेस करें - C#</h3>
+ <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
+DicomFile dicomFile = DicomFile.Open("compressed.dcm");
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>आर्काइव स्टोरेज के लिए संपीड़ित करें - C#</h3>
+ <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
+DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
-<p>व्यवहार में, सफल रूपांतरण सॉफ्टवेयर टूल या पुस्तकालयों की क्षमताओं पर निर्भर करता है। जबकि इस तरह के रूपांतरण आम तौर पर असम्पीडित और दोषरहित संपीड़ित प्रारूपों के बीच संभव होते हैं, वे हानिपूर्ण संपीड़न या असमर्थित एन्कोडिंग योजनाओं से निपटने के दौरान संभव या उचित नहीं हो सकते हैं। ट्रांसफर सिंटैक्स की तकनीकी बारीकियों को समझना और रूपांतरण प्रक्रियाओं की सीमाएं चिकित्सा इमेजिंग डेटा की अखंडता और प्रयोज्य को बनाए रखने के लिए महत्वपूर्ण है।</p>
+// Option 1: JPEG 2000 Lossless — best compression ratio
+DicomFile j2kArchive = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossless);
 
-{{< /blocks/products/pf/feature-page-section-no-header >}}
+// Option 2: JPEG-LS Lossless — fast encode/decode
+DicomFile jlsArchive = dicomFile.Transcode(TransferSyntax.JpegLsLossless);
+
+// Option 3: RLE Lossless — universal compatibility
+DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
+
+<div class="codeblock" id="code">
+ <h3>नेटवर्क ट्रांसमिशन के लिए संपीड़ित करें - C#</h3>
+ <pre><code class="cs">// Lossy compression for fast transmission (smaller file size)
+DicomFile dicomFile = DicomFile.Open("large_study.dcm");
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("for_transmission.dcm");</code></pre>
+</div>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="ट्रांसफ़र सिंटैक्स गुणों का निरीक्षण करें">}}
+
+<p><code>TransferSyntax</code> क्लास एन्कोडिंग विशेषताओं को दर्शाने वाले प्रॉपर्टीज़ उजागर करती है। इनका उपयोग फ़ाइल के वर्तमान ट्रांसफ़र सिंटैक्स को निरीक्षण करने या उपयुक्त लक्ष्य सिंटैक्स चुनने के लिए करें:</p>
+
+<div class="codeblock" id="code">
+ <h3>ट्रांसफ़र सिंटैक्स प्रॉपर्टीज़ पढ़ें - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
+TransferSyntax? ts = dicomFile.MetaInfo.TransferSyntax;
+if (ts is null)
+    return; // the file meta information carries no transfer syntax
+
+Console.WriteLine($"Transfer Syntax: {ts}");
+Console.WriteLine($"UID: {ts.Uid}");
+Console.WriteLine($"Explicit VR: {ts.IsExplicitVr}");
+Console.WriteLine($"Little Endian: {ts.IsLittleEndian}");
+Console.WriteLine($"Encapsulated: {ts.IsEncapsulated}");
+Console.WriteLine($"Lossy: {ts.IsLossy}");
+Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
+</div>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>प्रॉपर्टी</th>
+<th>प्रकार</th>
+<th>विवरण</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>ट्रांसफ़र सिंटैक्स का अनूठा पहचानकर्ता</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>क्या वैल्यू रिप्रेजेंटेशन्स स्पष्ट रूप से एन्कोडेड हैं</td></tr>
+<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>क्या बाइट क्रम लिट्ल एंडियन है</td></tr>
+<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>क्या पिक्सेल डेटा इनकैप्सुलेटेड (संपीड़ित) है</td></tr>
+<tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>क्या संपीड़न विधि लॉसी है</td></tr>
+<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>क्या सिंटैक्स डिफ्लेट संपीड़न उपयोग करता है</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>क्या ट्रांसफ़र सिंटैक्स DICOM मानक द्वारा रिटायर किया गया है</td></tr>
+<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>लॉसी संपीड़न विधि का ISO मानक पहचानकर्ता</td></tr>
+</tbody>
+</table>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="लॉसी बनाम लॉसलेस संपीड़न">}}
+
+<p>DICOM फ़ाइलों को ट्रांसकोड करते समय लॉसी और लॉसलेस संपीड़न के बीच अंतर समझना अत्यंत महत्वपूर्ण है:</p>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>पहलू</th>
+<th>लॉसलेस</th>
+<th>लॉसी</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>छवि गुणवत्ता</td><td>पिक्सेल-परफ़ेक्ट — मूल डेटा पूरी तरह संरक्षित</td><td>छोटी आकार प्राप्त करने के लिए कुछ डेटा स्थायी रूप से खो जाता है</td></tr>
+<tr><td>संपीड़न अनुपात</td><td>आमतौर पर 2:1 से 3:1</td><td>आमतौर पर 10:1 से 30:1 या अधिक</td></tr>
+<tr><td>राउंड-ट्रिप सुरक्षित</td><td>हां — डिकम्प्रेस करें और समान पिक्सेल प्राप्त करें</td><td>नहीं — प्रत्येक लॉसी री-एन्कोडिंग से गुणवत्ता और घटती है</td></tr>
+<tr><td>उपयोग केस</td><td>आर्काइवल, डायग्नॉस्टिक्स, कानूनी रिकॉर्ड</td><td>प्रारंभिक समीक्षा, टेलीमेडिसिन, नेटवर्क ट्रांसमिशन</td></tr>
+<tr><td>समर्थित कोडेक्स</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+</tbody>
+</table>
+
+<p><strong>महत्वपूर्ण:</strong> लॉसी- संपीड़ित फ़ाइल को लॉसलेस सिंटैक्स में ट्रांसकोड करने से खोया हुआ डेटा पुनर्स्थापित नहीं होता। मूल लॉसी संपीड़न से हुई गुणवत्ता गिरावट स्थायी होती है।</p>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/pf/support-learning-resources >}}
+{{< blocks/products/pf/slr-tab tabTitle="शैक्षणिक संसाधन" tabId="resources" >}}
+{{< blocks/products/pf/slr-element name="डॉक्यूमेंटेशन" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="सोर्स कोड" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="API रेफ़रेंसेज़" href="https://reference.aspose.com/medical/net/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="उत्पाद समर्थन" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="निःशुल्क समर्थन" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="सशुल्क समर्थन" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="ब्लॉग" href="https://blog.aspose.com/category/medical/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="क्यों Aspose.Medical for .NET?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="ग्राहकों की सूची" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="सफलता कहानियाँ" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< /blocks/products/pf/support-learning-resources >}}
+
+{{< blocks/products/pf/download-section downloadFreeTrialLink="https://downloads.aspose.com/medical/net" pricingInformationLink="https://purchase.aspose.com/pricing/medical/net" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

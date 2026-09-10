@@ -1,61 +1,226 @@
 ---
-title: DICOM Przekazuj konwersję składniową - Aspose.Medical
+title: Konwersja składni transferu DICOM w C# .NET | Aspose.Medical
 weight: 16000
-
-description: DICOM Przekazuj konwersję składniową - Aspose.Medical
+description: Transkoduj pliki DICOM pomiędzy składniami transferu w C# .NET. Obsługa JPEG, JPEG 2000, JPEG-LS, RLE oraz formatów niekompresowanych z API Aspose.Medical.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM Przenieś konwersję składniową" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Konwersja składni transferu DICOM w .NET C#" h2="Transkoduj pliki DICOM pomiędzy niekompresowanymi, JPEG, JPEG 2000, JPEG-LS oraz RLE składniami transferu. Czysta biblioteka .NET bez zależności natywnych." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
-{{< blocks/products/pf/feature-page-section-no-header >}}
+{{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-<p>Obrazowanie cyfrowe i komunikacja w medycynie (DICOM) jest standardowym protokołem zarządzania informacjami o obrazowaniu medycznym i powiązanymi danymi. Kluczowym elementem w ramach DICOM jest składnia transferu, która definiuje reguły kodujące do wymiany plików DICOM między różnymi systemami. Składnia transferu określa, w jaki sposób elementy danych są serializowane, w tym aspekty takie jak zamawianie bajtów (endianness), kodowanie reprezentacji wartości (VR) (niejawne lub jawne) oraz schematy kompresji.</p>
+{{< blocks/products/pf/feature-page-section h2="Czym jest składnia transferu?">}}
 
-<p>Składnia transferu wpływa na to, w jaki sposób pliki DICOM są odczytujące, interpretowane i przetwarzane przez sprzęt i oprogramowanie do obrazowania medycznego. Określa, czy system odbierający może poprawnie dekodować i wyświetlić dane obrazu. Kluczowe elementy pod wpływem składni transferowej obejmują:</p>
+<p><strong>Transfer Syntax</strong> określa, jak dane DICOM są kodowane do przechowywania i transmisji. Określa trzy kluczowe aspekty: kolejność bajtów (endianness), czy Value Representations są jawne czy niejawne oraz algorytm kompresji stosowany do danych pikselowych. Każdy plik DICOM deklaruje swoją składnię transferu w nagłówku File Meta Information.</p>
 
-<ul>
+<p>Różne urządzenia medyczne, serwery PACS i aplikacje przeglądające obsługują różne zestawy składni transferu. <strong>Aspose.Medical for .NET</strong> udostępnia metodę <code>Transcode</code> umożliwiającą konwersję pomiędzy składniami transferu, co zapewnia interoperacyjność, optymalizację przechowywania oraz kompatybilność z narzędziami przetwarzania &mdash; wszystko w czystej bibliotece .NET bez zależności natywnych.</p>
 
-<li><b> Zamawianie bajtów (endianness) </b>: dyktuje sekwencję, w której bajty są ułożone w większe wartości liczbowe. Dwa podstawowe typy to niewiele endian (najmniej znaczący bajt) i duży endian (najważniejszy bajt).</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> Reprezentacja wartości (VR) kodowanie </b>: Określa, czy VR jest wyraźnie określony w strumieniu danych (jawny VR), czy domniemany (niejawny VR). VR definiuje typ danych i format każdego elementu danych, co jest kluczowe dla dokładnej interpretacji.</li>
+{{< blocks/products/pf/feature-page-section h2="Transkoduj plik DICOM w C#">}}
 
-<li><b> Kompresja </b>: obejmuje stosowanie algorytmów w celu zmniejszenia wielkości danych obrazu. Wspólne metody kompresji w DICOM obejmują JPEG bazową (stratę), JPEG Lossless, JPEG 2000 (zarówno stratne, jak i bezstronne) oraz kodowanie długości długości (RLE).</li>
+<p>Metoda <code>DicomFile.Transcode</code> konwertuje plik DICOM z jego bieżącej składni transferu na dowolną obsługiwaną docelową składnię. Metoda zwraca nową instancję <code>DicomFile</code> &mdash; oryginał pozostaje niezmieniony:</p>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Podstawowe transkodowanie DICOM - C#</h3>
+ <pre><code class="cs">// Load a DICOM file (any transfer syntax)
+DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<p>W kilku sytuacjach może być konieczne przekonwertowanie z jednej składni transferu na drugą:</p>
+// Transcode to JPEG 2000 Lossy for storage optimization
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("compressed.dcm");
 
-<ul>
+// Transcode to Explicit VR Little Endian (uncompressed) for maximum compatibility
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-<li><b> Interoperacyjność między systemami </b>: różne urządzenia medyczne i aplikacje mogą obsługiwać różne zestawy składni transferu. Aby zapewnić bezproblemową komunikację i wymianę danych, często konieczne jest przekształcenie składni transferowej obsługiwanej przez system odbierający.</li>
+<p>Możesz także transkodować bezpośrednio na poziomie <code>Dataset</code>:</p>
 
-<li><b> Optymalizacja pamięci </b>: Konwersja na sprężoną składnię transferu zmniejsza rozmiary plików, oszczędzając przestrzeń do przechowywania i poprawę czasów transmisji nad sieciami. Na przykład systemy archiwizacji mogą preferować bezstronną kompresję, aby zmniejszyć rozmiar równowagi z wiernością obrazu.</li>
+<div class="codeblock" id="code">
+ <h3>Transkoduj Dataset - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<li><b> Kompatybilność z narzędziami przetwarzania </b>: Niektóre algorytmy przetwarzania obrazu lub narzędzia diagnostyczne wymagają obrazów w określonej składni transferowej, często nieskompresowanej lub z określonym rodzajem kompresji, aby funkcjonować poprawnie.</li>
+// Transcode the dataset to RLE Lossless
+Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
 
-<li><b> Wymagania regulacyjne i zgodności </b>: Niektóre regiony lub instytucje opieki zdrowotnej mogą nakazać stosowanie określonych składni transferowych z powodów prawnych, zgodności lub standaryzacji.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-</ul>
+{{< blocks/products/pf/feature-page-section h2="Obsługiwane składnie transferu">}}
 
-<p>Konwersja między składniami transferu jest możliwa, gdy podstawowe dane obrazu i metadane można dokładnie przekształcić bez utraty podstawowych informacji. W przypadku nieskompresowanych obrazów i kompresowanych metod bezstratnych (takich jak JPEG bezstratne lub RLE), konwersja jest ogólnie prosta. Dane piksela można dekompresować i ponownie skodować do żądanej składni transferu bez degradacji jakości obrazu.</p>
+<p>Poniższa tabela wymienia wszystkie standardowe składnie transferu danych obrazu DICOM oraz ich aktualny status wsparcia w Aspose.Medical for .NET. Wszystkie obsługiwane kodeki są zaimplementowane w czystym C# i są w pełni niezależne od platformy.</p>
 
-<p>Jednak konwersja staje się złożona lub nawet niemożliwa w niektórych scenariuszach:</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Transfer Syntax</th>
+<th>UID</th>
+<th>Typ</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4"><strong>Nieskompresowane</strong></td></tr>
+<tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>Nieskompresowane</td><td>Obsługiwane</td></tr>
+<tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>Nieskompresowane</td><td>Obsługiwane</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Nieskompresowane</td><td>Obsługiwane</td></tr>
+<tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>Obsługiwane</td></tr>
+<tr><td colspan="4"><strong>JPEG</strong></td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Stratny, 8-bit</td><td>Obsługiwane</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Stratny, 12-bit</td><td>Nieobsługiwane</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Bezztraty</td><td>Obsługiwane (tylko 8-bitowe)</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Bezztraty</td><td>Obsługiwane (tylko 8-bitowe)</td></tr>
+<tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
+<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Bezztraty</td><td>Obsługiwane</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Near-lossless</td><td>Obsługiwane</td></tr>
+<tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Bezztraty</td><td>Obsługiwane (odczyt 8/16-bitowy, zapis 8-bitowy)</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Stratny lub bezstratny</td><td>Obsługiwane (odczyt 8/16-bitowy, zapis 8-bitowy)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Bezztraty</td><td>Obsługiwane (odczyt 8/16-bitowy, zapis 8-bitowy)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Stratny lub bezstratny</td><td>Obsługiwane (odczyt 8/16-bitowy, zapis 8-bitowy)</td></tr>
+<tr><td colspan="4"><strong>RLE</strong></td></tr>
+<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Bezztraty</td><td>Obsługiwane</td></tr>
+<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Bezztraty</td><td>Wkrótce</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Bezztraty</td><td>Wkrótce</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Stratny lub bezstratny</td><td>Wkrótce</td></tr>
+<tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Bezztraty</td><td>Wkrótce</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Bezztraty</td><td>Wkrótce</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Stratny lub bezstratny</td><td>Wkrótce</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li><b> Stratna kompresja </b>: Obrazy skompresowane przy użyciu algorytmów stratnych (takich jak linia bazowa JPEG z ustawieniami stratymi) trwale tracą niektóre dane obrazu, aby osiągnąć mniejsze rozmiary plików. Konwersja tych obrazów na inną składnię transferu nie może odzyskać utraconych informacji. Podczas gdy możesz dekompresować i ponownie inkodować obraz, degradacja jakości pozostaje, a dalsza utrata kompresji może zaostrzyć stratę.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> Nieobsługiwane lub zastrzeżone schematy kompresji </b>: Niektóre obrazy mogą używać niestandardowych lub zastrzeżonych algorytmów kompresji, które nie są szeroko obsługiwane. Bez odpowiednich narzędzi dekompresyjnych lub bibliotek konwersja tych obrazów nie jest wykonalna.</li>
+{{< blocks/products/pf/feature-page-section h2="Typowe scenariusze transkodowania">}}
 
-<li><b> Zaszyfrowane lub uszkodzone dane </b>: Jeśli plik DICOM jest zaszyfrowany do bezpieczeństwa lub został uszkodzony, konwersja nie może kontynuować, dopóki plik nie zostanie odszyfrowany lub naprawiony.</li>
+<p>Różne przepływy pracy wymagają różnych strategii transkodowania. Oto najczęstsze scenariusze:</p>
 
-<li><b> Zachowanie metadanych </b>: Niektóre elementy danych, zwłaszcza tagi prywatne lub specyficzne dla dostawcy, nie mogą być zachowane dokładnie podczas konwersji, jeśli docelowe składni lub narzędzie do konwersji ich nie obsługuje.</li>
+<div class="codeblock" id="code">
+ <h3>Dekompresja do przetwarzania - C#</h3>
+ <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
+DicomFile dicomFile = DicomFile.Open("compressed.dcm");
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Kompresja do archiwizacji - C#</h3>
+ <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
+DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
-<p>W praktyce udana konwersja zależy od możliwości używanych narzędzi programowych lub bibliotek. Chociaż takie konwersje są ogólnie możliwe między formatami nieskompresowanymi i bezstronnie sprężonymi, mogą one nie być wykonalne lub wskazane w przypadku utraty kompresji lub nieobsługiwanych schematów kodowania. Zrozumienie technicznych niuansów składni transferu i ograniczeń procesów konwersji ma kluczowe znaczenie dla utrzymania integralności i użyteczności danych obrazowania medycznego.</p>
+// Option 1: JPEG 2000 Lossless — best compression ratio
+DicomFile j2kArchive = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossless);
 
-{{< /blocks/products/pf/feature-page-section-no-header >}}
+// Option 2: JPEG-LS Lossless — fast encode/decode
+DicomFile jlsArchive = dicomFile.Transcode(TransferSyntax.JpegLsLossless);
+
+// Option 3: RLE Lossless — universal compatibility
+DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
+
+<div class="codeblock" id="code">
+ <h3>Kompresja do transmisji sieciowej - C#</h3>
+ <pre><code class="cs">// Lossy compression for fast transmission (smaller file size)
+DicomFile dicomFile = DicomFile.Open("large_study.dcm");
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("for_transmission.dcm");</code></pre>
+</div>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Sprawdź właściwości składni transferu">}}
+
+<p>Klasa <code>TransferSyntax</code> udostępnia właściwości opisujące charakterystyki kodowania. Użyj ich, aby sprawdzić bieżącą składnię transferu pliku lub wybrać odpowiednią docelową składnię:</p>
+
+<div class="codeblock" id="code">
+ <h3>Odczyt właściwości składni transferu - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
+TransferSyntax? ts = dicomFile.MetaInfo.TransferSyntax;
+if (ts is null)
+    return; // the file meta information carries no transfer syntax
+
+Console.WriteLine($"Transfer Syntax: {ts}");
+Console.WriteLine($"UID: {ts.Uid}");
+Console.WriteLine($"Explicit VR: {ts.IsExplicitVr}");
+Console.WriteLine($"Little Endian: {ts.IsLittleEndian}");
+Console.WriteLine($"Encapsulated: {ts.IsEncapsulated}");
+Console.WriteLine($"Lossy: {ts.IsLossy}");
+Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
+</div>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Właściwość</th>
+<th>Typ</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>Unikalny identyfikator składni transferu</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Czy Value Representations są jawnie kodowane</td></tr>
+<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>Czy kolejność bajtów jest little endian</td></tr>
+<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>Czy dane pikselowe są enkapsulowane (skompresowane)</td></tr>
+<tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>Czy metoda kompresji jest stratna</td></tr>
+<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>Czy składnia używa kompresji deflate</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Czy składnia transferu została wycofana przez standard DICOM</td></tr>
+<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>Identyfikator metody kompresji stratnej wg standardu ISO</td></tr>
+</tbody>
+</table>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Kompresja stratna vs bezstratna">}}
+
+<p>Zrozumienie różnicy między kompresją stratną a bezstratną jest kluczowe przy transkodowaniu plików DICOM:</p>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Aspekt</th>
+<th>Bezstratna</th>
+<th>Stratna</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Jakość obrazu</td><td>Pixel-perfect &mdash; oryginalne dane w pełni zachowane</td><td>Część danych trwale utracona w celu zmniejszenia rozmiaru</td></tr>
+<tr><td>Współczynnik kompresji</td><td>Typowo 2:1 do 3:1</td><td>Typowo 10:1 do 30:1 lub wyższy</td></tr>
+<tr><td>Bezpieczna round‑trip</td><td>Tak &mdash; dekompresja i otrzymanie identycznych pikseli</td><td>Nie &mdash; każde ponowne kodowanie stratne dodatkowo pogarsza jakość</td></tr>
+<tr><td>Zastosowania</td><td>Archiwalny, diagnostyka, dokumentacja prawna</td><td>Wstępny przegląd, telemedycyna, transmisja sieciowa</td></tr>
+<tr><td>Obsługiwane kodeki</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+</tbody>
+</table>
+
+<p><strong>Ważne:</strong> Transkodowanie pliku skompresowanego stratnie do składni bezstratnej nie przywraca utraconych danych. Degradacja jakości wynikająca z pierwotnej kompresji stratnej jest trwała.</p>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/pf/support-learning-resources >}}
+{{< blocks/products/pf/slr-tab tabTitle="Zasoby edukacyjne" tabId="resources" >}}
+{{< blocks/products/pf/slr-element name="Dokumentacja" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="Kod źródłowy" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="Referencje API" href="https://reference.aspose.com/medical/net/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Wsparcie produktu" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="Wsparcie darmowe" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="Wsparcie płatne" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Dlaczego Aspose.Medical for .NET?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="Lista klientów" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="Historie sukcesu" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< /blocks/products/pf/support-learning-resources >}}
+
+{{< blocks/products/pf/download-section downloadFreeTrialLink="https://downloads.aspose.com/medical/net" pricingInformationLink="https://purchase.aspose.com/pricing/medical/net" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

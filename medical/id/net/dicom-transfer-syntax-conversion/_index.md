@@ -1,61 +1,226 @@
 ---
-title: DICOM transfer konversi sintaks - Aspose.Medical
+title: Konversi Transfer Syntax DICOM dalam C# .NET | Aspose.Medical
 weight: 16000
-
-description: DICOM transfer konversi sintaks - Aspose.Medical
+description: Transcode file DICOM antar transfer syntax dalam C# .NET. Mendukung JPEG, JPEG 2000, JPEG-LS, RLE, dan format tidak terkompresi dengan Aspose.Medical API.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM transfer konversi sintaksis" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Konversi Transfer Syntax DICOM dalam .NET C#" h2="Transcode file DICOM antar transfer syntax tidak terkompresi, JPEG, JPEG 2000, JPEG-LS, dan RLE. Perpustakaan .NET murni tanpa dependensi native." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
-{{< blocks/products/pf/feature-page-section-no-header >}}
+{{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-<p>Pencitraan Digital dan Komunikasi dalam Kedokteran (DICOM) adalah protokol standar untuk mengelola informasi pencitraan medis dan data terkait. Elemen penting dalam kerangka DICOM adalah sintaks transfer, yang mendefinisikan aturan pengkodean untuk menukar file DICOM antara sistem yang berbeda. Sintaks transfer menentukan bagaimana elemen data diserialisasi, termasuk aspek -aspek seperti pemesanan byte (endianness), pengkodean representasi nilai (VR) (implisit atau eksplisit), dan skema kompresi.</p>
+{{< blocks/products/pf/feature-page-section h2="Apa Itu Transfer Syntax?">}}
 
-<p>Sintaks transfer mempengaruhi bagaimana file DICOM dibaca, ditafsirkan, dan diproses oleh peralatan dan perangkat lunak pencitraan medis. Ini menentukan apakah sistem penerima dapat dengan benar memecahkan kode dan menampilkan data gambar. Komponen utama yang dipengaruhi oleh sintaks transfer meliputi:</p>
+<p>Sebuah <strong>Transfer Syntax</strong> mendefinisikan cara data DICOM dienkode untuk penyimpanan dan transmisi. Ini menentukan tiga aspek kunci: urutan byte (endianness), apakah Value Representation bersifat eksplisit atau implisit, dan algoritma kompresi yang diterapkan pada data piksel. Setiap file DICOM menyatakan transfer syntax-nya dalam header File Meta Information.</p>
 
-<ul>
+<p>Berbagai perangkat medis, server PACS, dan aplikasi penampil mendukung set transfer syntax yang berbeda. <strong>Aspose.Medical for .NET</strong> menyediakan metode <code>Transcode</code> untuk mengonversi antar transfer syntax, memungkinkan interoperabilitas, optimasi penyimpanan, dan kompatibilitas dengan alat pemrosesan &mdash; semua dalam perpustakaan .NET murni tanpa dependensi native.</p>
 
-<li><b> byte ordering (endianness) </b>: menentukan urutan di mana byte disusun menjadi nilai numerik yang lebih besar. Dua tipe utama adalah endian kecil (byte paling tidak signifikan pertama) dan endian besar (byte paling signifikan pertama).</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> Nilai Representasi (VR) Encoding </b>: Menentukan apakah VR secara eksplisit dinyatakan dalam aliran data (VR eksplisit) atau tersirat (VR implisit). VR mendefinisikan tipe dan format data dari setiap elemen data, yang sangat penting untuk interpretasi yang akurat.</li>
+{{< blocks/products/pf/feature-page-section h2="Transcode File DICOM dalam C#">}}
 
-<li><b> Kompresi </b>: Melibatkan penerapan algoritma untuk mengurangi ukuran data gambar. Metode kompresi umum dalam DICOM termasuk baseline JPEG (lossy), JPEG Lossless, JPEG 2000 (keduanya lossy dan lossless), dan run-length encoding (RLE).</li>
+<p>Metode <code>DicomFile.Transcode</code> mengonversi file DICOM dari transfer syntax saat ini ke syntax target yang didukung. Metode ini mengembalikan instance <code>DicomFile</code> baru &mdash; file asli tetap tidak berubah:</p>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Transcoding DICOM Dasar - C#</h3>
+ <pre><code class="cs">// Load a DICOM file (any transfer syntax)
+DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<p>Anda mungkin perlu mengonversi dari satu sintaks transfer ke yang lain dalam beberapa situasi:</p>
+// Transcode to JPEG 2000 Lossy for storage optimization
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("compressed.dcm");
 
-<ul>
+// Transcode to Explicit VR Little Endian (uncompressed) for maximum compatibility
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-<li><b> Interoperabilitas Antara Sistem </b>: Perangkat medis yang berbeda dan aplikasi perangkat lunak dapat mendukung berbagai set sintaks transfer. Untuk memastikan komunikasi yang mulus dan pertukaran data, mengonversi ke sintaks transfer yang didukung oleh sistem penerima sering diperlukan.</li>
+<p>Anda juga dapat melakukan transcoding pada level <code>Dataset</code> secara langsung:</p>
 
-<li><b> Optimasi Penyimpanan </b>: Mengonversi ke sintaks transfer terkompresi mengurangi ukuran file, menghemat ruang penyimpanan dan meningkatkan waktu transmisi melalui jaringan. Misalnya, sistem pengarsipan mungkin lebih suka kompresi lossless untuk menyeimbangkan pengurangan ukuran dengan kesetiaan gambar.</li>
+<div class="codeblock" id="code">
+ <h3>Transcode Dataset - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<li><b> Kompatibilitas dengan alat pemrosesan </b>: Beberapa algoritma pemrosesan gambar atau alat diagnostik memerlukan gambar dalam sintaks transfer tertentu, seringkali tidak terkompresi atau dengan jenis kompresi tertentu, untuk berfungsi dengan benar.</li>
+// Transcode the dataset to RLE Lossless
+Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
 
-<li><b> Persyaratan peraturan dan kepatuhan </b>: Daerah atau lembaga perawatan kesehatan tertentu dapat mengamanatkan penggunaan sintaks transfer spesifik untuk alasan hukum, kepatuhan, atau standardisasi.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-</ul>
+{{< blocks/products/pf/feature-page-section h2="Transfer Syntax yang Didukung">}}
 
-<p>Konversi antara sintaks transfer dimungkinkan ketika data gambar dan metadata yang mendasarinya dapat diubah secara akurat tanpa kehilangan informasi penting. Untuk gambar yang tidak terkompresi dan yang dikompresi menggunakan metode lossless (seperti JPEG Lossless atau RLE), konversi umumnya mudah. Data piksel dapat didekompresi dan dikodekan ulang ke dalam sintaks transfer yang diinginkan tanpa degradasi kualitas gambar.</p>
+<p>Tabel di bawah ini mencantumkan semua transfer syntax data gambar DICOM standar serta status dukungan mereka saat ini di Aspose.Medical for .NET. Semua codec yang didukung diimplementasikan dalam C# murni dan bersifat platform-independen.</p>
 
-<p>Namun, konversi menjadi kompleks atau bahkan tidak mungkin dalam skenario tertentu:</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Transfer Syntax</th>
+<th>UID</th>
+<th>Tipe</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4"><strong>Tidak Terkompresi</strong></td></tr>
+<tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>Tidak Terkompresi</td><td>Didukung</td></tr>
+<tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>Tidak Terkompresi</td><td>Didukung</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Tidak Terkompresi</td><td>Didukung</td></tr>
+<tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Dideflate</td><td>Didukung</td></tr>
+<tr><td colspan="4"><strong>JPEG</strong></td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Lossy, 8-bit</td><td>Didukung</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Lossy, 12-bit</td><td>Tidak didukung</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Lossless</td><td>Didukung (hanya 8-bit)</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Lossless</td><td>Didukung (hanya 8-bit)</td></tr>
+<tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
+<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Lossless</td><td>Didukung</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Near-lossless</td><td>Didukung</td></tr>
+<tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>Didukung (baca 8/16-bit, tulis 8-bit)</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>Didukung (baca 8/16-bit, tulis 8-bit)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>Didukung (baca 8/16-bit, tulis 8-bit)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy or lossless</td><td>Didukung (baca 8/16-bit, tulis 8-bit)</td></tr>
+<tr><td colspan="4"><strong>RLE</strong></td></tr>
+<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Lossless</td><td>Didukung</td></tr>
+<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>Segera hadir</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>Segera hadir</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Lossy or lossless</td><td>Segera hadir</td></tr>
+<tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Lossless</td><td>Segera hadir</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Lossless</td><td>Segera hadir</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Lossy or lossless</td><td>Segera hadir</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li><b> Lossy Compression </b>: Gambar Dikompresi Menggunakan Algoritma Lossy (seperti JPEG Baseline dengan Pengaturan Lossy) secara permanen kehilangan beberapa data gambar untuk mencapai ukuran file yang lebih kecil. Mengubah gambar ini ke sintaks transfer yang berbeda tidak dapat memulihkan informasi yang hilang. Meskipun Anda dapat mendekompres dan membuat kode ulang gambar, degradasi kualitas tetap, dan kompresi lossy lebih lanjut dapat memperburuk kerugian.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> Skema kompresi yang tidak didukung atau eksklusif </b>: Beberapa gambar dapat menggunakan algoritma kompresi non-standar atau eksklusif yang tidak didukung secara luas. Tanpa alat dekompresi atau perpustakaan yang sesuai, mengonversi gambar -gambar ini tidak layak.</li>
+{{< blocks/products/pf/feature-page-section h2="Skenario Transcoding Umum">}}
 
-<li><b> Data terenkripsi atau rusak </b>: Jika file DICOM dienkripsi untuk keamanan atau telah rusak, konversi tidak dapat dilanjutkan sampai file didekripsi atau diperbaiki.</li>
+<p>Berbagai alur kerja membutuhkan strategi transcoding yang berbeda. Berikut adalah skenario paling umum:</p>
 
-<li><b> Pelestarian Metadata </b>: Elemen data tertentu, terutama tag khusus pribadi atau vendor, mungkin tidak dipertahankan secara akurat selama konversi jika sintaks transfer target atau alat konversi tidak mendukungnya.</li>
+<div class="codeblock" id="code">
+ <h3>Dekompresi untuk pemrosesan - C#</h3>
+ <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
+DicomFile dicomFile = DicomFile.Open("compressed.dcm");
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Kompresi untuk penyimpanan arsip - C#</h3>
+ <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
+DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
-<p>Dalam praktiknya, konversi yang berhasil tergantung pada kemampuan alat perangkat lunak atau pustaka yang digunakan. Sementara konversi seperti itu umumnya dimungkinkan antara format yang tidak terkompresi dan tanpa kerugian, mereka mungkin tidak layak atau disarankan ketika berhadapan dengan kompresi lossy atau skema penyandian yang tidak didukung. Memahami nuansa teknis sintaks transfer dan keterbatasan proses konversi sangat penting untuk mempertahankan integritas dan kegunaan data pencitraan medis.</p>
+// Option 1: JPEG 2000 Lossless — best compression ratio
+DicomFile j2kArchive = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossless);
 
-{{< /blocks/products/pf/feature-page-section-no-header >}}
+// Option 2: JPEG-LS Lossless — fast encode/decode
+DicomFile jlsArchive = dicomFile.Transcode(TransferSyntax.JpegLsLossless);
+
+// Option 3: RLE Lossless — universal compatibility
+DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
+
+<div class="codeblock" id="code">
+ <h3>Kompresi untuk transmisi jaringan - C#</h3>
+ <pre><code class="cs">// Lossy compression for fast transmission (smaller file size)
+DicomFile dicomFile = DicomFile.Open("large_study.dcm");
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("for_transmission.dcm");</code></pre>
+</div>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Periksa Properti Transfer Syntax">}}
+
+<p>Kelas <code>TransferSyntax</code> menampilkan properti yang menggambarkan karakteristik enkoding. Gunakan ini untuk memeriksa transfer syntax file saat ini atau untuk memilih syntax target yang sesuai:</p>
+
+<div class="codeblock" id="code">
+ <h3>Baca properti transfer syntax - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
+TransferSyntax? ts = dicomFile.MetaInfo.TransferSyntax;
+if (ts is null)
+    return; // the file meta information carries no transfer syntax
+
+Console.WriteLine($"Transfer Syntax: {ts}");
+Console.WriteLine($"UID: {ts.Uid}");
+Console.WriteLine($"Explicit VR: {ts.IsExplicitVr}");
+Console.WriteLine($"Little Endian: {ts.IsLittleEndian}");
+Console.WriteLine($"Encapsulated: {ts.IsEncapsulated}");
+Console.WriteLine($"Lossy: {ts.IsLossy}");
+Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
+</div>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Properti</th>
+<th>Tipe</th>
+<th>Deskripsi</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>Pengidentifikasi unik dari transfer syntax</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Apakah Value Representation di-encode secara eksplisit</td></tr>
+<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>Apakah urutan byte little endian</td></tr>
+<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>Apakah data piksel di-enkapsulasi (terkompresi)</td></tr>
+<tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>Apakah metode kompresi bersifat lossy</td></tr>
+<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>Apakah syntax menggunakan kompresi deflate</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Apakah transfer syntax telah dihentikan oleh standar DICOM</td></tr>
+<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>Pengidentifikasi standar ISO dari metode kompresi lossy</td></tr>
+</tbody>
+</table>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Kompresi Lossy vs Lossless">}}
+
+<p>Memahami perbedaan antara kompresi lossy dan lossless sangat penting saat transcoding file DICOM:</p>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Aspek</th>
+<th>Lossless</th>
+<th>Lossy</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Kualitas gambar</td><td>Pixel-perfect &mdash; data asli sepenuhnya dipertahankan</td><td>Beberapa data hilang secara permanen untuk mencapai ukuran lebih kecil</td></tr>
+<tr><td>Rasio kompresi</td><td>Biasanya 2:1 hingga 3:1</td><td>Biasanya 10:1 hingga 30:1 atau lebih</td></tr>
+<tr><td>Keamanan round-trip</td><td>Ya &mdash; dekompresi dan memperoleh piksel identik</td><td>Tidak &mdash; setiap re-encode lossy semakin menurunkan kualitas</td></tr>
+<tr><td>Kasus penggunaan</td><td>Arsip, diagnostik, catatan hukum</td><td>Tinjauan pendahuluan, telemedisin, transmisi jaringan</td></tr>
+<tr><td>Codec yang didukung</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+</tbody>
+</table>
+
+<p><strong>Penting:</strong> Transcoding dari file yang terkompresi lossy ke syntax lossless tidak mengembalikan data yang hilang. Penurunan kualitas akibat kompresi lossy asli bersifat permanen.</p>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/pf/support-learning-resources >}}
+{{< blocks/products/pf/slr-tab tabTitle="Sumber Belajar" tabId="resources" >}}
+{{< blocks/products/pf/slr-element name="Dokumentasi" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="Kode Sumber" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="Referensi API" href="https://reference.aspose.com/medical/net/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Dukungan Produk" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="Dukungan Gratis" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="Dukungan Berbayar" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Mengapa Aspose.Medical untuk .NET?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="Daftar Pelanggan" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="Kisah Sukses" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< /blocks/products/pf/support-learning-resources >}}
+
+{{< blocks/products/pf/download-section downloadFreeTrialLink="https://downloads.aspose.com/medical/net" pricingInformationLink="https://purchase.aspose.com/pricing/medical/net" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

@@ -1,61 +1,226 @@
 ---
-title: DICOM Conversione di sintassi di trasferimento - Aspose.Medical
+title: Conversione della Transfer Syntax DICOM in C# .NET | Aspose.Medical
 weight: 16000
-
-description: DICOM Conversione di sintassi di trasferimento - Aspose.Medical
+description: Transcodifica file DICOM tra transfer syntax in C# .NET. Supporto per JPEG, JPEG 2000, JPEG-LS, RLE e formati non compressi con l'API Aspose.Medical.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM conversione di sintassi di trasferimento" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Conversione della Transfer Syntax DICOM in .NET C#" h2="Transcodifica file DICOM tra transfer syntax non compressi, JPEG, JPEG 2000, JPEG-LS e RLE. Libreria .NET pura senza dipendenze native." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
-{{< blocks/products/pf/feature-page-section-no-header >}}
+{{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-<p>Digital Imaging and Communications in Medicine (DICOM) è il protocollo standard per la gestione delle informazioni di imaging medico e dei dati correlati. Un elemento fondamentale all'interno del framework DICOM è la sintassi di trasferimento, che definisce le regole di codifica per lo scambio di file DICOM tra diversi sistemi. La sintassi di trasferimento specifica il modo in cui gli elementi di dati sono serializzati, inclusi aspetti come l'ordinamento del byte (endianness), la codifica della rappresentazione del valore (VR) (implicita o esplicita) e di compressione.</p>
+{{< blocks/products/pf/feature-page-section h2="Che cos'è la Transfer Syntax?">}}
 
-<p>La sintassi di trasferimento influisce su come i file DICOM vengono letti, interpretati ed elaborati da apparecchiature e software di imaging medico. Determina se un sistema ricevente può decodificare e visualizzare correttamente i dati dell'immagine. I componenti chiave influenzati dalla sintassi del trasferimento includono:</p>
+<p>Una <strong>Transfer Syntax</strong> definisce come i dati DICOM sono codificati per l'archiviazione e la trasmissione. Specifica tre aspetti chiave: l'ordine dei byte (endianness), se le Value Representation sono esplicite o implicite, e l'algoritmo di compressione applicato ai dati dei pixel. Ogni file DICOM dichiara la sua transfer syntax nell'intestazione File Meta Information.</p>
 
-<ul>
+<p>Diversi dispositivi medici, server PACS e applicazioni di visualizzazione supportano differenti insiemi di transfer syntax. <strong>Aspose.Medical for .NET</strong> offre il metodo <code>Transcode</code> per convertire tra transfer syntax, consentendo l'interoperabilità, l'ottimizzazione dell'archiviazione e la compatibilità con gli strumenti di elaborazione &mdash; il tutto in una libreria .NET pura senza dipendenze native.</p>
 
-<li><b> Ordine di byte (Endianness) </b>: determina la sequenza in cui i byte sono disposti in valori numerici maggiori. I due tipi primari sono poco endian (prima byte meno significativo) e Big Endian (prima byte più significativo).</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> Rappresentazione del valore (VR) Codifica </b>: specifica se la VR è esplicitamente dichiarata nel flusso di dati (VR esplicito) o implicita (VR implicita). VR definisce il tipo di dati e il formato di ciascun elemento di dati, che è cruciale per un'interpretazione accurata.</li>
+{{< blocks/products/pf/feature-page-section h2="Transcodifica un file DICOM in C#">}}
 
-<li><b> Compressione </b>: comporta l'applicazione di algoritmi per ridurre le dimensioni dei dati dell'immagine. I metodi di compressione comuni in DICOM includono JPEG Baseline (Lossy), JPEG Lossless, JPEG 2000 (sia perdita che perdita) e codifica di lunghezza (RLE).</li>
+<p>Il metodo <code>DicomFile.Transcode</code> converte un file DICOM dalla sua transfer syntax corrente a qualsiasi sintassi di destinazione supportata. Il metodo restituisce una nuova istanza di <code>DicomFile</code> &mdash; l'originale rimane invariato:</p>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Trascode DICOM di base - C#</h3>
+ <pre><code class="cs">// Load a DICOM file (any transfer syntax)
+DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<p>Potrebbe essere necessario convertire da una sintassi di trasferimento in un'altra in diverse situazioni:</p>
+// Transcode to JPEG 2000 Lossy for storage optimization
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("compressed.dcm");
 
-<ul>
+// Transcode to Explicit VR Little Endian (uncompressed) for maximum compatibility
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-<li><b> Interoperabilità tra i sistemi </b>: diversi dispositivi medici e applicazioni software possono supportare diversi set di sintassi di trasferimento. Per garantire una comunicazione senza soluzione di continuità e lo scambio di dati, è spesso necessaria la conversione in una sintassi di trasferimento supportata dal sistema ricevente.</li>
+<p>È possibile anche transcodificare direttamente a livello di <code>Dataset</code>:</p>
 
-<li><b> Ottimizzazione dell'archiviazione </b>: la conversione in una sintassi di trasferimento compressa riduce le dimensioni dei file, il salvataggio dello spazio di archiviazione e il miglioramento dei tempi di trasmissione rispetto alle reti. Ad esempio, i sistemi di archiviazione potrebbero preferire la compressione senza perdita per la riduzione delle dimensioni del bilanciamento con la fedeltà dell'immagine.</li>
+<div class="codeblock" id="code">
+ <h3>Transcodifica un Dataset - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<li><b> Compatibilità con gli strumenti di elaborazione </b>: alcuni algoritmi di elaborazione delle immagini o strumenti diagnostici richiedono immagini in una sintassi di trasferimento specifica, spesso non compressa o con un particolare tipo di compressione, per funzionare correttamente.</li>
+// Transcode the dataset to RLE Lossless
+Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
 
-<li><b> Requisiti normativi e di conformità </b>: alcune regioni o istituti di assistenza sanitaria possono imporre l'uso di specifiche sintassi di trasferimento per motivi legali, di conformità o standardizzazione.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-</ul>
+{{< blocks/products/pf/feature-page-section h2="Transfer Syntax supportate">}}
 
-<p>La conversione tra le sintassi di trasferimento è possibile quando i dati di immagine sottostanti e i metadati possono essere accuratamente trasformati senza perdita di informazioni essenziali. Per le immagini non compresse e quelle compresse usando metodi senza perdita (come JPEG Lossless o RLE), la conversione è generalmente semplice. I dati dei pixel possono essere decompressi e ri-codificati nella sintassi di trasferimento desiderata senza alcun degrado della qualità dell'immagine.</p>
+<p>La tabella seguente elenca tutte le transfer syntax standard per i dati immagine DICOM e il loro attuale stato di supporto in Aspose.Medical for .NET. Tutti i codec supportati sono implementati interamente in C# e sono completamente indipendenti dalla piattaforma.</p>
 
-<p>Tuttavia, la conversione diventa complessa o addirittura impossibile in alcuni scenari:</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Transfer Syntax</th>
+<th>UID</th>
+<th>Tipo</th>
+<th>Stato</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4"><strong>Non compresso</strong></td></tr>
+<tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>Non compresso</td><td>Supportato</td></tr>
+<tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>Non compresso</td><td>Supportato</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Non compresso</td><td>Supportato</td></tr>
+<tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>Supportato</td></tr>
+<tr><td colspan="4"><strong>JPEG</strong></td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Con perdita, 8-bit</td><td>Supportato</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Con perdita, 12-bit</td><td>Non supportato</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Lossless</td><td>Supportato (solo 8-bit)</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Lossless</td><td>Supportato (solo 8-bit)</td></tr>
+<tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
+<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Lossless</td><td>Supportato</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Near-lossless</td><td>Supportato</td></tr>
+<tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>Supportato (lettura 8/16-bit, scrittura 8-bit)</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Con perdita o lossless</td><td>Supportato (lettura 8/16-bit, scrittura 8-bit)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>Supportato (lettura 8/16-bit, scrittura 8-bit)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Con perdita o lossless</td><td>Supportato (lettura 8/16-bit, scrittura 8-bit)</td></tr>
+<tr><td colspan="4"><strong>RLE</strong></td></tr>
+<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Lossless</td><td>Supportato</td></tr>
+<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>Prossimamente</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>Prossimamente</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Con perdita o lossless</td><td>Prossimamente</td></tr>
+<tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Lossless</td><td>Prossimamente</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Lossless</td><td>Prossimamente</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Con perdita o lossless</td><td>Prossimamente</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li><b> Perdita compressione </b>: le immagini compresse utilizzando algoritmi di perdita (come JPEG Baseline con le impostazioni di perdita) perdono permanentemente alcuni dati di immagine per ottenere dimensioni di file più piccole. La conversione di queste immagini in una diversa sintassi di trasferimento non può recuperare le informazioni perse. Mentre è possibile decomprimere e ricudire l'immagine, la degradazione della qualità rimane e un'ulteriore compressione di perdita può esacerbare la perdita.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> Schemi di compressione non supportati o proprietari </b>: alcune immagini possono utilizzare algoritmi di compressione non standard o proprietari non ampiamente supportati. Senza gli strumenti di decompressione o le librerie appropriati, la conversione di queste immagini non è possibile.</li>
+{{< blocks/products/pf/feature-page-section h2="Scenari comuni di transcodifica">}}
 
-<li><b> Dati crittografati o corrotti </b>: se il file DICOM è crittografato per la sicurezza o è diventato corrotto, la conversione non può procedere fino a quando il file non viene decrittografato o riparato.</li>
+<p>Diversi flussi di lavoro richiedono diverse strategie di transcodifica. Ecco gli scenari più comuni:</p>
 
-<li><b> Preservazione dei metadati </b>: alcuni elementi di dati, in particolare i tag privati ​​o specifici del fornitore, non possono essere conservati accuratamente durante la conversione se la sintassi del trasferimento target o lo strumento di conversione non li supportano.</li>
+<div class="codeblock" id="code">
+ <h3>Decomprimere per l'elaborazione - C#</h3>
+ <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
+DicomFile dicomFile = DicomFile.Open("compressed.dcm");
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Comprimere per l'archiviazione - C#</h3>
+ <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
+DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
-<p>In pratica, la conversione di successo dipende dalle capacità degli strumenti software o delle librerie utilizzate. Mentre tali conversioni sono generalmente possibili tra formati compressi non compressi e senza perdite, potrebbero non essere fattibili o consigliabili quando si tratta di compressione perdita o schemi di codifica non supportati. Comprendere le sfumature tecniche della sintassi del trasferimento e i limiti dei processi di conversione è cruciale per mantenere l'integrità e l'usabilità dei dati di imaging medico.</p>
+// Option 1: JPEG 2000 Lossless — best compression ratio
+DicomFile j2kArchive = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossless);
 
-{{< /blocks/products/pf/feature-page-section-no-header >}}
+// Option 2: JPEG-LS Lossless — fast encode/decode
+DicomFile jlsArchive = dicomFile.Transcode(TransferSyntax.JpegLsLossless);
+
+// Option 3: RLE Lossless — universal compatibility
+DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
+
+<div class="codeblock" id="code">
+ <h3>Comprimere per la trasmissione in rete - C#</h3>
+ <pre><code class="cs">// Lossy compression for fast transmission (smaller file size)
+DicomFile dicomFile = DicomFile.Open("large_study.dcm");
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("for_transmission.dcm");</code></pre>
+</div>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Ispeziona le proprietà della Transfer Syntax">}}
+
+<p>La classe <code>TransferSyntax</code> espone proprietà che descrivono le caratteristiche di codifica. Utilizzale per ispezionare la transfer syntax corrente di un file o per selezionare una sintassi di destinazione appropriata:</p>
+
+<div class="codeblock" id="code">
+ <h3>Leggi le proprietà della transfer syntax - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
+TransferSyntax? ts = dicomFile.MetaInfo.TransferSyntax;
+if (ts is null)
+    return; // the file meta information carries no transfer syntax
+
+Console.WriteLine($"Transfer Syntax: {ts}");
+Console.WriteLine($"UID: {ts.Uid}");
+Console.WriteLine($"Explicit VR: {ts.IsExplicitVr}");
+Console.WriteLine($"Little Endian: {ts.IsLittleEndian}");
+Console.WriteLine($"Encapsulated: {ts.IsEncapsulated}");
+Console.WriteLine($"Lossy: {ts.IsLossy}");
+Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
+</div>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Proprietà</th>
+<th>Tipo</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>L'identificatore unico della transfer syntax</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Indica se le Value Representation sono codificate esplicitamente</td></tr>
+<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>Indica se l'ordine dei byte è little endian</td></tr>
+<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>Indica se i dati pixel sono incapsulati (compressi)</td></tr>
+<tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>Indica se il metodo di compressione è con perdita</td></tr>
+<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>Indica se la sintassi utilizza la compressione deflate</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Indica se la transfer syntax è ritirata dallo standard DICOM</td></tr>
+<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>L'identificatore ISO del metodo di compressione con perdita</td></tr>
+</tbody>
+</table>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Compressione con perdita vs lossless">}}
+
+<p>Comprendere la differenza tra compressione con perdita e lossless è fondamentale durante la transcodifica dei file DICOM:</p>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Aspetto</th>
+<th>Lossless</th>
+<th>Lossy</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Qualità dell'immagine</td><td>Pixel-perfect &mdash; dati originali completamente preservati</td><td>Alcuni dati persi definitivamente per ottenere una dimensione più piccola</td></tr>
+<tr><td>Rapporto di compressione</td><td>Tipicamente 2:1 a 3:1</td><td>Tipicamente 10:1 a 30:1 o superiore</td></tr>
+<tr><td>Sicuro per round-trip</td><td>Sì &mdash; decomprimere e ottenere pixel identici</td><td>No &mdash; ogni nuova compressione con perdita degrada ulteriormente la qualità</td></tr>
+<tr><td>Casi d'uso</td><td>Archiviazione, diagnostica, registri legali</td><td>Revisione preliminare, telemedicina, trasmissione in rete</td></tr>
+<tr><td>Codec supportati</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+</tbody>
+</table>
+
+<p><strong>Importante:</strong> La transcodifica da un file compresso con perdita a una sintassi lossless non ripristina i dati persi. Il degrado di qualità dovuto alla compressione originale con perdita è permanente.</p>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/pf/support-learning-resources >}}
+{{< blocks/products/pf/slr-tab tabTitle="Risorse di apprendimento" tabId="resources" >}}
+{{< blocks/products/pf/slr-element name="Documentazione" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="Codice sorgente" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="Riferimenti API" href="https://reference.aspose.com/medical/net/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Supporto prodotto" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="Supporto gratuito" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="Supporto a pagamento" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Perché Aspose.Medical per .NET?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="Elenco clienti" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="Storie di successo" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< /blocks/products/pf/support-learning-resources >}}
+
+{{< blocks/products/pf/download-section downloadFreeTrialLink="https://downloads.aspose.com/medical/net" pricingInformationLink="https://purchase.aspose.com/pricing/medical/net" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

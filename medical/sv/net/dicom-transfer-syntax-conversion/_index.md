@@ -1,61 +1,226 @@
 ---
-title: DICOM Överföring Syntaxkonvertering - Aspose.Medical
+title: DICOM-överföringssyntaxkonvertering i C# .NET | Aspose.Medical
 weight: 16000
-
-description: DICOM Överföring Syntaxkonvertering - Aspose.Medical
+description: Koda om DICOM-filer mellan överföringssyntaxer i C# .NET. Stöd för JPEG, JPEG 2000, JPEG‑LS, RLE och okomprimerade format med Aspose.Medical API.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM Överför syntaxkonvertering" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM-överföringssyntaxkonvertering i .NET C#" h2="Koda om DICOM-filer mellan okomprimerade, JPEG, JPEG 2000, JPEG‑LS och RLE‑överföringssyntaxer. Rent .NET‑bibliotek utan någon inhemsk beroende." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
-{{< blocks/products/pf/feature-page-section-no-header >}}
+{{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-<p>Digital avbildning och kommunikation inom medicin (DICOM) är standardprotokollet för att hantera medicinsk avbildninginformation och relaterade data. Ett viktigt element inom DICOM -ramverket är överföringssyntaxen, som definierar kodningsreglerna för att utbyta DICOM -filer mellan olika system. Överföringssyntax Anger hur dataelement serialiseras, inklusive aspekter som Byte Ordering (Endianness), Value Representation (VR) -kodning (implicit eller uttrycklig) och kompressionsscheman.</p>
+{{< blocks/products/pf/feature-page-section h2="Vad är överföringssyntax?">}}
 
-<p>Överföringssyntax påverkar hur DICOM -filer läses, tolkas och bearbetas av medicinsk avbildningsutrustning och programvara. Den bestämmer om ett mottagande system kan korrekt avkoda och visa bilddata. Nyckelkomponenter som påverkas av överföringssyntax inkluderar:</p>
+<p>En <strong>Transfer Syntax</strong> definierar hur DICOM‑data kodas för lagring och överföring. Den specificerar tre nyckelaspekter: byteordning (endianness), huruvida Value Representations är explicita eller implicita, samt komprimeringsalgoritmen som appliceras på bilddata. Varje DICOM‑fil deklarerar sin överföringssyntax i filens meta‑information header.</p>
 
-<ul>
+<p>Olika medicinska enheter, PACS‑servrar och visningsprogram stödjer olika uppsättningar av överföringssyntaxer. <strong>Aspose.Medical for .NET</strong> tillhandahåller <code>Transcode</code>-metoden för att konvertera mellan överföringssyntaxer, vilket möjliggör interoperabilitet, lagringsoptimering och kompatibilitet med bearbetningsverktyg &mdash; allt i ett rent .NET‑bibliotek utan inhemska beroenden.</p>
 
-<li><b> byte beställning (Endianness) </b>: dikterar sekvensen i vilken byte är arrangerade till större numeriska värden. De två primära typerna är lite endian (minst signifikant byte först) och stora endian (mest betydande byte först).</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> Värderepresentation (VR) kodning </b>: Anger om VR uttryckligen anges i dataströmmen (uttrycklig VR) eller implicerad (implicit VR). VR definierar datatypen och formatet för varje dataelement, vilket är avgörande för korrekt tolkning.</li>
+{{< blocks/products/pf/feature-page-section h2="Koda om en DICOM‑fil i C#">}}
 
-<li><b> komprimering </b>: innebär att tillämpa algoritmer för att minska storleken på bilddata. Vanliga kompressionsmetoder i DICOM inkluderar JPEG-baslinjen (Lossy), JPEG Losseless, JPEG 2000 (både förlust och förlustfri) och kodning av körning (RLE).</li>
+<p>Metoden <code>DicomFile.Transcode</code> konverterar en DICOM‑fil från dess nuvarande överföringssyntax till någon stödjd mål‑syntax. Metoden returnerar en ny <code>DicomFile</code>-instans &mdash; originalet förblir oförändrat:</p>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Grundläggande DICOM‑omkodning - C#</h3>
+ <pre><code class="cs">// Load a DICOM file (any transfer syntax)
+DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<p>Du kan behöva konvertera från en överföringssyntax till en annan i flera situationer:</p>
+// Transcode to JPEG 2000 Lossy for storage optimization
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("compressed.dcm");
 
-<ul>
+// Transcode to Explicit VR Little Endian (uncompressed) for maximum compatibility
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-<li><b> Interoperabilitet mellan system </b>: Olika medicintekniska applikationer och programvaruapplikationer kan stödja olika uppsättningar av överföringssyntaxer. För att säkerställa sömlös kommunikation och datautbyte är det ofta nödvändigt att konvertera till en överföringssyntax som stöds av mottagningssystemet.</li>
+<p>Du kan även koda om på <code>Dataset</code>-nivå direkt:</p>
 
-<li><b> Lagringsoptimering </b>: Konvertering till en komprimerad överföringssyntax minskar filstorlekar, sparar lagringsutrymme och förbättrar överföringstider över nätverk. Till exempel kan arkiveringssystem föredra förlustfri komprimering för att balansera storleksminskning med bildfidelitet.</li>
+<div class="codeblock" id="code">
+ <h3>Koda om ett Dataset - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<li><b> Kompatibilitet med bearbetningsverktyg </b>: Vissa bildbehandlingsalgoritmer eller diagnostiska verktyg kräver bilder i en specifik överföringssyntax, ofta okomprimerad eller med en viss typ av komprimering, för att fungera korrekt.</li>
+// Transcode the dataset to RLE Lossless
+Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
 
-<li><b> Reglerings- och efterlevnadskrav </b>: Vissa regioner eller sjukvårdsinstitutioner kan kräva användning av specifika överföringssyntax för juridiska, efterlevnad eller standardiseringsskäl.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-</ul>
+{{< blocks/products/pf/feature-page-section h2="Stödda överföringssyntaxer">}}
 
-<p>Omvandling mellan överföringssyntaxer är möjlig när de underliggande bilddata och metadata kan transformeras exakt utan förlust av väsentlig information. För okomprimerade bilder och de komprimerade med hjälp av förlustfria metoder (som JPEG -förlustfri eller RLE) är konvertering i allmänhet enkel. Pixeldata kan dekomprimeras och kodas om i den önskade överföringssyntaxen utan någon nedbrytning av bildkvaliteten.</p>
+<p>Följande tabell listar alla standard DICOM‑bilddataöverföringssyntaxer och deras aktuella stödstatus i Aspose.Medical for .NET. Alla stödda kodekar är implementerade i rent C# och är helt plattformsoberoende.</p>
 
-<p>Men konvertering blir komplex eller till och med omöjlig i vissa scenarier:</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Transfer Syntax</th>
+<th>UID</th>
+<th>Typ</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4"><strong>Okomprimerad</strong></td></tr>
+<tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>Okomprimerad</td><td>Stöds</td></tr>
+<tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>Okomprimerad</td><td>Stöds</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Okomprimerad</td><td>Stöds</td></tr>
+<tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>Stöds</td></tr>
+<tr><td colspan="4"><strong>JPEG</strong></td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Förlustkomprimerad, 8‑bit</td><td>Stöds</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Förlustkomprimerad, 12‑bit</td><td>Stöds ej</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Förlustfri</td><td>Stöds (endast 8‑bit)</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Förlustfri</td><td>Stöds (endast 8‑bit)</td></tr>
+<tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
+<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Förlustfri</td><td>Stöds</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Nära förlustfri</td><td>Stöds</td></tr>
+<tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Förlustfri</td><td>Stöds (läser 8/16‑bit, skriver 8‑bit)</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Förlustkomprimerad eller förlustfri</td><td>Stöds (läser 8/16‑bit, skriver 8‑bit)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Förlustfri</td><td>Stöds (läser 8/16‑bit, skriver 8‑bit)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Förlustkomprimerad eller förlustfri</td><td>Stöds (läser 8/16‑bit, skriver 8‑bit)</td></tr>
+<tr><td colspan="4"><strong>RLE</strong></td></tr>
+<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Förlustfri</td><td>Stöds</td></tr>
+<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Förlustfri</td><td>Kommer snart</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Förlustfri</td><td>Kommer snart</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Förlustkomprimerad eller förlustfri</td><td>Kommer snart</td></tr>
+<tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Förlustfri</td><td>Kommer snart</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Förlustfri</td><td>Kommer snart</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Förlustkomprimerad eller förlustfri</td><td>Kommer snart</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li><b> Lossy Compression </b>: Bilder komprimerade med hjälp av förlustalgoritmer (som JPEG -baslinje med förlustinställningar) förlorar permanent vissa bilddata för att uppnå mindre filstorlekar. Att konvertera dessa bilder till en annan överföringssyntax kan inte återställa den förlorade informationen. Även om du kan dekomprimera och kodas om bilden, kvarstår kvalitetsnedbrytningen och ytterligare förlustkomprimering kan förvärra förlusten.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> ouppstår eller proprietära kompressionsscheman </b>: Vissa bilder kan använda icke-standard- eller proprietära kompressionsalgoritmer som inte stöds i stor utsträckning. Utan lämpliga dekompressionsverktyg eller bibliotek är det inte möjligt att konvertera dessa bilder.</li>
+{{< blocks/products/pf/feature-page-section h2="Vanliga omkodningsscenarier">}}
 
-<li><b> krypterade eller skadade data </b>: Om filen DICOM är krypterad för säkerhet eller har skadats, kan konvertering inte fortsätta förrän filen är dekrypterad eller reparerad.</li>
+<p>Olika arbetsflöden kräver olika omkodningsstrategier. Här är de vanligaste scenarierna:</p>
 
-<li><b> Metadata-konservering </b>: Vissa dataelement, särskilt privata eller leverantörsspecifika taggar, får inte bevaras exakt under konvertering om målöverföringssyntaxen eller konverteringsverktyget inte stöder dem.</li>
+<div class="codeblock" id="code">
+ <h3>Dekomprimera för bearbetning - C#</h3>
+ <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
+DicomFile dicomFile = DicomFile.Open("compressed.dcm");
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Komprimera för arkiveringslagring - C#</h3>
+ <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
+DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
-<p>I praktiken beror framgångsrik konvertering på kapaciteten för de använda programverktygen eller biblioteken. Även om sådana omvandlingar i allmänhet är möjliga mellan okomprimerade och förlustlöst komprimerade format, kanske de inte är genomförbara eller tillrådliga när de hanterar förlustkomprimering eller ouppstått kodningsscheman. Att förstå de tekniska nyanserna i överföringssyntax och begränsningarna i konverteringsprocesser är avgörande för att upprätthålla integriteten och användbarheten hos medicinska avbildningsdata.</p>
+// Option 1: JPEG 2000 Lossless — best compression ratio
+DicomFile j2kArchive = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossless);
 
-{{< /blocks/products/pf/feature-page-section-no-header >}}
+// Option 2: JPEG-LS Lossless — fast encode/decode
+DicomFile jlsArchive = dicomFile.Transcode(TransferSyntax.JpegLsLossless);
+
+// Option 3: RLE Lossless — universal compatibility
+DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
+
+<div class="codeblock" id="code">
+ <h3>Komprimera för nätverkstransmission - C#</h3>
+ <pre><code class="cs">// Lossy compression for fast transmission (smaller file size)
+DicomFile dicomFile = DicomFile.Open("large_study.dcm");
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("for_transmission.dcm");</code></pre>
+</div>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Inspektera egenskaper för överföringssyntax">}}
+
+<p>Klassen <code>TransferSyntax</code> exponerar egenskaper som beskriver kodningens karaktäristik. Använd dessa för att inspektera en fils nuvarande överföringssyntax eller för att välja en lämplig mål‑syntax:</p>
+
+<div class="codeblock" id="code">
+ <h3>Läs överföringssyntaxegenskaper - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
+TransferSyntax? ts = dicomFile.MetaInfo.TransferSyntax;
+if (ts is null)
+    return; // the file meta information carries no transfer syntax
+
+Console.WriteLine($"Transfer Syntax: {ts}");
+Console.WriteLine($"UID: {ts.Uid}");
+Console.WriteLine($"Explicit VR: {ts.IsExplicitVr}");
+Console.WriteLine($"Little Endian: {ts.IsLittleEndian}");
+Console.WriteLine($"Encapsulated: {ts.IsEncapsulated}");
+Console.WriteLine($"Lossy: {ts.IsLossy}");
+Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
+</div>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Egenskap</th>
+<th>Typ</th>
+<th>Beskrivning</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>Den unika identifieraren för överföringssyntaxen</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Om Value Representations är explicit kodade</td></tr>
+<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>Om byteordning är little endian</td></tr>
+<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>Om bilddata är kapslade (komprimerade)</td></tr>
+<tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>Om komprimeringsmetoden är förlustkomprimerad</td></tr>
+<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>Om syntaxen använder deflate‑komprimering</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Om överföringssyntaxen har pensionerats av DICOM‑standarden</td></tr>
+<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>ISO‑standardidentifieraren för den förlustkomprimerade metoden</td></tr>
+</tbody>
+</table>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Förlustkomprimering vs förlustfri komprimering">}}
+
+<p>Att förstå skillnaden mellan förlustkomprimering och förlustfri kompression är kritiskt vid omkodning av DICOM‑filer:</p>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Aspekt</th>
+<th>Förlustfri</th>
+<th>Förlustkomprimerad</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Bildkvalitet</td><td>Pixelperfekt &mdash; originaldata bevaras helt</td><td>Viss data permanent förloras för att uppnå mindre storlek</td></tr>
+<tr><td>Komprimeringsförhållande</td><td>Vanligtvis 2:1 till 3:1</td><td>Vanligtvis 10:1 till 30:1 eller högre</td></tr>
+<tr><td>Rundresa säker</td><td>Ja &mdash; dekomprimera och få identiska pixlar</td><td>Nej &mdash; varje förlustkomprimerad återkodning försämrar kvaliteten ytterligare</td></tr>
+<tr><td>Användningsområden</td><td>Arkivering, diagnostik, juridiska register</td><td>Preliminär granskning, telemedicin, nätverkstransmission</td></tr>
+<tr><td>Stödda kodekar</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+</tbody>
+</table>
+
+<p><strong>Viktigt:</strong> Omkodning från en förlustkomprimerad fil till en förlustfri syntax återställer inte förlorad data. Kvalitetsförlusten från den ursprungliga förlustkomprimeringen är permanent.</p>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/pf/support-learning-resources >}}
+{{< blocks/products/pf/slr-tab tabTitle="Lärresurser" tabId="resources" >}}
+{{< blocks/products/pf/slr-element name="Dokumentation" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="Källkod" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="API‑referenser" href="https://reference.aspose.com/medical/net/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Produktsupport" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="Gratis support" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="Betald support" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="Blogg" href="https://blog.aspose.com/category/medical/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Varför Aspose.Medical för .NET?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="Kundlista" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="Framgångshistorier" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< /blocks/products/pf/support-learning-resources >}}
+
+{{< blocks/products/pf/download-section downloadFreeTrialLink="https://downloads.aspose.com/medical/net" pricingInformationLink="https://purchase.aspose.com/pricing/medical/net" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

@@ -1,61 +1,226 @@
 ---
-title: DICOM Konverze syntaxe přenosu - Aspose.Medical
+title: Převod syntaxi přenosu DICOM v C# .NET | Aspose.Medical
 weight: 16000
-
-description: DICOM Konverze syntaxe přenosu - Aspose.Medical
+description: Překódování DICOM souborů mezi syntaxi přenosu v C# .NET. Podpora formátů JPEG, JPEG 2000, JPEG-LS, RLE a nekomprimovaných formátů pomocí Aspose.Medical API.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM Převod syntaxe přenosu" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="Převod syntaxi přenosu DICOM v .NET C#" h2="Překódujte DICOM soubory mezi nekomprimovanými, JPEG, JPEG 2000, JPEG-LS a RLE syntaxi přenosu. Čistá .NET knihovna bez nativních závislostí." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
-{{< blocks/products/pf/feature-page-section-no-header >}}
+{{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-<p>Digital Imaging and Communications in Medicine (DICOM) je standardní protokol pro správu lékařských zobrazovacích informací a souvisejících dat. Klíčovým prvkem v rámci DICOM je Syntaxe přenosu, která definuje pravidla kódování pro výměnu DICOM souborů mezi různými systémy. Syntaxe přenosu určuje, jak jsou datové prvky serializovány, včetně aspektů, jako je řazení bajtů (endianita), kódování reprezentace hodnot (VR) (implicitní nebo explicitní) a kompresní schémata.</p>
+{{< blocks/products/pf/feature-page-section h2="Co je syntax přenosu?">}}
 
-<p>Syntaxe přenosu ovlivňuje způsob, jakým jsou soubory DICOM čteny, interpretovány a zpracovávány lékařskými zobrazovacími zařízeními a softwarem. Určuje, zda přijímací systém dokáže správně dekódovat a zobrazit obrazová data. Mezi klíčové komponenty ovlivněné syntaxí přenosu patří:</p>
+<p><strong>Transfer Syntax</strong> definuje, jak jsou data DICOM kódována pro ukládání a přenos. Určuje tři klíčové aspekty: pořadí bajtů (endianness), zda jsou Value Representations explicitní nebo implicitní, a kompresní algoritmus použitý na obrazová data. Každý DICOM soubor deklaruje svou syntaxi přenosu v hlavičce File Meta Information.</p>
 
-<ul>
+<p>Různá lékařská zařízení, PACS servery a zobrazovací aplikace podporují různé sady syntaxi přenosu. <strong>Aspose.Medical for .NET</strong> poskytuje metodu <code>Transcode</code> pro konverzi mezi syntaxemi přenosu, umožňující interoperabilitu, optimalizaci úložiště a kompatibilitu s nástroji pro zpracování &mdash; vše v čisté .NET knihovně bez nativních závislostí.</p>
 
-<li><b>Pořadí bajtů (endianita):</b> Určuje pořadí, ve kterém jsou bajty uspořádány do větších číselných hodnot. Dva základní typy jsou Little Endian (nejméně významný bajt jako první) a Big Endian (nejvýznamnější bajt jako první).</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b>Kódování reprezentace hodnot (VR):</b> Určuje, zda je virtuální realita explicitně uvedena v datovém toku (Explicitní VR) nebo implicitně (Implicitní VR). VR definuje datový typ a formát každého datového prvku, což je zásadní pro přesnou interpretaci.</li>
+{{< blocks/products/pf/feature-page-section h2="Překódujte DICOM soubor v C#">}}
 
-<li><b>Komprese</b>: Zahrnuje použití algoritmů ke zmenšení velikosti obrazových dat. Mezi běžné metody komprese v DICOM patří JPEG Baseline (ztrátový), JPEG Lossless, JPEG 2000 (ztrátový i bezztrátový) a Run-Length Encoding (RLE).</li>
+<p>Metoda <code>DicomFile.Transcode</code> převádí DICOM soubor ze své aktuální syntaxi přenosu na libovolnou podporovanou cílovou syntaxi. Metoda vrací novou instanci <code>DicomFile</code> &mdash; originál zůstává nezměněn:</p>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Základní DICOM překódování - C#</h3>
+ <pre><code class="cs">// Load a DICOM file (any transfer syntax)
+DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<p>Možná budete muset převést z jedné přenosové syntaxe do druhé v několika situacích:</p>
+// Transcode to JPEG 2000 Lossy for storage optimization
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("compressed.dcm");
 
-<ul>
+// Transcode to Explicit VR Little Endian (uncompressed) for maximum compatibility
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-<li><b>Interoperabilita mezi systémy</b>: Různé lékařské přístroje a softwarové aplikace mohou podporovat různé sady přenosových syntaxí. Aby byla zajištěna bezproblémová komunikace a výměna dat, je často nutný převod na přenosovou syntaxi podporovanou přijímajícím systémem.</li>
+<p>Můžete také překódovat přímo na úrovni <code>Dataset</code>:</p>
 
-<li><b>Optimalizace úložiště</b>: Převod na komprimovanou syntaxi přenosu snižuje velikost souborů, šetří úložný prostor a zkracuje dobu přenosu po sítích. Archivační systémy mohou například preferovat bezeztrátovou kompresi, aby vyvážily zmenšení velikosti a věrnost obrazu.</li>
+<div class="codeblock" id="code">
+ <h3>Překódujte Dataset - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<li><b>Kompatibilita s nástroji pro zpracování</b>: Některé algoritmy pro zpracování obrazu nebo diagnostické nástroje vyžadují ke správnému fungování obrázky ve specifické syntaxi přenosu, často nekomprimované nebo s určitým typem komprese.</li>
+// Transcode the dataset to RLE Lossless
+Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
 
-<li><b>Regulační požadavky a požadavky na dodržování předpisů</b>: Některé regiony nebo zdravotnické instituce mohou nařídit použití specifických syntaxí přenosu z právních důvodů, z důvodu dodržování předpisů nebo standardizace.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-</ul>
+{{< blocks/products/pf/feature-page-section h2="Podporované syntaxy přenosu">}}
 
-<p>Převod mezi přenosovými syntaxemi je možný, když lze podkladová obrazová data a metadata přesně transformovat bez ztráty základních informací. U nekomprimovaných obrazů a obrazů komprimovaných pomocí bezztrátových metod (jako je JPEG Lossless nebo RLE) je převod obecně jednoduchý. Data pixelů lze dekomprimovat a znovu zakódovat do požadované syntaxe přenosu bez jakéhokoli snížení kvality obrazu.</p>
+<p>Následující tabulka uvádí všechny standardní DICOM syntaxy přenosu obrazových dat a jejich aktuální stav podpory v Aspose.Medical pro .NET. Všechny podporované kodeky jsou implementovány v čistém C# a jsou zcela platformově nezávislé.</p>
 
-<p>Převod se však v určitých scénářích stává složitým nebo dokonce nemožným:</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Syntax přenosu</th>
+<th>UID</th>
+<th>Typ</th>
+<th>Stav</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4"><strong>Necompressované</strong></td></tr>
+<tr><td>Implicitní VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>Necompressované</td><td>Podporováno</td></tr>
+<tr><td>Explicitní VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>Necompressované</td><td>Podporováno</td></tr>
+<tr><td>Zapouzdřené necompressované Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Necompressované</td><td>Podporováno</td></tr>
+<tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>Podporováno</td></tr>
+<tr><td colspan="4"><strong>JPEG</strong></td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Ztrátové, 8‑bitové</td><td>Podporováno</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Ztrátové, 12‑bitové</td><td>Není podporováno</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Beze ztráty</td><td>Podporováno (pouze 8‑bitové)</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Beze ztráty</td><td>Podporováno (pouze 8‑bitové)</td></tr>
+<tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
+<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Beze ztráty</td><td>Podporováno</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Near‑lossless</td><td>Podporováno</td></tr>
+<tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Beze ztráty</td><td>Podporováno (čtení 8/16‑bitové, zápis 8‑bitový)</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Ztrátové nebo beze ztráty</td><td>Podporováno (čtení 8/16‑bitové, zápis 8‑bitový)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Beze ztráty</td><td>Podporováno (čtení 8/16‑bitové, zápis 8‑bitový)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Ztrátové nebo beze ztráty</td><td>Podporováno (čtení 8/16‑bitové, zápis 8‑bitový)</td></tr>
+<tr><td colspan="4"><strong>RLE</strong></td></tr>
+<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Beze ztráty</td><td>Podporováno</td></tr>
+<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Beze ztráty</td><td>Již brzy</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Beze ztráty</td><td>Již brzy</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Ztrátové nebo beze ztráty</td><td>Již brzy</td></tr>
+<tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Beze ztráty</td><td>Již brzy</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Beze ztráty</td><td>Již brzy</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Ztrátové nebo beze ztráty</td><td>Již brzy</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li><b>Ztrátová komprese</b>: Obrázky komprimované pomocí ztrátových algoritmů (například Základní JPEG se ztrátovým nastavením) trvale ztratí část obrazových dat, aby bylo dosaženo menších velikostí souborů. Převod těchto obrázků na jinou syntaxi přenosu nemůže obnovit ztracené informace. I když můžete obraz dekomprimovat a znovu zakódovat, zhoršení kvality zůstane zachováno a další ztrátová komprese může ztrátu zhoršit.</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b>Nepodporovaná nebo proprietární schémata komprese</b>: Některé obrázky mohou používat nestandardní nebo proprietární kompresní algoritmy, které nejsou široce podporovány. Bez vhodných nástrojů nebo knihoven pro dekompresi není převod těchto obrazů možný.</li>
+{{< blocks/products/pf/feature-page-section h2="Běžné scénáře překódování">}}
 
-<li><b>Zašifrovaná nebo poškozená data</b>: Pokud je soubor DICOM z bezpečnostních důvodů zašifrován nebo je poškozen, převod nemůže pokračovat, dokud nebude soubor dešifrován nebo opraven.</li>
+<p>Různé pracovní postupy vyžadují různé strategie překódování. Zde jsou nejčastější scénáře:</p>
 
-<li><b>Zachování metadat</b>: Některé datové prvky, zejména soukromé značky nebo značky specifické pro dodavatele, nemusí být během převodu zachovány správně, pokud je cílová syntaxe přenosu nebo konverzní nástroj nepodporuje.</li>
+<div class="codeblock" id="code">
+ <h3>Dekompresovat pro zpracování - C#</h3>
+ <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
+DicomFile dicomFile = DicomFile.Open("compressed.dcm");
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>Komprimovat pro archivní ukládání - C#</h3>
+ <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
+DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
-<p>V praxi závisí úspěšná konverze na schopnostech použitých softwarových nástrojů nebo knihoven. I když jsou takové převody mezi nekomprimovanými a bezztrátově komprimovanými formáty obecně možné, nemusí být proveditelné nebo vhodné při práci se ztrátovou kompresí nebo nepodporovanými schématy kódování. Pochopení technických nuancí přenosové syntaxe a omezení převodních procesů je zásadní pro zachování integrity a použitelnosti lékařských zobrazovacích dat.</p>
+// Option 1: JPEG 2000 Lossless — best compression ratio
+DicomFile j2kArchive = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossless);
 
-{{< /blocks/products/pf/feature-page-section-no-header >}}
+// Option 2: JPEG-LS Lossless — fast encode/decode
+DicomFile jlsArchive = dicomFile.Transcode(TransferSyntax.JpegLsLossless);
+
+// Option 3: RLE Lossless — universal compatibility
+DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
+
+<div class="codeblock" id="code">
+ <h3>Komprimovat pro síťový přenos - C#</h3>
+ <pre><code class="cs">// Lossy compression for fast transmission (smaller file size)
+DicomFile dicomFile = DicomFile.Open("large_study.dcm");
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("for_transmission.dcm");</code></pre>
+</div>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Prozkoumejte vlastnosti syntaxi přenosu">}}
+
+<p>Třída <code>TransferSyntax</code> poskytuje vlastnosti popisující charakteristiky kódování. Použijte je k prozkoumání aktuální syntaxi přenosu souboru nebo k výběru vhodné cílové syntaxi:</p>
+
+<div class="codeblock" id="code">
+ <h3>Číst vlastnosti syntaxi přenosu - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
+TransferSyntax? ts = dicomFile.MetaInfo.TransferSyntax;
+if (ts is null)
+    return; // the file meta information carries no transfer syntax
+
+Console.WriteLine($"Transfer Syntax: {ts}");
+Console.WriteLine($"UID: {ts.Uid}");
+Console.WriteLine($"Explicit VR: {ts.IsExplicitVr}");
+Console.WriteLine($"Little Endian: {ts.IsLittleEndian}");
+Console.WriteLine($"Encapsulated: {ts.IsEncapsulated}");
+Console.WriteLine($"Lossy: {ts.IsLossy}");
+Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
+</div>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Vlastnost</th>
+<th>Typ</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>Jedinečný identifikátor syntaxi přenosu</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Zda jsou Value Representations explicitně kódovány</td></tr>
+<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>Zda je pořadí bajtů little endian</td></tr>
+<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>Zda jsou pixelová data zapouzdřena (komprimována)</td></tr>
+<tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>Zda je kompresní metoda ztrátová</td></tr>
+<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>Zda syntaxe používá deflate kompresi</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Zda je syntaxe přenosu stažena standardem DICOM</td></tr>
+<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>Identifikátor ISO standardu pro ztrátovou kompresní metodu</td></tr>
+</tbody>
+</table>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="Ztrátová vs bezeztrátová komprese">}}
+
+<p>Pochopení rozdílu mezi ztrátovou a bezeztrátovou kompresí je zásadní při překódování DICOM souborů:</p>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Aspekt</th>
+<th>Beze ztráty</th>
+<th>Ztrátová</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Kvalita obrazu</td><td>Pixel‑perfect &mdash; originální data plně zachována</td><td>Některá data jsou trvale ztracena pro dosažení menší velikosti</td></tr>
+<tr><td>Komprimační poměr</td><td>Typicky 2:1 až 3:1</td><td>Typicky 10:1 až 30:1 nebo více</td></tr>
+<tr><td>Bezpečný při opakovaném převodu</td><td>Ano &mdash; dekomprimací získáte identické pixely</td><td>Ne &mdash; každé ztrátové překódování dále degraduje kvalitu</td></tr>
+<tr><td>Případy použití</td><td>Archivace, diagnostika, právní záznamy</td><td>Předběžná revize, telemedicína, síťový přenos</td></tr>
+<tr><td>Podporované kodeky</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+</tbody>
+</table>
+
+<p><strong>Důležité:</strong> Překódování ze souboru komprimovaného ztrátově na syntaxi beze ztráty neobnoví ztracená data. Zhoršení kvality z původní ztrátové komprese je trvalé.</p>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/pf/support-learning-resources >}}
+{{< blocks/products/pf/slr-tab tabTitle="Výukové zdroje" tabId="resources" >}}
+{{< blocks/products/pf/slr-element name="Dokumentace" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="Zdrojový kód" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="Reference API" href="https://reference.aspose.com/medical/net/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Podpora produktu" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="Bezplatná podpora" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="Placená podpora" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="Proč Aspose.Medical pro .NET?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="Seznam zákazníků" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="Úspěšné příběhy" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< /blocks/products/pf/support-learning-resources >}}
+
+{{< blocks/products/pf/download-section downloadFreeTrialLink="https://downloads.aspose.com/medical/net" pricingInformationLink="https://purchase.aspose.com/pricing/medical/net" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

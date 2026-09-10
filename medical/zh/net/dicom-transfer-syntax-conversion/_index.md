@@ -1,61 +1,226 @@
 ---
-title: DICOM传输语法转换-Aspose.Medical
+title: C# .NET 中的 DICOM 传输语法转换 | Aspose.Medical
 weight: 16000
-
-description: DICOM传输语法转换-Aspose.Medical
+description: 在 C# .NET 中对 DICOM 文件进行传输语法之间的转码。支持 JPEG、JPEG 2000、JPEG-LS、RLE 以及未压缩格式，使用 Aspose.Medical API。
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM转移语法转换" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
+{{< blocks/products/pf/upper-banner h1="C# .NET 中的 DICOM 传输语法转换" h2="在未压缩、JPEG、JPEG 2000、JPEG-LS 和 RLE 传输语法之间转码 DICOM 文件。纯 .NET 库，无本机依赖。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
-{{< blocks/products/pf/feature-page-section-no-header >}}
+{{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-<p>医学中的数字成像和通信（DICOM）是用于管理医学成像信息和相关数据的标准协议。 DICOM框架中的关键元素是传输语法，该语法定义了在不同系统之间交换DICOM文件的编码规则。 传输语法指定数据元素如何序列化，包括字节顺序（endians），值表示（VR）编码（隐式或显式）和压缩方案等方面。</p>
+{{< blocks/products/pf/feature-page-section h2="什么是传输语法？">}}
 
-<p>传输语法会影响DICOM文件的读取，解释和通过医学成像设备和软件处理。 它确定接收系统是否可以正确解码并显示图像数据。 受到转移语法影响的关键组成部分包括：</p>
+<p>A <strong>Transfer Syntax</strong> 定义了 DICOM 数据在存储和传输时的编码方式。它指定了三个关键方面：字节序（endianness）、值表示（VR）是显式还是隐式，以及对像素数据使用的压缩算法。每个 DICOM 文件在文件元信息头中声明其传输语法。</p>
 
-<ul>
+<p>不同的医疗设备、PACS 服务器以及查看应用程序支持不同的传输语法集合。<strong>Aspose.Medical for .NET</strong> 提供 <code>Transcode</code> 方法用于在传输语法之间转换，实现互操作性、存储优化以及与处理工具的兼容性——全部基于纯 .NET 库，无本机依赖。</p>
 
-<li><b>字节排序（endianness）</b>：决定将字节排列成较大的数值值的顺序。 这两种主要类型是Little Endian（首先是最不重要的字节）和Big Endian（首先是最重要的字节）。</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b> value表示（VR）编码</b>：指定在数据流（显式VR）中明确说明VR还是暗示（隐式VR）。 VR定义了每个数据元素的数据类型和格式，这对于准确的解释至关重要。</li>
+{{< blocks/products/pf/feature-page-section h2="在 C# 中转码 DICOM 文件">}}
 
-<li><b>压缩</b>：涉及应用算法以减少图像数据的大小。 _DICOM中的常见压缩方法包括JPEG基线（Lossy），JPEG Lossless，JPEG 2000（损失和无损）和运行长度编码（RLE）。</li>
+<p><code>DicomFile.Transcode</code> 方法将 DICOM 文件从当前传输语法转换为任意受支持的目标语法。该方法返回一个新的 <code>DicomFile</code> 实例——原文件保持不变：</p>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>基本 DICOM 转码 - C#</h3>
+ <pre><code class="cs">// Load a DICOM file (any transfer syntax)
+DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<p>在几种情况下，您可能需要从一个转移语法转换为另一种传输语法：</p>
+// Transcode to JPEG 2000 Lossy for storage optimization
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("compressed.dcm");
 
-<ul>
+// Transcode to Explicit VR Little Endian (uncompressed) for maximum compatibility
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-<li><b>系统之间的互操作性</b>：不同的医疗设备和软件应用程序可能支持不同的传输语法集。 为了确保无缝的通信和数据交换，通常需要转换为由接收系统支持的转移语法。</li>
+<p>您也可以直接在 <code>Dataset</code> 级别进行转码：</p>
 
-<li><b>存储优化</b>：转换为压缩传输语法可减少文件尺寸，节省存储空间并改善网络上的传输时间。 例如，归档系统可能更喜欢无损压缩，而不是与图像保真度降低尺寸。</li>
+<div class="codeblock" id="code">
+ <h3>转码 Dataset - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 
-<li><b>与处理工具的兼容性</b>：某些图像处理算法或诊断工具需要特定传输语法中的图像，通常是未压缩或特定类型的压缩，才能正常运行。</li>
+// Transcode the dataset to RLE Lossless
+Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
 
-<li><b>监管和合规性要求</b>：某些地区或医疗机构可​​以要求使用特定的转移语法来法律，合规或标准化原因。</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-</ul>
+{{< blocks/products/pf/feature-page-section h2="支持的传输语法">}}
 
-<p>当可以准确地转换基础图像数据和元数据而不会丢失基本信息时，转移语法之间的转换是可能的。 对于未压缩的图像和使用无损方法（例如JPEG无损或RLE）压缩的图像，转换通常很简单。 像素数据可以被解压缩并重新编码为所需的传输语法，而不会降解图像质量。</p>
+<p>下表列出了所有标准 DICOM 图像数据传输语法以及它们在 Aspose.Medical for .NET 中的当前支持状态。所有受支持的编解码器均使用纯 C# 实现，完全跨平台。</p>
 
-<p>但是，在某些情况下，转换变得复杂甚至不可能：</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Transfer Syntax</th>
+<th>UID</th>
+<th>Type</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4"><strong>Uncompressed</strong></td></tr>
+<tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>未压缩</td><td>已支持</td></tr>
+<tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>未压缩</td><td>已支持</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>未压缩</td><td>已支持</td></tr>
+<tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>已支持</td></tr>
+<tr><td colspan="4"><strong>JPEG</strong></td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>有损，8 位</td><td>已支持</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>有损，12 位</td><td>不支持</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>无损</td><td>已支持（仅 8 位）</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>无损</td><td>已支持（仅 8 位）</td></tr>
+<tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
+<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>无损</td><td>已支持</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>近似无损</td><td>已支持</td></tr>
+<tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>无损</td><td>已支持（读取 8/16 位，写入 8 位）</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>有损或无损</td><td>已支持（读取 8/16 位，写入 8 位）</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>无损</td><td>已支持（读取 8/16 位，写入 8 位）</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>有损或无损</td><td>已支持（读取 8/16 位，写入 8 位）</td></tr>
+<tr><td colspan="4"><strong>RLE</strong></td></tr>
+<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>无损</td><td>已支持</td></tr>
+<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>无损</td><td>即将推出</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>无损</td><td>即将推出</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>有损或无损</td><td>即将推出</td></tr>
+<tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>无损</td><td>即将推出</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>无损</td><td>即将推出</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>有损或无损</td><td>即将推出</td></tr>
+</tbody>
+</table>
 
-<ul>
-<li><b>有损压缩</b>：使用有损算法（例如带有有损耗设置的JPEG基线）压缩的图像永久丢失一些图像数据以达到较小的文件大小。 将这些图像转换为不同的传输语法无法恢复丢失的信息。 虽然您可以解压缩并重新编码图像，但仍保留质量降解，进一步的损失压缩会加剧损失。</li>
+{{< /blocks/products/pf/feature-page-section >}}
 
-<li><b>不支持或专有压缩方案</b>：某些图像可能使用不广泛支持的非标准或专有压缩算法。 没有适当的减压工具或库，转换这些图像是不可行的。</li>
+{{< blocks/products/pf/feature-page-section h2="常见转码场景">}}
 
-<li><b>加密或损坏的数据</b>：如果DICOM文件已加密为安全性或已损坏，则在文件被解密或修复之前将无法进行转换。</li>
+<p>不同的工作流需要不同的转码策略。以下是最常见的场景：</p>
 
-<li><b>元数据保存</b>：如果目标传输语法或转换工具不支持它们，则某些数据元素，尤其是特定于私人或供应商的标签，在转换期间不得准确保留。</li>
+<div class="codeblock" id="code">
+ <h3>解压以进行处理 - C#</h3>
+ <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
+DicomFile dicomFile = DicomFile.Open("compressed.dcm");
+DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("uncompressed.dcm");</code></pre>
+</div>
 
-</ul>
+<div class="codeblock" id="code">
+ <h3>压缩以进行归档存储 - C#</h3>
+ <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
+DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
-<p>实际上，成功的转换取决于软件工具或所使用的库的功能。 尽管通常可以在未压缩和无损压缩的格式之间进行这种转换，但是在处理有损压缩或不支持编码方案时，它们可能是可行的或不可行的。 了解转移语法的技术细微差别和转换过程的局限性对于维持医学成像数据的完整性和可用性至关重要。</p>
+// Option 1: JPEG 2000 Lossless — best compression ratio
+DicomFile j2kArchive = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossless);
 
-{{< /blocks/products/pf/feature-page-section-no-header >}}
+// Option 2: JPEG-LS Lossless — fast encode/decode
+DicomFile jlsArchive = dicomFile.Transcode(TransferSyntax.JpegLsLossless);
+
+// Option 3: RLE Lossless — universal compatibility
+DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></pre>
+</div>
+
+<div class="codeblock" id="code">
+ <h3>压缩以进行网络传输 - C#</h3>
+ <pre><code class="cs">// Lossy compression for fast transmission (smaller file size)
+DicomFile dicomFile = DicomFile.Open("large_study.dcm");
+DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
+compressed.Save("for_transmission.dcm");</code></pre>
+</div>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="检查传输语法属性">}}
+
+<p><code>TransferSyntax</code> 类公开了描述编码特性的属性。可使用这些属性检查文件当前的传输语法或选择合适的目标语法：</p>
+
+<div class="codeblock" id="code">
+ <h3>读取传输语法属性 - C#</h3>
+ <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
+TransferSyntax? ts = dicomFile.MetaInfo.TransferSyntax;
+if (ts is null)
+    return; // the file meta information carries no transfer syntax
+
+Console.WriteLine($"Transfer Syntax: {ts}");
+Console.WriteLine($"UID: {ts.Uid}");
+Console.WriteLine($"Explicit VR: {ts.IsExplicitVr}");
+Console.WriteLine($"Little Endian: {ts.IsLittleEndian}");
+Console.WriteLine($"Encapsulated: {ts.IsEncapsulated}");
+Console.WriteLine($"Lossy: {ts.IsLossy}");
+Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
+</div>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>传输语法的唯一标识符</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>值表示是否为显式编码</td></tr>
+<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>字节序是否为小端</td></tr>
+<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>像素数据是否被封装（压缩）</td></tr>
+<tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>压缩方法是否为有损</td></tr>
+<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>语法是否使用 deflate 压缩</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>该传输语法是否已被 DICOM 标准淘汰</td></tr>
+<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>有损压缩方法的 ISO 标准标识符</td></tr>
+</tbody>
+</table>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< blocks/products/pf/feature-page-section h2="有损 vs 无损压缩">}}
+
+<p>在转码 DICOM 文件时，了解有损与无损压缩的区别至关重要：</p>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>方面</th>
+<th>无损</th>
+<th>有损</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>图像质量</td><td>像素完美 — 完全保留原始数据</td><td>为获得更小尺寸而永久丢失部分数据</td></tr>
+<tr><td>压缩比</td><td>通常 2:1 到 3:1</td><td>通常 10:1 到 30:1 或更高</td></tr>
+<tr><td>往返安全性</td><td>是 — 解压后得到相同像素</td><td>否 — 每次有损重新编码都会进一步降低质量</td></tr>
+<tr><td>使用场景</td><td>归档、诊断、法律记录</td><td>初步审阅、远程医疗、网络传输</td></tr>
+<tr><td>支持的编解码器</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+</tbody>
+</table>
+
+<p><strong>重要提示：</strong> 将有损压缩的文件转码为无损语法并不能恢复已丢失的数据。原始有损压缩导致的质量下降是永久性的。</p>
+
+{{< /blocks/products/pf/feature-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/pf/support-learning-resources >}}
+{{< blocks/products/pf/slr-tab tabTitle="学习资源" tabId="resources" >}}
+{{< blocks/products/pf/slr-element name="文档" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="源代码" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="API 参考" href="https://reference.aspose.com/medical/net/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="产品支持" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="免费支持" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="付费支持" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="博客" href="https://blog.aspose.com/category/medical/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< blocks/products/pf/slr-tab tabTitle="为什么选择 Aspose.Medical for .NET？" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="客户名单" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="成功案例" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< /blocks/products/pf/slr-tab >}}
+
+{{< /blocks/products/pf/support-learning-resources >}}
+
+{{< blocks/products/pf/download-section downloadFreeTrialLink="https://downloads.aspose.com/medical/net" pricingInformationLink="https://purchase.aspose.com/pricing/medical/net" >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}

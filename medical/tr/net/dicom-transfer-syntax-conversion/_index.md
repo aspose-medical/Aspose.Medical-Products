@@ -1,29 +1,29 @@
 ---
 title: C# .NET'te DICOM Transfer Syntax Dönüştürme | Aspose.Medical
 weight: 16000
-description: C# .NET'te DICOM dosyalarını transfer syntax'ları arasında dönüştürün. JPEG, JPEG 2000, JPEG-LS, RLE ve sıkıştırılmamış formatlar için Aspose.Medical API desteği.
+description: C# .NET'te DICOM dosyalarını transfer syntax'leri arasında dönüştürün. JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE ve sıkıştırılmamış formatlar için Aspose.Medical API desteği.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1=".NET C#'te DICOM Transfer Syntax Dönüştürme" h2="Sıkıştırılmamış, JPEG, JPEG 2000, JPEG-LS ve RLE transfer syntax'ları arasında DICOM dosyalarını dönüştürün. Yerel bağımlılıkları olmayan saf .NET kütüphanesi." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET C#'ta DICOM Transfer Syntax Dönüştürme" h2="DICOM dosyalarını sıkıştırılmamış, JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS ve RLE transfer syntax'leri arasında dönüştürün. Yerel bağımlılıkları olmayan saf .NET kütüphanesi." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Transfer Syntax Nedir?">}}
 
-<p>A <strong>Transfer Syntax</strong> DICOM verilerinin depolama ve iletim için nasıl kodlandığını tanımlar. Üç temel yönü belirtir: bayt sırası (endianness), Value Representation'ların açık mı yoksa örtülü mü olduğu ve piksel verisine uygulanan sıkıştırma algoritması. Her DICOM dosyası, Transfer Syntax'ını File Meta Information başlığında bildirir.</p>
+<p><strong>Transfer Syntax</strong>, DICOM verilerinin depolanması ve iletilmesi için nasıl kodlandığını tanımlar. Üç temel özelliği belirtir: bayt sırası (endianness), Value Representation'ların açık mı yoksa örtük mi olduğu ve piksel verisine uygulanan sıkıştırma algoritması. Her DICOM dosyası, transfer syntax'ini File Meta Information başlığında bildirir.</p>
 
-<p>Farklı tıbbi cihazlar, PACS sunucuları ve görüntüleme uygulamaları farklı transfer syntax setlerini destekler. <strong>Aspose.Medical for .NET</strong>, transfer syntax'ları arasında dönüştürme sağlayan <code>Transcode</code> metodunu sunar; bu sayede birlikte çalışabilirlik, depolama optimizasyonu ve işleme araçlarıyla uyumluluk sağlanır &mdash; tümü yerel bağımlılıkları olmayan saf bir .NET kütüphanesinde.</p>
+<p>Farklı tıbbi cihazlar, PACS sunucuları ve görüntüleme uygulamaları farklı transfer syntax setlerini destekler. <strong>Aspose.Medical for .NET</strong>, transfer syntax'leri arasında dönüştürme yapabilen <code>Transcode</code> metodunu sunar; bu sayede birlikte çalışabilirlik, depolama optimizasyonu ve işleme araçlarıyla uyumluluk sağlanır &mdash; tümü yerel bağımlılıkları olmayan saf bir .NET kütüphanesindedir.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="C#'te bir DICOM Dosyasını Dönüştürün">}}
+{{< blocks/products/pf/feature-page-section h2="C#'ta bir DICOM Dosyasını Dönüştürün">}}
 
-<p><code>DicomFile.Transcode</code> metodu, bir DICOM dosyasını mevcut transfer syntax'ından desteklenen hedef syntax'lardan birine dönüştürür. Metod, yeni bir <code>DicomFile</code> örneği döndürür &mdash; orijinali değişmeden kalır:</p>
+<p><code>DicomFile.Transcode</code> metodu, bir DICOM dosyasını mevcut transfer syntax'indan desteklenen herhangi bir hedef syntax'e dönüştürür. Metod yeni bir <code>DicomFile</code> örneği döndürür &mdash; orijinali değişmeden kalır:</p>
 
 <div class="codeblock" id="code">
- <h3>Temel DICOM transcoding - C#</h3>
+ <h3>Temel DICOM dönüştürme - C#</h3>
  <pre><code class="cs">// Load a DICOM file (any transfer syntax)
 DicomFile dicomFile = DicomFile.Open("input.dcm");
 
@@ -39,7 +39,7 @@ uncompressed.Save("uncompressed.dcm");</code></pre>
 <p>Ayrıca <code>Dataset</code> seviyesinde doğrudan dönüştürme yapabilirsiniz:</p>
 
 <div class="codeblock" id="code">
- <h3>Bir Dataset'i Dönüştürün - C#</h3>
+ <h3>Dataset'i Dönüştür - C#</h3>
  <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 
 // Transcode the dataset to RLE Lossless
@@ -48,9 +48,9 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Desteklenen Transfer Syntax'lar">}}
+{{< blocks/products/pf/feature-page-section h2="Desteklenen Transfer Syntax'ler">}}
 
-<p>Aşağıdaki tablo, tüm standart DICOM görüntü verisi transfer syntax'larını ve Aspose.Medical for .NET'te mevcut destek durumlarını listeler. Desteklenen tüm codec'ler saf C# ile uygulanmış olup tamamen platform bağımsızdır.</p>
+<p>Aşağıdaki tablo, standart DICOM görüntü veri transfer syntax'lerini ve Aspose.Medical for .NET'teki mevcut destek durumlarını listeler. Tüm desteklenen codec'ler saf C# ile uygulanmış olup tamamen platform bağımsızdır.</p>
 
 <table class="table table-bordered">
 <thead>
@@ -62,45 +62,46 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 </tr>
 </thead>
 <tbody>
-<tr><td colspan="4"><strong>Sıkıştırılmamış</strong></td></tr>
+<tr><td colspan=\"4\"><strong>Sıkıştırılmamış</strong></td></tr>
 <tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>Sıkıştırılmamış</td><td>Destekleniyor</td></tr>
 <tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>Sıkıştırılmamış</td><td>Destekleniyor</td></tr>
-<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Sıkıştırılmamış</td><td>Destekleniyor</td></tr>
+<tr><td>Explicit VR Big Endian</td><td><code>1.2.840.10008.1.2.2</code></td><td>Sıkıştırılmamış (kaldırıldı)</td><td>Destekleniyor</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Sıkıştırılmamış</td><td>Desteklenmiyor</td></tr>
 <tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>Destekleniyor</td></tr>
-<tr><td colspan="4"><strong>JPEG</strong></td></tr>
+<tr><td colspan=\"4\"><strong>JPEG</strong></td></tr>
 <tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Kayıplı, 8-bit</td><td>Destekleniyor</td></tr>
 <tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Kayıplı, 12-bit</td><td>Desteklenmiyor</td></tr>
 <tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Kayıpsız</td><td>Destekleniyor (yalnızca 8-bit)</td></tr>
 <tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Kayıpsız</td><td>Destekleniyor (yalnızca 8-bit)</td></tr>
-<tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
+<tr><td colspan=\"4\"><strong>JPEG-LS</strong></td></tr>
 <tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Kayıpsız</td><td>Destekleniyor</td></tr>
-<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Neredeyse kayıpsız</td><td>Destekleniyor</td></tr>
-<tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
-<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Kayıpsız</td><td>Destekleniyor (okuma 8/16-bit, yazma 8-bit)</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Kayıplı veya kayıpsız</td><td>Destekleniyor (okuma 8/16-bit, yazma 8-bit)</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Kayıpsız</td><td>Destekleniyor (okuma 8/16-bit, yazma 8-bit)</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Kayıplı veya kayıpsız</td><td>Destekleniyor (okuma 8/16-bit, yazma 8-bit)</td></tr>
-<tr><td colspan="4"><strong>RLE</strong></td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Yaklaşık kayıpsız</td><td>Destekleniyor</td></tr>
+<tr><td colspan=\"4\"><strong>JPEG 2000</strong></td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Kayıpsız</td><td>Destekleniyor (8-bit renk ve 16-bit monokrom okuma; 16-bit monokrom veya 8-bit RGB yazma)</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Kayıplı ya da kayıpsız</td><td>Destekleniyor (8-bit renk ve 16-bit monokrom okuma; 16-bit monokrom veya 8-bit RGB yazma)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Kayıpsız</td><td>Desteklenmiyor</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Kayıplı ya da kayıpsız</td><td>Desteklenmiyor</td></tr>
+<tr><td colspan=\"4\"><strong>RLE</strong></td></tr>
 <tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Kayıpsız</td><td>Destekleniyor</td></tr>
-<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
-<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Kayıpsız</td><td>Yakında</td></tr>
-<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Kayıpsız</td><td>Yakında</td></tr>
-<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Kayıplı veya kayıpsız</td><td>Yakında</td></tr>
-<tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
-<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Kayıpsız</td><td>Yakında</td></tr>
-<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Kayıpsız</td><td>Yakında</td></tr>
-<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Kayıplı veya kayıpsız</td><td>Yakında</td></tr>
+<tr><td colspan=\"4\"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Kayıpsız</td><td>Destekleniyor</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Kayıpsız</td><td>Destekleniyor</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Kayıplı ya da kayıpsız</td><td>Destekleniyor</td></tr>
+<tr><td colspan=\"4\"><strong>JPEG XL</strong></td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Kayıpsız</td><td>Destekleniyor</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Kayıpsız</td><td>Yalnızca çözümleme (kodlama bir JPEG kaynak akışı gerektirir, piksel verisi değil)</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Kayıplı ya da kayıpsız</td><td>Destekleniyor (kayıplı mod)</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Yaygın Dönüştürme Senaryoları">}}
+{{< blocks/products/pf/feature-page-section h2="Ortak Dönüştürme Senaryoları">}}
 
 <p>Farklı iş akışları farklı dönüştürme stratejileri gerektirir. İşte en yaygın senaryolar:</p>
 
 <div class="codeblock" id="code">
- <h3>İşleme için sıkıştırmayı kaldır - C#</h3>
+ <h3>İşleme için sıkıştırmayı aç - C#</h3>
  <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
 DicomFile dicomFile = DicomFile.Open("compressed.dcm");
 DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
@@ -108,7 +109,7 @@ uncompressed.Save("uncompressed.dcm");</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>Arşivleme depolama için sıkıştır - C#</h3>
+ <h3>Arşiv depolama için sıkıştır - C#</h3>
  <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
 DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
@@ -130,14 +131,29 @@ DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
 compressed.Save("for_transmission.dcm");</code></pre>
 </div>
 
+<div class="codeblock" id="code">
+ <h3>En yeni codec'leri kullan: HTJ2K ve JPEG XL - C#</h3>
+ <pre><code class="cs">// HTJ2K: JPEG 2000 quality with much faster encode and decode
+DicomFile dicomFile = DicomFile.Open("ct_series.dcm");
+DicomFile htj2k = dicomFile.Transcode(TransferSyntax.HTJ2KLossless);
+htj2k.Save("ct_htj2k.dcm");
+
+// JPEG XL: lossless or lossy, monochrome and color input
+DicomFile jxlLossless = dicomFile.Transcode(TransferSyntax.JpegXLLossless);
+jxlLossless.Save("ct_jxl_lossless.dcm");
+
+DicomFile jxlLossy = dicomFile.Transcode(TransferSyntax.JpegXL);
+jxlLossy.Save("ct_jxl.dcm");</code></pre>
+</div>
+
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Transfer Syntax Özelliklerini İnceleyin">}}
 
-<p><code>TransferSyntax</code> sınıfı, kodlama özelliklerini tanımlayan özellikleri açığa çıkarır. Bunları bir dosyanın mevcut transfer syntax'ını incelemek veya uygun bir hedef syntax seçmek için kullanın:</p>
+<p><code>TransferSyntax</code> sınıfı, kodlama özelliklerini tanımlayan nitelikleri ortaya koyar. Bunları bir dosyanın mevcut transfer syntax'ini incelemek veya uygun bir hedef syntax seçmek için kullanın:</p>
 
 <div class="codeblock" id="code">
- <h3>Transfer syntax özelliklerini okuyun - C#</h3>
+ <h3>Transfer syntax özelliklerini oku - C#</h3>
  <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("input.dcm");
 TransferSyntax? ts = dicomFile.MetaInfo.TransferSyntax;
 if (ts is null)
@@ -156,46 +172,46 @@ Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
 <thead>
 <tr>
 <th>Özellik</th>
-<th>Tip</th>
+<th>Tür</th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody>
-<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>Transfer syntax'ın benzersiz tanımlayıcısı</td></tr>
+<tr><td><code>Uid</code></td><td><code>Uid</code></td><td>Transfer syntax'in benzersiz tanımlayıcısı</td></tr>
 <tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Value Representation'ların açıkça kodlanıp kodlanmadığı</td></tr>
-<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>Bayt sıralamasının little endian olup olmadığı</td></tr>
-<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>Piksel verisinin kapsüllenip (sıkıştırılmış) olup olmadığı</td></tr>
+<tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>Bayt sırasının little endian olup olmadığı</td></tr>
+<tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>Piksel verisinin kapsüllenip (sıkıştırılıp) olduğunun belirlenmesi</td></tr>
 <tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>Sıkıştırma yönteminin kayıplı olup olmadığı</td></tr>
-<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>Syntax'ın deflate sıkıştırması kullanıp kullanmadığı</td></tr>
-<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Transfer syntax'ın DICOM standardı tarafından kullanımdan kaldırılıp kaldırılmadığı</td></tr>
+<tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>Syntax'in deflate sıkıştırması kullanıp kullanmadığı</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Transfer syntax'in DICOM standardı tarafından kaldırılmış olup olmadığı</td></tr>
 <tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>Kayıplı sıkıştırma yönteminin ISO standart kimliği</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Kayıplı vs Kayıpsız Sıkıştırma">}}
+{{< blocks/products/pf/feature-page-section h2="Kayıplı ve Kayıpsız Sıkıştırma">}}
 
 <p>Kayıplı ve kayıpsız sıkıştırma arasındaki farkı anlamak, DICOM dosyalarını dönüştürürken kritiktir:</p>
 
 <table class="table table-bordered">
 <thead>
 <tr>
-<th>Alan</th>
+<th>Özellik</th>
 <th>Kayıpsız</th>
 <th>Kayıplı</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>Görüntü kalitesi</td><td>Piksel kusursuz &mdash; orijinal veri tamamen korunur</td><td>Daha küçük boyut için bazı veriler kalıcı olarak kaybedilir</td></tr>
+<tr><td>Görüntü kalitesi</td><td>Piksel mükemmel &mdash; orijinal veri tamamen korunur</td><td>Daha küçük boyuta ulaşmak için bazı veriler kalıcı olarak kaybedilir</td></tr>
 <tr><td>Sıkıştırma oranı</td><td>Genellikle 2:1 ila 3:1</td><td>Genellikle 10:1 ila 30:1 veya daha yüksek</td></tr>
-<tr><td>Geri dönüşüm güvenli</td><td>Evet &mdash; sıkıştırmayı kaldır ve aynı pikselleri al</td><td>Hayır &mdash; her kayıplı yeniden kodlama kaliteyi daha da düşürür</td></tr>
-<tr><td>Kullanım durumları</td><td>Arşivleme, tanı, yasal kayıtlar</td><td>Ön inceleme, tele-tıp, ağ iletimi</td></tr>
-<tr><td>Desteklenen codec'ler</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+<tr><td>Geri dönüş güvenli</td><td>Evet &mdash; çöz ve aynı pikselleri al</td><td>Hayır &mdash; her kayıplı yeniden kodlama kaliteyi daha da düşürür</td></tr>
+<tr><td>Kullanım senaryoları</td><td>Arşiv, tanı, yasal kayıtlar</td><td>Ön izleme, telemedikasyon, ağ iletimi</td></tr>
+<tr><td>Desteklenen kodekler</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, HTJ2K Lossless, JPEG XL Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000, HTJ2K, JPEG XL</td></tr>
 </tbody>
 </table>
 
-<p><strong>Önemli:</strong> Kayıplı sıkıştırılmış bir dosyayı kayıpsız bir syntax'a dönüştürmek, kaybolan verileri geri getirmez. Orijinal kayıplı sıkıştırmadan kaynaklanan kalite kaybı kalıcıdır.</p>
+<p><strong>Önemli:</strong> Kayıplı sıkıştırılmış bir dosyayı kayıpsız bir syntax'e dönüştürmek kaybolan verileri geri getirmez. Orijinal kayıplı sıkıştırmadan kaynaklanan kalite bozulması kalıcıdır.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

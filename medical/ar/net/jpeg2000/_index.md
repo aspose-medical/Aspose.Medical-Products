@@ -1,24 +1,24 @@
 ---
 title: ضغط DICOM JPEG 2000 في C# .NET | Aspose.Medical
 weight: 2000
-description: قراءة، كتابة، وتحويل ملفات DICOM مع ضغط JPEG 2000 في C# .NET. دعم للصور بدقة 8 بت و 16 بت، أوضاع غير فقدانية وفقدانية، بيانات متعددة المكونات مع Aspose.Medical API.
+description: قراءة، كتابة، وتحويل ملفات DICOM مع ضغط JPEG 2000 في C# .NET. يدعم صور اللون 8‑بت والصور أحادية اللون 16‑بت، أوضاع فقدان البيانات وعدم فقدانها، بالإضافة إلى HTJ2K باستخدام Aspose.Medical API.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="دعم DICOM JPEG 2000 في .NET C#" h2="قراءة، كتابة، وتحويل ملفات DICOM مع ضغط JPEG 2000. أوضاع غير فقدانية وفقدانية، بيانات بكسل 8‑بت و 16‑بت، صور متعددة المكونات — كل ذلك في .NET نقي." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="دعم DICOM JPEG 2000 في .NET C#" h2="قراءة، كتابة، وتحويل ملفات DICOM مع ضغط JPEG 2000. أوضاع فقدان البيانات وعدم فقدانها، بيانات بكسل لون 8‑بت وأحادية 16‑بت، تشمل HTJ2K - كل ذلك في .NET نقي." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="JPEG 2000 في التصوير الطبي">}}
 
-<p><strong>JPEG 2000</strong> (ISO/IEC 15444) هو المعيار الأكثر انتشارًا لضغط الموجات في التصوير الطبي. على عكس JPEG التقليدي، يوفر ضغطًا غير فقدانيًا وفقدانيًا في برنامج ترميز واحد، وفك تشفير تدريجي للوصول إلى مناطق الاهتمام، ونسب ضغط متفوقة &mdash; مما يجعله مثاليًا لأرشفة الدراسات الكبيرة ونقل الصور عبر شبكات ذات نطاق محدود.</p>
+<p><strong>JPEG 2000</strong> (ISO/IEC 15444) هو المعيار الأكثر انتشارًا للضغط القائم على المواجـة في التصوير الطبي. على عكس JPEG التقليدي، يقدم كلًا من الضغط بدون فقدان وفقدان البيانات في مُرمّز واحد، فك تشفير تدريجي للوصول إلى مناطق الاهتمام، ونسب ضغط متفوقة &mdash; مما يجعله مثاليًا لأرشفة الدراسات الكبيرة ونقل الصور عبر شبكات محدودة.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> توفر تنفيذًا نقيًا بلغة C# لبرنامج ترميز JPEG 2000 بدون تبعيات أصلية. يمكن للمكتبة قراءة، عرض، وتحويل ملفات DICOM المضغوطة بأي من صيغ النقل الأربعة القياسية للـ JPEG 2000.</p>
+<p><strong>Aspose.Medical for .NET</strong> توفر تنفيذًا نقيًا بلغة C# لمرمز JPEG 2000 دون أي تبعيات محلية. يمكن للمكتبة قراءة، عرض، وتحويل ملفات DICOM المضغوطة بأي من صيغ النقل الأربعة القياسية لـ JPEG 2000.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="صيغ نقل JPEG 2000 المدعومة">}}
+{{< blocks/products/pf/feature-page-section h2="صيغ النقل المدعومة لـ JPEG 2000">}}
 
 <table class="table table-bordered">
 <thead>
@@ -31,26 +31,29 @@ description: قراءة، كتابة، وتحويل ملفات DICOM مع ضغط
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 غير فقداني فقط</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>غير فقداني</td><td>8 بت و 16 بت</td><td>8 بت</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>فقداني أو غير فقداني</td><td>8 بت و 16 بت</td><td>8 بت</td></tr>
-<tr><td>JPEG 2000 الجزء 2 متعدد المكونات غير فقداني فقط</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>غير فقداني</td><td>8 بت و 16 بت</td><td>8 بت</td></tr>
-<tr><td>JPEG 2000 الجزء 2 متعدد المكونات</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>فقداني أو غير فقداني</td><td>8 بت و 16 بت</td><td>8 بت</td></tr>
+<tr><td>JPEG 2000 بدون فقدان فقط</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>بدون فقدان</td><td>RGB 8‑بت، أحادي 16‑بت</td><td>أحادي 16‑بت، RGB 8‑بت</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>فقدان أو بدون فقدان</td><td>RGB 8‑بت، أحادي 16‑بت</td><td>أحادي 16‑بت، RGB 8‑بت</td></tr>
+<tr><td>JPEG 2000 الجزء 2 متعدد المكوّنات بدون فقدان فقط</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>بدون فقدان</td><td>غير مدعوم</td><td>غير مدعوم</td></tr>
+<tr><td>JPEG 2000 الجزء 2 متعدد المكوّنات</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>فقدان أو بدون فقدان</td><td>غير مدعوم</td><td>غير مدعوم</td></tr>
+<tr><td>HTJ2K بدون فقدان فقط</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>بدون فقدان</td><td>أحادي اللون وملون</td><td>أحادي اللون وملون</td></tr>
+<tr><td>HTJ2K مع خيارات RPCL بدون فقدان فقط</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>بدون فقدان</td><td>أحادي اللون وملون</td><td>أحادي اللون وملون</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>فقدان أو بدون فقدان</td><td>أحادي اللون وملون</td><td>أحادي اللون وملون</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="بيانات بكسل 8-بت و 16-بت">}}
+{{< blocks/products/pf/feature-page-section h2="بيانات بكسل 8‑بت و16‑بت">}}
 
-<p>غالبًا ما تستخدم الصور الطبية 16 بت لكل عينة لالتقاط النطاق الديناميكي الكامل للأنواع مثل التصوير المقطعي (عادةً 12‑بت مخزن في 16‑بت) والرنين المغناطيسي. تتعامل Aspose.Medical مع كلا عمقي البت لضغط JPEG 2000:</p>
+<p>غالبًا ما تستخدم الصور الطبية 16‑بت لكل عينة لالتقاط النطاق الديناميكي الكامل للوسائط مثل الأشعة المقطعية (عادةً 12‑بت مخزنة في 16‑بت) والرنين المغناطيسي. تدعم Aspose.Medical كلا عمقَي البت لـ JPEG 2000:</p>
 
 <ul>
-<li><strong>القراءة (فك الضغط)</strong>: دعم كامل لكل من ملفات DICOM المضغوطة بـ JPEG 2000 بدقة 8‑بت و 16‑بت. المكتبة تقوم بفك ترميز بيانات البكسل بشكل صحيح بغض النظر عن قيم Bits Allocated و Bits Stored و High Bit الأصلية.</li>
-<li><strong>الكتابة (الضغط)</strong>: يدعم حاليًا صور 8‑بت. دعم كتابة 16‑بت مخطط للإصدار المستقبلي.</li>
+<li><strong>القراءة (فك الضغط)</strong>: ملفات أحادية 16‑بت (CT، MRI، أشعة سينية) وملفات ملونة ثلاثية المكوّنات 8‑بت (RGB، YBR_RCT، YBR_ICT). يتم رفض ملفات لوحة الألوان، CMYK، ICC-profile وتدفقات ترميز اللون المتدرجة مع استثناء واضح بدلاً من صورة خاطئة بشكل صامت.</li>
+<li><strong>الكتابة (الضغط)</strong>: صور أحادية 16‑بت و RGB 8‑بت. الترميز أحادي 8‑بت واللون 16‑بت غير متاح؛ استخدم HTJ2K أو JPEG XL لذلك، فكلاهما يدعم الأحادية والملونة بأي عمق بت.</li>
 </ul>
 
 <div class="codeblock" id="code">
- <h3>قراءة وفحص DICOM المضغوط بـ JPEG 2000 - C#</h3>
+ <h3>قراءة وفحص DICOM مضغوط بـ JPEG 2000 - C#</h3>
  <pre><code class="cs">// Open a JPEG 2000 compressed DICOM file (8-bit or 16-bit)
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -77,7 +80,7 @@ Console.WriteLine($"Samples Per Pixel: {pixelData.SamplesPerPixel}");</code></pr
 <p>استخدم طريقة <code>Transcode</code> لضغط أي ملف DICOM إلى JPEG 2000 أو للتحويل بين أوضاع JPEG 2000:</p>
 
 <div class="codeblock" id="code">
- <h3>ضغط DICOM إلى JPEG 2000 غير فقداني - C#</h3>
+ <h3>ضغط DICOM إلى JPEG 2000 بدون فقدان - C#</h3>
  <pre><code class="cs">// Load an uncompressed DICOM file
 DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
@@ -87,7 +90,7 @@ lossless.Save("j2k_lossless.dcm");</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>ضغط DICOM إلى JPEG 2000 فقداني - C#</h3>
+ <h3>ضغط DICOM إلى JPEG 2000 بفقدان - C#</h3>
  <pre><code class="cs">// Load a DICOM file
 DicomFile dicomFile = DicomFile.Open("input.dcm");
 
@@ -100,10 +103,10 @@ lossy.Save("j2k_lossy.dcm");</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="فك ضغط ملفات DICOM بتنسيق JPEG 2000">}}
 
-<p>فك ضغط ملفات JPEG 2000 إلى صيغة نقل غير مضغوطة للمعالجة أو التحليل أو التوافق مع الأنظمة التي لا تدعم JPEG 2000:</p>
+<p>فك ضغط ملفات JPEG 2000 إلى صيغة نقل غير مضغوطة للمعالجة، التحليل، أو التوافق مع الأنظمة التي لا تدعم JPEG 2000:</p>
 
 <div class="codeblock" id="code">
- <h3>فك ضغط JPEG 2000 إلى صيغة غير مضغوطة - C#</h3>
+ <h3>فك ضغط JPEG 2000 إلى غير مضغوط - C#</h3>
  <pre><code class="cs">// Load a JPEG 2000 compressed DICOM file
 DicomFile compressed = DicomFile.Open("j2k_compressed.dcm");
 
@@ -124,9 +127,9 @@ jlsFile.Save("jpegls_lossless.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="عرض صور DICOM المضغوطة بـ JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="عرض صور DICOM بتنسيق JPEG 2000">}}
 
-<p>يمكن عرض ملفات DICOM المضغوطة بـ JPEG 2000 إلى بيانات بكسل للعرض أو التصدير، مثل أي صيغة نقل أخرى:</p>
+<p>يمكن عرض ملفات DICOM المضغوطة بـ JPEG 2000 إلى بيانات بكسل للعرض أو التصدير، كما هو الحال مع أي صيغة نقل أخرى:</p>
 
 <div class="codeblock" id="code">
  <h3>عرض إطار مضغوط بـ JPEG 2000 - C#</h3>
@@ -145,49 +148,56 @@ image.CopyPixelsTo(pixels);</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="غير فقداني مقابل فقداني JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="بدون فقدان مقابل فقدان JPEG 2000">}}
 
 <table class="table table-bordered">
 <thead>
 <tr>
 <th>الجانب</th>
-<th>JPEG 2000 غير فقداني</th>
-<th>JPEG 2000 فقداني</th>
+<th>JPEG 2000 بدون فقدان</th>
+<th>JPEG 2000 بفقدان</th>
 </tr>
 </thead>
 <tbody>
 <tr><td>صيغة النقل</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
-<tr><td>جودة الصورة</td><td>بدقة بكسلية &mdash; مطابقة للأصل</td><td>متشابه بصريًا، بعض البيانات فقدت نهائيًا</td></tr>
-<tr><td>نسبة الضغط</td><td>عادةً من 2:1 إلى 3:1</td><td>عادةً من 10:1 إلى 30:1 أو أكثر</td></tr>
-<tr><td>الأمثل لـ</td><td>أرشفة تشخيصية، سجلات قانونية، قراءة أولية</td><td>مراجعة أولية، الطب عن بُعد، نقل عبر الشبكة</td></tr>
-<tr><td>آمن للعودة</td><td>نعم</td><td>لا &mdash; إعادة الترميز تضعف الجودة أكثر</td></tr>
+<tr><td>جودة الصورة</td><td>دقيقة إلى البكسل &mdash; مطابقة للأصل</td><td>متشابهة بصريًا، بعض البيانات مفقودة بشكل دائم</td></tr>
+<tr><td>نسبة الضغط</td><td>عادةً 2:1 إلى 3:1</td><td>عادةً 10:1 إلى 30:1 أو أعلى</td></tr>
+<tr><td>الأفضل لـ</td><td>أرشفة تشخيصية، سجلات قانونية، القراءة الأولية</td><td>مراجعة أولية، الطب عن بُعد، نقل عبر الشبكة</td></tr>
+<tr><td>آمن للمرور ذهابًا وإيابًا</td><td>نعم</td><td>لا &mdash; إعادة الترميز تقلل الجودة أكثر</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 الجزء 2 متعدد المكونات">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 عالي الإنتاجية (HTJ2K)">}}
 
-<p>JPEG 2000 الجزء 2 (ISO/IEC 15444-2) يوسّع برنامج الترميز القياسي بقدرات تحويل متعددة المكونات. يُستخدم لهذا في الصور الطبية الملونة وأنواع تصوير تنتج بيانات متعددة القنوات. Aspose.Medical يدعم كلا صيغ نقل الجزء 2:</p>
-
-<ul>
-<li><code>Jpeg2000Part2MultiComponentLosslessOnly</code> &mdash; ضغط غير فقداني مع إزالة التفاعل بين المكونات للحصول على ضغط أمثل للبيانات متعددة القنوات.</li>
-<li><code>Jpeg2000Part2MultiComponent</code> &mdash; ضغط فقداني أو غير فقداني مع تحويلات متعددة المكونات.</li>
-</ul>
-
-{{< /blocks/products/pf/feature-page-section >}}
-
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 عالي السرعة (HTJ2K) — قادم قريبًا">}}
-
-<p>HTJ2K (ISO/IEC 15444-15) هو امتداد الجيل التالي لـ JPEG 2000 صُمّم لتوفير سرعات تشفير وفك تشفير أسرع بصورة ملحوظة مع الحفاظ على نفس كفاءة الضغط. من المتوقع أن يصبح برنامج الترميز المفضل لتدفقات العمل في التصوير الطبي الفوري.</p>
-
-<p>ستضيف Aspose.Medical دعم HTJ2K في إصدار مستقبلي، يغطي ثلاث صيغ نقل:</p>
+<p>HTJ2K (ISO/IEC 15444-15) يستبدل مشفر الجبر السريع البطيء في JPEG 2000 بمُشفّر كتل أسرع. يحتفظ بنفس تحويل الموجة، أوامر التقدم والجودة، ويعمل على فك وترميز أسرع بمرات عديدة. تقوم Aspose.Medical بتنفيذ جميع صيغ النقل الثلاثة لـ DICOM HTJ2K في .NET نقي، للصور أحادية اللون وملونة، وتحوّل بين HTJ2K وكل صيغة أخرى مدعومة.</p>
 
 <ul>
-<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; غير فقداني فقط</li>
-<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; غير فقداني مع ترتيب تقدم RPCL</li>
-<li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; فقداني أو غير فقداني</li>
+<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; بدون فقدان فقط</li>
+<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; بدون فقدان مع ترتيب تقدم RPCL</li>
+<li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; فقدان أو بدون فقدان</li>
 </ul>
+
+<div class="codeblock" id="code">
+ <h3>تحويل JPEG 2000 إلى HTJ2K والعودة - C#</h3>
+ <pre><code class="cs">// Transcode a JPEG 2000 file to HTJ2K, and back to classic JPEG 2000
+DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
+DicomFile htj2kFile = j2kFile.Transcode(TransferSyntax.HTJ2KLossless);
+htj2kFile.Save("htj2k_lossless.dcm");
+
+// HTJ2K with RPCL progression order, lossless
+DicomFile rpclFile = j2kFile.Transcode(TransferSyntax.HTJ2KLosslessRPCL);
+rpclFile.Save("htj2k_rpcl.dcm");
+
+// HTJ2K lossy
+DicomFile htj2kLossy = j2kFile.Transcode(TransferSyntax.HTJ2K);
+htj2kLossy.Save("htj2k_lossy.dcm");
+
+// Any HTJ2K file decodes back to an uncompressed transfer syntax
+DicomFile uncompressed = htj2kFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("decoded.dcm");</code></pre>
+</div>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

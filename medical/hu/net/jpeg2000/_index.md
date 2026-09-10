@@ -1,29 +1,29 @@
 ---
 title: DICOM JPEG 2000 tömörítés C# .NET-ben | Aspose.Medical
 weight: 2000
-description: Olvasás, írás és transzkódolás DICOM fájlok JPEG 2000 tömörítéssel C# .NET-ben. Támogatás 8‑bit és 16‑bit képekhez, veszteségmentes és veszteséges módokhoz, többkomponensű adatokhoz az Aspose.Medical API-val.
+description: Olvassa, írja és transzkódolja a DICOM fájlokat JPEG 2000 tömörítéssel C# .NET-ben. Támogatás 8 bites színes és 16 bites monokróm képekhez, veszteségmentes és veszteséges módok, valamint HTJ2K az Aspose.Medical API-val.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM JPEG 2000 támogatás .NET C#-ban" h2="Olvasás, írás és transzkódolás DICOM fájlok JPEG 2000 tömörítéssel. Veszteségmentes és veszteséges módok, 8‑bit és 16‑bit pixeladatok, többkomponensű képek — mind mindegyik tiszta .NET-ben." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM JPEG 2000 támogatás .NET C#-ban" h2="Olvassa, írja és transzkódolja a DICOM fájlokat JPEG 2000 tömörítéssel. Veszteségmentes és veszteséges módok, 8 bites szín és 16 bites monokróm pixeladat, HTJ2K beépítve – mindegyik tiszta .NET- környezetben." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="JPEG 2000 az orvosi képalkotásban">}}
 
-<p><strong>JPEG 2000</strong> (ISO/IEC 15444) a legelterjedtebb hullámtranszformáció alapú tömörítési szabvány az orvosi képalkotásban. A hagyományos JPEG-től eltérően egyetlen kodekben kínál veszteségmentes és veszteséges tömörítést is, progresszív dekódolást a ROI eléréséhez, és kiváló tömörítési arányokat &mdash; ami ideálissá teszi nagy tanulmányok archiválására és képek továbbítására korlátozott hálózatokon.</p>
+<p><strong>JPEG 2000</strong> (ISO/IEC 15444) a legelterjedtebb hullámtörzs-alapú tömörítési szabvány az orvosi képalkotásban. A hagyományos JPEG-től eltérően egyszerre kínál veszteségmentes és veszteséges tömörítést egyetlen kodekben, progresszív dekódolást a érdeklődési terület (ROI) eléréséhez, és kiemelkedő tömörítési arányokat &mdash; ami ideálissá teszi nagy tanulmányok archiválásához és képek továbbításához korlátozott hálózatokon.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> tiszta C# implementációt biztosít a JPEG 2000 kodekhez natív függőségek nélkül. A könyvtár képes olvasni, renderelni és transzkódolni a négy szabványos JPEG 2000 átvitel szintaxis egyikével tömörített DICOM fájlokat.</p>
+<p><strong>Aspose.Medical for .NET</strong> tiszta C# megvalósítást biztosít a JPEG 2000 kodekről, natív függőségek nélkül. A könyvtár képes olvasni, megjeleníteni és transzkódolni a DICOM fájlokat, amelyeket bármelyik a négy szabványos JPEG 2000 átviteli szintaxis közül tömörít.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Támogatott JPEG 2000 átvitel szintaxisek">}}
+{{< blocks/products/pf/feature-page-section h2="Támogatott JPEG 2000 átviteli szintaxisok">}}
 
 <table class="table table-bordered">
 <thead>
 <tr>
-<th>Átvitel Szintaxis</th>
+<th>Átviteli szintaxis</th>
 <th>UID</th>
 <th>Mód</th>
 <th>Olvasás</th>
@@ -31,26 +31,29 @@ description: Olvasás, írás és transzkódolás DICOM fájlok JPEG 2000 tömö
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 csak veszteségmentes</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Veszteségmentes</td><td>8‑bit és 16‑bit</td><td>8‑bit</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Veszteséges vagy veszteségmentes</td><td>8‑bit és 16‑bit</td><td>8‑bit</td></tr>
-<tr><td>JPEG 2000 Part 2 Többkomponensű csak veszteségmentes</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Veszteségmentes</td><td>8‑bit és 16‑bit</td><td>8‑bit</td></tr>
-<tr><td>JPEG 2000 Part 2 Többkomponensű</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Veszteséges vagy veszteségmentes</td><td>8‑bit és 16‑bit</td><td>8‑bit</td></tr>
+<tr><td>JPEG 2000 csak veszteségmentes</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Veszteségmentes</td><td>8 bites RGB, 16 bites monokróm</td><td>16 bites monokróm, 8 bites RGB</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Veszteséges vagy veszteségmentes</td><td>8 bites RGB, 16 bites monokróm</td><td>16 bites monokróm, 8 bites RGB</td></tr>
+<tr><td>JPEG 2000 Part 2 Többkomponensú csak veszteségmentes</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Veszteségmentes</td><td>Nem támogatott</td><td>Nem támogatott</td></tr>
+<tr><td>JPEG 2000 Part 2 Többkomponensú</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Veszteséges vagy veszteségmentes</td><td>Nem támogatott</td><td>Nem támogatott</td></tr>
+<tr><td>HTJ2K csak veszteségmentes</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Veszteségmentes</td><td>Monokróm és színes</td><td>Monokróm és színes</td></tr>
+<tr><td>HTJ2K RPCL opciókkal csak veszteségmentes</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Veszteségmentes</td><td>Monokróm és színes</td><td>Monokróm és színes</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Veszteséges vagy veszteségmentes</td><td>Monokróm és színes</td><td>Monokróm és színes</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="8‑bit és 16‑bit pixeladatok">}}
+{{< blocks/products/pf/feature-page-section h2="8 bites és 16 bites pixeladat">}}
 
-<p>Az orvosi képek gyakran 16 bitet használnak mintavételezésre a módszerek (pl. CT, amely általában 12‑bitet tárol 16‑bitben) és MRI teljes dinamikatartományának rögzítéséhez. Az Aspose.Medical mindkét bitmélységet kezeli a JPEG 2000 esetén:</p>
+<p>Az orvosi képek gyakran 16 bitet használnak mintavételenként a modalitások, például a CT (általában 12-bit tárolva 16-bitben) és az MRI teljes dinamikus tartományának rögzítéséhez. Az Aspose.Medical kezeli mindkét bitmélységet a JPEG 2000 esetén:</p>
 
 <ul>
-<li><strong>Olvasás (dekompresszió)</strong>: Teljes támogatás mind a 8‑bit, mind a 16‑bit JPEG 2000 tömörített DICOM fájlokhoz. A könyvtár helyesen dekódolja a pixeladatokat az eredeti Bits Allocated, Bits Stored és High Bit értékektől függetlenül.</li>
-<li><strong>Írás (kompresszió)</strong>: Jelenleg 8‑bit képeket támogat. A 16‑bit írás támogatása egy későbbi kiadásban van tervezve.</li>
+<li><strong>Olvasás (dekompresszió)</strong>: 16 bites monokróm fájlok (CT, MRI, röntgen) és 8 bites háromkomponensű színes fájlok (RGB, YBR_RCT, YBR_ICT). Paletta, CMYK, ICC-profil és al-mintavételezett színkód áramlások elutasításra kerülnek egyértelmű kivétellel a hallgatólagosan hibás kép helyett.</li>
+<li><strong>Írás (kompresszió)</strong>: 16 bites monokróm és 8 bites RGB képek. 8 bites monokróm és 16 bites színes kódolás nem érhető el; ilyen esetben használjon HTJ2K vagy JPEG XL megoldást, melyek mindkettőnek támogatják a monokróm és színes adatot bármely bitmélységben.</li>
 </ul>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000 tömörített DICOM olvasása és ellenőrzése – C#</h3>
+ <h3>JPEG 2000 tömörítésű DICOM olvasása és ellenőrzése – C#</h3>
  <pre><code class="cs">// Open a JPEG 2000 compressed DICOM file (8-bit or 16-bit)
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -74,7 +77,7 @@ Console.WriteLine($"Samples Per Pixel: {pixelData.SamplesPerPixel}");</code></pr
 
 {{< blocks/products/pf/feature-page-section h2="Transzkódolás JPEG 2000-ra">}}
 
-<p>Használja a <code>Transcode</code> metódust bármely DICOM fájl JPEG 2000-ra tömörítéséhez vagy a JPEG 2000 módok közötti átalakításhoz:</p>
+<p>A <code>Transcode</code> metódus használatával bármely DICOM fájlt JPEG 2000-ra tömöríthet vagy átalakíthat a JPEG 2000 különböző módjai között:</p>
 
 <div class="codeblock" id="code">
  <h3>DICOM tömörítése JPEG 2000 veszteségmentes módra – C#</h3>
@@ -98,12 +101,12 @@ lossy.Save("j2k_lossy.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM fájlok dekompressziója">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM fájlok dekódolása">}}
 
-<p>Dekompresszió JPEG 2000 fájlokra egy nem tömörített átvitel szintaxisra feldolgozás, elemzés vagy a JPEG 2000-at nem támogató rendszerekkel való kompatibilitás céljából:</p>
+<p>A JPEG 2000 fájlok dekódolása egy nem tömörített átviteli szintaxisra feldolgozás, elemzés vagy a JPEG 2000-at nem támogató rendszerekkel való kompatibilitás érdekében:</p>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000 dekompresszió nem tömörített formátumra – C#</h3>
+ <h3>JPEG 2000 dekódolása nem tömörített formára – C#</h3>
  <pre><code class="cs">// Load a JPEG 2000 compressed DICOM file
 DicomFile compressed = DicomFile.Open("j2k_compressed.dcm");
 
@@ -112,10 +115,10 @@ DicomFile uncompressed = compressed.Transcode(TransferSyntax.ExplicitVrLittleEnd
 uncompressed.Save("decompressed.dcm");</code></pre>
 </div>
 
-<p>Egy lépésben is elvégezhető a dekompresszió és a transzkódolás más tömörítési formátumokra:</p>
+<p>Egy lépésben is dekódolhat és transzkódolhat más tömörítési formátumokra:</p>
 
 <div class="codeblock" id="code">
- <h3>Transzkódolás a különböző tömörítési formátumok között – C#</h3>
+ <h3>Többlet formátumok közötti transzkódolás – C#</h3>
  <pre><code class="cs">// Convert JPEG 2000 to JPEG-LS Lossless
 DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
 DicomFile jlsFile = j2kFile.Transcode(TransferSyntax.JpegLsLossless);
@@ -126,7 +129,7 @@ jlsFile.Save("jpegls_lossless.dcm");</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM képek renderelése">}}
 
-<p>A JPEG 2000 tömörített DICOM fájlok pixeladatokká renderelhetők megjelenítés vagy export céljából, akárcsak bármely más átvitel szintaxis esetén:</p>
+<p>A JPEG 2000 tömörítésű DICOM fájlok renderelhetők pixeladatokká megjelenítés vagy export céljából, akárcsak bármely más átviteli szintaxis esetén:</p>
 
 <div class="codeblock" id="code">
  <h3>JPEG 2000 tömörített keret renderelése – C#</h3>
@@ -150,44 +153,51 @@ image.CopyPixelsTo(pixels);</code></pre>
 <table class="table table-bordered">
 <thead>
 <tr>
-<th>Jellemző</th>
+<th>Szempont</th>
 <th>JPEG 2000 veszteségmentes</th>
 <th>JPEG 2000 veszteséges</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>Átvitel Szintaxis</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
-<tr><td>Képminőség</td><td>Pixel‑tökéletes &mdash; azonos az eredetivel</td><td>Vizualisan hasonló, némi adat véglegesen elveszve</td></tr>
-<tr><td>Tömörítési arány</td><td>Általában 2:1‑3:1</td><td>Általában 10:1‑30:1 vagy nagyobb</td></tr>
-<tr><td>Legalkalmasabb</td><td>Diagnosztikai archiválás, jogi feljegyzések, elsődleges olvasás</td><td>Előzetes felülvizsgálat, telemedicina, hálózati átvitel</td></tr>
-<tr><td>Körút biztonságos</td><td>Igen</td><td>Nem &mdash; az újrakódolás tovább rontja a minőséget</td></tr>
+<tr><td>Átviteli szintaxis</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
+<tr><td>Képminőség</td><td>Pixel-pontos &mdash; azonos az eredetivel</td><td>Vizuálisan hasonló, néhány adat véglegesen elveszik</td></tr>
+<tr><td>Tömörítési arány</td><td>Általában 2:1‑től 3:1‑ig</td><td>Általában 10:1‑től 30:1‑ig vagy magasabb</td></tr>
+<tr><td>Legalkalmasabb</td><td>Diagnosztikai archiválás, jogi feljegyzések, elsődleges olvasás</td><td>Előzetes áttekintés, távgyógyászat, hálózati továbbítás</td></tr>
+<tr><td>Körutazás biztonságos</td><td>Igen</td><td>Nem &mdash; az újrakódolás tovább rontja a minőséget</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 Part 2 többkomponensű">}}
+{{< blocks/products/pf/feature-page-section h2="Magas áteresztőképességű JPEG 2000 (HTJ2K)">}}
 
-<p>A JPEG 2000 Part 2 (ISO/IEC 15444-2) bővíti a szabványos kodeket többkomponensú transzformációs képességekkel. Ezt színes orvosi képekhez és többcsatornás adatot előállító modalitásokhoz használják. Az Aspose.Medical mindkét Part 2 átvitel szintaxist támogatja:</p>
-
-<ul>
-<li><code>Jpeg2000Part2MultiComponentLosslessOnly</code> &mdash; veszteségmentes tömörítés inter-komponens dekorelációval a többcsatornás adatok optimális tömörítéséhez.</li>
-<li><code>Jpeg2000Part2MultiComponent</code> &mdash; veszteséges vagy veszteségmentes tömörítés többkomponensú transzformációkkal.</li>
-</ul>
-
-{{< /blocks/products/pf/feature-page-section >}}
-
-{{< blocks/products/pf/feature-page-section h2="Nagysebességű JPEG 2000 (HTJ2K) — hamarosan">}}
-
-<p>Az HTJ2K (ISO/IEC 15444-15) a JPEG 2000 következő generációs kiterjesztése, amely drámai módon gyorsabb kódolási és dekódolási sebességet biztosít, miközben megőrzi a tömörítési hatékonyságot. Várhatóan a valós idejű orvosi képalkotási munkafolyamatok preferált kodeke lesz.</p>
-
-<p>Az Aspose.Medical a jövőben hozzáadja az HTJ2K támogatást, három átvitel szintaxist lefedve:</p>
+<p>Az HTJ2K (ISO/IEC 15444-15) a JPEG 2000 lassú aritmetikai kódolója helyett gyorsabb blokk-kódolót használ. Megtartja a ugyanazt a hullámtranszformációt, a progressziós sorrendet és a minőséget, és több szorozva gyorsabban dekódol és kódol. Az Aspose.Medical megvalósítja a három DICOM HTJ2K átviteli szintaxist tiszta .NET-ben, monokróm és színes képekhez, és transzkódol a HTJ2K és minden más támogatott szintaxis között:</p>
 
 <ul>
 <li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; csak veszteségmentes</li>
 <li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; veszteségmentes RPCL progressziós sorrenddel</li>
 <li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; veszteséges vagy veszteségmentes</li>
 </ul>
+
+<div class="codeblock" id="code">
+ <h3>JPEG 2000 transzkódolása HTJ2K-ra és vissza – C#</h3>
+ <pre><code class="cs">// Transcode a JPEG 2000 file to HTJ2K, and back to classic JPEG 2000
+DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
+DicomFile htj2kFile = j2kFile.Transcode(TransferSyntax.HTJ2KLossless);
+htj2kFile.Save("htj2k_lossless.dcm");
+
+// HTJ2K with RPCL progression order, lossless
+DicomFile rpclFile = j2kFile.Transcode(TransferSyntax.HTJ2KLosslessRPCL);
+rpclFile.Save("htj2k_rpcl.dcm");
+
+// HTJ2K lossy
+DicomFile htj2kLossy = j2kFile.Transcode(TransferSyntax.HTJ2K);
+htj2kLossy.Save("htj2k_lossy.dcm");
+
+// Any HTJ2K file decodes back to an uncompressed transfer syntax
+DicomFile uncompressed = htj2kFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("decoded.dcm");</code></pre>
+</div>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -202,11 +212,11 @@ image.CopyPixelsTo(pixels);</code></pre>
 
 {{< blocks/products/pf/slr-tab tabTitle="Terméktámogatás" tabId="support" >}}
 {{< blocks/products/pf/slr-element name="Ingyenes támogatás" href="https://forum.aspose.com/c/medical" >}}
-{{< blocks/products/pf/slr-element name="Fizetett támogatás" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="Fizetős támogatás" href="https://helpdesk.aspose.com/" >}}
 {{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Miért Aspose.Medical .NET-hez?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Miért az Aspose.Medical .NET-hez?" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="Ügyfelek listája" href="https://company.aspose.com/customers" >}}
 {{< blocks/products/pf/slr-element name="Sikertörténetek" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}

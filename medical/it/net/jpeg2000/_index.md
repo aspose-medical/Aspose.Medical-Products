@@ -1,20 +1,20 @@
 ---
 title: Compressione DICOM JPEG 2000 in C# .NET | Aspose.Medical
 weight: 2000
-description: Leggi, scrivi e transcodifica file DICOM con compressione JPEG 2000 in C# .NET. Supporto per immagini a 8-bit e 16-bit, modalità lossless e lossy, dati multicomponente con l'API Aspose.Medical.
+description: Leggi, scrivi e transcodifica file DICOM con compressione JPEG 2000 in C# .NET. Supporto per immagini a colori a 8 bit e monocromatiche a 16 bit, modalità lossless e lossy, oltre a HTJ2K con l'API Aspose.Medical.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Supporto DICOM JPEG 2000 in .NET C#" h2="Leggi, scrivi e transcodifica file DICOM con compressione JPEG 2000. Modalità lossless e lossy, dati pixel a 8-bit e 16-bit, immagini multicomponente — tutto in puro .NET." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="Supporto DICOM JPEG 2000 in .NET C#" h2="Leggi, scrivi e transcodifica file DICOM con compressione JPEG 2000. Modalità lossless e lossy, dati pixel a colori a 8 bit e monocromatici a 16 bit, HTJ2K incluso – tutto in puro .NET." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="JPEG 2000 nell'imaging medico">}}
 
-<p><strong>JPEG 2000</strong> (ISO/IEC 15444) è lo standard di compressione basato su wavelet più utilizzato nell'imaging medico. A differenza del JPEG tradizionale, offre compressione sia lossless che lossy in un unico codec, decodifica progressiva per l&rsquo;accesso a regioni di interesse e rapporti di compressione superiori &mdash; rendendolo ideale per l'archiviazione di studi di grandi dimensioni e la trasmissione di immagini su reti a larghezza limitata.</p>
+<p><strong>JPEG 2000</strong> (ISO/IEC 15444) è lo standard di compressione basato su wavelet più diffuso nell'imaging medico. A differenza del JPEG tradizionale, offre sia compressione lossless che lossy in un unico codec, decodifica progressiva per l'accesso a regioni di interesse e rapporti di compressione superiori &mdash; rendendolo ideale per l'archiviazione di studi voluminosi e la trasmissione di immagini su reti a larghezza limitata.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> fornisce un'implementazione pura in C# del codec JPEG 2000 senza dipendenze native. La libreria può leggere, renderizzare e transcodificare file DICOM compressi con una qualsiasi delle quattro sintassi di trasferimento standard JPEG 2000.</p>
+<p><strong>Aspose.Medical for .NET</strong> fornisce un'implementazione pure C# del codec JPEG 2000 senza dipendenze native. La libreria può leggere, renderizzare e transcodificare file DICOM compressi con una qualsiasi delle quattro sintassi di trasferimento standard JPEG 2000.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -26,27 +26,30 @@ description: Leggi, scrivi e transcodifica file DICOM con compressione JPEG 2000
 <th>Sintassi di trasferimento</th>
 <th>UID</th>
 <th>Modalità</th>
-<th>Lettura</th>
-<th>Scrittura</th>
+<th>Leggi</th>
+<th>Scrivi</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>8-bit e 16-bit</td><td>8-bit</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>8-bit e 16-bit</td><td>8-bit</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>8-bit e 16-bit</td><td>8-bit</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy or lossless</td><td>8-bit e 16-bit</td><td>8-bit</td></tr>
+<tr><td>JPEG 2000 solo lossless</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>RGB a 8 bit, monocromatico a 16 bit</td><td>Monocromatico a 16 bit, RGB a 8 bit</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy o lossless</td><td>RGB a 8 bit, monocromatico a 16 bit</td><td>Monocromatico a 16 bit, RGB a 8 bit</td></tr>
+<tr><td>JPEG 2000 Parte 2 Multi-component Solo lossless</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>Non supportato</td><td>Non supportato</td></tr>
+<tr><td>JPEG 2000 Parte 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy o lossless</td><td>Non supportato</td><td>Non supportato</td></tr>
+<tr><td>HTJ2K solo lossless</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>Monocromatico e colore</td><td>Monocromatico e colore</td></tr>
+<tr><td>HTJ2K con opzioni RPCL solo lossless</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>Monocromatico e colore</td><td>Monocromatico e colore</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Lossy o lossless</td><td>Monocromatico e colore</td><td>Monocromatico e colore</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Dati pixel a 8-bit e 16-bit">}}
+{{< blocks/products/pf/feature-page-section h2="Dati pixel a 8 bit e a 16 bit">}}
 
-<p>Le immagini medicali spesso usano 16 bit per campione per catturare l'intera gamma dinamica delle modalità come CT (tipicamente 12-bit memorizzati in 16-bit) e MRI. Aspose.Medical gestisce entrambe le profondità di bit per JPEG 2000:</p>
+<p>Le immagini mediche spesso utilizzano 16 bit per campione per acquisire l'intera gamma dinamica delle modalità come CT (tipicamente 12‑bit memorizzati in 16‑bit) e MRI. Aspose.Medical gestisce entrambe le profondità di bit per JPEG 2000:</p>
 
 <ul>
-<li><strong>Lettura (decompressione)</strong>: Supporto completo per file DICOM compressi JPEG 2000 a 8-bit e 16-bit. La libreria decodifica correttamente i dati pixel indipendentemente dai valori originali di Bits Allocated, Bits Stored e High Bit.</li>
-<li><strong>Scrittura (compressione)</strong>: Attualmente supporta immagini a 8-bit. Il supporto per la scrittura a 16-bit è previsto in una futura release.</li>
+<li><strong>Lettura (decompression)</strong>: file monocromatici a 16 bit (CT, MRI, X-ray) e file a colori a 3 componenti a 8 bit (RGB, YBR_RCT, YBR_ICT). Palette, CMYK, profilo ICC e flussi di codifica colore sottocampionati vengono rifiutati con un'eccezione chiara invece di un'immagine errata silenziosa.</li>
+<li><strong>Scrittura (compressione)</strong>: immagini monocromatiche a 16 bit e RGB a 8 bit. La codifica monocromatica a 8 bit e a colori a 16 bit non è disponibile; utilizza HTJ2K o JPEG XL per questi casi, entrambi accettano monocromatico e colore a entrambe le profondità di bit.</li>
 </ul>
 
 <div class="codeblock" id="code">
@@ -72,12 +75,12 @@ Console.WriteLine($"Samples Per Pixel: {pixelData.SamplesPerPixel}");</code></pr
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Transcodifica in JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="Transcodifica a JPEG 2000">}}
 
 <p>Utilizza il metodo <code>Transcode</code> per comprimere qualsiasi file DICOM in JPEG 2000 o per convertire tra le modalità JPEG 2000:</p>
 
 <div class="codeblock" id="code">
- <h3>Comprimi DICOM in JPEG 2000 Lossless - C#</h3>
+ <h3>Comprimi DICOM in JPEG 2000 lossless - C#</h3>
  <pre><code class="cs">// Load an uncompressed DICOM file
 DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
@@ -87,7 +90,7 @@ lossless.Save("j2k_lossless.dcm");</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>Comprimi DICOM in JPEG 2000 Lossy - C#</h3>
+ <h3>Comprimi DICOM in JPEG 2000 lossy - C#</h3>
  <pre><code class="cs">// Load a DICOM file
 DicomFile dicomFile = DicomFile.Open("input.dcm");
 
@@ -145,7 +148,7 @@ image.CopyPixelsTo(pixels);</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Lossless vs Lossy JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="Lossless vs lossy JPEG 2000">}}
 
 <table class="table table-bordered">
 <thead>
@@ -157,37 +160,44 @@ image.CopyPixelsTo(pixels);</code></pre>
 </thead>
 <tbody>
 <tr><td>Sintassi di trasferimento</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
-<tr><td>Qualità immagine</td><td>Pixel-perfect &mdash; identico all'originale</td><td>Visivamente simile, alcuni dati persi permanentemente</td></tr>
-<tr><td>Rapporto di compressione</td><td>Tipicamente 2:1 a 3:1</td><td>Tipicamente 10:1 a 30:1 o superiore</td></tr>
-<tr><td>Ideale per</td><td>Archiviazione diagnostica, documentazione legale, lettura primaria</td><td>Revisione preliminare, telemedicina, trasmissione in rete</td></tr>
-<tr><td>Sicuro round-trip</td><td>Sì</td><td>No &mdash; la ricodifica degrada ulteriormente la qualità</td></tr>
+<tr><td>Qualità dell'immagine</td><td>Pixel-perfect &mdash; identica all'originale</td><td>Visivamente simile, alcuni dati persi in modo permanente</td></tr>
+<tr><td>Rapporto di compressione</td><td>Tipicamente 2:1 a 3:1</td><td>Tipicamente 10:1 a 30:1 o più</td></tr>
+<tr><td>Ideale per</td><td>Archiviazione diagnostica, documenti legali, lettura primaria</td><td>Revisione preliminare, telemedicina, trasmissione in rete</td></tr>
+<tr><td>Sicuro in round-trip</td><td>Sì</td><td>No &mdash; il ri-codifica degrada ulteriormente la qualità</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 Part 2 Multi-Component">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 ad alta velocità (HTJ2K)">}}
 
-<p>JPEG 2000 Part 2 (ISO/IEC 15444-2) estende il codec standard con capacità di trasformazione multicomponente. Viene utilizzato per immagini medicali a colori e modalità che producono dati multicanale. Aspose.Medical supporta entrambe le sintassi di trasferimento Part 2:</p>
-
-<ul>
-<li><code>Jpeg2000Part2MultiComponentLosslessOnly</code> &mdash; compressione lossless con decorrelazione inter-componenti per una compressione ottimale dei dati multicanale.</li>
-<li><code>Jpeg2000Part2MultiComponent</code> &mdash; compressione lossy o lossless con trasformazioni multicomponente.</li>
-</ul>
-
-{{< /blocks/products/pf/feature-page-section >}}
-
-{{< blocks/products/pf/feature-page-section h2="High-Throughput JPEG 2000 (HTJ2K) — Prossimamente">}}
-
-<p>HTJ2K (ISO/IEC 15444-15) è un'estensione di nuova generazione di JPEG 2000 progettata per velocità di codifica e decodifica drasticamente più rapide mantenendo la stessa efficienza di compressione. Si prevede che diventerà il codec preferito per i flussi di lavoro di imaging medico in tempo reale.</p>
-
-<p>Aspose.Medical aggiungerà il supporto HTJ2K in una futura release, coprendo tre sintassi di trasferimento:</p>
+<p>HTJ2K (ISO/IEC 15444-15) sostituisce il lento codificatore aritmetico del JPEG 2000 con un codificatore a blocchi più veloce. Mantiene la stessa trasformata wavelet, gli ordini di progressione e la qualità, e decodifica e codifica diverse volte più rapidamente. Aspose.Medical implementa tutte e tre le sintassi di trasferimento DICOM HTJ2K in puro .NET, per immagini monocromatiche e a colori, e transcodifica tra HTJ2K e tutte le altre sintassi supportate:</p>
 
 <ul>
-<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; Solo lossless</li>
-<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; Lossless con ordine di progressione RPCL</li>
+<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; solo lossless</li>
+<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; lossless con ordine di progressione RPCL</li>
 <li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; lossy o lossless</li>
 </ul>
+
+<div class="codeblock" id="code">
+ <h3>Transcodifica JPEG 2000 in HTJ2K e viceversa - C#</h3>
+ <pre><code class="cs">// Transcode a JPEG 2000 file to HTJ2K, and back to classic JPEG 2000
+DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
+DicomFile htj2kFile = j2kFile.Transcode(TransferSyntax.HTJ2KLossless);
+htj2kFile.Save("htj2k_lossless.dcm");
+
+// HTJ2K with RPCL progression order, lossless
+DicomFile rpclFile = j2kFile.Transcode(TransferSyntax.HTJ2KLosslessRPCL);
+rpclFile.Save("htj2k_rpcl.dcm");
+
+// HTJ2K lossy
+DicomFile htj2kLossy = j2kFile.Transcode(TransferSyntax.HTJ2K);
+htj2kLossy.Save("htj2k_lossy.dcm");
+
+// Any HTJ2K file decodes back to an uncompressed transfer syntax
+DicomFile uncompressed = htj2kFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("decoded.dcm");</code></pre>
+</div>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

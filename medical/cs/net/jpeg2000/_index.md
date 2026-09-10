@@ -1,24 +1,24 @@
 ---
 title: Komprese DICOM JPEG 2000 v C# .NET | Aspose.Medical
 weight: 2000
-description: Čtěte, zapisujte a transkódujte DICOM soubory s kompresí JPEG 2000 v C# .NET. Podpora 8‑bitových a 16‑bitových obrazů, bezztrátových i ztrátových režimů, vícekomponentních dat s API Aspose.Medical.
+description: Čtěte, zapisujte a transkódujte soubory DICOM s kompresí JPEG 2000 v C# .NET. Podpora 8‑bitových barevných a 16‑bitových monochromatických snímků, bezztrátových i ztrátových režimů, plus HTJ2K s API Aspose.Medical.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Podpora DICOM JPEG 2000 v .NET C#" h2="Čtěte, zapisujte a transkódujte DICOM soubory s kompresí JPEG 2000. Bezztrátové i ztrátové režimy, 8‑bitová a 16‑bitová pixelová data, vícekomponentní obrazy — vše v čistém .NET." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="Podpora DICOM JPEG 2000 v .NET C#" h2="Čtěte, zapisujte a transkódujte soubory DICOM s kompresí JPEG 2000. Bezztrátové i ztrátové režimy, 8‑bitová barevná a 16‑bitová monochromatická data pixelů, HTJ2K zahrnuto – vše v čistém .NET." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 v lékařské zobrazovací technice">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 v lékařském zobrazování">}}
 
-<p><strong>JPEG 2000</strong> (ISO/IEC 15444) je nejrozšířenější standard komprese založený na vlnkových transformacích v lékařském zobrazování. Na rozdíl od tradičního JPEG nabízí jak bezztrátovou, tak ztrátovou kompresi v jednom kodeku, progresivní dekódování pro přístup k oblastem zájmu a vyšší kompresní poměry &mdash; což jej činí ideálním pro archivaci rozsáhlých studií a přenos obrazů přes omezené sítě.</p>
+<p><strong>JPEG 2000</strong> (ISO/IEC 15444) je nejrozšířenější standard komprese založený na vlnkových transformacích v lékařském zobrazování. Na rozdíl od tradičního JPEG nabízí jak bezztrátovou, tak ztrátovou kompresi v jediném kodeku, progresivní dekódování pro přístup k oblastem zájmu a vyšší poměry komprese &mdash; což jej činí ideálním pro archivaci rozsáhlých studií a přenos obrazu po omezených sítích.</p>
 
-<p><strong>Aspose.Medical pro .NET</strong> poskytuje čistou implementaci kodeku JPEG 2000 v C# bez nativních závislostí. Knihovna umí číst, vykreslovat a transkódovat DICOM soubory komprimované libovolnou ze čtyř standardních přenosových syntaxi JPEG 2000.</p>
+<p><strong>Aspose.Medical pro .NET</strong> poskytuje čistou implementaci JPEG 2000 kodeku v C# bez nativních závislostí. Knihovna dokáže číst, vykreslovat a transkódovat soubory DICOM komprimované libovolnou ze čtyř standardních JPEG 2000 přenosových syntaxí.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Podporované JPEG 2000 přenosové syntaxe">}}
+{{< blocks/products/pf/feature-page-section h2="Podporované přenosové syntaxe JPEG 2000">}}
 
 <table class="table table-bordered">
 <thead>
@@ -31,26 +31,29 @@ description: Čtěte, zapisujte a transkódujte DICOM soubory s kompresí JPEG 2
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 pouze bezztrátové</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Bezztrátový</td><td>8‑bit a 16‑bit</td><td>8‑bit</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Ztrátový nebo bezztrátový</td><td>8‑bit a 16‑bit</td><td>8‑bit</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component (pouze bezztrátové)</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Bezztrátový</td><td>8‑bit a 16‑bit</td><td>8‑bit</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Ztrátový nebo bezztrátový</td><td>8‑bit a 16‑bit</td><td>8‑bit</td></tr>
+<tr><td>JPEG 2000 bezztrátové pouze</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Bezztrátový</td><td>8‑bit RGB, 16‑bit monochromatický</td><td>16‑bit monochromatický, 8‑bit RGB</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Ztrátový nebo bezztrátový</td><td>8‑bit RGB, 16‑bit monochromatický</td><td>16‑bit monochromatický, 8‑bit RGB</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi‑component bezztrátové pouze</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Bezztrátový</td><td>Ne podporováno</td><td>Ne podporováno</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi‑component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Ztrátový nebo bezztrátový</td><td>Ne podporováno</td><td>Ne podporováno</td></tr>
+<tr><td>HTJ2K bezztrátové pouze</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Bezztrátový</td><td>Monochromatické a barevné</td><td>Monochromatické a barevné</td></tr>
+<tr><td>HTJ2K s RPCL možnostmi bezztrátové pouze</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Bezztrátový</td><td>Monochromatické a barevné</td><td>Monochromatické a barevné</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Ztrátový nebo bezztrátový</td><td>Monochromatické a barevné</td><td>Monochromatické a barevné</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="8‑bitová a 16‑bitová pixelová data">}}
+{{< blocks/products/pf/feature-page-section h2="8‑bitová a 16‑bitová data pixelů">}}
 
-<p>Lékařské obrazy často používají 16 bitů na vzorek k zachycení plného dynamického rozsahu modalit jako CT (obvykle 12‑bitové uložené v 16‑bitovém formátu) a MRI. Aspose.Medical podporuje oba bitové rozlišení pro JPEG 2000:</p>
+<p>Lékařské snímky často používají 16 bitů na vzorek k zachycení plného dynamického rozsahu modalit jako CT (typicky 12‑bit uložené v 16‑bitovém formátu) a MRI. Aspose.Medical zpracovává oba bitové rozlišení pro JPEG 2000:</p>
 
 <ul>
-<li><strong>Čtení (dekomprese)</strong>: Úplná podpora jak 8‑bitových, tak 16‑bitových DICOM souborů komprimovaných JPEG 2000. Knihovna správně dekóduje pixelová data bez ohledu na původní hodnoty Bits Allocated, Bits Stored a High Bit.</li>
-<li><strong>Zápis (komprese)</strong>: V současné době podporuje 8‑bitové obrazy. Podpora zápisu 16‑bitových dat je naplánována do budoucí verze.</li>
+<li><strong>Čtení (dekomprese)</strong>: 16‑bitové monochromatické soubory (CT, MRI, rentgen) a 8‑bitové tříkomponentní barevné soubory (RGB, YBR_RCT, YBR_ICT). Paletové, CMYK, ICC‑profile a sub‑samplované barevné kodeky jsou odmítnuty s jasnou výjimkou místo tichého vytvoření špatného obrazu.</li>
+<li><strong>Zápis (komprese)</strong>: 16‑bitové monochromatické a 8‑bitové RGB obrazy. 8‑bitové monochromatické a 16‑bitové barevné kódování nejsou k dispozici; pro ně použijte HTJ2K nebo JPEG XL, oba přijímají monochromatické i barevné obrazy v obou bitových hloubkách.</li>
 </ul>
 
 <div class="codeblock" id="code">
- <h3>Čtení a inspekce DICOM komprimovaného JPEG 2000 – C#</h3>
+ <h3>Číst a kontrolovat DICOM komprimovaný JPEG 2000 - C#</h3>
  <pre><code class="cs">// Open a JPEG 2000 compressed DICOM file (8-bit or 16-bit)
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -72,12 +75,12 @@ Console.WriteLine($"Samples Per Pixel: {pixelData.SamplesPerPixel}");</code></pr
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Transkódovat do JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="Transkódovat na JPEG 2000">}}
 
-<p>Použijte metodu <code>Transcode</code> pro kompresi libovolného DICOM souboru do JPEG 2000 nebo pro převod mezi režimy JPEG 2000:</p>
+<p>Použijte metodu <code>Transcode</code> pro kompresi libovolného souboru DICOM do JPEG 2000 nebo pro převod mezi režimy JPEG 2000:</p>
 
 <div class="codeblock" id="code">
- <h3>Kompresní DICOM do JPEG 2000 bezztrátově – C#</h3>
+ <h3>Komprimovat DICOM do JPEG 2000 bezztrátově - C#</h3>
  <pre><code class="cs">// Load an uncompressed DICOM file
 DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
@@ -87,7 +90,7 @@ lossless.Save("j2k_lossless.dcm");</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>Kompresní DICOM do JPEG 2000 se ztrátou – C#</h3>
+ <h3>Komprimovat DICOM do JPEG 2000 se ztrátou - C#</h3>
  <pre><code class="cs">// Load a DICOM file
 DicomFile dicomFile = DicomFile.Open("input.dcm");
 
@@ -98,12 +101,12 @@ lossy.Save("j2k_lossy.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Dekompresi DICOM souborů JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="Dekompresovat soubory DICOM JPEG 2000">}}
 
-<p>Dekompresujte soubory JPEG 2000 do nekomprimované přenosové syntaxe pro zpracování, analýzu nebo kompatibilitu se systémy, které JPEG 2000 nepodporují:</p>
+<p>Dekompresujte soubory JPEG 2000 do nekomprimované přenosové syntaxe pro zpracování, analýzu nebo kompatibilitu se systémy, které JPEG 2000 nepodporují:</p>
 
 <div class="codeblock" id="code">
- <h3>Dekompresovat JPEG 2000 do nekomprimovaného – C#</h3>
+ <h3>Dekompresovat JPEG 2000 na nekomprimovaný formát - C#</h3>
  <pre><code class="cs">// Load a JPEG 2000 compressed DICOM file
 DicomFile compressed = DicomFile.Open("j2k_compressed.dcm");
 
@@ -112,10 +115,10 @@ DicomFile uncompressed = compressed.Transcode(TransferSyntax.ExplicitVrLittleEnd
 uncompressed.Save("decompressed.dcm");</code></pre>
 </div>
 
-<p>Můžete také v jednom kroku dekomprimovat a transkódovat do jiných kompresních formátů:</p>
+<p>Můžete také dekompresovat a transkódovat do jiných formátů komprese v jednom kroku:</p>
 
 <div class="codeblock" id="code">
- <h3>Transkódovat mezi kompresními formáty – C#</h3>
+ <h3>Transkódovat mezi formáty komprese - C#</h3>
  <pre><code class="cs">// Convert JPEG 2000 to JPEG-LS Lossless
 DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
 DicomFile jlsFile = j2kFile.Transcode(TransferSyntax.JpegLsLossless);
@@ -124,12 +127,12 @@ jlsFile.Save("jpegls_lossless.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Vykreslit DICOM obrazy JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="Vykreslit DICOM obrazy JPEG 2000">}}
 
-<p>Soubory DICOM komprimované JPEG 2000 lze vykreslit na pixelová data pro zobrazení nebo export, stejně jako u jiných přenosových syntaxi:</p>
+<p>Soubory DICOM komprimované JPEG 2000 lze vykreslit do pixelových dat pro zobrazení nebo export, stejně jako jakákoliv jiná přenosová syntaxe:</p>
 
 <div class="codeblock" id="code">
- <h3>Vykreslit JPEG 2000 komprimovaný rámec – C#</h3>
+ <h3>Vykreslit JPEG 2000 komprimovaný snímek - C#</h3>
  <pre><code class="cs">// Open JPEG 2000 DICOM file
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -145,56 +148,63 @@ image.CopyPixelsTo(pixels);</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Bezztrátové vs. ztrátové JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="Bezztrátové vs ztrátové JPEG 2000">}}
 
 <table class="table table-bordered">
 <thead>
 <tr>
 <th>Aspekt</th>
-<th>JPEG 2000 bezztrátové</th>
-<th>JPEG 2000 se ztrátou</th>
+<th>JPEG 2000 bezztrátové</th>
+<th>JPEG 2000 se ztrátou</th>
 </tr>
 </thead>
 <tbody>
 <tr><td>Přenosová syntaxe</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
-<tr><td>Kvalita obrazu</td><td>Pixelově dokonalá &mdash; identická s originálem</td><td>Vizuálně podobná, některá data jsou trvale ztracena</td></tr>
+<tr><td>Kvalita obrazu</td><td>Pixel‑perfect &mdash; identické s originálem</td><td>Vizuelně podobné, některá data jsou trvale ztracena</td></tr>
 <tr><td>Komprimační poměr</td><td>Obvykle 2:1 až 3:1</td><td>Obvykle 10:1 až 30:1 nebo vyšší</td></tr>
-<tr><td>Nejvhodnější pro</td><td>Diagnostické archivy, právní záznamy, primární čtení</td><td>Předběžné hodnocení, telemedicína, přenos přes síť</td></tr>
-<tr><td>Bezpečný při opakovaném kódování</td><td>Ano</td><td>Ne &mdash; opětovné kódování dále snižuje kvalitu</td></tr>
+<tr><td>Nejlepší pro</td><td>Diagnostické archivování, právní záznamy, primární čtení</td><td>Úvodní revizi, telemedicínu, přenos přes síť</td></tr>
+<tr><td>Bezpečný při zpětném převodu</td><td>Ano</td><td>Ne &mdash; opakované kódování dále snižuje kvalitu</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 Part 2 Multi-Component">}}
+{{< blocks/products/pf/feature-page-section h2="Vysokorychlostní JPEG 2000 (HTJ2K)">}}
 
-<p>JPEG 2000 Part 2 (ISO/IEC 15444-2) rozšiřuje standardní kodek o možnosti transformace více komponent. Používá se pro barevné lékařské obrazy a modality produkující vícekanálová data. Aspose.Medical podporuje obě přenosové syntaxe Part 2:</p>
-
-<ul>
-<li><code>Jpeg2000Part2MultiComponentLosslessOnly</code> &mdash; bezztrátová komprese s interkomponentní dekorrelací pro optimální kompresi vícekanálových dat.</li>
-<li><code>Jpeg2000Part2MultiComponent</code> &mdash; ztrátová nebo bezztrátová komprese s vícekomponentními transformacemi.</li>
-</ul>
-
-{{< /blocks/products/pf/feature-page-section >}}
-
-{{< blocks/products/pf/feature-page-section h2="High-Throughput JPEG 2000 (HTJ2K) — Již brzy">}}
-
-<p>HTJ2K (ISO/IEC 15444-15) je generace rozšíření JPEG 2000 určená pro výrazně rychlejší kódování a dekódování při zachování stejné kompresní účinnosti. Očekává se, že se stane preferovaným kodekem pro pracovní postupy real‑time lékařského zobrazování.</p>
-
-<p>Aspose.Medical přidá podporu HTJ2K v budoucí verzi, zahrnující tři přenosové syntaxe:</p>
+<p>HTJ2K (ISO/IEC 15444-15) nahrazuje pomalý aritmetický kodér JPEG 2000 rychlejším blokovým kodérem. Zachovává stejnou vlnkovou transformaci, pořadí progresí a kvalitu a dekóduje a kóduje několikanásobně rychleji. Aspose.Medical implementuje všechny tři DICOM HTJ2K přenosové syntaxe v čistém .NET, pro monochromatické i barevné obrazy, a transkóduje mezi HTJ2K a všemi ostatními podporovanými syntaxemi:</p>
 
 <ul>
-<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; Pouze bezztrátové</li>
-<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; Bezztrátové s progresí RPCL</li>
-<li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; Ztrátové nebo bezztrátové</li>
+<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; pouze bezztrátové</li>
+<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; bezztrátové s progresivním pořadím RPCL</li>
+<li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; ztrátový nebo bezztrátový</li>
 </ul>
+
+<div class="codeblock" id="code">
+ <h3>Transkódovat JPEG 2000 na HTJ2K a zpět - C#</h3>
+ <pre><code class="cs">// Transcode a JPEG 2000 file to HTJ2K, and back to classic JPEG 2000
+DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
+DicomFile htj2kFile = j2kFile.Transcode(TransferSyntax.HTJ2KLossless);
+htj2kFile.Save("htj2k_lossless.dcm");
+
+// HTJ2K with RPCL progression order, lossless
+DicomFile rpclFile = j2kFile.Transcode(TransferSyntax.HTJ2KLosslessRPCL);
+rpclFile.Save("htj2k_rpcl.dcm");
+
+// HTJ2K lossy
+DicomFile htj2kLossy = j2kFile.Transcode(TransferSyntax.HTJ2K);
+htj2kLossy.Save("htj2k_lossy.dcm");
+
+// Any HTJ2K file decodes back to an uncompressed transfer syntax
+DicomFile uncompressed = htj2kFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("decoded.dcm");</code></pre>
+</div>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="Výukové materiály" tabId="resources" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Výukové zdroje" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="Dokumentace" href="https://docs.aspose.com/medical/net/" >}}
 {{< blocks/products/pf/slr-element name="Zdrojový kód" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
 {{< blocks/products/pf/slr-element name="Reference API" href="https://reference.aspose.com/medical/net/" >}}

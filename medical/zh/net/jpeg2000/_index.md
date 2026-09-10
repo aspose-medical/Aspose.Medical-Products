@@ -1,18 +1,18 @@
 ---
 title: C# .NET 中的 DICOM JPEG 2000 压缩 | Aspose.Medical
 weight: 2000
-description: 在 C# .NET 中读取、写入和转码带 JPEG 2000 压缩的 DICOM 文件。支持 8 位和 16 位图像、无损和有损模式以及多分量数据，均使用 Aspose.Medical API。
+description: 在 C# .NET 中读取、写入和转码带有 JPEG 2000 压缩的 DICOM 文件。支持 8 位彩色和 16 位单色图像，无损和有损模式，以及使用 Aspose.Medical API 的 HTJ2K。
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1=".NET C# 中的 DICOM JPEG 2000 支持" h2="读取、写入和转码带 JPEG 2000 压缩的 DICOM 文件。无损和有损模式、8 位和 16 位像素数据、多分量图像——全部在纯 .NET 中实现。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET C# 中的 DICOM JPEG 2000 支持" h2="读取、写入和转码带有 JPEG 2000 压缩的 DICOM 文件。无损和有损模式，8 位彩色和 16 位单色像素数据，包含 HTJ2K——全部使用纯 .NET 实现。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="医学成像中的 JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="医学影像中的 JPEG 2000">}}
 
-<p><strong>JPEG 2000</strong> (ISO/IEC 15444) 是医学成像中最广泛使用的基于小波的压缩标准。与传统 JPEG 不同，它在单一编解码器中提供无损和有损压缩，支持感兴趣区域的渐进解码，并具有更优的压缩比 &mdash; 这使其非常适合归档大型研究和在受限网络上传输图像。</p>
+<p><strong>JPEG 2000</strong>（ISO/IEC 15444）是医学影像中最广泛使用的基于小波的压缩标准。不同于传统 JPEG，它在同一编解码器中提供无损和有损压缩，支持感兴趣区域的渐进解码，以及更优的压缩比 &mdash; 使其非常适合归档大型研究和在受限网络中传输图像。</p>
 
 <p><strong>Aspose.Medical for .NET</strong> 提供了纯 C# 实现的 JPEG 2000 编解码器，无需本地依赖。该库能够读取、渲染并转码使用四种标准 JPEG 2000 传输语法压缩的 DICOM 文件。</p>
 
@@ -31,10 +31,13 @@ description: 在 C# .NET 中读取、写入和转码带 JPEG 2000 压缩的 DICO
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 仅无损</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>无损</td><td>8 位和 16 位</td><td>8 位</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>有损或无损</td><td>8 位和 16 位</td><td>8 位</td></tr>
-<tr><td>JPEG 2000 Part 2 多分量仅无损</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>无损</td><td>8 位和 16 位</td><td>8 位</td></tr>
-<tr><td>JPEG 2000 Part 2 多分量</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>有损或无损</td><td>8 位和 16 位</td><td>8 位</td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>无损</td><td>8 位 RGB，16 位单色</td><td>16 位单色，8 位 RGB</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>有损或无损</td><td>8 位 RGB，16 位单色</td><td>16 位单色，8 位 RGB</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>无损</td><td>不支持</td><td>不支持</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>有损或无损</td><td>不支持</td><td>不支持</td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>无损</td><td>单色和彩色</td><td>单色和彩色</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>无损</td><td>单色和彩色</td><td>单色和彩色</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>有损或无损</td><td>单色和彩色</td><td>单色和彩色</td></tr>
 </tbody>
 </table>
 
@@ -42,11 +45,11 @@ description: 在 C# .NET 中读取、写入和转码带 JPEG 2000 压缩的 DICO
 
 {{< blocks/products/pf/feature-page-section h2="8 位和 16 位像素数据">}}
 
-<p>医学图像通常使用每样本 16 位来捕获诸如 CT（通常为 12 位存储在 16 位中）和 MRI 等模态的完整动态范围。Aspose.Medical 能够处理 JPEG 2000 的两种位深度：</p>
+<p>医学图像通常使用每样本 16 位来捕获 CT（通常以 16 位存储的 12 位）和 MRI 等模态的完整动态范围。Aspose.Medical 支持 JPEG 2000 的这两种位深度：</p>
 
 <ul>
-<li><strong>读取（解压缩）</strong>：完整支持 8 位和 16 位 JPEG 2000 压缩的 DICOM 文件。库能够正确解码像素数据，不受原始 Bits Allocated、Bits Stored 和 High Bit 值的影响。</li>
-<li><strong>写入（压缩）</strong>：当前仅支持 8 位图像。计划在未来版本中支持 16 位写入。</li>
+<li><strong>读取（解压缩）</strong>：16 位单色文件（CT、MRI、X 光）和 8 位三分量彩色文件（RGB、YBR_RCT、YBR_ICT）。调色板、CMYK、ICC 配置文件以及子采样彩色码流将被明确抛出异常，而不是静默产生错误图像。</li>
+<li><strong>写入（压缩）</strong>：16 位单色和 8 位 RGB 图像。不支持 8 位单色和 16 位彩色编码；可使用 HTJ2K 或 JPEG XL 来实现，这两者均接受任意位深的单色和彩色图像。</li>
 </ul>
 
 <div class="codeblock" id="code">
@@ -74,7 +77,7 @@ Console.WriteLine($"Samples Per Pixel: {pixelData.SamplesPerPixel}");</code></pr
 
 {{< blocks/products/pf/feature-page-section h2="转码为 JPEG 2000">}}
 
-<p>使用 <code>Transcode</code> 方法将任何 DICOM 文件压缩为 JPEG 2000，或在 JPEG 2000 模式之间进行转换：</p>
+<p>使用 <code>Transcode</code> 方法将任意 DICOM 文件压缩为 JPEG 2000，或在 JPEG 2000 模式之间进行转换：</p>
 
 <div class="codeblock" id="code">
  <h3>将 DICOM 压缩为 JPEG 2000 无损 - C#</h3>
@@ -100,10 +103,10 @@ lossy.Save("j2k_lossy.dcm");</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="解压缩 JPEG 2000 DICOM 文件">}}
 
-<p>将 JPEG 2000 文件解压缩为未压缩的传输语法，以便进行处理、分析或与不支持 JPEG 2000 的系统兼容：</p>
+<p>将 JPEG 2000 文件解压缩为未压缩的传输语法，以便进行处理、分析，或兼容不支持 JPEG 2000 的系统：</p>
 
 <div class="codeblock" id="code">
- <h3>将 JPEG 2000 解压缩为未压缩 - C#</h3>
+ <h3>将 JPEG 2000 解压缩为未压缩格式 - C#</h3>
  <pre><code class="cs">// Load a JPEG 2000 compressed DICOM file
 DicomFile compressed = DicomFile.Open("j2k_compressed.dcm");
 
@@ -112,7 +115,7 @@ DicomFile uncompressed = compressed.Transcode(TransferSyntax.ExplicitVrLittleEnd
 uncompressed.Save("decompressed.dcm");</code></pre>
 </div>
 
-<p>您还可以在一步操作中同时解压缩并转码为其他压缩格式：</p>
+<p>您还可以在一步中完成解压缩并转码为其他压缩格式：</p>
 
 <div class="codeblock" id="code">
  <h3>在压缩格式之间转码 - C#</h3>
@@ -157,37 +160,44 @@ image.CopyPixelsTo(pixels);</code></pre>
 </thead>
 <tbody>
 <tr><td>传输语法</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
-<tr><td>图像质量</td><td>像素级完美 &mdash; 与原始完全相同</td><td>视觉上相似，部分数据永久丢失</td></tr>
-<tr><td>压缩比</td><td>通常 2:1 到 3:1</td><td>通常 10:1 到 30:1 或更高</td></tr>
-<tr><td>最佳适用场景</td><td>诊断归档、法律记录、初步阅读</td><td>初步审查、远程医疗、网络传输</td></tr>
+<tr><td>图像质量</td><td>像素完美 &mdash; 与原始完全相同</td><td>视觉相似，部分数据永久丢失</td></tr>
+<tr><td>压缩比</td><td>通常 2:1 至 3:1</td><td>通常 10:1 至 30:1 或更高</td></tr>
+<tr><td>最佳用途</td><td>诊断归档、法律记录、首读</td><td>初步审查、远程医疗、网络传输</td></tr>
 <tr><td>往返安全</td><td>是</td><td>否 &mdash; 重新编码会进一步降低质量</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 Part 2 多分量">}}
+{{< blocks/products/pf/feature-page-section h2="高吞吐量 JPEG 2000 (HTJ2K)">}}
 
-<p>JPEG 2000 Part 2 (ISO/IEC 15444-2) 为标准编解码器增加了多分量变换能力。该功能用于彩色医学图像以及产生多通道数据的模态。Aspose.Medical 支持两种 Part 2 传输语法：</p>
-
-<ul>
-<li><code>Jpeg2000Part2MultiComponentLosslessOnly</code> &mdash; 无损压缩，采用跨分量去相关以实现多通道数据的最佳压缩。</li>
-<li><code>Jpeg2000Part2MultiComponent</code> &mdash; 有损或无损压缩，支持多分量变换。</li>
-</ul>
-
-{{< /blocks/products/pf/feature-page-section >}}
-
-{{< blocks/products/pf/feature-page-section h2="高通量 JPEG 2000 (HTJ2K) — 即将推出">}}
-
-<p>HTJ2K (ISO/IEC 15444-15) 是 JPEG 2000 的下一代扩展，旨在在保持相同压缩效率的前提下，实现极快的编码和解码速度。预计它将成为实时医学成像工作流的首选编解码器。</p>
-
-<p>Aspose.Medical 将在后续版本中添加 HTJ2K 支持，覆盖三种传输语法：</p>
+<p>HTJ2K（ISO/IEC 15444-15）用更快的块编码器取代了 JPEG 2000 中缓慢的算术编码器。它保留相同的小波变换、进度顺序和质量，实现数倍更快的解码和编码。Aspose.Medical 在纯 .NET 中实现了所有三种 DICOM HTJ2K 传输语法，支持单色和彩色图像，并能够在 HTJ2K 与所有其他已支持语法之间进行转码：</p>
 
 <ul>
 <li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; 仅无损</li>
-<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; 无损，采用 RPCL 进度顺序</li>
+<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; 无损，使用 RPCL 进度顺序</li>
 <li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; 有损或无损</li>
 </ul>
+
+<div class="codeblock" id="code">
+ <h3>将 JPEG 2000 转码为 HTJ2K 并返回 - C#</h3>
+ <pre><code class="cs">// Transcode a JPEG 2000 file to HTJ2K, and back to classic JPEG 2000
+DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
+DicomFile htj2kFile = j2kFile.Transcode(TransferSyntax.HTJ2KLossless);
+htj2kFile.Save("htj2k_lossless.dcm");
+
+// HTJ2K with RPCL progression order, lossless
+DicomFile rpclFile = j2kFile.Transcode(TransferSyntax.HTJ2KLosslessRPCL);
+rpclFile.Save("htj2k_rpcl.dcm");
+
+// HTJ2K lossy
+DicomFile htj2kLossy = j2kFile.Transcode(TransferSyntax.HTJ2K);
+htj2kLossy.Save("htj2k_lossy.dcm");
+
+// Any HTJ2K file decodes back to an uncompressed transfer syntax
+DicomFile uncompressed = htj2kFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("decoded.dcm");</code></pre>
+</div>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

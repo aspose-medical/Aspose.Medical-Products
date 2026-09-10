@@ -23,10 +23,10 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
     <li>使用可配置的机密性配置文件匿名化DICOM文件，以保护患者隐私并确保符合HIPAA规定。</li>
     <li>将DICOM图像转换为常见格式：JPEG、PNG、TIFF，并从光栅图像转换回DICOM。</li>
     <li>将DICOM数据序列化和反序列化为JSON和XML，以便与现代Web服务和API集成。</li>
-    <li>在传输语法之间进行转码，包括JPEG、JPEG 2000、HTJ2K、JPEG-LS和RLE压缩。</li>
+    <li>在传输语法之间进行转码，包括JPEG、JPEG 2000、HTJ2K、JPEG XL、JPEG-LS和RLE压缩。</li>
     <li>完全支持多帧DICOM图像和图像叠加。</li>
     <li>使用模态和VOI查找表进行高级图像处理，以实现适当的窗口和级别调整。</li>
-    <li>HTJ2K（高吞吐量JPEG 2000）支持下一代医学影像压缩。</li>
+    <li>HTJ2K（高吞吐量JPEG 2000）、JPEG XL支持下一代医学影像压缩。</li>
 </ul>
 </p>
 
@@ -98,7 +98,7 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
      传输语法转换
     </li>
     <li>
-     JPEG 2000和HTJ2K压缩
+     JPEG 2000、HTJ2K和JPEG XL压缩
     </li>
    </ul>
    <header>
@@ -362,7 +362,7 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
     <em class="fa fa-compress ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     支持JPEG、JPEG 2000、HTJ2K、JPEG-LS和RLE压缩
+     支持JPEG、JPEG 2000、HTJ2K、JPEG XL、JPEG-LS和RLE压缩
     </p>
    </div>
    <div class="col-lg-4">
@@ -384,7 +384,7 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
      纯.NET库 - 零依赖
     </h2>
     <p>
-     Aspose.Medical for .NET完全用托管C#代码编写，没有任何本机依赖项。与依赖本机编解码器或外部工具的其他医学影像库不同，Aspose.Medical是完全自包含的。所有图像压缩编解码器（JPEG、JPEG 2000、HTJ2K、JPEG-LS、RLE）都是用纯.NET实现的，确保在Windows、Linux和macOS上无缝部署，无需任何平台特定配置。这使其成为容器化部署、云环境以及安装本机库不可行的场景的理想选择。
+     Aspose.Medical for .NET完全用托管C#代码编写，没有任何本机依赖项。与依赖本机编解码器或外部工具的其他医学影像库不同，Aspose.Medical是完全自包含的。所有图像压缩编解码器（JPEG、JPEG 2000、HTJ2K、JPEG XL、JPEG-LS、RLE）都是用纯.NET实现的，确保在Windows、Linux和macOS上无缝部署，无需任何平台特定配置。这使其成为容器化部署、云环境以及安装本机库不可行的场景的理想选择。
     </p>
    </div>
    <div class="col-lg-12">
@@ -440,7 +440,7 @@ image.Save("chest_xray.png");</code></pre>
      在传输语法之间进行转码
     </h2>
     <p>
-     不同的医学影像系统和存档可能需要特定的DICOM传输语法。Aspose.Medical for .NET支持在各种传输语法之间进行转码，包括未压缩格式、JPEG基线、JPEG无损、JPEG 2000、HTJ2K（高吞吐量JPEG 2000）、JPEG-LS和RLE。这对于PACS集成、存档优化以及确保不同医疗系统之间的兼容性至关重要。所有编解码器都是用纯.NET实现的，保证在所有平台上的一致行为。
+     不同的医学影像系统和存档可能需要特定的DICOM传输语法。Aspose.Medical for .NET支持在各种传输语法之间进行转码，包括未压缩格式、JPEG基线、JPEG无损、JPEG 2000、HTJ2K（高吞吐量JPEG 2000）、JPEG XL、JPEG-LS和RLE。这对于PACS集成、存档优化以及确保不同医疗系统之间的兼容性至关重要。所有编解码器都是用纯.NET实现的，保证在所有平台上的一致行为。
     </p>
    </div>
    <div class="col-lg-12">

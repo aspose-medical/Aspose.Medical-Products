@@ -23,10 +23,10 @@ description: DICOM tıbbi görüntüleme için saf .NET kütüphanesi. Harici ba
     <li>Yapılandırılabilir gizlilik profilleri kullanarak hasta gizliliğini korumak ve HIPAA uyumluluğunu sağlamak için DICOM dosyalarını anonimleştirin.</li>
     <li>DICOM görüntülerini yaygın formatlara dönüştürün: JPEG, PNG, TIFF ve raster görüntülerden DICOM'a geri dönün.</li>
     <li>Modern web servisleri ve API'lerle entegrasyon için DICOM verilerini JSON ve XML'e serileştirin ve deserileştirin.</li>
-    <li>JPEG, JPEG 2000, HTJ2K, JPEG-LS ve RLE sıkıştırma dahil olmak üzere aktarım sözdizimler arasında transkode edin.</li>
+    <li>JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS ve RLE sıkıştırma dahil olmak üzere aktarım sözdizimler arasında transkode edin.</li>
     <li>Çok çerçeveli DICOM görüntüleri ve görüntü kaplamaları için tam destek.</li>
     <li>Uygun pencere ve seviye ayarı için modalite ve VOI arama tabloları ile gelişmiş görüntü işleme.</li>
-    <li>Yeni nesil tıbbi görüntüleme sıkıştırması için HTJ2K (Yüksek Verimli JPEG 2000) desteği.</li>
+    <li>Yeni nesil tıbbi görüntüleme sıkıştırması için HTJ2K (Yüksek Verimli JPEG 2000), JPEG XL desteği.</li>
 </ul>
 </p>
 
@@ -98,7 +98,7 @@ description: DICOM tıbbi görüntüleme için saf .NET kütüphanesi. Harici ba
      Aktarım Sözdizimi Dönüştürme
     </li>
     <li>
-     JPEG 2000 ve HTJ2K Sıkıştırma
+     JPEG 2000, HTJ2K ve JPEG XL Sıkıştırma
     </li>
    </ul>
    <header>
@@ -362,7 +362,7 @@ description: DICOM tıbbi görüntüleme için saf .NET kütüphanesi. Harici ba
     <em class="fa fa-compress ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     JPEG, JPEG 2000, HTJ2K, JPEG-LS ve RLE sıkıştırma desteği
+     JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS ve RLE sıkıştırma desteği
     </p>
    </div>
    <div class="col-lg-4">
@@ -384,7 +384,7 @@ description: DICOM tıbbi görüntüleme için saf .NET kütüphanesi. Harici ba
      Saf .NET Kütüphanesi - Sıfır Bağımlılık
     </h2>
     <p>
-     Aspose.Medical for .NET, hiçbir yerel bağımlılık olmadan tamamen yönetilen C# kodunda yazılmıştır. Yerel codec'lere veya harici araçlara dayanan diğer tıbbi görüntüleme kütüphanelerinin aksine, Aspose.Medical tamamen kendi kendine yeterlidir. Tüm görüntü sıkıştırma codec'leri (JPEG, JPEG 2000, HTJ2K, JPEG-LS, RLE) saf .NET'te uygulanmıştır ve Windows, Linux ve macOS'ta herhangi bir platforma özel yapılandırma olmadan sorunsuz dağıtım sağlar. Bu, konteynerleştirilmiş dağıtımlar, bulut ortamları ve yerel kütüphanelerin yüklenmesinin mümkün olmadığı senaryolar için idealdir.
+     Aspose.Medical for .NET, hiçbir yerel bağımlılık olmadan tamamen yönetilen C# kodunda yazılmıştır. Yerel codec'lere veya harici araçlara dayanan diğer tıbbi görüntüleme kütüphanelerinin aksine, Aspose.Medical tamamen kendi kendine yeterlidir. Tüm görüntü sıkıştırma codec'leri (JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE) saf .NET'te uygulanmıştır ve Windows, Linux ve macOS'ta herhangi bir platforma özel yapılandırma olmadan sorunsuz dağıtım sağlar. Bu, konteynerleştirilmiş dağıtımlar, bulut ortamları ve yerel kütüphanelerin yüklenmesinin mümkün olmadığı senaryolar için idealdir.
     </p>
    </div>
    <div class="col-lg-12">
@@ -440,7 +440,7 @@ image.Save("chest_xray.png");</code></pre>
      Aktarım Sözdizimler Arasında Transkodlama
     </h2>
     <p>
-     Farklı tıbbi görüntüleme sistemleri ve arşivleri, belirli DICOM aktarım sözdizimlerini gerektirebilir. Aspose.Medical for .NET, sıkıştırılmamış formatlar, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (Yüksek Verimli JPEG 2000), JPEG-LS ve RLE dahil olmak üzere çeşitli aktarım sözdizimler arasında transkodlamayı mümkün kılar. Bu, PACS entegrasyonu, arşiv optimizasyonu ve farklı sağlık sistemleri arasında uyumluluk sağlamak için gereklidir. Tüm codec'ler saf .NET'te uygulanmıştır ve tüm platformlarda tutarlı davranış garantisi verir.
+     Farklı tıbbi görüntüleme sistemleri ve arşivleri, belirli DICOM aktarım sözdizimlerini gerektirebilir. Aspose.Medical for .NET, sıkıştırılmamış formatlar, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (Yüksek Verimli JPEG 2000), JPEG XL, JPEG-LS ve RLE dahil olmak üzere çeşitli aktarım sözdizimler arasında transkodlamayı mümkün kılar. Bu, PACS entegrasyonu, arşiv optimizasyonu ve farklı sağlık sistemleri arasında uyumluluk sağlamak için gereklidir. Tüm codec'ler saf .NET'te uygulanmıştır ve tüm platformlarda tutarlı davranış garantisi verir.
     </p>
    </div>
    <div class="col-lg-12">

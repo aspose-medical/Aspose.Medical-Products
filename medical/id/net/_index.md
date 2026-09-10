@@ -23,10 +23,10 @@ description: Pustaka .NET murni untuk pencitraan medis DICOM. Baca, tulis, anoni
     <li>Menganonim file DICOM untuk melindungi privasi pasien dan memastikan kepatuhan HIPAA menggunakan profil kerahasiaan yang dapat dikonfigurasi.</li>
     <li>Mengkonversi gambar DICOM ke format umum: JPEG, PNG, TIFF, dan kembali ke DICOM dari gambar raster.</li>
     <li>Menserialisasi dan mendeserialisasi data DICOM ke JSON dan XML untuk integrasi dengan layanan web modern dan API.</li>
-    <li>Mentranskode antara sintaks transfer termasuk kompresi JPEG, JPEG 2000, HTJ2K, JPEG-LS, dan RLE.</li>
+    <li>Mentranskode antara sintaks transfer termasuk kompresi JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, dan RLE.</li>
     <li>Dukungan penuh untuk gambar DICOM multi-frame dan overlay gambar.</li>
     <li>Pemrosesan gambar lanjutan dengan tabel pencarian modalitas dan VOI untuk windowing dan leveling yang tepat.</li>
-    <li>Dukungan HTJ2K (High-Throughput JPEG 2000) untuk kompresi pencitraan medis generasi berikutnya.</li>
+    <li>Dukungan HTJ2K (High-Throughput JPEG 2000), JPEG XL untuk kompresi pencitraan medis generasi berikutnya.</li>
 </ul>
 </p>
 
@@ -98,7 +98,7 @@ description: Pustaka .NET murni untuk pencitraan medis DICOM. Baca, tulis, anoni
      Konversi Sintaks Transfer
     </li>
     <li>
-     Kompresi JPEG 2000 &amp; HTJ2K
+     Kompresi JPEG 2000, HTJ2K &amp; JPEG XL
     </li>
    </ul>
    <header>
@@ -362,7 +362,7 @@ description: Pustaka .NET murni untuk pencitraan medis DICOM. Baca, tulis, anoni
     <em class="fa fa-compress ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Dukungan untuk kompresi JPEG, JPEG 2000, HTJ2K, JPEG-LS, dan RLE
+     Dukungan untuk kompresi JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, dan RLE
     </p>
    </div>
    <div class="col-lg-4">
@@ -384,7 +384,7 @@ description: Pustaka .NET murni untuk pencitraan medis DICOM. Baca, tulis, anoni
      Pustaka .NET Murni - Tanpa Dependensi
     </h2>
     <p>
-     Aspose.Medical for .NET ditulis sepenuhnya dalam kode C# terkelola tanpa dependensi native sama sekali. Tidak seperti pustaka pencitraan medis lain yang bergantung pada codec native atau alat eksternal, Aspose.Medical sepenuhnya mandiri. Semua codec kompresi gambar (JPEG, JPEG 2000, HTJ2K, JPEG-LS, RLE) diimplementasikan dalam .NET murni, memastikan deployment yang mulus di Windows, Linux, dan macOS tanpa konfigurasi spesifik platform. Ini membuatnya ideal untuk deployment dalam container, lingkungan cloud, dan skenario di mana instalasi pustaka native tidak memungkinkan.
+     Aspose.Medical for .NET ditulis sepenuhnya dalam kode C# terkelola tanpa dependensi native sama sekali. Tidak seperti pustaka pencitraan medis lain yang bergantung pada codec native atau alat eksternal, Aspose.Medical sepenuhnya mandiri. Semua codec kompresi gambar (JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE) diimplementasikan dalam .NET murni, memastikan deployment yang mulus di Windows, Linux, dan macOS tanpa konfigurasi spesifik platform. Ini membuatnya ideal untuk deployment dalam container, lingkungan cloud, dan skenario di mana instalasi pustaka native tidak memungkinkan.
     </p>
    </div>
    <div class="col-lg-12">
@@ -440,7 +440,7 @@ image.Save("chest_xray.png");</code></pre>
      Transkode Antara Sintaks Transfer
     </h2>
     <p>
-     Sistem pencitraan medis dan arsip yang berbeda mungkin memerlukan sintaks transfer DICOM tertentu. Aspose.Medical for .NET memungkinkan transkode antara berbagai sintaks transfer termasuk format tidak terkompresi, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG-LS, dan RLE. Ini penting untuk integrasi PACS, optimalisasi arsip, dan memastikan kompatibilitas di berbagai sistem perawatan kesehatan. Semua codec diimplementasikan dalam .NET murni, menjamin perilaku yang konsisten di semua platform.
+     Sistem pencitraan medis dan arsip yang berbeda mungkin memerlukan sintaks transfer DICOM tertentu. Aspose.Medical for .NET memungkinkan transkode antara berbagai sintaks transfer termasuk format tidak terkompresi, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL, JPEG-LS, dan RLE. Ini penting untuk integrasi PACS, optimalisasi arsip, dan memastikan kompatibilitas di berbagai sistem perawatan kesehatan. Semua codec diimplementasikan dalam .NET murni, menjamin perilaku yang konsisten di semua platform.
     </p>
    </div>
    <div class="col-lg-12">

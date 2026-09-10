@@ -23,10 +23,10 @@ description: Biblioteca .NET pura para imagem médica DICOM. Leitura, escrita, a
     <li>Anonimização de arquivos DICOM para proteger a privacidade do paciente e garantir conformidade HIPAA usando perfis de confidencialidade configuráveis.</li>
     <li>Conversão de imagens DICOM para formatos comuns: JPEG, PNG, TIFF e de volta para DICOM a partir de imagens raster.</li>
     <li>Serialização e desserialização de dados DICOM para JSON e XML para integração com serviços web e APIs modernos.</li>
-    <li>Transcodificação entre sintaxes de transferência incluindo compressão JPEG, JPEG 2000, HTJ2K, JPEG-LS e RLE.</li>
+    <li>Transcodificação entre sintaxes de transferência incluindo compressão JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS e RLE.</li>
     <li>Suporte completo para imagens DICOM multi-frame e overlays de imagem.</li>
     <li>Processamento avançado de imagens com tabelas de lookup de modalidade e VOI para windowing e leveling adequados.</li>
-    <li>Suporte HTJ2K (High-Throughput JPEG 2000) para compressão de imagem médica de próxima geração.</li>
+    <li>Suporte HTJ2K (High-Throughput JPEG 2000), JPEG XL para compressão de imagem médica de próxima geração.</li>
 </ul>
 </p>
 
@@ -98,7 +98,7 @@ description: Biblioteca .NET pura para imagem médica DICOM. Leitura, escrita, a
      Conversão de sintaxe de transferência
     </li>
     <li>
-     Compressão JPEG 2000 e HTJ2K
+     Compressão JPEG 2000, HTJ2K e JPEG XL
     </li>
    </ul>
    <header>
@@ -362,7 +362,7 @@ description: Biblioteca .NET pura para imagem médica DICOM. Leitura, escrita, a
     <em class="fa fa-compress ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Suporte para compressão JPEG, JPEG 2000, HTJ2K, JPEG-LS e RLE
+     Suporte para compressão JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS e RLE
     </p>
    </div>
    <div class="col-lg-4">
@@ -384,7 +384,7 @@ description: Biblioteca .NET pura para imagem médica DICOM. Leitura, escrita, a
      Biblioteca .NET pura - Zero dependências
     </h2>
     <p>
-     Aspose.Medical for .NET é escrito inteiramente em código C# gerenciado sem nenhuma dependência nativa. Diferente de outras bibliotecas de imagem médica que dependem de codecs nativos ou ferramentas externas, o Aspose.Medical é completamente autocontido. Todos os codecs de compressão de imagem (JPEG, JPEG 2000, HTJ2K, JPEG-LS, RLE) são implementados em .NET puro, garantindo implantação perfeita em Windows, Linux e macOS sem qualquer configuração específica de plataforma. Isso o torna ideal para implantações em contêineres, ambientes de nuvem e cenários onde a instalação de bibliotecas nativas não é viável.
+     Aspose.Medical for .NET é escrito inteiramente em código C# gerenciado sem nenhuma dependência nativa. Diferente de outras bibliotecas de imagem médica que dependem de codecs nativos ou ferramentas externas, o Aspose.Medical é completamente autocontido. Todos os codecs de compressão de imagem (JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE) são implementados em .NET puro, garantindo implantação perfeita em Windows, Linux e macOS sem qualquer configuração específica de plataforma. Isso o torna ideal para implantações em contêineres, ambientes de nuvem e cenários onde a instalação de bibliotecas nativas não é viável.
     </p>
    </div>
    <div class="col-lg-12">
@@ -440,7 +440,7 @@ image.Save("chest_xray.png");</code></pre>
      Transcodificação entre sintaxes de transferência
     </h2>
     <p>
-     Diferentes sistemas de imagem médica e arquivos podem exigir sintaxes de transferência DICOM específicas. Aspose.Medical for .NET permite a transcodificação entre várias sintaxes de transferência, incluindo formatos não comprimidos, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG-LS e RLE. Isso é essencial para integração PACS, otimização de arquivos e para garantir compatibilidade entre diferentes sistemas de saúde. Todos os codecs são implementados em .NET puro, garantindo comportamento consistente em todas as plataformas.
+     Diferentes sistemas de imagem médica e arquivos podem exigir sintaxes de transferência DICOM específicas. Aspose.Medical for .NET permite a transcodificação entre várias sintaxes de transferência, incluindo formatos não comprimidos, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL, JPEG-LS e RLE. Isso é essencial para integração PACS, otimização de arquivos e para garantir compatibilidade entre diferentes sistemas de saúde. Todos os codecs são implementados em .NET puro, garantindo comportamento consistente em todas as plataformas.
     </p>
    </div>
    <div class="col-lg-12">

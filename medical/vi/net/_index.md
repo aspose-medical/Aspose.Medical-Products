@@ -23,10 +23,10 @@ description: Thư viện .NET thuần túy cho hình ảnh y tế DICOM. Đọc,
     <li>Ẩn danh tệp DICOM để bảo vệ quyền riêng tư của bệnh nhân và đảm bảo tuân thủ HIPAA bằng cách sử dụng các hồ sơ bảo mật có thể định cấu hình.</li>
     <li>Chuyển đổi hình ảnh DICOM sang các định dạng phổ biến: JPEG, PNG, TIFF và quay lại DICOM từ hình ảnh raster.</li>
     <li>Tuần tự hóa và giải tuần tự hóa dữ liệu DICOM sang JSON và XML để tích hợp với các dịch vụ web và API hiện đại.</li>
-    <li>Mã hóa chéo giữa các cú pháp truyền bao gồm nén JPEG, JPEG 2000, HTJ2K, JPEG-LS và RLE.</li>
+    <li>Mã hóa chéo giữa các cú pháp truyền bao gồm nén JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS và RLE.</li>
     <li>Hỗ trợ đầy đủ cho hình ảnh DICOM nhiều khung hình và lớp phủ hình ảnh.</li>
     <li>Xử lý hình ảnh nâng cao với bảng tra cứu phương thức và VOI để cửa sổ và san bằng thích hợp.</li>
-    <li>Hỗ trợ HTJ2K (High-Throughput JPEG 2000) cho nén hình ảnh y tế thế hệ tiếp theo.</li>
+    <li>Hỗ trợ HTJ2K (High-Throughput JPEG 2000), JPEG XL cho nén hình ảnh y tế thế hệ tiếp theo.</li>
 </ul>
 </p>
 
@@ -98,7 +98,7 @@ description: Thư viện .NET thuần túy cho hình ảnh y tế DICOM. Đọc,
      Chuyển đổi Cú pháp Truyền
     </li>
     <li>
-     Nén JPEG 2000 &amp; HTJ2K
+     Nén JPEG 2000, HTJ2K &amp; JPEG XL
     </li>
    </ul>
    <header>
@@ -362,7 +362,7 @@ description: Thư viện .NET thuần túy cho hình ảnh y tế DICOM. Đọc,
     <em class="fa fa-compress ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Hỗ trợ nén JPEG, JPEG 2000, HTJ2K, JPEG-LS và RLE
+     Hỗ trợ nén JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS và RLE
     </p>
    </div>
    <div class="col-lg-4">
@@ -384,7 +384,7 @@ description: Thư viện .NET thuần túy cho hình ảnh y tế DICOM. Đọc,
      Thư viện .NET Thuần túy - Không có Phụ thuộc
     </h2>
     <p>
-     Aspose.Medical for .NET được viết hoàn toàn bằng mã C# được quản lý mà không có bất kỳ phụ thuộc gốc nào. Không giống như các thư viện hình ảnh y tế khác dựa vào codec gốc hoặc công cụ bên ngoài, Aspose.Medical hoàn toàn khép kín. Tất cả các codec nén hình ảnh (JPEG, JPEG 2000, HTJ2K, JPEG-LS, RLE) được triển khai trong .NET thuần túy, đảm bảo triển khai liền mạch trên Windows, Linux và macOS mà không cần cấu hình cụ thể cho nền tảng. Điều này làm cho nó lý tưởng cho triển khai container, môi trường đám mây và các trường hợp cài đặt thư viện gốc không khả thi.
+     Aspose.Medical for .NET được viết hoàn toàn bằng mã C# được quản lý mà không có bất kỳ phụ thuộc gốc nào. Không giống như các thư viện hình ảnh y tế khác dựa vào codec gốc hoặc công cụ bên ngoài, Aspose.Medical hoàn toàn khép kín. Tất cả các codec nén hình ảnh (JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE) được triển khai trong .NET thuần túy, đảm bảo triển khai liền mạch trên Windows, Linux và macOS mà không cần cấu hình cụ thể cho nền tảng. Điều này làm cho nó lý tưởng cho triển khai container, môi trường đám mây và các trường hợp cài đặt thư viện gốc không khả thi.
     </p>
    </div>
    <div class="col-lg-12">
@@ -440,7 +440,7 @@ image.Save("chest_xray.png");</code></pre>
      Mã hóa chéo Giữa Các Cú pháp Truyền
     </h2>
     <p>
-     Các hệ thống hình ảnh y tế và lưu trữ khác nhau có thể yêu cầu cú pháp truyền DICOM cụ thể. Aspose.Medical for .NET cho phép mã hóa chéo giữa các cú pháp truyền khác nhau bao gồm định dạng không nén, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG-LS và RLE. Điều này rất cần thiết cho việc tích hợp PACS, tối ưu hóa lưu trữ và đảm bảo khả năng tương thích trên các hệ thống chăm sóc sức khỏe khác nhau. Tất cả các codec được triển khai trong .NET thuần túy, đảm bảo hành vi nhất quán trên tất cả các nền tảng.
+     Các hệ thống hình ảnh y tế và lưu trữ khác nhau có thể yêu cầu cú pháp truyền DICOM cụ thể. Aspose.Medical for .NET cho phép mã hóa chéo giữa các cú pháp truyền khác nhau bao gồm định dạng không nén, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL, JPEG-LS và RLE. Điều này rất cần thiết cho việc tích hợp PACS, tối ưu hóa lưu trữ và đảm bảo khả năng tương thích trên các hệ thống chăm sóc sức khỏe khác nhau. Tất cả các codec được triển khai trong .NET thuần túy, đảm bảo hành vi nhất quán trên tất cả các nền tảng.
     </p>
    </div>
    <div class="col-lg-12">

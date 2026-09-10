@@ -23,10 +23,10 @@ description: Rent .NET-bibliotek för DICOM medicinsk bildbehandling. Läs, skri
     <li>Anonymisera DICOM-filer för att skydda patientens integritet och säkerställa HIPAA-efterlevnad med konfigurerbara sekretess profiler.</li>
     <li>Konvertera DICOM-bilder till vanliga format: JPEG, PNG, TIFF och tillbaka till DICOM från rasterbilder.</li>
     <li>Serialisera och deserialisera DICOM-data till JSON och XML för integration med moderna webbtjänster och API:er.</li>
-    <li>Omkoda mellan överföringssyntaxer inklusive JPEG, JPEG 2000, HTJ2K, JPEG-LS och RLE-komprimering.</li>
+    <li>Omkoda mellan överföringssyntaxer inklusive JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS och RLE-komprimering.</li>
     <li>Fullt stöd för multi-frame DICOM-bilder och bildöverlagringar.</li>
     <li>Avancerad bildbehandling med modalitets- och VOI-uppslagstabeller för korrekt fönstring och nivåjustering.</li>
-    <li>HTJ2K (High-Throughput JPEG 2000) stöd för nästa generations medicinsk bildkomprimering.</li>
+    <li>HTJ2K (High-Throughput JPEG 2000), JPEG XL stöd för nästa generations medicinsk bildkomprimering.</li>
 </ul>
 </p>
 
@@ -98,7 +98,7 @@ description: Rent .NET-bibliotek för DICOM medicinsk bildbehandling. Läs, skri
      Överföringssyntaxkonvertering
     </li>
     <li>
-     JPEG 2000 och HTJ2K-komprimering
+     JPEG 2000, HTJ2K och JPEG XL-komprimering
     </li>
    </ul>
    <header>
@@ -362,7 +362,7 @@ description: Rent .NET-bibliotek för DICOM medicinsk bildbehandling. Läs, skri
     <em class="fa fa-compress ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Stöd för JPEG, JPEG 2000, HTJ2K, JPEG-LS och RLE-komprimering
+     Stöd för JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS och RLE-komprimering
     </p>
    </div>
    <div class="col-lg-4">
@@ -384,7 +384,7 @@ description: Rent .NET-bibliotek för DICOM medicinsk bildbehandling. Läs, skri
      Rent .NET-bibliotek - Noll beroenden
     </h2>
     <p>
-     Aspose.Medical for .NET är helt skrivet i hanterad C#-kod utan några inbyggda beroenden överhuvudtaget. Till skillnad från andra medicinska bildbibliotek som förlitar sig på inbyggda kodare eller externa verktyg är Aspose.Medical helt självförsörjande. Alla bildkomprimeringskodare (JPEG, JPEG 2000, HTJ2K, JPEG-LS, RLE) är implementerade i rent .NET, vilket säkerställer sömlös driftsättning över Windows, Linux och macOS utan någon plattformsspecifik konfiguration. Detta gör det idealiskt för containeriserade distributioner, molnmiljöer och scenarier där installation av inbyggda bibliotek inte är möjlig.
+     Aspose.Medical for .NET är helt skrivet i hanterad C#-kod utan några inbyggda beroenden överhuvudtaget. Till skillnad från andra medicinska bildbibliotek som förlitar sig på inbyggda kodare eller externa verktyg är Aspose.Medical helt självförsörjande. Alla bildkomprimeringskodare (JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE) är implementerade i rent .NET, vilket säkerställer sömlös driftsättning över Windows, Linux och macOS utan någon plattformsspecifik konfiguration. Detta gör det idealiskt för containeriserade distributioner, molnmiljöer och scenarier där installation av inbyggda bibliotek inte är möjlig.
     </p>
    </div>
    <div class="col-lg-12">
@@ -440,7 +440,7 @@ image.Save("chest_xray.png");</code></pre>
      Omkoda mellan överföringssyntaxer
     </h2>
     <p>
-     Olika medicinska bildbehandlingssystem och arkiv kan kräva specifika DICOM-överföringssyntaxer. Aspose.Medical for .NET möjliggör omkodning mellan olika överföringssyntaxer inklusive okomprimerade format, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG-LS och RLE. Detta är väsentligt för PACS-integration, arkivoptimering och för att säkerställa kompatibilitet mellan olika vårdsystem. Alla kodare är implementerade i rent .NET, vilket garanterar konsekvent beteende över alla plattformar.
+     Olika medicinska bildbehandlingssystem och arkiv kan kräva specifika DICOM-överföringssyntaxer. Aspose.Medical for .NET möjliggör omkodning mellan olika överföringssyntaxer inklusive okomprimerade format, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL, JPEG-LS och RLE. Detta är väsentligt för PACS-integration, arkivoptimering och för att säkerställa kompatibilitet mellan olika vårdsystem. Alla kodare är implementerade i rent .NET, vilket garanterar konsekvent beteende över alla plattformar.
     </p>
    </div>
    <div class="col-lg-12">

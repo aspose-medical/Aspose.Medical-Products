@@ -23,10 +23,10 @@ description: DICOM医療画像処理のための純粋な.NETライブラリ。�
     <li>構成可能な機密性プロファイルを使用して患者のプライバシーを保護し、HIPAAコンプライアンスを確保するためにDICOMファイルを匿名化できます。</li>
     <li>DICOM画像を一般的な形式に変換: JPEG、PNG、TIFF、およびラスター画像からDICOMへの変換も可能です。</li>
     <li>最新のWebサービスやAPIとの統合のために、DICOMデータをJSONおよびXMLにシリアル化/デシリアル化できます。</li>
-    <li>JPEG、JPEG 2000、HTJ2K、JPEG-LS、RLE圧縮を含む転送構文間でトランスコードできます。</li>
+    <li>JPEG、JPEG 2000、HTJ2K、JPEG XL、JPEG-LS、RLE圧縮を含む転送構文間でトランスコードできます。</li>
     <li>マルチフレームDICOM画像および画像オーバーレイを完全にサポートします。</li>
     <li>適切なウィンドウイングとレベリングのためのモダリティとVOIルックアップテーブルを使用した高度な画像処理。</li>
-    <li>次世代医療画像圧縮のためのHTJ2K（High-Throughput JPEG 2000）サポート。</li>
+    <li>次世代医療画像圧縮のためのHTJ2K（High-Throughput JPEG 2000）、JPEG XLサポート。</li>
 </ul>
 </p>
 
@@ -98,7 +98,7 @@ description: DICOM医療画像処理のための純粋な.NETライブラリ。�
      転送構文変換
     </li>
     <li>
-     JPEG 2000とHTJ2K圧縮
+     JPEG 2000、HTJ2KとJPEG XL圧縮
     </li>
    </ul>
    <header>
@@ -362,7 +362,7 @@ description: DICOM医療画像処理のための純粋な.NETライブラリ。�
     <em class="fa fa-compress ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     JPEG、JPEG 2000、HTJ2K、JPEG-LS、RLE圧縮をサポートします
+     JPEG、JPEG 2000、HTJ2K、JPEG XL、JPEG-LS、RLE圧縮をサポートします
     </p>
    </div>
    <div class="col-lg-4">
@@ -384,7 +384,7 @@ description: DICOM医療画像処理のための純粋な.NETライブラリ。�
      純粋な.NETライブラリ - 依存関係ゼロ
     </h2>
     <p>
-     Aspose.Medical for .NETは、ネイティブ依存関係を一切持たない完全にマネージドC#コードで記述されています。ネイティブコーデックや外部ツールに依存する他の医療画像ライブラリとは異なり、Aspose.Medicalは完全に自己完結しています。すべての画像圧縮コーデック（JPEG、JPEG 2000、HTJ2K、JPEG-LS、RLE）は純粋な.NETで実装されており、プラットフォーム固有の構成なしでWindows、Linux、macOS全体でシームレスなデプロイメントを保証します。これにより、コンテナ化されたデプロイメント、クラウド環境、およびネイティブライブラリのインストールが実行不可能なシナリオに最適です。
+     Aspose.Medical for .NETは、ネイティブ依存関係を一切持たない完全にマネージドC#コードで記述されています。ネイティブコーデックや外部ツールに依存する他の医療画像ライブラリとは異なり、Aspose.Medicalは完全に自己完結しています。すべての画像圧縮コーデック（JPEG、JPEG 2000、HTJ2K、JPEG XL、JPEG-LS、RLE）は純粋な.NETで実装されており、プラットフォーム固有の構成なしでWindows、Linux、macOS全体でシームレスなデプロイメントを保証します。これにより、コンテナ化されたデプロイメント、クラウド環境、およびネイティブライブラリのインストールが実行不可能なシナリオに最適です。
     </p>
    </div>
    <div class="col-lg-12">
@@ -440,7 +440,7 @@ image.Save("chest_xray.png");</code></pre>
      転送構文間のトランスコード
     </h2>
     <p>
-     さまざまな医療画像システムやアーカイブでは、特定のDICOM転送構文が必要になる場合があります。Aspose.Medical for .NETは、非圧縮形式、JPEGベースライン、JPEGロスレス、JPEG 2000、HTJ2K（High-Throughput JPEG 2000）、JPEG-LS、RLEを含むさまざまな転送構文間のトランスコードを可能にします。これは、PACS統合、アーカイブ最適化、および異なる医療システム間での互換性の確保に不可欠です。すべてのコーデックは純粋な.NETで実装されており、すべてのプラットフォームで一貫した動作を保証します。
+     さまざまな医療画像システムやアーカイブでは、特定のDICOM転送構文が必要になる場合があります。Aspose.Medical for .NETは、非圧縮形式、JPEGベースライン、JPEGロスレス、JPEG 2000、HTJ2K（High-Throughput JPEG 2000）、JPEG XL、JPEG-LS、RLEを含むさまざまな転送構文間のトランスコードを可能にします。これは、PACS統合、アーカイブ最適化、および異なる医療システム間での互換性の確保に不可欠です。すべてのコーデックは純粋な.NETで実装されており、すべてのプラットフォームで一貫した動作を保証します。
     </p>
    </div>
    <div class="col-lg-12">

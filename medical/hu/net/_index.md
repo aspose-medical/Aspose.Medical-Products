@@ -23,10 +23,10 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. DICOM fájlok 
     <li>DICOM fájlok anonimizálása a betegek magánéletének védelme és a HIPAA megfelelőség biztosítása érdekében konfigurálható bizalmasság profilok használatával.</li>
     <li>DICOM képek konvertálása általános formátumokba: JPEG, PNG, TIFF és vissza DICOM-ba raszterképekből.</li>
     <li>DICOM adatok szerializálása és deszerializálása JSON-ba és XML-be modern webszolgáltatásokkal és API-kkal való integrációhoz.</li>
-    <li>Átkódolás átviteli szintaxisok között, beleértve a JPEG, JPEG 2000, HTJ2K, JPEG-LS és RLE tömörítést.</li>
+    <li>Átkódolás átviteli szintaxisok között, beleértve a JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS és RLE tömörítést.</li>
     <li>Teljes támogatás többkockás DICOM képekhez és képátfedésekhez.</li>
     <li>Fejlett képfeldolgozás modalitás és VOI keresési táblákkal a megfelelő ablak és szint beállításához.</li>
-    <li>HTJ2K (High-Throughput JPEG 2000) támogatás az új generációs orvosi képalkotási tömörítéshez.</li>
+    <li>HTJ2K (High-Throughput JPEG 2000), JPEG XL támogatás az új generációs orvosi képalkotási tömörítéshez.</li>
 </ul>
 </p>
 
@@ -98,7 +98,7 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. DICOM fájlok 
      Átviteli szintaxis konverzió
     </li>
     <li>
-     JPEG 2000 és HTJ2K tömörítés
+     JPEG 2000, HTJ2K és JPEG XL tömörítés
     </li>
    </ul>
    <header>
@@ -362,7 +362,7 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. DICOM fájlok 
     <em class="fa fa-compress ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Támogatás JPEG, JPEG 2000, HTJ2K, JPEG-LS és RLE tömörítéshez
+     Támogatás JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS és RLE tömörítéshez
     </p>
    </div>
    <div class="col-lg-4">
@@ -384,7 +384,7 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. DICOM fájlok 
      Tiszta .NET könyvtár - nulla függőség
     </h2>
     <p>
-     Az Aspose.Medical for .NET teljes egészében felügyelt C# kódban íródott mindenféle natív függőség nélkül. Ellentétben más orvosi képalkotó könyvtárakkal, amelyek natív kodekekre vagy külső eszközökre támaszkodnak, az Aspose.Medical teljesen önálló. Minden képtömörítési kodek (JPEG, JPEG 2000, HTJ2K, JPEG-LS, RLE) tiszta .NET-ben van implementálva, biztosítva a zökkenőmentes telepítést Windows, Linux és macOS rendszereken platform-specifikus konfiguráció nélkül. Ez ideálissá teszi konténeres telepítésekhez, felhőkörnyezetekhez és olyan forgatókönyvekhez, ahol natív könyvtárak telepítése nem megvalósítható.
+     Az Aspose.Medical for .NET teljes egészében felügyelt C# kódban íródott mindenféle natív függőség nélkül. Ellentétben más orvosi képalkotó könyvtárakkal, amelyek natív kodekekre vagy külső eszközökre támaszkodnak, az Aspose.Medical teljesen önálló. Minden képtömörítési kodek (JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE) tiszta .NET-ben van implementálva, biztosítva a zökkenőmentes telepítést Windows, Linux és macOS rendszereken platform-specifikus konfiguráció nélkül. Ez ideálissá teszi konténeres telepítésekhez, felhőkörnyezetekhez és olyan forgatókönyvekhez, ahol natív könyvtárak telepítése nem megvalósítható.
     </p>
    </div>
    <div class="col-lg-12">
@@ -440,7 +440,7 @@ image.Save("chest_xray.png");</code></pre>
      Átkódolás átviteli szintaxisok között
     </h2>
     <p>
-     A különböző orvosi képalkotó rendszerek és archívumok különböző DICOM átviteli szintaxisokat igényelhetnek. Az Aspose.Medical for .NET lehetővé teszi az átkódolást különböző átviteli szintaxisok között, beleértve a nem tömörített formátumokat, JPEG Baseline-t, JPEG Lossless-t, JPEG 2000-t, HTJ2K-t (High-Throughput JPEG 2000), JPEG-LS-t és RLE-t. Ez elengedhetetlen a PACS integrációhoz, archívum optimalizálásához és a kompatibilitás biztosításához különböző egészségügyi rendszerek között. Minden kodek tiszta .NET-ben van implementálva, garantálva a konzisztens viselkedést az összes platformon.
+     A különböző orvosi képalkotó rendszerek és archívumok különböző DICOM átviteli szintaxisokat igényelhetnek. Az Aspose.Medical for .NET lehetővé teszi az átkódolást különböző átviteli szintaxisok között, beleértve a nem tömörített formátumokat, JPEG Baseline-t, JPEG Lossless-t, JPEG 2000-t, HTJ2K-t (High-Throughput JPEG 2000), JPEG XL, JPEG-LS-t és RLE-t. Ez elengedhetetlen a PACS integrációhoz, archívum optimalizálásához és a kompatibilitás biztosításához különböző egészségügyi rendszerek között. Minden kodek tiszta .NET-ben van implementálva, garantálva a konzisztens viselkedést az összes platformon.
     </p>
    </div>
    <div class="col-lg-12">

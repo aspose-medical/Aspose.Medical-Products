@@ -23,10 +23,10 @@ description: Čistá knihovna .NET pro lékařské zobrazování DICOM. Čtení,
     <li>Anonymizace souborů DICOM pro ochranu soukromí pacientů a zajištění souladu s HIPAA pomocí konfigurovatelných profilů důvěrnosti.</li>
     <li>Konverze obrazů DICOM do běžných formátů: JPEG, PNG, TIFF a zpět do DICOM z rastrových obrázků.</li>
     <li>Serializace a deserializace dat DICOM do JSON a XML pro integraci s moderními webovými službami a API.</li>
-    <li>Překódování mezi transferovými syntaxemi včetně komprese JPEG, JPEG 2000, HTJ2K, JPEG-LS a RLE.</li>
+    <li>Překódování mezi transferovými syntaxemi včetně komprese JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS a RLE.</li>
     <li>Plná podpora víceframových obrazů DICOM a obrazových překryvů.</li>
     <li>Pokročilé zpracování obrazu s modalitními a VOI vyhledávacími tabulkami pro správné nastavení okna a úrovní.</li>
-    <li>Podpora HTJ2K (High-Throughput JPEG 2000) pro kompresi lékařského zobrazování nové generace.</li>
+    <li>Podpora HTJ2K (High-Throughput JPEG 2000), JPEG XL pro kompresi lékařského zobrazování nové generace.</li>
 </ul>
 </p>
 
@@ -98,7 +98,7 @@ description: Čistá knihovna .NET pro lékařské zobrazování DICOM. Čtení,
      Konverze transferové syntaxe
     </li>
     <li>
-     Komprese JPEG 2000 a HTJ2K
+     Komprese JPEG 2000, HTJ2K a JPEG XL
     </li>
    </ul>
    <header>
@@ -362,7 +362,7 @@ description: Čistá knihovna .NET pro lékařské zobrazování DICOM. Čtení,
     <em class="fa fa-compress ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Podpora komprese JPEG, JPEG 2000, HTJ2K, JPEG-LS a RLE
+     Podpora komprese JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS a RLE
     </p>
    </div>
    <div class="col-lg-4">
@@ -384,7 +384,7 @@ description: Čistá knihovna .NET pro lékařské zobrazování DICOM. Čtení,
      Čistá knihovna .NET - nulové závislosti
     </h2>
     <p>
-     Aspose.Medical for .NET je napsán zcela ve spravovaném kódu C# bez jakýchkoli nativních závislostí. Na rozdíl od jiných knihoven pro lékařské zobrazování, které spoléhají na nativní kodeky nebo externí nástroje, je Aspose.Medical zcela soběstačný. Všechny obrazové kompresní kodeky (JPEG, JPEG 2000, HTJ2K, JPEG-LS, RLE) jsou implementovány v čistém .NET, což zajišťuje bezproblémové nasazení napříč Windows, Linux a macOS bez jakékoli platformově specifické konfigurace. To jej činí ideálním pro kontejnerizovaná nasazení, cloudová prostředí a scénáře, kde není možné instalovat nativní knihovny.
+     Aspose.Medical for .NET je napsán zcela ve spravovaném kódu C# bez jakýchkoli nativních závislostí. Na rozdíl od jiných knihoven pro lékařské zobrazování, které spoléhají na nativní kodeky nebo externí nástroje, je Aspose.Medical zcela soběstačný. Všechny obrazové kompresní kodeky (JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE) jsou implementovány v čistém .NET, což zajišťuje bezproblémové nasazení napříč Windows, Linux a macOS bez jakékoli platformově specifické konfigurace. To jej činí ideálním pro kontejnerizovaná nasazení, cloudová prostředí a scénáře, kde není možné instalovat nativní knihovny.
     </p>
    </div>
    <div class="col-lg-12">
@@ -440,7 +440,7 @@ image.Save("chest_xray.png");</code></pre>
      Překódování mezi transferovými syntaxemi
     </h2>
     <p>
-     Různé systémy lékařského zobrazování a archivy mohou vyžadovat specifické transferové syntaxe DICOM. Aspose.Medical for .NET umožňuje překódování mezi různými transferovými syntaxemi včetně nekomprimovaných formátů, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG-LS a RLE. To je nezbytné pro integraci PACS, optimalizaci archivů a zajištění kompatibility napříč různými zdravotnickými systémy. Všechny kodeky jsou implementovány v čistém .NET, což zaručuje konzistentní chování napříč všemi platformami.
+     Různé systémy lékařského zobrazování a archivy mohou vyžadovat specifické transferové syntaxe DICOM. Aspose.Medical for .NET umožňuje překódování mezi různými transferovými syntaxemi včetně nekomprimovaných formátů, JPEG Baseline, JPEG Lossless, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL, JPEG-LS a RLE. To je nezbytné pro integraci PACS, optimalizaci archivů a zajištění kompatibility napříč různými zdravotnickými systémy. Všechny kodeky jsou implementovány v čistém .NET, což zaručuje konzistentní chování napříč všemi platformami.
     </p>
    </div>
    <div class="col-lg-12">

@@ -384,7 +384,7 @@ description: Pure .NET library for DICOM medical imaging. Read, write, anonymize
      Pure .NET Library - Zero Dependencies
     </h2>
     <p>
-     Aspose.Medical for .NET is written entirely in managed C# code with no native dependencies whatsoever. Unlike other medical imaging libraries that rely on native codecs or external tools, Aspose.Medical is completely self-contained. All image compression codecs (JPEG, JPEG 2000, HTJ2K, JPEG-LS, RLE) are implemented in pure .NET, ensuring seamless deployment across Windows, Linux, and macOS without any platform-specific configuration. This makes it ideal for containerized deployments, cloud environments, and scenarios where installing native libraries is not feasible.
+     Aspose.Medical for .NET is written entirely in managed C# code with no native dependencies whatsoever. Unlike other medical imaging libraries that rely on native codecs or external tools, Aspose.Medical is completely self-contained. All image compression codecs (JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE) are implemented in pure .NET, ensuring seamless deployment across Windows, Linux, and macOS without any platform-specific configuration. This makes it ideal for containerized deployments, cloud environments, and scenarios where installing native libraries is not feasible.
     </p>
    </div>
    <div class="col-lg-12">

@@ -1,12 +1,12 @@
 ---
 title: DICOM Transfer Syntax Conversion in C# .NET | Aspose.Medical
 weight: 16000
-description: Transcode DICOM files between transfer syntaxes in C# .NET. Support for JPEG, JPEG 2000, JPEG-LS, RLE, and uncompressed formats with Aspose.Medical API.
+description: Transcode DICOM files between transfer syntaxes in C# .NET. Support for JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE, and uncompressed formats with Aspose.Medical API.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM Transfer Syntax Conversion in .NET C#" h2="Transcode DICOM files between uncompressed, JPEG, JPEG 2000, JPEG-LS, and RLE transfer syntaxes. Pure .NET library with no native dependencies." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM Transfer Syntax Conversion in .NET C#" h2="Transcode DICOM files between uncompressed, JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, and RLE transfer syntaxes. Pure .NET library with no native dependencies." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
@@ -65,7 +65,8 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 <tr><td colspan="4"><strong>Uncompressed</strong></td></tr>
 <tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>Uncompressed</td><td>Supported</td></tr>
 <tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>Uncompressed</td><td>Supported</td></tr>
-<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Uncompressed</td><td>Supported</td></tr>
+<tr><td>Explicit VR Big Endian</td><td><code>1.2.840.10008.1.2.2</code></td><td>Uncompressed (retired)</td><td>Supported</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Uncompressed</td><td>Not supported</td></tr>
 <tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>Supported</td></tr>
 <tr><td colspan="4"><strong>JPEG</strong></td></tr>
 <tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Lossy, 8-bit</td><td>Supported</td></tr>
@@ -76,20 +77,20 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 <tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Lossless</td><td>Supported</td></tr>
 <tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Near-lossless</td><td>Supported</td></tr>
 <tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
-<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>Supported (read 8/16-bit, write 8-bit)</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>Supported (read 8/16-bit, write 8-bit)</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>Supported (read 8/16-bit, write 8-bit)</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy or lossless</td><td>Supported (read 8/16-bit, write 8-bit)</td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>Supported (read 8-bit color and 16-bit monochrome; write 16-bit monochrome or 8-bit RGB)</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>Supported (read 8-bit color and 16-bit monochrome; write 16-bit monochrome or 8-bit RGB)</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>Not supported</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy or lossless</td><td>Not supported</td></tr>
 <tr><td colspan="4"><strong>RLE</strong></td></tr>
 <tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Lossless</td><td>Supported</td></tr>
 <tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
-<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>Coming soon</td></tr>
-<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>Coming soon</td></tr>
-<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Lossy or lossless</td><td>Coming soon</td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>Supported</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>Supported</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Lossy or lossless</td><td>Supported</td></tr>
 <tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
-<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Lossless</td><td>Coming soon</td></tr>
-<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Lossless</td><td>Coming soon</td></tr>
-<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Lossy or lossless</td><td>Coming soon</td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Lossless</td><td>Supported</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Lossless</td><td>Decode only (encoding needs a JPEG source stream, not pixel data)</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Lossy or lossless</td><td>Supported (lossy mode)</td></tr>
 </tbody>
 </table>
 
@@ -128,6 +129,21 @@ DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></
 DicomFile dicomFile = DicomFile.Open("large_study.dcm");
 DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
 compressed.Save("for_transmission.dcm");</code></pre>
+</div>
+
+<div class="codeblock" id="code">
+ <h3>Use the newest codecs: HTJ2K and JPEG XL - C#</h3>
+ <pre><code class="cs">// HTJ2K: JPEG 2000 quality with much faster encode and decode
+DicomFile dicomFile = DicomFile.Open("ct_series.dcm");
+DicomFile htj2k = dicomFile.Transcode(TransferSyntax.HTJ2KLossless);
+htj2k.Save("ct_htj2k.dcm");
+
+// JPEG XL: lossless or lossy, monochrome and color input
+DicomFile jxlLossless = dicomFile.Transcode(TransferSyntax.JpegXLLossless);
+jxlLossless.Save("ct_jxl_lossless.dcm");
+
+DicomFile jxlLossy = dicomFile.Transcode(TransferSyntax.JpegXL);
+jxlLossy.Save("ct_jxl.dcm");</code></pre>
 </div>
 
 {{< /blocks/products/pf/feature-page-section >}}
@@ -191,7 +207,7 @@ Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
 <tr><td>Compression ratio</td><td>Typically 2:1 to 3:1</td><td>Typically 10:1 to 30:1 or higher</td></tr>
 <tr><td>Round-trip safe</td><td>Yes &mdash; decompress and get identical pixels</td><td>No &mdash; each lossy re-encode further degrades quality</td></tr>
 <tr><td>Use cases</td><td>Archival, diagnostics, legal records</td><td>Preliminary review, telemedicine, network transmission</td></tr>
-<tr><td>Supported codecs</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000</td></tr>
+<tr><td>Supported codecs</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, HTJ2K Lossless, JPEG XL Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000, HTJ2K, JPEG XL</td></tr>
 </tbody>
 </table>
 

@@ -1,12 +1,12 @@
 ---
 title: DICOM JPEG 2000 Compression in C# .NET | Aspose.Medical
 weight: 2000
-description: Read, write, and transcode DICOM files with JPEG 2000 compression in C# .NET. Support for 8-bit and 16-bit images, lossless and lossy modes, multi-component data with Aspose.Medical API.
+description: Read, write, and transcode DICOM files with JPEG 2000 compression in C# .NET. Support for 8-bit color and 16-bit monochrome images, lossless and lossy modes, plus HTJ2K with Aspose.Medical API.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM JPEG 2000 Support in .NET C#" h2="Read, write, and transcode DICOM files with JPEG 2000 compression. Lossless and lossy modes, 8-bit and 16-bit pixel data, multi-component images — all in pure .NET." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM JPEG 2000 Support in .NET C#" h2="Read, write, and transcode DICOM files with JPEG 2000 compression. Lossless and lossy modes, 8-bit color and 16-bit monochrome pixel data, HTJ2K included - all in pure .NET." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
@@ -31,10 +31,13 @@ description: Read, write, and transcode DICOM files with JPEG 2000 compression i
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>8-bit and 16-bit</td><td>8-bit</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>8-bit and 16-bit</td><td>8-bit</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>8-bit and 16-bit</td><td>8-bit</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy or lossless</td><td>8-bit and 16-bit</td><td>8-bit</td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>8-bit RGB, 16-bit monochrome</td><td>16-bit monochrome, 8-bit RGB</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>8-bit RGB, 16-bit monochrome</td><td>16-bit monochrome, 8-bit RGB</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>Not supported</td><td>Not supported</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy or lossless</td><td>Not supported</td><td>Not supported</td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>Monochrome and color</td><td>Monochrome and color</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>Monochrome and color</td><td>Monochrome and color</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Lossy or lossless</td><td>Monochrome and color</td><td>Monochrome and color</td></tr>
 </tbody>
 </table>
 
@@ -45,8 +48,8 @@ description: Read, write, and transcode DICOM files with JPEG 2000 compression i
 <p>Medical images often use 16 bits per sample to capture the full dynamic range of modalities like CT (typically 12-bit stored in 16-bit) and MRI. Aspose.Medical handles both bit depths for JPEG 2000:</p>
 
 <ul>
-<li><strong>Reading (decompression)</strong>: Full support for both 8-bit and 16-bit JPEG 2000 compressed DICOM files. The library correctly decodes pixel data regardless of the original Bits Allocated, Bits Stored, and High Bit values.</li>
-<li><strong>Writing (compression)</strong>: Currently supports 8-bit images. 16-bit write support is planned for a future release.</li>
+<li><strong>Reading (decompression)</strong>: 16-bit monochrome files (CT, MRI, X-ray) and 8-bit three-component color files (RGB, YBR_RCT, YBR_ICT). Palette, CMYK, ICC-profile and sub-sampled color code streams are rejected with a clear exception instead of a silently wrong image.</li>
+<li><strong>Writing (compression)</strong>: 16-bit monochrome and 8-bit RGB images. 8-bit monochrome and 16-bit color encoding are not available; use HTJ2K or JPEG XL for those, both accept monochrome and color at either bit depth.</li>
 </ul>
 
 <div class="codeblock" id="code">
@@ -166,28 +169,35 @@ image.CopyPixelsTo(pixels);</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 Part 2 Multi-Component">}}
+{{< blocks/products/pf/feature-page-section h2="High-Throughput JPEG 2000 (HTJ2K)">}}
 
-<p>JPEG 2000 Part 2 (ISO/IEC 15444-2) extends the standard codec with multi-component transform capabilities. This is used for color medical images and modalities that produce multi-channel data. Aspose.Medical supports both Part 2 transfer syntaxes:</p>
-
-<ul>
-<li><code>Jpeg2000Part2MultiComponentLosslessOnly</code> &mdash; lossless compression with inter-component decorrelation for optimal compression of multi-channel data.</li>
-<li><code>Jpeg2000Part2MultiComponent</code> &mdash; lossy or lossless compression with multi-component transforms.</li>
-</ul>
-
-{{< /blocks/products/pf/feature-page-section >}}
-
-{{< blocks/products/pf/feature-page-section h2="High-Throughput JPEG 2000 (HTJ2K) — Coming Soon">}}
-
-<p>HTJ2K (ISO/IEC 15444-15) is a next-generation extension of JPEG 2000 designed for dramatically faster encode and decode speeds while maintaining the same compression efficiency. It is expected to become the preferred codec for real-time medical imaging workflows.</p>
-
-<p>Aspose.Medical will add HTJ2K support in a future release, covering three transfer syntaxes:</p>
+<p>HTJ2K (ISO/IEC 15444-15) replaces the slow arithmetic coder of JPEG 2000 with a faster block coder. It keeps the same wavelet transform, progression orders and quality, and decodes and encodes several times faster. Aspose.Medical implements all three DICOM HTJ2K transfer syntaxes in pure .NET, for monochrome and color images, and transcodes between HTJ2K and every other supported syntax:</p>
 
 <ul>
-<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; Lossless only</li>
-<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; Lossless with RPCL progression order</li>
-<li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; Lossy or lossless</li>
+<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; lossless only</li>
+<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; lossless with RPCL progression order</li>
+<li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; lossy or lossless</li>
 </ul>
+
+<div class="codeblock" id="code">
+ <h3>Transcode JPEG 2000 to HTJ2K and back - C#</h3>
+ <pre><code class="cs">// Transcode a JPEG 2000 file to HTJ2K, and back to classic JPEG 2000
+DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
+DicomFile htj2kFile = j2kFile.Transcode(TransferSyntax.HTJ2KLossless);
+htj2kFile.Save("htj2k_lossless.dcm");
+
+// HTJ2K with RPCL progression order, lossless
+DicomFile rpclFile = j2kFile.Transcode(TransferSyntax.HTJ2KLosslessRPCL);
+rpclFile.Save("htj2k_rpcl.dcm");
+
+// HTJ2K lossy
+DicomFile htj2kLossy = j2kFile.Transcode(TransferSyntax.HTJ2K);
+htj2kLossy.Save("htj2k_lossy.dcm");
+
+// Any HTJ2K file decodes back to an uncompressed transfer syntax
+DicomFile uncompressed = htj2kFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
+uncompressed.Save("decoded.dcm");</code></pre>
+</div>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

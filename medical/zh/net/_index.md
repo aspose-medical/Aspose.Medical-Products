@@ -1,57 +1,57 @@
 ---
-title: C# .NET DICOM Medical Imaging API | Aspose.Medical
+title: C# .NET DICOM 医学影像 API | Aspose.Medical
 weight: 1000
-url: /zh/net/
-description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读取、写入、匿名化、转换和转码DICOM文件。
+url: /net/
+description: 纯 .NET 库，用于 DICOM 医学影像。读取、写入、匿名化、转码和渲染 DICOM 文件，将其序列化为 JSON 和 XML，并通过 DIMSE 交换研究。
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1="用于DICOM医学影像的.NET API" h2="在.NET C#中读取、写入、匿名化、转换和转码DICOM文件，无需任何外部软件或本机依赖项。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET DICOM 医学影像 API" h2="在 .NET C# 中读取、写入、匿名化、转码和渲染 DICOM 文件，并通过 DIMSE 交换研究，无需任何外部软件或原生依赖。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="https://products.aspose.app/medical/family" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong>是一个强大的纯.NET类库，用于处理DICOM（医学数字成像和通信）文件。它使开发人员能够以编程方式读取、写入、修改、匿名化、转换和转码医学影像数据，而无需任何外部软件或本机依赖项。</p>
+<p><strong>Aspose.Medical for .NET</strong> 是一个纯 .NET 类库，用于处理 DICOM（Digital Imaging and Communications in Medicine）文件。它使开发者能够读取、写入、修改、匿名化、转码和渲染医学影像数据，将其序列化为 DICOM JSON 和 DICOM XML，并通过 DIMSE 与其他系统交换研究，无需任何外部软件或原生依赖。</p>
 
-<p>该库完全用托管C#代码编写，确保在Windows、Linux和macOS上真正的跨平台兼容性。没有本机二进制文件或第三方依赖项，Aspose.Medical可以无缝集成到任何.NET应用程序中，从桌面工具到基于云的医疗系统。</p>
+<p>该库完全使用托管 C# 编写，运行于 Windows、Linux 和 macOS 上的 .NET 10。没有原生二进制文件，也没有第三方 NuGet 包，因此库可以作为单个程序集部署到任何 .NET 应用程序中，无论是桌面工具还是云医疗系统中的容器。</p>
 
-<p><strong>主要功能：</strong>
+<p><strong>关键特性：</strong>
 <ul>
-    <li>读取和写入DICOM文件，完全支持所有标准DICOM数据元素和值表示。</li>
-    <li>使用可配置的机密性配置文件匿名化DICOM文件，以保护患者隐私并确保符合HIPAA规定。</li>
-    <li>将DICOM图像转换为常见格式：JPEG、PNG、TIFF，并从光栅图像转换回DICOM。</li>
-    <li>将DICOM数据序列化和反序列化为JSON和XML，以便与现代Web服务和API集成。</li>
-    <li>在传输语法之间进行转码，包括JPEG、JPEG 2000、HTJ2K、JPEG XL、JPEG-LS和RLE压缩。</li>
-    <li>完全支持多帧DICOM图像和图像叠加。</li>
-    <li>使用模态和VOI查找表进行高级图像处理，以实现适当的窗口和级别调整。</li>
-    <li>HTJ2K（高吞吐量JPEG 2000）、JPEG XL支持下一代医学影像压缩。</li>
+    <li>从文件、流或管道读取和写入 DICOM 文件，支持同步或异步操作，完整支持所有标准数据元素和值表示。</li>
+    <li>在大文件上控制内存：加载每个元素，延迟加载大型元素直至使用，或跳过它们仅读取元数据。</li>
+    <li>读取并编辑任何数据元素，包括序列和私有标签，并支持非 ASCII 文本的字符集处理。</li>
+    <li>使用 DICOM PS 3.15 的保密配置文件对 DICOM 文件进行匿名化，可选择保留 UID、日期、设备和机构标识符以及患者特征。</li>
+    <li>在传输语法之间转码：JPEG、JPEG-LS、JPEG 2000、HTJ2K、JPEG XL 和 RLE，所有编解码器均在 .NET 中实现。</li>
+    <li>将帧渲染为 BGRA 像素，应用模态 LUT、VOI LUT（窗口/层级）及渲染器的叠加层。</li>
+    <li>将数据集序列化为 DICOM JSON 模型（PS3.18）和 DICOM XML（PS3.19）并可逆，包括异步流式传输和可插拔的大批量数据加载。</li>
+    <li>通过 DIMSE 与客户端和服务器通信：C-ECHO、C-STORE、C-FIND、C-MOVE、C-GET、N-服务以及 TLS。</li>
 </ul>
 </p>
 
-<p>Aspose.Medical for .NET是一个独立的自包含库，不需要安装任何DICOM查看器、医学影像软件或本机编解码器。它是医疗IT系统、PACS集成、远程医疗平台以及任何需要可靠DICOM处理的应用程序的理想选择。</p>
+<p>Aspose.Medical for .NET 是独立的。它无需安装 DICOM 查看器、医学影像软件或原生编解码器。它适用于医疗信息系统、PACS 集成、远程医疗平台以及任何需要可靠处理 DICOM 数据的应用程序。</p>
 
 {{< /blocks/products/pf/tab-content >}}
 
 <!--Diagrams Start-->
 {{< blocks/products/pf/carousel >}}
 
-{{< blocks/products/pf/carousel-item h3="概览" description="Aspose.Medical for .NET功能概览。" >}}
+{{< blocks/products/pf/carousel-item h3="At a Glance" description="An overview of Aspose.Medical for .NET capabilities." >}}
 <div class="diagram1 d1-net">
  <div class="d1-row">
   <div class="d1-col d1-left">
    <header>
     <i class="fa fa-file-image-o">
     </i>
-    DICOM处理
+    DICOM 处理
    </header>
    <ul>
     <li>
-     读取和写入DICOM文件
+     读取 &amp; 写入 文件、流、管道
     </li>
     <li>
-     管理DICOM标签和元素
+     管理 DICOM 标签 &amp; 元素
     </li>
     <li>
      多帧图像支持
@@ -62,6 +62,9 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
     <li>
      字符编码支持
     </li>
+    <li>
+     大文件内存控制
+    </li>
    </ul>
    <header>
     <i class="fa fa-shield">
@@ -70,13 +73,13 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
    </header>
    <ul>
     <li>
-     DICOM匿名化
+     DICOM 匿名化
     </li>
     <li>
-     可配置的配置文件
+     PS 3.15 保密配置文件
     </li>
     <li>
-     HIPAA合规性
+     可配置保留选项
     </li>
    </ul>
   </div>
@@ -85,39 +88,45 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
    <header>
     <i class="fa fa-exchange">
     </i>
-    转换和转码
+    影像 &amp; 转换
    </header>
    <ul>
     <li>
-     DICOM转JPEG、PNG、TIFF
+     帧渲染为 BGRA 像素
     </li>
     <li>
-     DICOM转JSON和XML
+     应用模态 LUT &amp; VOI LUT
+    </li>
+    <li>
+     图像叠加支持
     </li>
     <li>
      传输语法转换
     </li>
     <li>
-     JPEG 2000、HTJ2K和JPEG XL压缩
+     JPEG 2000、HTJ2K &amp; JPEG XL 压缩
+    </li>
+    <li>
+     DICOM JSON &amp; XML 序列化
     </li>
    </ul>
    <header>
-    <i class="fa fa-sliders">
+    <i class="fa fa-sitemap">
     </i>
-    图像处理
+    DICOM 网络
    </header>
    <ul>
     <li>
-     窗口/级别调整
+     DIMSE 客户端 &amp; 服务器
     </li>
     <li>
-     模态LUT处理
+     C-ECHO、C-STORE、C-FIND、C-MOVE、C-GET
     </li>
     <li>
-     VOI LUT处理
+     N-服务 &amp; 关联控制
     </li>
     <li>
-     图像叠加支持
+     TLS 连接
     </li>
    </ul>
   </div>
@@ -125,14 +134,14 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
  </div>
  <!--/row-->
  <div class="d1-logo">
-  <img width="70" height="75" alt="DICOM处理API" src="aspose_medical-for-net.svg"/>
+  <img width="70" height="75" alt="DICOM Processing API" src="aspose_medical-for-net.svg"/>
   <header>
    Aspose.Medical
   </header>
   <footer>
    <small>
     <em>
-     for
+     适用于
     </em>
     .NET
    </small>
@@ -143,27 +152,27 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
 
 {{< /blocks/products/pf/carousel-item >}}
 
-{{< blocks/products/pf/carousel-item h3="平台独立性" description="Aspose.Medical for .NET是一个纯托管代码库，零本机依赖项，支持所有主要.NET平台。" >}}
+{{< blocks/products/pf/carousel-item h3="Platform Independence" description="Aspose.Medical for .NET is a pure managed code library with zero native dependencies." >}}
 <div class="diagram1 d1-net">
  <div class="d1-row">
   <div class="d1-col d1-left">
    <header>
     <i class="fa fa-cubes">
     </i>
-    纯.NET库
+    纯 .NET 库
    </header>
    <ul>
     <li>
-     100%托管C#代码
+     100% 托管 C# 代码
     </li>
     <li>
-     无本机依赖项
+     无原生依赖
     </li>
     <li>
-     不需要外部编解码器
+     无第三方包
     </li>
     <li>
-     自包含部署
+     独立部署
     </li>
    </ul>
   </div>
@@ -172,20 +181,14 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
    <header>
     <i class="fa fa-cubes">
     </i>
-    支持的框架
+    受支持的框架
    </header>
    <ul>
     <li>
-     .NET Framework 4.6.2+
+     .NET 10
     </li>
     <li>
-     .NET Standard 2.0
-    </li>
-    <li>
-     .NET Core 3.1+
-    </li>
-    <li>
-     .NET 6, 7, 8, 9+
+     x64 与 ARM64
     </li>
    </ul>
    <header>
@@ -195,13 +198,13 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
    </header>
    <ul>
     <li>
-     Windows
+     Windows 10、Windows 11、Windows Server 2016 及更高版本
     </li>
     <li>
-     Linux
+     Linux：Ubuntu 20.04+、Debian 10+、CentOS 8+
     </li>
     <li>
-     macOS
+     macOS 11 及更高版本
     </li>
    </ul>
   </div>
@@ -209,14 +212,14 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
  </div>
  <!--/row-->
  <div class="d1-logo">
-  <img width="70" height="75" alt=".NET医学影像API" src="aspose_medical-for-net.svg"/>
+  <img width="70" height="75" alt="Medical Imaging API for .NET" src="aspose_medical-for-net.svg"/>
   <header>
    Aspose.Medical
   </header>
   <footer>
    <small>
     <em>
-     for
+     适用于
     </em>
     .NET
    </small>
@@ -227,27 +230,37 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
 
 {{< /blocks/products/pf/carousel-item >}}
 
-{{< blocks/products/pf/carousel-item h3="支持的文件格式" description="Aspose.Medical for .NET支持DICOM和相关医学影像格式，具有全面的转换功能。" >}}
+{{< blocks/products/pf/carousel-item h3="Supported File Formats" description="What Aspose.Medical for .NET reads, writes and produces." >}}
 <div class="diagram1 d2 d1-net">
  <div class="d1-row">
   <div class="d1-col d1-left">
    <header>
     <i class="fa fa-arrows-v">
     </i>
-    输入/输出
+    读取和写入
    </header>
    <ul>
     <li>
      <b>
-      医学影像:
+      医学影像：
      </b>
      DICOM (.dcm)
     </li>
     <li>
      <b>
-      数据交换:
+      数据交换：
      </b>
-     JSON, XML
+     DICOM JSON (PS3.18)、DICOM XML (PS3.19)
+    </li>
+   </ul>
+   <header>
+    <i class="fa fa-compress">
+    </i>
+    像素数据压缩
+   </header>
+   <ul>
+    <li>
+     JPEG、JPEG-LS、JPEG 2000、HTJ2K、JPEG XL、RLE
     </li>
    </ul>
   </div>
@@ -256,27 +269,30 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
    <header>
     <i class="fa fa-mail-forward">
     </i>
-    仅输出
+    渲染输出
    </header>
    <ul>
     <li>
      <b>
-      图像:
+      像素：
      </b>
-     JPEG, PNG, TIFF
+     适用于任何影像库的 BGRA 32 位缓冲区
+    </li>
+    <li>
+     <b>
+      内置图像文件：
+     </b>
+     PNM
     </li>
    </ul>
    <header>
     <i class="fa fa-mail-reply">
     </i>
-    仅输入
+    光栅输入
    </header>
    <ul>
     <li>
-     <b>
-      图像:
-     </b>
-     JPEG, PNG, TIFF
+     由外部影像库解码的像素缓冲区，逐帧写入 DICOM 像素数据
     </li>
    </ul>
   </div>
@@ -291,7 +307,7 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
   <footer>
    <small>
     <em>
-     for
+     适用于
     </em>
     .NET
    </small>
@@ -312,7 +328,7 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
  <div class="row">
   <div class="container">
    <h2 class="pr-ft">
-    高级.NET DICOM API功能
+    高级 .NET DICOM API 功能
    </h2>
    <p>
    </p>
@@ -320,136 +336,220 @@ description: 用于DICOM医学影像的纯.NET库。无需外部依赖即可读�
     <em class="fa fa-file-image-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     从文件、流或管道读取和写入DICOM文件
+     从文件、流或管道读取和写入 DICOM 文件
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-tags ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     访问和操作所有DICOM标签和数据元素
+     访问并操作所有 DICOM 标签、序列和私有元素
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-shield ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     使用可自定义的机密性配置文件匿名化患者数据
+     使用 DICOM PS 3.15 保密配置文件对患者数据进行匿名化
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-exchange ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     在不同传输语法之间进行转码
+     在传输语法之间转码，包括 HTJ2K 和 JPEG XL
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-picture-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     将DICOM图像转换为JPEG、PNG和TIFF格式
+     将帧渲染为像素，以用于查看器、缩略图和图像导出
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-code ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     将DICOM数据序列化为JSON和XML以进行Web集成
+     将 DICOM 数据序列化为 JSON 和 XML，支持异步流式传输
     </p>
    </div>
    <div class="col-lg-4">
-    <em class="fa fa-compress ico-blue fa-2x col-lg-2">
+    <em class="fa fa-sitemap ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     支持JPEG、JPEG 2000、HTJ2K、JPEG XL、JPEG-LS和RLE压缩
+     通过 DIMSE 交换研究：C-ECHO、C-STORE、C-FIND、C-MOVE、C-GET
     </p>
    </div>
    <div class="col-lg-4">
-    <em class="fa fa-cubes ico-blue fa-2x col-lg-2">
+    <em class="fa fa-database ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     处理多帧DICOM图像和图像序列
+     通过延迟或跳过大型元素，在大文件上保持内存平稳
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sliders ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     使用模态和VOI LUT应用窗口/级别调整
+     使用模态 LUT、VOI LUT 和叠加层渲染多帧图像
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     纯.NET库 - 零依赖
+     纯 .NET 库 - 零依赖
     </h2>
     <p>
-     Aspose.Medical for .NET完全用托管C#代码编写，没有任何本机依赖项。与依赖本机编解码器或外部工具的其他医学影像库不同，Aspose.Medical是完全自包含的。所有图像压缩编解码器（JPEG、JPEG 2000、HTJ2K、JPEG XL、JPEG-LS、RLE）都是用纯.NET实现的，确保在Windows、Linux和macOS上无缝部署，无需任何平台特定配置。这使其成为容器化部署、云环境以及安装本机库不可行的场景的理想选择。
+     Aspose.Medical for .NET 完全使用托管 C# 编写，并以单个程序集形式提供，没有原生二进制文件和第三方 NuGet 包。其他医学影像库依赖原生编解码器或外部工具，而本库则不依赖。所有图像压缩编解码器（JPEG、JPEG-LS、JPEG 2000、HTJ2K、JPEG XL、RLE）均在 .NET 中实现，因此库在 Windows、Linux 和 macOS 上表现一致。这使其非常适合容器、云环境以及任何不方便安装原生库的部署。该包针对 .NET 10。
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     匿名化DICOM文件以实现隐私合规性
+     为隐私合规匿名化 DICOM 文件
     </h2>
     <p>
-     在医疗应用程序中保护患者隐私至关重要。Aspose.Medical for .NET基于DICOM PS 3.15机密性配置文件提供全面的DICOM匿名化功能。您可以删除或修改患者识别信息（PII），同时保留影像数据的临床价值。该库支持可配置的匿名化配置文件，包括保留安全私有属性、UID、设备和机构标识符、患者特征以及纵向时间信息的选项。
+     患者隐私是医疗应用的硬性要求。Aspose.Medical for .NET 使用 DICOM PS 3.15 的保密配置文件对 DICOM 数据进行匿名化。您可以在保留影像数据临床价值的同时删除或替换患者识别信息，并且可以选择配置文件保留的内容：安全的私有属性、UID、设备和机构标识符、患者特征以及纵向时间信息。<a href="/medical/net/anonymization/">DICOM 匿名化页面</a>详细展示了配置文件选项。
     </p>
     <div class="codeblock" id="code">
      <h3>
-      匿名化DICOM文件 - C#
+      匿名化 DICOM 文件 - C#
      </h3>
-     <pre><code class="cs">// 加载DICOM文件
-using var dicomFile = DicomFile.Open("patient_scan.dcm");
+     <pre><code class="cs">// Load the DICOM file
+DicomFile dicomFile = DicomFile.Open("patient_scan.dcm");
 
-// 使用默认配置文件创建匿名化工具
-var profile = ConfidentialityProfile.CreateDefault();
-var anonymizer = new Anonymizer(profile);
+// Basic Application Level Confidentiality Profile of DICOM PS 3.15
+ConfidentialityProfile profile = ConfidentialityProfile.CreateDefault(ConfidentialityProfileOptions.BasicProfile);
+Anonymizer anonymizer = new(profile);
 
-// 匿名化并保存
-anonymizer.Anonymize(dicomFile, "anonymized_scan.dcm");</code></pre>
+// Anonymize into a new file and save it
+DicomFile anonymized = anonymizer.Anonymize(dicomFile);
+anonymized.Save("anonymized_scan.dcm");</code></pre>
     </div>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     在.NET C#中将DICOM转换为图像格式
+     在 .NET C# 中渲染 DICOM 帧
     </h2>
     <p>
-     Aspose.Medical for .NET使将DICOM图像转换为标准图像格式变得简单，用于查看、共享或与非医疗系统集成。该库处理DICOM图像渲染的所有复杂性，包括正确应用模态LUT、VOI LUT（窗口/级别）和光度解释。无论您需要生成缩略图、创建图像导出还是构建DICOM查看器，API都可以使用最少的代码提供高质量的渲染。
+     Aspose.Medical for .NET 将 DICOM 帧渲染为 32 位 BGRA 像素图像。渲染器根据数据集应用光度解释、模态 LUT 和 VOI LUT（窗口/层级），并绘制叠加层，使结果与查看器显示一致。随后这些像素属于您：将其复制到缓冲区并传递给任何影像库以保存为 PNG、JPEG 或 TIFF。库内唯一内置的图像编码器是 PNM。转换页面展示了 <a href="/medical/net/dicom-to-png/">PNG</a>、<a href="/medical/net/dicom-to-jpg/">JPEG</a> 和 <a href="/medical/net/dicom-to-tiff/">TIFF</a> 的完整路径。
     </p>
     <div class="codeblock" id="code">
      <h3>
-      将DICOM转换为PNG - C#
+      渲染 DICOM 帧 - C#
      </h3>
-     <pre><code class="cs">// 加载DICOM文件
-using var dicomFile = DicomFile.Open("chest_xray.dcm");
+     <pre><code class="cs">// Load the DICOM file
+DicomFile dicomFile = DicomFile.Open("chest_xray.dcm");
 
-// 渲染为图像
-var renderOptions = new GrayscaleRenderOptions
-{
-    WindowWidth = 400,
-    WindowCenter = 40
-};
-var image = dicomFile.RenderImage(renderOptions);
+// Render the first frame; LUTs and overlays are applied by the renderer
+using PixelImage&lt;Bgra32&gt; image = dicomFile.RenderImage(0);
 
-// 保存为PNG
-image.Save("chest_xray.png");</code></pre>
+// Copy the pixels out and hand them to an imaging library
+Bgra32[] pixels = new Bgra32[image.Width * image.Height];
+image.CopyPixelsTo(pixels);</code></pre>
     </div>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     在传输语法之间进行转码
+     在传输语法之间转码
     </h2>
     <p>
-     不同的医学影像系统和存档可能需要特定的DICOM传输语法。Aspose.Medical for .NET支持在各种传输语法之间进行转码，包括未压缩格式、JPEG基线、JPEG无损、JPEG 2000、HTJ2K（高吞吐量JPEG 2000）、JPEG XL、JPEG-LS和RLE。这对于PACS集成、存档优化以及确保不同医疗系统之间的兼容性至关重要。所有编解码器都是用纯.NET实现的，保证在所有平台上的一致行为。
+     影像系统和归档需要特定的 DICOM 传输语法。Aspose.Medical for .NET 在未压缩格式、JPEG Baseline、JPEG Lossless、JPEG-LS、JPEG 2000、HTJ2K（高吞吐量 JPEG 2000）、JPEG XL 和 RLE 之间进行转码。HTJ2K 和 JPEG XL 是 DICOM 标准中最新的两个选项，在本库中同其他编解码器一样实现于 .NET。转码对于 PACS 集成、归档大小以及系统间兼容性至关重要。请参阅 <a href="/medical/net/dicom-transfer-syntax-conversion/">传输语法转换页面</a> 和 <a href="/medical/net/jpeg2000/">JPEG 2000 页面</a>。
     </p>
+    <div class="codeblock" id="code">
+     <h3>
+      将 DICOM 转码为 HTJ2K - C#
+     </h3>
+     <pre><code class="cs">// Load existing DICOM file
+DicomFile dicomFile = DicomFile.Open("input.dcm");
+
+// Transcode to High-Throughput JPEG 2000, lossless
+DicomFile transcoded = dicomFile.Transcode(TransferSyntax.HTJ2KLossless);
+
+// Save the transcoded file
+transcoded.Save("output.dcm");</code></pre>
+    </div>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOM到JSON和XML序列化
+     DICOM 到 JSON 与 XML 的序列化
     </h2>
     <p>
-     现代医疗系统越来越依赖Web服务和API进行数据交换。Aspose.Medical for .NET完全支持将DICOM数据序列化为JSON（根据DICOM JSON模型）和XML格式。这使得可以与RESTful API、基于FHIR的系统和Web应用程序无缝集成。序列化是双向的 - 您还可以将JSON和XML解析回DICOM数据集。
+     医疗系统通过 Web 服务交换数据，因此 Aspose.Medical for .NET 将 DICOM 数据集序列化为 DICOM JSON 模型（PS3.18）和 DICOM XML（PS3.19），并可将两者解析回数据集。序列化器支持字符串、流和管道，既可同步也可异步，并且可以一次读取数据集序列而无需将整个文档载入内存。通过可插拔加载器解析大批量数据引用，使得大型像素数据可以位于文档之外。请参阅 <a href="/medical/net/dicom-to-json/">DICOM 到 JSON</a> 与 <a href="/medical/net/dicom-to-xml/">DICOM 到 XML</a> 页面。
     </p>
+    <div class="codeblock" id="code">
+     <h3>
+      序列化 DICOM 为 JSON 与 XML - C#
+     </h3>
+     <pre><code class="cs">// Load the DICOM file
+DicomFile dicomFile = DicomFile.Open("patient_scan.dcm");
+Dataset dataset = dicomFile.Dataset;
+
+// Serialize the dataset to JSON (DICOM JSON Model) and to DICOM XML
+string json = DicomJsonSerializer.Serialize(dataset, writeIndented: true);
+string xml = DicomXmlSerializer.Serialize(dataset);
+
+// Parse both back into datasets
+Dataset? fromJson = DicomJsonSerializer.Deserialize(json);
+Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
+    </div>
+   </div>
+   <div class="col-lg-12">
+    <h2 class="h2title">
+     通过 DIMSE 的 DICOM 网络
+    </h2>
+    <p>
+     Aspose.Medical for .NET 可直接与其他 DICOM 系统通信。库提供了 DIMSE 客户端和服务器，支持 C-ECHO、C-STORE、C-FIND、C-MOVE、C-GET，以及 N-服务、带呈现上下文和角色的关联协商、异步操作窗口、用户身份协商和 TLS。请求在关联上排队，由您注册的处理程序响应，因此实现存储转发节点、查询代理或测试 SCP 仅需少量类。<a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM 网络指南</a>涵盖完整 API。
+    </p>
+    <div class="codeblock" id="code">
+     <h3>
+      使用 C-STORE 将研究发送至 PACS - C#
+     </h3>
+     <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("study.dcm");
+
+DicomNetworkClient client = DicomNetworkClient
+    .CreateBuilder(new DicomNetworkClientOptions
+    {
+        Called = "PACS_AE",
+        Calling = "CLIENT_AE",
+        Connection = new DicomNetworkConnectionOptions
+        {
+            TargetHost = new IPEndPoint(IPAddress.Parse("192.0.2.10"), 104)
+        },
+        AssociationNegotiation = new AssociationNegotiationOptions()
+            .WithPresentationContext(new PresentationContext
+            {
+                AbstractSyntax = Uid.CTImageStorage,
+                Role = null,
+                TransferSyntaxes = ImmutableArray.Create(TransferSyntax.ExplicitVrLittleEndian)
+            })
+    })
+    .Build();
+
+client.QueueRequest(new CStoreRequest(dicomFile.Dataset, TransferSyntax.ExplicitVrLittleEndian));
+
+await client.SendAsync(CancellationToken.None);
+await client.StopAsync();</code></pre>
+    </div>
+   </div>
+   <div class="col-lg-12">
+    <h2 class="h2title">
+     大容量 DICOM 文件的低内存处理
+    </h2>
+    <p>
+     全景切片图像、长序列和多帧研究无法全部装入内存。Aspose.Medical for .NET 让您决定加载文件的程度：全部读取、对超过阈值的元素延迟加载直至访问，或跳过它们仅处理元数据。以流或管道读取并同样方式写回，可保持数据流动而非堆积。<a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">内存管理指南</a>阐述了权衡取舍。
+    </p>
+    <div class="codeblock" id="code">
+     <h3>
+      读取元数据而不读取像素数据 - C#
+     </h3>
+     <pre><code class="cs">// Elements larger than the threshold are not loaded into memory
+DicomFile metadataOnly = DicomFile.Open(
+    "whole_slide.dcm",
+    ReadDicomFileOptions.Default,
+    TagDataReadingStrategies.SkipLargeTags());
+
+string? patientName = metadataOnly.Dataset.GetSingleValueOrDefault(Tag.PatientName, string.Empty);</code></pre>
+    </div>
    </div>
   </div>
  </div>
@@ -461,18 +561,18 @@ image.Save("chest_xray.png");</code></pre>
 {{< blocks/products/pf/support-learning-resources >}}
 {{< blocks/products/pf/slr-tab tabTitle="学习资源" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="文档" href="https://docs.aspose.com/medical/net/" >}}
-{{< blocks/products/pf/slr-element name="源代码" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
-{{< blocks/products/pf/slr-element name="API参考" href="https://reference.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="开发者指南" href="https://docs.aspose.com/medical/net/developer-guide/" >}}
+{{< blocks/products/pf/slr-element name="API 参考" href="https://reference.aspose.com/medical/net/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="产品支持" tabId="support" >}}
 {{< blocks/products/pf/slr-element name="免费支持" href="https://forum.aspose.com/c/medical" >}}
 {{< blocks/products/pf/slr-element name="付费支持" href="https://helpdesk.aspose.com/" >}}
 {{< blocks/products/pf/slr-element name="博客" href="https://blog.aspose.com/category/medical/" >}}
-{{< blocks/products/pf/slr-element name="发行说明" href="https://releases.aspose.com/medical/net/release-notes/" >}}
+{{< blocks/products/pf/slr-element name="发布说明" href="https://releases.aspose.com/medical/net/release-notes/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="为什么选择Aspose.Medical for .NET？" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-tab tabTitle="为什么选择 Aspose.Medical for .NET？" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="客户列表" href="https://company.aspose.com/customers" >}}
 {{< blocks/products/pf/slr-element name="成功案例" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}

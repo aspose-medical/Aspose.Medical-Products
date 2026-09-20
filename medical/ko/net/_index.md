@@ -1,43 +1,43 @@
 ---
-title: C# .NET DICOM Medical Imaging API | Aspose.Medical
+title: C# .NET DICOM 의료 영상 API | Aspose.Medical
 weight: 1000
-url: /ko/net/
-description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 종속성 없이 DICOM 파일을 읽고, 쓰고, 익명화하고, 변환하고 트랜스코딩합니다.
+url: /net/
+description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. DICOM 파일을 읽고, 쓰고, 익명화하고, 트랜스코드 및 렌더링하며, JSON 및 XML로 직렬화하고, DIMSE를 통해 연구를 교환합니다.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1="DICOM 의료 영상을 위한 .NET API" h2="외부 소프트웨어나 네이티브 종속성 없이 .NET C#에서 DICOM 파일을 읽고, 쓰고, 익명화하고, 변환하고 트랜스코딩합니다." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET DICOM 의료 영상 API" h2=".NET C#에서 DICOM 파일을 읽고, 쓰고, 익명화하고, 트랜스코드 및 렌더링하며, 외부 소프트웨어나 네이티브 종속성 없이 DIMSE를 통해 연구를 교환합니다." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="https://products.aspose.app/medical/family" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong>은 DICOM(Digital Imaging and Communications in Medicine) 파일 작업을 위한 강력한 순수 .NET 클래스 라이브러리입니다. 개발자는 외부 소프트웨어나 네이티브 종속성을 요구하지 않고 프로그래밍 방식으로 의료 영상 데이터를 읽고, 쓰고, 수정하고, 익명화하고, 변환하고, 트랜스코딩할 수 있습니다.</p>
+<p><strong>Aspose.Medical for .NET</strong>은 DICOM(Digital Imaging and Communications in Medicine) 파일을 다루기 위한 순수 .NET 클래스 라이브러리입니다. 개발자가 의료 영상 데이터를 읽고, 쓰고, 수정하고, 익명화하고, 트랜스코드 및 렌더링하며, DICOM JSON 및 DICOM XML로 직렬화하고, 외부 소프트웨어나 네이티브 종속성 없이 DIMSE를 통해 다른 시스템과 연구를 교환할 수 있게 해줍니다.</p>
 
-<p>라이브러리는 전체적으로 관리되는 C# 코드로 작성되어 Windows, Linux 및 macOS 전체에서 진정한 크로스 플랫폼 호환성을 보장합니다. 네이티브 바이너리나 타사 종속성이 없으므로 Aspose.Medical은 데스크톱 도구에서 클라우드 기반 의료 시스템까지 모든 .NET 애플리케이션에 원활하게 통합됩니다.</p>
+<p>이 라이브러리는 완전하게 관리되는 C#로 작성되었으며 Windows, Linux, macOS에서 .NET 10으로 실행됩니다. 네이티브 바이너리와 서드파티 NuGet 패키지가 없으므로, 라이브러리는 단일 어셈블리로 모든 .NET 애플리케이션에 배포될 수 있습니다. 데스크톱 도구부터 클라우드 헬스케어 시스템의 컨테이너까지.</p>
 
 <p><strong>주요 기능:</strong>
 <ul>
-    <li>모든 표준 DICOM 데이터 요소 및 값 표현을 완벽하게 지원하여 DICOM 파일을 읽고 쓸 수 있습니다.</li>
-    <li>구성 가능한 기밀 프로파일을 사용하여 환자 개인 정보를 보호하고 HIPAA 규정 준수를 보장하기 위해 DICOM 파일을 익명화합니다.</li>
-    <li>DICOM 이미지를 일반적인 형식으로 변환: JPEG, PNG, TIFF 및 래스터 이미지에서 DICOM으로 다시 변환할 수 있습니다.</li>
-    <li>최신 웹 서비스 및 API와의 통합을 위해 DICOM 데이터를 JSON 및 XML로 직렬화 및 역직렬화합니다.</li>
-    <li>JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS 및 RLE 압축을 포함한 전송 구문 간 트랜스코딩을 수행합니다.</li>
-    <li>다중 프레임 DICOM 이미지 및 이미지 오버레이를 완벽하게 지원합니다.</li>
-    <li>적절한 윈도잉 및 레벨링을 위한 모달리티 및 VOI 룩업 테이블을 사용한 고급 이미지 처리.</li>
-    <li>차세대 의료 영상 압축을 위한 HTJ2K(High-Throughput JPEG 2000), JPEG XL 지원.</li>
+    <li>파일, 스트림 또는 파이프에서 DICOM 파일을 동기식·비동기식으로 읽고 쓰며, 모든 표준 데이터 요소와 값 표현을 완벽히 지원합니다.</li>
+    <li>대용량 파일의 메모리를 제어합니다: 모든 요소를 로드하거나, 큰 요소를 필요 시점까지 연기하거나, 건너뛰고 메타데이터만 읽습니다.</li>
+    <li>시퀀스와 프라이빗 태그를 포함한 모든 데이터 요소를 읽고 편집하며, 비ASCII 텍스트에 대한 문자 집합 처리를 지원합니다.</li>
+    <li>DICOM PS 3.15의 기밀성 프로파일을 사용해 DICOM 파일을 익명화하고, UID, 날짜, 장치 및 기관 식별자, 환자 특성 보존 옵션을 제공합니다.</li>
+    <li>전송 구문 간 트랜스코드: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL 및 RLE, 모든 코덱이 .NET으로 구현되었습니다.</li>
+    <li>모달리티 LUT, VOI LUT(윈도우와 레벨) 및 오버레이가 적용된 프레임을 BGRA 픽셀로 렌더링합니다.</li>
+    <li>데이터셋을 DICOM JSON 모델(PS3.18) 및 DICOM XML(PS3.19)로 직렬화하고 역직렬화합니다. 비동기 스트리밍 및 플러그인식 대용량 데이터 로딩을 포함합니다.</li>
+    <li>클라이언트와 서버 간에 DIMSE로 통신합니다: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET, N-서비스, TLS.</li>
 </ul>
 </p>
 
-<p>Aspose.Medical for .NET은 DICOM 뷰어, 의료 영상 소프트웨어 또는 네이티브 코덱 설치를 요구하지 않는 독립적이고 자체 포함된 라이브러리입니다. 의료 IT 시스템, PACS 통합, 원격 의료 플랫폼 및 신뢰할 수 있는 DICOM 처리가 필요한 모든 애플리케이션에 이상적입니다.</p>
+<p>Aspose.Medical for .NET은 독립형입니다. DICOM 뷰어, 의료 영상 소프트웨어, 네이티브 코덱 설치가 전혀 필요 없습니다. 헬스케어 IT 시스템, PACS 통합, 원격 의료 플랫폼 및 DICOM 데이터를 안정적으로 처리해야 하는 모든 애플리케이션에 적합합니다.</p>
 
 {{< /blocks/products/pf/tab-content >}}
 
 <!--Diagrams Start-->
 {{< blocks/products/pf/carousel >}}
 
-{{< blocks/products/pf/carousel-item h3="개요" description="Aspose.Medical for .NET 기능 개요." >}}
+{{< blocks/products/pf/carousel-item h3="At a Glance" description="An overview of Aspose.Medical for .NET capabilities." >}}
 <div class="diagram1 d1-net">
  <div class="d1-row">
   <div class="d1-col d1-left">
@@ -48,7 +48,7 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
    </header>
    <ul>
     <li>
-     DICOM 파일 읽기 및 쓰기
+     파일, 스트림, 파이프 읽기 &amp; 쓰기
     </li>
     <li>
      DICOM 태그 및 요소 관리
@@ -57,10 +57,13 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
      다중 프레임 이미지 지원
     </li>
     <li>
-     개인 태그 관리
+     프라이빗 태그 관리
     </li>
     <li>
      문자 인코딩 지원
+    </li>
+    <li>
+     대용량 파일 메모리 제어
     </li>
    </ul>
    <header>
@@ -73,10 +76,10 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
      DICOM 익명화
     </li>
     <li>
-     구성 가능한 프로파일
+     PS 3.15 기밀성 프로파일
     </li>
     <li>
-     HIPAA 규정 준수
+     구성 가능한 보존 옵션
     </li>
    </ul>
   </div>
@@ -85,39 +88,45 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
    <header>
     <i class="fa fa-exchange">
     </i>
-    변환 및 트랜스코딩
+    영상 &amp; 변환
    </header>
    <ul>
     <li>
-     DICOM에서 JPEG, PNG, TIFF로
+     프레임을 BGRA 픽셀로 렌더링
     </li>
     <li>
-     DICOM에서 JSON 및 XML로
+     모달리티 LUT &amp; VOI LUT 적용
+    </li>
+    <li>
+     이미지 오버레이 지원
     </li>
     <li>
      전송 구문 변환
     </li>
     <li>
-     JPEG 2000, HTJ2K 및 JPEG XL 압축
+     JPEG 2000, HTJ2K &amp; JPEG XL 압축
+    </li>
+    <li>
+     DICOM JSON &amp; XML 직렬화
     </li>
    </ul>
    <header>
-    <i class="fa fa-sliders">
+    <i class="fa fa-sitemap">
     </i>
-    이미지 처리
+    DICOM 네트워킹
    </header>
    <ul>
     <li>
-     창/레벨 조정
+     DIMSE 클라이언트 &amp; 서버
     </li>
     <li>
-     모달리티 LUT 처리
+     C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </li>
     <li>
-     VOI LUT 처리
+     N-서비스 &amp; 연관 제어
     </li>
     <li>
-     이미지 오버레이 지원
+     TLS 연결
     </li>
    </ul>
   </div>
@@ -125,7 +134,7 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
  </div>
  <!--/row-->
  <div class="d1-logo">
-  <img width="70" height="75" alt="DICOM 처리 API" src="aspose_medical-for-net.svg"/>
+  <img width="70" height="75" alt="DICOM Processing API" src="aspose_medical-for-net.svg"/>
   <header>
    Aspose.Medical
   </header>
@@ -143,7 +152,7 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
 
 {{< /blocks/products/pf/carousel-item >}}
 
-{{< blocks/products/pf/carousel-item h3="플랫폼 독립성" description="Aspose.Medical for .NET은 네이티브 종속성이 전혀 없는 순수 관리 코드 라이브러리로, 모든 주요 .NET 플랫폼을 지원합니다." >}}
+{{< blocks/products/pf/carousel-item h3="Platform Independence" description="Aspose.Medical for .NET is a pure managed code library with zero native dependencies." >}}
 <div class="diagram1 d1-net">
  <div class="d1-row">
   <div class="d1-col d1-left">
@@ -154,16 +163,16 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
    </header>
    <ul>
     <li>
-     100% 관리 C# 코드
+     100% 관리되는 C# 코드
     </li>
     <li>
      네이티브 종속성 없음
     </li>
     <li>
-     외부 코덱 불필요
+     서드파티 패키지 없음
     </li>
     <li>
-     자체 포함 배포
+     독립형 배포
     </li>
    </ul>
   </div>
@@ -172,20 +181,14 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
    <header>
     <i class="fa fa-cubes">
     </i>
-    지원되는 프레임워크
+    지원 프레임워크
    </header>
    <ul>
     <li>
-     .NET Framework 4.6.2+
+     .NET 10
     </li>
     <li>
-     .NET Standard 2.0
-    </li>
-    <li>
-     .NET Core 3.1+
-    </li>
-    <li>
-     .NET 6, 7, 8, 9+
+     x64 및 ARM64
     </li>
    </ul>
    <header>
@@ -195,13 +198,13 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
    </header>
    <ul>
     <li>
-     Windows
+     Windows 10, Windows 11, Windows Server 2016 이상
     </li>
     <li>
-     Linux
+     Linux: Ubuntu 20.04+, Debian 10+, CentOS 8+
     </li>
     <li>
-     macOS
+     macOS 11 이상
     </li>
    </ul>
   </div>
@@ -209,7 +212,7 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
  </div>
  <!--/row-->
  <div class="d1-logo">
-  <img width="70" height="75" alt=".NET용 의료 영상 API" src="aspose_medical-for-net.svg"/>
+  <img width="70" height="75" alt="Medical Imaging API for .NET" src="aspose_medical-for-net.svg"/>
   <header>
    Aspose.Medical
   </header>
@@ -227,14 +230,14 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
 
 {{< /blocks/products/pf/carousel-item >}}
 
-{{< blocks/products/pf/carousel-item h3="지원되는 파일 형식" description="Aspose.Medical for .NET은 포괄적인 변환 기능을 갖춘 DICOM 및 관련 의료 영상 형식을 지원합니다." >}}
+{{< blocks/products/pf/carousel-item h3="Supported File Formats" description="What Aspose.Medical for .NET reads, writes and produces." >}}
 <div class="diagram1 d2 d1-net">
  <div class="d1-row">
   <div class="d1-col d1-left">
    <header>
     <i class="fa fa-arrows-v">
     </i>
-    입력/출력
+    읽기 및 쓰기
    </header>
    <ul>
     <li>
@@ -247,7 +250,17 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
      <b>
       데이터 교환:
      </b>
-     JSON, XML
+     DICOM JSON (PS3.18), DICOM XML (PS3.19)
+    </li>
+   </ul>
+   <header>
+    <i class="fa fa-compress">
+    </i>
+    픽셀 데이터 압축
+   </header>
+   <ul>
+    <li>
+     JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE
     </li>
    </ul>
   </div>
@@ -256,27 +269,30 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
    <header>
     <i class="fa fa-mail-forward">
     </i>
-    출력만
+    렌더링 출력
    </header>
    <ul>
     <li>
      <b>
-      이미지:
+      픽셀:
      </b>
-     JPEG, PNG, TIFF
+     모든 영상 라이브러리를 위한 BGRA 32비트 버퍼
+    </li>
+    <li>
+     <b>
+      내장 이미지 파일:
+     </b>
+     PNM
     </li>
    </ul>
    <header>
     <i class="fa fa-mail-reply">
     </i>
-    입력만
+    래스터 입력
    </header>
    <ul>
     <li>
-     <b>
-      이미지:
-     </b>
-     JPEG, PNG, TIFF
+     외부 영상 라이브러리로 디코딩된 픽셀 버퍼를 프레임별로 DICOM 픽셀 데이터에 기록합니다.
     </li>
    </ul>
   </div>
@@ -320,136 +336,220 @@ description: DICOM 의료 영상을 위한 순수 .NET 라이브러리. 외부 �
     <em class="fa fa-file-image-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     파일, 스트림 또는 파이프에서 DICOM 파일을 읽고 씁니다
+     파일, 스트림, 파이프에서 DICOM 파일을 읽고 씁니다
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-tags ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     모든 DICOM 태그 및 데이터 요소에 액세스하고 조작합니다
+     모든 DICOM 태그, 시퀀스 및 프라이빗 요소에 접근하고 조작합니다
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-shield ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     사용자 정의 가능한 기밀 프로파일로 환자 데이터를 익명화합니다
+     DICOM PS 3.15 기밀성 프로파일로 환자 데이터를 익명화합니다
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-exchange ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     다양한 전송 구문 간 트랜스코딩
+     HTJ2K 및 JPEG XL을 포함한 전송 구문 간 트랜스코드
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-picture-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     DICOM 이미지를 JPEG, PNG 및 TIFF 형식으로 변환합니다
+     뷰어, 썸네일 및 이미지 내보내기를 위해 프레임을 픽셀로 렌더링합니다
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-code ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     웹 통합을 위해 DICOM 데이터를 JSON 및 XML로 직렬화합니다
+     비동기 스트리밍을 활용해 DICOM 데이터를 JSON 및 XML로 직렬화합니다
     </p>
    </div>
    <div class="col-lg-4">
-    <em class="fa fa-compress ico-blue fa-2x col-lg-2">
+    <em class="fa fa-sitemap ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS 및 RLE 압축을 지원합니다
+     DIMSE를 통한 연구 교환: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </p>
    </div>
    <div class="col-lg-4">
-    <em class="fa fa-cubes ico-blue fa-2x col-lg-2">
+    <em class="fa fa-database ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     다중 프레임 DICOM 이미지 및 이미지 시퀀스를 처리합니다
+     대용량 파일에서 큰 요소를 연기하거나 건너뛰어 메모리 사용량을 낮게 유지합니다
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sliders ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     모달리티 및 VOI LUT로 창/레벨 조정을 적용합니다
+     모달리티 LUT, VOI LUT 및 오버레이를 적용해 다중 프레임 이미지를 렌더링합니다
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     순수 .NET 라이브러리 - 종속성 없음
+     순수 .NET 라이브러리 - 종속성 제로
     </h2>
     <p>
-     Aspose.Medical for .NET은 네이티브 종속성이 전혀 없는 완전히 관리되는 C# 코드로 작성되었습니다. 네이티브 코덱이나 외부 도구에 의존하는 다른 의료 영상 라이브러리와 달리 Aspose.Medical은 완전히 자체 포함되어 있습니다. 모든 이미지 압축 코덱(JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE)은 순수 .NET으로 구현되어 플랫폼별 구성 없이 Windows, Linux 및 macOS 전체에서 원활한 배포를 보장합니다. 이는 컨테이너화된 배포, 클라우드 환경 및 네이티브 라이브러리 설치가 불가능한 시나리오에 이상적입니다.
+     Aspose.Medical for .NET은 완전히 관리되는 C#로 작성되었으며, 네이티브 바이너리와 서드파티 NuGet 패키지가 없는 단일 어셈블리 형태로 제공됩니다. 다른 의료 영상 라이브러리는 네이티브 코덱이나 외부 도구에 의존하지만, 본 라이브러리는 그렇지 않습니다. 모든 이미지 압축 코덱(JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE)은 .NET으로 구현되어 Windows, Linux, macOS에서 동일하게 동작합니다. 따라서 컨테이너, 클라우드 환경 및 네이티브 라이브러리 설치가 불가능한 배포에 적합합니다. 이 패키지는 .NET 10을 대상으로 합니다.
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     개인 정보 규정 준수를 위한 DICOM 파일 익명화
+     개인정보 보호 규정 준수를 위한 DICOM 파일 익명화
     </h2>
     <p>
-     의료 애플리케이션에서 환자 개인 정보를 보호하는 것은 매우 중요합니다. Aspose.Medical for .NET은 DICOM PS 3.15 기밀 프로파일을 기반으로 한 포괄적인 DICOM 익명화 기능을 제공합니다. 영상 데이터의 임상적 가치를 보존하면서 환자 식별 정보(PII)를 제거하거나 수정할 수 있습니다. 라이브러리는 안전한 개인 속성, UID, 장치 및 기관 식별자, 환자 특성 및 종단 시간 정보를 유지하는 옵션을 포함한 구성 가능한 익명화 프로파일을 지원합니다.
+     환자 프라이버시는 의료 애플리케이션에서 필수 요구 사항입니다. Aspose.Medical for .NET은 DICOM PS 3.15의 기밀성 프로파일을 사용해 DICOM 데이터를 익명화합니다. 임상적 가치를 유지하면서 환자를 식별할 수 있는 정보를 제거하거나 교체할 수 있으며, 프로파일이 보존할 항목을 선택할 수 있습니다: 안전한 프라이빗 속성, UID, 장치 및 기관 식별자, 환자 특성, 그리고 종적 시간 정보. <a href="/medical/net/anonymization/">DICOM 익명화 페이지</a>에서 프로파일 옵션을 자세히 확인할 수 있습니다.
     </p>
     <div class="codeblock" id="code">
      <h3>
       DICOM 파일 익명화 - C#
      </h3>
-     <pre><code class="cs">// DICOM 파일 로드
-using var dicomFile = DicomFile.Open("patient_scan.dcm");
+     <pre><code class="cs">// Load the DICOM file
+DicomFile dicomFile = DicomFile.Open("patient_scan.dcm");
 
-// 기본 프로파일로 익명화 도구 생성
-var profile = ConfidentialityProfile.CreateDefault();
-var anonymizer = new Anonymizer(profile);
+// Basic Application Level Confidentiality Profile of DICOM PS 3.15
+ConfidentialityProfile profile = ConfidentialityProfile.CreateDefault(ConfidentialityProfileOptions.BasicProfile);
+Anonymizer anonymizer = new(profile);
 
-// 익명화 및 저장
-anonymizer.Anonymize(dicomFile, "anonymized_scan.dcm");</code></pre>
+// Anonymize into a new file and save it
+DicomFile anonymized = anonymizer.Anonymize(dicomFile);
+anonymized.Save("anonymized_scan.dcm");</code></pre>
     </div>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     .NET C#에서 DICOM을 이미지 형식으로 변환
+     .NET C#에서 DICOM 프레임 렌더링
     </h2>
     <p>
-     Aspose.Medical for .NET을 사용하면 DICOM 이미지를 표준 이미지 형식으로 쉽게 변환하여 보기, 공유 또는 비의료 시스템과의 통합에 사용할 수 있습니다. 라이브러리는 모달리티 LUT, VOI LUT(창/레벨) 및 광도 해석의 적절한 적용을 포함하여 DICOM 이미지 렌더링의 모든 복잡성을 처리합니다. 썸네일 생성, 이미지 내보내기 생성 또는 DICOM 뷰어 구축이 필요한 경우 API는 최소한의 코드로 고품질 렌더링을 제공합니다.
+     Aspose.Medical for .NET은 DICOM 프레임을 32비트 BGRA 픽셀 이미지로 렌더링합니다. 렌더러는 데이터셋의 광도 해석, 모달리티 LUT 및 VOI LUT(윈도우와 레벨)를 적용하고 오버레이를 그려, 결과가 뷰어가 표시하는 내용과 일치하도록 합니다. 픽셀은 이제 여러분의 것이며, 버퍼에 복사해 어떤 영상 라이브러리든 PNG, JPEG 또는 TIFF로 저장할 수 있습니다. 라이브러리에 내장된 이미지 인코더는 PNM뿐입니다. 변환 페이지에서는 <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a>, <a href="/medical/net/dicom-to-tiff/">TIFF</a> 전체 경로를 보여줍니다.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      DICOM을 PNG로 변환 - C#
+      DICOM 프레임 렌더링 - C#
      </h3>
-     <pre><code class="cs">// DICOM 파일 로드
-using var dicomFile = DicomFile.Open("chest_xray.dcm");
+     <pre><code class="cs">// Load the DICOM file
+DicomFile dicomFile = DicomFile.Open("chest_xray.dcm");
 
-// 이미지로 렌더링
-var renderOptions = new GrayscaleRenderOptions
-{
-    WindowWidth = 400,
-    WindowCenter = 40
-};
-var image = dicomFile.RenderImage(renderOptions);
+// Render the first frame; LUTs and overlays are applied by the renderer
+using PixelImage&lt;Bgra32&gt; image = dicomFile.RenderImage(0);
 
-// PNG로 저장
-image.Save("chest_xray.png");</code></pre>
+// Copy the pixels out and hand them to an imaging library
+Bgra32[] pixels = new Bgra32[image.Width * image.Height];
+image.CopyPixelsTo(pixels);</code></pre>
     </div>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     전송 구문 간 트랜스코딩
+     전송 구문 간 트랜스코드
     </h2>
     <p>
-     다양한 의료 영상 시스템 및 아카이브에는 특정 DICOM 전송 구문이 필요할 수 있습니다. Aspose.Medical for .NET은 비압축 형식, JPEG 기본, JPEG 무손실, JPEG 2000, HTJ2K(High-Throughput JPEG 2000), JPEG XL, JPEG-LS 및 RLE를 포함한 다양한 전송 구문 간 트랜스코딩을 가능하게 합니다. 이는 PACS 통합, 아카이브 최적화 및 다양한 의료 시스템 간의 호환성 보장에 필수적입니다. 모든 코덱은 순수 .NET으로 구현되어 모든 플랫폼에서 일관된 동작을 보장합니다.
+     영상 시스템 및 아카이브는 특정 DICOM 전송 구문을 필요로 합니다. Aspose.Medical for .NET은 비압축 포맷, JPEG Baseline, JPEG Lossless, JPEG-LS, JPEG 2000, HTJ2K(High-Throughput JPEG 2000), JPEG XL 및 RLE 간을 트랜스코드합니다. HTJ2K와 JPEG XL은 DICOM 표준에서 가장 최신 옵션 두 가지이며, 여기서는 다른 코덱과 마찬가지로 .NET으로 구현되었습니다. 트랜스코드는 PACS 통합, 아카이브 크기 및 시스템 간 호환성에 중요합니다. <a href="/medical/net/dicom-transfer-syntax-conversion/">전송 구문 변환 페이지</a>와 <a href="/medical/net/jpeg2000/">JPEG 2000 페이지</a>를 참고하세요.
     </p>
+    <div class="codeblock" id="code">
+     <h3>
+      DICOM을 HTJ2K로 트랜스코드 - C#
+     </h3>
+     <pre><code class="cs">// Load existing DICOM file
+DicomFile dicomFile = DicomFile.Open("input.dcm");
+
+// Transcode to High-Throughput JPEG 2000, lossless
+DicomFile transcoded = dicomFile.Transcode(TransferSyntax.HTJ2KLossless);
+
+// Save the transcoded file
+transcoded.Save("output.dcm");</code></pre>
+    </div>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOM에서 JSON 및 XML 직렬화
+     DICOM을 JSON 및 XML로 직렬화
     </h2>
     <p>
-     최신 의료 시스템은 데이터 교환을 위해 웹 서비스 및 API에 점점 더 의존하고 있습니다. Aspose.Medical for .NET은 DICOM 데이터를 JSON(DICOM JSON 모델에 따라) 및 XML 형식으로 직렬화하기 위한 완전한 지원을 제공합니다. 이를 통해 RESTful API, FHIR 기반 시스템 및 웹 애플리케이션과의 원활한 통합이 가능합니다. 직렬화는 양방향입니다 - JSON 및 XML을 DICOM 데이터 세트로 다시 구문 분석할 수도 있습니다.
+     헬스케어 시스템은 웹 서비스를 통해 데이터를 교환하므로, Aspose.Medical for .NET은 DICOM 데이터셋을 DICOM JSON 모델(PS3.18) 및 DICOM XML(PS3.19)로 직렬화하고, 다시 데이터셋으로 파싱합니다. 직렬화 도구는 문자열, 스트림, 파이프에서 동기식·비동기식으로 동작하며, 전체 문서를 메모리에 보관하지 않고도 데이터셋을 하나씩 읽을 수 있습니다. 대용량 데이터 참조는 플러그인식 로더를 통해 해결되어 큰 픽셀 데이터를 문서 외부에 유지할 수 있습니다. <a href="/medical/net/dicom-to-json/">DICOM to JSON</a> 및 <a href="/medical/net/dicom-to-xml/">DICOM to XML</a> 페이지를 참고하세요.
     </p>
+    <div class="codeblock" id="code">
+     <h3>
+      DICOM을 JSON 및 XML로 직렬화 - C#
+     </h3>
+     <pre><code class="cs">// Load the DICOM file
+DicomFile dicomFile = DicomFile.Open("patient_scan.dcm");
+Dataset dataset = dicomFile.Dataset;
+
+// Serialize the dataset to JSON (DICOM JSON Model) and to DICOM XML
+string json = DicomJsonSerializer.Serialize(dataset, writeIndented: true);
+string xml = DicomXmlSerializer.Serialize(dataset);
+
+// Parse both back into datasets
+Dataset? fromJson = DicomJsonSerializer.Deserialize(json);
+Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
+    </div>
+   </div>
+   <div class="col-lg-12">
+    <h2 class="h2title">
+     DIMSE를 통한 DICOM 네트워킹
+    </h2>
+    <p>
+     Aspose.Medical for .NET은 다른 DICOM 시스템과 직접 통신합니다. 라이브러리는 C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET를 위한 DIMSE 클라이언트와 서버를 제공하며, N-서비스, 프레젠테이션 컨텍스트 및 역할을 포함한 연관 협상, 비동기 운영 윈도우, 사용자 신원 협상 및 TLS를 지원합니다. 요청은 연관에 큐잉되고 등록한 핸들러가 응답하므로, 저장‑전송 노드, 쿼리 프록시 또는 테스트 SCP를 몇 개의 클래스만으로 구현할 수 있습니다. <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM 네트워킹 가이드</a>에서 전체 API를 확인할 수 있습니다.
+    </p>
+    <div class="codeblock" id="code">
+     <h3>
+      C-STORE를 사용해 연구를 PACS에 전송 - C#
+     </h3>
+     <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("study.dcm");
+
+DicomNetworkClient client = DicomNetworkClient
+    .CreateBuilder(new DicomNetworkClientOptions
+    {
+        Called = "PACS_AE",
+        Calling = "CLIENT_AE",
+        Connection = new DicomNetworkConnectionOptions
+        {
+            TargetHost = new IPEndPoint(IPAddress.Parse("192.0.2.10"), 104)
+        },
+        AssociationNegotiation = new AssociationNegotiationOptions()
+            .WithPresentationContext(new PresentationContext
+            {
+                AbstractSyntax = Uid.CTImageStorage,
+                Role = null,
+                TransferSyntaxes = ImmutableArray.Create(TransferSyntax.ExplicitVrLittleEndian)
+            })
+    })
+    .Build();
+
+client.QueueRequest(new CStoreRequest(dicomFile.Dataset, TransferSyntax.ExplicitVrLittleEndian));
+
+await client.SendAsync(CancellationToken.None);
+await client.StopAsync();</code></pre>
+    </div>
+   </div>
+   <div class="col-lg-12">
+    <h2 class="h2title">
+     대용량 메모리 없이 대용량 DICOM 파일 처리
+    </h2>
+    <p>
+     전체 슬라이드 이미지, 긴 시리즈 및 다중 프레임 연구는 메모리에 편하게 들어가지 않습니다. Aspose.Medical for .NET은 파일 로드 양을 선택할 수 있게 합니다: 모든 데이터를 읽거나, 크기 임계값을 초과하는 요소를 접근 시점까지 연기하거나, 이를 건너뛰고 메타데이터만 작업합니다. 스트림이나 파이프에서 읽고 같은 방식으로 다시 쓰면 데이터를 축적하지 않고 흐르게 할 수 있습니다. <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">메모리 관리 가이드</a>에서 트레이드오프를 설명합니다.
+    </p>
+    <div class="codeblock" id="code">
+     <h3>
+      픽셀 데이터 없이 메타데이터 읽기 - C#
+     </h3>
+     <pre><code class="cs">// Elements larger than the threshold are not loaded into memory
+DicomFile metadataOnly = DicomFile.Open(
+    "whole_slide.dcm",
+    ReadDicomFileOptions.Default,
+    TagDataReadingStrategies.SkipLargeTags());
+
+string? patientName = metadataOnly.Dataset.GetSingleValueOrDefault(Tag.PatientName, string.Empty);</code></pre>
+    </div>
    </div>
   </div>
  </div>
@@ -459,10 +559,10 @@ image.Save("chest_xray.png");</code></pre>
 {{< /blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="학습 리소스" tabId="resources" >}}
+{{< blocks/products/pf/slr-tab tabTitle="학습 자료" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="문서" href="https://docs.aspose.com/medical/net/" >}}
-{{< blocks/products/pf/slr-element name="소스 코드" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
-{{< blocks/products/pf/slr-element name="API 참조" href="https://reference.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="개발자 가이드" href="https://docs.aspose.com/medical/net/developer-guide/" >}}
+{{< blocks/products/pf/slr-element name="API 레퍼런스" href="https://reference.aspose.com/medical/net/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="제품 지원" tabId="support" >}}

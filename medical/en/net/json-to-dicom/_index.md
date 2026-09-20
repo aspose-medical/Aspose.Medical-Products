@@ -32,7 +32,9 @@ DicomFile dicomFile = new(dataset);
 dicomFile.Save("study.dcm");</code></pre>
 </div>
 
-<p>Reading DICOM JSON is a licensed feature. Without an on-premise license applied the reader throws a <code>MedicalApiException</code>, so set the license before the examples below.</p>
+<p>A dataset that carries no File Meta Information is written with the default transfer syntax, Implicit VR Little Endian, when it is wrapped in a <code>DicomFile</code>.</p>
+
+<p>Reading DICOM JSON is a licensed feature. Without an on-premise license applied the reader throws a <code>MedicalApiException</code>, so apply the license first, as the <a href="https://docs.aspose.com/medical/net/getting-started/licensing/">licensing guide</a> describes.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

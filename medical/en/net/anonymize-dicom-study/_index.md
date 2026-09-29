@@ -14,9 +14,9 @@ description: Anonymize every file of a DICOM study in C# .NET and keep Study, Se
 
 <p>A DICOM study is not one file. A CT or MR study is often hundreds of files, one per image, and they belong together only through their UIDs: every file carries the same Study Instance UID, the images of one series share a Series Instance UID, the images of one scan share a Frame of Reference UID, and presentation states, key object selections and derived images point to other images by their SOP Instance UIDs.</p>
 
-<p>The <a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part15/chapter_E.html">DICOM PS 3.15 Basic Profile</a> replaces these UIDs, because a UID can lead back to the hospital and the patient. The standard also requires the new UIDs to be internally consistent within the set of instances (action code U). If every file gets unrelated new UIDs, a viewer shows each image as a separate study, and the anonymized data is no longer usable for research or for a second opinion.</p>
+<p>The de-identification profile of the DICOM standard, the <a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part15/chapter_E.html">Basic Application Level Confidentiality Profile of DICOM PS 3.15</a>, replaces these UIDs, because a UID can lead back to the hospital and the patient. The standard also requires the new UIDs to be internally consistent within the set of instances (action code U). If every file gets unrelated new UIDs, a viewer shows each image as a separate study, and the anonymized data is no longer usable for research or for a second opinion.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> keeps the replacement UIDs consistent for all files that go through the same <code>Anonymizer</code> object. This page shows how to anonymize a whole study, how to check the result, and what the current API does not cover.</p>
+<p><strong>Aspose.Medical for .NET</strong> keeps the replacement UIDs consistent for all files that go through the same <code>Anonymizer</code> object. This page shows how to anonymize a whole study, how to check the result, and how to keep the links between images.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -46,7 +46,7 @@ foreach (string path in Directory.EnumerateFiles(inputFolder, "*.dcm", SearchOpt
 }</code></pre>
 </div>
 
-<p>Only one file is in memory at a time, so the size of the study does not matter. The same <code>Anonymizer</code> can also process several studies in one run: each original UID has its own replacement, so different studies stay different.</p>
+<p>Collect all files of the study first and pass them through one <code>Anonymizer</code> in one run: the replacement UIDs are kept in that object, and a new <code>Anonymizer</code> starts with new ones. Only one file is in memory at a time, so the size of the study does not matter. The same <code>Anonymizer</code> can also process several studies in one run: each original UID has its own replacement, so different studies stay different.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -62,7 +62,7 @@ foreach (string path in Directory.EnumerateFiles(inputFolder, "*.dcm", SearchOpt
 <li><strong>References inside sequences</strong> that the profile keeps, such as the Referenced SOP Instance UID in the evidence sequence of a key object selection, are replaced with the same new UIDs as the files they point to.</li>
 </ul>
 
-<p>The new UIDs use the 2.25 root, derived from a random UUID, as defined in DICOM PS 3.5. They carry no information about the original UIDs.</p>
+<p>The new UIDs are random numbers under the 2.25 root of the DICOM standard. They reveal nothing about the original UIDs, the device or the hospital.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -87,6 +87,8 @@ Console.WriteLine($"{studies.Count} study, {series.Count} series");</code></pre>
 </div>
 
 <p>One study with the same number of series as the original means the UIDs were replaced consistently. More studies than expected means the files went through different <code>Anonymizer</code> objects.</p>
+
+<p>Anonymization changes DICOM attributes, not the image pixels. Ultrasound frames, secondary captures and scanned documents can show the patient name as text burned into the image itself, and this text is not removed. Review such images before you share the study.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -116,7 +118,7 @@ Parallel.ForEach(Directory.EnumerateFiles("study", "*.dcm", SearchOption.AllDire
 
 {{< blocks/products/pf/feature-page-section h2="Keep Links to Referenced Images">}}
 
-<p>The Basic Profile removes two sequences that point to other images: Referenced Image Sequence (0008,1140) and Source Image Sequence (0008,2112). This is allowed by the standard, but a presentation state then loses the images it applies to, and a derived image loses its source images.</p>
+<p>Presentation states point to the images they apply to through Referenced Image Sequence (0008,1140), and derived images point to their source images through Source Image Sequence (0008,2112). The Basic Profile removes both sequences.</p>
 
 <p>To keep these links, change the action for the two sequences to K. With action K the anonymizer keeps the sequence and processes its items, so each Referenced SOP Instance UID gets the same new UID as the image it points to:</p>
 
@@ -138,13 +140,9 @@ Anonymizer anonymizer = new(profile);</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Limits to Know Before You Start">}}
+{{< blocks/products/pf/feature-page-section h2="Keep the Original UIDs">}}
 
-<ul>
-<li><strong>One study, one run.</strong> The UID map lives in memory inside one <code>Anonymizer</code> object, and the new UIDs are random. A second <code>Anonymizer</code>, a second run of the program or a second server process gives the same original UID a different new UID. The map cannot be saved or loaded, so files that arrive later cannot be added to a study that is already anonymized. Collect all files of a study first, then anonymize them together.</li>
-<li><strong>Burned-in text is not removed.</strong> Anonymization works on DICOM attributes. Text that is part of the image itself, such as a patient name burned into an ultrasound frame or a scanned document, stays in the pixel data.</li>
-<li><strong>Original UIDs can be kept.</strong> If your data does not need new UIDs, for example inside one organization, the <code>RetainUIDs</code> option keeps all UIDs unchanged and the study structure stays as it was. See the <a href="/medical/net/anonymization/">DICOM anonymization page</a> for all profile options.</li>
-</ul>
+<p>If your data does not need new UIDs, for example inside one organization, add the <code>RetainUIDs</code> option to the profile. All UIDs stay unchanged, and the study structure stays exactly as it was. See the <a href="/medical/net/anonymization/">DICOM anonymization page</a> for all profile options.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

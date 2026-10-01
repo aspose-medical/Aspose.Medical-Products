@@ -1,7 +1,7 @@
 ---
 title: C# .NET DICOM Medical Imaging API | Aspose.Medical
 weight: 1000
-url: /net/
+url: /pl/net/
 description: Czysta biblioteka .NET dla obrazowania medycznego DICOM. Odczytuje, zapisuje, anonimizuje, transkoduje i renderuje pliki DICOM, serializuje je do JSON i XML oraz wymienia badania przy użyciu protokołu DIMSE.
 ---
 

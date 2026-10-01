@@ -1,7 +1,7 @@
 ---
 title: C# .NET DICOM 医学影像 API | Aspose.Medical
 weight: 1000
-url: /net/
+url: /zh/net/
 description: 纯 .NET 库，用于 DICOM 医学影像。读取、写入、匿名化、转码和渲染 DICOM 文件，将其序列化为 JSON 和 XML，并通过 DIMSE 交换研究。
 ---
 

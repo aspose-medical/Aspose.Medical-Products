@@ -1,7 +1,7 @@
 ---
 title: C# .NET DICOM orvosi képalkotó API | Aspose.Medical
 weight: 1000
-url: /net/
+url: /hu/net/
 description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. DICOM fájlok olvasása, írása, anonimizálása, átkonvertálása és megjelenítése, sorosítása JSON és XML formátumba, valamint tanulmányok cseréje DIMSE-n keresztül.
 ---
 

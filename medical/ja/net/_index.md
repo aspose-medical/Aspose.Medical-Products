@@ -1,7 +1,7 @@
 ---
 title: C# .NET DICOM 医療画像 API | Aspose.Medical
 weight: 1000
-url: /net/
+url: /ja/net/
 description: 純粋な .NET ライブラリで DICOM 医療画像を扱います。DICOM ファイルの読み取り、書き込み、匿名化、トランスコーディング、レンダリングを行い、JSON および XML へシリアライズし、DIMSE 経由でスタディを交換します。
 ---
 

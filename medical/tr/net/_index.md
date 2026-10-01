@@ -1,7 +1,7 @@
 ---
 title: C# .NET DICOM Medikal Görüntüleme API'si | Aspose.Medical
 weight: 1000
-url: /net/
+url: /tr/net/
 description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM dosyalarını okuyun, yazın, anonimleştirin, kod dönüştürün ve render edin, JSON ve XML olarak serileştirin ve çalışmaları DIMSE üzerinden değiş tokuş edin.
 ---
 

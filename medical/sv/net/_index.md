@@ -1,7 +1,7 @@
 ---
 title: C# .NET DICOM Medicinsk Bildbehandlings-API | Aspose.Medical
 weight: 1000
-url: /net/
+url: /sv/net/
 description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv, anonymisera, transkoda och rendera DICOM-filer, serialisera dem till JSON och XML, och utbyt studier via DIMSE.
 ---
 

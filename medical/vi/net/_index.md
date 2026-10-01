@@ -1,7 +1,7 @@
 ---
 title: API Hình ảnh Y tế DICOM .NET C# | Aspose.Medical
 weight: 1000
-url: /net/
+url: /vi/net/
 description: Thư viện .NET thuần cho hình ảnh y tế DICOM. Đọc, ghi, ẩn danh, chuyển mã và hiển thị các tệp DICOM, tuần tự hoá chúng sang JSON và XML, và trao đổi các nghiên cứu qua DIMSE.
 ---
 

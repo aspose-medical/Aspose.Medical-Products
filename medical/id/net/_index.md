@@ -1,7 +1,7 @@
 ---
 title: C# .NET DICOM API Pencitraan Medis | Aspose.Medical
 weight: 1000
-url: /net/
+url: /id/net/
 description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menulis, menganonimkan, mentranskode, dan merender file DICOM, menserialisasikannya ke JSON dan XML, serta menukar studi melalui DIMSE.
 ---
 

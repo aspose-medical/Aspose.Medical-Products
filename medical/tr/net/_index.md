@@ -2,35 +2,36 @@
 title: C# .NET DICOM Medikal Görüntüleme API'si | Aspose.Medical
 weight: 1000
 url: /tr/net/
-description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM dosyalarını okuyun, yazın, anonimleştirin, kod dönüştürün ve render edin, JSON ve XML olarak serileştirin ve çalışmaları DIMSE üzerinden değiş tokuş edin.
+description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM dosyalarını okuyun, yazın, anonimleştirin, dönüştürün ve render edin, JSON ve XML'e serileştirin ve çalışmaları DIMSE ve DICOMweb üzerinden değiştirin.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1=".NET API for DICOM Medikal Görüntüleme" h2="DICOM dosyalarını .NET C# içinde okuyun, yazın, anonimleştirin, kod dönüştürün ve render edin, ve çalışmaları DIMSE üzerinden değiş tokuş edin; herhangi bir harici yazılım veya yerel bağımlılık olmadan." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET DICOM Medikal Görüntüleme API'si" h2=".NET C# içinde DICOM dosyalarını okuyun, yazın, anonimleştirin, dönüştürün ve render edin, ve çalışmaları DIMSE ve DICOMweb üzerinden dış yazılım veya yerel bağımlılık olmadan değiştirin." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong>, DICOM (Digital Imaging and Communications in Medicine) dosyalarıyla çalışmak için saf bir .NET sınıf kütüphanesidir. Geliştiricilerin medikal görüntüleme verilerini okuyup, yazıp, değiştirebilmesini, anonimleştirebilmesini, kod dönüştürebilmesini ve render edebilmesini, DICOM JSON ve DICOM XML olarak serileştirebilmesini ve DIMSE üzerinden diğer sistemlerle çalışmaları değiş tokuş edebilmesini sağlar; herhangi bir harici yazılım veya yerel bağımlılık gerektirmez.</p>
+<p><strong>Aspose.Medical for .NET</strong> DICOM (Digital Imaging and Communications in Medicine) dosyalarıyla çalışmak için saf bir .NET sınıf kütüphanesidir. Geliştiricilerin medikal görüntü verilerini okumasını, yazmasını, değiştirmesini, anonimleştirmesini, dönüştürmesini ve render etmesini, DICOM JSON ve DICOM XML'e serileştirmesini ve çalışmaları DIMSE ve DICOMweb üzerinden diğer sistemlerle değiştirisini sağlar; herhangi bir dış yazılım veya yerel bağımlılık gerektirmez.</p>
 
-<p>Kütüphane tamamen yönetilen C# ile yazılmıştır ve Windows, Linux ve macOS üzerinde .NET 10 üzerinde çalışır. Yerel ikili dosyalar ve üçüncü taraf NuGet paketleri yoktur, bu yüzden kütüphane tek bir derleme olarak herhangi bir .NET uygulamasına, bir masaüstü aracından bir bulut sağlık sistemi içindeki konteynıra kadar dağıtılabilir.</p>
+<p>Kütüphane tamamen yönetilen C# ile yazılmıştır ve Windows, Linux ve macOS'ta .NET 10 üzerinde çalışır. Yerel ikili dosyalar ve üçüncü taraf NuGet paketleri yoktur, bu nedenle kütüphane tek bir derleme olarak herhangi bir .NET uygulamasına, masaüstü araçtan bulut sağlık sistemi konteynerine kadar dağıtılabilir.</p>
 
 <p><strong>Temel Özellikler:</strong>
 <ul>
-    <li>Bir dosyadan, akıştan veya borudan DICOM dosyalarını senkron veya asenkron olarak okuyup yazın; tüm standart veri öğeleri ve değer temsilleri için tam destek sağlar.</li>
-    <li>Büyük dosyalarda belleği yönetin: her öğeyi yükleyin, büyük öğeleri kullanılana kadar erteleyin veya atlayıp yalnızca üst veriyi okuyun.</li>
-    <li>Sıralamalar ve özel etiketler dahil olmak üzere herhangi bir veri öğesini okuyun ve düzenleyin; ASCII dışı metinler için karakter seti işleme desteği vardır.</li>
-    <li>DICOM PS 3.15 gizlilik profilleriyle DICOM dosyalarını anonimleştirin; UID'ler, tarihler, cihaz ve kurum tanımlayıcıları ve hasta özelliklerini tutma seçenekleriyle.</li>
-    <li>Transfer sözdizimleri arasında kod dönüştürme: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL ve RLE; tüm codec'ler .NET içinde uygulanmıştır.</li>
-    <li>Çerçeveleri BGRA piksellere render edin; renderlayıcı tarafından uygulanan modality LUT, VOI LUT (pencere ve seviye) ve üst katmanlarla.</li>
-    <li>Veri setlerini DICOM JSON Modeli (PS3.18) ve DICOM XML (PS3.19) formatına ve geri serileştirin; asenkron akış ve takılabilir toplu veri yükleme desteğiyle.</li>
-    <li>DIMSE üzerinden bir istemci ve bir sunucu ile iletişim kurun: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET, N-servisler ve TLS.</li>
+    <li>Dosya, akış veya boru üzerinden DICOM dosyalarını senkron ya da asenkron olarak okuyun ve yazın; tüm standart veri elemanları ve değer temsilleri tam desteklenir.</li>
+    <li>Büyük dosyalarda bellek kontrolü: her elemanı yükleyin, büyük elemanları kullanılana kadar erteleyin veya atlayıp yalnızca meta verileri okuyun.</li>
+    <li>Dizileri ve özel etiketleri de içeren her veri elemanını okuyun ve düzenleyin; ASCII dışı metinler için karakter seti yönetimi sağlar.</li>
+    <li>DICOM PS 3.15 gizlilik profilleri ile DICOM dosyalarını anonimleştirin; UID'leri, tarihleri, aygıt ve kurum tanımlayıcılarını ve hasta özelliklerini koruma seçenekleri sunar.</li>
+    <li>Transfer sözdizimleri arasında dönüştürme: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL ve RLE; tüm kod çözücüler .NET içinde uygulanmıştır.</li>
+    <li>Modality LUT, VOI LUT (pencere ve seviye) ve üst katmanlar uygulanarak çerçeveleri BGRA piksellere render edin.</li>
+    <li>Veri setlerini DICOM JSON Modeli (PS3.18) ve DICOM XML (PS3.19)'e ve geri serileştirin; asenkron akış ve takılabilir toplu veri yükleme dahil.</li>
+    <li>DIMSE üzerinden bir istemci ve sunucu ile iletişim: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET, N-servisleri ve TLS.</li>
+    <li>QIDO-RS, WADO-RS, STOW-RS, render edilmiş görüntüler, WADO-URI ve iş akışı servisleri için tiplenmiş bir istemciyle herhangi bir DICOMweb sunucusunda çalışmaları arayın, indirin ve yükleyin.</li>
 </ul>
 </p>
 
-<p>Aspose.Medical for .NET kendine yeterlidir. Kurulu bir DICOM görüntüleyici, medikal görüntüleme yazılımı veya yerel codec'ler gerekmez. Sağlık BT sistemleri, PACS entegrasyonu, telemedicine platformları ve DICOM verilerini güvenilir bir şekilde işlemek zorunda olan her uygulamaya uyumludur.</p>
+<p>Aspose.Medical for .NET kendine yeterlidir. Kurulacak bir DICOM görüntüleyici, medikal görüntüleme yazılımı veya yerel codec gerekmez. Sağlık bilişim sistemleri, PACS entegrasyonu, telemedicine platformları ve DICOM verisini güvenilir işlemek zorunda olan tüm uygulamalara uygundur.</p>
 
 {{< /blocks/products/pf/tab-content >}}
 
@@ -51,19 +52,19 @@ description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM do
      Dosyaları, Akışları ve Boruları Oku &amp; Yaz
     </li>
     <li>
-     DICOM Etiketlerini &amp; Öğelerini Yönet
+     DICOM Etiketlerini &amp; Elemanlarını Yönet
     </li>
     <li>
-     Çoklu Çerçeveli Görüntü Desteği
+     Çok Çerçeve Görüntü Desteği
     </li>
     <li>
      Özel Etiket Yönetimi
     </li>
     <li>
-     Karakter Kodlama Desteği
+     Karakter Kodlaması Desteği
     </li>
     <li>
-     Büyük Dosyalar İçin Bellek Kontrolü
+     Büyük Dosyalar için Bellek Kontrolü
     </li>
    </ul>
    <header>
@@ -92,7 +93,7 @@ description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM do
    </header>
    <ul>
     <li>
-     Çerçeve Render'ı BGRA Piksellere
+     Çerçeve Render'ı BGRA Pikseline
     </li>
     <li>
      Modality LUT &amp; VOI LUT Uygulandı
@@ -101,13 +102,13 @@ description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM do
      Görüntü Üst Katman Desteği
     </li>
     <li>
-     Transfer Sözdizimi Dönüştürmesi
+     Transfer Sözdizimi Dönüştürme
     </li>
     <li>
      JPEG 2000, HTJ2K &amp; JPEG XL Sıkıştırması
     </li>
     <li>
-     DICOM JSON &amp; XML Serileştirmesi
+     DICOM JSON &amp; XML Serileştirme
     </li>
    </ul>
    <header>
@@ -123,7 +124,7 @@ description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM do
      C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </li>
     <li>
-     N-Servisler &amp; İlişki Kontrolü
+     N-Servisleri &amp; İlişki Kontrolü
     </li>
     <li>
      TLS Bağlantıları
@@ -198,13 +199,13 @@ description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM do
    </header>
    <ul>
     <li>
-     Windows 10, Windows 11, Windows Server 2016 ve sonrası
+     Windows 10, Windows 11, Windows Server 2016 ve üzeri
     </li>
     <li>
      Linux: Ubuntu 20.04+, Debian 10+, CentOS 8+
     </li>
     <li>
-     macOS 11 ve sonrası
+     macOS 11 ve üzeri
     </li>
    </ul>
   </div>
@@ -256,7 +257,7 @@ description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM do
    <header>
     <i class="fa fa-compress">
     </i>
-    Piksel Veri Sıkıştırması
+    Piksel Verisi Sıkıştırması
    </header>
    <ul>
     <li>
@@ -280,7 +281,7 @@ description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM do
     </li>
     <li>
      <b>
-      Dahili görüntü dosyası:
+      Yerleşik görüntü dosyası:
      </b>
      PNM
     </li>
@@ -292,7 +293,7 @@ description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM do
    </header>
    <ul>
     <li>
-     Harici bir görüntüleme kütüphanesi tarafından çözülen piksel tamponları, DICOM piksel veri çerçevesine çerçeve bazında yazılır
+     Dış bir görüntüleme kütüphanesi tarafından çözülmüş piksel tamponları, DICOM piksel verisine çerçeve çerçeve yazılır
     </li>
    </ul>
   </div>
@@ -336,79 +337,79 @@ description: DICOM medikal görüntüleme için saf .NET kütüphanesi. DICOM do
     <em class="fa fa-file-image-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     DICOM dosyalarını dosyalardan, akışlardan veya borulardan okuyup yazın
+     Dosyalardan, akışlardan ya da borulardan DICOM dosyalarını okuyun ve yazın
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-tags ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Tüm DICOM etiketlerine, sıralamalara ve özel öğelere erişin ve bunları manipüle edin
+     Tüm DICOM etiketlerine, dizilerine ve özel elemanlara erişin ve bunları manipüle edin
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-shield ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Hasta verilerini DICOM PS 3.15 gizlilik profilleriyle anonimleştirin
+     DICOM PS 3.15 gizlilik profilleri ile hasta verilerini anonimleştirin
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-exchange ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     HTJ2K ve JPEG XL dahil olmak üzere transfer sözdizimleri arasında kod dönüştürün
+     HTJ2K ve JPEG XL dahil olmak üzere transfer sözdizimleri arasında dönüştürme yapın
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-picture-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Görüntüleyiciler, küçük resimler ve görüntü dışa aktarımı için çerçeveleri piksellere render edin
+     Görüntüleyiciler, küçük resimler ve görüntü dışa aktarımı için çerçeveleri piksele render edin
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-code ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     DICOM verilerini JSON ve XML'e serileştirin; asenkron akış desteğiyle
+     DICOM verisini JSON ve XML'e serileştirin, asenkron akış desteği ile
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sitemap ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Çalışmaları DIMSE üzerinden değiş tokuş edin: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
+     DIMSE üzerinden çalışmaları değiştirin: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-database ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Büyük öğeleri erteleyerek veya atlayarak büyük dosyalarda belleği sabit tutun
+     Büyük dosyalarda bellek kullanımını, büyük elemanları erteleyerek ya da atlayarak düşük tutun
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sliders ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Modality LUT, VOI LUT ve üst katmanlarla çoklu çerçeve görüntüleri render edin
+     Modality LUT, VOI LUT ve üst katmanlarla çok çerçeveli görüntüleri render edin
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Saf .NET Kütüphane - Sıfır Bağımlılık
+     Saf .NET Kütüphanesi - Sıfır Bağımlılık
     </h2>
     <p>
-     Aspose.Medical for .NET tamamen yönetilen C# ile yazılmıştır ve yerel ikili dosyalar ya da üçüncü taraf NuGet paketleri olmadan tek bir derleme olarak sunulur. Diğer medikal görüntüleme kütüphaneleri yerel codec'lere veya harici araçlara dayanır; bu kütüphane buna ihtiyaç duymaz. Tüm görüntü sıkıştırma codec'leri (JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE) .NET içinde uygulanmıştır, bu yüzden kütüphane Windows, Linux ve macOS'ta aynı davranışı gösterir. Bu, konteynerler, bulut ortamları ve yerel kütüphanelerin kurulamadığı tüm dağıtımlar için uygundur. Paket .NET 10 hedeflemektedir.
+     Aspose.Medical for .NET tamamen yönetilen C# ile yazılmıştır ve yerel ikili dosyalar ya da üçüncü taraf NuGet paketleri olmadan tek bir derleme olarak dağıtılır. Diğer medikal görüntüleme kütüphaneleri yerel codec'lere veya dış araçlara dayanır; bu kütüphane öyle değildir. Tüm görüntü sıkıştırma codec'leri (JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE) .NET içinde uygulanmıştır, bu yüzden kütüphane Windows, Linux ve macOS'ta aynı davranışı sergiler. Bu, konteynerler, bulut ortamları ve yerel kütüphanelerin kurulamadığı dağıtımlar için mükemmel bir uyum sağlar. Paket .NET 10 hedeflemektedir.
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Gizlilik Uyumluluğu İçin DICOM Dosyalarını Anonimleştirin
+     Gizlilik Uyumluluğu için DICOM Dosyalarını Anonimleştir
     </h2>
     <p>
-     Hasta gizliliği, sağlık uygulamalarında kesin bir gereksinimdir. Aspose.Medical for .NET, DICOM PS 3.15 gizlilik profilleriyle DICOM verilerini anonimleştirir. Görüntüleme verilerinin klinik değerini korurken hasta tanımlayıcı bilgilerini kaldırabilir veya değiştirebilirsiniz; ayrıca bir profilin hangi bilgileri tutacağını seçebilirsiniz: güvenli özel nitelikler, UID'ler, cihaz ve kurum tanımlayıcıları, hasta özellikleri ve uzunlamasına zaman bilgileri. <a href="/medical/net/anonymization/">DICOM anonimleştirme sayfası</a> profil seçeneklerini ayrıntılı olarak gösterir.
+     Hasta gizliliği sağlık uygulamalarında zorunlu bir gereksinimdir. Aspose.Medical for .NET, DICOM PS 3.15 gizlilik profilleriyle DICOM verilerini anonimleştirir. Görüntü verisinin klinik değerini korurken hasta kimlik bilgilerini kaldırabilir veya değiştirebilir ve bir profilin neyi koruyacağını seçebilirsiniz: güvenli özel öznitelikler, UID'ler, aygıt ve kurum tanımlayıcıları, hasta özellikleri ve uzunlamasına zamansal bilgiler. <a href="/medical/net/anonymization/">DICOM anonimleştirme sayfası</a> profil seçeneklerini ayrıntılı olarak gösterir.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -428,14 +429,14 @@ anonymized.Save("anonymized_scan.dcm");</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     .NET C# içinde DICOM Çerçevelerini Render Edin
+     .NET C# içinde DICOM Çerçevelerini Render Et
     </h2>
     <p>
-     Aspose.Medical for .NET, bir DICOM çerçevesini 32-bit BGRA piksel görüntüsüne render eder. Renderlayıcı, veri setinden fotometrik yorum, modality LUT ve VOI LUT (pencere ve seviye) uygular ve üst katmanları çizer; böylece sonuç bir görüntüleyicinin gösterdiğiyle aynı olur. Pikseller artık sizin: bir tampona kopyalayın ve PNG, JPEG veya TIFF kaydetmek için herhangi bir görüntüleme kütüphanesine gönderin. Kütüphaneye dahil tek görüntü kodlayıcı PNM'dir. Dönüştürme sayfaları <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a> ve <a href="/medical/net/dicom-to-tiff/">TIFF</a> için tam yolu gösterir.
+     Aspose.Medical for .NET, bir DICOM çerçevesini 32-bit BGRA piksel görüntüsüne render eder. Renderleyici veri setinden fotometrik yorumu, modality LUT ve VOI LUT (pencere ve seviye) uygular ve üst katmanları çizer, böylece sonuç bir görüntüleyicinin gösterdiğiyle eşleşir. Pikseller artık sizin: bir tampon içine kopyalayın ve PNG, JPEG veya TIFF olarak kaydetmek için herhangi bir görüntüleme kütüphanesine aktarın. Kütüphaneye yerleşik tek görüntü kodlayıcı PNM'dir. Dönüştürme sayfaları <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a> ve <a href="/medical/net/dicom-to-tiff/">TIFF</a> için tam yolu gösterir.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Bir DICOM çerçevesini render edin - C#
+      Bir DICOM çerçevesini render et - C#
      </h3>
      <pre><code class="cs">// Load the DICOM file
 DicomFile dicomFile = DicomFile.Open("chest_xray.dcm");
@@ -450,14 +451,14 @@ image.CopyPixelsTo(pixels);</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Transfer Sözdizimleri Arasında Kod Dönüştürme
+     Transfer Sözdizimleri Arasında Dönüştürme
     </h2>
     <p>
-     Görüntüleme sistemleri ve arşivler belirli DICOM transfer sözdizimlerini gerektirir. Aspose.Medical for .NET, sıkıştırılmamış formatlar, JPEG Baseline, JPEG Lossless, JPEG-LS, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL ve RLE arasında kod dönüştürme yapar. HTJ2K ve JPEG XL, DICOM standardındaki en yeni iki seçenektir ve burada diğer tüm codec'ler gibi .NET içinde uygulanmıştır. Kod dönüştürme, PACS entegrasyonu, arşiv boyutu ve sistemler arası uyumluluk için önemlidir. <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer sözdizimi dönüştürme sayfasına</a> ve <a href="/medical/net/jpeg2000/">JPEG 2000 sayfasına</a> bakın.
+     Görüntüleme sistemleri ve arşivler belirli DICOM transfer sözdizimleri gerektirir. Aspose.Medical for .NET, sıkıştırılmamış formatlar, JPEG Baseline, JPEG Lossless, JPEG-LS, JPEG 2000, HTJ2K (Yüksek Hızlı JPEG 2000), JPEG XL ve RLE arasında dönüştürme yapar. HTJ2K ve JPEG XL, DICOM standardındaki en yeni iki seçenektir ve burada diğer tüm codec'ler gibi .NET içinde uygulanmıştır. Dönüştürme, PACS entegrasyonu, arşiv boyutu ve sistemler arasındaki uyumluluk için önemlidir. <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer sözdizimi dönüştürme sayfasına</a> ve <a href="/medical/net/jpeg2000/">JPEG 2000 sayfasına</a> bakın.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      DICOM'u HTJ2K'ye Kod Dönüştür - C#
+      DICOM'u HTJ2K'ya Dönüştür - C#
      </h3>
      <pre><code class="cs">// Load existing DICOM file
 DicomFile dicomFile = DicomFile.Open("input.dcm");
@@ -471,10 +472,10 @@ transcoded.Save("output.dcm");</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOM'dan JSON ve XML Serileştirmesi
+     DICOM'u JSON ve XML'e Serileştirme
     </h2>
     <p>
-     Sağlık sistemleri, web servisleri üzerinden veri değiş tokuşu yapar; bu nedenle Aspose.Medical for .NET, DICOM veri setlerini DICOM JSON Modeli (PS3.18) ve DICOM XML (PS3.19) formatına serileştirir ve her ikisini de veri setlerine geri çözer. Serileştiriciler string, akış ve boru üzerinde, senkron ve asenkron olarak çalışır; veri seti dizisi, tüm belgeyi bellek içinde tutmadan birer birer okunabilir. Toplu veri referansları takılabilir bir yükleyiciyle çözülür, böylece büyük piksel verileri belgede dışarıda kalabilir. <a href="/medical/net/dicom-to-json/">DICOM'dan JSON</a> ve <a href="/medical/net/dicom-to-xml/">DICOM'dan XML</a> sayfalarına bakın.
+     Sağlık sistemleri web servisleri üzerinden veri değiştirir, bu yüzden Aspose.Medical for .NET DICOM veri setlerini DICOM JSON Modeli (PS3.18) ve DICOM XML (PS3.19)'e serileştirir ve ikisini de veri setlerine geri ayrıştırır. Serileştiriciler string, akış ve boru üzerinde, senkron ve asenkron olarak çalışır ve bir veri seti dizisi, bellek içinde tüm belgeyi tutmadan tek tek okunabilir. Toplu veri referansları takılabilir bir yükleyici aracılığıyla çözülür, böylece büyük piksel verileri belge dışındaki bir yerde kalabilir. <a href="/medical/net/dicom-to-json/">DICOM'dan JSON'a</a> ve <a href="/medical/net/dicom-to-xml/">DICOM'dan XML'e</a> sayfalarına bakın.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -498,7 +499,7 @@ Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
      DIMSE Üzerinden DICOM Ağ İletişimi
     </h2>
     <p>
-     Aspose.Medical for .NET, diğer DICOM sistemleriyle doğrudan iletişim kurar. Kütüphane, C-ECHO, C-STORE, C-FIND, C-MOVE ve C-GET için bir DIMSE istemcisi ve DIMSE sunucusu sağlar; ayrıca N-servisler, sunum bağlamları ve roller ile ilişki anlaşması, asenkron işlem pencereleri, kullanıcı kimliği anlaşması ve TLS bulunur. İstekler bir ilişkide kuyruğa alınır ve kaydettiğiniz işleyiciler tarafından yanıtlanır; böylece bir store-and-forward düğümü, bir sorgu proxy'si ya da test SCP birkaç sınıfla gerçekleştirilebilir. <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM ağ rehberi</a> tam API'yi kapsar.
+     Aspose.Medical for .NET, diğer DICOM sistemleriyle doğrudan iletişim kurar. Kütüphane, C-ECHO, C-STORE, C-FIND, C-MOVE ve C-GET için bir DIMSE istemcisi ve DIMSE sunucusu sağlar; ayrıca N-servisler, sunum bağlamları ve rollerle ilişki müzakeresi, asenkron işlem pencereleri, kullanıcı kimliği müzakeresi ve TLS bulunur. İstekler bir ilişki üzerinde kuyruğa alınır ve kaydettiğiniz işleyiciler tarafından yanıtlanır; böylece bir store-and-forward düğümü, sorgu proxy'si veya test SCP birkaç sınıfla gerçekleştirilebilir. <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM ağ iletişimi rehberi</a> tam API'yi kapsar.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -533,14 +534,43 @@ await client.StopAsync();</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Büyük Bellek Olmadan Büyük DICOM Dosyaları
+     DICOMweb İstemcisi
     </h2>
     <p>
-     Tam slayt görüntüleri, uzun seriler ve çoklu çerçeve çalışmalar belleğe rahat sığmaz. Aspose.Medical for .NET, dosyanın ne kadarının yükleneceğini seçmenizi sağlar: her şeyi okuyun, belirli bir boyut eşiğinin üzerindeki öğeleri erişilene kadar erteleyin veya onları atlayıp sadece üst veriyle çalışın. Akış ya da borudan okuyup aynı şekilde geri yazarak verinin birikmesi yerine akmasını sağlarsınız. <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">bellek yönetimi rehberi</a> bu dengelemeleri açıklar.
+     Bulut görüntüleme hizmetleri ve modern arşivler DICOM'u HTTP üzerinden sunar. Aspose.Medical for .NET'teki DICOMweb istemcisi, her standart işlemi tiplenmiş bir metot içinde sarar: QIDO-RS araması, WADO-RS ile çalışma, seriler, örnekler, çerçeveler, render edilmiş görüntüler ve küçük resimlerin alınması, STOW-RS yüklemesi, WADO-URI ve iş listesi, prosedür adımı ve depolama taahhüt servisleri. Kendi <code>HttpClient</code>ınızı kullanır, bu yüzden kimlik doğrulama ve TLS, uygulamanızın yapılandırdığı yerde kalır ve sonuçlar kütüphanenin geri kalanının kullandığı aynı veri setleri ve dosyalar olarak gelir. <a href="/medical/net/dicomweb-client/">DICOMweb istemci sayfasına</a> bakın.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Piksel verisi olmadan üst veriyi oku - C#
+      Bir DICOMweb sunucusunda çalışmaları ara - C#
+     </h3>
+     <pre><code class="cs">using HttpClient http = new HttpClient();
+
+DicomWebClient client = new DicomWebClient(http, new DicomWebClientOptions
+{
+    BaseUri = new Uri("https://pacs.example.org/dicom-web/")
+});
+
+DicomWebSearchOptions search = new DicomWebSearchOptions
+{
+    MatchingParameters = [new DicomWebQueryParameter("PatientID", "PATIENT-001")]
+};
+
+await using DicomWebClientStream&lt;Dataset&gt; studies = await client.Studies.SearchAsync(search);
+
+await foreach (Dataset study in studies)
+    Console.WriteLine(study.GetSingleValueOrDefault(Tag.StudyInstanceUID, string.Empty));</code></pre>
+    </div>
+   </div>
+   <div class="col-lg-12">
+    <h2 class="h2title">
+     Büyük Bellek Kullanımı Olmadan Büyük DICOM Dosyaları
+    </h2>
+    <p>
+     Tam kaydırma görüntüleri, uzun seriler ve çok çerçeveli çalışmalar bellekte rahat bir şekilde sığmaz. Aspose.Medical for .NET, bir dosyanın ne kadarının yükleneceğine karar vermenizi sağlar: her şeyi oku, belirli bir boyut eşiğinin üzerindeki elemanları erişilene kadar ertele, ya da atlayıp yalnızca meta verilerle çalış. Akış ya da borudan okuma ve aynı şekilde geri yazma, verinin birikmesi yerine akmasını sağlar. <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">Bellek yönetimi rehberi</a> bu dengelemeleri açıklar.
+    </p>
+    <div class="codeblock" id="code">
+     <h3>
+      Piksel verisi olmadan meta veriyi oku - C#
      </h3>
      <pre><code class="cs">// Elements larger than the threshold are not loaded into memory
 DicomFile metadataOnly = DicomFile.Open(

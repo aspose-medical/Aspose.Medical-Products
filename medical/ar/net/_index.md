@@ -1,36 +1,37 @@
 ---
-title: C# .NET DICOM API لتصوير الطبّي | Aspose.Medical
+title: C# .NET DICOM Medical Imaging API | Aspose.Medical
 weight: 1000
 url: /ar/net/
-description: مكتبة .NET صافية لتصوير DICOM الطبي. قراءة، كتابة، إخفاء هوية، تحويل الترميز وعرض ملفات DICOM، تسلسلها إلى JSON و XML، وتبادل الدراسات عبر DIMSE.
+description: مكتبة .NET صافية لتصوير DICOM الطبي. قراءة، كتابة، إخفاء هوية، تحويل وضبط عرض ملفات DICOM، تسلسلها إلى JSON و XML، وتبادل الدراسات عبر DIMSE و DICOMweb.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1=".NET API لتصوير DICOM الطبي" h2="قراءة، كتابة، إخفاء هوية، تحويل الترميز وعرض ملفات DICOM في .NET C#، وتبادل الدراسات عبر DIMSE، دون أي برنامج خارجي أو تبعيات محلية." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET API لتصوير DICOM الطبي" h2="قراءة، كتابة، إخفاء هوية، تحويل وضبط عرض ملفات DICOM في .NET C#، وتبادل الدراسات عبر DIMSE و DICOMweb، دون أي برنامج خارجي أو تبعيات أصلية." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong> هي مكتبة صفوف .NET صافية للعمل مع ملفات DICOM (التصوير الرقمي والاتصالات في الطب). تتيح للمطورين قراءة، كتابة، تعديل، إخفاء هوية، تحويل الترميز وعرض بيانات التصوير الطبي، تسلسلها إلى DICOM JSON و DICOM XML، وتبادل الدراسات مع أنظمة أخرى عبر DIMSE، دون أي برنامج خارجي أو تبعيات محلية.</p>
+<p><strong>Aspose.Medical for .NET</strong> هي مكتبة صافية من نوع .NET للعمل مع ملفات DICOM (التصوير الرقمي والاتصالات في الطب). تتيح للمطورين قراءة، كتابة، تعديل، إخفاء هوية، تحويل وضبط عرض بيانات التصوير الطبي، تسلسلها إلى DICOM JSON و DICOM XML، وتبادل الدراسات مع الأنظمة الأخرى عبر DIMSE و DICOMweb، دون أي برنامج خارجي أو تبعيات أصلية.</p>
 
-<p>المكتبة مكتوبة بالكامل بلغة C# مُدارة وتعمل على .NET 10 على Windows و Linux و macOS. لا توجد ملفات تنفيذية محلية ولا حزم NuGet من أطراف ثالثة، لذا تُنشر المكتبة كملف تجميع واحد في أي تطبيق .NET، من أداة سطح مكتب إلى حاوية في نظام رعاية صحية سحابي.</p>
+<p>المكتبة مكتوبة بالكامل بلغة C# مُدارة وتعمل على .NET 10 في Windows و Linux و macOS. لا توجد ملفات ثنائية أصلية ولا حزم NuGet من أطراف ثالثة، لذا تُنشر المكتبة كوحدة واحدة في أي تطبيق .NET، من أداة سطح مكتب إلى حاوية في نظام رعاية صحية سحابي.</p>
 
 <p><strong>الميزات الرئيسية:</strong>
 <ul>
-    <li>قراءة وكتابة ملفات DICOM من ملف، تدفق أو أنبوب، بشكل متزامن أو غير متزامن، مع دعم كامل لجميع عناصر البيانات القياسية وتمثيلات القيم.</li>
-    <li>التحكم في الذاكرة للملفات الكبيرة: تحميل كل عنصر، تأجيل العناصر الكبيرة حتى يتم استخدامها، أو تخطيها وقراءة البيانات الوصفية فقط.</li>
-    <li>قراءة وتحرير أي عنصر بيانات، بما في ذلك السلاسل والوسوم الخاصة، مع معالجة مجموعات الأحرف للنص غير ASCII.</li>
-    <li>إخفاء هوية ملفات DICOM باستخدام ملفات الخصوصية من DICOM PS 3.15، مع خيارات للاحتفاظ بمعرفات UID، التواريخ، معرفات الجهاز والمؤسسة وخصائص المريض.</li>
-    <li>تحويل الترميز بين صيغ النقل: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL و RLE، مع تنفيذ كل مشفر في .NET.</li>
-    <li>تصيير الإطارات إلى بكسلات BGRA مع Modality LUT، VOI LUT (النافذة والمستوى) والطبقات الفوقية المطبقة بواسطة المصrender.</li>
-    <li>تسلسل مجموعات البيانات إلى نموذج DICOM JSON (PS3.18) وإ إلى DICOM XML (PS3.19) والعكس، بما في ذلك البث غير المتزامن وتحميل البيانات الضخمة القابل للإضافة.</li>
-    <li>الاتصال عبر DIMSE مع عميل وخادم: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET، الخدمات N، و TLS.</li>
+<li>قراءة وكتابة ملفات DICOM من ملف، تدفق أو أنبوب، بشكل متزامن أو غير متزامن، مع دعم كامل لجميع عناصر البيانات القياسية وتمثيلات القيم.</li>
+<li>التحكم في الذاكرة للملفات الكبيرة: تحميل كل عنصر، تأخير العناصر الكبيرة حتى يتم استخدامها، أو تخطيها وقراءة البيانات الوصفية فقط.</li>
+<li>قراءة وتحرير أي عنصر بيانات، بما في ذلك السلاسل والوسوم الخاصة، مع معالجة مجموعات الأحرف للنص غير ASCII.</li>
+<li>إخفاء هوية ملفات DICOM باستخدام ملفات تعريف السرية في DICOM PS 3.15، مع خيارات للاحتفاظ بمعرفات UID، التواريخ، معرفات الجهاز والمؤسسة، وخصائص المريض.</li>
+<li>تحويل بين صيغ النقل: JPEG، JPEG-LS، JPEG 2000، HTJ2K، JPEG XL و RLE، مع تنفيذ كل مُرمّز في .NET.</li>
+<li>ضبط عرض الإطارات إلى بكسلات BGRA مع LUT الخاص بالوضعية، و VOI LUT (النافذة والمستوى) والطبقات التي يُطبقها العارض.</li>
+<li>تسلسل مجموعات البيانات إلى نموذج DICOM JSON (PS3.18) وإلى DICOM XML (PS3.19) والعكس، بما في ذلك البث غير المتزامن وتحميل البيانات الضخمة القابلة للإضافة.</li>
+<li>التواصل عبر DIMSE مع عميل وخادم: C-ECHO، C-STORE، C-FIND، C-MOVE، C-GET، خدمات N، و TLS.</li>
+<li>بحث، تنزيل وتحميل الدراسات على أي خادم DICOMweb باستخدام عميل مُصنّف لـ QIDO-RS، WADO-RS، STOW-RS، الصور المُعرضة، WADO-URI وخدمات سير العمل.</li>
 </ul>
 </p>
 
-<p>Aspose.Medical for .NET مكتبة مستقلة. لا تحتاج إلى عارض DICOM، لا برنامج تصوير طبي ولا مشفرات أصلية للتثبيت. تتناسب مع أنظمة تكنولوجيا المعلومات الصحية، تكامل PACS، منصات التطبيب عن بُعد وأي تطبيق يحتاج إلى معالجة بيانات DICOM بثقة.</p>
+<p>Aspose.Medical for .NET مكتبة مستقلة ذاتيًا. لا تحتاج إلى عارض DICOM، ولا برنامج تصوير طبي، ولا مُرمّزات أصلية يتم تثبيتها. إنها ملائمة لأنظمة تكنولوجيا المعلومات في الرعاية الصحية، دمج PACS، منصات التطبيب عن بُعد، وأي تطبيق يحتاج إلى معالجة بيانات DICOM بشكل موثوق.</p>
 
 {{< /blocks/products/pf/tab-content >}}
 
@@ -48,10 +49,10 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
    </header>
    <ul>
     <li>
-     قراءة وكتابة الملفات، التدفقات، الأنابيب
+     قراءة &amp; كتابة ملفات، تدفقات، أنابيب
     </li>
     <li>
-     إدارة وسوم DICOM والعناصر
+     إدارة وسوم DICOM &amp; العناصر
     </li>
     <li>
      دعم الصور متعددة الإطارات
@@ -76,7 +77,7 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
      إخفاء هوية DICOM
     </li>
     <li>
-     ملفات الخصوصية PS 3.15
+     ملفات تعريف السرية PS 3.15
     </li>
     <li>
      خيارات الاحتفاظ القابلة للتكوين
@@ -88,42 +89,42 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
    <header>
     <i class="fa fa-exchange">
     </i>
-    التصوير والتحويل
+    التصوير &amp; التحويل
    </header>
    <ul>
     <li>
-     تصيير الإطارات إلى بكسلات BGRA
+     عرض الإطارات إلى بكسلات BGRA
     </li>
     <li>
-     تطبيق Modality LUT و VOI LUT
+     تطبيق LUT الوضعية &amp; LUT VOI
     </li>
     <li>
-     دعم الطبقة الفوقية للصور
+     دعم طبقة الصورة
     </li>
     <li>
      تحويل صيغ النقل
     </li>
     <li>
-     ضغط JPEG 2000, HTJ2K & JPEG XL
+     ضغط JPEG 2000، HTJ2K &amp; JPEG XL
     </li>
     <li>
-     تسلسل DICOM JSON و XML
+     تسلسل DICOM JSON &amp; XML
     </li>
    </ul>
    <header>
     <i class="fa fa-sitemap">
     </i>
-    شبكة DICOM
+    شبكات DICOM
    </header>
    <ul>
     <li>
-     عميل وخادم DIMSE
+     عميل &amp; خادم DIMSE
     </li>
     <li>
-     C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
+     C-ECHO، C-STORE، C-FIND، C-MOVE، C-GET
     </li>
     <li>
-     خدمات N و التحكم بالارتباط
+     خدمات N &amp; التحكم بالارتباط
     </li>
     <li>
      اتصالات TLS
@@ -141,7 +142,7 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
   <footer>
    <small>
     <em>
-     لـ
+     لل
     </em>
     .NET
    </small>
@@ -163,13 +164,13 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
    </header>
    <ul>
     <li>
-     100% شفرة C# مُدارة
+     شفرة C# مُدارة 100%
     </li>
     <li>
-     لا تبعيات محلية
+     لا تبعيات أصلية
     </li>
     <li>
-     لا حزم أطراف ثالثة
+     لا حزم طرف ثالث
     </li>
     <li>
      نشر مستقل
@@ -198,10 +199,10 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
    </header>
    <ul>
     <li>
-     Windows 10, Windows 11, Windows Server 2016 وما بعده
+     Windows 10، Windows 11، Windows Server 2016 وما بعده
     </li>
     <li>
-     Linux: Ubuntu 20.04+, Debian 10+, CentOS 8+
+     Linux: Ubuntu 20.04+، Debian 10+، CentOS 8+
     </li>
     <li>
      macOS 11 وما بعده
@@ -219,7 +220,7 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
   <footer>
    <small>
     <em>
-     لـ
+     لل
     </em>
     .NET
    </small>
@@ -237,12 +238,12 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
    <header>
     <i class="fa fa-arrows-v">
     </i>
-    القراءة والكتابة
+    قراءة و كتابة
    </header>
    <ul>
     <li>
      <b>
-      التصوير الطبي:
+      تصوير طبي:
      </b>
      DICOM (.dcm)
     </li>
@@ -269,12 +270,12 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
    <header>
     <i class="fa fa-mail-forward">
     </i>
-    مخرجات التصيير
+    مخرجات العرض
    </header>
    <ul>
     <li>
      <b>
-      البكسلات:
+      بكسلات:
      </b>
      مخازن BGRA 32-بت لأي مكتبة تصوير
     </li>
@@ -288,11 +289,11 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
    <header>
     <i class="fa fa-mail-reply">
     </i>
-    إدخال نقطي
+    إدخال Raster
    </header>
    <ul>
     <li>
-     مخازن البكسل مفكوكة بواسطة مكتبة تصوير خارجية، مكتوبة في بيانات بكسل DICOM إطارًا بإطار
+     مخازن البكسل التي تم فك ترميزها بواسطة مكتبة تصوير خارجية، تُكتب في بيانات بكسل DICOM إطارًا بعد إطار
     </li>
    </ul>
   </div>
@@ -307,7 +308,7 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
   <footer>
    <small>
     <em>
-     لـ
+     لل
     </em>
     .NET
    </small>
@@ -328,7 +329,7 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
  <div class="row">
   <div class="container">
    <h2 class="pr-ft">
-    ميزات .NET DICOM API المتقدمة
+    ميزات متقدمة لواجهة برمجة تطبيقات .NET DICOM
    </h2>
    <p>
    </p>
@@ -343,28 +344,28 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
     <em class="fa fa-tags ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     الوصول إلى جميع وسوم DICOM، السلاسل والعناصر الخاصة وتعديلها
+     الوصول إلى جميع وسوم DICOM، السلاسل والعناصر الخاصة ومعالجتها
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-shield ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     إخفاء هوية بيانات المريض باستخدام ملفات الخصوصية DICOM PS 3.15
+     إخفاء هوية بيانات المريض باستخدام ملفات تعريف السرية DICOM PS 3.15
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-exchange ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     تحويل الترميز بين صيغ النقل، بما في ذلك HTJ2K و JPEG XL
+     تحويل بين صيغ النقل، بما في ذلك HTJ2K و JPEG XL
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-picture-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     تصيير الإطارات إلى بكسلات للعارضات، المصغرات وتصدير الصور
+     عرض الإطارات إلى بكسلات للعارضين، الصور المصغرة وتصدير الصور
     </p>
    </div>
    <div class="col-lg-4">
@@ -378,21 +379,21 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
     <em class="fa fa-sitemap ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     تبادل الدراسات عبر DIMSE: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
+     تبادل الدراسات عبر DIMSE: C-ECHO، C-STORE، C-FIND، C-MOVE، C-GET
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-database ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     الحفاظ على استقرار الذاكرة في الملفات الكبيرة بتأجيل أو تخطي العناصر الكبيرة
+     الحفاظ على استهلاك الذاكرة ثابتًا للملفات الكبيرة عن طريق تأخير أو تخطي العناصر الكبيرة
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sliders ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     تصيير الصور متعددة الإطارات مع Modality LUT، VOI LUT والطبقات الفوقية
+     عرض صور متعددة الإطارات مع LUT الوضعية، VOI LUT والطبقات
     </p>
    </div>
    <div class="col-lg-12">
@@ -400,15 +401,15 @@ description: مكتبة .NET صافية لتصوير DICOM الطبي. قراء�
      مكتبة .NET صافية - لا تبعيات
     </h2>
     <p>
-     تم كتابة Aspose.Medical for .NET بالكامل بلغة C# مُدارة وتوزيعها كملف تجميع واحد دون أي ملفات تنفيذية محلية ولا حزم NuGet من أطراف ثالثة. تعتمد مكتبات التصوير الطبي الأخرى على مشفرات أصلية أو أدوات خارجية؛ هذا لا يعتمد عليها. جميع مشفرات ضغط الصور (JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE) مُنفذة في .NET، لذا تتصرف المكتبة بنفس الشكل على Windows و Linux و macOS. وهذا يجعلها ملائمة للحاويات، بيئات السحابة وأي نشر لا يمكن فيه تثبيت مكتبات أصلية. الحزمة تستهدف .NET 10.
+     Aspose.Medical for .NET مكتوبة بالكامل بلغة C# مُدارة وتوزع كوحدة واحدة دون ملفات ثنائية أصلية ولا حزم NuGet من أطراف ثالثة. تعتمد مكتبات التصوير الطبي الأخرى على مُرمّزات أصلية أو أدوات خارجية؛ وهذا ليس هو الحال هنا. جميع مُرمّزات ضغط الصورة (JPEG، JPEG-LS، JPEG 2000، HTJ2K، JPEG XL، RLE) مُنفذة في .NET، لذا تتصرف المكتبة بنفس الطريقة على Windows و Linux و macOS. هذا يجعلها مناسبة للحاويات، بيئات السحابة وأي نشر لا يمكن فيه تثبيت المكتبات الأصلية. الحزمة تستهدف .NET 10.
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     إخفاء هوية ملفات DICOM لتوافق الخصوصية
+     إخفاء هوية ملفات DICOM للامتثال للخصوصية
     </h2>
     <p>
-     خصوصية المريض هي متطلب أساسي في تطبيقات الرعاية الصحية. يقوم Aspose.Medical for .NET بإخفاء هوية بيانات DICOM باستخدام ملفات الخصوصية من DICOM PS 3.15. يمكنك إزالة أو استبدال المعلومات التي تحدد هوية المريض مع الحفاظ على القيمة السريرية لبيانات التصوير، ويمكنك اختيار ما يحتفظ به الملف: السمات الخاصة الآمنة، معرفات UID، معرفات الجهاز والمؤسسة، خصائص المريض، ومعلومات زمنية طولية. تُظهر <a href="/medical/net/anonymization/">صفحة إخفاء هوية DICOM</a> خيارات الملف بالتفصيل.
+     خصوصية المريض هي متطلب أساسي في تطبيقات الرعاية الصحية. Aspose.Medical for .NET تقوم بإخفاء هوية بيانات DICOM باستخدام ملفات تعريف السرية DICOM PS 3.15. يمكنك إزالة أو استبدال معلومات التعريف الخاصة بالمريض مع الحفاظ على القيمة السريرية لبيانات التصوير، ويمكنك اختيار ما تحتفظ به الملفات التعريفية: السمات الخاصة الآمنة، معرفات UID، معرفات الجهاز والمؤسسة، خصائص المريض، والمعلومات الزمنية الطولية. تُظهر <a href="/medical/net/anonymization/">صفحة إخفاء هوية DICOM</a> خيارات الملف التعريفي بالتفصيل.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -428,14 +429,14 @@ anonymized.Save("anonymized_scan.dcm");</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     تصيير إطارات DICOM في .NET C#
+     عرض إطارات DICOM في .NET C#
     </h2>
     <p>
-     يقوم Aspose.Medical for .NET بتصوير إطار DICOM إلى صورة بكسل BGRA 32‑بت. يطبق المصrender التفسير الضوئي، Modality LUT و VOI LUT (النافذة والمستوى) من مجموعة البيانات ويرسم الطبقات الفوقية، بحيث يتطابق الناتج مع ما يظهره العارض. بعد ذلك تكون البكسلات لك: يمكنك نسخها إلى مخزن وتمريرها إلى أي مكتبة تصوير لحفظ PNG أو JPEG أو TIFF. المشفر الوحيد المدمج هو PNM. تظهر صفحات التحويل المسار الكامل لـ <a href="/medical/net/dicom-to-png/">PNG</a>، <a href="/medical/net/dicom-to-jpg/">JPEG</a> و <a href="/medical/net/dicom-to-tiff/">TIFF</a>.
+     Aspose.Medical for .NET تقوم بعرض إطار DICOM كصورة بكسل BGRA 32‑بت. يطبق العارض التفسير الفوتومتري، LUT الوضعية و LUT VOI (النافذة والمستوى) من مجموعة البيانات ويرسم الطبقات، بحيث يتطابق الناتج مع ما يعرضه العارض. ثم تكون البكسلات لك: انسخها إلى مخزن ومرّرها إلى أي مكتبة تصوير لحفظ PNG أو JPEG أو TIFF. المُرمّز الصوري الوحيد المدمج في المكتبة هو PNM. تُظهر صفحات التحويل المسار الكامل لـ <a href="/medical/net/dicom-to-png/">PNG</a>، <a href="/medical/net/dicom-to-jpg/">JPEG</a> و <a href="/medical/net/dicom-to-tiff/">TIFF</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      تصيير إطار DICOM - C#
+      عرض إطار DICOM - C#
      </h3>
      <pre><code class="cs">// Load the DICOM file
 DicomFile dicomFile = DicomFile.Open("chest_xray.dcm");
@@ -450,10 +451,10 @@ image.CopyPixelsTo(pixels);</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     تحويل الترميز بين صيغ النقل
+     تحويل بين صيغ النقل
     </h2>
     <p>
-     أنظمة التصوير والأرشيفات تتطلب صيغ نقل DICOM محددة. يقوم Aspose.Medical for .NET بتحويل الترميز بين الصيغ غير المضغوطة، JPEG Baseline، JPEG Lossless، JPEG-LS، JPEG 2000، HTJ2K (JPEG 2000 عالي الأداء)، JPEG XL و RLE. HTJ2K و JPEG XL هما أحدث خيارين في معيار DICOM، وهنا تم تنفيذهما في .NET مثل أي مشفر آخر. تحويل الترميز مهم لتكامل PACS، لحجم الأرشيف وللتوافق بين الأنظمة. راجع <a href="/medical/net/dicom-transfer-syntax-conversion/">صفحة تحويل صيغ النقل</a> و<a href="/medical/net/jpeg2000/">صفحة JPEG 2000</a>.
+     أنظمة التصوير والأرشيفات تتطلب صيغ نقل DICOM محددة. Aspose.Medical for .NET تقوم بتحويل بين الصيغ غير المضغوطة، JPEG Baseline, JPEG Lossless, JPEG-LS, JPEG 2000, HTJ2K (JPEG 2000 عالي السرعة), JPEG XL و RLE. HTJ2K و JPEG XL هما أحدث خيارين في معيار DICOM، وتم تنفيذهما هنا في .NET مثل باقي المُرمّزات. التحويل مهم لتكامل PACS، لحجم الأرشيف، وللتوافق بين الأنظمة. راجع <a href="/medical/net/dicom-transfer-syntax-conversion/">صفحة تحويل صيغ النقل</a> و <a href="/medical/net/jpeg2000/">صفحة JPEG 2000</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -474,7 +475,7 @@ transcoded.Save("output.dcm");</code></pre>
      تسلسل DICOM إلى JSON و XML
     </h2>
     <p>
-     أنظمة الرعاية الصحية تتبادل البيانات عبر خدمات الويب، لذلك يقوم Aspose.Medical for .NET بتسلسل مجموعات بيانات DICOM إلى نموذج DICOM JSON (PS3.18) وإ إلى DICOM XML (PS3.19)، ويعيد تحليلهما إلى مجموعات البيانات. يعمل المرمّزون على السلاسل، التدفقات والأنابيب، بشكل متزامن وغير متزامن، ويمكن قراءة تسلسل من مجموعات البيانات واحدة تلو الأخرى دون الاحتفاظ بالوثيقة بالكامل في الذاكرة. تُحل مراجع البيانات الضخمة عبر محمل قابل للإضافة، بحيث تبقى بيانات البكسل الكبيرة خارج الوثيقة. راجع صفحات <a href="/medical/net/dicom-to-json/">DICOM إلى JSON</a> و<a href="/medical/net/dicom-to-xml/">DICOM إلى XML</a>.
+     أنظمة الرعاية الصحية تتبادل البيانات عبر خدمات الويب، لذا Aspose.Medical for .NET تقوم بتسلسل مجموعات بيانات DICOM إلى نموذج DICOM JSON (PS3.18) وإلى DICOM XML (PS3.19)، وتُعيد تحليل كليهما إلى مجموعات البيانات. تعمل المُسلسلات على السلاسل، التدفقات والأنابيب، بشكل متزامن وغير متزامن، ويمكن قراءة تسلسل من مجموعات البيانات واحدة تلو الأخرى دون حفظ المستند بالكامل في الذاكرة. تُحل مراجع البيانات الضخمة عبر محمل قابل للإضافة، بحيث يمكن إبقاء بيانات البكسل الكبيرة خارج المستند. راجع صفحات <a href="/medical/net/dicom-to-json/">DICOM إلى JSON</a> و <a href="/medical/net/dicom-to-xml/">DICOM إلى XML</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -495,10 +496,10 @@ Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     شبكة DICOM عبر DIMSE
+     شبكات DICOM عبر DIMSE
     </h2>
     <p>
-     يتواصل Aspose.Medical for .NET مع أنظمة DICOM الأخرى مباشرة. توفر المكتبة عميل DIMSE وخادم DIMSE من أجل C-ECHO, C-STORE, C-FIND, C-MOVE و C-GET، إلى جانب خدمات N، تفاوض الارتباط مع سياقات العرض والأدوار، نوافذ العمليات غير المتزامنة، تفاوض هوية المستخدم و TLS. تُضع الطلبات في صف على الارتباط وتُستجيب بواسطة المعالجات التي تسجلها، وبالتالي يمكن إنشاء عقدة تخزين وإعادة توجيه، وكيل استعلام أو اختبار SCP ببضع فئات. يغطي <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">دليل شبكة DICOM</a> كامل الـ API.
+     Aspose.Medical for .NET يتواصل مباشرة مع أنظمة DICOM الأخرى. توفر المكتبة عميل DIMSE وخادم DIMSE لـ C-ECHO، C-STORE، C-FIND، C-MOVE و C-GET، إلى جانب خدمات N، والتفاوض على الارتباط مع سياقات العرض والأدوار، نوافذ العمليات غير المتزامنة، التفاوض على هوية المستخدم و TLS. تُضع الطلبات في طابور على الارتباط وتُستجاب بواسطة المعالجات التي تسجّلها، لذا فإن عقدة التخزين والإعادة، أو وكيل الاستعلام، أو اختبار SCP هي مجرد بضع فئات. يغطي <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">دليل شبكات DICOM</a> الواجهة البرمجية بالكامل.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -533,10 +534,39 @@ await client.StopAsync();</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     ملفات DICOM الكبيرة بدون ذاكرة كبيرة
+     عميل DICOMweb
     </h2>
     <p>
-     لا تتسع صور الشرائح الكاملة، السلاسل الطويلة والدراسات متعددة الإطارات للذاكرة بسهولة. يتيح لك Aspose.Medical for .NET تحديد مقدار التحميل من الملف: قراءة كل شيء، تأجيل العناصر التي تتجاوز حد الحجم حتى يتم الوصول إليها، أو تخطيها والعمل فقط بالبيانات الوصفية. القراءة من تدفق أو أنبوب والكتابة بنفس الطريقة يحافظ على تحرك البيانات بدلاً من تراكمها. يوضح <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">دليل إدارة الذاكرة</a> المقايضات.
+     خدمات التصوير السحابية والأرشيفات الحديثة تعرض DICOM عبر HTTP. عميل DICOMweb في Aspose.Medical for .NET يلتف حول كل عملية قياسية في طريقة مُصنّفة: بحث QIDO-RS، استرجاع دراسات، سلاسل، مثيلات، إطارات، صور مُعرضة وصغار الصور عبر WADO-RS، تحميل STOW-RS، WADO-URI، وخدمات قائمة الأعمال، خطوة الإجراء والالتزام بالتخزين. يعمل على <code>HttpClient</code> الخاص بك، لذا تبقى المصادقة وTLS حيث يقوم تطبيقك بضبطهما، وتصل النتائج كمجموعات البيانات والملفات نفسها التي يتعامل معها باقي المكتبة. راجع <a href="/medical/net/dicomweb-client/">صفحة عميل DICOMweb</a>.
+    </p>
+    <div class="codeblock" id="code">
+     <h3>
+      بحث عن دراسات على خادم DICOMweb - C#
+     </h3>
+     <pre><code class="cs">using HttpClient http = new HttpClient();
+
+DicomWebClient client = new DicomWebClient(http, new DicomWebClientOptions
+{
+    BaseUri = new Uri("https://pacs.example.org/dicom-web/")
+});
+
+DicomWebSearchOptions search = new DicomWebSearchOptions
+{
+    MatchingParameters = [new DicomWebQueryParameter("PatientID", "PATIENT-001")]
+};
+
+await using DicomWebClientStream&lt;Dataset&gt; studies = await client.Studies.SearchAsync(search);
+
+await foreach (Dataset study in studies)
+    Console.WriteLine(study.GetSingleValueOrDefault(Tag.StudyInstanceUID, string.Empty));</code></pre>
+    </div>
+   </div>
+   <div class="col-lg-12">
+    <h2 class="h2title">
+     ملفات DICOM الكبيرة دون ذاكرة كبيرة
+    </h2>
+    <p>
+     لا تتناسب صور الشريحة الكاملة، السلاسل الطويلة والدراسات متعددة الإطارات بسهولة مع الذاكرة. Aspose.Medical for .NET يتيح لك تحديد مقدار ما يتم تحميله من الملف: قراءة كل شيء، تأخير العناصر التي تتجاوز عتبة حجم معينة حتى يتم الوصول إليها، أو تخطيها والعمل فقط مع البيانات الوصفية. القراءة من تدفق أو أنبوب والكتابة بنفس الطريقة يحافظ على حركة البيانات بدلاً من تراكمها. يشرح <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">دليل إدارة الذاكرة</a> المزايا والعيوب.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -560,7 +590,7 @@ string? patientName = metadataOnly.Dataset.GetSingleValueOrDefault(Tag.PatientNa
 
 {{< blocks/products/pf/support-learning-resources >}}
 {{< blocks/products/pf/slr-tab tabTitle="موارد التعلم" tabId="resources" >}}
-{{< blocks/products/pf/slr-element name="التوثيق" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="الوثائق" href="https://docs.aspose.com/medical/net/" >}}
 {{< blocks/products/pf/slr-element name="دليل المطور" href="https://docs.aspose.com/medical/net/developer-guide/" >}}
 {{< blocks/products/pf/slr-element name="مراجع API" href="https://reference.aspose.com/medical/net/" >}}
 {{< /blocks/products/pf/slr-tab >}}
@@ -574,7 +604,7 @@ string? patientName = metadataOnly.Dataset.GetSingleValueOrDefault(Tag.PatientNa
 
 {{< blocks/products/pf/slr-tab tabTitle="لماذا Aspose.Medical for .NET؟" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="قائمة العملاء" href="https://company.aspose.com/customers" >}}
-{{< blocks/products/pf/slr-element name="قصص النجاح" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< blocks/products/pf/slr-element name="قصص نجاح" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< /blocks/products/pf/support-learning-resources >}}

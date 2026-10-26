@@ -2,18 +2,18 @@
 title: C# .NET DICOM Medical Imaging API | Aspose.Medical
 weight: 1000
 url: /net/
-description: Pure .NET library for DICOM medical imaging. Read, write, anonymize, transcode and render DICOM files, serialize them to JSON and XML, and exchange studies over DIMSE.
+description: Pure .NET library for DICOM medical imaging. Read, write, anonymize, transcode and render DICOM files, serialize them to JSON and XML, and exchange studies over DIMSE and DICOMweb.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1=".NET API for DICOM Medical Imaging" h2="Read, write, anonymize, transcode and render DICOM files in .NET C#, and exchange studies over DIMSE, without any external software or native dependencies." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET API for DICOM Medical Imaging" h2="Read, write, anonymize, transcode and render DICOM files in .NET C#, and exchange studies over DIMSE and DICOMweb, without any external software or native dependencies." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong> is a pure .NET class library for working with DICOM (Digital Imaging and Communications in Medicine) files. It lets developers read, write, modify, anonymize, transcode and render medical imaging data, serialize it to DICOM JSON and DICOM XML, and exchange studies with other systems over DIMSE, without any external software or native dependencies.</p>
+<p><strong>Aspose.Medical for .NET</strong> is a pure .NET class library for working with DICOM (Digital Imaging and Communications in Medicine) files. It lets developers read, write, modify, anonymize, transcode and render medical imaging data, serialize it to DICOM JSON and DICOM XML, and exchange studies with other systems over DIMSE and DICOMweb, without any external software or native dependencies.</p>
 
 <p>The library is written entirely in managed C# and runs on .NET 10 on Windows, Linux and macOS. There are no native binaries and no third-party NuGet packages, so the library deploys as a single assembly into any .NET application, from a desktop tool to a container in a cloud healthcare system.</p>
 
@@ -27,6 +27,7 @@ description: Pure .NET library for DICOM medical imaging. Read, write, anonymize
     <li>Render frames to BGRA pixels with the modality LUT, the VOI LUT (window and level) and overlays applied by the renderer.</li>
     <li>Serialize datasets to the DICOM JSON Model (PS3.18) and to DICOM XML (PS3.19) and back, including asynchronous streaming and pluggable bulk data loading.</li>
     <li>Communicate over DIMSE with a client and a server: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET, the N-services, and TLS.</li>
+    <li>Search, download and upload studies on any DICOMweb server with a typed client for QIDO-RS, WADO-RS, STOW-RS, rendered images, WADO-URI and the workflow services.</li>
 </ul>
 </p>
 
@@ -529,6 +530,35 @@ client.QueueRequest(new CStoreRequest(dicomFile.Dataset, TransferSyntax.Explicit
 
 await client.SendAsync(CancellationToken.None);
 await client.StopAsync();</code></pre>
+    </div>
+   </div>
+   <div class="col-lg-12">
+    <h2 class="h2title">
+     DICOMweb Client
+    </h2>
+    <p>
+     Cloud imaging services and modern archives expose DICOM over HTTP. The DICOMweb client in Aspose.Medical for .NET wraps every standard transaction in a typed method: QIDO-RS search, WADO-RS retrieval of studies, series, instances, frames, rendered images and thumbnails, STOW-RS upload, WADO-URI, and the worklist, procedure step and storage commitment services. It runs on your own <code>HttpClient</code>, so authentication and TLS stay where your application configures them, and results arrive as the same datasets and files the rest of the library works with. See the <a href="/medical/net/dicomweb-client/">DICOMweb client page</a>.
+    </p>
+    <div class="codeblock" id="code">
+     <h3>
+      Search studies on a DICOMweb server - C#
+     </h3>
+     <pre><code class="cs">using HttpClient http = new HttpClient();
+
+DicomWebClient client = new DicomWebClient(http, new DicomWebClientOptions
+{
+    BaseUri = new Uri("https://pacs.example.org/dicom-web/")
+});
+
+DicomWebSearchOptions search = new DicomWebSearchOptions
+{
+    MatchingParameters = [new DicomWebQueryParameter("PatientID", "PATIENT-001")]
+};
+
+await using DicomWebClientStream&lt;Dataset&gt; studies = await client.Studies.SearchAsync(search);
+
+await foreach (Dataset study in studies)
+    Console.WriteLine(study.GetSingleValueOrDefault(Tag.StudyInstanceUID, string.Empty));</code></pre>
     </div>
    </div>
    <div class="col-lg-12">

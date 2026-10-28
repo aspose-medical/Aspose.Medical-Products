@@ -188,7 +188,7 @@ catch (DicomWebClientException ex)
 
 <p>A file downloaded with the client is a regular <code>DicomFile</code>. It can be anonymized, transcoded, rendered or serialized in the same process, with no conversion step and no second library in the chain.</p>
 
-<p>Related pages: <a href="/medical/net/dicom-networking/">DICOM networking</a> for archives that speak DIMSE instead of HTTP, <a href="/medical/net/anonymization/">anonymization</a> before a study leaves the hospital, <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer syntax conversion</a> for what the server stores, and <a href="/medical/net/dicom-to-json/">DICOM to JSON</a> for the format QIDO-RS search results use.</p>
+<p>Related pages: <a href="/medical/net/dicomweb-server/">DICOMweb server</a> for the other side of the protocol in your own ASP.NET Core service, <a href="/medical/net/dicom-networking/">DICOM networking</a> for archives that speak DIMSE instead of HTTP, <a href="/medical/net/anonymization/">anonymization</a> before a study leaves the hospital, <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer syntax conversion</a> for what the server stores, and <a href="/medical/net/dicom-to-json/">DICOM to JSON</a> for the format QIDO-RS search results use.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

@@ -28,6 +28,7 @@ description: Pure .NET library for DICOM medical imaging. Read, write, anonymize
     <li>Serialize datasets to the DICOM JSON Model (PS3.18) and to DICOM XML (PS3.19) and back, including asynchronous streaming and pluggable bulk data loading.</li>
     <li>Communicate over DIMSE with a client and a server: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET, the N-services, and TLS.</li>
     <li>Search, download and upload studies on any DICOMweb server with a typed client for QIDO-RS, WADO-RS, STOW-RS, rendered images, WADO-URI and the workflow services.</li>
+    <li>Build your own DICOMweb server: QIDO-RS, WADO-RS, STOW-RS and the workflow services on ASP.NET Core or any other HTTP host, with your storage behind them.</li>
 </ul>
 </p>
 
@@ -534,10 +535,10 @@ await client.StopAsync();</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOMweb Client
+     DICOMweb Client and Server
     </h2>
     <p>
-     Cloud imaging services and modern archives expose DICOM over HTTP. The DICOMweb client in Aspose.Medical for .NET wraps every standard transaction in a typed method: QIDO-RS search, WADO-RS retrieval of studies, series, instances, frames, rendered images and thumbnails, STOW-RS upload, WADO-URI, and the worklist, procedure step and storage commitment services. It runs on your own <code>HttpClient</code>, so authentication and TLS stay where your application configures them, and results arrive as the same datasets and files the rest of the library works with. See the <a href="/medical/net/dicomweb-client/">DICOMweb client page</a>.
+     Cloud imaging services and modern archives expose DICOM over HTTP. The DICOMweb client in Aspose.Medical for .NET wraps every standard transaction in a typed method: QIDO-RS search, WADO-RS retrieval of studies, series, instances, frames, rendered images and thumbnails, STOW-RS upload, WADO-URI, and the worklist, procedure step and storage commitment services. It runs on your own <code>HttpClient</code>, so authentication and TLS stay where your application configures them, and results arrive as the same datasets and files the rest of the library works with. The same library implements the server side: it handles the protocol of QIDO-RS, WADO-RS, STOW-RS and the workflow services, and your code connects the storage. See the <a href="/medical/net/dicomweb-client/">DICOMweb client</a> and <a href="/medical/net/dicomweb-server/">DICOMweb server</a> pages.
     </p>
     <div class="codeblock" id="code">
      <h3>

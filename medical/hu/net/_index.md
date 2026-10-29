@@ -1,38 +1,39 @@
 ---
-title: C# .NET DICOM Orvosi Képalkotás API | Aspose.Medical
+title: C# .NET DICOM orvosi képalkotó API | Aspose.Medical
 weight: 1000
 url: /hu/net/
-description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, anonimizál, transzkódol és megjelenít DICOM fájlokat, sorosítja őket JSON-be és XML-be, valamint tanulmánycserét végez DIMSE és DICOMweb segítségével.
+description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, anonimít, transzkódol és renderel DICOM fájlokat, sorosítja őket JSON-ba és XML-be, és tanulmánycserét végez DIMSE és DICOMweb felett.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1=".NET API DICOM Orvosi Képalkotáshoz" h2="Olvas, ír, anonimizál, transzkódol és megjelenít DICOM fájlokat .NET C#-ban, és tanulmánycserét végez DIMSE és DICOMweb felett, külső szoftver vagy natív függőségek nélkül." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET API DICOM orvosi képalkotáshoz" h2="Olvas, ír, anonimít, transzkódol és renderel DICOM fájlokat .NET C#-ban, és tanulmánycserét végez DIMSE és DICOMweb felett, külső szoftver vagy natív függőségek nélkül." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong> egy tiszta .NET osztálykönyvtár a DICOM (Digital Imaging and Communications in Medicine) fájlokkal való munkához. Lehetővé teszi a fejlesztők számára a DICOM orvosi képalkotási adatok olvasását, írását, módosítását, anonimizálását, transzkódolását és megjelenítését, sorosítását DICOM JSON és DICOM XML formátumba, valamint tanulmánycserét más rendszerekkel DIMSE és DICOMweb felett, külső szoftver vagy natív függőségek nélkül.</p>
+<p><strong>Aspose.Medical for .NET</strong> egy tiszta .NET osztálykönyvtár a DICOM (Digital Imaging and Communications in Medicine) fájlokkal való munkához. Lehetővé teszi a fejlesztők számára a DICOM orvosi képadatok olvasását, írását, módosítását, anonimítását, transzkódolását és renderelését, sorosítását DICOM JSON és DICOM XML formátumba, valamint a tanulmányok cseréjét más rendszerekkel DIMSE és DICOMweb segítségével, külső szoftver vagy natív függőségek nélkül.</p>
 
-<p>A könyvtár teljesen menedzselt C#-ban íródott, és .NET 10-en fut Windows, Linux és macOS rendszereken. Nincsenek natív binárisok és harmadik féltől származó NuGet csomagok, így a könyvtár egyetlen assembly-ként telepíthető bármely .NET alkalmazásba, legyen az asztali eszköz vagy egy felhőalapú egészségügyi rendszer konténer.</p>
+<p>A könyvtár teljesen managed C#-ban van megírva és .NET 10-en fut Windows, Linux és macOS rendszereken. Nincsenek natív binárisok és harmadik féltől származó NuGet csomagok, így a könyvtár egyetlen assembly-ként telepíthető bármely .NET alkalmazásba, legyen az asztali eszköz vagy felhőalapú egészségügyi rendszer konténerben.</p>
 
 <p><strong>Főbb jellemzők:</strong>
 <ul>
-    <li>DICOM fájlok olvasása és írása fájlból, streamekből vagy csővezetékből, szinkron vagy aszinkron módon, teljes támogatással minden szabványos adat elem és érték reprezentáció számára.</li>
-    <li>Memóriakezelés nagy fájlok esetén: betölti az összes elemet, halasztja a nagy elemek betöltését amíg használatra kerülnek, vagy átugorja őket és csak a metaadatokat olvassa.</li>
-    <li>Bármely adat elem olvasása és szerkesztése, beleértve a sorozatokat és privát tageket is, nem-ASCII karakterkészlet kezelésével.</li>
-    <li>DICOM fájlok anonimizálása a DICOM PS 3.15 titoktartási profiljaival, opciókkal az UID-ek, dátumok, eszköz és intézmény azonosítók és a beteg jellemzők megtartására.</li>
-    <li>Átfordítás (transcode) a transzfer szintaxisok között: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL és RLE, minden kodek .NET-ben megvalósítva.</li>
-    <li>Képkockák renderelése BGRA pixelekre a modalitás LUT, a VOI LUT (ablak és szint) és a rétegek segítségével, amelyeket a renderelő alkalmaz.</li>
-    <li>Adatkészletek sorosítása a DICOM JSON Model (PS3.18) és a DICOM XML (PS3.19) formátumokba és vissza, beleértve az aszinkron streamelést és a moduláris tömeges adat betöltést.</li>
-    <li>Kommunikáció DIMSE-n keresztül kliens-szerver módon: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET, az N-szolgáltatások és TLS.</li>
-    <li>Tanulmányok keresése, letöltése és feltöltése bármely DICOMweb szerveren típusos klienssel a QIDO-RS, WADO-RS, STOW-RS, renderelt képek, WADO-URI és a munkafolyamat-szolgáltatásokhoz.</li>
-    <li>Építsd meg saját DICOMweb szervered: QIDO-RS, WADO-RS, STOW-RS és a munkafolyamat-szolgáltatások ASP.NET Core vagy bármilyen más HTTP hoston, a tárolóval a háttérben.</li>
+    <li>Olvassa és írja a DICOM fájlokat fájlból, streamekből vagy csővezetékből, szinkron vagy aszinkron módon, teljes körű támogatással az összes szabványos adat elemre és érték reprezentációra.</li>
+    <li>Memóriakezelés nagyméretű fájloknál: töltsön be minden elemet, halassza el a nagy elemek betöltését amíg szükséges, vagy hagyja ki őket és csak a metaadatokat olvassa.</li>
+    <li>Olvassa és szerkessze bármely adat elemet, beleértve a szekvenciákat és a privát címkéket, karakterkódolás kezelésével nem ASCII szövegekhez.</li>
+    <li>Anonimizálja a DICOM fájlokat a DICOM PS 3.15 titoktartási profilokkal, opciókkal az UID-ek, dátumok, eszköz és intézmény azonosítók, valamint a beteg jellemzők megtartására.</li>
+    <li>Transzkódolás átviteli szintaxisok között: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL és RLE, minden kodek .NET-ben implementálva.</li>
+    <li>Renderelje a képkockákat BGRA pixelekre a modalitás LUT, a VOI LUT (ablak és szint) és a rétegek alkalmazásával.</li>
+    <li>Sorosítja az adatcsoportokat a DICOM JSON Modell (PS3.18) és a DICOM XML (PS3.19) formátumba és vissza, beleértve az aszinkron streaming-et és a plug-in bulk adat betöltést.</li>
+    <li>Kommunikáljon DIMSE-n keresztül kliens és szerver oldalán: C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, C‑GET, az N‑szolgáltatások, és TLS.</li>
+    <li>Kérdezze le a modalitás munkalistát, jelentse az MPPS-t és adja ki a munkát UPS‑RS munkatárgyakkal, kliensként és szerverként egyaránt.</li>
+    <li>Keresés, letöltés és feltöltés tanulmányok bármely DICOMweb szerveren típusos klienssel a QIDO‑RS, WADO‑RS, STOW‑RS, renderelt képek, WADO‑URI és a munkafolyamat szolgáltatásokhoz.</li>
+    <li>Építsen saját DICOMweb szervert: QIDO‑RS, WADO‑RS, STOW‑RS és a munkafolyamat szolgáltatások ASP.NET Core vagy bármely más HTTP hoston, tárolásával mögöttük.</li>
 </ul>
 </p>
 
-<p>Az Aspose.Medical for .NET önálló. Nem igényel DICOM megjelenítőt, orvosi képalkotó szoftvert vagy natív kodekeket. Alkalmas egészségügyi IT rendszerekhez, PACS integrációhoz, telemedicina platformokhoz és bármely olyan alkalmazáshoz, amely megbízható DICOM adatfeldolgozást igényel.</p>
+<p>Aspose.Medical for .NET önálló. Nem igényel DICOM megjelenítőt, orvosi képalkotó szoftvert vagy natív kodekeket. Alkalmas egészségügyi IT rendszerekhez, PACS integrációhoz, telemedicina platformokhoz és bármely alkalmazáshoz, amely megbízhatóan kell, hogy feldolgozza a DICOM adatokat.</p>
 
 {{< /blocks/products/pf/tab-content >}}
 
@@ -50,28 +51,28 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
    </header>
    <ul>
     <li>
-     Olvasás &amp; írás fájlok, streamek, csövek
+     Fájlok, streamek és csövek olvasása &amp; írása
     </li>
     <li>
-     DICOM tagek &amp; elemek kezelése
+     DICOM címkék &amp; elemek kezelése
     </li>
     <li>
-     Többkeretes képek támogatása
+     Többkeretes kép támogatás
     </li>
     <li>
-     Privát tagek kezelése
+     Privát címkék kezelése
     </li>
     <li>
-     Karakterkódolás támogatása
+     Karakterkódolás támogatás
     </li>
     <li>
-     Memóriakezelés nagy fájlokhoz
+     Memória kezelése nagy fájloknál
     </li>
    </ul>
    <header>
     <i class="fa fa-shield">
     </i>
-    Adatvédelem
+    Adatvédelmi
    </header>
    <ul>
     <li>
@@ -81,7 +82,7 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
      PS 3.15 titoktartási profilok
     </li>
     <li>
-     Konfigurálható megőrzési opciók
+     Konfigurálható megtartási beállítások
     </li>
    </ul>
   </div>
@@ -94,16 +95,16 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
    </header>
    <ul>
     <li>
-     Képkocka renderelése BGRA pixelekre
+     Keret renderelése BGRA pixelekre
     </li>
     <li>
      Modalitás LUT &amp; VOI LUT alkalmazva
     </li>
     <li>
-     Kép overlay támogatás
+     Kép réteg támogatás
     </li>
     <li>
-     Transzfer szintaxis konverzió
+     Átviteli szintaxis átalakítás
     </li>
     <li>
      JPEG 2000, HTJ2K &amp; JPEG XL tömörítés
@@ -125,7 +126,7 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
      C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </li>
     <li>
-     N-szolgáltatások &amp; asszociáció vezérlés
+     N-Services &amp; asszociáció vezérlés
     </li>
     <li>
      TLS kapcsolatok
@@ -143,7 +144,7 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
   <footer>
    <small>
     <em>
-     számára
+     for
     </em>
     .NET
    </small>
@@ -165,13 +166,13 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
    </header>
    <ul>
     <li>
-     100% menedzselt C# kód
+     100% Managed C# kód
     </li>
     <li>
-     Nincs natív függőség
+     Nincsenek natív függőségek
     </li>
     <li>
-     Nincs harmadik féltől származó csomag
+     Nincsenek harmadik féltől származó csomagok
     </li>
     <li>
      Önálló telepítés
@@ -200,13 +201,13 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
    </header>
    <ul>
     <li>
-     Windows 10, Windows 11, Windows Server 2016 és későbbi
+     Windows 10, Windows 11, Windows Server 2016 és újabb
     </li>
     <li>
      Linux: Ubuntu 20.04+, Debian 10+, CentOS 8+
     </li>
     <li>
-     macOS 11 és későbbi
+     macOS 11 és újabb
     </li>
    </ul>
   </div>
@@ -221,7 +222,7 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
   <footer>
    <small>
     <em>
-     számára
+     for
     </em>
     .NET
    </small>
@@ -258,7 +259,7 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
    <header>
     <i class="fa fa-compress">
     </i>
-    Pixeldátum tömörítés
+    Pixeladat tömörítés
    </header>
    <ul>
     <li>
@@ -271,18 +272,18 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
    <header>
     <i class="fa fa-mail-forward">
     </i>
-    Megjelenítési kimenet
+    Render kimenet
    </header>
    <ul>
     <li>
      <b>
       Pixelek:
      </b>
-     BGRA 32-bites pufferek bármely képalkotó könyvtárhoz
+     BGRA 32-bit buffers for any imaging library
     </li>
     <li>
      <b>
-      Beépített kép fájl:
+      Beépített képfájl:
      </b>
      PNM
     </li>
@@ -290,11 +291,11 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
    <header>
     <i class="fa fa-mail-reply">
     </i>
-    Raszter bemenet
+    Raster bemenet
    </header>
    <ul>
     <li>
-     Pixelpufferek, amelyeket külső képalkotó könyvtár dekódol, frame‑ről‑frame‑re íródnak a DICOM pixeldátumba
+     Pixel buffers decoded by an external imaging library, written into DICOM pixel data frame by frame
     </li>
    </ul>
   </div>
@@ -309,7 +310,7 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
   <footer>
    <small>
     <em>
-     számára
+     for
     </em>
     .NET
    </small>
@@ -345,56 +346,56 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
     <em class="fa fa-tags ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Minden DICOM tag, sorozat és privát elem hozzáférése és manipulálása
+     Minden DICOM címke, sorozat és privát elem hozzáférése és manipulálása
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-shield ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Betegadatok anonimizálása DICOM PS 3.15 titoktartási profilokkal
+     Betegek adatainak anonimizálása a DICOM PS 3.15 titoktartási profiljaival
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-exchange ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Transzkódolás a transzfer szintaxisok között, beleértve a HTJ2K-t és a JPEG XL-t
+     Transzformálás átviteli szintaxisok között, beleértve a HTJ2K-t és a JPEG XL-t
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-picture-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Képkockák renderelése pixelekre nézők, miniatűrök és kép exportálás céljából
+     Keretek renderelése pixelekre nézegetőkhöz, előnézetekhez és képexportáláshoz
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-code ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     DICOM adatok sorosítása JSON-ba és XML-be, aszinkron streamelés mellett
+     DICOM adatok sorosítása JSON-ba és XML-be, aszinkron streaminggel
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sitemap ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Tanulmánycserélés DIMSE-n keresztül: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
+     Tanulmánycserét végez DIMSE felett: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-database ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Memóriahasználat csökkentése nagy fájloknál a nagy elemek halasztásával vagy átugrásával
+     Nagy fájlok memóriaigényének csökkentése nagy elemek halasztásával vagy kihagyásával
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sliders ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Többkeretes képek renderelése modalitás LUT, VOI LUT és overlay-ekkel
+     Többkeretes képek renderelése modalitás LUT, VOI LUT és rétegek segítségével
     </p>
    </div>
    <div class="col-lg-12">
@@ -402,15 +403,15 @@ description: Tiszta .NET könyvtár DICOM orvosi képalkotáshoz. Olvas, ír, an
      Tiszta .NET könyvtár - Nulla függőség
     </h2>
     <p>
-     Az Aspose.Medical for .NET teljes egészében menedzselt C#-ban íródott, és egyetlen assembly‑ként kerül szállításra natív binárisok és harmadik féltől származó NuGet csomagok nélkül. Más orvosi képalkotó könyvtárak natív kodekekre vagy külső eszközökre támaszkodnak; ez nem így van. Minden kép tömörítő kodek (JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE) .NET‑ben van megvalósítva, így a könyvtár ugyanúgy működik Windows, Linux és macOS rendszereken. Ez ideálissá teszi konténerek, felhő környezetek és bármely telepítés számára, ahol a natív könyvtárak telepítése nem opció. A csomag .NET 10‑et célozza.
+     Aspose.Medical for .NET teljes egészében managed C#-ban íródott és egyetlen assembly‑ként kerül szállításra natív binárisok és harmadik féltől származó NuGet csomagok nélkül. Más orvosi képalkotó könyvtárak natív kodekekre vagy külső eszközökre támaszkodnak; ez a nem. Minden kép tömörítési kodek (JPEG, JPEG‑LS, JPEG 2000, HTJ2K, JPEG XL, RLE) .NET‑ben van implementálva, így a könyvtár ugyanúgy működik Windows, Linux és macOS rendszereken. Ez ideálissá teszi konténerekhez, felhő környezetekhez és bármely olyan telepítéshez, ahol a natív könyvtárak telepítése nem opció. A csomag .NET 10‑et céloz.
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOM fájlok anonimizálása az adatvédelmi megfelelés érdekében
+     DICOM fájlok anonimizálása az adatvédelmi megfeleléshez
     </h2>
     <p>
-     A betegadatok védelme alapvető követelmény az egészségügyi alkalmazásokban. Az Aspose.Medical for .NET a DICOM PS 3.15 titoktartási profiljaival anonimizálja a DICOM adatokat. Eltávolíthat vagy helyettesíthet betegazonosító információkat, miközben megőrzi a képalkotási adatok klinikai értékét, és kiválaszthatja, mit őriz meg a profil: biztonságos privát attribútumok, UID-ek, eszköz- és intézményazonosítók, betegjellemzők, valamint longitudinális időbeli információk. A <a href="/medical/net/anonymization/">DICOM anonimizálási oldal</a> részletesen bemutatja a profilopciókat.
+     A beteg adatvédelem szigorú követelmény az egészségügyi alkalmazásokban. Az Aspose.Medical for .NET a DICOM PS 3.15 titoktartási profiljaival anonimizálja a DICOM adatokat. Eltávolíthatja vagy helyettesítheti a beteg személyazonosító információkat, miközben megőrzi a klinikai értéket, és kiválaszthatja, mit tart meg egy profil: biztonságos privát attribútumok, UID‑ek, eszköz‑ és intézmény‑azonosítók, betegjellemzők, valamint longitudinális időbeli információk. A <a href="/medical/net/anonymization/">DICOM anonimizálás oldal</a> részletesen bemutatja a profilopciókat.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -430,14 +431,14 @@ anonymized.Save("anonymized_scan.dcm");</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOM képkockák renderelése .NET C#-ban
+     Render DICOM Frames in .NET C#
     </h2>
     <p>
-     Az Aspose.Medical for .NET egy DICOM képkockát 32‑bit BGRA pixel képbe renderel. A renderelő alkalmazza a fotometrikus interpretációt, a modalitás LUT-ot és a VOI LUT-ot (ablak és szint) az adatkészletből, és megrajzolja az overlay‑eket, így az eredmény megegyezik a megjelenítő által mutatottakkal. A pixelek ezután a tiéd: másold őket egy pufferbe és add át bármelyik képalkotó könyvtárnak PNG, JPEG vagy TIFF mentéshez. Az egyetlen beépített kép enkóder a PNM. A konverziós oldalak bemutatják a teljes útvonalat a <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a> és <a href="/medical/net/dicom-to-tiff/">TIFF</a> esetén.
+     Az Aspose.Medical for .NET egy DICOM keretet renderel 32‑bit BGRA pixelképbe. A renderelő felhasználja a fotometrikus interpretációt, a modalitás LUT‑ot és a VOI LUT‑ot (ablak és szint) az adatcsoportból, és megrajzolja a rétegeket, így az eredmény megegyezik egy megjelenítő által mutatottal. A pixelek ezután az Öné: másolja őket egy pufferbe és adja át bármely képalkotó könyvtárnak PNG, JPEG vagy TIFF mentéshez. A könyvtárban egyetlen beépített kép‑enkóder van: PNM. A konverziós oldalakon teljes útmutatás található a <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a> és <a href="/medical/net/dicom-to-tiff/">TIFF</a> formátumokhoz.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      DICOM képkocka renderelése - C#
+      Render a DICOM frame - C#
      </h3>
      <pre><code class="cs">// Load the DICOM file
 DicomFile dicomFile = DicomFile.Open("chest_xray.dcm");
@@ -452,14 +453,14 @@ image.CopyPixelsTo(pixels);</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Transzkódolás a transzfer szintaxisok között
+     Transcode Between Transfer Syntaxes
     </h2>
     <p>
-     Képalkotó rendszerek és archívumok specifikus DICOM transzfer szintaxisokat igényelnek. Az Aspose.Medical for .NET transzkódol az unkomprimált formátumok, JPEG Baseline, JPEG Lossless, JPEG-LS, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL és RLE között. A HTJ2K és a JPEG XL a DICOM szabvány legújabb két opciója, és itt .NET‑ben vannak megvalósítva, mint a többi kodek. A transzkódolás fontos a PACS integrációhoz, az archívum méretéhez és a rendszerek közti kompatibilitáshoz. Lásd a <a href="/medical/net/dicom-transfer-syntax-conversion/">transzfer szintaxis konverzió oldalát</a> és a <a href="/medical/net/jpeg2000/">JPEG 2000 oldalt</a>.
+     A képalkotó rendszerek és archívumok specifikus DICOM átviteli szintaxisokat igényelnek. Az Aspose.Medical for .NET transzkódol a nem tömörített formátumok, a JPEG Baseline, a JPEG Lossless, a JPEG‑LS, a JPEG 2000, a HTJ2K (High‑Throughput JPEG 2000), a JPEG XL és az RLE között. A HTJ2K és a JPEG XL a DICOM szabvány legújabb opciói, és itt .NET‑ben vannak implementálva, mint minden többi kodek. A transzkódolás fontos a PACS integrációban, az archiv méretének és a rendszerek közti kompatibilitásban. Lásd a <a href="/medical/net/dicom-transfer-syntax-conversion/">átviteli szintaxis konverzió oldalát</a> és a <a href="/medical/net/jpeg2000/">JPEG 2000 oldalt</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      DICOM átkódolása HTJ2K-re - C#
+      Transcode DICOM to HTJ2K - C#
      </h3>
      <pre><code class="cs">// Load existing DICOM file
 DicomFile dicomFile = DicomFile.Open("input.dcm");
@@ -473,14 +474,14 @@ transcoded.Save("output.dcm");</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOM sorosítás JSON-ba és XML-be
+     DICOM to JSON and XML Serialization
     </h2>
     <p>
-     Az egészségügyi rendszerek webszolgáltatásokon keresztül cserélnek adatot, így az Aspose.Medical for .NET sorosítja a DICOM adatkészleteket a DICOM JSON Modellbe (PS3.18) és a DICOM XML-be (PS3.19), majd vissza is olvassa őket adatkészletekké. A szérializálók karakterláncokkal, streamekkel és csövekkel működnek, szinkron és aszinkron módon, és egy adatkészlet sorozatot egyesével lehet beolvasni anélkül, hogy a teljes dokumentumot a memóriában tartanák. A tömeges adat hivatkozásokat egy plug‑in betöltő oldja feloldani, így a nagy pixeldátum kívül maradhat a dokumentumon. Lásd a <a href="/medical/net/dicom-to-json/">DICOM JSON</a> és <a href="/medical/net/dicom-to-xml/">DICOM XML</a> oldalakat.
+     Az egészségügyi rendszerek webszolgáltatásokon keresztül cserélnek adatot, ezért az Aspose.Medical for .NET sorosítja a DICOM adatcsoportokat a DICOM JSON Modellbe (PS3.18) és a DICOM XML‑be (PS3.19), valamint visszaparzezi mindkettőt adatcsoportokká. A sorosítók stringeken, streameken és csöveken dolgoznak, szinkron és aszinkron módon, és egy adatcsoport sorozatot olvashat egyesével, anélkül, hogy az egész dokumentum memóriában maradna. A bulk adat hivatkozások egy plug‑in‑loaderrel oldhatók fel, ezért a nagy pixeladatok kívül maradhatnak a dokumentumon. Lásd a <a href="/medical/net/dicom-to-json/">DICOM JSON</a> és a <a href="/medical/net/dicom-to-xml/">DICOM XML</a> oldalakat.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      DICOM sorosítása JSON-ba és XML-be - C#
+      Serialize DICOM to JSON and XML - C#
      </h3>
      <pre><code class="cs">// Load the DICOM file
 DicomFile dicomFile = DicomFile.Open("patient_scan.dcm");
@@ -497,14 +498,14 @@ Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOM hálózat DIMSE-en keresztül
+     DICOM Networking over DIMSE
     </h2>
     <p>
-     Az Aspose.Medical for .NET közvetlenül kommunikál más DICOM rendszerekkel. A könyvtár DIMSE klienst és DIMSE szervert biztosít C-ECHO, C-STORE, C-FIND, C-MOVE és C-GET műveletekhez, valamint az N-szolgáltatásokat, az asszociációs egyeztetést bemutatási kontextusokkal és szerepkörökkel, aszinkron műveleti ablakokkal, felhasználói identitás egyeztetéssel és TLS-szel. A kérések egy asszociáción belül sorba állnak, és a regisztrált kezelők válaszolnak rájuk, így egy store‑and‑forward csomópont, egy lekérdezési proxy vagy egy teszt SCP néhány osztályból áll. A <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM hálózati útmutató</a> lefedi a teljes API‑t.
+     Az Aspose.Medical for .NET közvetlenül kommunikál más DICOM rendszerekkel. A könyvtár DIMSE klienset és DIMSE szervert biztosít C‑ECHO, C‑STORE, C‑FIND, C‑MOVE és C‑GET számára, együtt az N‑szolgáltatásokkal, a prezentációs kontextusokkal és szerepekkel, aszinkron műveleti ablakokkal, felhasználó‑azonosító egyeztetéssel és TLS‑szel. A kérések egy asszociáción belül sorba állnak, és a regisztrált handler‑ek válaszolnak rájuk, így egy store‑and‑forward csomópont, egy lekérdező proxy vagy egy teszt SCP néhány osztályból megvalósítható. A <a href="/medical/net/modality-worklist/">modalitás munkalista oldal</a> mindkét oldalról mutatja a munkalistát és az MPPS munkafolyamatot. A <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM hálózati útmutató</a> a teljes API‑t lefedi.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Tanulmány küldése PACS‑nak C-STORE‑al - C#
+      Send a study to a PACS with C-STORE - C#
      </h3>
      <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("study.dcm");
 
@@ -535,14 +536,14 @@ await client.StopAsync();</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOMweb kliens és szerver
+     DICOMweb Client and Server
     </h2>
     <p>
-     A felhő alapú képalkotó szolgáltatások és a modern archívumok HTTP-n keresztül teszik elérhetővé a DICOM-ot. Az Aspose.Medical for .NET DICOMweb kliense minden szabványos tranzakciót egy típusos metódusba csomagol: QIDO-RS keresés, WADO-RS tanulmányok, sorozatok, példányok, képkockák, renderelt képek és miniatűrök lekérése, STOW-RS feltöltés, WADO-URI, valamint a munkalista, eljáráslépés és tárolási kötelezettség szolgáltatások. A saját <code>HttpClient</code>-edre épül, így a hitelesítés és TLS ott marad, ahol az alkalmazásod konfigurálja, és az eredmények ugyanazokként az adatkészletek és fájlok érkeznek, mint a könyvtár többi része. Ugyanez a könyvtár megvalósítja a szerveroldalt: kezeli a QIDO-RS, WADO-RS, STOW-RS és a munkafolyamat szolgáltatások protokollját, és a kódod csatlakoztatja a tárolót. Lásd a <a href="/medical/net/dicomweb-client/">DICOMweb kliens</a> és a <a href="/medical/net/dicomweb-server/">DICOMweb szerver</a> oldalakat.
+     A felhő alapú képalkotó szolgáltatások és modern archívumok DICOM‑ot exponálnak HTTP‑n keresztül. Az Aspose.Medical for .NET DICOMweb kliens minden szabványos tranzakciót egy típusos metódusba csomagol: QIDO‑RS keresés, WADO‑RS tanulmány‑, sorozat‑, példány‑, képkocka‑ és renderelt kép‑letöltés, STOW‑RS feltöltés, WADO‑URI, valamint a munkalista, eljárási lépés és tárolási kötelezettség szolgáltatások. A kliens a saját <code>HttpClient</code>‑jén fut, így a hitelesítés és a TLS ott marad, ahol az alkalmazás konfigurálja, és az eredmények ugyanazokkal az adatcsoportokkal és fájlokkal érkeznek, mint a könyvtár többi része. Ugyanez a könyvtár valósítja meg a szerver oldalt: kezeli a QIDO‑RS, WADO‑RS, STOW‑RS és a munkafolyamat szolgáltatások protokollját, és a kód összeköti a tárolást. Lásd a <a href="/medical/net/dicomweb-client/">DICOMweb kliens</a> és a <a href="/medical/net/dicomweb-server/">DICOMweb szerver</a> oldalakat.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Tanulmányok keresése DICOMweb szerveren - C#
+      Search studies on a DICOMweb server - C#
      </h3>
      <pre><code class="cs">using HttpClient http = new HttpClient();
 
@@ -564,14 +565,14 @@ await foreach (Dataset study in studies)
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Nagy DICOM fájlok nagy memóriahasználat nélkül
+     Large DICOM Files Without Large Memory
     </h2>
     <p>
-     A teljes vízszintes diák, hosszú sorozatok és többkeretes tanulmányok nem férnek el kényelmesen a memóriában. Az Aspose.Medical for .NET lehetővé teszi, hogy meghatározd, mennyit tölt be a fájlból: olvasd mindet, halaszd a méretküszöb fölötti elemeket amíg hozzá nem férsz, vagy hagyd ki őket és csak a metaadatokkal dolgozz. A streamen vagy csővezetéken keresztüli olvasás és ugyanígy történő írás biztosítja, hogy az adatok mozognak, nem halmozódnak fel. A <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">memóriakezelési útmutató</a> bemutatja a kompromisszumokat.
+     A teljes slide‑kép, hosszú sorozatok és többkeretes tanulmányok nem férnek el kényelmesen a memóriában. Az Aspose.Medical for .NET lehetővé teszi, hogy meghatározza, mennyit tölt be a fájlból: mindent beolvas, a méretküszöbnél nagyobb elemeket halasztja, vagy kihagyja őket és csak a metaadatokkal dolgozik. A stream vagy pipe‑ból való olvasás és ugyanúgy visszaírás a data folyamatos mozgását biztosítja a felhalmozódás helyett. A <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">memóriakezelési útmutató</a> a kompromisszumokat magyarázza.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Metaadatok olvasása pixel adat nélkül - C#
+      Read metadata without pixel data - C#
      </h3>
      <pre><code class="cs">// Elements larger than the threshold are not loaded into memory
 DicomFile metadataOnly = DicomFile.Open(

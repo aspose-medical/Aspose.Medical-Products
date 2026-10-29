@@ -2,20 +2,20 @@
 title: Server DICOMweb in C# .NET - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
 weight: 9200
 
-description: Crea il tuo server DICOMweb o PACS in C#. Aspose.Medical implementa QIDO-RS, WADO-RS, STOW-RS e i servizi di worklist su ASP.NET Core; tu connetti lo storage.
+description: Crea il tuo server DICOMweb o PACS in C#. Aspose.Medical implementa QIDO-RS, WADO-RS, STOW-RS e i servizi di worklist su ASP.NET Core; tu colleghi lo storage.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Server DICOMweb per .NET C#" h2="Aggiungi endpoint QIDO-RS, WADO-RS e STOW-RS a un servizio ASP.NET Core. La libreria parla il protocollo; il tuo codice decide dove vengono memorizzati gli studi." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="Server DICOMweb per .NET C#" h2="Aggiungi endpoint QIDO-RS, WADO-RS e STOW-RS a un servizio ASP.NET Core. La libreria parla il protocollo; il tuo codice decide dove vengono archiviati gli studi." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Il tuo server DICOMweb in C#">}}
 
-<p>Un PACS, un VNA, un archivio cloud o una piattaforma di ricerca devono rispondere alle richieste DICOMweb: ricerche QIDO-RS, download WADO-RS e upload STOW-RS, e spesso anche i servizi di worklist. Ognuno di essi ha le proprie rotte, media type, body multipart, regole di corrispondenza e codici di stato.</p>
+<p>Un PACS, un VNA, un archivio cloud o una piattaforma di ricerca devono rispondere alle richieste DICOMweb: ricerche QIDO-RS, download WADO-RS e upload STOW-RS, e spesso anche i servizi di worklist. Ognuno di essi ha le proprie rotte, media type, corpi multipart, regole di corrispondenza e codici di stato.</p>
 
-<p><strong>Aspose.Medical per .NET</strong> implementa quella parte del protocollo dalla versione 26.10. Legge ogni richiesta, la verifica rispetto allo standard, confronta le chiavi di ricerca secondo le regole DICOM, pagina i risultati, converte le sintassi di trasferimento e scrive la risposta. Il tuo codice fa ciò che solo tu puoi fare: memorizzare un'instanza, trovare candidati per una ricerca e restituire i file memorizzati. Visualizzatori, modalità e altri archivi quindi funzionano con il tuo server come con qualsiasi altro server DICOMweb, e così fa anche il <a href="/medical/net/dicomweb-client/">client DICOMweb</a> della stessa libreria.</p>
+<p><strong>Aspose.Medical for .NET</strong> implementa quella parte del protocollo dalla versione 26.10. Legge ogni richiesta, la verifica rispetto allo standard, confronta le chiavi di ricerca secondo le regole DICOM, paginazione dei risultati, converte le transfer syntax e scrive la risposta. Il tuo codice fa ciò che solo tu puoi fare: archiviare un'istanza, trovare i candidati per una ricerca e restituire i file archiviati. Viewer, modalità e altri archivi quindi lavorano con il tuo server come con qualsiasi altro server DICOMweb, così come il <a href="/medical/net/dicomweb-client/">client DICOMweb</a> della stessa libreria.</p>
 
 <p>Il server è gestito in C#. Funziona ovunque ASP.NET Core funzioni: su Windows, su Linux e in un container.</p>
 
@@ -47,10 +47,10 @@ app.Run();</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="Collega il tuo storage">}}
 
-<p>Il servizio Studies necessita di un'interfaccia con tre metodi: memorizzare un'instanza, restituire i file memorizzati e restituire i candidati alla ricerca. Questa implementazione conserva ogni istanza come file in una cartella per studio e serie.</p>
+<p>Il servizio Studies richiede un'interfaccia con tre metodi: archiviare un'istanza, restituire i file archiviati e restituire i candidati di ricerca. Questa implementazione conserva ogni istanza come file in una cartella per studio e serie.</p>
 
 <div class="codeblock" id="code">
- <h3>Un archivio a cartella dietro QIDO-RS, WADO-RS e STOW-RS - C#</h3>
+ <h3>Un archivio cartella dietro QIDO-RS, WADO-RS e STOW-RS - C#</h3>
  <pre><code class="cs">// Keeps instances as files: archive/&lt;study&gt;/&lt;series&gt;/&lt;instance&gt;.dcm
 public sealed class FolderArchive(string root) : IDicomWebStudiesProvider
 {
@@ -113,15 +113,15 @@ public sealed class FolderArchive(string root) : IDicomWebStudiesProvider
 }</code></pre>
 </div>
 
-<p>La libreria verifica gli UID in ogni percorso di richiesta e in ogni istanza caricata prima di chiamare il provider. Un'instanza senza UID validi viene segnalata come fallita e non raggiunge mai <code>StoreAsync</code>.</p>
+<p>La libreria verifica gli UID in ogni percorso di richiesta e in ogni istanza caricata prima di chiamare il provider. Un'istanza senza UID validi viene segnalata come fallita e non raggiunge mai <code>StoreAsync</code>.</p>
 
-<p>Una cartella è sufficiente per provare il server. Un archivio di produzione mantiene gli stessi tre metodi e utilizza uno storage di oggetti dietro <code>StoreAsync</code> e <code>RetrieveAsync</code> e un indice di database dietro <code>FindCandidatesAsync</code>.</p>
+<p>Una cartella è sufficiente per provare il server. Un archivio di produzione mantiene gli stessi tre metodi e pone uno storage di oggetti dietro <code>StoreAsync</code> e <code>RetrieveAsync</code> e un indice di database dietro <code>FindCandidatesAsync</code>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Ricerca: la libreria applica le regole di corrispondenza DICOM">}}
 
-<p>La corrispondenza QIDO-RS è più di un confronto di stringhe: caratteri jolly, intervalli di data e ora, elenchi di UID, nomi personali fuzzy, valori vuoti e chiavi all'interno di sequenze. Il provider non implementa nulla di ciò. Restituisce i candidati in un ordine stabile e può restituire più elementi di quanti ne corrispondano. La libreria applica l'esatta corrispondenza DICOM a ciascun candidato, conserva i campi richiesti e applica <code>offset</code> e <code>limit</code>. Una risposta contiene al massimo 1000 risultati per impostazione predefinita, e <code>DicomWebStandardServiceOptions</code> modifica tale limite.</p>
+<p>Il matching QIDO-RS è più di un confronto di stringhe: caratteri jolly, intervalli di data e ora, elenchi di UID, nomi personali fuzzy, valori vuoti e chiavi all'interno di sequenze. Il provider non implementa nulla di ciò. Restituisce i candidati in ordine stabile e può restituire più di una corrispondenza. La libreria applica la corrispondenza DICOM esatta a ciascun candidato, conserva i campi richiesti e applica <code>offset</code> e <code>limit</code>. Una risposta contiene al massimo 1000 risultati per impostazione predefinita, e <code>DicomWebStandardServiceOptions</code> modifica quel limite.</p>
 
 <p>Per mantenere le ricerche rapide su un archivio di grandi dimensioni, passa le chiavi selettive al database. <code>search.Plan.Filter</code> contiene le chiavi di ricerca compilate, con l'attributo, il tipo di corrispondenza e i valori di ciascuna:</p>
 
@@ -135,26 +135,26 @@ static string? ExactPatientId(DicomWebSearchContext search) =&gt;
         .FirstOrDefault();</code></pre>
 </div>
 
-<p>Una query di database costruita in questo modo può restituire righe extra, ad esempio quando ignora una chiave che non può tradurre. La corrispondenza finale nella libreria le rimuove. Non deve eliminare corrispondenze vere, perché la libreria non può reinserirle.</p>
+<p>Una query del database costruita in questo modo può restituire righe extra, ad esempio quando ignora una chiave che non può tradurre. La corrispondenza finale nella libreria le rimuove. Non deve eliminare corrispondenze vere, perché la libreria non può reinserirle.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Memorizzazione: un risultato per ogni istanza">}}
+{{< blocks/products/pf/feature-page-section h2="Store: un risultato per ogni istanza">}}
 
-<p>Una richiesta STOW-RS può contenere centinaia di istanze. La libreria analizza il body multipart e chiama <code>StoreAsync</code> per ciascuna istanza a turno, così l'intero upload non viene mai mantenuto interamente in memoria. Per ogni istanza il provider restituisce <code>Stored</code>, <code>Warning</code> per un'istanza memorizzata con modifiche, o <code>Failed</code> con un codice di ragione DICOM opzionale.</p>
+<p>Una richiesta STOW-RS può trasportare centinaia di istanze. La libreria analizza il corpo multipart e chiama <code>StoreAsync</code> per ogni istanza a turno, così l'intero upload non viene mai mantenuto in memoria contemporaneamente. Per ogni istanza il provider restituisce <code>Stored</code>, <code>Warning</code> per un'istanza archiviata con modifiche, o <code>Failed</code> con un codice motivo DICOM opzionale.</p>
 
-<p>La libreria costruisce il report STOW-RS da questi risultati e seleziona lo stato: 200 quando ogni istanza è memorizzata, 202 quando alcune hanno avvisi o falliscono, 409 quando tutti falliscono. Le istanze in una richiesta per uno studio nominato che appartengono a un altro studio sono rifiutate prima che il provider venga chiamato.</p>
+<p>La libreria costruisce il report STOW-RS da questi risultati e seleziona lo stato: 200 quando ogni istanza è archiviata, 202 quando alcune hanno warning o falliscono, 409 quando tutte falliscono. Le istanze in una richiesta per uno studio denominato che appartengono a un altro studio sono rifiutate prima che il provider venga chiamato.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Recupero: transfer syntax, frame e immagini renderizzate">}}
+{{< blocks/products/pf/feature-page-section h2="Retrieve: transfer syntax, frame e immagini renderizzate">}}
 
-<p>Il provider restituisce i file memorizzati, e la libreria li consegna nella forma richiesta dal client. Un client WADO-RS può richiedere una transfer syntax nell'header <code>Accept</code>, e la libreria converte ogni file prima di inviarlo, includendo i propri codec, HTJ2K e JPEG XL. Metadati in DICOM JSON o XML, bulk data e singoli frame provengono dallo stesso provider, senza codice aggiuntivo.</p>
+<p>Il provider restituisce i file archiviati, e la libreria li consegna nella forma richiesta dal client. Un client WADO-RS può richiedere una transfer syntax nell'header <code>Accept</code>, e la libreria converte ogni file prima di inviarlo, con i propri codec, inclusi HTJ2K e JPEG XL. Metadati in DICOM JSON o XML, bulk data e frame singoli provengono dallo stesso provider, senza codice aggiuntivo.</p>
 
-<p>Le immagini renderizzate richiedono una classe aggiuntiva, perché solo tu decidi quali immagini il server può produrre. Questa offre JPEG per istanze renderizzate, frame renderizzati e miniature, e la libreria li rende:</p>
+<p>Le immagini renderizzate richiedono un'altra classe, perché solo tu decidi quali immagini il server può produrre. Questa offre JPEG per istanze renderizzate, frame renderizzati e thumbnail, e la libreria li renderizza:</p>
 
 <div class="codeblock" id="code">
- <h3>Offri immagini JPEG renderizzate e miniature - C#</h3>
+ <h3>Offri immagini JPEG renderizzate e thumbnail - C#</h3>
  <pre><code class="cs">// Declares the rendered images the server offers. The library renders them as JPEG.
 public sealed class JpegRendering : IDicomWebRepresentationProvider
 {
@@ -169,9 +169,9 @@ public sealed class JpegRendering : IDicomWebRepresentationProvider
 }</code></pre>
 </div>
 
-<p>Il renderer integrato produce JPEG da un'istante a singolo frame o dai frame selezionati nella richiesta. Un'istante multi-frame renderizzata nella sua interezza, altri formati immagine e i parametri di viewport, window e profilo ICC richiedono il tuo <code>RetrieveAsync</code> in questa classe.</p>
+<p>Il renderer integrato produce JPEG da un'istanza a singolo frame o dai frame selezionati da una richiesta. Un'istanza multi-frame renderizzata nel suo insieme, altri formati immagine e i parametri viewport, window e ICC profile richiedono il tuo <code>RetrieveAsync</code> in questa classe.</p>
 
-<p>Le miniature sono gestite con attenzione alla privacy del paziente. Il renderer integrato crea una miniatura solo da un'istante i cui attributi Burned In Annotation e Recognizable Visual Features sono entrambi <code>NO</code>, il che indica che l'immagine stessa dichiara di non mostrare dati del paziente. Molte immagini non possiedono questi attributi, e per esse il server risponde 406. Se il tuo archivio necessita di miniature di tali immagini, produrle nel tuo <code>RetrieveAsync</code> e assicurati che nascondano qualsiasi dato del paziente.</p>
+<p>I thumbnail sono gestiti con attenzione per la privacy del paziente. Il renderer integrato crea un thumbnail solo da un'istanza i cui attributi Burned In Annotation e Recognizable Visual Features sono entrambi <code>NO</code>, il che significa che l'immagine stessa dichiara di non mostrare dati del paziente. Molte immagini non possiedono questi attributi, e per esse il server risponde 406. Se il tuo archivio necessita di thumbnail di tali immagini, produrli nel tuo <code>RetrieveAsync</code> e assicurati che nascondano qualsiasi dato del paziente.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -180,26 +180,26 @@ public sealed class JpegRendering : IDicomWebRepresentationProvider
 <p>Gli altri servizi DICOMweb seguono lo stesso modello: registra il servizio, implementa la sua interfaccia di storage.</p>
 
 <ul>
-<li>Worklist UPS-RS con <code>AddStandardWorklistService</code>: creare, cercare e aggiornare workitem e modificarne lo stato, con le regole di stato verificate dalla libreria e notifiche di eventi inviate via WebSocket.</li>
-<li>Il worklist di modalità (MWL-RS) con <code>AddStandardModalityWorklistService</code>, così le modalità possono interrogare le fasi di procedura programmate del tuo RIS.</li>
-<li>Fasi di procedura eseguite dalla modalità (MPPS-RS), impegno di storage e istanze non-paziente come palette di colori e hanging protocol.</li>
-<li>Recupero WADO-URI per visualizzatori più vecchi, servito dal servizio Studies.</li>
+<li><a href="/medical/net/ups-rs/">UPS-RS</a> worklist con <code>AddStandardWorklistService</code>: crea, ricerca e aggiorna workitem e ne modifica lo stato, con le regole di stato verificate dalla libreria e notifiche eventi inviate via WebSocket.</li>
+<li>La <a href="/medical/net/modality-worklist/">modality worklist</a> (MWL-RS) con <code>AddStandardModalityWorklistService</code>, così le modalità possono interrogare le fasi di procedura programmate del tuo RIS.</li>
+<li>Fasi di procedura eseguite dalla modalità (MPPS-RS), impegno di storage e istanze non-paziente come palette di colori e protocolli di hanging.</li>
+<li>Recupero WADO-URI per visualizzatori più vecchi, fornito dal servizio Studies.</li>
 </ul>
 
-<p>Quando il comportamento standard di una transazione non è adatto, registra il tuo handler personalizzato per essa con <code>AddHandler</code>. La libreria continua a instradare e verificare la richiesta, e le altre transazioni mantengono i loro handler standard.</p>
+<p>Quando il comportamento standard di una transazione non è adeguato, registra il tuo handler personalizzato per essa con <code>AddHandler</code>. La libreria continua a instradare e verificare la richiesta, e le altre transazioni mantengono i loro handler standard.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Sicurezza e hosting rimangono sotto il tuo controllo">}}
+{{< blocks/products/pf/feature-page-section h2="Sicurezza e hosting rimangono nelle tue mani">}}
 
-<p>Gli endpoint DICOMweb sono endpoint ASP.NET Core ordinari. Autenticazione, autorizzazione, CORS, TLS, intestazioni inoltrate e limiti di dimensione delle richieste sono configurati allo stesso modo del resto del tuo servizio:</p>
+<p>Gli endpoint DICOMweb sono endpoint ASP.NET Core ordinari. Autenticazione, autorizzazione, CORS, TLS, header inoltrati e limiti di dimensione della richiesta sono configurati allo stesso modo del resto del tuo servizio:</p>
 
 <div class="codeblock" id="code">
  <h3>Richiedi un utente autenticato - C#</h3>
  <pre><code class="cs">app.MapDicomWeb("/dicomweb").RequireAuthorization();</code></pre>
 </div>
 
-<p>La parte del protocollo non dipende da ASP.NET Core. <code>DicomWebApplication</code> trasforma una <code>DicomWebRequest</code> in una risposta, così gli stessi servizi possono funzionare dietro un altro server HTTP o in un test senza rete:</p>
+<p>La parte protocollo non dipende da ASP.NET Core. <code>DicomWebApplication</code> trasforma una <code>DicomWebRequest</code> in una risposta, così gli stessi servizi possono funzionare dietro un altro server HTTP o in un test senza rete:</p>
 
 <div class="codeblock" id="code">
  <h3>Lo stesso server senza ASP.NET Core - C#</h3>
@@ -217,9 +217,9 @@ DicomWebApplicationResult result = await application.ProcessAsync(request, cance
 
 <p>Il <a href="/medical/net/dicomweb-client/">client DICOMweb</a> di Aspose.Medical testa il tuo server da un test unitario o da un programma console, e ogni file che il server riceve è un normale <code>DicomFile</code> che può essere anonimizzato, transcodificato o renderizzato nello stesso processo.</p>
 
-<p>La <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/">guida per sviluppatori DICOMweb</a> copre ogni servizio e interfaccia di storage, e la <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/aspnet-core/">guida ASP.NET Core</a> copre il mapping degli endpoint e i WebSocket.</p>
+<p>La <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/">guida per sviluppatori DICOMweb</a> copre ogni servizio e interfaccia di storage, e la <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/aspnet-core/">guida ASP.NET Core</a> tratta il mapping degli endpoint e i WebSocket.</p>
 
-<p>Pagine correlate: <a href="/medical/net/dicom-networking/">Rete DICOM</a> per sistemi che inviano studi tramite DIMSE invece di HTTP, <a href="/medical/net/anonymization/">anonimizzazione</a> degli studi in ingresso, <a href="/medical/net/dicom-transfer-syntax-conversion/">conversione di transfer syntax</a>, e <a href="/medical/net/dicom-to-json/">DICOM to JSON</a> per il formato utilizzato dai risultati QIDO-RS.</p>
+<p>Pagine correlate: <a href="/medical/net/dicom-networking/">Networking DICOM</a> per sistemi che inviano studi via DIMSE anziché HTTP, <a href="/medical/net/anonymization/">anonimizzazione</a> degli studi in ingresso, <a href="/medical/net/dicom-transfer-syntax-conversion/">conversione di transfer syntax</a>, e <a href="/medical/net/dicom-to-json/">DICOM a JSON</a> per il formato usato dai risultati QIDO-RS.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

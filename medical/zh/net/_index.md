@@ -2,7 +2,7 @@
 title: C# .NET DICOM 医学影像 API | Aspose.Medical
 weight: 1000
 url: /zh/net/
-description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化、转码和渲染 DICOM 文件，将其序列化为 JSON 和 XML，并通过 DIMSE 和 DICOMweb 交换研究。
+description: 纯 .NET 库，用于 DICOM 医学影像。读取、写入、匿名化、转码和渲染 DICOM 文件，序列化为 JSON 和 XML，并通过 DIMSE 和 DICOMweb 交换研究。
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,26 +13,27 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
 {{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong> 是一个纯 .NET 类库，用于处理 DICOM（Digital Imaging and Communications in Medicine）文件。它让开发者能够读取、写入、修改、匿名化、转码和渲染医学影像数据，将其序列化为 DICOM JSON 和 DICOM XML，并通过 DIMSE 与 DICOMweb 与其他系统交换研究，无需任何外部软件或本机依赖。</p>
+<p><strong>Aspose.Medical for .NET</strong> 是一个纯 .NET 类库，用于处理 DICOM（医学数字成像与通讯）文件。它允许开发者读取、写入、修改、匿名化、转码和渲染医学影像数据，序列化为 DICOM JSON 和 DICOM XML，并通过 DIMSE 和 DICOMweb 与其他系统交换研究，无需任何外部软件或本机依赖。</p>
 
-<p>该库完全采用托管 C# 编写，可在 Windows、Linux 和 macOS 上的 .NET 10 运行。没有本机二进制文件，也没有第三方 NuGet 包，因此库可以作为单一程序集部署到任何 .NET 应用程序中，无论是桌面工具还是云医疗系统中的容器。</p>
+<p>该库完全使用托管 C# 编写，可在 Windows、Linux 和 macOS 上的 .NET 10 运行。没有本机二进制文件，也没有第三方 NuGet 包，因此库可以作为单个程序集部署到任何 .NET 应用程序，从桌面工具到云医疗系统中的容器。</p>
 
-<p><strong>关键特性：</strong>
+<p><strong>核心功能：</strong>
 <ul>
-    <li>从文件、流或管道同步或异步读取和写入 DICOM 文件，全面支持所有标准数据元素和数值表示。</li>
-    <li>在大文件上控制内存：加载所有元素，延迟大元素直到使用，或跳过它们仅读取元数据。</li>
-    <li>读取和编辑任何数据元素，包括序列和私有标签，并处理非 ASCII 文本的字符集。</li>
-    <li>使用 DICOM PS 3.15 的保密配置文件对 DICOM 文件进行匿名化，可选择保留 UID、日期、设备和机构标识以及患者特征。</li>
-    <li>在传输语法之间转码：JPEG、JPEG-LS、JPEG 2000、HTJ2K、JPEG XL 和 RLE，所有编解码器均在 .NET 中实现。</li>
-    <li>将帧渲染为 BGRA 像素，应用模态 LUT、VOI LUT（窗宽窗位）和覆盖层。</li>
-    <li>将数据集序列化为 DICOM JSON Model（PS3.18）和 DICOM XML（PS3.19），并可反序列化，包括异步流式传输和可插件的大批量数据加载。</li>
-    <li>通过 DIMSE 与客户端和服务器通信：C-ECHO、C-STORE、C-FIND、C-MOVE、C-GET、N-服务以及 TLS。</li>
-    <li>使用针对 QIDO-RS、WADO-RS、STOW-RS、渲染图像、WADO-URI 以及工作流服务的强类型客户端，在任意 DICOMweb 服务器上搜索、下载和上传研究。</li>
-    <li>构建自己的 DICOMweb 服务器：在 ASP.NET Core 或任何其他 HTTP 主机上实现 QIDO-RS、WADO-RS、STOW-RS 和工作流服务，并在其后接入存储。</li>
+<li>从文件、流或管道同步或异步读取和写入 DICOM 文件，全面支持所有标准数据元素和值表示。</li>
+<li>在大文件上控制内存：加载每个元素、在需要时延迟加载大型元素，或跳过它们仅读取元数据。</li>
+<li>读取和编辑任何数据元素，包括序列和私有标签，并处理非 ASCII 文本的字符集。</li>
+<li>使用 DICOM PS 3.15 的保密配置文件对 DICOM 文件进行匿名化，可选择保留 UID、日期、设备和机构标识符以及患者特征。</li>
+<li>在传输语法之间转码：JPEG、JPEG-LS、JPEG 2000、HTJ2K、JPEG XL 和 RLE，所有编解码器均在 .NET 中实现。</li>
+<li>将帧渲染为带有模态 LUT、VOI LUT（窗口/层级）和叠加层的 BGRA 像素。</li>
+<li>将数据集序列化为 DICOM JSON 模型（PS3.18）和 DICOM XML（PS3.19），并可反序列化，包括异步流式传输和可插拔的大批量数据加载。</li>
+<li>通过 DIMSE 进行客户端和服务器通信：C-ECHO、C-STORE、C-FIND、C-MOVE、C-GET、N-服务以及 TLS。</li>
+<li>查询模态工作列表，报告 MPPS，并通过 UPS-RS 工作项分配工作，支持客户端和服务器。</li>
+<li>使用针对 QIDO-RS、WADO-RS、STOW-RS、渲染图像、WADO-URI 以及工作流服务的强类型客户端，在任意 DICOMweb 服务器上搜索、下载和上传研究。</li>
+<li>构建自己的 DICOMweb 服务器：在 ASP.NET Core 或任何其他 HTTP 主机上实现 QIDO-RS、WADO-RS、STOW-RS 和工作流服务，并将存储置于其后端。</li>
 </ul>
 </p>
 
-<p>Aspose.Medical for .NET 是自包含的。无需安装 DICOM 查看器、医学影像软件或本机编解码器。它适用于医疗 IT 系统、PACS 集成、远程医疗平台以及任何需要可靠处理 DICOM 数据的应用程序。</p>
+<p>Aspose.Medical for .NET 是自包含的。它不需要安装 DICOM 查看器、医学影像软件或本机编解码器。它适用于医疗 IT 系统、PACS 集成、远程医疗平台以及任何需要可靠处理 DICOM 数据的应用程序。</p>
 
 {{< /blocks/products/pf/tab-content >}}
 
@@ -81,7 +82,7 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
      PS 3.15 保密配置文件
     </li>
     <li>
-     可配置保留选项
+     可配置的保留选项
     </li>
    </ul>
   </div>
@@ -97,10 +98,10 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
      帧渲染为 BGRA 像素
     </li>
     <li>
-     模态 LUT & VOI LUT 已应用
+     应用模态 LUT & VOI LUT
     </li>
     <li>
-     图像覆盖层支持
+     图像叠加支持
     </li>
     <li>
      传输语法转换
@@ -115,14 +116,14 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
    <header>
     <i class="fa fa-sitemap">
     </i>
-    DICOM 网络通信
+    DICOM 网络
    </header>
    <ul>
     <li>
      DIMSE 客户端 & 服务器
     </li>
     <li>
-     C-ECHO、C-STORE、C-FIND、C-MOVE、C-GET
+     C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </li>
     <li>
      N-服务 & 关联控制
@@ -200,13 +201,13 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
    </header>
    <ul>
     <li>
-     Windows 10、Windows 11、Windows Server 2016 及以上
+     Windows 10、Windows 11、Windows Server 2016 及更高版本
     </li>
     <li>
      Linux：Ubuntu 20.04+、Debian 10+、CentOS 8+
     </li>
     <li>
-     macOS 11 及以上
+     macOS 11 及更高版本
     </li>
    </ul>
   </div>
@@ -252,7 +253,7 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
      <b>
       数据交换：
      </b>
-     DICOM JSON (PS3.18), DICOM XML (PS3.19)
+     DICOM JSON（PS3.18），DICOM XML（PS3.19）
     </li>
    </ul>
    <header>
@@ -262,7 +263,7 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
    </header>
    <ul>
     <li>
-     JPEG、JPEG-LS、JPEG 2000、HTJ2K、JPEG XL、RLE
+     JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE
     </li>
    </ul>
   </div>
@@ -278,7 +279,7 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
      <b>
       像素：
      </b>
-     适用于任何影像库的 BGRA 32 位缓冲区
+     任何影像库使用的 BGRA 32 位缓冲区
     </li>
     <li>
      <b>
@@ -294,7 +295,7 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
    </header>
    <ul>
     <li>
-     由外部影像库解码的像素缓冲区，逐帧写入 DICOM 像素数据
+     通过外部影像库解码的像素缓冲区，逐帧写入 DICOM 像素数据
     </li>
    </ul>
   </div>
@@ -330,7 +331,7 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
  <div class="row">
   <div class="container">
    <h2 class="pr-ft">
-    高级 .NET DICOM API 功能
+    高级 .NET DICOM API 特性
    </h2>
    <p>
    </p>
@@ -345,7 +346,7 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
     <em class="fa fa-tags ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     访问并操作所有 DICOM 标签、序列和私有元素
+     访问和操作所有 DICOM 标签、序列和私有元素
     </p>
    </div>
    <div class="col-lg-4">
@@ -366,7 +367,7 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
     <em class="fa fa-picture-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     将帧渲染为像素，用于查看器、缩略图和图像导出
+     为查看器、缩略图和图像导出渲染帧为像素
     </p>
    </div>
    <div class="col-lg-4">
@@ -380,21 +381,21 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
     <em class="fa fa-sitemap ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     基于 DIMSE 交换研究：C-ECHO、C-STORE、C-FIND、C-MOVE、C-GET
+     通过 DIMSE 交换研究：C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-database ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     通过延迟或跳过大元素，在大文件上保持平稳内存使用
+     通过延迟或跳过大型元素，在大文件上保持内存平坦
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sliders ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     使用模态 LUT、VOI LUT 和覆盖层渲染多帧图像
+     使用模态 LUT、VOI LUT 和叠加层渲染多帧图像
     </p>
    </div>
    <div class="col-lg-12">
@@ -402,15 +403,15 @@ description: 纯 .NET 库用于 DICOM 医学影像。读取、写入、匿名化
      纯 .NET 库 - 零依赖
     </h2>
     <p>
-     Aspose.Medical for .NET 完全采用托管 C# 编写，以单个程序集形式提供，不含本机二进制文件和第三方 NuGet 包。其他医学影像库依赖本机编解码器或外部工具，而此库没有。所有图像压缩编解码器（JPEG、JPEG-LS、JPEG 2000、HTJ2K、JPEG XL、RLE）均在 .NET 中实现，库在 Windows、Linux 和 macOS 上表现一致。这使其非常适合容器、云环境以及任何无法安装本机库的部署。该包面向 .NET 10。
+     Aspose.Medical for .NET 完全使用托管 C# 编写，以单个程序集形式提供，没有本机二进制文件，也没有第三方 NuGet 包。其他医学影像库依赖本机编解码器或外部工具，而本库不依赖。所有图像压缩编解码器（JPEG、JPEG-LS、JPEG 2000、HTJ2K、JPEG XL、RLE）均在 .NET 中实现，因而在 Windows、Linux 和 macOS 上表现一致。这使其非常适合容器、云环境以及任何不便安装本机库的部署场景。该包装目标为 .NET 10。
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     匿��化 DICOM 文件以满足隐私合规性
+     匿名化 DICOM 文件以满足隐私合规
     </h2>
     <p>
-     患者隐私是医疗应用的严格要求。Aspose.Medical for .NET 使用 DICOM PS 3.15 的保密配置文件对 DICOM 数据进行匿名化。您可以删除或替换患者识别信息，同时保留影像数据的临床价值，并可选择配置文件保留的内容：安全私有属性、UID、设备和机构标识符、患者特征以及纵向时间信息。<a href="/medical/net/anonymization/">DICOM 匿名化页面</a>详细展示了配置选项。
+     患者隐私在医疗应用中是硬性要求。Aspose.Medical for .NET 使用 DICOM PS 3.15 的保密配置文件对 DICOM 数据进行匿名化。您可以在保留影像数据临床价值的同时删除或替换患者识别信息，并可以选择配置文件保留的内容：安全私有属性、UID、设备和机构标识符、患者特征以及纵向时间信息。<a href="/medical/net/anonymization/">DICOM 匿名化页面</a>详细展示了配置选项。
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -433,7 +434,7 @@ anonymized.Save("anonymized_scan.dcm");</code></pre>
      在 .NET C# 中渲染 DICOM 帧
     </h2>
     <p>
-     Aspose.Medical for .NET 将 DICOM 帧渲染为 32 位 BGRA 像素图像。渲染器从数据集应用光度解释、模态 LUT 和 VOI LUT（窗宽窗位），并绘制覆盖层，使结果与查看器显示一致。像素随后属于您：将其复制到缓冲区并传递给任何影像库以保存为 PNG、JPEG 或 TIFF。库内唯一的图像编码器是 PNM。转换页面展示了完整的 <a href="/medical/net/dicom-to-png/">PNG</a>、<a href="/medical/net/dicom-to-jpg/">JPEG</a> 和 <a href="/medical/net/dicom-to-tiff/">TIFF</a> 路径。
+     Aspose.Medical for .NET 将 DICOM 帧渲染为 32 位 BGRA 像素图像。渲染器依据数据集的光度解释、模态 LUT 和 VOI LUT（窗口/层级）并绘制叠加层，使结果与查看器显示一致。随后您可以将这些像素复制到缓冲区并传递给任意影像库以保存为 PNG、JPEG 或 TIFF。库中唯一内置的图像编码器是 PNM。转换页面展示了完整的路径，可将 DICOM 转换为 <a href="/medical/net/dicom-to-png/">PNG</a>、<a href="/medical/net/dicom-to-jpg/">JPEG</a> 和 <a href="/medical/net/dicom-to-tiff/">TIFF</a>。
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -455,7 +456,7 @@ image.CopyPixelsTo(pixels);</code></pre>
      在传输语法之间转码
     </h2>
     <p>
-     成像系统和归档需要特定的 DICOM 传输语法。Aspose.Medical for .NET 在未压缩格式、JPEG Baseline、JPEG Lossless、JPEG-LS、JPEG 2000、HTJ2K（高吞吐量 JPEG 2000）、JPEG XL 和 RLE 之间进行转码。HTJ2K 和 JPEG XL 是 DICOM 标准中最新的两种选项，且在 .NET 中同其他编解码器一样实现。转码对 PACS 集成、归档大小以及系统间兼容性至关重要。请参阅 <a href="/medical/net/dicom-transfer-syntax-conversion/">传输语法转换页面</a> 与 <a href="/medical/net/jpeg2000/">JPEG 2000 页面</a>。
+     成像系统和归档需要特定的 DICOM 传输语法。Aspose.Medical for .NET 在未压缩格式、JPEG Baseline、JPEG Lossless、JPEG-LS、JPEG 2000、HTJ2K（高通量 JPEG 2000）、JPEG XL 和 RLE 之间进行转码。HTJ2K 和 JPEG XL 是 DICOM 标准中最新的两种选项，本文在 .NET 中实现了它们，和其他编解码器一样。转码对 PACS 集成、归档大小以及系统兼容性非常重要。参见<a href="/medical/net/dicom-transfer-syntax-conversion/">传输语法转换页面</a>和<a href="/medical/net/jpeg2000/">JPEG 2000 页面</a>。
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -476,7 +477,7 @@ transcoded.Save("output.dcm");</code></pre>
      DICOM 到 JSON 和 XML 的序列化
     </h2>
     <p>
-     医疗系统通过 Web 服务交换数据，因此 Aspose.Medical for .NET 将 DICOM 数据集序列化为 DICOM JSON Model（PS3.18）和 DICOM XML（PS3.19），并可将两者解析回数据集。序列化器支持字符串、流和管道，同步和异步方式，且可以一次读取数据集序列而无需在内存中保留整个文档。大批量数据引用通过可插件的加载器解析，使大型像素数据可以位于文档外部。请参阅 <a href="/medical/net/dicom-to-json/">DICOM 到 JSON</a> 与 <a href="/medical/net/dicom-to-xml/">DICOM 到 XML</a> 页面。
+     医疗系统通过 Web 服务交换数据，因此 Aspose.Medical for .NET 将 DICOM 数据集序列化为 DICOM JSON 模型（PS3.18）和 DICOM XML（PS3.19），并可将两者解析回数据集。序列化器支持字符串、流和管道，既可同步也可异步，并且可以逐个读取数据集序列，而无需将整个文档载入内存。通过可插拔加载器解析大批量数据引用，使得大型像素数据可以留在文档之外。参见<a href="/medical/net/dicom-to-json/">DICOM 到 JSON</a>和<a href="/medical/net/dicom-to-xml/">DICOM 到 XML</a>页面。
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -497,10 +498,10 @@ Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     基于 DIMSE 的 DICOM 网络通信
+     通过 DIMSE 的 DICOM 网络
     </h2>
     <p>
-     Aspose.Medical for .NET 可直接与其他 DICOM 系统通信。库提供了支持 C-ECHO、C-STORE、C-FIND、C-MOVE 和 C-GET 的 DIMSE 客户端和服务器，以及 N-服务、带呈现上下文和角色的关联协商、异步操作窗口、用户身份协商和 TLS。请求在关联上排队，由您注册的处理程序应答，因此存储转发节点、查询代理或测试 SCP 只需几 个类即可实现。<a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM 网络指南</a>涵盖完整 API。
+     Aspose.Medical for .NET 可直接与其他 DICOM 系统通信。该库提供了用于 C-ECHO、C-STORE、C-FIND、C-MOVE 和 C-GET 的 DIMSE 客户端和服务器，配套 N-服务、带展示上下文和角色的关联协商、异步操作窗口、用户身份协商以及 TLS。请求在关联上排队，由您注册的处理程序响应，因此实现存储转发节点、查询代理或测试 SCP 只需几类代码。<a href="/medical/net/modality-worklist/">模态工作列表页面</a>展示了双方的工作列表和 MPPS 工作流。<a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM 网络指南</a>涵盖了完整的 API。
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -535,10 +536,10 @@ await client.StopAsync();</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOMweb 客户端和服务器
+     DICOMweb 客户端与服务器
     </h2>
     <p>
-     云影像服务和现代归档通过 HTTP 暴露 DICOM。Aspose.Medical for .NET 中的 DICOMweb 客户端将每个标准事务封装为强类型方法：QIDO-RS 搜索、WADO-RS 检索研究、序列、实例、帧、渲染图像和缩略图、STOW-RS 上传、WADO-URI，以及工作列表、程序步骤和存储提交服务。它运行在您自己的 <code>HttpClient</code> 上，因此身份验证和 TLS 由应用程序配置，结果以相同的数据集和文件形式返回，供库的其他部分使用。同一库实现服务器端：处理 QIDO-RS、WADO-RS、STOW-RS 以及工作流服务的协议，您的代码只需连接存储。请参阅 <a href="/medical/net/dicomweb-client/">DICOMweb 客户端</a> 与 <a href="/medical/net/dicomweb-server/">DICOMweb 服务器</a> 页面。
+     云影像服务和现代归档通过 HTTP 暴露 DICOM。Aspose.Medical for .NET 中的 DICOMweb 客户端将每个标准事务封装为强类型方法：QIDO-RS 搜索、WADO-RS 检索研究、序列、实例、帧、渲染图像和缩略图、STOW-RS 上传、WADO-URI，以及工作列表、过程步骤和存储承诺服务。它运行在您自己的 <code>HttpClient</code> 上，因此认证和 TLS 由应用程序自行配置，结果以相同的数据集和文件返回，供库的其他部分使用。同一库实现了服务器端：处理 QIDO-RS、WADO-RS、STOW-RS 协议及工作流服务，您的代码负责连接存储。参见<a href="/medical/net/dicomweb-client/">DICOMweb 客户端</a>和<a href="/medical/net/dicomweb-server/">DICOMweb 服务器</a>页面。
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -567,11 +568,11 @@ await foreach (Dataset study in studies)
      大型 DICOM 文件的低内存处理
     </h2>
     <p>
-     全幅切片图像、长序列和多帧研究无法完全装入内存。Aspose.Medical for .NET 让您决定加载文件的多少内容：全部读取、对超过阈值的元素进行延迟加载，或跳过它们仅处理元数据。通过流或管道读取并以相同方式写回，可保持数据流动而非堆积。<a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">内存管理指南</a>解释了权衡。
+     全景切片图像、长序列和多帧研究在内存中难以容纳。Aspose.Medical for .NET 让您决定加载文件的程度：全部读取、对超过阈值的元素进行延迟加载，或跳过它们仅处理元数据。通过流或管道读取并以同样方式写回，可保持数据流动而非堆积。<a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">内存管理指南</a>解释了这些权衡。
     </p>
     <div class="codeblock" id="code">
      <h3>
-      读取元数据而不读取像素数据 - C#
+      读取元数据而不含像素数据 - C#
      </h3>
      <pre><code class="cs">// Elements larger than the threshold are not loaded into memory
 DicomFile metadataOnly = DicomFile.Open(
@@ -604,7 +605,7 @@ string? patientName = metadataOnly.Dataset.GetSingleValueOrDefault(Tag.PatientNa
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="为什么选择 Aspose.Medical for .NET？" tabId="success-stories" >}}
-{{< blocks/products/pf/slr-element name="客户列表" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="客户名单" href="https://company.aspose.com/customers" >}}
 {{< blocks/products/pf/slr-element name="成功案例" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 

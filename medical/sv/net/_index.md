@@ -1,38 +1,39 @@
 ---
-title: C# .NET DICOM Medicinsk Bildbehandling API | Aspose.Medical
+title: C# .NET DICOM Medicinsk bildbehandling API | Aspose.Medical
 weight: 1000
 url: /sv/net/
-description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv, anonymisera, transkoda och rendera DICOM-filer, serialisera dem till JSON och XML, och utväxla studier via DIMSE och DICOMweb.
+description: Ren .NET-bibliotek för DICOM medicinsk bildbehandling. Läs, skriv, anonymisera, transkoda och rendera DICOM-filer, serialisera dem till JSON och XML, och utbyt studier via DIMSE och DICOMweb.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1=".NET API för DICOM Medicinsk Bildbehandling" h2="Läs, skriv, anonymisera, transkoda och rendera DICOM-filer i .NET C#, och utväxla studier via DIMSE och DICOMweb, utan någon extern programvara eller inhemska beroenden." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET API för DICOM Medicinsk bildbehandling" h2="Läs, skriv, anonymisera, transkoda och rendera DICOM-filer i .NET C#, och utbyt studier via DIMSE och DICOMweb, utan någon extern mjukvara eller inhemska beroenden." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong> är ett rent .NET-klassbibliotek för att arbeta med DICOM (Digital Imaging and Communications in Medicine) filer. Det låter utvecklare läsa, skriva, modifiera, anonymisera, transkoda och rendera medicinska bilddata, serialisera dem till DICOM JSON och DICOM XML, och utväxla studier med andra system via DIMSE och DICOMweb, utan någon extern programvara eller inhemska beroenden.</p>
+<p><strong>Aspose.Medical for .NET</strong> är ett rent .NET-klassbibliotek för att arbeta med DICOM (Digital Imaging and Communications in Medicine) filer. Det låter utvecklare läsa, skriva, modifiera, anonymisera, transkoda och rendera medicinsk bilddata, serialisera den till DICOM JSON och DICOM XML, och utbyta studier med andra system via DIMSE och DICOMweb, utan någon extern mjukvara eller inhemska beroenden.</p>
 
-<p>Biblioteket är helt skrivet i hanterad C# och körs på .NET 10 på Windows, Linux och macOS. Det finns inga inhemska binärer och inga tredjeparts‑NuGet‑paket, så biblioteket distribueras som en enda assembly i vilken .NET‑applikation som helst, från ett skrivbordsverktyg till en container i ett molnbaserat hälsosystem.</p>
+<p>Biblioteket är helt skrivet i hanterad C# och körs på .NET 10 på Windows, Linux och macOS. Det finns inga inhemska binärer och inga tredjeparts‑NuGet‑paket, så biblioteket distribueras som en enda assembly till alla .NET‑applikationer, från ett skrivbordsverktyg till en container i ett molnbaserat sjukvårdssystem.</p>
 
 <p><strong>Viktiga funktioner:</strong>
 <ul>
-    <li>Läs och skriv DICOM-filer från en fil, ett flöde eller en pipe, synkront eller asynkront, med fullt stöd för alla standarddatattribut och värderepresentationer.</li>
+    <li>Läs och skriv DICOM-filer från en fil, en ström eller ett rör, synkront eller asynkront, med full support för alla standarddatattribut och värderepresentationer.</li>
     <li>Styr minnet för stora filer: ladda varje element, skjuta upp stora element tills de används, eller hoppa över dem och bara läsa metadata.</li>
-    <li>Läs och redigera alla datattribut, inklusive sekvenser och privata taggar, med teckenkodshantering för icke‑ASCII‑text.</li>
+    <li>Läs och redigera vilket dataelement som helst, inklusive sekvenser och privata taggar, med teckenkodningshantering för icke‑ASCII‑text.</li>
     <li>Anonymisera DICOM-filer med konfidentialitetsprofilerna enligt DICOM PS 3.15, med alternativ för att behålla UID‑er, datum, enhets‑ och institutionsidentifierare samt patientegenskaper.</li>
-    <li>Transkoda mellan överföringssyntaxer: JPEG, JPEG‑LS, JPEG 2000, HTJ2K, JPEG XL och RLE, med alla kodare implementerade i .NET.</li>
-    <li>Rendera ramar till BGRA‑pixlar med modalitets‑LUT, VOI‑LUT (fönster och nivå) och överlägg som appliceras av renderaren.</li>
-    <li>Serialisera dataset till DICOM JSON‑modellen (PS3.18) och till DICOM XML (PS3.19) och tillbaka, inklusive asynkron streaming och plug‑in‑baserad bulk‑datainläsning.</li>
+    <li>Transkoda mellan överföringssyntaxer: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL och RLE, med alla kodekar implementerade i .NET.</li>
+    <li>Rendera ramar till BGRA‑pixlar med modalitets‑LUT, VOI‑LUT (fönster och nivå) och överlägg applicerade av renderaren.</li>
+    <li>Serialisera dataset till DICOM JSON‑modellen (PS3.18) och till DICOM XML (PS3.19) och tillbaka, inklusive asynkron streaming och plug‑in‑bar laddning av bulkdata.</li>
     <li>Kommunicera över DIMSE med en klient och en server: C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, C‑GET, N‑services och TLS.</li>
-    <li>Sök, ladda ner och ladda upp studier på någon DICOMweb‑server med en typad klient för QIDO‑RS, WADO‑RS, STOW‑RS, renderade bilder, WADO‑URI och arbetsflödestjänsterna.</li>
-    <li>Bygg din egen DICOMweb‑server: QIDO‑RS, WADO‑RS, STOW‑RS och arbetsflödestjänsterna på ASP.NET Core eller någon annan HTTP‑värd, med ditt lagringssystem bakom dem.</li>
+    <li>Fråga modalitets‑arbetslistan, rapportera MPPS och hantera arbete med UPS‑RS‑arbetsobjekt, både som klient och som server.</li>
+    <li>Sök, ladda ner och ladda upp studier på vilken DICOMweb‑server som helst med en typad klient för QIDO‑RS, WADO‑RS, STOW‑RS, renderade bilder, WADO‑URI och arbetsflödestjänster.</li>
+    <li>Bygg din egen DICOMweb‑server: QIDO‑RS, WADO‑RS, STOW‑RS och arbetsflödestjänster på ASP.NET Core eller någon annan HTTP‑värd, med ditt lagringsutrymme bakom dem.</li>
 </ul>
 </p>
 
-<p>Aspose.Medical for .NET är självförsörjande. Det kräver ingen DICOM‑visare, ingen medicinsk bildbehandlingsprogramvara och inga inhemska kodekar att installeras. Det passar in i IT‑system för hälso- och sjukvård, PACS‑integration, telemedicinplattformar och alla applikationer som måste bearbeta DICOM‑data pålitligt.</p>
+<p>Aspose.Medical for .NET är fristående. Det kräver ingen DICOM‑visare, ingen medicinsk bildbehandlingsprogramvara och inga inhemska kodekar att installera. Det passar in i IT‑system för sjukvård, PACS‑integration, telemedicinplattformar och alla applikationer som måste bearbeta DICOM‑data på ett pålitligt sätt.</p>
 
 {{< /blocks/products/pf/tab-content >}}
 
@@ -50,13 +51,13 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
    </header>
    <ul>
     <li>
-     Läs &amp; skriv filer, flöden, pipes
+     Läs &amp; skriv filer, strömmar, rör
     </li>
     <li>
      Hantera DICOM‑taggar &amp; element
     </li>
     <li>
-     Stöd för multi‑frame‑bilder
+     Stöd för flerbilds‑bilder
     </li>
     <li>
      Hantering av privata taggar
@@ -65,7 +66,7 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
      Stöd för teckenkodning
     </li>
     <li>
-     Minneshantering för stora filer
+     Minnestyrning för stora filer
     </li>
    </ul>
    <header>
@@ -78,10 +79,10 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
      DICOM‑anonymisering
     </li>
     <li>
-     PS 3.15‑konfidentialitetsprofiler
+     PS 3.15‑konfidentialitetsprofiler
     </li>
     <li>
-     Konfigurerbara behålla‑alternativ
+     Konfigurerbara behåll‑alternativ
     </li>
    </ul>
   </div>
@@ -97,16 +98,16 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
      Ramrendering till BGRA‑pixlar
     </li>
     <li>
-     Modalitets‑LUT &amp; VOI‑LUT tillämpad
+     Modalitets‑LUT &amp; VOI‑LUT tillämpade
     </li>
     <li>
      Stöd för bildöverlägg
     </li>
     <li>
-     Överföringssyntax‑konvertering
+     Konvertering av överföringssyntax
     </li>
     <li>
-     JPEG 2000, HTJ2K &amp; JPEG XL‑komprimering
+     JPEG 2000, HTJ2K &amp; JPEG XL‑komprimering
     </li>
     <li>
      DICOM JSON &amp; XML‑serialisering
@@ -122,10 +123,10 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
      DIMSE‑klient &amp; server
     </li>
     <li>
-     C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, C‑GET
+     C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </li>
     <li>
-     N‑services &amp; associeringskontroll
+     N-Services &amp; associationskontroll
     </li>
     <li>
      TLS‑anslutningar
@@ -174,7 +175,7 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
      Inga tredjepartspaket
     </li>
     <li>
-     Självständigt distribuering
+     Självständig distribution
     </li>
    </ul>
   </div>
@@ -200,13 +201,13 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
    </header>
    <ul>
     <li>
-     Windows 10, Windows 11, Windows Server 2016 och senare
+     Windows 10, Windows 11, Windows Server 2016 och senare
     </li>
     <li>
-     Linux: Ubuntu 20.04+, Debian 10+, CentOS 8+
+     Linux: Ubuntu 20.04+, Debian 10+, CentOS 8+
     </li>
     <li>
-     macOS 11 och senare
+     macOS 11 och senare
     </li>
    </ul>
   </div>
@@ -258,11 +259,11 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
    <header>
     <i class="fa fa-compress">
     </i>
-    Pixeldata‑komprimering
+    Komprimering av pixeldatat
    </header>
    <ul>
     <li>
-     JPEG, JPEG‑LS, JPEG 2000, HTJ2K, JPEG XL, RLE
+     JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE
     </li>
    </ul>
   </div>
@@ -278,7 +279,7 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
      <b>
       Pixlar:
      </b>
-     BGRA 32‑bits‑buffertar för vilket bildbibliotek som helst
+     BGRA 32‑bit‑buffertar för alla bildbibliotek
     </li>
     <li>
      <b>
@@ -290,7 +291,7 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
    <header>
     <i class="fa fa-mail-reply">
     </i>
-    Raster‑inmatning
+    Rasteringång
    </header>
    <ul>
     <li>
@@ -338,28 +339,28 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
     <em class="fa fa-file-image-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Läs och skriv DICOM-filer från filer, flöden eller pipes
+     Läs och skriv DICOM-filer från filer, strömmar eller rör
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-tags ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Åtkom och manipulera alla DICOM‑taggar, sekvenser och privata element
+     Åtkomst till och manipulering av alla DICOM‑taggar, sekvenser och privata element
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-shield ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Anonymisera patientdata med DICOM PS 3.15‑konfidentialitetsprofiler
+     Anonymisera patientdata med DICOM PS 3.15‑konfidentialitetsprofiler
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-exchange ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Transkoda mellan överföringssyntaxer, inklusive HTJ2K och JPEG XL
+     Transkoda mellan överföringssyntaxer, inklusive HTJ2K och JPEG XL
     </p>
    </div>
    <div class="col-lg-4">
@@ -380,7 +381,7 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
     <em class="fa fa-sitemap ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Utväxla studier över DIMSE: C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, C‑GET
+     Utbyt studier via DIMSE: C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, C‑GET
     </p>
    </div>
    <div class="col-lg-4">
@@ -394,15 +395,15 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
     <em class="fa fa-sliders ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Rendera multi‑frame‑bilder med modalitets‑LUT, VOI‑LUT och överlägg
+     Rendera flerbildsbilder med modalitets‑LUT, VOI‑LUT och överlägg
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Rent .NET‑bibliotek – Nollberoenden
+     Rent .NET‑bibliotek – Noll beroenden
     </h2>
     <p>
-     Aspose.Medical for .NET är helt skrivet i hanterad C# och levereras som en enda assembly utan inhemska binärer och utan tredjeparts‑NuGet‑paket. Andra bildbehandlingsbibliotek för medicin förlitar sig på inhemska kodekar eller externa verktyg; detta gör inte. Alla bildkomprimeringskodekar (JPEG, JPEG‑LS, JPEG 2000, HTJ2K, JPEG XL, RLE) är implementerade i .NET, så biblioteket beter sig lika på Windows, Linux och macOS. Det gör det väl lämpat för containrar, molnmiljöer och alla distributioner där installation av inhemska bibliotek inte är ett alternativ. Paketet riktar sig till .NET 10.
+     Aspose.Medical for .NET är helt skrivet i hanterad C# och levereras som en enda assembly utan inhemska binärer och utan tredjeparts‑NuGet‑paket. Andra medicinska bildbibliotek förlitar sig på inhemska kodekar eller externa verktyg; detta gör det inte. Alla bildkomprimeringskodekar (JPEG, JPEG‑LS, JPEG 2000, HTJ2K, JPEG XL, RLE) är implementerade i .NET, så biblioteket beter sig likadant på Windows, Linux och macOS. Det gör det väl lämpat för containrar, molnmiljöer och alla distributioner där installation av inhemska bibliotek inte är ett alternativ. Paketet riktar sig mot .NET 10.
     </p>
    </div>
    <div class="col-lg-12">
@@ -410,7 +411,7 @@ description: Ren .NET-bibliotek för DICOM-medicinsk bildbehandling. Läs, skriv
      Anonymisera DICOM‑filer för sekretess‑efterlevnad
     </h2>
     <p>
-     Patientsekretess är ett strikt krav i hälso‑ och sjukvårdsapplikationer. Aspose.Medical for .NET anonymiserar DICOM‑data med konfidentialitetsprofilerna enligt DICOM PS 3.15. Du kan ta bort eller ersätta patientidentifierande information samtidigt som du behåller den kliniska värdet av bilddata, och du kan välja vad en profil behåller: säkra privata attribut, UID‑er, enhets‑ och institutionsidentifierare, patientegenskaper samt longitudinell tidsinformation. <a href="/medical/net/anonymization/">DICOM‑anonymiseringssidan</a> visar profilalternativen i detalj.
+     Patientsekretess är ett strikt krav i sjukvårdsapplikationer. Aspose.Medical for .NET anonymiserar DICOM‑data med konfidentialitetsprofilerna enligt DICOM PS 3.15. Du kan ta bort eller ersätta patientidentifierande information samtidigt som du behåller den kliniska värdet av bilddata, och du kan välja vad en profil behåller: säkra privata attribut, UID‑er, enhets‑ och institutionsidentifierare, patientegenskaper samt longitudinell tidsinformation. <a href="/medical/net/anonymization/">DICOM‑anonymiseringssidan</a> visar profilalternativen i detalj.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -433,7 +434,7 @@ anonymized.Save("anonymized_scan.dcm");</code></pre>
      Rendera DICOM‑ramar i .NET C#
     </h2>
     <p>
-     Aspose.Medical for .NET renderar en DICOM‑ram till en 32‑bit BGRA‑pixelbild. Renderaren tillämpar den fotometriska tolkningen, modalitets‑LUT och VOI‑LUT (fönster och nivå) från datasetet och ritar överläggen, så resultatet motsvarar vad en visare visar. Pixlarna blir då dina: kopiera dem till en buffer och skicka dem till vilket bildbibliotek som helst för att spara PNG, JPEG eller TIFF. Den enda bildkodaren som är inbyggd i biblioteket är PNM. Konverteringssidorna visar hela vägen för <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a> och <a href="/medical/net/dicom-to-tiff/">TIFF</a>.
+     Aspose.Medical for .NET renderar en DICOM‑ram till en 32‑bit BGRA‑pixelbild. Renderaren tillämpar den fotometriska tolkningen, modalitets‑LUT och VOI‑LUT (fönster och nivå) från datasetet och ritar överläggen, så resultatet matchar vad en visare visar. Pixlarna är sedan dina: kopiera dem till en buffer och skicka dem till vilket bildbibliotek som helst för att spara som PNG, JPEG eller TIFF. Den enda bildkodaren som är inbyggd i biblioteket är PNM. Konverteringssidorna visar hela vägen för <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a> och <a href="/medical/net/dicom-to-tiff/">TIFF</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -455,7 +456,7 @@ image.CopyPixelsTo(pixels);</code></pre>
      Transkoda mellan överföringssyntaxer
     </h2>
     <p>
-     Bildsystem och arkiv kräver specifika DICOM‑överföringssyntaxer. Aspose.Medical for .NET transkoderar mellan okomprimerade format, JPEG Baseline, JPEG Lossless, JPEG‑LS, JPEG 2000, HTJ2K (High‑Throughput JPEG 2000), JPEG XL och RLE. HTJ2K och JPEG XL är de två nyaste alternativen i DICOM‑standarden, och här är de implementerade i .NET precis som alla andra kodekar. Transkodning är viktigt för PACS‑integration, för arkivstorlek och för kompatibilitet mellan system. Se <a href="/medical/net/dicom-transfer-syntax-conversion/">sidan för överföringssyntax‑konvertering</a> och <a href="/medical/net/jpeg2000/">JPEG 2000‑sidan</a>.
+     Bildsystem och arkiv kräver specifika DICOM‑överföringssyntaxer. Aspose.Medical for .NET transkoderar mellan okomprimerade format, JPEG Baseline, JPEG Lossless, JPEG‑LS, JPEG 2000, HTJ2K (High‑Throughput JPEG 2000), JPEG XL och RLE. HTJ2K och JPEG XL är de två nyaste alternativen i DICOM‑standarden, och här är de implementerade i .NET likt alla andra kodekar. Transkodning är viktig för PACS‑integration, för arkivstorlek och för kompatibilitet mellan system. Se <a href="/medical/net/dicom-transfer-syntax-conversion/">sidan för överföringssyntax‑konvertering</a> och <a href="/medical/net/jpeg2000/">JPEG 2000‑sidan</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -476,7 +477,7 @@ transcoded.Save("output.dcm");</code></pre>
      DICOM till JSON och XML‑serialisering
     </h2>
     <p>
-     Hälso‑ och sjukvårdssystem utbyter data via webbtjänster, så Aspose.Medical for .NET serialiserar DICOM‑dataset till DICOM JSON‑modellen (PS3.18) och till DICOM XML (PS3.19), och parserar båda tillbaka till dataset. Serialisatorerna fungerar på strängar, flöden och pipes, både synkront och asynkront, och en sekvens av dataset kan läsas en efter en utan att hålla hela dokumentet i minnet. Bulk‑databehänspelser löses upp via en plug‑in‑baserad laddare, så stora pixeldata kan ligga utanför dokumentet. Se sidorna <a href="/medical/net/dicom-to-json/">DICOM till JSON</a> och <a href="/medical/net/dicom-to-xml/">DICOM till XML</a>.
+     Sjukvårdssystem utbyter data via webbtjänster, så Aspose.Medical for .NET serialiserar DICOM‑dataset till DICOM JSON‑modellen (PS3.18) och till DICOM XML (PS3.19), och parsar båda tillbaka till dataset. Serialiserarna fungerar på strängar, strömmar och rör, både synkront och asynkront, och en sekvens av dataset kan läsas ett i taget utan att hela dokumentet hålls i minnet. Bulk‑datreferenser löses upp via en plug‑in‑baserad laddare, så stora pixeldata kan ligga utanför dokumentet. Se sidorna <a href="/medical/net/dicom-to-json/">DICOM till JSON</a> och <a href="/medical/net/dicom-to-xml/">DICOM till XML</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -500,7 +501,7 @@ Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
      DICOM‑nätverk över DIMSE
     </h2>
     <p>
-     Aspose.Medical for .NET kommunicerar direkt med andra DICOM‑system. Biblioteket erbjuder en DIMSE‑klient och en DIMSE‑server för C‑ECHO, C‑STORE, C‑FIND, C‑MOVE och C‑GET, tillsammans med N‑services, associeringsförhandling med presentationskontexter och roller, asynkrona operationer, förhandling av användaridentitet och TLS. Begäranden köas på en associering och besvaras av hanterare du registrerar, så en store‑and‑forward‑nod, en fråga‑proxy eller ett test‑SCP är en fråga om några klasser. <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM‑nätverksguiden</a> täcker hela API‑et.
+     Aspose.Medical for .NET kommunicerar direkt med andra DICOM‑system. Biblioteket tillhandahåller en DIMSE‑klient och en DIMSE‑server för C‑ECHO, C‑STORE, C‑FIND, C‑MOVE och C‑GET, tillsammans med N‑services, associationsförhandling med presentationskontexter och roller, asynkrona operation‑fönster, förhandlingsprocess för användaridentitet samt TLS. Förfrågningar köas på en association och besvaras av handlare du registrerar, så en lagra‑och‑vidare‑nod, en fråge‑proxy eller ett test‑SCP är en fråga om några klasser. <a href="/medical/net/modality-worklist/">Sidan för modalitets‑arbetslistan</a> visar arbetslistan och MPPS‑arbetsflödet på båda sidor. <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM‑nätverksguiden</a> täcker hela API:t.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -538,7 +539,7 @@ await client.StopAsync();</code></pre>
      DICOMweb‑klient och -server
     </h2>
     <p>
-     Molnbaserade bildtjänster och moderna arkiv exponerar DICOM via HTTP. DICOMweb‑klienten i Aspose.Medical for .NET omsluter varje standardtransaktion i en typad metod: QIDO‑RS‑sökning, WADO‑RS‑hämtning av studier, serier, instanser, ramar, renderade bilder och miniatyrer, STOW‑RS‑uppladdning, WADO‑URI samt arbetslist‑, procedurstegs‑ och lagringsförbindelsetjänster. Den körs på din egen <code>HttpClient</code>, så autentisering och TLS förblir där din applikation konfigurerar dem, och resultaten kommer som samma dataset och filer som resten av biblioteket arbetar med. Samma bibliotek implementerar serversidan: den hanterar protokollet för QIDO‑RS, WADO‑RS, STOW‑RS och arbetsflödestjänsterna, och din kod ansluter lagringen. Se sidorna <a href="/medical/net/dicomweb-client/">DICOMweb‑klient</a> och <a href="/medical/net/dicomweb-server/">DICOMweb‑server</a>.
+     Molnbaserade bildtjänster och moderna arkiv exponerar DICOM via HTTP. DICOMweb‑klienten i Aspose.Medical for .NET omsluter varje standardtransaktion i en typad metod: QIDO‑RS‑sökning, WADO‑RS‑hämtning av studier, serier, instanser, ramar, renderade bilder och miniatyrer, STOW‑RS‑uppladdning, WADO‑URI samt arbetslist-, procedursteg- och lagringsåtagandes‑tjänsterna. Den körs på din egen <code>HttpClient</code>, så autentisering och TLS förblir där din applikation konfigurerar dem, och resultatet kommer som samma dataset och filer som resten av biblioteket arbetar med. Samma bibliotek implementerar serversidan: den hanterar protokollet för QIDO‑RS, WADO‑RS, STOW‑RS och arbetsflödestjänsterna, och din kod ansluter lagringen. Se sidorna <a href="/medical/net/dicomweb-client/">DICOMweb‑klient</a> och <a href="/medical/net/dicomweb-server/">DICOMweb‑server</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -567,7 +568,7 @@ await foreach (Dataset study in studies)
      Stora DICOM‑filer utan stort minne
     </h2>
     <p>
-     Helbildsskanningar, långa serier och multi‑frame‑studier får inte plats bekvämt i minnet. Aspose.Medical for .NET låter dig bestämma hur mycket av en fil som laddas: läs allt, skjuta upp element över en storleksgräns tills de nås, eller hoppa över dem och arbeta endast med metadata. Att läsa från ett flöde eller en pipe och skriva tillbaka på samma sätt håller data i rörelse istället för att ackumuleras. <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">Guiden för minneshantering</a> förklarar avvägningarna.
+     Helbladsbilder, långa serier och flerbildsstudier får inte plats bekvämt i minnet. Aspose.Medical for .NET låter dig bestämma hur mycket av en fil som laddas: läs allt, skjuta upp element över en storleksgräns tills de nås, eller hoppa över dem och arbeta bara med metadata. Att läsa från en ström eller ett rör och skriva tillbaka på samma sätt håller data i rörelse istället för att ackumuleras. <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">Guiden för minneshantering</a> förklarar avvägningarna.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -590,17 +591,17 @@ string? patientName = metadataOnly.Dataset.GetSingleValueOrDefault(Tag.PatientNa
 {{< /blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="Lärresurser" tabId="resources" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Lärande resurser" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="Dokumentation" href="https://docs.aspose.com/medical/net/" >}}
 {{< blocks/products/pf/slr-element name="Utvecklarguide" href="https://docs.aspose.com/medical/net/developer-guide/" >}}
 {{< blocks/products/pf/slr-element name="API‑referenser" href="https://reference.aspose.com/medical/net/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Produktstöd" tabId="support" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Produktsupport" tabId="support" >}}
 {{< blocks/products/pf/slr-element name="Gratis support" href="https://forum.aspose.com/c/medical" >}}
 {{< blocks/products/pf/slr-element name="Betald support" href="https://helpdesk.aspose.com/" >}}
 {{< blocks/products/pf/slr-element name="Blogg" href="https://blog.aspose.com/category/medical/" >}}
-{{< blocks/products/pf/slr-element name="Versionsanmärkningar" href="https://releases.aspose.com/medical/net/release-notes/" >}}
+{{< blocks/products/pf/slr-element name="Versionsnoteringar" href="https://releases.aspose.com/medical/net/release-notes/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="Varför Aspose.Medical för .NET?" tabId="success-stories" >}}

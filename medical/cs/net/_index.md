@@ -2,37 +2,38 @@
 title: C# .NET DICOM API pro lékařské zobrazování | Aspose.Medical
 weight: 1000
 url: /cs/net/
-description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte, zapisujte, anonymizujte, překládáte a renderujte DICOM soubory, serializujte je do JSON a XML a vyměňujte studie přes DIMSE a DICOMweb, bez jakéhokoli externího softwaru nebo nativních závislostí.
+description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte, zapisujte, anonymizujte, převádějte a renderujte DICOM soubory, serializujte je do JSON a XML a vyměňujte studie přes DIMSE a DICOMweb.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1=".NET API pro DICOM lékařské zobrazování" h2="Čtěte, zapisujte, anonymizujte, překládáte a renderujte DICOM soubory v .NET C# a vyměňujte studie přes DIMSE a DICOMweb, bez jakéhokoli externího softwaru nebo nativních závislostí." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET API pro DICOM lékařské zobrazování" h2="Čtěte, zapisujte, anonymizujte, převádějte a renderujte DICOM soubory v .NET C# a vyměňujte studie přes DIMSE a DICOMweb, bez jakéhokoli externího softwaru či nativních závislostí." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong> je čistá .NET knihovna tříd pro práci se soubory DICOM (Digital Imaging and Communications in Medicine). Umožňuje vývojářům číst, zapisovat, upravovat, anonymizovat, překládávat a renderovat data lékařského zobrazování, serializovat je do DICOM JSON a DICOM XML a vyměňovat studie s jinými systémy přes DIMSE a DICOMweb, bez jakéhokoli externího softwaru nebo nativních závislostí.</p>
+<p><strong>Aspose.Medical pro .NET</strong> je čistá .NET knihovna tříd pro práci se soubory DICOM (Digital Imaging and Communications in Medicine). Umožňuje vývojářům číst, zapisovat, upravovat, anonymizovat, převádět a renderovat data lékařského zobrazování, serializovat je do DICOM JSON a DICOM XML a vyměňovat studie s jinými systémy přes DIMSE a DICOMweb, bez jakéhokoli externího softwaru či nativních závislostí.</p>
 
-<p>Knihovna je zcela napsána v řízeném C# a běží na .NET 10 pod Windows, Linux a macOS. Neobsahuje žádné nativní binární soubory ani balíčky třetích stran v NuGet, takže se nasazuje jako jediná sestava do jakékoli .NET aplikace, od desktopového nástroje po kontejner v cloudovém zdravotnickém systému.</p>
+<p>Knihovna je napsána výhradně v řízeném C# a běží na .NET 10 na Windows, Linuxu a macOS. Neobsahuje nativní binárky ani balíčky třetích stran, takže se nasazuje jako jediný assembly do libovolné .NET aplikace, od desktopového nástroje po kontejner v cloudovém zdravotnickém systému.</p>
 
 <p><strong>Klíčové vlastnosti:</strong>
 <ul>
-    <li>Čtení a zápis DICOM souborů ze souboru, streamu nebo potrubí, synchronně i asynchronně, s úplnou podporou všech standardních datových elementů a hodnotových reprezentací.</li>
-    <li>Řízení paměti u velkých souborů: načíst každý element, odložit velké elementy, dokud nejsou použity, nebo je přeskočit a načíst jen metadata.</li>
-    <li>Číst a upravovat jakýkoli datový element, včetně sekvencí a soukromých značek, s podporou znakových sad pro ne-ASCII text.</li>
-    <li>Anonymizovat DICOM soubory pomocí profilů důvěrnosti DICOM PS 3.15, s možnostmi zachování UID, datumů, identifikátorů zařízení a institucí a charakteristik pacienta.</li>
-    <li>Překódovat mezi přenosovými syntaktami: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL a RLE, přičemž každý kodek je implementován v .NET.</li>
+    <li>Číst a zapisovat DICOM soubory ze souboru, streamu nebo pipe, synchronně či asynchronně, s úplnou podporou všech standardních datových elementů a reprezentací hodnot.</li>
+    <li>Řídit paměť u velkých souborů: načíst každý element, odložit velké elementy do doby, než jsou použity, nebo je přeskočit a číst jen metadata.</li>
+    <li>Číst a upravovat jakýkoli datový element, včetně sekvencí a soukromých tagů, s podporou znakových sad pro ne‑ASCII text.</li>
+    <li>Anonymizovat DICOM soubory pomocí profilů důvěrnosti DICOM PS 3.15, s možnostmi zachování UID, dat, identifikátorů zařízení a instituce a charakteristik pacienta.</li>
+    <li>Převádět mezi přenosovými syntaxi: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL a RLE, přičemž každý kodek je implementován v .NET.</li>
     <li>Renderovat snímky do BGRA pixelů s modality LUT, VOI LUT (okno a úroveň) a překryvy aplikovanými renderérem.</li>
-    <li>Serializovat datové sady do DICOM JSON Modelu (PS3.18) a DICOM XML (PS3.19) a zpět, včetně asynchronního streamování a připojitelného načítání hromadných dat.</li>
-    <li>Komunikovat přes DIMSE s klientem a serverem: C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, C‑GET, N‑services a TLS.</li>
-    <li>Vyhledávat, stahovat a nahrávat studie na libovolném DICOMweb serveru pomocí typovaného klienta pro QIDO‑RS, WADO‑RS, STOW‑RS, renderované obrazy, WADO‑URI a služby pracovního postupu.</li>
-    <li>Vytvořit vlastní DICOMweb server: QIDO‑RS, WADO‑RS, STOW‑RS a služby pracovního postupu na ASP.NET Core nebo jiném HTTP hostu, s úložištěm za nimi.</li>
+    <li>Serializovat datové sady do DICOM JSON Modelu (PS3.18) a do DICOM XML (PS3.19) a zpět, včetně asynchronního streamování a plug‑inovatelného načítání bulk dat.</li>
+    <li>Komunikovat přes DIMSE s klientem a serverem: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET, N‑services a TLS.</li>
+    <li>Dotazovat worklist modality, reportovat MPPS a rozdělovat práci s UPS‑RS workitems, jak jako klient, tak jako server.</li>
+    <li>Hledat, stahovat a nahrávat studie na libovolném DICOMweb serveru pomocí typovaného klienta pro QIDO‑RS, WADO‑RS, STOW‑RS, renderované obrazy, WADO‑URI a služby workflow.</li>
+    <li>Postavit si vlastní DICOMweb server: QIDO‑RS, WADO‑RS, STOW‑RS a služby workflow na ASP.NET Core nebo jiném HTTP hostiteli, s vlastním úložištěm v pozadí.</li>
 </ul>
 </p>
 
-<p>Aspose.Medical for .NET je samostatná. Nepotřebuje žádný DICOM prohlížeč, žádný software pro lékařské zobrazování ani nativní kodeky. Hodí se do IT systémů ve zdravotnictví, integrace PACS, telemedicínských platforem a jakékoli aplikace, která musí spolehlivě zpracovávat DICOM data.</p>
+<p>Aspose.Medical pro .NET je samostatná. Nepotřebuje žádný DICOM prohlížeč, žádný software pro lékařské zobrazování ani nativní kodeky. Hodí se do systémů zdravotnických IT, integrace PACS, telemedicínských platforem a libovolných aplikací, které musí spolehlivě zpracovávat DICOM data.</p>
 
 {{< /blocks/products/pf/tab-content >}}
 
@@ -46,42 +47,42 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
    <header>
     <i class="fa fa-file-image-o">
     </i>
-    Zpracování DICOM
+Zpracování DICOM
    </header>
    <ul>
     <li>
-     Čtení a zápis souborů, streamů, potrubí
+ Čtení a zápis souborů, streamů, pipe
     </li>
     <li>
-     Správa DICOM tagů a elementů
+ Správa DICOM tagů a elementů
     </li>
     <li>
-     Podpora více rámcových obrazů
+ Podpora multi‑frame obrázků
     </li>
     <li>
-     Správa soukromých tagů
+ Správa soukromých tagů
     </li>
     <li>
-     Podpora znakových kódování
+ Podpora kódování znaků
     </li>
     <li>
-     Řízení paměti pro velké soubory
+ Řízení paměti pro velké soubory
     </li>
    </ul>
    <header>
     <i class="fa fa-shield">
     </i>
-    Ochrana dat
+ Ochrana soukromí dat
    </header>
    <ul>
     <li>
-     Anonymizace DICOM
+ Anonymizace DICOM
     </li>
     <li>
-     Profily důvěrnosti PS 3.15
+ Profily důvěrnosti PS 3.15
     </li>
     <li>
-     Konfigurovatelné možnosti zachování
+ Konfigurovatelné možnosti zachování
     </li>
    </ul>
   </div>
@@ -90,45 +91,45 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
    <header>
     <i class="fa fa-exchange">
     </i>
-    Zobrazování a konverze
+ Zobrazování a konverze
    </header>
    <ul>
     <li>
-     Renderování snímků do BGRA pixelů
+ Renderování snímků do BGRA pixelů
     </li>
     <li>
-     Aplikován Modality LUT a VOI LUT
+ Aplikovaný Modality LUT a VOI LUT
     </li>
     <li>
-     Podpora překryvů obrazu
+ Podpora překryvu obrazu
     </li>
     <li>
-     Konverze přenosové syntaxe
+ Konverze přenosové syntaxi
     </li>
     <li>
-     Komprese JPEG 2000, HTJ2K a JPEG XL
+ Komprese JPEG 2000, HTJ2K a JPEG XL
     </li>
     <li>
-     Serializace DICOM JSON a XML
+ Serializace DICOM JSON a XML
     </li>
    </ul>
    <header>
     <i class="fa fa-sitemap">
     </i>
-    DICOM síťování
+ DICOM síťování
    </header>
    <ul>
     <li>
-     DIMSE klient a server
+ DIMSE klient a server
     </li>
     <li>
-     C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
+ C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </li>
     <li>
-     N-Services a kontrola asociace
+ N-Services a řízení asociace
     </li>
     <li>
-     TLS spojení
+ TLS spojení
     </li>
    </ul>
   </div>
@@ -138,14 +139,14 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
  <div class="d1-logo">
   <img width="70" height="75" alt="DICOM Processing API" src="aspose_medical-for-net.svg"/>
   <header>
-   Aspose.Medical
+ Aspose.Medical
   </header>
   <footer>
    <small>
     <em>
-     pro
+ pro
     </em>
-    .NET
+ .NET
    </small>
   </footer>
  </div>
@@ -161,20 +162,20 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
    <header>
     <i class="fa fa-cubes">
     </i>
-    Čistá .NET knihovna
+ Čistá .NET knihovna
    </header>
    <ul>
     <li>
-     100 % spravovaný C# kód
+ 100 % řízený C# kód
     </li>
     <li>
-     Žádné nativní závislosti
+ Žádné nativní závislosti
     </li>
     <li>
-     Žádné balíčky třetích stran
+ Žádné balíčky třetích stran
     </li>
     <li>
-     Samostatné nasazení
+ Samostatné nasazení
     </li>
    </ul>
   </div>
@@ -183,30 +184,30 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
    <header>
     <i class="fa fa-cubes">
     </i>
-    Podporovaný framework
+ Podporovaný framework
    </header>
    <ul>
     <li>
-     .NET 10
+ .NET 10
     </li>
     <li>
-     x64 a ARM64
+ x64 a ARM64
     </li>
    </ul>
    <header>
     <i class="fa fa-globe">
     </i>
-    Operační systémy
+ Operační systémy
    </header>
    <ul>
     <li>
-     Windows 10, Windows 11, Windows Server 2016 a novější
+ Windows 10, Windows 11, Windows Server 2016 a novější
     </li>
     <li>
-     Linux: Ubuntu 20.04+, Debian 10+, CentOS 8+
+ Linux: Ubuntu 20.04+, Debian 10+, CentOS 8+
     </li>
     <li>
-     macOS 11 a novější
+ macOS 11 a novější
     </li>
    </ul>
   </div>
@@ -216,14 +217,14 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
  <div class="d1-logo">
   <img width="70" height="75" alt="Medical Imaging API for .NET" src="aspose_medical-for-net.svg"/>
   <header>
-   Aspose.Medical
+ Aspose.Medical
   </header>
   <footer>
    <small>
     <em>
-     pro
+ pro
     </em>
-    .NET
+ .NET
    </small>
   </footer>
  </div>
@@ -239,30 +240,30 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
    <header>
     <i class="fa fa-arrows-v">
     </i>
-    Čtení a zápis
+ Čtení a zápis
    </header>
    <ul>
     <li>
      <b>
-      Lékařské zobrazování:
+ Lékařské zobrazování:
      </b>
-     DICOM (.dcm)
+ DICOM (.dcm)
     </li>
     <li>
      <b>
-      Výměna dat:
+ Výmena dat:
      </b>
-     DICOM JSON (PS3.18), DICOM XML (PS3.19)
+ DICOM JSON (PS3.18), DICOM XML (PS3.19)
     </li>
    </ul>
    <header>
     <i class="fa fa-compress">
     </i>
-    Komprese pixelových dat
+ Komprese pixelových dat
    </header>
    <ul>
     <li>
-     JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE
+ JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE
     </li>
    </ul>
   </div>
@@ -271,30 +272,30 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
    <header>
     <i class="fa fa-mail-forward">
     </i>
-    Výstup renderování
+ Výstup renderování
    </header>
    <ul>
     <li>
      <b>
-      Pixely:
+ Pixely:
      </b>
-     32‑bitové BGRA buffery pro jakoukoli zobrazovací knihovnu
+ 32‑bitové BGRA buffery pro libovolnou zobrazovací knihovnu
     </li>
     <li>
      <b>
-      Vestavěný obrazový soubor:
+ Vestavěný obrazový soubor:
      </b>
-     PNM
+ PNM
     </li>
    </ul>
    <header>
     <i class="fa fa-mail-reply">
     </i>
-    Vstup rasteru
+ Vstup rasteru
    </header>
    <ul>
     <li>
-     Buffer pixelů dekódovaný externí zobrazovací knihovnou, zapisovaný do DICOM pixelových dat rámec po rámci
+ Pixelové buffery dekódované externí zobrazovací knihovnou, zapisované do DICOM pixelových dat snímek po snímku
     </li>
    </ul>
   </div>
@@ -304,14 +305,14 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
  <div class="d1-logo">
   <img width="70" height="75" alt="DICOM API" src="aspose_medical-for-net.svg"/>
   <header>
-   Aspose.Medical
+ Aspose.Medical
   </header>
   <footer>
    <small>
     <em>
-     pro
+ pro
     </em>
-    .NET
+ .NET
    </small>
   </footer>
  </div>
@@ -330,7 +331,7 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
  <div class="row">
   <div class="container">
    <h2 class="pr-ft">
-    Pokročilé funkce .NET DICOM API
+ Pokročilé funkce .NET DICOM API
    </h2>
    <p>
    </p>
@@ -338,83 +339,83 @@ description: Čistá .NET knihovna pro DICOM lékařské zobrazování. Čtěte,
     <em class="fa fa-file-image-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Čtení a zápis DICOM souborů ze souborů, streamů nebo potrubí
+ Číst a zapisovat DICOM soubory ze souborů, streamů nebo pipe
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-tags ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Přístup a manipulace se všemi DICOM tagy, sekvencemi a soukromými elementy
+ Přistupovat a manipulovat se všemi DICOM tagy, sekvencemi a soukromými elementy
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-shield ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Anonymizovat data pacienta pomocí profilů důvěrnosti DICOM PS 3.15
+ Anonymizovat údaje pacienta pomocí profilů důvěrnosti DICOM PS 3.15
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-exchange ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Překódovat mezi přenosovými syntaktami, včetně HTJ2K a JPEG XL
+ Převádět mezi přenosovými syntaxi, včetně HTJ2K a JPEG XL
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-picture-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Renderovat snímky do pixelů pro prohlížeče, náhledy a export obrázků
+ Renderovat snímky do pixelů pro prohlížeče, náhledy a export obrázků
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-code ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Serializovat DICOM data do JSON a XML, s asynchronním streamováním
+ Serializovat DICOM data do JSON a XML, s asynchronním streamováním
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sitemap ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Vyměňovat studie přes DIMSE: C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, C‑GET
+ Vyměňovat studie přes DIMSE: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-database ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Udržovat paměť efektivní u velkých souborů odkládáním nebo přeskočením velkých elementů
+ Udržovat paměť plochou u velkých souborů odkládáním nebo přeskočením velkých elementů
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sliders ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Renderovat více rámcové obrazy s modality LUT, VOI LUT a překryvy
+ Renderovat multi‑frame obrázky s modality LUT, VOI LUT a překryvy
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Čistá .NET knihovna – žádné závislosti
+ Čistá .NET knihovna – Žádné závislosti
     </h2>
     <p>
-     Aspose.Medical for .NET je napsán kompletně v řízeném C# a distribuován jako jediná sestava bez nativních binárek a bez balíčků třetích stran v NuGet. Ostatní knihovny pro lékařské zobrazování se spoléhají na nativní kodeky nebo externí nástroje; tato ne. Všechny kodeky pro kompresi obrazu (JPEG, JPEG‑LS, JPEG 2000, HTJ2K, JPEG XL, RLE) jsou implementovány v .NET, takže knihovna se chová stejně na Windows, Linux a macOS. To z ní činí vhodnou volbu pro kontejnery, cloudová prostředí i jakékoli nasazení, kde instalace nativních knihoven není možná. Balíček cílí na .NET 10.
+ Aspose.Medical pro .NET je napsán výhradně v řízeném C# a distribuován jako jediný assembly bez nativních binárek a bez balíčků třetích stran. Ostatní knihovny pro lékařské zobrazování spoléhají na nativní kodeky nebo externí nástroje; tato ne. Všechny kodeky pro kompresi obrazu (JPEG, JPEG‑LS, JPEG 2000, HTJ2K, JPEG XL, RLE) jsou implementovány v .NET, takže knihovna se chová stejně na Windows, Linuxu i macOS. To z ní činí vhodnou volbu pro kontejnery, cloudová prostředí a jakékoli nasazení, kde instalace nativních knihoven není možnost. Balíček cílí na .NET 10.
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Anonymizovat DICOM soubory pro soulad s ochranou soukromí
+ Anonymizovat DICOM soubory pro soulad s ochranou soukromí
     </h2>
     <p>
-     Ochrana soukromí pacienta je v aplikacích ve zdravotnictví striktně vyžadována. Aspose.Medical for .NET anonymizuje DICOM data pomocí profilů důvěrnosti DICOM PS 3.15. Můžete odebrat nebo nahradit identifikační informace pacienta při zachování klinické hodnoty zobrazovacích dat a můžete zvolit, co profil zachová: bezpečné soukromé atributy, UID, identifikátory zařízení a instituce, charakteristiky pacienta a longitudinální časové informace. <a href="/medical/net/anonymization/">Stránka DICOM anonymizace</a> podrobně ukazuje možnosti profilů.
+Soukromí pacienta je přísnou požadavkem ve zdravotnických aplikacích. Aspose.Medical pro .NET anonymizuje DICOM data pomocí profilů důvěrnosti DICOM PS 3.15. Můžete odstranit nebo nahradit identifikační informace pacienta a přitom zachovat klinickou hodnotu zobrazovacích dat, a můžete si vybrat, co profil zachová: bezpečné soukromé atributy, UID, identifikátory zařízení a instituce, charakteristiky pacienta a longitudinální časové informace. <a href="/medical/net/anonymization/">Stránka anonymizace DICOM</a> podrobně ukazuje možnosti profilů.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Anonymizovat DICOM soubor - C#
+ Anonymizace DICOM souboru - C#
      </h3>
      <pre><code class="cs">// Load the DICOM file
 DicomFile dicomFile = DicomFile.Open("patient_scan.dcm");
@@ -430,14 +431,14 @@ anonymized.Save("anonymized_scan.dcm");</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Renderovat DICOM snímky v .NET C#
+ Renderovat DICOM snímky v .NET C#
     </h2>
     <p>
-     Aspose.Medical for .NET renderuje DICOM rámec do 32‑bitového BGRA pixelového obrazu. Renderér aplikuje fotometrickou interpretaci, modality LUT a VOI LUT (okno a úroveň) z datové sady a vykreslí překryvy, takže výsledek odpovídá tomu, co ukazuje prohlížeč. Pixely pak patří vám: zkopírujte je do bufferu a předávejte jakékoli zobrazovací knihovně pro uložení jako PNG, JPEG nebo TIFF. Jediný enkodér obrazu vestavěný v knihovně je PNM. Stránky konverze ukazují kompletní postup pro <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a> a <a href="/medical/net/dicom-to-tiff/">TIFF</a>.
+Aspose.Medical pro .NET renderuje DICOM snímek do 32‑bitového BGRA pixelového obrazu. Renderér aplikuje fotometrickou interpretaci, modality LUT a VOI LUT (okno a úroveň) z datové sady a vykreslí překryvy, takže výsledek odpovídá tomu, co ukazuje prohlížeč. Pixely poté patří vám: zkopírujte je do bufferu a předávejte libovolné zobrazovací knihovně pro uložení jako PNG, JPEG nebo TIFF. Jediný vestavěný kodér obrazu v knihovně je PNM. Stránky konverze ukazují kompletní postup pro <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a> a <a href="/medical/net/dicom-to-tiff/">TIFF</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Renderovat DICOM rámec - C#
+ Renderovat DICOM snímek - C#
      </h3>
      <pre><code class="cs">// Load the DICOM file
 DicomFile dicomFile = DicomFile.Open("chest_xray.dcm");
@@ -452,14 +453,14 @@ image.CopyPixelsTo(pixels);</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Překódovat mezi přenosovými syntaktami
+ Převod mezi přenosovými syntaxi
     </h2>
     <p>
-     Zobrazovací systémy a archivy vyžadují specifické DICOM přenosové syntakty. Aspose.Medical for .NET překóduje mezi nekomprimovanými formáty, JPEG Baseline, JPEG Lossless, JPEG‑LS, JPEG 2000, HTJ2K (High‑Throughput JPEG 2000), JPEG XL a RLE. HTJ2K a JPEG XL jsou dva nejnovější typy v DICOM standardu a zde jsou implementovány v .NET stejně jako všechny ostatní kodeky. Překódování je důležité pro integraci PACS, velikost archivu a kompatibilitu mezi systémy. Viz <a href="/medical/net/dicom-transfer-syntax-conversion/">stránka konverze přenosové syntaxe</a> a <a href="/medical/net/jpeg2000/">stránka JPEG 2000</a>.
+Systémy zobrazování a archivy vyžadují specifické DICOM přenosové syntaxe. Aspose.Medical pro .NET převádí mezi nekomprimovanými formáty, JPEG Baseline, JPEG Lossless, JPEG‑LS, JPEG 2000, HTJ2K (High‑Throughput JPEG 2000), JPEG XL a RLE. HTJ2K a JPEG XL jsou dvě nejnovější možnosti ve standardu DICOM a zde jsou implementovány v .NET stejně jako všechny ostatní kodeky. Převod je důležitý pro integraci s PACS, velikost archivů a kompatibilitu mezi systémy. Viz <a href="/medical/net/dicom-transfer-syntax-conversion/">stránka převodu přenosové syntaxi</a> a <a href="/medical/net/jpeg2000/">stránka JPEG 2000</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Překódovat DICOM do HTJ2K - C#
+ Převod DICOM na HTJ2K - C#
      </h3>
      <pre><code class="cs">// Load existing DICOM file
 DicomFile dicomFile = DicomFile.Open("input.dcm");
@@ -473,14 +474,14 @@ transcoded.Save("output.dcm");</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Serializace DICOM do JSON a XML
+ DICOM do JSON a XML serializace
     </h2>
     <p>
-     Zdravotnické systémy vyměňují data přes webové služby, takže Aspose.Medical for .NET serializuje DICOM datové sady do DICOM JSON Modelu (PS3.18) a do DICOM XML (PS3.19) a oba zpětně parsuje do datových sad. Serializátory pracují s řetězci, streamy a potrubími, synchronně i asynchronně, a sekvenci datových sad lze číst po jedné, aniž by se celý dokument musel držet v paměti. Odkazy na hromadná data jsou řešeny pomocí připojitelného načítače, takže velká pixelová data mohou zůstat mimo dokument. Viz stránky <a href="/medical/net/dicom-to-json/">DICOM do JSON</a> a <a href="/medical/net/dicom-to-xml/">DICOM do XML</a>.
+Zdravotnické systémy vyměňují data přes webové služby, proto Aspose.Medical pro .NET serializuje DICOM datové sady do DICOM JSON Modelu (PS3.18) a do DICOM XML (PS3.19) a obě formáty dokáže zpět načíst do datových sad. Serializéry fungují na řetězcích, streamů a pipe, synchronně i asynchronně, a sekvence datových sad lze číst po jedné, aniž by byl celý dokument držán v paměti. Odkazy na bulk data jsou řešeny pomocí plug‑inovatelného načítacího mechanismu, takže velká pixelová data mohou zůstat mimo dokument. Viz <a href="/medical/net/dicom-to-json/">DICOM do JSON</a> a <a href="/medical/net/dicom-to-xml/">DICOM do XML</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Serializovat DICOM do JSON a XML - C#
+ Serializovat DICOM do JSON a XML - C#
      </h3>
      <pre><code class="cs">// Load the DICOM file
 DicomFile dicomFile = DicomFile.Open("patient_scan.dcm");
@@ -497,14 +498,14 @@ Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOM síťování přes DIMSE
+ DICOM síťování přes DIMSE
     </h2>
     <p>
-     Aspose.Medical for .NET komunikovat přímo s ostatními DICOM systémy. Knihovna poskytuje DIMSE klienta a DIMSE server pro C‑ECHO, C‑STORE, C‑FIND, C‑MOVE a C‑GET, spolu s N‑services, vyjednáváním asociačních kontextů a rolí, asynchronními okny operací, vyjednáváním identity uživatele a TLS. Požadavky jsou zařazeny do fronty na asociaci a odpovídají jim handlery, které zaregistrujete, takže uzel store‑and‑forward, proxy dotazů nebo testovací SCP jsou jen pár tříd. <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">Průvodce DICOM síťováním</a> popisuje kompletní API.
+Aspose.Medical pro .NET komunikuje přímo s jinými DICOM systémy. Knihovna poskytuje DIMSE klienta i server pro C‑ECHO, C‑STORE, C‑FIND, C‑MOVE a C‑GET, společně s N‑services, vyjednáváním asociací s prezentacními kontexty a rolemi, asynchronními okny operací, vyjednáváním identity uživatele a TLS. Požadavky jsou zařazeny do asociace a odpovídají je handlery, které zaregistrujete, takže uzel store‑and‑forward, query proxy nebo testovací SCP jsou otázkou několika tříd. <a href="/medical/net/modality-worklist/">Stránka modality worklist</a> ukazuje worklist a MPPS workflow na obou stranách. <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">Průvodce DICOM síťováním</a> pokrývá kompletní API.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Odeslat studii do PACS pomocí C‑STORE - C#
+ Odeslat studii do PACS pomocí C‑STORE - C#
      </h3>
      <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("study.dcm");
 
@@ -535,14 +536,14 @@ await client.StopAsync();</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     DICOMweb klient a server
+ DICOMweb klient a server
     </h2>
     <p>
-     Cloudové zobrazovací služby a moderní archivy vystavují DICOM přes HTTP. DICOMweb klient v Aspose.Medical for .NET zapouzdřuje každou standardní transakci do typované metody: QIDO‑RS vyhledávání, WADO‑RS získávání studií, sérií, instancí, rámců, renderovaných obrazů a náhledů, STOW‑RS nahrávání, WADO‑URI a služby seznamu úkolů, kroků procedur a závazku úložiště. Běží na vašem vlastním <code>HttpClient</code>, takže autentizace a TLS zůstávají tam, kde je aplikace konfiguruje, a výsledky přicházejí jako stejné datové sady a soubory, se kterými ostatní část knihovny pracuje. Stejná knihovna implementuje serverovou stranu: zpracovává protokol QIDO‑RS, WADO‑RS, STOW‑RS a služby pracovního postupu a váš kód připojuje úložiště. Viz stránky <a href="/medical/net/dicomweb-client/">DICOMweb klient</a> a <a href="/medical/net/dicomweb-server/">DICOMweb server</a>.
+Cloudové zobrazovací služby a moderní archivy vystavují DICOM přes HTTP. DICOMweb klient v Aspose.Medical pro .NET zapouzdřuje každou standardní transakci do typované metody: QIDO‑RS vyhledávání, WADO‑RS retrieval studií, sérií, instancí, snímků, renderovaných obrazů a miniatur, STOW‑RS upload, WADO‑URI a služby worklist, procedure step a storage commitment. Běží na vašem vlastním <code>HttpClient</code>, takže autentizace a TLS zůstávají tam, kde je vaše aplikace konfiguruje, a výsledky přicházejí jako stejné datové sady a soubory, se kterými knihovna pracuje. Stejná knihovna implementuje i serverovou část: zpracovává protokol QIDO‑RS, WADO‑RS, STOW‑RS a workflow služby a váš kód připojuje úložiště. Viz <a href="/medical/net/dicomweb-client/">DICOMweb klient</a> a <a href="/medical/net/dicomweb-server/">DICOMweb server</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Vyhledat studie na DICOMweb serveru - C#
+ Vyhledat studie na DICOMweb serveru - C#
      </h3>
      <pre><code class="cs">using HttpClient http = new HttpClient();
 
@@ -564,14 +565,14 @@ await foreach (Dataset study in studies)
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Velké DICOM soubory bez velké paměti
+ Velké DICOM soubory bez velké paměti
     </h2>
     <p>
-     Celoplošné snímky, dlouhé série a multi‑rámcové studie se pohodlně nevejdou do paměti. Aspose.Medical for .NET vám umožňuje rozhodnout, kolik souboru se načte: načíst vše, odložit elementy nad prahovou velikostí až do okamžiku jejich použití, nebo je přeskočit a pracovat jen s metadaty. Čtení ze streamu nebo potrubí a zápis stejným způsobem udržuje data v pohybu místo hromadění. <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">Průvodce správou paměti</a> vysvětluje kompromisy.
+Celotučné snímky, dlouhé série a multi‑frame studie se nevejdou pohodlně do paměti. Aspose.Medical pro .NET vám umožňuje rozhodnout, kolik souboru se načte: načíst vše, odložit elementy nad určitou velikost, dokud nejsou přístupné, nebo je přeskočit a pracovat jen s metadaty. Čtení ze streamu nebo pipe a zápis stejným způsobem udržuje data v pohybu místo hromadění. <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">Průvodce správou paměti</a> vysvětluje kompromisy.
     </p>
     <div class="codeblock" id="code">
      <h3>
-      Přečíst metadata bez pixelových dat - C#
+ Číst metadata bez pixelových dat - C#
      </h3>
      <pre><code class="cs">// Elements larger than the threshold are not loaded into memory
 DicomFile metadataOnly = DicomFile.Open(

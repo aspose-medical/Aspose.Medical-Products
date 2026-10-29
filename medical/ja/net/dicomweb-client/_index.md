@@ -1,29 +1,29 @@
 ---
-title: C# .NET の DICOMweb クライアント - QIDO-RS、WADO-RS、STOW-RS | Aspose.Medical
+title: C# .NET 用 DICOMweb クライアント - QIDO-RS、WADO-RS、STOW-RS | Aspose.Medical
 weight: 9100
 
-description: .NET から HTTP 経由で DICOM スタディを検索、ダウンロード、アップロードします。PACS、VNA、クラウド画像サービスと連携できる、QIDO-RS、WADO-RS、STOW-RS 用の純粋な C# DICOMweb クライアントです。
+description: .NET から HTTP 経由で DICOM 研究（スタディ）を検索、ダウンロード、アップロードします。QIDO-RS、WADO-RS、STOW-RS 用の純粋な C# 実装の DICOMweb クライアントで、PACS、VNA、クラウド画像サービスと連携します。
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1=".NET C# 用 DICOMweb クライアント" h2="QIDO-RS、WADO-RS、STOW-RS を使用して、任意の DICOMweb サーバー上でスタディの検索、ダウンロード、アップロードを、インストール不要のマネージド C# で実行できます。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET C# 用 DICOMweb クライアント" h2="QIDO-RS、WADO-RS、STOW-RS を使用して任意の DICOMweb サーバー上のスタディを検索、ダウンロード、アップロードします。マネージド C# で実装され、マシンに何もインストールする必要はありません。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="自分のコードから DICOM を HTTP で扱う">}}
+{{< blocks/products/pf/feature-page-section h2="自分のコードから HTTP 経由で DICOM を扱う">}}
 
-<p>DICOMweb は DICOM の HTTP 形式です。ポート 104 の DIMSE アソシエーションの代わりに、アプリケーションは普通の HTTPS リクエストを送ります: 検索には QIDO-RS、ダウンロードには WADO-RS、アップロードには STOW-RS を使用します。Azure Health Data Services の DICOM サービスや Google Cloud Healthcare API などのクラウド画像サービス、そして Orthanc や dcm4chee といったアーカイブもこの方式を採用しています。</p>
+<p>DICOMweb は DICOM の HTTP 形式です。ポート 104 での DIMSE アソシエーションの代わりに、アプリケーションは通常の HTTPS リクエストを送ります：検索は QIDO-RS、ダウンロードは WADO-RS、アップロードは STOW-RS。Azure Health Data Services の DICOM サービスや Google Cloud Healthcare API などのクラウド画像サービス、また Orthanc や dcm4chee といったアーカイブも同様に動作します。</p>
 
-<p><strong>Aspose.Medical for .NET</strong> はバージョン 26.10 以降、DICOMweb クライアントを含みます。<code>DicomWebClient</code> はすべての標準トランザクションを型付きメソッドでラップし、結果はライブラリの他の部分が読み書きするのと同じ <code>Dataset</code> と <code>DicomFile</code> オブジェクトとして返されます。対向側のサーバーは任意の DICOMweb 実装でかまいません。Aspose.Medical で構築されている必要はありません。</p>
+<p><strong>Aspose.Medical for .NET</strong> はバージョン 26.10 以降、DICOMweb クライアントを含んでいます。<code>DicomWebClient</code> はすべての標準トランザクションを型付きメソッドでラップし、結果はライブラリの他の部分が読み書きするのと同じ <code>Dataset</code> および <code>DicomFile</code> オブジェクトとして返されます。対向側のサーバーは任意の DICOMweb 実装で構いません；Aspose.Medical で構築されている必要はありません。</p>
 
-<p>クライアントは <code>HttpClient</code> 上に構築されたマネージド C# です。ネイティブツールキットやプロキシサービスは不要で、同じコードが Windows、Linux、コンテナ上で動作します。</p>
+<p>クライアントは <code>HttpClient</code> 上に構築されたマネージド C# です。ネイティブツールキットやプロキシサービスは不要なので、同じコードが Windows、Linux、コンテナ上で動作します。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOMweb サーバーに接続する">}}
 
-<p>サーバーのサービスルート URL と <code>HttpClient</code> からクライアントを作成します。認証、TLS 設定、プロキシ、接続プーリングは <code>HttpClient</code> に保持され、アプリケーション側で既に設定されたものが使用されます。クライアントは <code>HttpClient</code> の所有権を持たず、Dispose もしません。</p>
+<p><code>HttpClient</code> とサーバーのサービスルート URL からクライアントを作成します。認証、TLS 設定、プロキシ、接続プーリングはすべて <code>HttpClient</code> 上に保持され、アプリケーション側で既に設定されたものが使用されます。クライアントは <code>HttpClient</code> を所有せず、破棄もしません。</p>
 
 <div class="codeblock" id="code">
  <h3>DICOMweb クライアントを作成する - C#</h3>
@@ -38,13 +38,13 @@ DicomWebClient client = new DicomWebClient(http, new DicomWebClientOptions
 });</code></pre>
 </div>
 
-<p>あるデプロイが WADO-URI や別のサービスを異なる URL で提供する場合、<code>ServiceBaseUris</code> を使用してそのサービスだけのルートを上書きできます。</p>
+<p>あるデプロイが WADO-URI や別のサービスを異なる URL で提供する場合、<code>ServiceBaseUris</code> はそのサービスだけのルートを上書きします。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="QIDO-RS でスタディを検索する">}}
 
-<p>検索では DICOM キーワードを名前としたマッチングパラメータ、返すフィールド、ページング制御を指定します。マッチ結果はデータセットのストリームとして返され、レスポンスのダウンロード中に1件ずつ読み取れます。</p>
+<p>検索では、名前に DICOM キーワードを使用した条件パラメータ、返却するフィールド、ページング制御を指定します。マッチ結果はデータセットのストリームとして返され、レスポンスがダウンロード中でも1件ずつ読み取れます。</p>
 
 <div class="codeblock" id="code">
  <h3>患者のスタディを検索する - C#</h3>
@@ -65,13 +65,13 @@ await foreach (Dataset study in studies)
 }</code></pre>
 </div>
 
-<p><code>SearchSeriesAsync</code> と <code>SearchInstancesAsync</code> は1レベル下の検索を行い、アーカイブ全体または特定のスタディ・シリーズ内を対象にします。同じオプションでファジーマッチ、空値マッチ、ページング用の結果オフセットも設定できます。</p>
+<p><code>SearchSeriesAsync</code> と <code>SearchInstancesAsync</code> は1レベル下の検索を行い、アーカイブ全体または特定のスタディやシリーズ内で検索できます。同じオプションでファジーマッチ、空値マッチ、ページング用の結果オフセットも設定できます。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="WADO-RS でスタディをダウンロードする">}}
 
-<p>スタディは数千件のインスタンスを含むことがあります。<code>RetrieveStudyAsync</code> はそれらをストリームとして返すため、レスポンスの一部が到着した時点で各ファイルを解析し、次のファイルを読む前に保存できます。メモリ使用量はスタディのサイズに比例して増加しません。</p>
+<p>スタディには数千のインスタンスが含まれることがあります。<code>RetrieveStudyAsync</code> はそれらをストリームで返すため、レスポンスの一部が届くたびに各ファイルを解析し、次のファイルを読み込む前に保存できます。メモリ使用量はスタディのサイズに比例して増えません。</p>
 
 <div class="codeblock" id="code">
  <h3>スタディのすべてのインスタンスを保存する - C#</h3>
@@ -86,13 +86,13 @@ await foreach (DicomFile file in files)
 }</code></pre>
 </div>
 
-<p><code>RetrieveSeriesAsync</code> と <code>RetrieveInstanceAsync</code> も同様の方法で、1シリーズまたは1インスタンスをダウンロードします。</p>
+<p><code>RetrieveSeriesAsync</code> と <code>RetrieveInstanceAsync</code> は同様の方法でシリーズまたは単一インスタンスをダウンロードします。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="サムネイルやレンダリング画像を取得する">}}
+{{< blocks/products/pf/feature-page-section h2="サムネイルまたはレンダリング画像を取得する">}}
 
-<p>ビューアやワークリスト画面では DICOM ファイルではなく画像が必要なことが多いです。サーバーが画像をレンダリングし、JPEG や PNG で送信するため、クライアントは元のピクセルデータをダウンロード・デコードする必要がありません。</p>
+<p>ビューアやワークリスト画面は DICOM ファイルではなく画像が必要なことが多いです。サーバーが画像をレンダリングして JPEG または PNG で送信するため、クライアントは元のピクセルデータをダウンロードしたりデコードしたりする必要がありません。</p>
 
 <div class="codeblock" id="code">
  <h3>インスタンスの JPEG サムネイルを保存する - C#</h3>
@@ -109,13 +109,13 @@ await using FileStream output = File.Create("thumbnail.jpg");
 await thumbnail.ContentReader.CopyToAsync(output);</code></pre>
 </div>
 
-<p><code>RetrieveRenderedInstanceAsync</code> と <code>RetrieveRenderedFramesAsync</code> は代わりにフルサイズ画像を返します。<code>DicomWebRenderOptions</code> で画像品質、ビューポートサイズ、ウィンドウ設定、ICC プロファイルなど、標準のレンダリング制御をサーバーに渡します。</p>
+<p><code>RetrieveRenderedInstanceAsync</code> と <code>RetrieveRenderedFramesAsync</code> は代わりにフルサイズ画像を返します。<code>DicomWebRenderOptions</code> で画像品質、ビューポートサイズ、ウィンドウ設定、ICC プロファイルといった標準的なレンダリング制御をサーバーに渡します。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="STOW-RS でインスタンスをアップロードする">}}
 
-<p>STOW-RS は1リクエストで任意の数のインスタンスを送信します。サーバーはレポートで、インスタンスごとに保存されたか拒否されたかを一覧で返します。</p>
+<p>STOW-RS は任意の数のインスタンスを1つのリクエストで送信します。サーバーはレポートでインスタンスごとに保存されたものと拒否されたものを一覧で返します。</p>
 
 <div class="codeblock" id="code">
  <h3>DICOM ファイルのフォルダーをアップロードする - C#</h3>
@@ -138,15 +138,15 @@ if (stored.Value.Response.GetOrDefault(Tag.FailedSOPSequence) is Sequence failed
 }</code></pre>
 </div>
 
-<p>一部のサーバーはインスタンスが失敗した場合に 409 などの HTTP エラーで応答します。その場合、呼び出しは <code>DicomWebClientException</code> をスローし、例外のレスポンスボディに同じレポートが含まれます（次のセクションを参照）。</p>
+<p>一部のサーバーは、1つ以上のインスタンスが失敗した場合に 409 などの HTTP エラーで応答します。その場合、次のセクションで示すように呼び出しは <code>DicomWebClientException</code> をスローし、同じレポートが例外のレスポンスボディに含まれます。</p>
 
-<p><code>StoreStudyAsync</code> は名前付きスタディにアップロードします。両メソッドとも <code>IAsyncEnumerable&lt;DicomFile&gt;</code> を受け取れるため、リクエスト送信中にファイルを生成できます。</p>
+<p><code>StoreStudyAsync</code> は指定されたスタディへアップロードします。両メソッドとも <code>IAsyncEnumerable&lt;DicomFile&gt;</code> を受け取れるため、リクエスト送信中にファイルを逐次生成できます。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="サーバーエラーの処理">}}
 
-<p>すべての型付き操作は返却前に HTTP ステータスを確認します。サーバーがリクエストを拒否した場合、呼び出しは <code>DicomWebClientException</code> をスローし、ステータスコード、ヘッダー、レスポンスボディの先頭部分をログに保持します。</p>
+<p>すべての型付き操作は返却前に HTTP ステータスを確認します。サーバーがリクエストを拒否した場合、呼び出しは <code>DicomWebClientException</code> をスローし、ステータスコード、ヘッダー、レスポンスボディの先頭部分をログ用に保持します。</p>
 
 <div class="codeblock" id="code">
  <h3>失敗したリクエストを報告する - C#</h3>
@@ -163,32 +163,32 @@ catch (DicomWebClientException ex)
 }</code></pre>
 </div>
 
-<p>サムネイル取得など、生のレスポンスを返すメソッドは、<code>IsSuccessStatusCode</code> または <code>EnsureSuccessStatusCode</code> を使用してステータスチェックを呼び出し側に委ねます。</p>
+<p>上記のサムネイル取得のように生のレスポンスを返すメソッドは、ステータスチェックを <code>IsSuccessStatusCode</code> または <code>EnsureSuccessStatusCode</code> に委ねます。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="クライアントがカバーするその他の機能">}}
 
-<p>検索、ダウンロード、アップロードは共通の呼び出しです。クライアントは他の DICOMweb サービスにもそれぞれの操作グループを提供します。</p>
+<p>検索、ダウンロード、アップロードは一般的な呼び出しです。クライアントは他の DICOMweb サービスごとに操作グループを提供します。</p>
 
 <ul>
-<li>インスタンスのバルクデータ、ピクセルデータ、選択フレームを 1 起点のフレーム番号で取得（サーバーが送信した通り）。</li>
-<li>WADO-URI（多くのビューアやアーカイブがまだ使用している従来の単一 URL 取得）で DICOM ファイルやレンダリング画像を取得します。</li>
-<li>UPS-RS ワークリスト：ワークアイテムの作成、検索、更新、取得、状態変更、キャンセル要求、WebSocket 経由で届くイベントの購読。</li>
-<li>モダリティ ワークリスト (MWL-RS)、モダリティ実施手順ステップ (MPPS-RS)、ストレージコミットメント。</li>
-<li>カラーパレットやハンギングプロトコルといった非患者インスタンス、サーバーの機能文書。</li>
-<li><code>SendAsync</code> で独自のルート値、クエリパラメータ、ヘッダー、ボディを指定して任意の標準トランザクションを実行できる。</li>
+<li>インスタンスのバルクデータ、ピクセルデータ、選択フレームを、サーバーが送信した 1 基準のフレーム番号で取得します。</li>
+<li>WADO-URI、従来の単一 URL 取得で、多くのビューアやアーカイブが未だに使用している DICOM ファイルやレンダリング画像の取得。</li>
+<li><a href="/medical/net/ups-rs/">UPS-RS</a> ワークリスト：作成、検索、更新、取得、状態変更、キャンセル要求、WebSocket 経由で届くイベントの購読が可能です。</li>
+<li><a href="/medical/net/modality-worklist/">Modality worklist</a>（MWL-RS）、モダリティ実施手順ステップ（MPPS-RS）およびストレージコミットメント。</li>
+<li>カラーパレットやハンギングプロトコルなどの患者外インスタンス、サーバーの機能（Capabilities）ドキュメント。</li>
+<li><code>SendAsync</code> で独自のルート値、クエリパラメータ、ヘッダー、ボディを使用して任意の標準トランザクションを実行できる。</li>
 </ul>
 
-<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">DICOMweb クライアント ガイド</a> ではすべての操作とオプションが文書化され、<a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">クライアント操作リファレンス</a> では全メソッドが一覧化されています。</p>
+<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">DICOMweb クライアント ガイド</a> ではすべての操作とオプションを解説し、<a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">クライアント操作リファレンス</a> で全メソッドを一覧化しています。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="HTTP 応答からピクセルデータまでを1つのライブラリで">}}
 
-<p>クライアントでダウンロードしたファイルは通常の <code>DicomFile</code> です。同じプロセス内で匿名化、トランスコーディング、レンダリング、シリアライズが可能で、変換ステップや別ライブラリをチェーンに入れる必要はありません。</p>
+<p>クライアントでダウンロードしたファイルは通常の <code>DicomFile</code> です。同一プロセス内で匿名化、トランスコーディング、レンダリング、シリアライズが可能で、変換ステップや別のライブラリをチェーンに加える必要はありません。</p>
 
-<p>関連ページ: <a href="/medical/net/dicomweb-server/">DICOMweb サーバー</a>（自分の ASP.NET Core サービス側のプロトコル実装）、<a href="/medical/net/dicom-networking/">DICOM ネットワーキング</a>（DIMSE を使用するアーカイブ向け）、<a href="/medical/net/anonymization/">匿名化</a>（スタディが病院を離れる前に）、<a href="/medical/net/dicom-transfer-syntax-conversion/">転送構文変換</a>（サーバーが保存する形式）、そして <a href="/medical/net/dicom-to-json/">DICOM to JSON</a>（QIDO-RS 検索結果が使用するフォーマット）。</p>
+<p>関連ページ：独自の ASP.NET Core サービスでプロトコルの相手側を実装するための <a href="/medical/net/dicomweb-server/">DICOMweb サーバー</a>、HTTP ではなく DIMSE を使用するアーカイブ向けの <a href="/medical/net/dicom-networking/">DICOM ネットワーキング</a>、スタディが病院を出る前の <a href="/medical/net/anonymization/">匿名化</a>、サーバーが保存するための <a href="/medical/net/dicom-transfer-syntax-conversion/">転送シンタックス変換</a>、そして QIDO-RS 検索結果が使用する形式の <a href="/medical/net/dicom-to-json/">DICOM から JSON への変換</a>。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -207,8 +207,8 @@ catch (DicomWebClientException ex)
 {{< blocks/products/pf/slr-element name="ブログ" href="https://blog.aspose.com/category/medical/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="なぜ .NET 用 Aspose.Medical なのか？" tabId="success-stories" >}}
-{{< blocks/products/pf/slr-element name="顧客一覧" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-tab tabTitle="なぜ .NET 向け Aspose.Medical なのか？" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="顧客リスト" href="https://company.aspose.com/customers" >}}
 {{< blocks/products/pf/slr-element name="成功事例" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 

@@ -2,31 +2,31 @@
 title: C# .NET'te DICOMweb İstemcisi - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
 weight: 9100
 
-description: HTTP üzerinden .NET ile DICOM çalışmaları ara, indir ve yükle. QIDO-RS, WADO-RS ve STOW-RS için saf C#'ta bir DICOMweb istemcisi; PACS, VNA ve bulut görüntüleme hizmetleriyle çalışır.
+description: HTTP üzerinden .NET'ten DICOM çalışmaları arayın, indirin ve yükleyin. QIDO-RS, WADO-RS ve STOW-RS için saf C# ile yazılmış bir DICOMweb istemcisi; PACS, VNA ve bulut görüntüleme hizmetleriyle çalışır.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOMweb İstemcisi .NET C# için" h2="QIDO-RS, WADO-RS ve STOW-RS kullanarak herhangi bir DICOMweb sunucusunda çalışmaları ara, indir ve yükle; yönetilen C# ile makinede hiçbir şey kurmaya gerek yok." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET C# için DICOMweb İstemcisi" h2="QIDO-RS, WADO-RS ve STOW-RS kullanarak herhangi bir DICOMweb sunucusunda çalışmaları arayın, indirin ve yükleyin; yöneten C# içinde, makinede hiçbir şey kurmanıza gerek yok." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Kendi kodunuzdan HTTP üzerinden DICOM">}}
 
-<p>DICOMweb, DICOM'un HTTP biçimidir. 104 portunda bir DIMSE ilişkisi yerine uygulamanız normal HTTPS istekleri gönderir: arama için QIDO-RS, indirme için WADO-RS, yükleme için STOW-RS. Azure Health Data Services DICOM servisi ve Google Cloud Healthcare API gibi bulut görüntüleme hizmetleri bu şekilde çalışır; Orthanc ve dcm4chee gibi arşivler de aynı şekilde çalışır.</p>
+<p>DICOMweb, DICOM'un HTTP biçimidir. 104 portundaki bir DIMSE ilişkilendirmesi yerine, uygulamanız normal HTTPS istekleri gönderir: arama için QIDO-RS, indirme için WADO-RS, yükleme için STOW-RS. Azure Health Data Services DICOM hizmeti ve Google Cloud Healthcare API gibi bulut görüntüleme hizmetleri bu şekilde çalışır; Orthanc ve dcm4chee gibi arşivler de aynı şekilde çalışır.</p>
 
-<p><strong>Aspose.Medical for .NET</strong>, 26.10 sürümünden bu yana bir DICOMweb istemcisi içerir. <code>DicomWebClient</code> her standart işlemi tiplenmiş bir metodda kapsar ve sonuçlar kütüphanenin geri kalanının okuduğu ve yazdığı aynı <code>Dataset</code> ve <code>DicomFile</code> nesneleri olarak gelir. Diğer taraftaki sunucu herhangi bir DICOMweb uygulaması olabilir; Aspose.Medical ile oluşturulmak zorunda değildir.</p>
+<p><strong>Aspose.Medical for .NET</strong>, 26.10 sürümünden beri bir DICOMweb istemcisi içerir. <code>DicomWebClient</code>, her standart işlemi tipli bir metoda sarar ve sonuçlar kütüphanenin geri kalanının okuduğu ve yazdığı aynı <code>Dataset</code> ve <code>DicomFile</code> nesneleri olarak gelir. Diğer taraftaki sunucu herhangi bir DICOMweb uygulaması olabilir; Aspose.Medical ile inşa edilmiş olmak zorunda değildir.</p>
 
-<p>İstemci, <code>HttpClient</code> üzerine kurulmuş yönetilen C#'dır. Yerel bir araç takımı ve proxy servisi yoktur, bu yüzden aynı kod Windows, Linux ve bir konteyner içinde çalışır.</p>
+<p>İstemci, <code>HttpClient</code> üzerine kurulu yönetilen C#'tır. Yerel bir araç takımı ve vekil hizmeti yoktur; bu nedenle aynı kod Windows, Linux ve bir kapsayıcı içinde çalışır.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Bir DICOMweb sunucusuna bağlan">}}
 
-<p>İstemciyi bir <code>HttpClient</code> ve sunucunun hizmet kök URL'si ile oluşturun. Kimlik doğrulama, TLS ayarları, proxy'ler ve bağlantı havuzu <code>HttpClient</code>'da kalır; uygulamanız zaten onları yapılandırır. İstemci <code>HttpClient</code>'i sahiplenmez ve onu kapatmaz.</p>
+<p>İstemciyi bir <code>HttpClient</code> ve sunucunun hizmet kök URL'si ile oluşturun. Kimlik doğrulama, TLS ayarları, vekiller ve bağlantı havuzu <code>HttpClient</code> üzerinde kalır; uygulamanız zaten bunları yapılandırır. İstemci <code>HttpClient</code>'i sahiplenmez ve onu kapatmaz.</p>
 
 <div class="codeblock" id="code">
- <h3>Bir DICOMweb istemcisi oluştur - C#</h3>
+ <h3>DICOMweb istemcisi oluşturun - C#</h3>
  <pre><code class="cs">using HttpClient http = new HttpClient();
 
 // Most cloud services expect an OAuth access token
@@ -38,16 +38,16 @@ DicomWebClient client = new DicomWebClient(http, new DicomWebClientOptions
 });</code></pre>
 </div>
 
-<p>Bir dağıtım WADO-URI veya başka bir hizmeti farklı bir URL'den sunuyorsa, <code>ServiceBaseUris</code> yalnızca o hizmet için kökü geçersiz kılar.</p>
+<p>Bir dağıtım WADO-URI ya da başka bir hizmeti farklı bir URL üzerinden sunuyorsa, <code>ServiceBaseUris</code> yalnızca o hizmet için kökü geçersiz kılar.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="QIDO-RS ile çalışmaları ara">}}
 
-<p>Bir arama, DICOM anahtar sözcüğü isim olarak kullanılan eşleşen parametreleri, döndürülecek alanları ve sayfalama kontrollerini alır. Eşleşmeler, yanıt hâlâ indirilirken bir defada bir okunabilecek veri seti akışı olarak gelir.</p>
+<p>Bir arama, DICOM anahtar kelimesi adını taşıyan eşleşen parametreleri, döndürülecek alanları ve sayfalama kontrollerini alır. Eşleşmeler, yanıt hâlâ indirilirken bir seferde bir dataset akışı olarak gelir ve okunur.</p>
 
 <div class="codeblock" id="code">
- <h3>Bir hastanın çalışmalarını bul - C#</h3>
+ <h3>Bir hastanın çalışmalarını bulun - C#</h3>
  <pre><code class="cs">DicomWebSearchOptions search = new DicomWebSearchOptions
 {
     MatchingParameters = [new DicomWebQueryParameter("PatientName", "SMITH*")],
@@ -65,16 +65,16 @@ await foreach (Dataset study in studies)
 }</code></pre>
 </div>
 
-<p><code>SearchSeriesAsync</code> ve <code>SearchInstancesAsync</code>, bir seviye aşağıya, tüm arşivde ya da bir çalışma ya da seri içinde arama yapar. Aynı seçenekler bulanık eşleşme, boş değer eşleşmesi ve sayfalama için sonuç ofsetini de ayarlar.</p>
+<p><code>SearchSeriesAsync</code> ve <code>SearchInstancesAsync</code>, bir seviye aşağıda, tüm arşivde ya da bir çalışma veya serinin içinde arama yapar. Aynı seçenekler ayrıca bulanık eşleşme, boş değer eşleşmesi ve sayfalama için sonuç ofsetini ayarlar.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="WADO-RS ile bir çalışma indir">}}
+{{< blocks/products/pf/feature-page-section h2="WADO-RS ile bir çalışmayı indirin">}}
 
-<p>Bir çalışma binlerce örnek içerebilir. <code>RetrieveStudyAsync</code> bunları bir akış olarak döndürür; böylece her dosya, yanıtın bir parçası geldiğinde ayrıştırılır ve bir sonrakini okumadan önce kaydedilebilir. Bellek kullanımı çalışmanın boyutu ile artmaz.</p>
+<p>Bir çalışma binlerce örnek (instance) içerebilir. <code>RetrieveStudyAsync</code> bunları bir akış olarak döner; böylece her dosya yanıtın bir parçası geldiğinde ayrıştırılır ve bir sonraki okunmadan önce kaydedilebilir. Bellek kullanımı çalışmanın boyutu ile artmaz.</p>
 
 <div class="codeblock" id="code">
- <h3>Bir çalışmanın tüm örneklerini kaydet - C#</h3>
+ <h3>Bir çalışmanın tüm örneklerini kaydedin - C#</h3>
  <pre><code class="cs">Directory.CreateDirectory("study");
 
 await using DicomWebClientStream&lt;DicomFile&gt; files = await client.Studies.RetrieveStudyAsync(studyUid);
@@ -86,16 +86,16 @@ await foreach (DicomFile file in files)
 }</code></pre>
 </div>
 
-<p><code>RetrieveSeriesAsync</code> ve <code>RetrieveInstanceAsync</code>, bir seriyi ya da bir örneği aynı şekilde indirir.</p>
+<p><code>RetrieveSeriesAsync</code> ve <code>RetrieveInstanceAsync</code> bir seriyi ya da bir örneği aynı şekilde indirir.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Küçük resim veya oluşturulmuş bir görüntü al">}}
+{{< blocks/products/pf/feature-page-section h2="Küçük resim veya işlenmiş görüntü alın">}}
 
-<p>Bir görüntüleyici veya iş listesi ekranı genellikle bir resim ister, DICOM dosyası değil. Sunucu bunu oluşturur ve JPEG ya da PNG olarak gönderir; böylece istemci orijinal piksel verisini indirmez veya çözmez.</p>
+<p>Bir görüntüleyici veya iş listesi ekranı genellikle bir resim ihtiyac duyar, DICOM dosyası değil. Sunucu bunu işler ve JPEG ya da PNG olarak gönderir; böylece istemci orijinal piksel verisini indirmez veya çözmez.</p>
 
 <div class="codeblock" id="code">
- <h3>Bir örneğin JPEG küçük resmini kaydet - C#</h3>
+ <h3>Bir örneğin JPEG küçük resmini kaydedin - C#</h3>
  <pre><code class="cs">DicomWebRenderOptions render = new DicomWebRenderOptions
 {
     AcceptedMediaTypes = [DicomWebMediaTypes.ImageJpeg]
@@ -109,16 +109,16 @@ await using FileStream output = File.Create("thumbnail.jpg");
 await thumbnail.ContentReader.CopyToAsync(output);</code></pre>
 </div>
 
-<p><code>RetrieveRenderedInstanceAsync</code> ve <code>RetrieveRenderedFramesAsync</code>, bunun yerine tam boyutlu bir görüntü döndürür. <code>DicomWebRenderOptions</code>, standart render kontrol parametrelerini sunucuya iletir: görüntü kalitesi, görünüm alanı boyutu, pencere ve ICC profili.</p>
+<p><code>RetrieveRenderedInstanceAsync</code> ve <code>RetrieveRenderedFramesAsync</code> bunun yerine tam boyutlu bir görüntü döner. <code>DicomWebRenderOptions</code> standart işleme kontrollerini sunucuya iletir: görüntü kalitesi, görüntüleme alanı boyutu, pencere ve ICC profili.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="STOW-RS ile örnekleri yükle">}}
+{{< blocks/products/pf/feature-page-section h2="STOW-RS ile örnekleri yükleyin">}}
 
-<p>STOW-RS, tek bir istek içinde istediğiniz sayıda örneği gönderir. Sunucu, her örnek için ne depoladığını ve neyi reddettiğini listeleyen bir raporla yanıt verir.</p>
+<p>STOW-RS, tek bir istek içinde herhangi bir sayıdaki örneği gönderir. Sunucu, sakladığı ve reddettiği her bir örnek için bir raporla yanıt verir.</p>
 
 <div class="codeblock" id="code">
- <h3>Bir DICOM dosyaları klasörünü yükle - C#</h3>
+ <h3>DICOM dosyaları içeren bir klasörü yükleyin - C#</h3>
  <pre><code class="cs">List&lt;DicomFile&gt; upload = Directory
     .EnumerateFiles("outgoing", "*.dcm")
     .Select(path =&gt; DicomFile.Open(path))
@@ -138,18 +138,18 @@ if (stored.Value.Response.GetOrDefault(Tag.FailedSOPSequence) is Sequence failed
 }</code></pre>
 </div>
 
-<p>Bazı sunucular, bir veya daha fazla örnek başarısız olduğunda 409 gibi bir HTTP hatası ile yanıt verir. Bu durumda çağrı <code>DicomWebClientException</code> fırlatır, sonraki bölümde gösterildiği gibi, ve aynı rapor istisna yanıt gövdesinde bulunur.</p>
+<p>Bazı sunucular, bir ya da daha fazla örnek başarısız olduğunda 409 gibi bir HTTP hatasıyla yanıt verir. Çağrı, sonraki bölümde gösterildiği gibi <code>DicomWebClientException</code> fırlatır ve aynı rapor istisnanın yanıt gövdesinde bulunur.</p>
 
-<p><code>StoreStudyAsync</code>, tek bir adlandırılmış çalışmaya yükleme yapar. Her iki yöntem de bir <code>IAsyncEnumerable&lt;DicomFile&gt;</code> kabul eder; böylece dosyalar istek gönderilirken üretilebilir.</p>
+<p><code>StoreStudyAsync</code>, tek bir adlı çalışmaya yükleme yapar. Her iki yöntem de bir <code>IAsyncEnumerable&lt;DicomFile&gt;</code> kabul eder; böylece dosyalar isteğin gönderildiği sırada üretilebilir.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Sunucu hatalarını ele al">}}
+{{< blocks/products/pf/feature-page-section h2="Sunucu hatalarını yönet">}}
 
-<p>Her tiplenmiş işlem, dönüşünden önce HTTP durumunu kontrol eder. Sunucu bir isteği reddettiğinde, çağrı <code>DicomWebClientException</code> fırlatır; bu istisna durum kodunu, başlıkları ve yanıt gövdesinin başlangıcını günlük için taşır.</p>
+<p>Her tipli işlem, dönmeden önce HTTP durumunu kontrol eder. Sunucu bir isteği reddettiğinde, çağrı <code>DicomWebClientException</code> fırlatır; bu istisna, log için durum kodunu, başlıkları ve yanıt gövdesinin başlangıcını taşır.</p>
 
 <div class="codeblock" id="code">
- <h3>Başarısız bir isteği raporla - C#</h3>
+ <h3>Başarısız bir isteği raporlayın - C#</h3>
  <pre><code class="cs">try
 {
     DicomWebClientResult&lt;RetrieveInstanceResult&gt; instance =
@@ -163,7 +163,7 @@ catch (DicomWebClientException ex)
 }</code></pre>
 </div>
 
-<p>Yukarıdaki küçük resim gibi ham yanıt döndüren metodlar, durum kontrolünü <code>IsSuccessStatusCode</code> veya <code>EnsureSuccessStatusCode</code> üzerinden size bırakır.</p>
+<p>Yukarıdaki küçük resim gibi ham bir yanıt döndüren yöntemler, durum kontrolünü <code>IsSuccessStatusCode</code> veya <code>EnsureSuccessStatusCode</code> aracılığıyla size bırakır.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -172,23 +172,23 @@ catch (DicomWebClientException ex)
 <p>Arama, indirme ve yükleme ortak çağrılardır. İstemcinin diğer DICOMweb hizmetleri için de bir işlem grubu vardır:</p>
 
 <ul>
-<li>Bir örnek için toplu veri, piksel verisi ve seçili kareler, bir‑tabanlı kare numarası ile, sunucunun gönderdiği şekilde.</li>
-<li>WADO-URI, birçok görüntüleyici ve arşivin hâlâ kullandığı eski tek‑URL alma yöntemi; DICOM dosyaları ve oluşturulmuş görüntüler için.</li>
-<li>UPS-RS iş listeleri: iş öğeleri oluşturma, arama, güncelleme ve talep etme, durumlarını değiştirme, iptal talep etme ve WebSocket üzerinden gelen olaylara abone olma.</li>
-<li>Modalite iş listesi (MWL-RS), gerçekleştirilen prosedür adımları (MPPS-RS) ve depolama taahhüdü.</li>
-<li>Renk paletleri ve asılı protokoller gibi hasta dışı örnekler ve sunucunun yetenekler belgesi.</li>
-<li>Tiplenmiş bir metod uygun olmadığında, kendi yol değerleriniz, sorgu parametreleriniz, başlıklarınız ve gövdenizle herhangi bir standart işlem için <code>SendAsync</code>.</li>
+<li>Bir örnek için toplu veri, piksel verisi ve seçili çerçeveler, sunucunun gönderdiği şekilde bir‑temelli çerçeve numarasıyla.</li>
+<li>WADO-URI, birçok görüntüleyici ve arşivin hâlâ kullandığı eski tek‑URL alımı; DICOM dosyaları ve işlenmiş görüntüler için.</li>
+<li><a href="/medical/net/ups-rs/">UPS-RS</a> iş listeleri: iş öğeleri oluşturma, arama, güncelleme ve talep etme, durumlarını değiştirme, iptal talep etme ve WebSocket üzerinden gelen olaylara abone olma.</li>
+<li><a href="/medical/net/modality-worklist/">Modality worklist</a> (MWL-RS), modality performed procedure steps (MPPS-RS) ve depolama taahhüdü.</li>
+<li>Renk paletleri ve asılı protokoller gibi hasta dışı örnekler ve sunucunun yetenekler belgeleri.</li>
+<li>Tipli bir yöntem uygun olmadığında, kendi yol değerleriniz, sorgu parametreleriniz, başlıklarınız ve gövdenizle herhangi bir standart işlem için <code>SendAsync</code>.</li>
 </ul>
 
-<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">DICOMweb istemci kılavuzu</a> her işlem ve seçeneği belgeler, ve <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">istemci işlem referansı</a> tüm metodları listeler.</p>
+<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">DICOMweb istemci rehberi</a>, her işlem ve seçeneği belgelendirir; ve <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">istemci işlem referansı</a> her yöntemi listeler.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="HTTP yanıtından piksel verisine tek bir kütüphane">}}
+{{< blocks/products/pf/feature-page-section h2="HTTP yanıtından piksel verisine kadar tek bir kütüphane">}}
 
-<p>İstemciyle indirilen bir dosya normal bir <code>DicomFile</code>'dır. Aynı süreçte anonimleştirilebilir, dönüştürülebilir, renderlanabilir veya serileştirilebilir; hiçbir dönüşüm adımı ve zincirde ikinci bir kütüphane gerekmez.</p>
+<p>İstemci ile indirilen bir dosya normal bir <code>DicomFile</code>'dır. Aynı süreçte anonimleştirilebilir, yeniden kodlanabilir, işlenebilir ya da serileştirilebilir; hiçbir dönüşüm adımı ve zincirde ikinci bir kütüphane gerekmez.</p>
 
-<p>İlgili sayfalar: <a href="/medical/net/dicomweb-server/">DICOMweb sunucusu</a> protokolün diğer tarafı için, <a href="/medical/net/dicom-networking/">DICOM ağ iletişimi</a> HTTP yerine DIMSE kullanan arşivler için, <a href="/medical/net/anonymization/">anonimleştirme</a> bir çalışmanın hastaneden çıkmadan önce, <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer syntax dönüşümü</a> sunucunun ne depoladığını, ve <a href="/medical/net/dicom-to-json/">DICOM to JSON</a> QIDO-RS arama sonuçlarının kullandığı format için.</p>
+<p>İlgili sayfalar: Protokolün diğer tarafı için kendi ASP.NET Core servisinize <a href="/medical/net/dicomweb-server/">DICOMweb sunucusu</a>, HTTP yerine DIMSE kullanan arşivler için <a href="/medical/net/dicom-networking/">DICOM ağ iletişimi</a>, bir çalışmanın hastaneden çıkmadan önce <a href="/medical/net/anonymization/">anonimleştirilmesi</a>, sunucunun sakladığı şey için <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer syntax dönüşümü</a> ve QIDO-RS arama sonuçlarının kullandığı format için <a href="/medical/net/dicom-to-json/">DICOM'dan JSON'a</a>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -196,8 +196,8 @@ catch (DicomWebClientException ex)
 
 {{< blocks/products/pf/support-learning-resources >}}
 {{< blocks/products/pf/slr-tab tabTitle="Öğrenme Kaynakları" tabId="resources" >}}
-{{< blocks/products/pf/slr-element name="Dokümantasyon" href="https://docs.aspose.com/medical/net/" >}}
-{{< blocks/products/pf/slr-element name="Geliştirici Kılavuzu" href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/" >}}
+{{< blocks/products/pf/slr-element name="Belgelendirme" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="Geliştirici Rehberi" href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/" >}}
 {{< blocks/products/pf/slr-element name="API Referansları" href="https://reference.aspose.com/medical/net/aspose.medical.dicom.web/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 

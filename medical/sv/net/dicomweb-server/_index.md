@@ -1,29 +1,29 @@
 ---
-title: DICOMweb-server i C# .NET - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
+title: DICOMweb‑server i C# .NET - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
 weight: 9200
 
-description: Bygg din egen DICOMweb-server eller PACS i C#. Aspose.Medical implementerar QIDO-RS, WADO-RS, STOW-RS och worklist‑tjänsterna på ASP.NET Core; du ansluter lagringen.
+description: Bygg din egen DICOMweb‑server eller PACS i C#. Aspose.Medical implementerar QIDO-RS, WADO-RS, STOW-RS och worklist‑tjänsterna på ASP.NET Core; du ansluter lagringen.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOMweb-server för .NET C#" h2="Lägg till QIDO-RS-, WADO-RS- och STOW-RS-endpunkter i en ASP.NET Core‑tjänst. Biblioteket talar protokollet; din kod bestämmer var studierna lagras." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="DICOMweb‑server för .NET C#" h2="Lägg till QIDO-RS-, WADO-RS- och STOW-RS‑slutpunkter i en ASP.NET Core‑tjänst. Biblioteket talar protokollet; din kod bestämmer var studierna lagras." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="Din egen DICOMweb-server i C#">}}
+{{< blocks/products/pf/feature-page-section h2="Din egen DICOMweb‑server i C#">}}
 
-<p>Ett PACS, ett VNA, ett molnbaserat arkiv eller en forskningsplattform måste svara på DICOMweb‑förfrågningar: QIDO-RS‑sökningar, WADO-RS‑nedladdningar och STOW-RS‑uppladdningar, samt ofta worklist‑tjänsterna. Var och en av dem har egna rutter, mediatyper, multipart‑kroppar, matchningsregler och statuskoder.</p>
+<p>Ett PACS, ett VNA, ett molnbaserat arkiv eller en forskningsplattform måste svara på DICOMweb‑förfrågningar: QIDO-RS‑sökningar, WADO-RS‑nedladdningar och STOW-RS‑uppladdningar, och ofta även worklist‑tjänsterna. Var och en av dem har sina egna rutter, mediatyper, multipart‑kroppar, matchningsregler och statuskoder.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> implementerar den protokollsidan sedan version 26.10. Det läser varje förfrågan, kontrollerar den mot standarden, matchar söknycklar enligt DICOM‑reglerna, paginerar resultaten, konverterar överföringssyntakser och skriver svaret. Din kod gör det som bara du kan: lagra en instans, hitta kandidater för en sökning och returnera de lagrade filerna. Visningsprogram, modaliteter och andra arkiv fungerar sedan med din server som med vilken annan DICOMweb‑server som helst, och det gör även <a href="/medical/net/dicomweb-client/">DICOMweb‑klienten</a> i samma bibliotek.</p>
+<p><strong>Aspose.Medical för .NET</strong> implementerar den protokolldelen sedan version 26.10. Den läser varje förfrågan, kontrollerar den mot standarden, matchar söknycklar enligt DICOM‑reglerna, paginerar resultaten, konverterar överföringssyntaxer och skriver svaret. Din kod gör det som bara du kan: lagra en instans, hitta kandidater för en sökning och returnera de lagrade filerna. Visningsprogram, modaliteter och andra arkiv fungerar sedan med din server precis som med vilken annan DICOMweb‑server som helst, och så gör även <a href="/medical/net/dicomweb-client/">DICOMweb‑klienten</a> i samma bibliotek.</p>
 
-<p>Servern är skriven i hanterad C#. Den körs där ASP.NET Core körs: på Windows, på Linux och i en container.</p>
+<p>Servern är hanterad C#. Den körs där ASP.NET Core körs: på Windows, på Linux och i en container.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="En komplett server i ASP.NET Core">}}
 
-<p>Installera paketet <code>Aspose.Medical.Dicom.Web.AspNetCore</code>. Det medför Aspose.Medical och ansluter DICOMweb‑tjänsterna till dependency injection och endpoint‑routing. Denna <code>Program.cs</code> är en fungerande Studies‑server; de två klasser den registrerar visas nedan.</p>
+<p>Installera paketet <code>Aspose.Medical.Dicom.Web.AspNetCore</code>. Det medför Aspose.Medical och kopplar DICOMweb‑tjänsterna till dependency injection och endpoint‑routing. Denna <code>Program.cs</code> är en fungerande Studies‑server; de två klasserna som den registrerar visas nedan.</p>
 
 <div class="codeblock" id="code">
  <h3>Program.cs för en DICOMweb‑server - C#</h3>
@@ -41,13 +41,13 @@ app.MapDicomWeb("/dicomweb");
 app.Run();</code></pre>
 </div>
 
-<p>Varje Studies‑ruta svarar nu under <code>/dicomweb</code>: <code>/dicomweb/studies</code> för sökning och uppladdning, <code>/dicomweb/studies/{study}/series/{series}/instances/{instance}</code> för hämtning, samt rutorna för metadata, ramar, bulk‑data och renderade bilder. Kapabilitetsdokumentet vid tjänstens rot listar exakt de transaktioner som servern stödjer.</p>
+<p>Varje Studies‑ruta svarar nu under <code>/dicomweb</code>: <code>/dicomweb/studies</code> för sökning och uppladdning, <code>/dicomweb/studies/{study}/series/{series}/instances/{instance}</code> för hämtning, samt rutorna för metadata, frames, bulk‑data och renderade bilder. Kapabilitetsdokumentet vid tjänstens rot listar exakt de transaktioner som servern stödjer.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Anslut din lagring">}}
 
-<p>Studies‑tjänsten kräver ett interface med tre metoder: lagra en instans, returnera de lagrade filerna och returnera sökkandidater. Denna implementation sparar varje instans som en fil i en mapp per studie och serie.</p>
+<p>Studies‑tjänsten kräver ett gränssnitt med tre metoder: lagra en instans, returnera de lagrade filerna och returnera sökkandidater. Denna implementation håller varje instans som en fil i en mapp per studie och serie.</p>
 
 <div class="codeblock" id="code">
  <h3>Ett mapparkiv bakom QIDO-RS, WADO-RS och STOW-RS - C#</h3>
@@ -113,17 +113,17 @@ public sealed class FolderArchive(string root) : IDicomWebStudiesProvider
 }</code></pre>
 </div>
 
-<p>Biblioteket kontrollerar UID‑erna i varje förfrågningsväg och i varje uppladdad instans innan det anropar leverantören. En instans utan giltiga UID‑er rapporteras som misslyckad och når aldrig <code>StoreAsync</code>.</p>
+<p>Biblioteket kontrollerar UID:arna i varje förfrågningsväg och i varje uppladdad instans innan det anropar leverantören. En instans utan giltiga UID‑er rapporteras som misslyckad och når aldrig <code>StoreAsync</code>.</p>
 
 <p>En mapp räcker för att prova servern. Ett produktionsarkiv behåller samma tre metoder och placerar ett objektlager bakom <code>StoreAsync</code> och <code>RetrieveAsync</code> samt ett databasindex bakom <code>FindCandidatesAsync</code>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Sökning: biblioteket använder DICOM‑matchningsreglerna">}}
+{{< blocks/products/pf/feature-page-section h2="Sökning: biblioteket tillämpar DICOM‑matchningsreglerna">}}
 
-<p>QIDO-RS‑matchning är mer än strängjämförelse: jokertecken, datum‑ och tidsintervall, listor med UID‑er, oskarpa personnamn, tomma värden och nycklar inom sekvenser. Leverantören implementerar ingen av detta. Den returnerar kandidater i en stabil ordning och kan returnera fler än som matchar. Biblioteket tillämpar den exakta DICOM‑matchen på varje kandidat, behåller de begärda fälten och tillämpar <code>offset</code> och <code>limit</code>. Ett svar innehåller som standard högst 1000 resultat, och <code>DicomWebStandardServiceOptions</code> kan ändra den gränsen.</p>
+<p>QIDO-RS‑matchning är mer än strängjämförelse: jokertecken, datum- och tidsintervall, listor med UID‑er, oskarpa personnamn, tomma värden och nycklar i sekvenser. Leverantören implementerar inget av detta. Den returnerar kandidater i en stabil ordning och kan returnera fler än som matchar. Biblioteket tillämpar den exakta DICOM‑matchen på varje kandidat, behåller de begärda fälten och applicerar <code>offset</code> och <code>limit</code>. Ett svar innehåller som standard högst 1000 resultat, och <code>DicomWebStandardServiceOptions</code> kan ändra den gränsen.</p>
 
-<p>För att hålla sökningar snabba i ett stort arkiv, skicka de selektiva nycklarna till databasen. <code>search.Plan.Filter</code> innehåller de kompilerade söknycklarna, med attributet, typ av matchning och varje värde:</p>
+<p>För att hålla sökningar snabba i ett stort arkiv, skicka de selektiva nycklarna till databasen. <code>search.Plan.Filter</code> innehåller de kompilerade söknycklarna, med attributet, matchningstypen och värdena för varje:</p>
 
 <div class="codeblock" id="code">
  <h3>Läs ett exakt Patient‑ID från en sökning - C#</h3>
@@ -135,23 +135,23 @@ static string? ExactPatientId(DicomWebSearchContext search) =&gt;
         .FirstOrDefault();</code></pre>
 </div>
 
-<p>En databasfråga konstruerad på detta sätt kan returnera extra rader, till exempel när den ignorerar en nyckel den inte kan översätta. Den slutgiltiga matchen i biblioteket tar bort dem. Den får inte släppa verkliga matchningar, eftersom biblioteket inte kan lägga till dem igen.</p>
+<p>En databasfråga byggd på detta sätt kan returnera extra rader, exempelvis när den ignorerar en nyckel den inte kan översätta. Den slutgiltiga matchen i biblioteket tar bort dem. Den får inte släppa riktiga matchningar, eftersom biblioteket inte kan lägga till dem igen.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Lagring: ett resultat för varje instans">}}
 
-<p>En STOW-RS‑förfrågan kan innehålla hundratals instanser. Biblioteket parsar multipart‑kroppen och anropar <code>StoreAsync</code> för varje instans i tur och ordning, så hela uppladdningen hålls aldrig i minnet samtidigt. För varje instans returnerar leverantören <code>Stored</code>, <code>Warning</code> för en instans som lagrats med ändringar, eller <code>Failed</code> med en valfri DICOM‑felkod.</p>
+<p>En STOW-RS‑förfrågan kan innehålla hundratals instanser. Biblioteket parsar multipart‑kroppen och anropar <code>StoreAsync</code> för varje instans i tur, så hela uppladdningen hålls aldrig i minnet samtidigt. För varje instans returnerar leverantören <code>Stored</code>, <code>Warning</code> för en instans som lagrats med ändringar, eller <code>Failed</code> med en valfri DICOM‑felkod.</p>
 
 <p>Biblioteket bygger STOW-RS‑rapporten från dessa resultat och väljer status: 200 när varje instans är lagrad, 202 när vissa har varningar eller misslyckats, 409 när alla misslyckades. Instanser i en förfrågan för en namngiven studie som tillhör en annan studie avvisas innan leverantören anropas.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Hämtning: överföringssyntakser, ramar och renderade bilder">}}
+{{< blocks/products/pf/feature-page-section h2="Hämtning: överföringssyntaxer, frames och renderade bilder">}}
 
-<p>Leverantören returnerar lagrade filer, och biblioteket levererar dem i det format som klienten begär. En WADO-RS‑klient kan begära en överföringssyntax i <code>Accept</code>-headern, och biblioteket konverterar varje fil innan den skickas, med egna codecs, inklusive HTJ2K och JPEG XL. Metadata i DICOM JSON eller XML, bulk‑data och enkla ramar kommer från samma leverantör, utan extra kod.</p>
+<p>Leverantören returnerar lagrade filer, och biblioteket levererar dem i den form som klienten begär. En WADO-RS‑klient kan begära en överföringssyntax i <code>Accept</code>-headern, och biblioteket konverterar varje fil innan den skickas, med egna codecs, inklusive HTJ2K och JPEG XL. Metadata i DICOM JSON eller XML, bulk‑data och enskilda frames kommer från samma leverantör, utan extra kod.</p>
 
-<p>Renderade bilder kräver en extra klass, eftersom endast du bestämmer vilka bilder servern får producera. Denna erbjuder JPEG för renderade instanser, renderade ramar och miniatyrbilder, och biblioteket renderar dem:</p>
+<p>Renderade bilder kräver en extra klass, eftersom bara du bestämmer vilka bilder servern får producera. Denna klass erbjuder JPEG för renderade instanser, renderade frames och miniatyrbilder, och biblioteket renderar dem:</p>
 
 <div class="codeblock" id="code">
  <h3>Erbjud renderade JPEG‑bilder och miniatyrer - C#</h3>
@@ -169,21 +169,21 @@ public sealed class JpegRendering : IDicomWebRepresentationProvider
 }</code></pre>
 </div>
 
-<p>Den inbyggda renderaren producerar JPEG från en enkelram‑instans eller från de ramar som en förfrågan väljer. En renderad multi‑frame‑instans som helhet, andra bildformat samt vyport, fönster‑ och ICC‑profilparametrar kräver din egen <code>RetrieveAsync</code> i denna klass.</p>
+<p>Den inbyggda renderaren producerar JPEG från en enkelframes‑instans eller från de frames som en förfrågan väljer. En renderad multi‑frame‑instans som helhet, andra bildformat samt parametrarna för viewport, fönster och ICC‑profil kräver din egen <code>RetrieveAsync</code> i denna klass.</p>
 
-<p>Miniatyrer hanteras med omsorg för patientsekretess. Den inbyggda renderaren skapar en miniatyr endast från en instans vars attribut Burned In Annotation och Recognizable Visual Features båda är <code>NO</code>, vilket betyder att bilden själv deklarerar att den inte visar patientdata. Många bilder saknar dessa attribut, och för dem svarar servern med 406. Om ditt arkiv behöver miniatyrer av sådana bilder, producera dem i din egen <code>RetrieveAsync</code> och säkerställ att de döljer all patientinformation.</p>
+<p>Miniatyrbilder hanteras med hänsyn till patientsekretessen. Den inbyggda renderaren skapar en miniatyr endast från en instans vars attribut Burned In Annotation och Recognizable Visual Features båda är <code>NO</code>, vilket betyder att bilden själv deklarerar att den inte visar patientdata. Många bilder saknar dessa attribut, och för dem svarar servern med 406. Om ditt arkiv behöver miniatyrer av sådana bilder, producera dem i din egen <code>RetrieveAsync</code> och se till att de döljer all patientdata.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Worklists, procedursteg och de andra tjänsterna">}}
 
-<p>De andra DICOMweb‑tjänsterna följer samma modell: registrera tjänsten, implementera dess lagrings‑interface.</p>
+<p>De andra DICOMweb‑tjänsterna följer samma modell: registrera tjänsten, implementera dess lagringsgränssnitt.</p>
 
 <ul>
-<li>UPS-RS‑worklists med <code>AddStandardWorklistService</code>: skapa, söka och uppdatera arbetsobjekt och ändra deras status, med tillståndsregler som kontrolleras av biblioteket och händelsenotifieringar som skickas via en WebSocket.</li>
-<li>Modalitets‑worklist (MWL‑RS) med <code>AddStandardModalityWorklistService</code>, så modaliteter kan fråga de schemalagda procedurstegen i ditt RIS.</li>
-<li>Modality performed procedure steps (MPPS‑RS), lagringsåtagande och icke‑patient‑instanser såsom färgpaletter och hanging protocols.</li>
-<li>WADO-URI‑hämtning för äldre visningsprogram, levererad av Studies‑tjänsten.</li>
+<li><a href="/medical/net/ups-rs/">UPS-RS</a>-worklists med <code>AddStandardWorklistService</code>: skapa, söka och uppdatera arbetsobjekt och ändra deras tillstånd, med tillståndsregler som kontrolleras av biblioteket och händelsenotifieringar som skickas via en WebSocket.</li>
+<li><a href="/medical/net/modality-worklist/">Modality worklist</a> (MWL-RS) med <code>AddStandardModalityWorklistService</code>, så modaliteter kan fråga de schemalagda procedurstegen i ditt RIS.</li>
+<li>Modality performed procedure steps (MPPS-RS), lagringsåtagande och icke‑patient‑instanser såsom färgpaletter och hanging‑protocols.</li>
+<li>WADO-URI‑hämtning för äldre visningsprogram, som serveras av Studies‑tjänsten.</li>
 </ul>
 
 <p>När standardbeteendet för en transaktion inte passar, registrera din egen hanterare för den med <code>AddHandler</code>. Biblioteket fortsätter att routa och kontrollera förfrågan, och de andra transaktionerna behåller sina standardhanterare.</p>
@@ -192,7 +192,7 @@ public sealed class JpegRendering : IDicomWebRepresentationProvider
 
 {{< blocks/products/pf/feature-page-section h2="Säkerhet och hosting förblir i dina händer">}}
 
-<p>DICOMweb‑endpunkterna är vanliga ASP.NET Core‑endpunkter. Autentisering, auktorisering, CORS, TLS, vidarebefodrade headers och gränser för förfrågningsstorlek konfigureras på samma sätt som för resten av din tjänst:</p>
+<p>DICOMweb‑slutpunkterna är vanliga ASP.NET Core‑slutpunkter. Autentisering, auktorisering, CORS, TLS, vidarebefordrade headers och begränsningar för begäransstorlek konfigureras på samma sätt som för resten av din tjänst:</p>
 
 <div class="codeblock" id="code">
  <h3>Kräv en autentiserad användare - C#</h3>
@@ -217,22 +217,22 @@ DicomWebApplicationResult result = await application.ProcessAsync(request, cance
 
 <p><a href="/medical/net/dicomweb-client/">DICOMweb‑klienten</a> i Aspose.Medical testar din server från ett enhetstest eller ett konsolprogram, och varje fil som servern tar emot är en vanlig <code>DicomFile</code> som kan anonymiseras, transkodas eller renderas i samma process.</p>
 
-<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/">DICOMweb‑utvecklarguiden</a> täcker varje tjänst och lagrings‑interface, och <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/aspnet-core/">ASP.NET Core‑guiden</a> täcker endpoint‑mappning och WebSockets.</p>
+<p>Den <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/">DICOMweb-utvecklarguiden</a> täcker varje tjänst- och lagringsgränssnitt, och <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/aspnet-core/">ASP.NET Core-guiden</a> beskriver endpoint-mappning och WebSockets.</p>
 
-<p>Relaterade sidor: <a href="/medical/net/dicom-networking/">DICOM‑nätverk</a> för system som skickar studier över DIMSE istället för HTTP, <a href="/medical/net/anonymization/">anonymisering</a> av inkommande studier, <a href="/medical/net/dicom-transfer-syntax-conversion/">överföringssyntaks‑konvertering</a> och <a href="/medical/net/dicom-to-json/">DICOM till JSON</a> för det format som QIDO‑RS‑resultat använder.</p>
+<p>Relaterade sidor: <a href="/medical/net/dicom-networking/">DICOM‑nätverk</a> för system som skickar studier via DIMSE istället för HTTP, <a href="/medical/net/anonymization/">anonymisering</a> av inkommande studier, <a href="/medical/net/dicom-transfer-syntax-conversion/">överföringssyntax‑konvertering</a> och <a href="/medical/net/dicom-to-json/">DICOM till JSON</a> för formatet som QIDO-RS‑resultat använder.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="Lärresurser" tabId="resources" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Lärande resurser" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="Dokumentation" href="https://docs.aspose.com/medical/net/" >}}
-{{< blocks/products/pf/slr-element name="Utvecklingsguide" href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/" >}}
+{{< blocks/products/pf/slr-element name="Utvecklarguide" href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/" >}}
 {{< blocks/products/pf/slr-element name="API‑referenser" href="https://reference.aspose.com/medical/net/aspose.medical.dicom.web/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Produktstöd" tabId="support" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Produktsupport" tabId="support" >}}
 {{< blocks/products/pf/slr-element name="Gratis support" href="https://forum.aspose.com/c/medical" >}}
 {{< blocks/products/pf/slr-element name="Betald support" href="https://helpdesk.aspose.com/" >}}
 {{< blocks/products/pf/slr-element name="Blogg" href="https://blog.aspose.com/category/medical/" >}}

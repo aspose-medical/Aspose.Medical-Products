@@ -2,7 +2,7 @@
 title: Rede DICOM em C# .NET - C-ECHO, C-STORE, C-FIND | Aspose.Medical
 weight: 9000
 
-description: Conecte sua aplicação .NET a um PACS. Verifique com C-ECHO, envie imagens com C-STORE, consulte com C-FIND e receba imagens com seu próprio SCP. Um cliente e servidor DIMSE em puro C#.
+description: Conecte sua aplicação .NET a um PACS. Verifique com C-ECHO, envie imagens com C-STORE, faça consultas com C-FIND e receba imagens com seu próprio SCP. Um cliente e servidor DIMSE em C# puro.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,17 +13,17 @@ description: Conecte sua aplicação .NET a um PACS. Verifique com C-ECHO, envie
 
 {{< blocks/products/pf/feature-page-section h2="Conecte-se a um PACS a partir do seu próprio código">}}
 
-<p>Ler arquivos DICOM é a metade fácil da imagem médica. No momento em que sua aplicação precisa trabalhar com um sistema hospitalar real, ela deve falar DIMSE: abrir uma associação com um PACS, enviar imagens, perguntar quais estudos existem e responder quando outro sistema envia algo de volta.</p>
+<p>Ler arquivos DICOM é a metade mais fácil da imagem médica. No momento em que sua aplicação precisa trabalhar com um sistema hospitalar real, ela deve falar DIMSE: abrir uma associação com um PACS, enviar imagens, perguntar quais estudos existem e responder quando outro sistema envia algo de volta.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> inclui esse protocolo como parte da biblioteca. <code>Aspose.Medical.Dicom.Network</code> fornece um cliente DIMSE e um servidor DIMSE, ambos escritos em C# gerenciado. Não há toolkit nativo para instalar, nenhum serviço para configurar e nada específico de plataforma, portanto o mesmo código roda no Windows, no Linux e em um contêiner.</p>
+<p><strong>Aspose.Medical for .NET</strong> inclui esse protocolo como parte da biblioteca. <code>Aspose.Medical.Dicom.Network</code> fornece um cliente DIMSE e um servidor DIMSE, ambos escritos em C# gerenciado. Não há nenhum toolkit nativo para instalar, nenhum serviço para configurar e nada específico de plataforma, portanto o mesmo código roda no Windows, no Linux e em um contêiner.</p>
 
-<p>Três coisas cobrem a maioria das integrações, e cada uma requer poucas linhas: verificar a conexão com C-ECHO, enviar imagens com C-STORE e encontrar o que está do outro lado com C-FIND.</p>
+<p>Três coisas cobrem a maioria das integrações, e cada uma requer apenas algumas linhas: verificar a conexão com C-ECHO, enviar imagens com C-STORE e descobrir o que está do outro lado com C-FIND.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Comece com C-ECHO">}}
 
-<p>C-ECHO é o ping DICOM. Ele comprova que o host, a porta e os dois títulos AE estão corretos antes que qualquer outra coisa seja questionada. Crie um cliente uma vez, forneça-lhe um manipulador que observe a resposta e envie a solicitação.</p>
+<p>C-ECHO é o ping DICOM. Ele comprova que o host, a porta e os dois títulos AE estão corretos antes que qualquer outro erro seja apontado. Crie um cliente uma vez, atribua-lhe um manipulador que observe a resposta e envie a solicitação.</p>
 
 <div class="codeblock" id="code">
  <h3>Verificar a conexão com C-ECHO - C#</h3>
@@ -76,13 +76,13 @@ client.QueueRequest(new CStoreRequest(dicomFile.Dataset, TransferSyntax.Explicit
 await client.SendAsync(CancellationToken.None);</code></pre>
 </div>
 
-<p>Os contextos de apresentação que você propõe decidem o que o arquivo aceitará. Se ele quiser uma sintaxe comprimida, transcoda antes de enviar, como mostra a página de <a href="/medical/net/dicom-transfer-syntax-conversion/">conversão de sintaxe de transferência</a>, ou liste as alternativas em <code>AdditionalTransferSyntaxes</code> e deixe a negociação escolher uma.</p>
+<p>Os contextos de apresentação que você propõe determinam o que o arquivo aceitará. Se ele desejar uma sintaxe comprimida, transcoda antes de enviar, como mostra a página de <a href="/medical/net/dicom-transfer-syntax-conversion/">conversão de sintaxe de transferência</a>, ou liste as alternativas em <code>AdditionalTransferSyntaxes</code> e deixe a negociação escolher uma.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Encontrar estudos com C-FIND">}}
 
-<p>C-FIND responde à pergunta "o que o arquivo tem". As correspondências chegam uma a uma, cada uma com seu próprio conjunto de dados de identificador, e uma resposta final fecha a consulta.</p>
+<p>C-FIND responde à pergunta "o que o arquivo tem". As correspondências chegam uma a uma, cada uma com seu próprio conjunto de dados de identificador, e uma resposta final encerra a consulta.</p>
 
 <div class="codeblock" id="code">
  <h3>Consultar estudos por paciente - C#</h3>
@@ -127,13 +127,13 @@ await client.SendAsync(CancellationToken.None);
 await client.StopAsync();</code></pre>
 </div>
 
-<p>A mesma fábrica cria os outros níveis de consulta: <code>CreatePatientQuery</code>, <code>CreateSeriesQuery</code> e <code>CreateImageQuery</code>. <code>CreateWorklistQuery</code> constrói uma consulta de lista de trabalho de modalidade, que é a consulta que uma modalidade faz antes de um exame.</p>
+<p>A mesma fábrica cria os outros níveis de consulta: <code>CreatePatientQuery</code>, <code>CreateSeriesQuery</code> e <code>CreateImageQuery</code>. <code>CreateWorklistQuery</code> cria uma consulta de lista de trabalho de modalidade, que é a consulta que uma modalidade faz antes de um exame; a <a href="/medical/net/modality-worklist/">página de lista de trabalho de modalidade</a> a mostra junto com MPPS e o lado do servidor da lista de trabalho.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Receber imagens: seu próprio SCP de armazenamento">}}
 
-<p>A biblioteca também funciona como servidor. Registre um manipulador para o serviço que deseja oferecer, inicie a escuta, e sua aplicação se torna um nó DICOM para o qual uma modalidade ou outro PACS pode enviar.</p>
+<p>A biblioteca também funciona como servidor. Registre um manipulador para o serviço que deseja oferecer, inicie a escuta, e sua aplicação torna-se um nó DICOM ao qual uma modalidade ou outro PACS pode enviar.</p>
 
 <div class="codeblock" id="code">
  <h3>Aceitar imagens recebidas - C#</h3>
@@ -174,29 +174,29 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 }</code></pre>
 </div>
 
-<p>O que o manipulador faz com o conjunto de dados é sua decisão: gravá‑lo em disco, colocá‑lo em uma fila, anonimiza‑lo primeiro com a <a href="/medical/net/anonymization/">API de anonimização</a>, ou transcodificá‑lo para a sintaxe do arquivo.</p>
+<p>O que o manipulador faz com o conjunto de dados é sua decisão: gravá-lo em disco, colocá-lo em uma fila, anonimizar primeiro com a <a href="/medical/net/anonymization/">API de anonimização</a>, ou transcodificá-lo para a sintaxe do arquivo.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="O que mais a API de rede cobre">}}
 
-<p>Os três serviços acima são os mais comuns. O resto do DIMSE também está disponível:</p>
+<p>Os três serviços acima são os mais comuns. O restante do DIMSE também está disponível:</p>
 
 <ul>
-<li>Recuperação: C-MOVE e C-GET, com os contadores de sub‑operações relatados nas respostas.</li>
-<li>Os serviços N: N-CREATE, N-SET, N-GET, N-ACTION, N-DELETE e N-EVENT-REPORT, que são a base para commitment de armazenamento e MPPS.</li>
-<li>Controle de associação: contextos de apresentação, papéis da classe de serviço, negociação estendida, janela de operações assíncronas, negociação de identidade de usuário e um hook de política que pode rejeitar uma associação ao chamar o título AE.</li>
-<li>TLS em ambos os lados, através de <code>TlsInitiatorAuthenticator</code> e <code>TlsAcceptorAuthenticator</code>, com sua própria validação de certificado, se necessário.</li>
-<li>Timeouts para cada etapa, desde a conexão TCP até o release, e notificações para o ciclo de vida da associação, permitindo que um nó de longa duração registre o que aconteceu.</li>
+<li>Recuperação: C-MOVE e C-GET, com os contadores de sub‑operação relatados nas respostas.</li>
+<li>Os serviços N: N-CREATE, N-SET, N-GET, N-ACTION, N-DELETE e N-EVENT-REPORT, que são a base do storage commitment e do MPPS.</li>
+<li>Controle de associação: contextos de apresentação, papéis de classe de serviço, negociação estendida, janela de operações assíncronas, negociação de identidade de usuário e um hook de política que pode rejeitar uma associação ao chamar o título AE.</li>
+<li>TLS em ambos os lados, através de <code>TlsInitiatorAuthenticator</code> e <code>TlsAcceptorAuthenticator</code>, com validação de certificado própria, se precisar.</li>
+<li>Time‑outs para cada etapa, desde a conexão TCP até a liberação, e notificações para o ciclo de vida da associação para que um nó de longa duração possa registrar o que ocorreu.</li>
 </ul>
 
-<p>O <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">guia de rede DICOM</a> documenta cada opção e cada manipulador.</p>
+<p>O <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">guia de rede DICOM</a> documenta todas as opções e todos os manipuladores.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Puro .NET, do socket aos dados de pixel">}}
 
-<p>Tudo nesta página é código gerenciado do mesmo pacote que lê e grava os arquivos. A associação, os codecs e o analisador provêm de uma única biblioteca, de modo que um estudo recebido pela rede pode ser anonimizado, transcodificado ou serializado sem sair do processo e sem dependência nativa em qualquer ponto da cadeia.</p>
+<p>Todo o conteúdo desta página é código gerenciado do mesmo pacote que lê e grava os arquivos. A associação, os codecs e o analisador vêm de uma única biblioteca, de modo que um estudo recebido pela rede pode ser anonimizado, transcodificado ou serializado sem deixar o processo e sem dependência nativa em nenhum ponto da cadeia.</p>
 
 <p>Páginas relacionadas: <a href="/medical/net/dicom-transfer-syntax-conversion/">conversão de sintaxe de transferência</a> para o que enviar, <a href="/medical/net/anonymization/">anonimização</a> para o que remover primeiro, e <a href="/medical/net/dicom-tags/">tags DICOM</a> para ler o que chegou.</p>
 
@@ -205,21 +205,21 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 {{< /blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="Recursos de Aprendizado" tabId="resources" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Recursos de aprendizado" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="Documentação" href="https://docs.aspose.com/medical/net/" >}}
-{{< blocks/products/pf/slr-element name="Guia do Desenvolvedor" href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/" >}}
-{{< blocks/products/pf/slr-element name="Referências de API" href="https://reference.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="Guia do desenvolvedor" href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/" >}}
+{{< blocks/products/pf/slr-element name="Referências da API" href="https://reference.aspose.com/medical/net/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Suporte ao Produto" tabId="support" >}}
-{{< blocks/products/pf/slr-element name="Suporte Gratuito" href="https://forum.aspose.com/c/medical" >}}
-{{< blocks/products/pf/slr-element name="Suporte Pago" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Suporte ao produto" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="Suporte gratuito" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="Suporte pago" href="https://helpdesk.aspose.com/" >}}
 {{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="Por que Aspose.Medical para .NET?" tabId="success-stories" >}}
-{{< blocks/products/pf/slr-element name="Lista de Clientes" href="https://company.aspose.com/customers" >}}
-{{< blocks/products/pf/slr-element name="Casos de Sucesso" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< blocks/products/pf/slr-element name="Lista de clientes" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="Casos de sucesso" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< /blocks/products/pf/support-learning-resources >}}

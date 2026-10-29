@@ -1,38 +1,39 @@
 ---
-title: C# .NET DICOM Medical Imaging API | Aspose.Medical
+title: C# .NET DICOM Pencitraan Medis API | Aspose.Medical
 weight: 1000
 url: /id/net/
-description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menulis, menganonimkan, mentranskode, dan merender file DICOM, menyerialkannya ke JSON dan XML, serta menukar studi melalui DIMSE dan DICOMweb.
+description: Pustaka .NET murni untuk pencitraan medis DICOM. Membaca, menulis, menganonimkan, mentranskode, dan merender file DICOM, menyerialkannya ke JSON dan XML, serta menukar studi melalui DIMSE dan DICOMweb.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/upper-banner h1="API .NET untuk Pencitraan Medis DICOM" h2="Membaca, menulis, menganonimkan, mentranskode, dan merender file DICOM dalam .NET C#, serta menukar studi melalui DIMSE dan DICOMweb, tanpa perangkat lunak eksternal atau ketergantungan native." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET API untuk Pencitraan Medis DICOM" h2="Membaca, menulis, menganonimkan, mentranskode, dan merender file DICOM dalam .NET C#, serta menukar studi melalui DIMSE dan DICOMweb, tanpa perangkat lunak eksternal atau dependensi native." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/sub-menu logoImageSrc="aspose_medical-for-net.svg" liveDemosLink="" PricingLink="https://purchase.aspose.com/pricing/medical/net" buyLink="https://purchase.aspose.com/buy" docsLink="https://docs.aspose.com/medical/net/" installationsDocsLink="https://docs.aspose.com/medical/net/getting-started/installation/" nugetLink="https://www.nuget.org/packages/Aspose.Medical/" nugetPackageName="Aspose.Medical" mavenRepoLink="" directDownloadLink="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/tab-content >}}
-<p><strong>Aspose.Medical for .NET</strong> adalah perpustakaan kelas .NET murni untuk bekerja dengan file DICOM (Digital Imaging and Communications in Medicine). Library ini memungkinkan pengembang membaca, menulis, memodifikasi, menganonimkan, mentranskode, dan merender data pencitraan medis, menyerialkannya ke DICOM JSON dan DICOM XML, serta menukar studi dengan sistem lain lewat DIMSE dan DICOMweb, tanpa perangkat lunak eksternal atau ketergantungan native.</p>
+<p><strong>Aspose.Medical for .NET</strong> adalah pustaka kelas .NET murni untuk bekerja dengan file DICOM (Digital Imaging and Communications in Medicine). Ini memungkinkan pengembang membaca, menulis, memodifikasi, menganonimkan, mentranskode, dan merender data pencitraan medis, menyerialkannya ke DICOM JSON dan DICOM XML, serta menukar studi dengan sistem lain melalui DIMSE dan DICOMweb, tanpa perangkat lunak eksternal atau dependensi native.</p>
 
-<p>Perpustakaan ini sepenuhnya ditulis dalam C# yang dikelola dan berjalan pada .NET 10 di Windows, Linux, dan macOS. Tidak ada binari native dan tidak ada paket NuGet pihak ketiga, sehingga library ini dapat dideploy sebagai satu assembly tunggal ke setiap aplikasi .NET, mulai dari alat desktop hingga kontainer dalam sistem perawatan kesehatan berbasis cloud.</p>
+<p>Perpustakaan ini ditulis sepenuhnya dalam C# yang dikelola dan berjalan pada .NET 10 di Windows, Linux, dan macOS. Tidak ada binary native dan tidak ada paket NuGet pihak ketiga, sehingga perpustakaan dapat disebarkan sebagai satu assembly tunggal ke aplikasi .NET apa pun, mulai dari alat desktop hingga kontainer dalam sistem kesehatan cloud.</p>
 
 <p><strong>Fitur Utama:</strong>
 <ul>
     <li>Membaca dan menulis file DICOM dari file, aliran, atau pipa, secara sinkron atau asinkron, dengan dukungan penuh untuk semua elemen data standar dan representasi nilai.</li>
-    <li>Mengontrol memori pada file berukuran besar: memuat setiap elemen, menunda elemen besar sampai digunakan, atau melewatkannya dan hanya membaca metadata.</li>
-    <li>Membaca dan mengedit elemen data apa pun, termasuk urutan dan tag privat, dengan penanganan set karakter untuk teks non-ASCII.</li>
-    <li>Menganonimkan file DICOM dengan profil kerahasiaan DICOM PS 3.15, dengan opsi untuk mempertahankan UID, tanggal, identitas perangkat dan institusi, serta karakteristik pasien.</li>
-    <li>Mentranskode antar sintaks transfer: JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, dan RLE, dengan setiap codec diimplementasikan dalam .NET.</li>
-    <li>Merender frame menjadi piksel BGRA dengan LUT modality, LUT VOI (jendela dan level), serta overlay yang diterapkan oleh renderer.</li>
-    <li>Menyerialkan dataset ke Model DICOM JSON (PS3.18) dan ke DICOM XML (PS3.19) serta kembali, termasuk streaming asinkron dan pemuatan data bulk yang dapat dipasang.</li>
-    <li>Berkomunikasi lewat DIMSE dengan klien dan server: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET, layanan N, dan TLS.</li>
-    <li>Mencari, mengunduh, dan mengunggah studi pada server DICOMweb mana pun dengan klien bertipe untuk QIDO-RS, WADO-RS, STOW-RS, gambar yang dirender, WADO-URI, dan layanan alur kerja.</li>
-    <li>Membangun server DICOMweb Anda sendiri: QIDO-RS, WADO-RS, STOW-RS, dan layanan alur kerja pada ASP.NET Core atau host HTTP lain, dengan penyimpanan Anda di belakangnya.</li>
+    <li>Mengendalikan memori pada file besar: memuat setiap elemen, menunda elemen besar hingga digunakan, atau melewatkannya dan hanya membaca metadata.</li>
+    <li>Membaca dan mengedit setiap elemen data, termasuk urutan dan tag pribadi, dengan penanganan set karakter untuk teks non-ASCII.</li>
+    <li>Menganonimkan file DICOM dengan profil kerahasiaan DICOM PS 3.15, dengan opsi mempertahankan UID, tanggal, pengenal perangkat dan institusi, serta karakteristik pasien.</li>
+    <li>Mentranskode antara sintaks transfer: JPEG, JPEG‑LS, JPEG 2000, HTJ2K, JPEG XL, dan RLE, dengan setiap codec diimplementasikan dalam .NET.</li>
+    <li>Merender frame menjadi piksel BGRA dengan LUT modalitas, LUT VOI (window dan level) dan overlay yang diterapkan oleh renderer.</li>
+    <li>Menserealkan dataset ke Model DICOM JSON (PS3.18) dan ke DICOM XML (PS3.19) serta kembali, termasuk streaming asinkron dan pemuatan data massal yang dapat dipasang.</li>
+    <li>Berkomunikasi melalui DIMSE dengan klien dan server: C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, C‑GET, layanan N, dan TLS.</li>
+    <li>Menanyakan worklist modalitas, melaporkan MPPS dan memberikan pekerjaan dengan item kerja UPS‑RS, baik sebagai klien maupun server.</li>
+    <li>Mencari, mengunduh, dan mengunggah studi pada server DICOMweb manapun dengan klien bertipe untuk QIDO‑RS, WADO‑RS, STOW‑RS, gambar terender, WADO‑URI, dan layanan alur kerja.</li>
+    <li>Membangun server DICOMweb Anda sendiri: QIDO‑RS, WADO‑RS, STOW‑RS, dan layanan alur kerja pada ASP.NET Core atau host HTTP lainnya, dengan penyimpanan Anda di belakangnya.</li>
 </ul>
 </p>
 
-<p>Aspose.Medical for .NET bersifat mandiri. Tidak memerlukan viewer DICOM, perangkat lunak pencitraan medis, atau codec native yang diinstal. Library ini cocok untuk sistem TI perawatan kesehatan, integrasi PACS, platform telemedisin, dan aplikasi apa pun yang harus memproses data DICOM secara andal.</p>
+<p>Aspose.Medical for .NET bersifat mandiri. Tidak memerlukan viewer DICOM, perangkat lunak pencitraan medis, atau codec native yang diinstal. Cocok untuk sistem TI kesehatan, integrasi PACS, platform telemedisin, dan aplikasi apa pun yang harus memproses data DICOM secara handal.</p>
 
 {{< /blocks/products/pf/tab-content >}}
 
@@ -59,10 +60,10 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
      Dukungan Gambar Multi-frame
     </li>
     <li>
-     Manajemen Tag Privat
+     Manajemen Tag Pribadi
     </li>
     <li>
-     Dukungan Pengodean Karakter
+     Dukungan Pengkodean Karakter
     </li>
     <li>
      Kontrol Memori untuk File Besar
@@ -81,7 +82,7 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
      Profil Kerahasiaan PS 3.15
     </li>
     <li>
-     Opsi Retensi yang Dikonfigurasi
+     Opsi Retensi yang Dapat Dikonstruksi
     </li>
    </ul>
   </div>
@@ -97,7 +98,7 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
      Rendering Frame ke Piksel BGRA
     </li>
     <li>
-     LUT Modality &amp; LUT VOI Diterapkan
+     LUT Modalitas &amp; LUT VOI Diterapkan
     </li>
     <li>
      Dukungan Overlay Gambar
@@ -125,7 +126,7 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
      C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
     </li>
     <li>
-     Layanan N &amp; Kontrol Asosiasi
+     N-Services &amp; Kontrol Asosiasi
     </li>
     <li>
      Koneksi TLS
@@ -161,20 +162,20 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
    <header>
     <i class="fa fa-cubes">
     </i>
-    Perpustakaan .NET Murni
+    Pustaka .NET Murni
    </header>
    <ul>
     <li>
-     Kode C# 100% Dikelola
+     Kode C# 100% Managed
     </li>
     <li>
-     Tanpa Ketergantungan Native
+     Tanpa Dependensi Native
     </li>
     <li>
      Tanpa Paket Pihak Ketiga
     </li>
     <li>
-     Deploy Mandiri
+     Penyebaran Mandiri
     </li>
    </ul>
   </div>
@@ -200,13 +201,13 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
    </header>
    <ul>
     <li>
-     Windows 10, Windows 11, Windows Server 2016 dan yang lebih baru
+     Windows 10, Windows 11, Windows Server 2016, dan yang lebih baru
     </li>
     <li>
      Linux: Ubuntu 20.04+, Debian 10+, CentOS 8+
     </li>
     <li>
-     macOS 11 dan yang lebih baru
+     macOS 11 ke atas
     </li>
    </ul>
   </div>
@@ -239,7 +240,7 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
    <header>
     <i class="fa fa-arrows-v">
     </i>
-    Baca dan Tulis
+    Membaca dan Menulis
    </header>
    <ul>
     <li>
@@ -271,14 +272,14 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
    <header>
     <i class="fa fa-mail-forward">
     </i>
-    Output Rendering
+    Hasil Rendering
    </header>
    <ul>
     <li>
      <b>
       Piksel:
      </b>
-     Buffer BGRA 32-bit untuk perpustakaan pencitraan apa pun
+     Buffer BGRA 32-bit untuk setiap pustaka pencitraan
     </li>
     <li>
      <b>
@@ -294,7 +295,7 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
    </header>
    <ul>
     <li>
-     Buffer piksel yang didekode oleh perpustakaan pencitraan eksternal, ditulis ke data piksel DICOM frame demi frame
+     Buffer piksel yang didekode oleh pustaka pencitraan eksternal, ditulis ke data piksel DICOM frame demi frame
     </li>
    </ul>
   </div>
@@ -345,7 +346,7 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
     <em class="fa fa-tags ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Mengakses dan memanipulasi semua tag DICOM, urutan, dan elemen privat
+     Mengakses dan memanipulasi semua tag, urutan, dan elemen pribadi DICOM
     </p>
    </div>
    <div class="col-lg-4">
@@ -359,50 +360,50 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
     <em class="fa fa-exchange ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Mentranskode antar sintaks transfer, termasuk HTJ2K dan JPEG XL
+     Mentranskode antara sintaks transfer, termasuk HTJ2K dan JPEG XL
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-picture-o ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Merender frame ke piksel untuk penampil, thumbnail, dan ekspor gambar
+     Merender frame menjadi piksel untuk penampil, thumbnail, dan ekspor gambar
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-code ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Menyerialkan data DICOM ke JSON dan XML, dengan streaming asinkron
+     Menserealkan data DICOM ke JSON dan XML, dengan streaming asinkron
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sitemap ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Menukar studi melalui DIMSE: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET
+     Menukar studi melalui DIMSE: C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, C‑GET
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-database ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Menjaga memori tetap rendah pada file besar dengan menunda atau melewatkan elemen besar
+     Menjaga memori tetap datar pada file besar dengan menunda atau melewatkan elemen besar
     </p>
    </div>
    <div class="col-lg-4">
     <em class="fa fa-sliders ico-blue fa-2x col-lg-2">
     </em>
     <p class="col-lg-10">
-     Merender gambar multi-frame dengan LUT modality, LUT VOI, dan overlay
+     Merender gambar multi-frame dengan LUT modalitas, LUT VOI, dan overlay
     </p>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Perpustakaan .NET Murni - Tanpa Ketergantungan
+     Pustaka .NET Murni - Tanpa Dependensi
     </h2>
     <p>
-     Aspose.Medical for .NET sepenuhnya ditulis dalam C# yang dikelola dan didistribusikan sebagai satu assembly tanpa binari native dan tanpa paket NuGet pihak ketiga. Perpustakaan pencitraan medis lain bergantung pada codec native atau alat eksternal; yang ini tidak. Semua codec kompresi gambar (JPEG, JPEG-LS, JPEG 2000, HTJ2K, JPEG XL, RLE) diimplementasikan dalam .NET, sehingga library berperilaku sama di Windows, Linux, dan macOS. Hal ini membuatnya cocok untuk kontainer, lingkungan cloud, dan setiap deployment yang tidak memungkinkan menginstal perpustakaan native. Paket ini menargetkan .NET 10.
+     Aspose.Medical for .NET ditulis sepenuhnya dalam C# yang dikelola dan didistribusikan sebagai satu assembly tanpa binary native dan tanpa paket NuGet pihak ketiga. Pustaka pencitraan medis lain mengandalkan codec native atau alat eksternal; pustaka ini tidak. Semua codec kompresi gambar (JPEG, JPEG‑LS, JPEG 2000, HTJ2K, JPEG XL, RLE) diimplementasikan dalam .NET, sehingga perilaku pustaka sama di Windows, Linux, dan macOS. Hal ini menjadikannya cocok untuk kontainer, lingkungan cloud, dan penyebaran apa pun dimana pemasangan pustaka native tidak memungkinkan. Paket ini menargetkan .NET 10.
     </p>
    </div>
    <div class="col-lg-12">
@@ -410,7 +411,7 @@ description: Perpustakaan .NET murni untuk pencitraan medis DICOM. Membaca, menu
      Anonimisasi File DICOM untuk Kepatuhan Privasi
     </h2>
     <p>
-     Privasi pasien merupakan persyaratan penting dalam aplikasi perawatan kesehatan. Aspose.Medical for .NET menganonimkan data DICOM dengan profil kerahasiaan DICOM PS 3.15. Anda dapat menghapus atau mengganti informasi identitas pasien sambil mempertahankan nilai klinis data pencitraan, dan Anda dapat memilih apa yang dipertahankan oleh profil: atribut privat yang aman, UID, identifikasi perangkat dan institusi, karakteristik pasien, serta informasi temporal longitudinal. <a href="/medical/net/anonymization/">Halaman anonimisasi DICOM</a> menampilkan opsi profil secara detail.
+     Privasi pasien adalah persyaratan ketat dalam aplikasi kesehatan. Aspose.Medical for .NET menganonimkan data DICOM dengan profil kerahasiaan DICOM PS 3.15. Anda dapat menghapus atau mengganti informasi identifikasi pasien sambil mempertahankan nilai klinis data pencitraan, dan dapat memilih apa yang dipertahankan oleh profil: atribut pribadi yang aman, UID, pengenal perangkat dan institusi, karakteristik pasien, serta informasi temporal longitudinal. <a href="/medical/net/anonymization/">Halaman anonimisasi DICOM</a> menampilkan opsi profil secara detail.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -433,7 +434,7 @@ anonymized.Save("anonymized_scan.dcm");</code></pre>
      Render Frame DICOM dalam .NET C#
     </h2>
     <p>
-     Aspose.Medical for .NET merender sebuah frame DICOM menjadi gambar piksel BGRA 32-bit. Renderer menerapkan interpretasi fotometrik, LUT modality, dan LUT VOI (window dan level) dari dataset serta menggambar overlay, sehingga hasilnya sesuai dengan yang ditampilkan penampil. Piksel tersebut kemudian menjadi milik Anda: salin ke buffer dan berikan ke perpustakaan pencitraan apa pun untuk menyimpan PNG, JPEG, atau TIFF. Encoder gambar satu-satunya yang dibangun dalam library adalah PNM. Halaman konversi menampilkan jalur lengkap untuk <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a>, dan <a href="/medical/net/dicom-to-tiff/">TIFF</a>.
+     Aspose.Medical for .NET merender sebuah frame DICOM menjadi gambar piksel BGRA 32-bit. Renderer menerapkan interpretasi fotometrik, LUT modalitas, dan LUT VOI (window dan level) dari dataset serta menggambar overlay, sehingga hasilnya sesuai dengan yang ditampilkan penampil. Piksel tersebut menjadi milik Anda: salin ke buffer dan serahkan ke pustaka pencitraan mana pun untuk menyimpan PNG, JPEG, atau TIFF. Encoder gambar satu-satunya yang dibangun dalam pustaka adalah PNM. Halaman konversi menunjukkan jalur lengkap untuk <a href="/medical/net/dicom-to-png/">PNG</a>, <a href="/medical/net/dicom-to-jpg/">JPEG</a>, dan <a href="/medical/net/dicom-to-tiff/">TIFF</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -452,10 +453,10 @@ image.CopyPixelsTo(pixels);</code></pre>
    </div>
    <div class="col-lg-12">
     <h2 class="h2title">
-     Transkode antar Sintaks Transfer
+     Mentranskode Antara Sintaks Transfer
     </h2>
     <p>
-     Sistem pencitraan dan arsip memerlukan sintaks transfer DICOM tertentu. Aspose.Medical for .NET mentranskode antara format tidak terkompresi, JPEG Baseline, JPEG Lossless, JPEG-LS, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL, dan RLE. HTJ2K dan JPEG XL adalah dua opsi terbaru dalam standar DICOM, dan keduanya diimplementasikan dalam .NET seperti codec lainnya. Transkode penting untuk integrasi PACS, ukuran arsip, dan kompatibilitas antar sistem. Lihat <a href="/medical/net/dicom-transfer-syntax-conversion/">halaman konversi sintaks transfer</a> dan <a href="/medical/net/jpeg2000/">halaman JPEG 2000</a>.
+     Sistem pencitraan dan arsip memerlukan sintaks transfer DICOM tertentu. Aspose.Medical for .NET mentranskode antara format tidak terkompresi, JPEG Baseline, JPEG Lossless, JPEG‑LS, JPEG 2000, HTJ2K (High‑Throughput JPEG 2000), JPEG XL, dan RLE. HTJ2K dan JPEG XL adalah dua opsi terbaru dalam standar DICOM, dan di sini diimplementasikan dalam .NET seperti codec lainnya. Transkoding penting untuk integrasi PACS, ukuran arsip, dan kompatibilitas antar sistem. Lihat <a href="/medical/net/dicom-transfer-syntax-conversion/">halaman konversi sintaks transfer</a> dan <a href="/medical/net/jpeg2000/">halaman JPEG 2000</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -476,7 +477,7 @@ transcoded.Save("output.dcm");</code></pre>
      Serialisasi DICOM ke JSON dan XML
     </h2>
     <p>
-     Sistem perawatan kesehatan menukar data melalui layanan web, sehingga Aspose.Medical for .NET menyerialkan dataset DICOM ke Model DICOM JSON (PS3.18) dan ke DICOM XML (PS3.19), serta mengurai keduanya kembali menjadi dataset. Serializer bekerja pada string, aliran, dan pipa, sinkron maupun asinkron, dan urutan dataset dapat dibaca satu per satu tanpa menahan seluruh dokumen dalam memori. Referensi data bulk diselesaikan melalui loader yang dapat dipasang, sehingga data piksel besar dapat tetap berada di luar dokumen. Lihat halaman <a href="/medical/net/dicom-to-json/">DICOM ke JSON</a> dan <a href="/medical/net/dicom-to-xml/">DICOM ke XML</a>.
+     Sistem kesehatan menukar data melalui layanan web, sehingga Aspose.Medical for .NET menserealkan dataset DICOM ke Model DICOM JSON (PS3.18) dan ke DICOM XML (PS3.19), serta mengurai keduanya kembali menjadi dataset. Serializer bekerja pada string, aliran, dan pipa, sinkron maupun async, dan rangkaian dataset dapat dibaca satu per satu tanpa menahan seluruh dokumen dalam memori. Referensi data massal diselesaikan melalui loader yang dapat dipasang, sehingga data piksel besar dapat tetap berada di luar dokumen. Lihat halaman <a href="/medical/net/dicom-to-json/">DICOM ke JSON</a> dan <a href="/medical/net/dicom-to-xml/">DICOM ke XML</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -500,7 +501,7 @@ Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
      Jaringan DICOM melalui DIMSE
     </h2>
     <p>
-     Aspose.Medical for .NET berkomunikasi langsung dengan sistem DICOM lainnya. Library menyediakan klien DIMSE dan server DIMSE untuk C-ECHO, C-STORE, C-FIND, C-MOVE, dan C-GET, bersama dengan layanan N, negosiasi asosiasi dengan konteks presentasi dan peran, jendela operasi asinkron, negosiasi identitas pengguna, serta TLS. Permintaan diantrekan pada asosiasi dan dijawab oleh handler yang Anda daftarkan, sehingga node store-and-forward, proxy kueri, atau SCP tes hanya membutuhkan beberapa kelas. <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">Panduan jaringan DICOM</a> mencakup seluruh API.
+     Aspose.Medical for .NET berkomunikasi langsung dengan sistem DICOM lain. Pustaka menyediakan klien DIMSE dan server DIMSE untuk C‑ECHO, C‑STORE, C‑FIND, C‑MOVE, dan C‑GET, bersama dengan N‑services, negosiasi asosiasi dengan konteks presentasi dan peran, jendela operasi asinkron, negosiasi identitas pengguna, dan TLS. Permintaan diantrekan pada asosiasi dan dijawab oleh handler yang Anda daftarkan, sehingga node store‑and‑forward, proxy query, atau test SCP hanya memerlukan beberapa kelas. <a href="/medical/net/modality-worklist/">Halaman worklist modalitas</a> menampilkan worklist dan alur kerja MPPS di kedua sisi. <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">Panduan jaringan DICOM</a> mencakup seluruh API.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -538,7 +539,7 @@ await client.StopAsync();</code></pre>
      Klien dan Server DICOMweb
     </h2>
     <p>
-     Layanan pencitraan cloud dan arsip modern mengekspor DICOM melalui HTTP. Klien DICOMweb pada Aspose.Medical for .NET membungkus setiap transaksi standar dalam metode bertipe: pencarian QIDO-RS, pengambilan studi, seri, instance, frame, gambar yang dirender, dan thumbnail via WADO-RS, unggahan STOW-RS, WADO-URI, serta layanan worklist, langkah prosedur, dan komitmen penyimpanan. Ia berjalan pada <code>HttpClient</code> Anda sendiri, sehingga otentikasi dan TLS berada di tempat aplikasi Anda mengkonfigurasikannya, dan hasilnya muncul sebagai dataset dan file yang sama dengan yang dipakai library lainnya. Library yang sama mengimplementasikan sisi server: menangani protokol QIDO-RS, WADO-RS, STOW-RS, dan layanan alur kerja, serta kode Anda menghubungkan penyimpanan. Lihat halaman <a href="/medical/net/dicomweb-client/">klien DICOMweb</a> dan <a href="/medical/net/dicomweb-server/">server DICOMweb</a>.
+     Layanan pencitraan cloud dan arsip modern mengekspos DICOM melalui HTTP. Klien DICOMweb dalam Aspose.Medical for .NET membungkus setiap transaksi standar dalam metode bertipe: pencarian QIDO‑RS, pengambilan studi, seri, instansi, frame, gambar terrender, dan thumbnail melalui WADO‑RS, unggahan STOW‑RS, WADO‑URI, serta layanan worklist, langkah prosedur, dan komitmen penyimpanan. Ia berjalan pada <code>HttpClient</code> milik Anda, sehingga autentikasi dan TLS tetap di tempat aplikasi Anda mengkonfigurasinya, dan hasilnya datang sebagai dataset dan file yang sama dengan yang diproses pustaka lainnya. Pustaka yang sama mengimplementasikan sisi server: menangani protokol QIDO‑RS, WADO‑RS, STOW‑RS, dan layanan alur kerja, serta kode Anda menghubungkan penyimpanan. Lihat halaman <a href="/medical/net/dicomweb-client/">klien DICOMweb</a> dan <a href="/medical/net/dicomweb-server/">server DICOMweb</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -567,7 +568,7 @@ await foreach (Dataset study in studies)
      File DICOM Besar Tanpa Memori Besar
     </h2>
     <p>
-     Gambar whole slide, seri panjang, dan studi multi-frame tidak muat dengan nyaman dalam memori. Aspose.Medical for .NET memungkinkan Anda menentukan seberapa banyak file yang dimuat: membaca semuanya, menunda elemen di atas ambang ukuran hingga diakses, atau melewatkannya dan hanya bekerja dengan metadata. Membaca dari aliran atau pipa dan menulis kembali dengan cara yang sama menjaga data tetap bergerak alih-alih menumpuk. <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">Panduan manajemen memori</a> menjelaskan pertukaran keuntungan.
+     Gambar whole slide, seri panjang, dan studi multi‑frame tidak muat dengan nyaman di memori. Aspose.Medical for .NET memungkinkan Anda menentukan berapa banyak file yang dimuat: membaca semuanya, menunda elemen di atas ambang ukuran hingga diakses, atau melewatkannya dan hanya bekerja dengan metadata. Membaca dari aliran atau pipa dan menulis kembali dengan cara yang sama membuat data terus mengalir, bukan menumpuk. <a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">Panduan manajemen memori</a> menjelaskan pertukaran tersebut.
     </p>
     <div class="codeblock" id="code">
      <h3>
@@ -603,7 +604,7 @@ string? patientName = metadataOnly.Dataset.GetSingleValueOrDefault(Tag.PatientNa
 {{< blocks/products/pf/slr-element name="Catatan Rilis" href="https://releases.aspose.com/medical/net/release-notes/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Mengapa Aspose.Medical for .NET?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Mengapa Aspose.Medical untuk .NET?" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="Daftar Pelanggan" href="https://company.aspose.com/customers" >}}
 {{< blocks/products/pf/slr-element name="Cerita Sukses" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}

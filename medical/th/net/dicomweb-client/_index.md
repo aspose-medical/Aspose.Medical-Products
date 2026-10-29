@@ -1,32 +1,32 @@
 ---
-title: ไคลเอนท์ DICOMweb ใน C# .NET - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
+title: ไคลเอนต์ DICOMweb ใน C# .NET - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
 weight: 9100
 
-description: ค้นหา ดาวน์โหลดและอัปโหลดการศึกษา DICOM ผ่าน HTTP จาก .NET. ไคลเอนท์ DICOMweb ที่เขียนด้วย C# เพียวสำหรับ QIDO-RS, WADO-RS และ STOW-RS ที่ทำงานร่วมกับ PACS, VNA และบริการภาพคลาวด์.
+description: ค้นหา ดาวน์โหลด และอัปโหลดการศึกษา DICOM ผ่าน HTTP จาก .NET. ไคลเอนต์ DICOMweb ที่เขียนด้วย C# อย่างเดียวสำหรับ QIDO-RS, WADO-RS และ STOW-RS ที่ทำงานร่วมกับ PACS, VNA และบริการภาพคลาวด์.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="ไคลเอนท์ DICOMweb สำหรับ .NET C#" h2="ค้นหา ดาวน์โหลดและอัปโหลดการศึกษาใด ๆ บนเซิร์ฟเวอร์ DICOMweb ด้วย QIDO-RS, WADO-RS และ STOW-RS ด้วย C# ที่จัดการได้โดยไม่ต้องติดตั้งอะไรบนเครื่อง" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="ไคลเอนต์ DICOMweb สำหรับ .NET C#" h2="ค้นหา ดาวน์โหลด และอัปโหลดการศึกษาในเซิร์ฟเวอร์ DICOMweb ใดๆ ด้วย QIDO-RS, WADO-RS และ STOW-RS ใน C# ที่จัดการได้โดยไม่ต้องติดตั้งอะไรบนเครื่อง." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="DICOM ผ่าน HTTP จากโค้ดของคุณเอง">}}
 
-<p>DICOMweb คือรูปแบบ HTTP ของ DICOM. แทนการเชื่อมต่อ DIMSE บนพอร์ต 104 แอปพลิเคชันของคุณจะส่งคำขอ HTTPS ปกติ: QIDO-RS เพื่อค้นหา, WADO-RS เพื่อดาวน์โหลด, STOW-RS เพื่ออัปโหลด. บริการภาพคลาวด์เช่น Azure Health Data Services DICOM service และ Google Cloud Healthcare API ทำงานในลักษณะนี้เช่นกัน และรวมถึงคลังข้อมูลเช่น Orthanc และ dcm4chee.</p>
+<p>DICOMweb คือรูปแบบ HTTP ของ DICOM. แทนการเชื่อมต่อ DIMSE บนพอร์ต 104, แอปพลิเคชันของคุณจะส่งคำขอ HTTPS ปกติ: QIDO-RS เพื่อค้นหา, WADO-RS เพื่อดาวน์โหลด, STOW-RS เพื่ออัปโหลด. บริการภาพคลาวด์เช่น Azure Health Data Services DICOM service และ Google Cloud Healthcare API ทำงานในลักษณะนี้, รวมถึงคลังข้อมูลเช่น Orthanc และ dcm4chee ด้วย.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> มีไคลเอนท์ DICOMweb ตั้งแต่เวอร์ชัน 26.10. <code>DicomWebClient</code> หุ้มการทำธุรกรรมมาตรฐานทั้งหมดในเมธอดที่กำหนดประเภท, และผลลัพธ์จะมาถึงเป็นอ็อบเจกต์ <code>Dataset</code> และ <code>DicomFile</code> เดียวกันที่ส่วนอื่นของไลบรารีอ่านและเขียน. เซิร์ฟเวอร์ด้านตรงข้ามสามารถเป็นการทำงานของ DICOMweb ใดก็ได้; ไม่จำเป็นต้องสร้างด้วย Aspose.Medical.</p>
+<p><strong>Aspose.Medical for .NET</strong> มีไคลเอนต์ DICOMweb ตั้งแต่เวอร์ชัน 26.10. <code>DicomWebClient</code> ห่อหุ้มการทำธุรกรรมมาตรฐานทั้งหมดในเมธอดที่มีชนิดกำหนด, และผลลัพธ์จะส่งกลับเป็นอ็อบเจกต์ <code>Dataset</code> และ <code>DicomFile</code> ที่ไลบรารีส่วนอื่นอ่านและเขียน. เซิร์ฟเวอร์ฝั่งตรงข้ามสามารถเป็นการนำเข้า DICOMweb ใดก็ได้; ไม่จำเป็นต้องสร้างด้วย Aspose.Medical.</p>
 
-<p>ไคลเอนท์เป็น C# ที่จัดการอยู่บน <code>HttpClient</code>. ไม่มีชุดเครื่องมือพื้นเมืองและไม่มีบริการพร็อกซี่, ดังนั้นโค้ดเดียวกันจึงทำงานได้บน Windows, Linux และในคอนเทนเนอร์.</p>
+<p>ไคลเอนต์เป็น C# ที่จัดการบน <code>HttpClient</code>. ไม่มีชุดเครื่องมือเนทีฟและไม่มีบริการพร็อกซี, ดังนั้นโค้ดเดียวกันทำงานได้บน Windows, Linux และในคอนเทนเนอร์.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="เชื่อมต่อกับเซิร์ฟเวอร์ DICOMweb">}}
 
-<p>สร้างไคลเอนท์จาก <code>HttpClient</code> และ URL รากของบริการของเซิร์ฟเวอร์. การรับรองตัวตน, การตั้งค่า TLS, พร็อกซี่และการจัดคิวการเชื่อมต่ออยู่ใน <code>HttpClient</code>, ที่แอปพลิเคชันของคุณได้ตั้งค่าไว้แล้ว. ไคลเอนท์ไม่เป็นเจ้าของ <code>HttpClient</code> และไม่ทำการ dispose มัน.</p>
+<p>สร้างไคลเอนต์จาก <code>HttpClient</code> และ URL รากของบริการของเซิร์ฟเวอร์. การตรวจสอบสิทธิ์, การตั้งค่า TLS, พร็อกซีและการจัดการการเชื่อมต่อยังคงอยู่บน <code>HttpClient</code>, ที่แอปพลิเคชันของคุณได้กำหนดค่าไว้แล้ว. ไคลเอนต์ไม่เป็นเจ้าของ <code>HttpClient</code> และไม่ทำการ disposing.</p>
 
 <div class="codeblock" id="code">
- <h3>สร้างไคลเอนท์ DICOMweb - C#</h3>
+ <h3>สร้างไคลเอนต์ DICOMweb - C#</h3>
  <pre><code class="cs">using HttpClient http = new HttpClient();
 
 // Most cloud services expect an OAuth access token
@@ -38,13 +38,13 @@ DicomWebClient client = new DicomWebClient(http, new DicomWebClientOptions
 });</code></pre>
 </div>
 
-<p>หากการปรับใช้หนึ่งให้บริการ WADO-URI หรือบริการอื่นจาก URL ที่แตกต่าง, <code>ServiceBaseUris</code> จะทับค่ารากสำหรับบริการนั้นเท่านั้น.</p>
+<p>หากการปรับใช้หนึ่งให้บริการ WADO-URI หรือบริการอื่นจาก URL ที่แตกต่าง, <code>ServiceBaseUris</code> จะครอบคลุมรากสำหรับบริการนั้นเท่านั้น.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="ค้นหาการศึกษาด้วย QIDO-RS">}}
 
-<p>การค้นหารับพารามิเตอร์การจับคู่โดยใช้คีย์เวิร์ด DICOM เป็นชื่อ, ฟิลด์ที่จะคืนค่า, และการควบคุมการแบ่งหน้า. ผลการจับคู่มาถึงเป็นสตรีมของ dataset, อ่านทีละรายการขณะที่การตอบกลับยังคงดาวน์โหลด.</p>
+<p>การค้นหารับพารามิเตอร์ที่ตรงกันโดยใช้คีย์เวิร์ด DICOM เป็นชื่อ, ระบุฟิลด์ที่ต้องการส่งคืน, และควบคุมการแบ่งหน้า. ผลการจับคู่จะมาที่เป็นสตรีมของ dataset, อ่านทีละชุดขณะตอบกลับยังคงดาวน์โหลดอยู่.</p>
 
 <div class="codeblock" id="code">
  <h3>ค้นหาการศึกษาของผู้ป่วย - C#</h3>
@@ -65,13 +65,13 @@ await foreach (Dataset study in studies)
 }</code></pre>
 </div>
 
-<p><code>SearchSeriesAsync</code> และ <code>SearchInstancesAsync</code> ค้นหาระดับหนึ่งระดับลง, ครอบคลุมทั้งคลังข้อมูลทั้งหมดหรือภายในการศึกษา หรือซีรีส์เดียว. ตัวเลือกเดียวกันยังตั้งค่าการจับคู่แบบ fuzzy, การจับคู่ค่าว่าง, และการเลื่อนผลลัพธ์สำหรับการแบ่งหน้า.</p>
+<p><code>SearchSeriesAsync</code> และ <code>SearchInstancesAsync</code> ค้นหาตำแหน่งหนึ่งระดับลง, ทั้งทั่วคลังข้อมูลหรือภายในการศึกษา หรือ ซีรีส์เดียว. ตัวเลือกเดียวกันยังสามารถตั้งค่าการจับคู่แบบ fuzziness, การจับคู่ค่าว่าง, และการชดเชยผลลัพธ์สำหรับการแบ่งหน้า.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="ดาวน์โหลดการศึกษาโดยใช้ WADO-RS">}}
+{{< blocks/products/pf/feature-page-section h2="ดาวน์โหลดการศึกษาด้วย WADO-RS">}}
 
-<p>การศึกษาหนึ่งอาจมีหลายพันอินสแตนซ์. <code>RetrieveStudyAsync</code> คืนค่าพวกมันเป็นสตรีม, ดังนั้นแต่ละไฟล์จะถูกวิเคราะห์เมื่อส่วนของการตอบกลับมาถึงและสามารถบันทึกได้ก่อนที่ไฟล์ถัดไปจะอ่าน. การใช้หน่วยความจำไม่เพิ่มตามขนาดของการศึกษา.</p>
+<p>การศึกษาอาจมีหลายพันอินสแตนซ์. <code>RetrieveStudyAsync</code> ส่งคืนเป็นสตรีม, ดังนั้นแต่ละไฟล์จะถูกวิเคราะห์เมื่อส่วนของการตอบกลับมาถึงและสามารถบันทึกได้ก่อนที่ไฟล์ถัดไปจะอ่าน. การใช้หน่วยความจำจะไม่เพิ่มตามขนาดของการศึกษา.</p>
 
 <div class="codeblock" id="code">
  <h3>บันทึกทุกอินสแตนซ์ของการศึกษา - C#</h3>
@@ -86,13 +86,13 @@ await foreach (DicomFile file in files)
 }</code></pre>
 </div>
 
-<p><code>RetrieveSeriesAsync</code> และ <code>RetrieveInstanceAsync</code> ดาวน์โหลดซีรีส์หนึ่งหรืออินสแตนซ์หนึ่งในลักษณะเดียวกัน.</p>
+<p><code>RetrieveSeriesAsync</code> และ <code>RetrieveInstanceAsync</code> ดาวน์โหลดซีรีส์หรืออินสแตนซ์หนึ่งในแบบเดียวกัน.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="รับภาพย่อหรือภาพที่เรนเดอร์แล้ว">}}
+{{< blocks/products/pf/feature-page-section h2="รับภาพย่อหรือภาพที่เรนเดอร์">}}
 
-<p>โปรแกรมดูหรือหน้าจอรายการงานมักต้องการภาพ, ไม่ใช่ไฟล์ DICOM. เซิร์ฟเวอร์ทำการเรนเดอร์และส่ง JPEG หรือ PNG, ดังนั้นไคลเอนท์จึงไม่ต้องดาวน์โหลดหรือถอดรหัสข้อมูลพิกเซลต้นฉบับ.</p>
+<p>ตัวดูหรือหน้าจอรายการงานมักต้องการรูปภาพ ไม่ใช่ไฟล์ DICOM. เซิร์ฟเวอร์ทำการเรนเดอร์และส่ง JPEG หรือ PNG, ทำให้ไคลเอนต์ไม่ต้องดาวน์โหลดหรือถอดรหัสข้อมูลพิกเซลต้นฉบับ.</p>
 
 <div class="codeblock" id="code">
  <h3>บันทึกภาพย่อ JPEG ของอินสแตนซ์ - C#</h3>
@@ -109,13 +109,13 @@ await using FileStream output = File.Create("thumbnail.jpg");
 await thumbnail.ContentReader.CopyToAsync(output);</code></pre>
 </div>
 
-<p><code>RetrieveRenderedInstanceAsync</code> และ <code>RetrieveRenderedFramesAsync</code> คืนค่าภาพขนาดเต็มแทน. <code>DicomWebRenderOptions</code> ส่งการควบคุมการเรนเดอร์มาตรฐานไปยังเซิร์ฟเวอร์: คุณภาพของภาพ, ขนาด viewport, หน้าต่างและ ICC profile.</p>
+<p><code>RetrieveRenderedInstanceAsync</code> และ <code>RetrieveRenderedFramesAsync</code> จะส่งคืนภาพเต็มขนาดแทน. <code>DicomWebRenderOptions</code> ส่งผ่านการควบคุมการเรนเดอร์มาตรฐานไปยังเซิร์ฟเวอร์: คุณภาพภาพ, ขนาด viewport, window และ ICC profile.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="อัปโหลดอินสแตนซ์ด้วย STOW-RS">}}
 
-<p>STOW-RS ส่งอินสแตนซ์จำนวนใดก็ได้ในคำขอเดียว. เซิร์ฟเวอร์ตอบกลับด้วยรายงานที่ระบุ, อินสแตนซ์ต่ออินสแตนซ์, ว่าเก็บอะไรไว้และอะไรที่ถูกปฏิเสธ.</p>
+<p>STOW-RS ส่งอินสแตนซ์จำนวนใดก็ได้ในคำขอเดียว. เซิร์ฟเวอร์ตอบด้วยรายงานที่แสดงรายการโดยอินสแตนซ์ว่าอะไรถูกจัดเก็บและอะไรถูกปฏิเสธ.</p>
 
 <div class="codeblock" id="code">
  <h3>อัปโหลดโฟลเดอร์ของไฟล์ DICOM - C#</h3>
@@ -138,15 +138,15 @@ if (stored.Value.Response.GetOrDefault(Tag.FailedSOPSequence) is Sequence failed
 }</code></pre>
 </div>
 
-<p>บางเซิร์ฟเวอร์ตอบกลับด้วยข้อผิดพลาด HTTP, เช่น 409, เมื่อหนึ่งหรือหลายอินสแตนซ์ล้มเหลว. การเรียกนั้นจะโยน <code>DicomWebClientException</code>, ตามที่ส่วนต่อไปแสดง, และรายงานเดียวกันอยู่ใน body ของข้อยกเว้น.</p>
+<p>เซิร์ฟเวอร์บางตัวอาจตอบกลับด้วยข้อผิดพลาด HTTP เช่น 409 เมื่อหนึ่งหรือหลายอินสแตนซ์ล้มเหลว. การเรียกนั้นจะโยน <code>DicomWebClientException</code> ตามที่ส่วนถัดไปแสดง, และรายงานเดียวกันอยู่ใน body ของการตอบกลับในข้อยกเว้น.</p>
 
-<p><code>StoreStudyAsync</code> อัปโหลดเข้าไปในการศึกษาที่มีชื่อตำแหน่งเดียว. ทั้งสองเมธอดยังรับ <code>IAsyncEnumerable&lt;DicomFile&gt;</code> ด้วย, ดังนั้นไฟล์สามารถผลิตขณะคำขอกำลังส่ง.</p>
+<p><code>StoreStudyAsync</code> อัปโหลดเข้าสู่การศึกษาที่กำหนดชื่อหนึ่ง. ทั้งสองเมธอดยังรับ <code>IAsyncEnumerable&lt;DicomFile&gt;</code> ได้, ทำให้ไฟล์สามารถสร้างได้ขณะส่งคำขอ.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="จัดการข้อผิดพลาดของเซิร์ฟเวอร์">}}
 
-<p>แต่ละการดำเนินการที่กำหนดประเภทจะตรวจสอบสถานะ HTTP ก่อนคืนค่า. เมื่อเซิร์ฟเวอร์ปฏิเสธคำขอ, การเรียกจะโยน <code>DicomWebClientException</code>, ซึ่งบรรจุรหัสสถานะ, ส่วนหัวและส่วนเริ่มต้นของ body การตอบกลับสำหรับบันทึก.</p>
+<p>การทำงานที่ระบุชนิดแต่ละอย่างจะตรวจสอบสถานะ HTTP ก่อนคืนค่า. เมื่อเซิร์ฟเวอร์ปฏิเสธคำขอ, การเรียกจะโยน <code>DicomWebClientException</code>, ซึ่งบรรจุรหัสสถานะ, เฮดเดอร์และส่วนต้นของ body การตอบกลับสำหรับบันทึก.</p>
 
 <div class="codeblock" id="code">
  <h3>รายงานคำขอที่ล้มเหลว - C#</h3>
@@ -163,32 +163,32 @@ catch (DicomWebClientException ex)
 }</code></pre>
 </div>
 
-<p>เมธอดที่คืนค่าการตอบกลับดิบ, เช่นภาพย่อด้านบน, ให้คุณทำการตรวจสอบสถานะด้วยตนเองผ่าน <code>IsSuccessStatusCode</code> หรือ <code>EnsureSuccessStatusCode</code>.</p>
+<p>เมธอดที่ส่งคืนการตอบสนองดิบ เช่น ภาพย่อยด้านบน, ให้คุณทำการตรวจสอบสถานะด้วย <code>IsSuccessStatusCode</code> หรือ <code>EnsureSuccessStatusCode</code>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="คุณสมบัติเพิ่มเติมที่ไคลเอนท์ครอบคลุม">}}
+{{< blocks/products/pf/feature-page-section h2="สิ่งอื่นที่ไคลเอนต์ครอบคลุม">}}
 
-<p>การค้นหา, ดาวน์โหลดและอัปโหลดเป็นการเรียกใช้ทั่วไป. ไคลเอนท์มีกลุ่มการทำงานสำหรับบริการ DICOMweb อื่น ๆ อีกเช่น:</p>
+<p>การค้นหา, ดาวน์โหลดและอัปโหลดเป็นการเรียกใช้งานทั่วไป. ไคลเอนต์มีกลุ่มการทำงานสำหรับบริการ DICOMweb อื่นๆ ด้วย:</p>
 
 <ul>
-<li>ข้อมูล bulk, ข้อมูลพิกเซลและเฟรมที่เลือกของอินสแตนซ์, ตามหมายเลขเฟรมที่เริ่มจากหนึ่ง, ตามที่เซิร์ฟเวอร์ส่งมา</li>
-<li>WADO-URI, วิธีการดึงข้อมูลแบบ URL เดียวแบบเก่าที่โปรแกรมดูและคลังข้อมูลหลายแห่งยังใช้, สำหรับไฟล์ DICOM และภาพที่เรนเดอร์</li>
-<li>UPS-RS worklists: สร้าง, ค้นหา, ปรับปรุงและอ้างสิทธิ์ workitem, เปลี่ยนสถานะ, ขอยกเลิก, และสมัครรับเหตุการณ์ที่มาถึงผ่าน WebSocket</li>
-<li>รายการงานโมดาลิตี้ (MWL-RS), ขั้นตอนกระบวนการที่ทำโดยโมดาลิตี้ (MPPS-RS) และการมอบหมายการจัดเก็บ</li>
-<li>อินสแตนซ์ที่ไม่ใช่ผู้ป่วยเช่น พาเล็ตสีและโปรโตคอลแสดงผล, รวมถึงเอกสารความสามารถของเซิร์ฟเวอร์</li>
-<li><code>SendAsync</code> สำหรับการทำธุรกรรมมาตรฐานใด ๆ ด้วยค่า route, พารามิเตอร์ query, ส่วนหัวและ body ของคุณเอง, เมื่อตัวเมธอดที่กำหนดประเภทไม่เหมาะสม</li>
+<li>ข้อมูลแบบ bulk, ข้อมูลพิกเซลและเฟรมที่เลือกของอินสแตนซ์ตามหมายเลขเฟรมที่เริ่มจาก 1, ตามที่เซิร์ฟเวอร์ส่งมา.</li>
+<li>WADO-URI, การเรียกดึงข้อมูลด้วย URL เดียวรุ่นเก่าที่หลายตัวดูและคลังข้อมูลยังใช้, สำหรับไฟล์ DICOM และภาพที่เรนเดอร์.</li>
+<li><a href="/medical/net/ups-rs/">UPS-RS</a> worklists: สร้าง, ค้นหา, ปรับปรุงและอ้างสิทธิ์ workitems, เปลี่ยนสถานะ, ร้องขอยกเลิก, และสมัครรับเหตุการณ์ที่มาถึงผ่าน WebSocket.</li>
+<li><a href="/medical/net/modality-worklist/">modality worklist</a> (MWL-RS), ขั้นตอนกระบวนการที่ทำโดย modality (MPPS-RS) และการคอมมิทการจัดเก็บ.</li>
+<li>อินสแตนซ์ที่ไม่ใช่ผู้ป่วยเช่นพาเลตสีและโปรโตคอลการแสดงผล, รวมถึงเอกสารความสามารถของเซิร์ฟเวอร์.</li>
+<li><code>SendAsync</code> สำหรับธุรกรรมมาตรฐานใดๆ ด้วย route values, พารามิเตอร์ query, เฮดเดอร์และ body ของคุณเอง, เมื่อเมธอดที่กำหนดชนิดไม่เหมาะสม.</li>
 </ul>
 
-<p>คู่มือไคลเอนท์ DICOMweb <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">DICOMweb client guide</a> ให้รายละเอียดทุกการดำเนินการและตัวเลือก, และ <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">client operation reference</a> แสดงรายการทุกเมธอด.</p>
+<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">คู่มือไคลเอนต์ DICOMweb</a> บันทึกการทำงานและตัวเลือกทั้งหมด, และ <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">อ้างอิงการทำงานของไคลเอนต์</a> แสดงรายการเมธอดทั้งหมด.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="ไลบรารีเดียวจากการตอบสนอง HTTP ถึงข้อมูลพิกเซล">}}
+{{< blocks/products/pf/feature-page-section h2="ไลบรารีเดียวจากการตอบสนอง HTTP ไปจนถึงข้อมูลพิกเซล">}}
 
-<p>ไฟล์ที่ดาวน์โหลดด้วยไคลเอนท์เป็น <code>DicomFile</code> ปกติ. สามารถทำการละบังความเป็นส่วนตัว, แปลงรูปแบบ, เรนเดอร์หรือทำการ serialize ในกระบวนการเดียวกัน, โดยไม่มีขั้นตอนแปลงและไม่มีไลบรารีที่สองในสายงาน.</p>
+<p>ไฟล์ที่ดาวน์โหลดด้วยไคลเอนต์เป็น <code>DicomFile</code> ปกติ. สามารถทำการไม่เปิดเผยตัว, แปลงรูปแบบ, เรนเดอร์หรือซีเรียลไลซ์ในกระบวนการเดียว, โดยไม่มีขั้นตอนการแปลงและไม่มีไลบรารีอื่นในโซ่.</p>
 
-<p>หน้าที่เกี่ยวข้อง: <a href="/medical/net/dicomweb-server/">เซิร์ฟเวอร์ DICOMweb</a> สำหรับด้านตรงข้ามของโปรโตคอลในบริการ ASP.NET Core ของคุณ, <a href="/medical/net/dicom-networking/">เครือข่าย DICOM</a> สำหรับคลังข้อมูลที่สื่อสารด้วย DIMSE แทน HTTP, <a href="/medical/net/anonymization/">การลับข้อมูล</a> ก่อนการศึกษาจากโรงพยาบาล, <a href="/medical/net/dicom-transfer-syntax-conversion/">การแปลงรูปแบบการส่งข้อมูล</a> สำหรับสิ่งที่เซิร์ฟเวอร์จัดเก็บ, และ <a href="/medical/net/dicom-to-json/">DICOM เป็น JSON</a> สำหรับรูปแบบที่ผลการค้นหา QIDO-RS ใช้.</p>
+<p>หน้าที่เกี่ยวข้อง: <a href="/medical/net/dicomweb-server/">เซิร์ฟเวอร์ DICOMweb</a> สำหรับฝั่งอื่นของโปรโตคอลในบริการ ASP.NET Core ของคุณ, <a href="/medical/net/dicom-networking/">DICOM networking</a> สำหรับคลังข้อมูลที่ใช้ DIMSE แทน HTTP, <a href="/medical/net/anonymization/">การไม่เปิดเผยตัว</a> ก่อนการศึกษาออกจากโรงพยาบาล, <a href="/medical/net/dicom-transfer-syntax-conversion/">การแปลง transfer syntax</a> สำหรับสิ่งที่เซิร์ฟเวอร์จัดเก็บ, และ <a href="/medical/net/dicom-to-json/">DICOM to JSON</a> สำหรับรูปแบบผลการค้นหา QIDO-RS.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -196,18 +196,18 @@ catch (DicomWebClientException ex)
 
 {{< blocks/products/pf/support-learning-resources >}}
 {{< blocks/products/pf/slr-tab tabTitle="แหล่งเรียนรู้" tabId="resources" >}}
-{{< blocks/products/pf/slr-element name="เอกสารประกอบ" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="เอกสารอธิบาย" href="https://docs.aspose.com/medical/net/" >}}
 {{< blocks/products/pf/slr-element name="คู่มือผู้พัฒนา" href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/" >}}
 {{< blocks/products/pf/slr-element name="อ้างอิง API" href="https://reference.aspose.com/medical/net/aspose.medical.dicom.web/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="การสนับสนุนผลิตภัณฑ์" tabId="support" >}}
-{{< blocks/products/pf/slr-element name="สนับสนุนฟรี" href="https://forum.aspose.com/c/medical" >}}
-{{< blocks/products/pf/slr-element name="สนับสนุนแบบชำระเงิน" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="การสนับสนุนฟรี" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="การสนับสนุนแบบชำระเงิน" href="https://helpdesk.aspose.com/" >}}
 {{< blocks/products/pf/slr-element name="บล็อก" href="https://blog.aspose.com/category/medical/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="ทำไมต้องเลือก Aspose.Medical สำหรับ .NET?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-tab tabTitle="ทำไมต้อง Aspose.Medical สำหรับ .NET?" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="รายการลูกค้า" href="https://company.aspose.com/customers" >}}
 {{< blocks/products/pf/slr-element name="เรื่องราวความสำเร็จ" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}

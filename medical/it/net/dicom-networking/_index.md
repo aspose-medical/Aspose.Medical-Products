@@ -2,28 +2,28 @@
 title: Rete DICOM in C# .NET - C-ECHO, C-STORE, C-FIND | Aspose.Medical
 weight: 9000
 
-description: Collega la tua applicazione .NET a un PACS. Verifica con C-ECHO, invia immagini con C-STORE, effettua query con C-FIND e ricevi le immagini con il tuo SCP. Un client e server DIMSE in puro C#.
+description: Collega la tua applicazione .NET a un PACS. Verifica con C-ECHO, invia immagini con C-STORE, effettua query con C-FIND e ricevi immagini con il tuo SCP. Un client e server DIMSE in puro C#.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Rete DICOM in .NET C#" h2="Parla con un PACS dalla tua applicazione: C-ECHO, C-STORE, C-FIND, C-MOVE e C-GET, sia come client sia come server, in C# gestito senza necessità di installare nulla sulla macchina." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="Rete DICOM in .NET C#" h2="Comunica con un PACS dalla tua applicazione: C-ECHO, C-STORE, C-FIND, C-MOVE e C-GET, sia come client che come server, in C# gestito senza necessità di installare nulla sulla macchina." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Connettiti a un PACS dal tuo codice">}}
 
-<p>Leggere i file DICOM è la metà più semplice dell'imaging medico. Nel momento in cui la tua applicazione deve interagire con un vero sistema ospedaliero, deve parlare DIMSE: aprire un'associazione con un PACS, inviare immagini, chiedere quali studi sono presenti e rispondere quando un altro sistema invia qualcosa indietro.</p>
+<p>Leggere i file DICOM è la metà più semplice dell'imaging medico. Nel momento in cui la tua applicazione deve interagire con un vero sistema ospedaliero, deve parlare DIMSE: aprire un'associazione con un PACS, inviare immagini, chiedere quali studi sono presenti e rispondere quando un altro sistema invia qualcosa.</p>
 
-<p><strong>Aspose.Medical per .NET</strong> include quel protocollo come parte della libreria. <code>Aspose.Medical.Dicom.Network</code> fornisce un client DIMSE e un server DIMSE, entrambi scritti in C# gestito. Non è necessario installare alcun toolkit nativo, né configurare servizi, e non c'è nulla di specifico per la piattaforma, così lo stesso codice gira su Windows, Linux e in un container.</p>
+<p><strong>Aspose.Medical for .NET</strong> fornisce quel protocollo come parte della libreria. <code>Aspose.Medical.Dicom.Network</code> ti offre un client DIMSE e un server DIMSE, entrambi scritti in C# gestito. Non c'è alcun toolkit nativo da installare, nessun servizio da configurare e nulla di specifico per la piattaforma, così lo stesso codice funziona su Windows, su Linux e in un container.</p>
 
-<p>Tre cose coprono la maggior parte delle integrazioni, e ciascuna richiede solo poche righe: verificare la connessione con C-ECHO, inviare immagini con C-STORE e scoprire cosa c'è dall'altro lato con C-FIND.</p>
+<p>Tre cose coprono la maggior parte delle integrazioni, e ciascuna richiede poche righe di codice: verificare la connessione con C-ECHO, inviare immagini con C-STORE e scoprire cosa cè dall'altra parte con C-FIND.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Inizia con C-ECHO">}}
 
-<p>C-ECHO è il ping DICOM. Dimostra che host, porta e i due titoli AE sono corretti prima che qualsiasi altro errore venga segnalato. Crea un client una volta, assegnagli un gestore che osservi la risposta, e invia la richiesta.</p>
+<p>C-ECHO è il ping DICOM. Dimostra che l'host, la porta e i due AE title sono corretti prima che qualsiasi altra cosa venga contestata. Crea un client una volta, assegnagli un handler che osserva la risposta e invia la richiesta.</p>
 
 <div class="codeblock" id="code">
  <h3>Verifica la connessione con C-ECHO - C#</h3>
@@ -76,7 +76,7 @@ client.QueueRequest(new CStoreRequest(dicomFile.Dataset, TransferSyntax.Explicit
 await client.SendAsync(CancellationToken.None);</code></pre>
 </div>
 
-<p>I contesti di presentazione che proponi determinano ciò che l'archivio accetterà. Se desidera una sintassi compressa, transcodifica prima di inviare, come mostra la pagina <a href="/medical/net/dicom-transfer-syntax-conversion/">conversione della sintassi di trasferimento</a>, oppure elenca le alternative in <code>AdditionalTransferSyntaxes</code> e lascia che la negoziazione ne scelga una.</p>
+<p>I contesti di presentazione che proponi decidono cosa accetterà l'archivio. Se richiede una sintassi compressa, transcodifica prima di inviare, come mostra la pagina <a href="/medical/net/dicom-transfer-syntax-conversion/">conversione della sintassi di trasferimento</a>, oppure elenca le alternative in <code>AdditionalTransferSyntaxes</code> e lascia che la negoziazione ne scelga una.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -127,13 +127,13 @@ await client.SendAsync(CancellationToken.None);
 await client.StopAsync();</code></pre>
 </div>
 
-<p>La stessa factory crea gli altri livelli di query: <code>CreatePatientQuery</code>, <code>CreateSeriesQuery</code> e <code>CreateImageQuery</code>. <code>CreateWorklistQuery</code> genera una query della worklist della modalità, ovvero la query che una modalità richiede prima di una scansione.</p>
+<p>La stessa factory costruisce gli altri livelli di query: <code>CreatePatientQuery</code>, <code>CreateSeriesQuery</code> e <code>CreateImageQuery</code>. <code>CreateWorklistQuery</code> crea una query della worklist di modalità, che è la query che una modalità invia prima di una scansione; la <a href="/medical/net/modality-worklist/">pagina della worklist di modalità</a> la mostra insieme a MPPS e al lato server della worklist.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Ricevi immagini: il tuo SCP di archiviazione">}}
 
-<p>La libreria è anche un server. Registra un gestore per il servizio che desideri offrire, avvia l'ascolto e la tua applicazione diventa un nodo DICOM a cui una modalità o un altro PACS può inviare dati.</p>
+<p>La libreria funge anche da server. Registra un handler per il servizio che desideri offrire, inizia ad ascoltare, e la tua applicazione diventa un nodo DICOM a cui una modalità o un altro PACS può inviare dati.</p>
 
 <div class="codeblock" id="code">
  <h3>Accetta immagini in ingresso - C#</h3>
@@ -159,7 +159,7 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>Il gestore che memorizza ciò che arriva - C#</h3>
+ <h3>L'handler che memorizza ciò che arriva - C#</h3>
  <pre><code class="cs">public sealed class StoreHandler : ICStoreRequestHandler
 {
     public ValueTask&lt;CStoreResponse&gt; Handle(CStoreRequest request, CancellationToken cancellationToken)
@@ -174,29 +174,29 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 }</code></pre>
 </div>
 
-<p>Ciò che il gestore fa con il dataset è una tua decisione: scriverlo su disco, inserirlo in una coda, anonimizzarlo prima con l'<a href="/medical/net/anonymization/">API di anonimizzazione</a>, o transcodificarlo nella sintassi dell'archivio.</p>
+<p>Ciò che l'handler fa con il dataset è una tua decisione: scriverlo su disco, inserirlo in una coda, anonimizzarlo prima con l'<a href="/medical/net/anonymization/">API di anonimizzazione</a>, o transcodificarlo nella sintassi dell'archivio.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Altre funzionalità coperte dall'API di networking">}}
+{{< blocks/products/pf/feature-page-section h2="Cos'altro copre l'API di rete">}}
 
-<p>I tre servizi sopra sono i più comuni. Anche il resto di DIMSE è disponibile:</p>
+<p>I tre servizi sopra sono quelli più comuni. Anche il resto di DIMSE è disponibile:</p>
 
 <ul>
 <li>Recupero: C-MOVE e C-GET, con i contatori delle sottooperazioni riportati nelle risposte.</li>
-<li>I servizi N: N-CREATE, N-SET, N-GET, N-ACTION, N-DELETE e N-EVENT-REPORT, da cui nascono impegni di archiviazione e MPPS.</li>
-<li>Controllo dell'associazione: contesti di presentazione, ruoli delle classi di servizio, negoziazione estesa, finestra di operazioni asincrone, negoziazione dell'identità utente e hook di policy che può rifiutare un'associazione chiamando l'AE title.</li>
-<li>TLS su entrambi i lati, tramite <code>TlsInitiatorAuthenticator</code> e <code>TlsAcceptorAuthenticator</code>, con convalida del certificato personalizzata se necessaria.</li>
-<li>Timeout per ogni fase, dalla connessione TCP al rilascio, e notifiche per il ciclo di vita dell'associazione così un nodo a lungo termine può registrare gli eventi.</li>
+<li>I servizi N: N-CREATE, N-SET, N-GET, N-ACTION, N-DELETE e N-EVENT-REPORT, da cui sono costruiti storage commitment e MPPS.</li>
+<li>Controllo dell'associazione: contesti di presentazione, ruoli di classi di servizio, negoziazione estesa, finestra delle operazioni asincrone, negoziazione dell'identità utente e un hook di policy che può rifiutare un'associazione chiamando l'AE title.</li>
+<li>TLS su entrambi i lati, tramite <code>TlsInitiatorAuthenticator</code> e <code>TlsAcceptorAuthenticator</code>, con la tua convalida del certificato se necessaria.</li>
+<li>Timeout per ogni fase, dalla connessione TCP al rilascio, e notifiche per il ciclo di vita dell'associazione così un nodo a lungo termine può registrare ciò che è accaduto.</li>
 </ul>
 
-<p>La <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">guida al networking DICOM</a> documenta ogni opzione e ogni gestore.</p>
+<p>La <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">guida alla rete DICOM</a> documenta ogni opzione e ogni handler.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Pure .NET, dal socket ai dati pixel">}}
+{{< blocks/products/pf/feature-page-section h2="Puro .NET, dal socket ai dati dei pixel">}}
 
-<p>Tutto ciò che trovi in questa pagina è codice gestito proveniente dallo stesso pacchetto che legge e scrive i file. L'associazione, i codec e il parser provengono da un'unica libreria, così uno studio ricevuto via rete può essere anonimizzato, transcodificato o serializzato senza uscire dal processo e senza dipendenze native in nessuna parte della catena.</p>
+<p>Todo su questa pagina è codice gestito dallo stesso pacchetto che legge e scrive i file. L'associazione, i codec e il parser provengono da un'unica libreria, così uno studio ricevuto via rete può essere anonimizzato, transcodificato o serializzato senza uscire dal processo e senza dipendenze native in alcuna fase della catena.</p>
 
 <p>Pagine correlate: <a href="/medical/net/dicom-transfer-syntax-conversion/">conversione della sintassi di trasferimento</a> per cosa inviare, <a href="/medical/net/anonymization/">anonimizzazione</a> per cosa rimuovere prima, e <a href="/medical/net/dicom-tags/">tag DICOM</a> per leggere ciò che è arrivato.</p>
 
@@ -211,7 +211,7 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 {{< blocks/products/pf/slr-element name="Riferimenti API" href="https://reference.aspose.com/medical/net/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Supporto prodotto" tabId="support" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Supporto al prodotto" tabId="support" >}}
 {{< blocks/products/pf/slr-element name="Supporto gratuito" href="https://forum.aspose.com/c/medical" >}}
 {{< blocks/products/pf/slr-element name="Supporto a pagamento" href="https://helpdesk.aspose.com/" >}}
 {{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}

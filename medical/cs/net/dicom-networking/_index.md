@@ -2,28 +2,28 @@
 title: DICOM síťová komunikace v C# .NET - C-ECHO, C-STORE, C-FIND | Aspose.Medical
 weight: 9000
 
-description: Připojte svou .NET aplikaci k PACS. Ověřte pomocí C-ECHO, odesílejte obrázky pomocí C-STORE, dotazujte pomocí C-FIND a přijímejte obrázky pomocí vlastního SCP. DIMSE klient a server v čistém C#.
+description: Propojte svou .NET aplikaci s PACS. Ověřte pomocí C-ECHO, odešlete obrázky pomocí C-STORE, dotazujte pomocí C-FIND a přijímejte obrázky pomocí vlastního SCP. DIMSE klient a server v čistém C#.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM síťová komunikace v .NET C#" h2="Komunikujte s PACS ze své aplikace: C-ECHO, C-STORE, C-FIND, C-MOVE a C-GET, jako klient i server, v řízeném C# bez nutnosti instalovat něco na stroj." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM síťová komunikace v .NET C#" h2="Komunikujte s PACS z vlastní aplikace: C-ECHO, C-STORE, C-FIND, C-MOVE a C-GET, jako klient i server, v řízeném C# bez nutnosti instalace čehokoli na stroj." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="Připojte se k PACS ze svého kódu">}}
+{{< blocks/products/pf/feature-page-section h2="Připojte se k PACS z vlastního kódu">}}
 
-<p>Čtení souborů DICOM je snadná polovina medicínského zobrazování. Jakmile vaše aplikace musí spolupracovat se skutečným nemocničním systémem, musí mluvit protokolem DIMSE: otevřít asociaci s PACS, odeslat obrázky, zeptat se, jaké studie jsou k dispozici, a odpovědět, když jiný systém něco pošle zpět.</p>
+<p>Čtení DICOM souborů je snadná polovina medicínského zobrazování. Jakmile vaše aplikace musí pracovat se skutečným nemocničním systémem, musí mluvit DIMSE: otevřít asociaci s PACS, poslat obrázky, zeptat se, jaké studie jsou k dispozici, a odpovědět, když jiný systém něco pošle zpět.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> doručuje tento protokol jako součást knihovny. <code>Aspose.Medical.Dicom.Network</code> poskytuje DIMSE klienta a DIMSE server, oba napsané v řízeném C#. Není nutné instalovat žádný nativní toolkit, žádnou službu konfigurovat a není zde žádná platformově specifická závislost, takže stejný kód běží na Windows, Linuxu i v kontejneru.</p>
+<p><strong>Aspose.Medical for .NET</strong> dodává tento protokol jako součást knihovny. <code>Aspose.Medical.Dicom.Network</code> poskytuje DIMSE klienta a DIMSE server, oba napsané v řízeném C#. Nevyžaduje se žádný nativní toolkit k instalaci, žádná služba k nastavení a nic specifického pro platformu, takže stejný kód běží na Windows, na Linuxu i v kontejneru.</p>
 
-<p>Tři věci pokrývají většinu integrací a každá z nich je jen několik řádků: ověřte spojení pomocí C-ECHO, nahrávejte obrázky pomocí C-STORE a zjistěte, co je na druhé straně pomocí C-FIND.</p>
+<p>Tři věci pokrývají většinu integrací a každá je jen několik řádků: ověřte spojení pomocí C-ECHO, odešlete obrázky pomocí C-STORE a zjistěte, co je na druhé straně pomocí C-FIND.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Začněte s C-ECHO">}}
 
-<p>C-ECHO je DICOM ping. Ověřuje, že hostitel, port a oba AE tituly jsou správné, dříve než se obviňuje cokoli jiného. Vytvořte klienta jednou, přiřaďte mu obslužnou rutinu, která pozoruje odpověď, a odešlete požadavek.</p>
+<p>C-ECHO je DICOM ping. Potvrzuje, že hostitel, port a oba AE tituly jsou správné, než se něco dalšího obviňuje. Vytvořte klienta jednou, přiřaďte mu handler, který sleduje odpověď, a odešlete požadavek.</p>
 
 <div class="codeblock" id="code">
  <h3>Ověřte spojení pomocí C-ECHO - C#</h3>
@@ -59,13 +59,13 @@ await client.SendAsync(CancellationToken.None);
 await client.StopAsync();</code></pre>
 </div>
 
-<p>Stav <code>0x0000</code> znamená úspěch. Požadavky jsou zařazeny do fronty a poté odeslány v rámci jedné asociace, takže dávka úloh neotevírá spojení pro každou položku.</p>
+<p>Status <code>0x0000</code> znamená úspěch. Požadavky jsou zařazeny do fronty a poté odeslány v jedné asociaci, takže dávka práce neotevírá spojení pro každou položku.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Odesílejte obrázky pomocí C-STORE">}}
+{{< blocks/products/pf/feature-page-section h2="Odešlete obrázky pomocí C-STORE">}}
 
-<p>C-STORE je to, co aplikace dělá po vytvoření nebo přijetí obrázku: odesílá instanci do archivu. Zařaďte jeden požadavek na instanci do fronty a odešlete je společně.</p>
+<p>C-STORE je to, co aplikace provádí po vytvoření nebo přijetí obrázku: odesílá instanci do archivu. Zařaďte jeden požadavek na instanci do fronty a odešlete je společně.</p>
 
 <div class="codeblock" id="code">
  <h3>Odešlete DICOM soubor do PACS - C#</h3>
@@ -76,13 +76,13 @@ client.QueueRequest(new CStoreRequest(dicomFile.Dataset, TransferSyntax.Explicit
 await client.SendAsync(CancellationToken.None);</code></pre>
 </div>
 
-<p>Prezentační kontexty, které navrhnete, určují, co archiv přijme. Pokud požaduje komprimovaný syntakt, transkódujte před odesláním, jak ukazuje stránka <a href="/medical/net/dicom-transfer-syntax-conversion/">převod syntaxi přenosu</a>, nebo uveďte alternativy v <code>AdditionalTransferSyntaxes</code> a nechte vyjednání vybrat jednu.</p>
+<p>Prezentační kontexty, které navrhnete, určují, co archiv přijme. Pokud požaduje komprimovanou syntaxi, přetransformujte před odesláním, jak ukazuje stránka <a href="/medical/net/dicom-transfer-syntax-conversion/">převodu syntaktických přenosů</a>, nebo uveďte alternativy v <code>AdditionalTransferSyntaxes</code> a nechte vyjednávání vybrat jednu.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Vyhledejte studie pomocí C-FIND">}}
 
-<p>C-FIND odpovídá na otázku „co archiv obsahuje“. Nalezené položky přicházejí po jedné, každá s vlastním identifikačním datasetem, a závěrečná odpověď dotaz uzavře.</p>
+<p>C-FIND odpovídá na otázku „co archiv obsahuje“. Shody přicházejí po jedné, každá s vlastním datasetem identifikátoru, a závěrečná odpověď uzavře dotaz.</p>
 
 <div class="codeblock" id="code">
  <h3>Dotaz na studie podle pacienta - C#</h3>
@@ -127,16 +127,16 @@ await client.SendAsync(CancellationToken.None);
 await client.StopAsync();</code></pre>
 </div>
 
-<p>Stejná továrna vytváří další úrovně dotazů: <code>CreatePatientQuery</code>, <code>CreateSeriesQuery</code> a <code>CreateImageQuery</code>. <code>CreateWorklistQuery</code> vytváří dotaz na pracovním seznamu modality, což je dotaz, který modality provádí před snímáním.</p>
+<p>Stejná továrna vytváří i další úrovně dotazů: <code>CreatePatientQuery</code>, <code>CreateSeriesQuery</code> a <code>CreateImageQuery</code>. <code>CreateWorklistQuery</code> vytváří dotaz na worklist modality, což je dotaz, který modality zadává před skenem; <a href="/medical/net/modality-worklist/">stránka worklistu modality</a> ukazuje to společně s MPPS a serverovou stranou worklistu.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Přijímejte obrázky: vlastní SCP úložiště">}}
+{{< blocks/products/pf/feature-page-section h2="Přijímejte obrázky: váš vlastní store SCP">}}
 
-<p>Knihovna je také server. Zaregistrujte obslužnou rutinu pro službu, kterou chcete nabízet, spusťte naslouchání a vaše aplikace se stane DICOM uzlem, na který může modality nebo jiný PACS odesílat.</p>
+<p>Knihovna je také server. Zaregistrujte handler pro službu, kterou chcete nabídnout, spusťte naslouchání a vaše aplikace se stane DICOM uzlem, na který může odesílat modality nebo jiný PACS.</p>
 
 <div class="codeblock" id="code">
- <h3>Přijímejte příchozí obrázky - C#</h3>
+ <h3>Přijměte příchozí obrázky - C#</h3>
  <pre><code class="cs">DicomNetworkServer server = DicomNetworkServer
     .CreateBuilder(new DicomNetworkServerOptions
     {
@@ -159,7 +159,7 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>Obslužná rutina, která ukládá příchozí data - C#</h3>
+ <h3>Handler, který ukládá přijaté soubory - C#</h3>
  <pre><code class="cs">public sealed class StoreHandler : ICStoreRequestHandler
 {
     public ValueTask&lt;CStoreResponse&gt; Handle(CStoreRequest request, CancellationToken cancellationToken)
@@ -174,38 +174,38 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 }</code></pre>
 </div>
 
-<p>Co obslužná rutina udělá s datasetem, je na vás: zapíše jej na disk, vloží do fronty, nejprve jej anonymizuje pomocí <a href="/medical/net/anonymization/">API anonymizace</a>, nebo jej transkóduje do syntaxi archivu.</p>
+<p>Co handler provede s datasetem, je na vás: zapíše jej na disk, vloží do fronty, nejprve jej anonymizuje pomocí <a href="/medical/net/anonymization/">API anonymizace</a> nebo jej přetransformuje do syntaxi archivu.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Co dalšího pokrývá síťové API">}}
+{{< blocks/products/pf/feature-page-section h2="Co dalšího pokrývá networking API">}}
 
-<p>Výše uvedené tři služby jsou běžné. Zbytek protokolu DIMSE je také k dispozici:</p>
+<p>Tři výše uvedené služby jsou běžné. Zbytek DIMSE je také k dispozici:</p>
 
 <ul>
 <li>Retrieval: C-MOVE a C-GET, s počítadly podoperací uváděnými v odpovědích.</li>
-<li>N-služby: N-CREATE, N-SET, N-GET, N-ACTION, N-DELETE a N-EVENT-REPORT, ze kterých jsou postaveny storage commitment a MPPS.</li>
-<li>Řízení asociace: prezentační kontexty, role servisních tříd, rozšířené vyjednávání, okno asynchronních operací, vyjednávání identity uživatele a hák politiky, který může odmítnout asociaci voláním AE titulu.</li>
-<li>TLS na obou stranách, pomocí <code>TlsInitiatorAuthenticator</code> a <code>TlsAcceptorAuthenticator</code>, s vlastní validací certifikátu, pokud ji potřebujete.</li>
-<li>Časové limity pro každou fázi, od TCP připojení po uvolnění, a notifikace o životním cyklu asociace, aby dlouho běžící uzel mohl zaznamenat, co se stalo.</li>
+<li>N-služby: N-CREATE, N-SET, N-GET, N-ACTION, N-DELETE a N-EVENT-REPORT, z nichž jsou postaveny storage commitment a MPPS.</li>
+<li>Řízení asociace: prezentační kontexty, role servisních tříd, rozšířené vyjednávání, okno asynchronních operací, vyjednávání identity uživatele a hák politiky, který může odmítnout asociaci voláním AE title.</li>
+<li>TLS na obou stranách, prostřednictvím <code>TlsInitiatorAuthenticator</code> a <code>TlsAcceptorAuthenticator</code>, s vlastní validací certifikátu, pokud ji potřebujete.</li>
+<li>Časové limity pro každou fázi, od TCP připojení po uvolnění, a notifikace pro životní cyklus asociace, aby dlouho běžící uzel mohl zaznamenat, co se stalo.</li>
 </ul>
 
-<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">Průvodce DICOM sítí</a> dokumentuje každou volbu a každou obslužnou rutinu.</p>
+<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">Průvodce DICOM networking</a> dokumentuje každou možnost a každý handler.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Čistý .NET, od socketu po pixelová data">}}
 
-<p>Vše na této stránce je řízený kód ze stejného balíčku, který čte a zapisuje soubory. Asociace, kodeky a parser pocházejí z jedné knihovny, takže studie přijatá po síti může být anonymizována, transkódována nebo serializována bez opuštění procesu a bez nativní závislosti kdekoli v řetězci.</p>
+<p>Vše na této stránce je řízený kód ze stejného balíčku, který čte a zapisuje soubory. Asociace, kodeky a parser pocházejí z jediné knihovny, takže studie přijatá přes síť může být anonymizována, přetranskodována nebo serializována bez opuštění procesu a bez nativní závislosti kdekoliv v řetězci.</p>
 
-<p>Související stránky: <a href="/medical/net/dicom-transfer-syntax-conversion/">převod syntaxi přenosu</a> pro to, co odeslat, <a href="/medical/net/anonymization/">anonymizace</a> pro to, co nejprve odstranit, a <a href="/medical/net/dicom-tags/">DICOM tagy</a> pro čtení přijatých dat.</p>
+<p>Související stránky: <a href="/medical/net/dicom-transfer-syntax-conversion/">převod syntaktických přenosů</a> pro to, co odeslat, <a href="/medical/net/anonymization/">anonymizaci</a> pro to, co nejprve odstranit, a <a href="/medical/net/dicom-tags/">DICOM štítky</a> pro čtení přijatých údajů.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="Výukové zdroje" tabId="resources" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Vzdělávací zdroje" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="Dokumentace" href="https://docs.aspose.com/medical/net/" >}}
 {{< blocks/products/pf/slr-element name="Průvodce vývojáře" href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/" >}}
 {{< blocks/products/pf/slr-element name="Reference API" href="https://reference.aspose.com/medical/net/" >}}

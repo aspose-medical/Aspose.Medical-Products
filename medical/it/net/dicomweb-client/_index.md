@@ -2,28 +2,28 @@
 title: Client DICOMweb in C# .NET - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
 weight: 9100
 
-description: Cerca, scarica e carica studi DICOM via HTTP da .NET. Un client DICOMweb in puro C# per QIDO-RS, WADO-RS e STOW-RS che funziona con PACS, VNA e servizi di imaging cloud.
+description: Cerca, scarica e carica studi DICOM tramite HTTP da .NET. Un client DICOMweb in puro C# per QIDO-RS, WADO-RS e STOW-RS che funziona con PACS, VNA e servizi di imaging cloud.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Client DICOMweb per .NET C#" h2="Cerca, scarica e carica studi su qualsiasi server DICOMweb con QIDO-RS, WADO-RS e STOW-RS, in C# gestito senza necessità di installare nulla sulla macchina." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="Client DICOMweb per .NET C#" h2="Cerca, scarica e carica studi su qualsiasi server DICOMweb con QIDO-RS, WADO-RS e STOW-RS, in C# gestito senza bisogno di installare nulla sulla macchina." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="DICOM via HTTP, dal tuo codice">}}
+{{< blocks/products/pf/feature-page-section h2="DICOM su HTTP, dal tuo codice">}}
 
-<p>DICOMweb è la forma HTTP di DICOM. Invece di un'associazione DIMSE sulla porta 104, la tua applicazione invia normali richieste HTTPS: QIDO-RS per la ricerca, WADO-RS per il download, STOW-RS per il caricamento. I servizi di imaging cloud come Azure Health Data Services DICOM service e Google Cloud Healthcare API funzionano in questo modo, così come archivi quali Orthanc e dcm4chee.</p>
+<p>DICOMweb è la forma HTTP di DICOM. Invece di un'associazione DIMSE sulla porta 104, la tua applicazione invia normali richieste HTTPS: QIDO-RS per la ricerca, WADO-RS per il download, STOW-RS per il caricamento. I servizi di imaging cloud come il servizio DICOM di Azure Health Data Services e la Google Cloud Healthcare API funzionano in questo modo, così come gli archivi come Orthanc e dcm4chee.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> include un client DICOMweb dalla versione 26.10. <code>DicomWebClient</code> incapsula ogni transazione standard in un metodo tipizzato, e i risultati arrivano come gli stessi oggetti <code>Dataset</code> e <code>DicomFile</code> che il resto della libreria legge e scrive. Il server dall'altra parte può essere qualsiasi implementazione DICOMweb; non è necessario che sia costruito con Aspose.Medical.</p>
+<p><strong>Aspose.Medical per .NET</strong> include un client DICOMweb dalla versione 26.10. <code>DicomWebClient</code> incapsula ogni transazione standard in un metodo tipizzato, e i risultati arrivano come gli stessi oggetti <code>Dataset</code> e <code>DicomFile</code> che il resto della libreria legge e scrive. Il server dall’altro lato può essere qualsiasi implementazione DICOMweb; non è necessario che sia stato costruito con Aspose.Medical.</p>
 
-<p>Il client è C# gestito sopra <code>HttpClient</code>. Non esiste alcun toolkit nativo né servizio proxy, quindi lo stesso codice funziona su Windows, su Linux e in un container.</p>
+<p>Il client è C# gestito sopra <code>HttpClient</code>. Non esiste un toolkit nativo né un servizio proxy, così lo stesso codice gira su Windows, Linux e in un container.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Connetti a un server DICOMweb">}}
 
-<p>Crea il client a partire da un <code>HttpClient</code> e dall'URL radice del servizio del server. L'autenticazione, le impostazioni TLS, i proxy e il pooling delle connessioni rimangono sul <code>HttpClient</code>, dove la tua applicazione li configura già. Il client non possiede il <code>HttpClient</code> e non lo elimina.</p>
+<p>Crea il client a partire da un <code>HttpClient</code> e dall'URL di root del servizio del server. Autenticazione, impostazioni TLS, proxy e pooling di connessioni rimangono sul <code>HttpClient</code>, dove la tua applicazione li configura già. Il client non possiede il <code>HttpClient</code> e non lo chiude.</p>
 
 <div class="codeblock" id="code">
  <h3>Crea un client DICOMweb - C#</h3>
@@ -38,13 +38,13 @@ DicomWebClient client = new DicomWebClient(http, new DicomWebClientOptions
 });</code></pre>
 </div>
 
-<p>Se una distribuzione fornisce WADO-URI o un altro servizio da un URL diverso, <code>ServiceBaseUris</code> sovrascrive la radice solo per quel servizio.</p>
+<p>Se un'implementazione fornisce WADO-URI o un altro servizio da un URL diverso, <code>ServiceBaseUris</code> sovrascrive la radice solo per quel servizio.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Cerca studi con QIDO-RS">}}
 
-<p>Una ricerca accetta parametri di corrispondenza con la parola chiave DICOM come nome, i campi da restituire e i controlli di paginazione. Le corrispondenze arrivano come un flusso di dataset, letti uno alla volta mentre la risposta è ancora in fase di download.</p>
+<p>Una ricerca richiede parametri di corrispondenza con la parola chiave DICOM come nome, i campi da restituire e i controlli di paginazione. Le corrispondenze arrivano come un flusso di dataset, letti uno alla volta mentre la risposta è ancora in download.</p>
 
 <div class="codeblock" id="code">
  <h3>Trova gli studi di un paziente - C#</h3>
@@ -65,13 +65,13 @@ await foreach (Dataset study in studies)
 }</code></pre>
 </div>
 
-<p><code>SearchSeriesAsync</code> e <code>SearchInstancesAsync</code> cercano un livello più in basso, nell'intero archivio o all'interno di uno studio o serie. Le stesse opzioni impostano inoltre il fuzzy matching, la corrispondenza di valori vuoti e l'offset del risultato per la paginazione.</p>
+<p><code>SearchSeriesAsync</code> e <code>SearchInstancesAsync</code> cercano un livello più in basso, su tutto l’archivio o all’interno di uno studio o serie. Le stesse opzioni impostano anche la corrispondenza fuzzy, la corrispondenza di valori vuoti e l’offset del risultato per la paginazione.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Scarica uno studio con WADO-RS">}}
 
-<p>Uno studio può contenere migliaia di istanze. <code>RetrieveStudyAsync</code> le restituisce come un flusso, così ogni file viene analizzato man mano che la sua parte della risposta arriva e può essere salvato prima che il successivo venga letto. L'uso della memoria non aumenta con la dimensione dello studio.</p>
+<p>Uno studio può contenere migliaia di istanze. <code>RetrieveStudyAsync</code> le restituisce come un flusso, così ogni file viene analizzato man mano che la sua parte della risposta arriva e può essere salvato prima che il successivo sia letto. L’utilizzo della memoria non aumenta con le dimensioni dello studio.</p>
 
 <div class="codeblock" id="code">
  <h3>Salva ogni istanza di uno studio - C#</h3>
@@ -86,16 +86,16 @@ await foreach (DicomFile file in files)
 }</code></pre>
 </div>
 
-<p><code>RetrieveSeriesAsync</code> e <code>RetrieveInstanceAsync</code> scaricano una serie o un'istanza nello stesso modo.</p>
+<p><code>RetrieveSeriesAsync</code> e <code>RetrieveInstanceAsync</code> scaricano una serie o un’istanza nello stesso modo.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Ottieni una miniatura o un'immagine renderizzata">}}
+{{< blocks/products/pf/feature-page-section h2="Ottieni una miniatura o un’immagine renderizzata">}}
 
-<p>Un visualizzatore o una schermata della lista di lavoro spesso richiedono un'immagine, non un file DICOM. Il server la renderizza e invia un JPEG o PNG, così il client non scarica né decodifica i dati pixel originali.</p>
+<p>Un visualizzatore o una schermata di worklist spesso necessita di un’immagine, non di un file DICOM. Il server la rende e invia un JPEG o PNG, così il client non scarica né decodifica i dati pixel originali.</p>
 
 <div class="codeblock" id="code">
- <h3>Salva una miniatura JPEG di un'istanza - C#</h3>
+ <h3>Salva una miniatura JPEG di un’istanza - C#</h3>
  <pre><code class="cs">DicomWebRenderOptions render = new DicomWebRenderOptions
 {
     AcceptedMediaTypes = [DicomWebMediaTypes.ImageJpeg]
@@ -109,13 +109,13 @@ await using FileStream output = File.Create("thumbnail.jpg");
 await thumbnail.ContentReader.CopyToAsync(output);</code></pre>
 </div>
 
-<p><code>RetrieveRenderedInstanceAsync</code> e <code>RetrieveRenderedFramesAsync</code> restituiscono invece un'immagine a grandezza naturale. <code>DicomWebRenderOptions</code> passa i controlli di rendering standard al server: qualità dell'immagine, dimensione del viewport, finestra e profilo ICC.</p>
+<p><code>RetrieveRenderedInstanceAsync</code> e <code>RetrieveRenderedFramesAsync</code> restituiscono invece un’immagine a dimensione intera. <code>DicomWebRenderOptions</code> passa i controlli di rendering standard al server: qualità dell’immagine, dimensione del viewport, finestra e profilo ICC.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Carica istanze con STOW-RS">}}
 
-<p>STOW-RS invia qualsiasi numero di istanze in una singola richiesta. Il server risponde con un report che elenca, istanza per istanza, ciò che ha memorizzato e ciò che ha rifiutato.</p>
+<p>STOW-RS invia un numero qualsiasi di istanze in una singola richiesta. Il server risponde con un report che elenca, istanza per istanza, ciò che è stato memorizzato e ciò che è stato rifiutato.</p>
 
 <div class="codeblock" id="code">
  <h3>Carica una cartella di file DICOM - C#</h3>
@@ -138,15 +138,15 @@ if (stored.Value.Response.GetOrDefault(Tag.FailedSOPSequence) is Sequence failed
 }</code></pre>
 </div>
 
-<p>Alcuni server rispondono con un errore HTTP, ad esempio 409, quando una o più istanze falliscono. La chiamata lancia quindi <code>DicomWebClientException</code>, come mostra la sezione successiva, e lo stesso report è nel corpo della risposta dell'eccezione.</p>
+<p>Alcuni server rispondono con un errore HTTP, ad esempio 409, quando una o più istanze falliscono. La chiamata allora genera un <code>DicomWebClientException</code>, come mostrato nella sezione successiva, e lo stesso report si trova nel corpo della risposta dell’eccezione.</p>
 
-<p><code>StoreStudyAsync</code> carica in uno studio con nome. Entrambi i metodi accettano anche un <code>IAsyncEnumerable&lt;DicomFile&gt;</code>, così i file possono essere prodotti mentre la richiesta è in corso di invio.</p>
+<p><code>StoreStudyAsync</code> carica in uno studio nominato. Entrambi i metodi accettano anche un <code>IAsyncEnumerable&lt;DicomFile&gt;</code>, così i file possono essere prodotti mentre la richiesta viene inviata.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Gestisci gli errori del server">}}
+{{< blocks/products/pf/feature-page-section h2="Gestisci errori del server">}}
 
-<p>Ogni operazione tipizzata controlla lo stato HTTP prima di restituire. Quando il server rifiuta una richiesta, la chiamata lancia <code>DicomWebClientException</code>, che porta il codice di stato, le intestazioni e l'inizio del corpo della risposta per il registro.</p>
+<p>Ogni operazione tipizzata controlla lo stato HTTP prima di restituire. Quando il server rifiuta una richiesta, la chiamata genera un <code>DicomWebClientException</code>, che contiene il codice di stato, le intestazioni e l’inizio del corpo della risposta per il log.</p>
 
 <div class="codeblock" id="code">
  <h3>Segnala una richiesta fallita - C#</h3>
@@ -163,24 +163,24 @@ catch (DicomWebClientException ex)
 }</code></pre>
 </div>
 
-<p>Metodi che restituiscono una risposta grezza, come la miniatura sopra, lasciano a te il controllo dello stato tramite <code>IsSuccessStatusCode</code> o <code>EnsureSuccessStatusCode</code>.</p>
+<p>I metodi che restituiscono una risposta grezza, come la miniatura sopra, lasciano il controllo dello stato a te tramite <code>IsSuccessStatusCode</code> o <code>EnsureSuccessStatusCode</code>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Altre funzionalità coperte dal client">}}
 
-<p>Ricerca, download e caricamento sono le chiamate comuni. Il client ha anche un gruppo di operazioni per ciascuno degli altri servizi DICOMweb:</p>
+<p>Cerca, scarica e carica sono le chiamate comuni. Il client ha anche un gruppo di operazioni per ciascuno degli altri servizi DICOMweb:</p>
 
 <ul>
-<li>Dati bulk, dati pixel e fotogrammi selezionati di un'istanza, per numero di fotogramma a base uno, così come li invia il server.</li>
-<li>WADO-URI, il più vecchio recupero a singolo URL che molti visualizzatori e archivi usano ancora, per file DICOM e immagini renderizzate.</li>
-<li>Liste di lavoro UPS-RS: creare, cercare, aggiornare e rivendicare workitems, cambiare il loro stato, richiedere la cancellazione e sottoscrivere eventi che arrivano via WebSocket.</li>
-<li>La lista di lavoro della modalità (MWL-RS), i passi di procedura eseguiti dalla modalità (MPPS-RS) e l'impegno di storage.</li>
-<li>Istanze non-paziente come palette di colori e protocolli di hanging, e il documento delle capacità del server.</li>
-<li><code>SendAsync</code> per qualsiasi transazione standard con i propri valori di percorso, parametri di query, intestazioni e corpo, quando un metodo tipizzato non è appropriato.</li>
+<li>Dati bulk, dati pixel e frame selezionati di un’istanza, per numero di frame a base 1, come li invia il server.</li>
+<li>WADO-URI, il più vecchio recupero a URL singolo che molti visualizzatori e archivi usano ancora, per file DICOM e immagini renderizzate.</li>
+<li><a href="/medical/net/ups-rs/">UPS-RS</a> worklist: crea, cerca, aggiorna e rivendica workitem, modifica il loro stato, richiedi l’annullamento e sottoscrivi gli eventi che arrivano via WebSocket.</li>
+<li>Il <a href="/medical/net/modality-worklist/">modality worklist</a> (MWL-RS), i passaggi di procedura eseguiti dalla modalità (MPPS-RS) e il commitment di archiviazione.</li>
+<li>Istanze non‑paziente come palette di colore e protocolli di visualizzazione, e il documento delle capacità del server.</li>
+<li><code>SendAsync</code> per qualsiasi transazione standard con i propri valori di route, parametri di query, header e corpo, quando un metodo tipizzato non è adeguato.</li>
 </ul>
 
-<p>La <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">guida al client DICOMweb</a> documenta ogni operazione e opzione, e il <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">riferimento delle operazioni del client</a> elenca tutti i metodi.</p>
+<p>La <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">guida al client DICOMweb</a> documenta ogni operazione e opzione, e il <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">riferimento alle operazioni del client</a> elenca tutti i metodi.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -188,7 +188,7 @@ catch (DicomWebClientException ex)
 
 <p>Un file scaricato con il client è un normale <code>DicomFile</code>. Può essere anonimizzato, transcodificato, renderizzato o serializzato nello stesso processo, senza passaggi di conversione e senza una seconda libreria nella catena.</p>
 
-<p>Pagine correlate: <a href="/medical/net/dicomweb-server/">server DICOMweb</a> per l'altro lato del protocollo nel tuo servizio ASP.NET Core, <a href="/medical/net/dicom-networking/">networking DICOM</a> per archivi che usano DIMSE invece di HTTP, <a href="/medical/net/anonymization/">anonimizzazione</a> prima che uno studio lasci l'ospedale, <a href="/medical/net/dicom-transfer-syntax-conversion/">conversione della transfer syntax</a> per ciò che il server memorizza, e <a href="/medical/net/dicom-to-json/">DICOM a JSON</a> per il formato usato nei risultati di ricerca QIDO-RS.</p>
+<p>Pagine correlate: <a href="/medical/net/dicomweb-server/">server DICOMweb</a> per l’altro lato del protocollo nel tuo servizio ASP.NET Core, <a href="/medical/net/dicom-networking/">rete DICOM</a> per archivi che utilizzano DIMSE anziché HTTP, <a href="/medical/net/anonymization/">anonimizzazione</a> prima che uno studio lasci l’ospedale, <a href="/medical/net/dicom-transfer-syntax-conversion/">conversione della sintassi di trasferimento</a> per ciò che il server memorizza, e <a href="/medical/net/dicom-to-json/">DICOM to JSON</a> per il formato usato dai risultati di ricerca QIDO-RS.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

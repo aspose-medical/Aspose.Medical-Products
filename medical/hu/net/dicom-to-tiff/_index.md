@@ -1,29 +1,29 @@
 ---
-title: DICOM konvertálása TIFF formátumba C# .NET-ben | Aspose.Medical
+title: DICOM konvertálása TIFF-be C# .NET-ben | Aspose.Medical
 weight: 12000
-description: DICOM képek renderelése pixel adatokra C# .NET-ben, és mentés TIFF-be többoldalas támogatással a többkeretes DICOM fájlokhoz. Használja a teljes DICOM LUT csővezetéket az Aspose.Medical API-val, és mentse TIFF-be bármely .NET képkönyvtárral.
+description: DICOM képek renderelése pixeladatokká C# .NET-ben, és mentés TIFF-be többoldalas támogatással többkeretes DICOM fájlok esetén. Használja a teljes DICOM LUT csővezetéket az Aspose.Medical API-val, és mentse TIFF-be bármely .NET képkönyvtár segítségével.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM konvertálása TIFF formátumba .NET C#-ban" h2="DICOM képek renderelése nyers pixel adatokra a teljes szürkeskála csővezeték támogatásával. A képi minőség megőrzése ablak/szint vezérléssel, overlay rendereléssel és többkeretes feldolgozással. Mentés TIFF-be &mdash; beleértve a többoldalas TIFF-et &mdash; bármely .NET képkönyvtár segítségével." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM konvertálása TIFF-be .NET C#-ban" h2="DICOM képek renderelése nyers pixeladatokká a teljes szürkeárnyalatos csővezeték támogatásával. A képek minőségének megőrzése ablak/szint (window/level) vezérléssel, overlay rendereléssel és többkeretes feldolgozással. Mentés TIFF-be &mdash; beleértve a többoldalas TIFF-et &mdash; bármely .NET képkönyvtár használatával." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="DICOM → TIFF konverzió">}}
+{{< blocks/products/pf/feature-page-section h2="DICOM átalakítása TIFF-be">}}
 
-<p><strong>Aspose.Medical for .NET</strong> a szabványos DICOM szürkeárnyalati csővezetéken (Modality LUT, VOI LUT, Presentation LUT, Output LUT) keresztül rendereli a DICOM képeket, hogy helyesen ablakolt BGRA32 pixel adatot állítson elő. A TIFF egy sokoldalú formátum, amelyet széles körben használnak az orvosi képalkotásban, a tudományos kutatásban és a kiadvántatásban, mivel támogatja a veszteségmentes tömörítést, a nagy bitmélységet, és &mdash; ami a legfontosabb &mdash; <strong>többoldalas dokumentumokat</strong>. Ez teszi a TIFF-et az természetes választássá a többkeretes DICOM fájlok (CT, MRI, ultrahang) egyetlen kimeneti fájlba történő konvertálásához, amely megőrzi az összes szeletet.</p>
+<p><strong>Aspose.Medical for .NET</strong> rendereli a DICOM képeket a szabványos DICOM szürkeárnyalatos csővezetéken (Modality LUT, VOI LUT, Presentation LUT, Output LUT) keresztül, hogy helyesen ablakolt BGRA32 pixeladatokat állítson elő. A TIFF egy sokoldalú formátum, amely széles körben használt az orvosi képalkotásban, a tudományos kutatásban és a kiadványszerkesztésben, mivel támogatja a veszteségmentes tömörítést, a nagy bitmélységet, és &mdash; legfőképp &mdash; <strong>többoldalas dokumentumokat</strong>. Ez teszi a TIFF-et a természetes választássá a többkeretes DICOM fájlok (CT, MRI, ultrahang) egyetlen kimeneti fájlba való konvertálásához, amely megőrzi az összes szeletet.</p>
 
-<p>A renderelt kimenet egy <code>IRawImage</code> &mdash; egy BGRA32 pixel puffer <code>Width</code>, <code>Height</code> mezőkkel és egy <code>Pixels</code> tömbbel. Ezt a pixel adatot mentheti TIFF-be bármely .NET képkönyvtárral, például <code>System.Drawing</code>, <code>SkiaSharp</code> vagy <code>ImageSharp</code> használatával.</p>
+<p>A renderelt kimenet egy <code>IRawImage</code> &mdash; egy BGRA32 pixel puffer <code>Width</code>, <code>Height</code> és egy <code>Pixels</code> tömbbel. Ezt a pixeladatot menthet TIFF-be bármely .NET képkönyvtár használatával, például <code>System.Drawing</code>, <code>SkiaSharp</code> vagy <code>ImageSharp</code>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="DICOM renderelése pixel adatokra C#-ban">}}
+{{< blocks/products/pf/feature-page-section h2="DICOM renderelése pixeladatokba C#-ban">}}
 
-<p>Töltsön be egy DICOM fájlt, renderelje a kívánt képkockát, és érje el a pixel adatokat:</p>
+<p>Töltsön be egy DICOM fájlt, renderelje a kívánt keretet, és érje el a pixeladatokat:</p>
 
 <div class="codeblock" id="code">
- <h3>DICOM kép renderelése – C#</h3>
+ <h3>DICOM kép renderelése - C#</h3>
  <pre><code class="cs">using Aspose.Medical.Dicom;
 using Aspose.Medical.Imaging;
 
@@ -39,16 +39,16 @@ int height = image.Height;
 Bgra32[] pixels = image.Pixels; // BGRA32 pixel buffer</code></pre>
 </div>
 
-<p>A <code>RenderImage</code> metódus automatikusan alkalmazza az ablak/szint értékeket és a DICOM adathalmazban tárolt LUT paramétereket.</p>
+<p>A <code>RenderImage</code> metódus automatikusan alkalmazza a DICOM adathalmazban tárolt ablak/szint értékeket és LUT paramétereket.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Renderelt kép mentése TIFF-be">}}
 
-<p>A <code>IRawImage</code> nyers BGRA32 pixel adatot biztosít, amely bármely .NET képkönyvtár segítségével menthető TIFF-be. Íme egy példa a <code>System.Drawing</code> használatával:</p>
+<p>A <code>IRawImage</code> nyers BGRA32 pixel adatokat biztosít, amelyeket bármely .NET képkönyvtárral menthet TIFF-be. Íme egy példa a <code>System.Drawing</code> használatával:</p>
 
 <div class="codeblock" id="code">
- <h3>Renderelt DICOM képkocka mentése TIFF-be – C#</h3>
+ <h3>Renderelt DICOM keret mentése TIFF-be - C#</h3>
  <pre><code class="cs">using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
@@ -82,10 +82,10 @@ bitmap.Save("xray.tiff", ImageFormat.Tiff);</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="Többoldalas TIFF többkeretes DICOM-ból">}}
 
-<p>A többkeretes DICOM fájlok (pl. CT vagy MRI sorozatok) egyetlen fájlban több képszeletet tartalmaznak. A TIFF többoldalas képessége lehetővé teszi, hogy az összes képkockát egy kimeneti fájlba tárolja, megőrizve a teljes vizsgálatot egy általánosan olvasható formátumban. Használja a <code>System.Drawing</code> TIFF kódolót többkeretes paraméterekkel:</p>
+<p>A többkeretes DICOM fájlok (pl. CT vagy MRI sorozatok) egyetlen fájlban több képszeletet tartalmaznak. A TIFF többoldalas képessége lehetővé teszi, hogy az összes keretet egy kimeneti fájlba tárolja, megőrizve a teljes vizsgálatot egy mindenki által olvasható formátumban. Használja a <code>System.Drawing</code> TIFF enkódert többkeretes paraméterekkel:</p>
 
 <div class="codeblock" id="code">
- <h3>Többkeretes DICOM konvertálása többoldalas TIFF-be – C#</h3>
+ <h3>Többkeretes DICOM átalakítása többoldalas TIFF-be - C#</h3>
  <pre><code class="cs">using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
@@ -155,10 +155,10 @@ tiffBitmap?.SaveAdd(flushParams);
 tiffBitmap?.Dispose();</code></pre>
 </div>
 
-<p>Ha egyedi szeletekre van szükség, akkor minden képkockát külön TIFF fájlként is menthet:</p>
+<p>Emellett minden keretet külön TIFF fájlként is menthet, ha egyedi szeletekre van szükség:</p>
 
 <div class="codeblock" id="code">
- <h3>Minden képkocka konvertálása külön TIFF-be – C#</h3>
+ <h3>Minden keret átalakítása külön TIFF-be - C#</h3>
  <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("ct_series.dcm");
 
 for (int i = 0; i &lt; dicomFile.NumberOfFrames; i++)
@@ -186,10 +186,10 @@ for (int i = 0; i &lt; dicomFile.NumberOfFrames; i++)
 
 {{< blocks/products/pf/feature-page-section h2="Egyedi ablak/szint">}}
 
-<p>Állítsa be a Window Center és Window Width értékeket a renderelendő pixelértékek tartományának szabályozásához. A különböző ablakbeállítások különböző anatómiai struktúrákat tárnak fel ugyanabból a DICOM adatból:</p>
+<p>Állítsa be, hogy a pixelértékek mely tartománya legyen renderelve az Ablak Közép (Window Center) és Ablak Szélesség (Window Width) megadásával. Különböző ablakbeállítások különböző anatómiai struktúrákat tárnak fel ugyanabból a DICOM adathalmazból:</p>
 
 <div class="codeblock" id="code">
- <h3>Renderelés egyedi ablak/szint beállítással – C#</h3>
+ <h3>Renderelés egyedi ablak/szint - C#</h3>
  <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("ct_scan.dcm");
 
 // Soft tissue window
@@ -211,16 +211,16 @@ IRawImage boneImage = dicomFile.RenderImage(bone, 0);
 // Save each rendered image to TIFF using your preferred imaging library</code></pre>
 </div>
 
-<p>A <code>GrayscaleRenderOptions</code> osztály további <code>RescaleSlope</code>, <code>RescaleIntercept</code>, <code>Invert</code> és <code>BitDepth</code> tulajdonságokat is biztosít a renderelési csővezeték teljes körű szabályozásához.</p>
+<p>A <code>GrayscaleRenderOptions</code> osztály szintén elérhetővé teszi a <code>RescaleSlope</code>, <code>RescaleIntercept</code>, <code>Invert</code> és <code>BitDepth</code> tulajdonságokat a renderelési csővezeték teljes irányítása érdekében.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Többkeretes DICOM renderelés">}}
 
-<p>A CT, MRI és ultrahang DICOM fájlok gyakran több keretet (szeletet) tartalmaznak. Renderelje az összes keretet pixel adatokra:</p>
+<p>A CT, MRI és ultrahang DICOM fájlok gyakran több keretet (szeletet) tartalmaznak. Renderelje az összes keretet pixeladatokká:</p>
 
 <div class="codeblock" id="code">
- <h3>Az összes keret renderelése többkeretes DICOM-ból – C#</h3>
+ <h3>Az összes keret renderelése többkeretes DICOM-ból - C#</h3>
  <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("ct_series.dcm");
 
 int totalFrames = dicomFile.NumberOfFrames;
@@ -239,10 +239,10 @@ for (int i = 0; i &lt; totalFrames; i++)
 
 {{< blocks/products/pf/feature-page-section h2="Overlay vezérlés">}}
 
-<p>A DICOM képek overlay síkokat tartalmazhatnak feljegyzésekkel, mérésekkel vagy érdeklődési területekkel. Szabályozza az overlay láthatóságát és színét a renderelés során:</p>
+<p>A DICOM képek tartalmazhatnak overlay síkokat megjegyzésekkel, mérésekkel vagy érdeklődési területekkel. Vezérelje az overlay láthatóságát és színét a renderelés során:</p>
 
 <div class="codeblock" id="code">
- <h3>Renderelés overlay-vel és overlay nélkül – C#</h3>
+ <h3>Renderelés overlay-vel és overlay nélkül - C#</h3>
  <pre><code class="cs">DicomFile dicomFile = DicomFile.Open("xray_with_overlays.dcm");
 
 // Render with overlays visible (default)
@@ -264,49 +264,49 @@ IRawImage cleanImage = dicomFile.RenderImage(noOverlays, 0);
 
 {{< blocks/products/pf/feature-page-section h2="TIFF vs PNG vs JPG orvosi képekhez">}}
 
-<th>Jellemző</th>
+<p>Minden kimeneti formátum különböző felhasználási esetekhez szolgál:</p>
 
 <table class="table table-bordered">
 <thead>
 <tr>
+<th>Jellemző</th>
 <th>TIFF</th>
 <th>PNG</th>
 <th>JPG</th>
-<tr><td><strong>Tömörítés</strong></td><td>Veszteségmentes (LZW, ZIP) vagy tömörítetlen</td><td>Veszteségmentes</td><td>Veszteséges</td></tr>
 </tr>
 </thead>
 <tbody>
+<tr><td><strong>Tömörítés</strong></td><td>Veszteségmentes (LZW, ZIP) vagy tömörítetlen</td><td>Veszteségmentes</td><td>Veszteséges</td></tr>
 <tr><td><strong>Többoldalas</strong></td><td>Támogatott &mdash; minden keret egy fájlban</td><td>Nem támogatott</td><td>Nem támogatott</td></tr>
-<tr><td><strong>Képi minőség</strong></td><td>Pixel-perfect</td><td>Pixel-perfect</td><td>Tömörítési hibák előfordulhatnak</td></tr>
+<tr><td><strong>Képminőség</strong></td><td>Pixel-pontos</td><td>Pixel-pontos</td><td>Tömörítési hibák lehetségesek</td></tr>
 <tr><td><strong>Fájlméret</strong></td><td>Legnagyobb</td><td>Közepes</td><td>Legkisebb</td></tr>
 <tr><td><strong>Átlátszóság</strong></td><td>Támogatott</td><td>Támogatott</td><td>Nem támogatott</td></tr>
-<tr><td><strong>Legalkalmasabb</strong></td><td>Archiválás, többkeretes sorozatok, nyomtatás, kutatás</td><td>Diagnosztikai ellenőrzés, web minőséggel</td><td>Webes megosztás, miniatűrök</td></tr>
-<p>Az Aspose.Medical for .NET minden kimeneti célhoz ugyanazt a renderelési csővezetéket használja. A <code>IRawImage</code> pixel adatok azonosak a célformátumtól függetlenül &mdash; a formátum választása csak a képkönyvtár által végrehajtott végső mentési lépést befolyásolja. A TIFF a preferált formátum, ha egy teljes többkeretes DICOM vizsgálatot kell egyetlen fájlban megőrizni, vagy ha a kimenet archiválásra, nyomtatásra vagy további képfeldolgozásra szánt.</p>
+<tr><td><strong>Leginkább alkalmas</strong></td><td>Archiválás, többkeretes sorozatok, nyomtatás, kutatás</td><td>Diagnosztikai áttekintés, minőségi web</td><td>Webes megosztás, bélyegképek</td></tr>
 </tbody>
 </table>
 
-Tanulási források
+<p>Az Aspose.Medical for .NET minden kimeneti célhoz ugyanazt a renderelési csővezetéket használja. A <code>IRawImage</code> pixel adatok azonosak a célformátumtól függetlenül &mdash; a formátum választása csak a végső mentési lépést befolyásolja, amelyet az Ön képkönyvtára hajt végre. A TIFF a preferált formátum, ha egy teljes többkeretes DICOM vizsgálatot kell egyetlen fájlban megőrizni, vagy ha a kimenetet archiválásra, nyomtatásra vagy további képfeldolgozásra szánják.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="Dokumentáció" tabId="resources" >}}
-{{< blocks/products/pf/slr-element name="Forráskód" href="https://docs.aspose.com/medical/net/" >}}
-{{< blocks/products/pf/slr-element name="API hivatkozások" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
-{{< blocks/products/pf/slr-element name="Terméktámogatás" href="https://reference.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Tanulási források" tabId="resources" >}}
+{{< blocks/products/pf/slr-element name="Dokumentáció" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="Forráskód" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="API hivatkozások" href="https://reference.aspose.com/medical/net/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Ingyenes támogatás" tabId="support" >}}
-{{< blocks/products/pf/slr-element name="Fizetett támogatás" href="https://forum.aspose.com/c/medical" >}}
-{{< blocks/products/pf/slr-element name="Blog" href="https://helpdesk.aspose.com/" >}}
-{{< blocks/products/pf/slr-element name="Miért az Aspose.Medical for .NET?" href="https://blog.aspose.com/category/medical/" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Terméktámogatás" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="Ingyenes támogatás" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="Fizetős támogatás" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Ügyféllista" tabId="success-stories" >}}
-{{< blocks/products/pf/slr-element name="Sikertörténetek" href="https://company.aspose.com/customers" >}}
-{{< blocks/products/pf/slr-element name="Success Stories" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Miért az Aspose.Medical for .NET?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-element name="Ügyfelek listája" href="https://company.aspose.com/customers" >}}
+{{< blocks/products/pf/slr-element name="Sikertörténetek" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< /blocks/products/pf/support-learning-resources >}}

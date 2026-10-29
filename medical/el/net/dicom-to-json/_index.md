@@ -14,7 +14,7 @@ description: Σειριοποίηση αρχείων DICOM σε τυπική μ�
 
 <p><strong>Aspose.Medical for .NET</strong> σειριοποιεί δεδομένα DICOM σε JSON ακολουθώντας το <a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part18/chapter_F.html">DICOM PS3.18 JSON Model</a>. Αυτό είναι το επίσημο πρότυπο για την αναπαράσταση συνόλων δεδομένων DICOM σε JSON, που χρησιμοποιείται από τις υπηρεσίες DICOMweb, τους πόρους FHIR ImagingStudy και τα σύγχρονα APIs υγειονομικής περίθαλψης.</p>
 
-<p>Στο DICOM JSON Model, κάθε χαρακτηριστικό αντιπροσωπεύεται από την ετικέτα του ως κλειδί JSON (π.χ., <code>\"00100010\"</code> για το Patient Name), με την Value Representation και τον πίνακα τιμών ως ένθετες ιδιότητες:</p>
+<p>Στο DICOM JSON Model, κάθε χαρακτηριστικό αντιπροσωπεύεται από την ετικέτα του ως κλειδί JSON (π.χ., <code>"00100010"</code> για το Patient Name), με την Value Representation και τον πίνακα τιμών ως ένθετες ιδιότητες:</p>
 
 <div class="codeblock" id="code">
  <h3>Μορφή DICOM JSON Model</h3>
@@ -107,7 +107,7 @@ using (var stream = new FileStream("output.json", FileMode.Create))
 </thead>
 <tbody>
 <tr><td><code>NumberHandling</code></td><td><code>DicomJsonNumberHandling</code></td><td>Ελέγχει αν οι αριθμητικές VR (IS, DS, SV, UV) γράφονται ως αριθμοί JSON ή ως συμβολοσειρές</td></tr>
-<tr><td><code>UseKeywordsAsJsonKeys</code></td><td><code>bool</code></td><td>Χρησιμοποιεί τις λέξεις-κλειδιά DICOM (π.χ., <code>\"PatientName\"</code>) αντί για ετικέτες (<code>\"00100010\"</code>) ως κλειδιά JSON. Σημείωση: μη‑τυπικό</td></tr>
+<tr><td><code>UseKeywordsAsJsonKeys</code></td><td><code>bool</code></td><td>Χρησιμοποιεί τις λέξεις-κλειδιά DICOM (π.χ., <code>"PatientName"</code>) αντί για ετικέτες (<code>"00100010"</code>) ως κλειδιά JSON. Σημείωση: μη‑τυπικό</td></tr>
 <tr><td><code>WriteKeyword</code></td><td><code>bool</code></td><td>Συμπεριλαμβάνει τη λέξη‑κλειδί DICOM ως επιπλέον ιδιότητα JSON</td></tr>
 <tr><td><code>WriteName</code></td><td><code>bool</code></td><td>Συμπεριλαμβάνει το όνομα ετικέτας DICOM ως επιπλέον ιδιότητα JSON</td></tr>
 <tr><td><code>BulkDataConverter</code></td><td><code>IBulkDataConverter</code></td><td>Προσαρμοσμένος μετατροπέας για τη γραφή μεγάλων δεδομένων (π.χ., pixel data) ως παραπομπές URI</td></tr>
@@ -145,8 +145,8 @@ string json = DicomJsonSerializer.Serialize(dicomFile.Dataset, options);</code><
 </tr>
 </thead>
 <tbody>
-<tr><td><code>AsNumber</code></td><td><code>\"00180086\":{\"vr\":\"IS\",\"Value\":[42]}</code></td><td>Συμμορφώνεται με το πρότυπο, ιδανικό για υπολογισμούς. Παράγει εξαίρεση εάν η τιμή δεν μπορεί να αναλυθεί.</td></tr>
-<tr><td><code>AsString</code></td><td><code>\"00180086\":{\"vr\":\"IS\",\"Value\":[\"42\"]}</code></td><td>Διατηρεί την αρχική αναπαράσταση συμβολοσειράς. Πιο ασφαλές για αναστρέψιμη μεταφορά μη‑τυπικών δεδομένων.</td></tr>
+<tr><td><code>AsNumber</code></td><td><code>"00180086":{"vr":"IS","Value":[42]}</code></td><td>Συμμορφώνεται με το πρότυπο, ιδανικό για υπολογισμούς. Παράγει εξαίρεση εάν η τιμή δεν μπορεί να αναλυθεί.</td></tr>
+<tr><td><code>AsString</code></td><td><code>"00180086":{"vr":"IS","Value":["42"]}</code></td><td>Διατηρεί την αρχική αναπαράσταση συμβολοσειράς. Πιο ασφαλές για αναστρέψιμη μεταφορά μη‑τυπικών δεδομένων.</td></tr>
 </tbody>
 </table>
 

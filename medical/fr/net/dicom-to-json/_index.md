@@ -14,7 +14,7 @@ description: Sérialisez des fichiers DICOM au format DICOM JSON standard en C# 
 
 <p><strong>Aspose.Medical for .NET</strong> sérialise les données DICOM en JSON conformément au <a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part18/chapter_F.html">Modèle DICOM PS3.18 JSON</a>. Il s'agit de la norme officielle pour représenter les ensembles de données DICOM en JSON, utilisée par les services DICOMweb, les ressources FHIR ImagingStudy et les API de santé modernes.</p>
 
-<p>Dans le Modèle DICOM JSON, chaque attribut est représenté par son tag comme clé JSON (par ex., <code>\"00100010\"</code> pour Patient Name), avec la Value Representation et le tableau de valeurs comme propriétés imbriquées :</p>
+<p>Dans le Modèle DICOM JSON, chaque attribut est représenté par son tag comme clé JSON (par ex., <code>"00100010"</code> pour Patient Name), avec la Value Representation et le tableau de valeurs comme propriétés imbriquées :</p>
 
 <div class="codeblock" id="code">
  <h3>Format du modèle DICOM JSON</h3>
@@ -107,7 +107,7 @@ using (var stream = new FileStream("output.json", FileMode.Create))
 </thead>
 <tbody>
 <tr><td><code>NumberHandling</code></td><td><code>DicomJsonNumberHandling</code></td><td>Contrôle si les VR numériques (IS, DS, SV, UV) sont écrits comme nombres JSON ou chaînes</td></tr>
-<tr><td><code>UseKeywordsAsJsonKeys</code></td><td><code>bool</code></td><td>Utilise les mots‑clés DICOM (par ex., <code>\"PatientName\"</code>) au lieu des tags (<code>\"00100010\"</code>) comme clés JSON. Remarque : non standard</td></tr>
+<tr><td><code>UseKeywordsAsJsonKeys</code></td><td><code>bool</code></td><td>Utilise les mots‑clés DICOM (par ex., <code>"PatientName"</code>) au lieu des tags (<code>"00100010"</code>) comme clés JSON. Remarque : non standard</td></tr>
 <tr><td><code>WriteKeyword</code></td><td><code>bool</code></td><td>Inclut le mot‑clé DICOM comme attribut JSON supplémentaire</td></tr>
 <tr><td><code>WriteName</code></td><td><code>bool</code></td><td>Inclut le nom du tag DICOM comme attribut JSON supplémentaire</td></tr>
 <tr><td><code>BulkDataConverter</code></td><td><code>IBulkDataConverter</code></td><td>Convertisseur personnalisé pour écrire de grandes données (par ex., données d'image) sous forme de références URI</td></tr>
@@ -145,8 +145,8 @@ string json = DicomJsonSerializer.Serialize(dicomFile.Dataset, options);</code><
 </tr>
 </thead>
 <tbody>
-<tr><td><code>AsNumber</code></td><td><code>\"00180086\":{\"vr\":\"IS\",\"Value\":[42]}</code></td><td>Conforme à la norme, idéal pour le calcul. Lève une exception si la valeur ne peut pas être analysée.</td></tr>
-<tr><td><code>AsString</code></td><td><code>\"00180086\":{\"vr\":\"IS\",\"Value\":[\"42\"]}</code></td><td>Conserve la représentation chaîne d'origine. Plus sûr pour le round‑trip de données non standard.</td></tr>
+<tr><td><code>AsNumber</code></td><td><code>"00180086":{"vr":"IS","Value":[42]}</code></td><td>Conforme à la norme, idéal pour le calcul. Lève une exception si la valeur ne peut pas être analysée.</td></tr>
+<tr><td><code>AsString</code></td><td><code>"00180086":{"vr":"IS","Value":["42"]}</code></td><td>Conserve la représentation chaîne d'origine. Plus sûr pour le round‑trip de données non standard.</td></tr>
 </tbody>
 </table>
 

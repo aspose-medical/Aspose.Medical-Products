@@ -14,7 +14,7 @@ description: تسلسل ملفات DICOM إلى تنسيق DICOM JSON القيا
 
 <p><strong>Aspose.Medical for .NET</strong> يسلسل بيانات DICOM إلى JSON وفقًا لـ <a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part18/chapter_F.html">نموذج DICOM PS3.18 JSON</a>. هذا هو المعيار الرسمي لتمثيل مجموعات بيانات DICOM في JSON، ويُستخدم من قبل خدمات DICOMweb، موارد FHIR ImagingStudy، وواجهات برمجة التطبيقات الحديثة في الرعاية الصحية.</p>
 
-<p>في نموذج DICOM JSON، يتم تمثيل كل خاصية بواسطة العلامة الخاصة بها كمفتاح JSON (مثال: <code>\"00100010\"</code> للاسم المريض)، مع تمثيل القيمة (Value Representation) ومصفوفة القيم كخصائص متداخلة:</p>
+<p>في نموذج DICOM JSON، يتم تمثيل كل خاصية بواسطة العلامة الخاصة بها كمفتاح JSON (مثال: <code>"00100010"</code> للاسم المريض)، مع تمثيل القيمة (Value Representation) ومصفوفة القيم كخصائص متداخلة:</p>
 
 <div class="codeblock" id="code">
  <h3>تنسيق نموذج DICOM JSON</h3>
@@ -107,7 +107,7 @@ using (var stream = new FileStream("output.json", FileMode.Create))
 </thead>
 <tbody>
 <tr><td><code>NumberHandling</code></td><td><code>DicomJsonNumberHandling</code></td><td>يتحكم في ما إذا كانت تمثيلات القيمة الرقمية (VR) (IS, DS, SV, UV) تُكتب كأعداد JSON أو كسلاسل نصية</td></tr>
-<tr><td><code>UseKeywordsAsJsonKeys</code></td><td><code>bool</code></td><td>استخدام كلمات DICOM المفتاحية (مثال: <code>\"PatientName\"</code>) بدلاً من العلامات (<code>\"00100010\"</code>) كمفاتيح JSON. ملاحظة: غير معيارية</td></tr>
+<tr><td><code>UseKeywordsAsJsonKeys</code></td><td><code>bool</code></td><td>استخدام كلمات DICOM المفتاحية (مثال: <code>"PatientName"</code>) بدلاً من العلامات (<code>"00100010"</code>) كمفاتيح JSON. ملاحظة: غير معيارية</td></tr>
 <tr><td><code>WriteKeyword</code></td><td><code>bool</code></td><td>تضمين كلمة DICOM المفتاحية كخاصية JSON إضافية</td></tr>
 <tr><td><code>WriteName</code></td><td><code>bool</code></td><td>تضمين اسم علامة DICOM كخاصية JSON إضافية</td></tr>
 <tr><td><code>BulkDataConverter</code></td><td><code>IBulkDataConverter</code></td><td>محول مخصص لكتابة البيانات الكبيرة (مثل بيانات البكسل) كمرجع URI</td></tr>
@@ -145,8 +145,8 @@ string json = DicomJsonSerializer.Serialize(dicomFile.Dataset, options);</code><
 </tr>
 </thead>
 <tbody>
-<tr><td><code>AsNumber</code></td><td><code>\"00180086\":{\"vr\":\"IS\",\"Value\":[42]}</code></td><td>متوافق مع المعيار، مثالي للعمليات الحسابية. يرمي استثناءً إذا تعذر تحليل القيمة.</td></tr>
-<tr><td><code>AsString</code></td><td><code>\"00180086\":{\"vr\":\"IS\",\"Value\":[\"42\"]}</code></td><td>يحافظ على تمثيل السلسلة الأصلي. أكثر أمانًا لإعادة التحويل للبيانات غير القياسية.</td></tr>
+<tr><td><code>AsNumber</code></td><td><code>"00180086":{"vr":"IS","Value":[42]}</code></td><td>متوافق مع المعيار، مثالي للعمليات الحسابية. يرمي استثناءً إذا تعذر تحليل القيمة.</td></tr>
+<tr><td><code>AsString</code></td><td><code>"00180086":{"vr":"IS","Value":["42"]}</code></td><td>يحافظ على تمثيل السلسلة الأصلي. أكثر أمانًا لإعادة التحويل للبيانات غير القياسية.</td></tr>
 </tbody>
 </table>
 

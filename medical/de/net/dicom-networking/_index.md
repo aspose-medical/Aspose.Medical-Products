@@ -76,13 +76,13 @@ client.QueueRequest(new CStoreRequest(dicomFile.Dataset, TransferSyntax.Explicit
 await client.SendAsync(CancellationToken.None);</code></pre>
 </div>
 
-<p>Die von Ihnen vorgeschlagenen Presentation Contexts bestimmen, was das Archiv akzeptiert. Wenn es eine komprimierte Syntax verlangt, transkodieren Sie vor dem Senden, wie die Seite <a href=\"/medical/net/dicom-transfer-syntax-conversion/\">transfer syntax conversion</a> zeigt, oder listen Sie die Alternativen in <code>AdditionalTransferSyntaxes</code> auf und lassen die Verhandlung eine auswählen.</p>
+<p>Die von Ihnen vorgeschlagenen Presentation Contexts bestimmen, was das Archiv akzeptiert. Wenn es eine komprimierte Syntax verlangt, transkodieren Sie vor dem Senden, wie die Seite <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer syntax conversion</a> zeigt, oder listen Sie die Alternativen in <code>AdditionalTransferSyntaxes</code> auf und lassen die Verhandlung eine auswählen.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Studien mit C-FIND finden">}}
 
-<p>C-FIND beantwortet die Frage \"was hat das Archiv\". Treffer kommen einzeln an, jeweils mit einem eigenen Identifier‑Datensatz, und eine Abschlussantwort beendet die Abfrage.</p>
+<p>C-FIND beantwortet die Frage "was hat das Archiv". Treffer kommen einzeln an, jeweils mit einem eigenen Identifier‑Datensatz, und eine Abschlussantwort beendet die Abfrage.</p>
 
 <div class="codeblock" id="code">
  <h3>Studien nach Patient abfragen - C#</h3>
@@ -174,7 +174,7 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 }</code></pre>
 </div>
 
-<p>Was der Handler mit dem Datensatz macht, liegt in Ihrer Entscheidung: auf die Festplatte schreiben, in eine Warteschlange einreihen, zuerst mit der <a href=\"/medical/net/anonymization/\">anonymization API</a> anonymisieren oder in die Syntax des Archivs transkodieren.</p>
+<p>Was der Handler mit dem Datensatz macht, liegt in Ihrer Entscheidung: auf die Festplatte schreiben, in eine Warteschlange einreihen, zuerst mit der <a href="/medical/net/anonymization/">anonymization API</a> anonymisieren oder in die Syntax des Archivs transkodieren.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -190,7 +190,7 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 <li>Timeouts für jede Phase, vom TCP‑Connect bis zum Release, sowie Benachrichtigungen zum Lifecycle der Association, sodass ein langfristig laufender Knoten protokollieren kann, was passiert ist.</li>
 </ul>
 
-<p>Der <a href=\"https://docs.aspose.com/medical/net/developer-guide/dicom-networking/\">DICOM‑Networking‑Leitfaden</a> dokumentiert jede Option und jeden Handler.</p>
+<p>Der <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM‑Networking‑Leitfaden</a> dokumentiert jede Option und jeden Handler.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -198,7 +198,7 @@ await server.StartAsync(CancellationToken.None);</code></pre>
 
 <p>Alles auf dieser Seite ist verwalteter Code aus demselben Paket, das die Dateien liest und schreibt. Association, Codecs und Parser stammen aus einer Bibliothek, sodass eine über das Netzwerk empfangene Studie anonymisiert, transkodiert oder serialisiert werden kann, ohne den Prozess zu verlassen und ohne native Abhängigkeiten irgendwo in der Kette.</p>
 
-<p>Verwandte Seiten: <a href=\"/medical/net/dicom-transfer-syntax-conversion/\">transfer syntax conversion</a> für das zu sendende, <a href=\"/medical/net/anonymization/\">anonymization</a> für das zuerst zu entfernende, und <a href=\"/medical/net/dicom-tags/\">DICOM tags</a> zum Lesen des Angekommenden.</p>
+<p>Verwandte Seiten: <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer syntax conversion</a> für das zu sendende, <a href="/medical/net/anonymization/">anonymization</a> für das zuerst zu entfernende, und <a href="/medical/net/dicom-tags/">DICOM tags</a> zum Lesen des Angekommenden.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

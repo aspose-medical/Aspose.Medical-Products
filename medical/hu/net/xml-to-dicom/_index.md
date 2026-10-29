@@ -13,7 +13,7 @@ description: DICOM fájlok létrehozása a PS3.19 Native DICOM Model XML-ből C#
 
 {{< blocks/products/pf/feature-page-section h2="Szabványos Native DICOM Model XML">}}
 
-<p><strong>Aspose.Medical for .NET</strong> beolvassa a DICOM PS3.19-ben definiált <a href=\"https://dicom.nema.org/medical/dicom/current/output/chtml/part19/chapter_A.html\">Native DICOM Model</a>-t. Ez a szabványba beépített XML ábrázolás, nem egy Aspose által kitalált formátum, ami az integrációban hasznossá teszi: egy már DICOM-ot XML-ként cserélő rendszer olyan dokumentumokat állít elő, amelyeket ez a könyvtár elfogad.</p>
+<p><strong>Aspose.Medical for .NET</strong> beolvassa a DICOM PS3.19-ben definiált <a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part19/chapter_A.html">Native DICOM Model</a>-t. Ez a szabványba beépített XML ábrázolás, nem egy Aspose által kitalált formátum, ami az integrációban hasznossá teszi: egy már DICOM-ot XML-ként cserélő rendszer olyan dokumentumokat állít elő, amelyeket ez a könyvtár elfogad.</p>
 
 <p>A dokumentum gyökere a <code>NativeDicomModel</code>, és minden attribútum egy <code>DicomAttribute</code> elem, amely a tagejét, értékábrázolását és kulcsszavát tartalmazza:</p>
 
@@ -34,7 +34,7 @@ description: DICOM fájlok létrehozása a PS3.19 Native DICOM Model XML-ből C#
 &lt;/NativeDicomModel&gt;</code></pre>
 </div>
 
-<p>Ez az oldal a <a href=\"/medical/net/dicom-to-xml/\">DICOM to XML</a> fordított irányát mutatja, és mindkettő ugyanazt a osztályt használja, a <code>DicomXmlSerializer</code>-t.</p>
+<p>Ez az oldal a <a href="/medical/net/dicom-to-xml/">DICOM to XML</a> fordított irányát mutatja, és mindkettő ugyanazt a osztályt használja, a <code>DicomXmlSerializer</code>-t.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -55,9 +55,9 @@ DicomFile dicomFile = new(dataset);
 dicomFile.Save("study.dcm");</code></pre>
 </div>
 
-<p>A Native DICOM Model nem tartalmaz File Meta Information csoportot, így az átvitel szintaxis nem része a dokumentumnak. Egy <code>DicomFile</code>-ba csomagolt adatkészlet az alapértelmezett átvitel szintaxissal, Implicit VR Little Endian-nel kerül írásra. A fájl más szintaxissal való tárolásához konvertálja át, ahogy a <a href=\"/medical/net/dicom-transfer-syntax-conversion/\">transfer syntax conversion</a> oldal mutatja.</p>
+<p>A Native DICOM Model nem tartalmaz File Meta Information csoportot, így az átvitel szintaxis nem része a dokumentumnak. Egy <code>DicomFile</code>-ba csomagolt adatkészlet az alapértelmezett átvitel szintaxissal, Implicit VR Little Endian-nel kerül írásra. A fájl más szintaxissal való tárolásához konvertálja át, ahogy a <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer syntax conversion</a> oldal mutatja.</p>
 
-<p>A DICOM XML olvasása licencelt funkció. Ha nincs alkalmazva helyi licenc, az olvasó <code>MedicalApiException</code>-t dob, ezért először alkalmazza a licencet, ahogy a <a href=\"https://docs.aspose.com/medical/net/getting-started/licensing/\">licencelési útmutató</a> leírja.</p>
+<p>A DICOM XML olvasása licencelt funkció. Ha nincs alkalmazva helyi licenc, az olvasó <code>MedicalApiException</code>-t dob, ezért először alkalmazza a licencet, ahogy a <a href="https://docs.aspose.com/medical/net/getting-started/licensing/">licencelési útmutató</a> leírja.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -125,7 +125,7 @@ Dataset restored = DicomXmlSerializer.Deserialize(xml);
 new DicomFile(restored).Save("output.dcm");</code></pre>
 </div>
 
-<p>Az XML kinézetét szabályozó opciókért tekintse meg a <a href=\"/medical/net/dicom-to-xml/\">DICOM to XML</a> oldalt. Ugyanez a páros létezik JSON-hez is: <a href=\"/medical/net/dicom-to-json/\">DICOM to JSON</a> és <a href=\"/medical/net/json-to-dicom/\">JSON to DICOM</a>. A <a href=\"https://docs.aspose.com/medical/net/developer-guide/90-dicom-serialization/\">sorozás útmutató</a> lefedi a teljes API-t.</p>
+<p>Az XML kinézetét szabályozó opciókért tekintse meg a <a href="/medical/net/dicom-to-xml/">DICOM to XML</a> oldalt. Ugyanez a páros létezik JSON-hez is: <a href="/medical/net/dicom-to-json/">DICOM to JSON</a> és <a href="/medical/net/json-to-dicom/">JSON to DICOM</a>. A <a href="https://docs.aspose.com/medical/net/developer-guide/90-dicom-serialization/">sorozás útmutató</a> lefedi a teljes API-t.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

@@ -107,7 +107,7 @@ using (var stream = new FileStream("output.json", FileMode.Create))
 </thead>
 <tbody>
 <tr><td><code>NumberHandling</code></td><td><code>DicomJsonNumberHandling</code></td><td>Mengontrol apakah VR numerik (IS, DS, SV, UV) ditulis sebagai angka JSON atau string</td></tr>
-<tr><td><code>UseKeywordsAsJsonKeys</code></td><td><code>bool</code></td><td>Gunakan kata kunci DICOM (mis., <code>\"PatientName\"</code>) alih-alih tag (<code>\"00100010\"</code>) sebagai kunci JSON. Catatan: non-standar</td></tr>
+<tr><td><code>UseKeywordsAsJsonKeys</code></td><td><code>bool</code></td><td>Gunakan kata kunci DICOM (mis., <code>"PatientName"</code>) alih-alih tag (<code>"00100010"</code>) sebagai kunci JSON. Catatan: non-standar</td></tr>
 <tr><td><code>WriteKeyword</code></td><td><code>bool</code></td><td>Sertakan kata kunci DICOM sebagai atribut JSON tambahan</td></tr>
 <tr><td><code>WriteName</code></td><td><code>bool</code></td><td>Sertakan nama tag DICOM sebagai atribut JSON tambahan</td></tr>
 <tr><td><code>BulkDataConverter</code></td><td><code>IBulkDataConverter</code></td><td>Konverter khusus untuk menulis data besar (mis., data piksel) sebagai referensi URI</td></tr>
@@ -145,8 +145,8 @@ string json = DicomJsonSerializer.Serialize(dicomFile.Dataset, options);</code><
 </tr>
 </thead>
 <tbody>
-<tr><td><code>AsNumber</code></td><td><code>\"00180086\":{\"vr\":\"IS\",\"Value\":[42]}</code></td><td>Kepatuhan standar, ideal untuk komputasi. Mengeluarkan pengecualian jika nilai tidak dapat diparsing.</td></tr>
-<tr><td><code>AsString</code></td><td><code>\"00180086\":{\"vr\":\"IS\",\"Value\":[\"42\"]}</code></td><td>Mempertahankan representasi string asli. Lebih aman untuk round‑tripping data non‑standar.</td></tr>
+<tr><td><code>AsNumber</code></td><td><code>"00180086":{"vr":"IS","Value":[42]}</code></td><td>Kepatuhan standar, ideal untuk komputasi. Mengeluarkan pengecualian jika nilai tidak dapat diparsing.</td></tr>
+<tr><td><code>AsString</code></td><td><code>"00180086":{"vr":"IS","Value":["42"]}</code></td><td>Mempertahankan representasi string asli. Lebih aman untuk round‑tripping data non‑standar.</td></tr>
 </tbody>
 </table>
 

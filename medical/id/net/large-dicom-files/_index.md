@@ -117,7 +117,7 @@ await using FileStream output = File.Create("copy.dcm");
 await dicomFile.SaveAsync(output);</code></pre>
 </div>
 
-<p>Ide yang sama mencakup representasi teks: sebuah dokumen dengan banyak dataset dibaca satu dataset pada satu waktu pada halaman <a href=\"/medical/net/json-to-dicom/\">JSON ke DICOM</a> dan <a href=\"/medical/net/xml-to-dicom/\">XML ke DICOM</a>.</p>
+<p>Ide yang sama mencakup representasi teks: sebuah dokumen dengan banyak dataset dibaca satu dataset pada satu waktu pada halaman <a href="/medical/net/json-to-dicom/">JSON ke DICOM</a> dan <a href="/medical/net/xml-to-dicom/">XML ke DICOM</a>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -153,7 +153,7 @@ for (int frame = 0; frame &lt; pixelData.NumberOfFrames; frame++)
 <li>Data whole slide dan OCT: file di mana membaca semuanya bukan pilihan sama sekali.</li>
 </ul>
 
-<p><a href=\"https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/\">Panduan manajemen memori</a> menjelaskan strategi secara detail, dan <a href=\"/medical/net/dicom-networking/\">Jaringan DICOM</a> menampilkan data yang sama datang melalui DIMSE.</p>
+<p><a href="https://docs.aspose.com/medical/net/developer-guide/open-dicom-file/memory-management/">Panduan manajemen memori</a> menjelaskan strategi secara detail, dan <a href="/medical/net/dicom-networking/">Jaringan DICOM</a> menampilkan data yang sama datang melalui DIMSE.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

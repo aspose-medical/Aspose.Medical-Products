@@ -13,9 +13,9 @@ description: สร้างไฟล์ DICOM จากโมเดล DICOM JS
 
 {{< blocks/products/pf/feature-page-section h2="จาก DICOM JSON ไปยังไฟล์ DICOM">}}
 
-<p><strong>Aspose.Medical for .NET</strong> อ่าน <a href=\"https://dicom.nema.org/medical/dicom/current/output/chtml/part18/chapter_F.html\">DICOM PS3.18 JSON Model</a>, ซึ่งเป็นรูปแบบที่ใช้โดยบริการ DICOMweb และระบบที่แลกเปลี่ยน study ผ่าน HTTP. สิ่งที่มาถึงเป็น JSON จะกลายเป็น <code>Dataset</code> และ <code>Dataset</code> จะถูกเขียนลงดิสก์เป็นไฟล์ DICOM.</p>
+<p><strong>Aspose.Medical for .NET</strong> อ่าน <a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part18/chapter_F.html">DICOM PS3.18 JSON Model</a>, ซึ่งเป็นรูปแบบที่ใช้โดยบริการ DICOMweb และระบบที่แลกเปลี่ยน study ผ่าน HTTP. สิ่งที่มาถึงเป็น JSON จะกลายเป็น <code>Dataset</code> และ <code>Dataset</code> จะถูกเขียนลงดิสก์เป็นไฟล์ DICOM.</p>
 
-<p>นี่คือทิศทางตรงข้ามของหน้าที่ <a href=\"/medical/net/dicom-to-json/\">DICOM to JSON</a>, และทั้งสองใช้คลาสเดียวกันคือ <code>DicomJsonSerializer</code>.</p>
+<p>นี่คือทิศทางตรงข้ามของหน้าที่ <a href="/medical/net/dicom-to-json/">DICOM to JSON</a>, และทั้งสองใช้คลาสเดียวกันคือ <code>DicomJsonSerializer</code>.</p>
 
 <div class="codeblock" id="code">
  <h3>สร้างไฟล์ DICOM จาก JSON - C#</h3>
@@ -34,7 +34,7 @@ dicomFile.Save("study.dcm");</code></pre>
 
 <p>ชุดข้อมูลที่ไม่มี File Meta Information จะถูกเขียนด้วย transfer syntax เริ่มต้น Implicit VR Little Endian เมื่อมันถูกหุ้มไว้ใน <code>DicomFile</code>.</p>
 
-<p>การอ่าน DICOM JSON เป็นฟีเจอร์ที่ต้องมีใบอนุญาต. หากไม่ได้ทำการใช้ใบอนุญาต on-premise ตัวอ่านจะโยน <code>MedicalApiException</code>, ดังนั้นให้ใช้ใบอนุญาตก่อน, ตามที่ <a href=\"https://docs.aspose.com/medical/net/getting-started/licensing/\">คู่มือการให้ใบอนุญาต</a> อธิบาย.</p>
+<p>การอ่าน DICOM JSON เป็นฟีเจอร์ที่ต้องมีใบอนุญาต. หากไม่ได้ทำการใช้ใบอนุญาต on-premise ตัวอ่านจะโยน <code>MedicalApiException</code>, ดังนั้นให้ใช้ใบอนุญาตก่อน, ตามที่ <a href="https://docs.aspose.com/medical/net/getting-started/licensing/">คู่มือการให้ใบอนุญาต</a> อธิบาย.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -124,7 +124,7 @@ if (restored is not null)
     new DicomFile(restored).Save("output.dcm");</code></pre>
 </div>
 
-<p>สำหรับตัวเลือกที่ควบคุมรูปแบบของ JSON, ดูหน้าที่ <a href=\"/medical/net/dicom-to-json/\">DICOM to JSON</a>. คู่เดียวกันนี้มีสำหรับ XML: <a href=\"/medical/net/dicom-to-xml/\">DICOM to XML</a> และ <a href=\"/medical/net/xml-to-dicom/\">XML to DICOM</a>. <a href=\"https://docs.aspose.com/medical/net/developer-guide/90-dicom-serialization/10-dicom-json-serialization/\">คู่มือการทำ JSON serialization</a> ครอบคลุม API ทั้งหมด.</p>
+<p>สำหรับตัวเลือกที่ควบคุมรูปแบบของ JSON, ดูหน้าที่ <a href="/medical/net/dicom-to-json/">DICOM to JSON</a>. คู่เดียวกันนี้มีสำหรับ XML: <a href="/medical/net/dicom-to-xml/">DICOM to XML</a> และ <a href="/medical/net/xml-to-dicom/">XML to DICOM</a>. <a href="https://docs.aspose.com/medical/net/developer-guide/90-dicom-serialization/10-dicom-json-serialization/">คู่มือการทำ JSON serialization</a> ครอบคลุม API ทั้งหมด.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

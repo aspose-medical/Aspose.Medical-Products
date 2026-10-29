@@ -127,7 +127,7 @@ await client.SendAsync(CancellationToken.None);
 await client.StopAsync();</code></pre>
 </div>
 
-<p>The same factory builds the other query levels: <code>CreatePatientQuery</code>, <code>CreateSeriesQuery</code> and <code>CreateImageQuery</code>. <code>CreateWorklistQuery</code> builds a modality worklist query, which is the query a modality asks before a scan.</p>
+<p>The same factory builds the other query levels: <code>CreatePatientQuery</code>, <code>CreateSeriesQuery</code> and <code>CreateImageQuery</code>. <code>CreateWorklistQuery</code> builds a modality worklist query, which is the query a modality asks before a scan; the <a href="/medical/net/modality-worklist/">modality worklist page</a> shows it together with MPPS and the worklist server side.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

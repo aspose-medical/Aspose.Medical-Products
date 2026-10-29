@@ -27,6 +27,7 @@ description: Pure .NET library for DICOM medical imaging. Read, write, anonymize
     <li>Render frames to BGRA pixels with the modality LUT, the VOI LUT (window and level) and overlays applied by the renderer.</li>
     <li>Serialize datasets to the DICOM JSON Model (PS3.18) and to DICOM XML (PS3.19) and back, including asynchronous streaming and pluggable bulk data loading.</li>
     <li>Communicate over DIMSE with a client and a server: C-ECHO, C-STORE, C-FIND, C-MOVE, C-GET, the N-services, and TLS.</li>
+    <li>Query the modality worklist, report MPPS and hand out work with UPS-RS workitems, as a client and as a server.</li>
     <li>Search, download and upload studies on any DICOMweb server with a typed client for QIDO-RS, WADO-RS, STOW-RS, rendered images, WADO-URI and the workflow services.</li>
     <li>Build your own DICOMweb server: QIDO-RS, WADO-RS, STOW-RS and the workflow services on ASP.NET Core or any other HTTP host, with your storage behind them.</li>
 </ul>
@@ -500,7 +501,7 @@ Dataset fromXml = DicomXmlSerializer.Deserialize(xml);</code></pre>
      DICOM Networking over DIMSE
     </h2>
     <p>
-     Aspose.Medical for .NET talks to other DICOM systems directly. The library provides a DIMSE client and a DIMSE server for C-ECHO, C-STORE, C-FIND, C-MOVE and C-GET, together with the N-services, association negotiation with presentation contexts and roles, asynchronous operation windows, user identity negotiation and TLS. Requests are queued on an association and answered by handlers you register, so a store-and-forward node, a query proxy or a test SCP is a matter of a few classes. The <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM networking guide</a> covers the full API.
+     Aspose.Medical for .NET talks to other DICOM systems directly. The library provides a DIMSE client and a DIMSE server for C-ECHO, C-STORE, C-FIND, C-MOVE and C-GET, together with the N-services, association negotiation with presentation contexts and roles, asynchronous operation windows, user identity negotiation and TLS. Requests are queued on an association and answered by handlers you register, so a store-and-forward node, a query proxy or a test SCP is a matter of a few classes. The <a href="/medical/net/modality-worklist/">modality worklist page</a> shows the worklist and MPPS workflow on both sides. The <a href="https://docs.aspose.com/medical/net/developer-guide/dicom-networking/">DICOM networking guide</a> covers the full API.
     </p>
     <div class="codeblock" id="code">
      <h3>

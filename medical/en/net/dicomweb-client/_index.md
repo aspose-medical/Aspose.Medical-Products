@@ -174,8 +174,8 @@ catch (DicomWebClientException ex)
 <ul>
 <li>Bulk data, pixel data and selected frames of an instance, by one-based frame number, as the server sent them.</li>
 <li>WADO-URI, the older single-URL retrieval that many viewers and archives still use, for DICOM files and rendered images.</li>
-<li>UPS-RS worklists: create, search, update and claim workitems, change their state, request cancellation, and subscribe to events that arrive over a WebSocket.</li>
-<li>The modality worklist (MWL-RS), modality performed procedure steps (MPPS-RS) and storage commitment.</li>
+<li><a href="/medical/net/ups-rs/">UPS-RS</a> worklists: create, search, update and claim workitems, change their state, request cancellation, and subscribe to events that arrive over a WebSocket.</li>
+<li>The <a href="/medical/net/modality-worklist/">modality worklist</a> (MWL-RS), modality performed procedure steps (MPPS-RS) and storage commitment.</li>
 <li>Non-patient instances such as color palettes and hanging protocols, and the capabilities document of the server.</li>
 <li><code>SendAsync</code> for any standard transaction with your own route values, query parameters, headers and body, when a typed method does not fit.</li>
 </ul>

@@ -180,8 +180,8 @@ public sealed class JpegRendering : IDicomWebRepresentationProvider
 <p>The other DICOMweb services follow the same model: register the service, implement its storage interface.</p>
 
 <ul>
-<li>UPS-RS worklists with <code>AddStandardWorklistService</code>: create, search and update workitems and change their state, with the state rules checked by the library and event notifications sent over a WebSocket.</li>
-<li>The modality worklist (MWL-RS) with <code>AddStandardModalityWorklistService</code>, so modalities can query the scheduled procedure steps of your RIS.</li>
+<li><a href="/medical/net/ups-rs/">UPS-RS</a> worklists with <code>AddStandardWorklistService</code>: create, search and update workitems and change their state, with the state rules checked by the library and event notifications sent over a WebSocket.</li>
+<li>The <a href="/medical/net/modality-worklist/">modality worklist</a> (MWL-RS) with <code>AddStandardModalityWorklistService</code>, so modalities can query the scheduled procedure steps of your RIS.</li>
 <li>Modality performed procedure steps (MPPS-RS), storage commitment and non-patient instances such as color palettes and hanging protocols.</li>
 <li>WADO-URI retrieval for older viewers, served by the Studies service.</li>
 </ul>

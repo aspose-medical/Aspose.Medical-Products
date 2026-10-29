@@ -2,31 +2,31 @@
 title: DICOMweb klient v C# .NET - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
 weight: 9100
 
-description: Vyhledávejte, stahujte a nahrávejte DICOM studie přes HTTP z .NET. DICOMweb klient v čistém C# pro QIDO-RS, WADO-RS a STOW-RS, který funguje s PACS, VNA a cloudovými zobrazovacími službami.
+description: Vyhledávejte, stahujte a nahrávejte DICOM studie přes HTTP z .NET. Čistý C# DICOMweb klient pro QIDO-RS, WADO-RS a STOW-RS, který funguje s PACS, VNA a cloudovými zobrazovacími službami.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOMweb klient pro .NET C#" h2="Vyhledávejte, stahujte a nahrávejte studie na libovolném DICOMweb serveru pomocí QIDO-RS, WADO-RS a STOW-RS, v řízeném C# bez nutnosti instalace na počítači." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="DICOMweb klient pro .NET C#" h2="Vyhledávejte, stahujte a nahrávejte studie na libovolném DICOMweb serveru pomocí QIDO-RS, WADO-RS a STOW-RS, v řízeném C# bez nutnosti instalace čehokoliv na stroj." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="DICOM přes HTTP, z vašeho vlastního kódu">}}
+{{< blocks/products/pf/feature-page-section h2="DICOM přes HTTP, z vaší vlastní kódu">}}
 
-<p>DICOMweb je HTTP forma DICOM. Místo DIMSE asociace na portu 104 vaše aplikace posílá běžné HTTPS požadavky: QIDO-RS pro vyhledávání, WADO-RS pro stahování, STOW-RS pro nahrávání. Cloudové zobrazovací služby jako Azure Health Data Services DICOM služba a Google Cloud Healthcare API fungují tímto způsobem, a tak také archivy jako Orthanc a dcm4chee.</p>
+<p>DICOMweb je HTTP forma DICOM. Místo DIMSE asociace na portu 104 vaše aplikace odesílá běžné HTTPS požadavky: QIDO-RS pro vyhledávání, WADO-RS pro stahování, STOW-RS pro nahrávání. Cloudové zobrazovací služby jako Azure Health Data Services DICOM služba a Google Cloud Healthcare API fungují tímto způsobem, stejně jako archivy jako Orthanc a dcm4chee.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> obsahuje DICOMweb klienta od verze 26.10. <code>DicomWebClient</code> zapouzdřuje každou standardní transakci do typizované metody a výsledky přicházejí jako stejné objekty <code>Dataset</code> a <code>DicomFile</code>, které zbytek knihovny čte a zapisuje. Server na druhé straně může být jakákoliv implementace DICOMweb; nemusí být postaven pomocí Aspose.Medical.</p>
+<p><strong>Aspose.Medical pro .NET</strong> obsahuje DICOMweb klienta od verze 26.10. <code>DicomWebClient</code> zapouzdřuje každou standardní transakci v typované metodě a výsledky přicházejí jako stejné objekty <code>Dataset</code> a <code>DicomFile</code>, které zbytek knihovny čte a zapisuje. Server na druhé straně může být jakákoliv implementace DICOMweb; nemusí být postaven pomocí Aspose.Medical.</p>
 
-<p>Klient je řízený C# postavený na <code>HttpClient</code>. Neexistuje žádná nativní sady nástrojů ani proxy služba, takže stejný kód běží na Windows, Linuxu i v kontejneru.</p>
+<p>Klient je řízený C# postavený nad <code>HttpClient</code>. Neexistuje žádný nativní nástroj ani proxy služba, takže stejný kód běží na Windows, Linuxu i v kontejneru.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Připojení k DICOMweb serveru">}}
+{{< blocks/products/pf/feature-page-section h2="Připojit se k DICOMweb serveru">}}
 
-<p>Vytvořte klienta z <code>HttpClient</code> a kořenové URL služby serveru. Ověřování, nastavení TLS, proxy a sdílení připojení zůstávají na <code>HttpClient</code>, kde je vaše aplikace již konfiguruje. Klient nevlastní <code>HttpClient</code> a nevolá jeho uvolnění.</p>
+<p>Vytvořte klienta z <code>HttpClient</code> a kořenové URL služby serveru. Autentizace, nastavení TLS, proxy a poolování připojení zůstávají na <code>HttpClient</code>, kde je vaše aplikace již konfiguruje. Klient nevlastní <code>HttpClient</code> a nevolá jeho uvolnění.</p>
 
 <div class="codeblock" id="code">
- <h3>Vytvoření DICOMweb klienta - C#</h3>
+ <h3>Vytvořit DICOMweb klienta - C#</h3>
  <pre><code class="cs">using HttpClient http = new HttpClient();
 
 // Most cloud services expect an OAuth access token
@@ -38,16 +38,16 @@ DicomWebClient client = new DicomWebClient(http, new DicomWebClientOptions
 });</code></pre>
 </div>
 
-<p>Pokud jedno nasazení poskytuje WADO-URI nebo jinou službu z jiné URL, <code>ServiceBaseUris</code> přepíše kořen jen pro tuto službu.</p>
+<p>Pokud jedno nasazení poskytuje WADO-URI nebo jinou službu z odlišné URL, <code>ServiceBaseUris</code> přepíše kořen jen pro tuto službu.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Vyhledávání studií pomocí QIDO-RS">}}
+{{< blocks/products/pf/feature-page-section h2="Vyhledávat studie pomocí QIDO-RS">}}
 
-<p>Vyhledávání přijímá parametry shody s DICOM klíčovým slovem jako názvem, pole, která se mají vrátit, a ovládání stránkování. Výsledky přicházejí jako proud datasetů, čtou se po jednom, dokud odpověď stále stahuje.</p>
+<p>Vyhledávání přijímá parametry shody s DICOM klíčovým slovem jako názvem, pole k vrácení a ovládání stránkování. Shody přicházejí jako proud datasetů, čtou se po jednom, zatímco odpověď se stále stahuje.</p>
 
 <div class="codeblock" id="code">
- <h3>Vyhledání studií pacienta - C#</h3>
+ <h3>Najít studie pacienta - C#</h3>
  <pre><code class="cs">DicomWebSearchOptions search = new DicomWebSearchOptions
 {
     MatchingParameters = [new DicomWebQueryParameter("PatientName", "SMITH*")],
@@ -65,16 +65,16 @@ await foreach (Dataset study in studies)
 }</code></pre>
 </div>
 
-<p><code>SearchSeriesAsync</code> a <code>SearchInstancesAsync</code> vyhledávají o úroveň níž, napříč celým archivem nebo uvnitř studie či série. Stejné možnosti také nastavení fuzzy shody, shody prázdných hodnot a offsetu výsledků pro stránkování.</p>
+<p><code>SearchSeriesAsync</code> a <code>SearchInstancesAsync</code> vyhledávají o úroveň níž, napříč celým archivem či uvnitř jedné studie nebo série. Stejné možnosti také nastavují fuzzy shodu, shodu prázdných hodnot a offset výsledků pro stránkování.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Stažení studie pomocí WADO-RS">}}
+{{< blocks/products/pf/feature-page-section h2="Stáhnout studii pomocí WADO-RS">}}
 
-<p>Studie může obsahovat tisíce instancí. <code>RetrieveStudyAsync</code> je vrací jako proud, takže každý soubor je zpracován, jakmile dorazí jeho část odpovědi, a může být uložen před načtením dalšího. Spotřeba paměti neroste s velikostí studie.</p>
+<p>Studie může obsahovat tisíce instancí. <code>RetrieveStudyAsync</code> je vrací jako proud, takže každý soubor je parsován, jakmile dorazí jeho část odpovědi, a může být uložen před načtením dalšího. Spotřeba paměti neroste s velikostí studie.</p>
 
 <div class="codeblock" id="code">
- <h3>Uložení každé instance studie - C#</h3>
+ <h3>Uložit každou instanci studie - C#</h3>
  <pre><code class="cs">Directory.CreateDirectory("study");
 
 await using DicomWebClientStream&lt;DicomFile&gt; files = await client.Studies.RetrieveStudyAsync(studyUid);
@@ -90,12 +90,12 @@ await foreach (DicomFile file in files)
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Získání náhledu nebo renderovaného obrazu">}}
+{{< blocks/products/pf/feature-page-section h2="Získat miniaturu nebo vykreslený obrázek">}}
 
-<p>Prohlížeč nebo obrazovka pracovního seznamu často potřebuje obrázek, ne DICOM soubor. Server jej renderuje a pošle JPEG nebo PNG, takže klient nestahuje ani ne dekóduje původní pixelová data.</p>
+<p>Prohlížeč nebo obrazovka pracovního seznamu často potřebuje obrázek, ne DICOM soubor. Server jej vykreslí a pošle JPEG nebo PNG, takže klient nestahuje ani nerozkládá původní pixelová data.</p>
 
 <div class="codeblock" id="code">
- <h3>Uložení JPEG náhledu instance - C#</h3>
+ <h3>Uložit JPEG miniaturu instance - C#</h3>
  <pre><code class="cs">DicomWebRenderOptions render = new DicomWebRenderOptions
 {
     AcceptedMediaTypes = [DicomWebMediaTypes.ImageJpeg]
@@ -109,16 +109,16 @@ await using FileStream output = File.Create("thumbnail.jpg");
 await thumbnail.ContentReader.CopyToAsync(output);</code></pre>
 </div>
 
-<p><code>RetrieveRenderedInstanceAsync</code> a <code>RetrieveRenderedFramesAsync</code> místo toho vrací obrázek v plné velikosti. <code>DicomWebRenderOptions</code> předává serveru standardní nastavení renderování: kvalita obrazu, velikost viewportu, okno a ICC profil.</p>
+<p><code>RetrieveRenderedInstanceAsync</code> a <code>RetrieveRenderedFramesAsync</code> místo toho vrací obrázek v plné velikosti. <code>DicomWebRenderOptions</code> předává standardní ovládací prvky renderování serveru: kvalitu obrázku, velikost viewportu, okno a ICC profil.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Nahrání instancí pomocí STOW-RS">}}
+{{< blocks/products/pf/feature-page-section h2="Nahrát instance pomocí STOW-RS">}}
 
-<p>STOW-RS odesílá libovolný počet instancí v jednom požadavku. Server odpovídá reportem, který uvádí instance po instanci, co uložené a co odmítnuté.</p>
+<p>STOW-RS odesílá libovolný počet instancí v jednom požadavku. Server odpovídá zprávou, která uvádí, instance po instanci, co bylo uloženo a co odmítnuto.</p>
 
 <div class="codeblock" id="code">
- <h3>Nahrání složky DICOM souborů - C#</h3>
+ <h3>Nahrát složku DICOM souborů - C#</h3>
  <pre><code class="cs">List&lt;DicomFile&gt; upload = Directory
     .EnumerateFiles("outgoing", "*.dcm")
     .Select(path =&gt; DicomFile.Open(path))
@@ -138,18 +138,18 @@ if (stored.Value.Response.GetOrDefault(Tag.FailedSOPSequence) is Sequence failed
 }</code></pre>
 </div>
 
-<p>Některé servery odpovídají HTTP chybou, například 409, když selže jedna nebo více instancí. Pak volání vyhodí <code>DicomWebClientException</code>, jak ukazuje následující sekce, a stejný report je v těle odpovědi výjimky.</p>
+<p>Některé servery odpovídají HTTP chybou, například 409, když jedna nebo více instancí selže. Volání pak vyvolá <code>DicomWebClientException</code>, jak ukazuje následující sekce, a stejná zpráva je v těle odpovědi výjimky.</p>
 
-<p><code>StoreStudyAsync</code> nahrává do jedné pojmenované studie. Obě metody také přijímají <code>IAsyncEnumerable&lt;DicomFile&gt;</code>, takže soubory mohou být generovány během odesílání požadavku.</p>
+<p><code>StoreStudyAsync</code> nahrává do jedné pojmenované studie. Obě metody také akceptují <code>IAsyncEnumerable&lt;DicomFile&gt;</code>, takže soubory mohou být generovány během odesílání požadavku.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Zpracování chyb serveru">}}
+{{< blocks/products/pf/feature-page-section h2="Zpracovat chyby serveru">}}
 
-<p>Každá typová operace kontroluje HTTP status před návratem. Když server odmítne požadavek, volání vyhodí <code>DicomWebClientException</code>, která obsahuje stavový kód, hlavičky a začátek těla odpovědi pro log.</p>
+<p>Každá typovaná operace kontroluje stav HTTP před návratem. Když server požadavek odmítne, volání vyvolá <code>DicomWebClientException</code>, která nese stavový kód, hlavičky a začátek těla odpovědi pro log.</p>
 
 <div class="codeblock" id="code">
- <h3>Reportování neúspěšného požadavku - C#</h3>
+ <h3>Hlásit neúspěšný požadavek - C#</h3>
  <pre><code class="cs">try
 {
     DicomWebClientResult&lt;RetrieveInstanceResult&gt; instance =
@@ -163,7 +163,7 @@ catch (DicomWebClientException ex)
 }</code></pre>
 </div>
 
-<p>Metody, které vrací surovou odpověď, jako např. výše uvedený náhled, nechávají kontrolu statusu na vás pomocí <code>IsSuccessStatusCode</code> nebo <code>EnsureSuccessStatusCode</code>.</p>
+<p>Metody, které vracejí surovou odpověď, jako výše uvedená miniatura, nechávají kontrolu stavu na vás pomocí <code>IsSuccessStatusCode</code> nebo <code>EnsureSuccessStatusCode</code>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -172,30 +172,30 @@ catch (DicomWebClientException ex)
 <p>Vyhledávání, stahování a nahrávání jsou běžné volání. Klient má také skupinu operací pro každou z ostatních DICOMweb služeb:</p>
 
 <ul>
-<li>Hromadná data, pixelová data a vybrané snímky instance podle číslování od jedné, tak jak je server posílá.</li>
-<li>WADO-URI, starší získání jedné URL, které stále používá mnoho prohlížečů a archivů, pro DICOM soubory a renderované obrazy.</li>
-<li>UPS-RS pracovní seznamy: vytvořit, vyhledat, aktualizovat a přidělit pracovní položky, změnit jejich stav, požádat o zrušení a přihlásit se k událostem přicházejícím přes WebSocket.</li>
-<li>Modální pracovní seznam (MWL-RS), modální provedené kroky procedur (MPPS-RS) a závazek úložiště.</li>
-<li>Instanace nesouvisející s pacientem, jako jsou barevné palety a hanging protokoly, a dokument schopností serveru.</li>
-<li><code>SendAsync</code> pro jakoukoliv standardní transakci s vašimi vlastními hodnotami trasy, parametry dotazu, hlavičkami a tělem, když typizovaná metoda nevyhovuje.</li>
+<li>Hromadná data, pixelová data a vybrané snímky instance podle číslování snímků od jedné, tak jak je server posílá.</li>
+<li>WADO-URI, starší získávání jedné URL, které mnoho prohlížečů a archivů stále používá, pro DICOM soubory a vykreslené obrázky.</li>
+<li>UPS-RS pracovní seznamy: vytvořit, vyhledat, aktualizovat a přebrat pracovní položky, změnit jejich stav, požádat o zrušení a přihlásit se k událostem přicházejícím přes WebSocket.</li>
+<li>Modální pracovní seznam (MWL-RS), provedené procedurální kroky modality (MPPS-RS) a úschova závazku.</li>
+<li>Instance nesouvisející s pacientem, jako jsou barevné palety a hanging protokoly, a dokument o schopnostech serveru.</li>
+<li><code>SendAsync</code> pro jakoukoli standardní transakci s vlastními hodnotami trasy, parametry dotazu, hlavičkami a tělem, když typová metoda nevyhovuje.</li>
 </ul>
 
-<p>Průvodce <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">DICOMweb client guide</a> dokumentuje každou operaci a volbu a <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">client operation reference</a> uvádí všechny metody.</p>
+<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/">Průvodce DICOMweb klientem</a> dokumentuje každou operaci a možnost a <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client-operations/">reference operací klienta</a> uvádí všechny metody.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Jedna knihovna od HTTP odpovědi po pixelová data">}}
 
-<p>Soubor stažený pomocí klienta je běžný <code>DicomFile</code>. Může být anonymizován, transkódován, renderován nebo serializován ve stejném procesu, bez konverzního kroku a bez druhé knihovny v řetězci.</p>
+<p>Soubor stažený klientem je běžný <code>DicomFile</code>. Může být anonymizován, transkódován, vykreslen nebo serializován ve stejném procesu, bez kroku konverze a bez druhé knihovny v řetězci.</p>
 
-<p>Související stránky: <a href="/medical/net/dicom-networking/">DICOM networking</a> pro archivy, které komunikují pomocí DIMSE místo HTTP, <a href="/medical/net/anonymization/">anonymizace</a> před tím, než studie opustí nemocnici, <a href="/medical/net/dicom-transfer-syntax-conversion/">převod syntaxe přenosu</a> pro to, co server ukládá, a <a href="/medical/net/dicom-to-json/">DICOM do JSON</a> pro formát, který používají výsledky vyhledávání QIDO-RS.</p>
+<p>Související stránky: <a href="/medical/net/dicomweb-server/">DICOMweb server</a> pro druhou stranu protokolu ve vaší vlastní ASP.NET Core službě, <a href="/medical/net/dicom-networking/">DICOM síťování</a> pro archivy, které používají DIMSE místo HTTP, <a href="/medical/net/anonymization/">anonymizaci</a> před tím, než studie opustí nemocnici, <a href="/medical/net/dicom-transfer-syntax-conversion/">převod přenosové syntaxe</a> pro to, co server ukládá, a <a href="/medical/net/dicom-to-json/">DICOM na JSON</a> pro formát, který používají výsledky vyhledávání QIDO-RS.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="Vzdělávací zdroje" tabId="resources" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Výukové zdroje" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="Dokumentace" href="https://docs.aspose.com/medical/net/" >}}
 {{< blocks/products/pf/slr-element name="Průvodce vývojáře" href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/client/" >}}
 {{< blocks/products/pf/slr-element name="Reference API" href="https://reference.aspose.com/medical/net/aspose.medical.dicom.web/" >}}

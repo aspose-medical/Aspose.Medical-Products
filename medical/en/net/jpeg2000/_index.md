@@ -48,7 +48,7 @@ description: Read, write, and transcode DICOM files with JPEG 2000 compression i
 <p>Medical images often use 16 bits per sample to capture the full dynamic range of modalities like CT (typically 12-bit stored in 16-bit) and MRI. Aspose.Medical handles every depth from 1 to 16 bits for JPEG 2000, in 8-bit or 16-bit samples:</p>
 
 <ul>
-<li><strong>Reading (decompression)</strong>: monochrome files (CT, MRI, X-ray), palette color files and three-component color files (RGB, YBR_RCT, YBR_ICT) with 1 to 16 bits per sample, signed or unsigned. CMYK, ICC-profile, JP2 palette and sub-sampled color code streams are rejected with a clear exception instead of a silently wrong image.</li>
+<li><strong>Reading (decompression)</strong>: monochrome files (CT, MRI, X-ray), palette color files and three-component color files (RGB, YBR_RCT, YBR_ICT, and other color labels such as YBR_FULL, decoded as coded) with 1 to 16 bits per sample, signed or unsigned. CMYK, ICC-profile, JP2 palette and sub-sampled color code streams are rejected with a clear exception instead of a silently wrong image.</li>
 <li><strong>Writing (compression)</strong>: monochrome and RGB images with 1 to 16 bits per sample, signed or unsigned, and palette color images with JPEG 2000 Lossless. YBR images are not encoded unless they decode to RGB, as lossy JPEG YBR files do.</li>
 </ul>
 

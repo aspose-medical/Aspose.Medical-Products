@@ -1,29 +1,29 @@
 ---
 title: Nén DICOM JPEG 2000 trong C# .NET | Aspose.Medical
 weight: 2000
-description: Đọc, ghi và chuyển đổi định dạng (transcode) các tệp DICOM với nén JPEG 2000 trong C# .NET. Hỗ trợ hình ảnh màu 8-bit và đơn sắc 16-bit, các chế độ lossless và lossy, cùng HTJ2K với API Aspose.Medical.
+description: Đọc, ghi và chuyển đổi định dạng các tệp DICOM với nén JPEG 2000 trong C# .NET. Hỗ trợ hình ảnh đơn màu và màu từ 1 đến 16 bit, chế độ không mất dữ liệu và mất dữ liệu, cộng thêm HTJ2K với API Aspose.Medical.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Hỗ trợ DICOM JPEG 2000 trong .NET C#" h2="Đọc, ghi và chuyển đổi định dạng các tệp DICOM với nén JPEG 2000. Các chế độ lossless và lossy, dữ liệu pixel màu 8-bit và đơn sắc 16-bit, bao gồm HTJ2K - tất cả trong .NET thuần." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="Hỗ trợ DICOM JPEG 2000 trong .NET C#" h2="Đọc, ghi và chuyển đổi định dạng các tệp DICOM với nén JPEG 2000. Các chế độ không mất và mất dữ liệu, dữ liệu pixel đơn màu và màu từ 1 đến 16 bit, kèm HTJ2K – tất cả trong .NET thuần." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 trong Ảnh Y tế">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 trong Chẩn đoán Y tế">}}
 
-<p><strong>JPEG 2000</strong> (ISO/IEC 15444) là tiêu chuẩn nén dựa trên wavelet được sử dụng rộng rãi nhất trong ảnh y tế. Không giống như JPEG truyền thống, nó cung cấp cả nén lossless và lossy trong một codec duy nhất, giải mã tiến trình cho truy cập vùng quan tâm, và tỷ lệ nén vượt trội &mdash; làm cho nó lý tưởng cho việc lưu trữ các nghiên cứu lớn và truyền ảnh qua mạng có băng thông hạn chế.</p>
+<p><strong>JPEG 2000</strong> (ISO/IEC 15444) là tiêu chuẩn nén dựa trên wavelet được sử dụng rộng rãi nhất trong chẩn đoán y tế. Khác với JPEG truyền thống, nó cung cấp cả nén không mất và mất dữ liệu trong một codec duy nhất, giải mã tiến trình cho truy cập vùng quan tâm, và tỷ lệ nén vượt trội &mdash; khiến nó lý tưởng cho việc lưu trữ các nghiên cứu lớn và truyền ảnh qua mạng có băng thông hạn chế.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> cung cấp một triển khai thuần C# của codec JPEG 2000 mà không có phụ thuộc native. Thư viện có thể đọc, render và chuyển đổi định dạng (transcode) các tệp DICOM được nén với bất kỳ một trong bốn syntax truyền tải chuẩn JPEG 2000.</p>
+<p><strong>Aspose.Medical cho .NET</strong> cung cấp một triển khai thuần C# của codec JPEG 2000 không có phụ thuộc gốc. Thư viện có thể đọc, kết xuất và chuyển đổi các tệp DICOM được nén bằng cả hai cú pháp truyền tải JPEG 2000 Phần 1, bao gồm cả không mất và mất dữ liệu.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Các syntax truyền tải JPEG 2000 được hỗ trợ">}}
+{{< blocks/products/pf/feature-page-section h2="Các cú pháp truyền tải JPEG 2000 được hỗ trợ">}}
 
 <table class="table table-bordered">
 <thead>
 <tr>
-<th>Transfer Syntax</th>
+<th>Cú pháp truyền tải</th>
 <th>UID</th>
 <th>Chế độ</th>
 <th>Đọc</th>
@@ -31,25 +31,25 @@ description: Đọc, ghi và chuyển đổi định dạng (transcode) các t�
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 Chỉ Lossless</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>RGB 8-bit, đơn sắc 16-bit</td><td>đơn sắc 16-bit, RGB 8-bit</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy hoặc lossless</td><td>RGB 8-bit, đơn sắc 16-bit</td><td>đơn sắc 16-bit, RGB 8-bit</td></tr>
-<tr><td>JPEG 2000 Phần 2 Multi-component Chỉ Lossless</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>Không được hỗ trợ</td><td>Không được hỗ trợ</td></tr>
-<tr><td>JPEG 2000 Phần 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy hoặc lossless</td><td>Không được hỗ trợ</td><td>Không được hỗ trợ</td></tr>
-<tr><td>HTJ2K Chỉ Lossless</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>đơn sắc và màu</td><td>đơn sắc và màu</td></tr>
-<tr><td>HTJ2K với tùy chọn RPCL Chỉ Lossless</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>đơn sắc và màu</td><td>đơn sắc và màu</td></tr>
-<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Lossy hoặc lossless</td><td>đơn sắc và màu</td><td>đơn sắc và màu</td></tr>
+<tr><td>JPEG 2000 Chỉ Không Mất Dữ Liệu</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Không mất dữ liệu</td><td>Đơn màu và màu, 1 đến 16 bit</td><td>Đơn màu, màu bảng màu và RGB, 1 đến 16 bit</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Mất dữ liệu hoặc không mất dữ liệu</td><td>Đơn màu và màu, 1 đến 16 bit</td><td>Đơn màu và RGB, 1 đến 16 bit</td></tr>
+<tr><td>JPEG 2000 Phần 2 Đa Thành phần Chỉ Không Mất Dữ Liệu</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Không mất dữ liệu</td><td>Không hỗ trợ</td><td>Không hỗ trợ</td></tr>
+<tr><td>JPEG 2000 Phần 2 Đa Thành phần</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Mất dữ liệu hoặc không mất dữ liệu</td><td>Không hỗ trợ</td><td>Không hỗ trợ</td></tr>
+<tr><td>HTJ2K Chỉ Không Mất Dữ Liệu</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Không mất dữ liệu</td><td>Đơn màu và màu</td><td>Đơn màu và màu</td></tr>
+<tr><td>HTJ2K với tùy chọn RPCL Chỉ Không Mất Dữ Liệu</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Không mất dữ liệu</td><td>Đơn màu và màu</td><td>Đơn màu và màu</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Mất dữ liệu hoặc không mất dữ liệu</td><td>Đơn màu và màu</td><td>Đơn màu và màu</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Dữ liệu Pixel 8-bit và 16-bit">}}
+{{< blocks/products/pf/feature-page-section h2="Dữ liệu pixel từ 1 đến 16 bit">}}
 
-<p>Hình ảnh y tế thường sử dụng 16 bit mỗi mẫu để nắm bắt toàn bộ dải động của các mô thức như CT (thường là 12-bit được lưu trong 16-bit) và MRI. Aspose.Medical xử lý cả hai độ sâu bit cho JPEG 2000:</p>
+<p>Hình ảnh y tế thường sử dụng 16 bit trên mỗi mẫu để nắm bắt dải động đầy đủ của các mô thức như CT (thường lưu trữ 12-bit trong 16-bit) và MRI. Aspose.Medical xử lý mọi độ sâu từ 1 đến 16 bit cho JPEG 2000, trong các mẫu 8-bit hoặc 16-bit:</p>
 
 <ul>
-<li><strong>Đọc (giải nén)</strong>: các tệp đơn sắc 16-bit (CT, MRI, X-ray) và các tệp màu ba thành phần 8-bit (RGB, YBR_RCT, YBR_ICT). Các luồng mã màu Palette, CMYK, ICC-profile và sub-sampled sẽ bị từ chối với một ngoại lệ rõ ràng thay vì hình ảnh sai một cách âm thầm.</li>
-<li><strong>Ghi (nén)</strong>: hình ảnh đơn sắc 16-bit và RGB 8-bit. Mã hoá đơn sắc 8-bit và màu 16-bit không khả dụng; hãy sử dụng HTJ2K hoặc JPEG XL cho những trường hợp đó, cả hai đều chấp nhận đơn sắc và màu ở bất kỳ độ sâu bit nào.</li>
+<li><strong>Đọc (giải nén)</strong>: các tệp đơn màu (CT, MRI, X-ray), tệp màu bảng màu và tệp màu ba thành phần (RGB, YBR_RCT, YBR_ICT, và các nhãn màu khác như YBR_FULL, giải mã dưới dạng mã) với 1 đến 16 bit trên mỗi mẫu, có dấu hoặc không dấu. Các luồng mã màu CMYK, ICC-profile, JP2 palette và sub-sampled bị từ chối với một ngoại lệ rõ ràng thay vì tạo ra hình ảnh sai một cách im lặng.</li>
+<li><strong>Ghi (nén)</strong>: các ảnh đơn màu và RGB với 1 đến 16 bit trên mỗi mẫu, có dấu hoặc không dấu, và ảnh màu bảng màu với JPEG 2000 Không Mất Dữ Liệu. Ảnh YBR không được mã hoá trừ khi chúng giải mã thành RGB, như các tệp JPEG YBR mất dữ liệu.</li>
 </ul>
 
 <div class="codeblock" id="code">
@@ -80,7 +80,7 @@ Console.WriteLine($"Samples Per Pixel: {pixelData.SamplesPerPixel}");</code></pr
 <p>Sử dụng phương thức <code>Transcode</code> để nén bất kỳ tệp DICOM nào sang JPEG 2000 hoặc để chuyển đổi giữa các chế độ JPEG 2000:</p>
 
 <div class="codeblock" id="code">
- <h3>Nén DICOM sang JPEG 2000 Lossless - C#</h3>
+ <h3>Nén DICOM sang JPEG 2000 Không Mất Dữ Liệu - C#</h3>
  <pre><code class="cs">// Load an uncompressed DICOM file
 DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
@@ -90,7 +90,7 @@ lossless.Save("j2k_lossless.dcm");</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>Nén DICOM sang JPEG 2000 Lossy - C#</h3>
+ <h3>Nén DICOM sang JPEG 2000 Mất Dữ Liệu - C#</h3>
  <pre><code class="cs">// Load a DICOM file
 DicomFile dicomFile = DicomFile.Open("input.dcm");
 
@@ -103,7 +103,7 @@ lossy.Save("j2k_lossy.dcm");</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="Giải nén các tệp DICOM JPEG 2000">}}
 
-<p>Giải nén các tệp JPEG 2000 sang một syntax truyền tải không nén để xử lý, phân tích, hoặc để tương thích với các hệ thống không hỗ trợ JPEG 2000:</p>
+<p>Giải nén các tệp JPEG 2000 sang cú pháp truyền tải không nén để xử lý, phân tích, hoặc tương thích với các hệ thống không hỗ trợ JPEG 2000:</p>
 
 <div class="codeblock" id="code">
  <h3>Giải nén JPEG 2000 sang không nén - C#</h3>
@@ -127,12 +127,12 @@ jlsFile.Save("jpegls_lossless.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Render ảnh DICOM JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="Kết xuất hình ảnh DICOM JPEG 2000">}}
 
-<p>Các tệp DICOM nén JPEG 2000 có thể được render thành dữ liệu pixel để hiển thị hoặc xuất, giống như bất kỳ syntax truyền tải nào khác:</p>
+<p>Các tệp DICOM nén JPEG 2000 có thể được kết xuất thành dữ liệu pixel để hiển thị hoặc xuất, giống như bất kỳ cú pháp truyền tải nào khác:</p>
 
 <div class="codeblock" id="code">
- <h3>Render khung ảnh nén JPEG 2000 - C#</h3>
+ <h3>Kết xuất khung ảnh nén JPEG 2000 - C#</h3>
  <pre><code class="cs">// Open JPEG 2000 DICOM file
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -148,35 +148,35 @@ image.CopyPixelsTo(pixels);</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Lossless so với Lossy JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 Không mất vs Mất dữ liệu">}}
 
 <table class="table table-bordered">
 <thead>
 <tr>
 <th>Khía cạnh</th>
-<th>JPEG 2000 Lossless</th>
-<th>JPEG 2000 Lossy</th>
+<th>JPEG 2000 Không mất</th>
+<th>JPEG 2000 Mất dữ liệu</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>Transfer Syntax</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
-<tr><td>Chất lượng hình ảnh</td><td>Pixel-perfect &mdash; giống hệt bản gốc</td><td>Trông tương đồng, một số dữ liệu bị mất vĩnh viễn</td></tr>
-<tr><td>Tỷ lệ nén</td><td>Thường 2:1 đến 3:1</td><td>Thường 10:1 đến 30:1 hoặc cao hơn</td></tr>
-<tr><td>Phù hợp nhất cho</td><td>Lưu trữ chẩn đoán, hồ sơ pháp lý, đọc chính</td><td>Đánh giá sơ bộ, telemedicine, truyền tải qua mạng</td></tr>
-<tr><td>An toàn vòng quay</td><td>Có</td><td>Không &mdash; mã hoá lại sẽ làm chất lượng giảm thêm</td></tr>
+<tr><td>Cú pháp truyền tải</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
+<tr><td>Chất lượng ảnh</td><td>Pixel-perfect &mdash; giống hệt bản gốc</td><td>Gần tương đồng thị giác, một số dữ liệu bị mất vĩnh viễn</td></tr>
+<tr><td>Tỷ lệ nén</td><td>Thường là 2:1 đến 3:1</td><td>Thường là 10:1 đến 30:1 hoặc cao hơn</td></tr>
+<tr><td>Thích hợp cho</td><td>Lưu trữ chẩn đoán, hồ sơ pháp lý, đọc chính</td><td>Xem sơ bộ, y tế từ xa, truyền tải qua mạng</td></tr>
+<tr><td>An toàn qua vòng lặp</td><td>Có</td><td>Không &mdash; mã hoá lại sẽ làm giảm chất lượng hơn</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 High-Throughput (HTJ2K)">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 thông suất cao (HTJ2K)">}}
 
-<p>HTJ2K (ISO/IEC 15444-15) thay thế bộ mã số học chậm của JPEG 2000 bằng một bộ mã khối nhanh hơn. Nó giữ cùng một phép biến đổi wavelet, thứ tự tiến trình và chất lượng, đồng thời giải mã và mã hoá nhanh hơn nhiều lần. Aspose.Medical triển khai cả ba syntax truyền tải DICOM HTJ2K trong .NET thuần, cho hình ảnh đơn sắc và màu, và chuyển đổi giữa HTJ2K và mọi syntax được hỗ trợ khác:</p>
+<p>HTJ2K (ISO/IEC 15444-15) thay thế bộ mã số học chậm của JPEG 2000 bằng một bộ mã khối nhanh hơn. Nó giữ nguyên biến đổi wavelet, thứ tự tiến trình và chất lượng, đồng thời giải mã và mã hoá nhanh hơn nhiều lần. Aspose.Medical triển khai cả ba cú pháp truyền tải DICOM HTJ2K trong .NET thuần, cho ảnh đơn màu và màu, và chuyển đổi giữa HTJ2K và mọi cú pháp khác được hỗ trợ:</p>
 
 <ul>
-<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; chỉ lossless</li>
-<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; lossless với thứ tự tiến trình RPCL</li>
-<li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; lossy hoặc lossless</li>
+<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; chỉ không mất dữ liệu</li>
+<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; không mất dữ liệu với thứ tự tiến trình RPCL</li>
+<li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; mất dữ liệu hoặc không mất dữ liệu</li>
 </ul>
 
 <div class="codeblock" id="code">

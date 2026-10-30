@@ -1,20 +1,20 @@
 ---
 title: C# .NET'te DICOM JPEG 2000 Sıkıştırması | Aspose.Medical
 weight: 2000
-description: C# .NET'te JPEG 2000 sıkıştırmasıyla DICOM dosyalarını okuyun, yazın ve dönüştürün. 8-bit renk ve 16-bit monokrom görüntüler, kayıpsız ve kayıplı modlar ve Aspose.Medical API ile HTJ2K desteği.
+description: C# .NET'te JPEG 2000 sıkıştırmasıyla DICOM dosyalarını okuyun, yazın ve kod çevirisi yapın. 1 ila 16 bit arasında tek renk ve renkli görüntüler, kayıpsız ve kayıplı modlar, ayrıca Aspose.Medical API ile HTJ2K desteği.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1=".NET C#'de DICOM JPEG 2000 Desteği" h2="JPEG 2000 sıkıştırmasıyla DICOM dosyalarını okuyun, yazın ve dönüştürün. Kayıpsız ve kayıplı modlar, 8-bit renk ve 16-bit monokrom piksel verisi, HTJ2K dahildir - tamamen saf .NET ile." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET C#'ta DICOM JPEG 2000 Desteği" h2="JPEG 2000 sıkıştırmasıyla DICOM dosyalarını okuyun, yazın ve kod çevirisi yapın. Kayıpsız ve kayıplı modlar, 1 ila 16 bit arasında tek renk ve renkli piksel verileri, HTJ2K dahil – hepsi saf .NET'te." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Tıbbi Görüntülemede JPEG 2000">}}
 
-<p><strong>JPEG 2000</strong> (ISO/IEC 15444), tıbbi görüntülemede en yaygın kullanılan dalga boyuna dayalı sıkıştırma standardıdır. Geleneksel JPEG'den farklı olarak, tek bir codec içinde hem kayıpsız hem kayıplı sıkıştırma, ilgi alanı erişimi için ilerlemeli kod çözme ve üstün sıkıştırma oranları &mdash; büyük çalışmaları arşivlemek ve sınırlı ağlarda görüntüleri iletmek için ideal kılar.</p>
+<p><strong>JPEG 2000</strong> (ISO/IEC 15444), tıbbi görüntülemede en yaygın kullanılan dalgalet tabanlı sıkıştırma standardıdır. Geleneksel JPEG’den farklı olarak, tek bir codec içinde hem kayıpsız hem kayıplı sıkıştırma, ilgi bölgesi erişimi için aşamalı çözümleme ve üstün sıkıştırma oranları &mdash; büyük çalışmaların arşivlenmesi ve sınırlı ağlarda görüntülerin aktarılması için idealdir.</p>
 
-<p><strong>Aspose.Medical for .NET</strong>, herhangi bir yerel bağımlılık olmadan JPEG 2000 codec'inin saf C# uygulamasını sunar. Kütüphane, dört standart JPEG 2000 transfer sözdiziminden herhangi biriyle sıkıştırılmış DICOM dosyalarını okuyabilir, işleyebilir ve dönüştürebilir.</p>
+<p><strong>Aspose.Medical for .NET</strong>, JPEG 2000 codec'inin yerel bağımlılıkları olmayan saf C# implementasyonunu sağlar. Kütüphane, JPEG 2000 Part 1 transfer sözdizimleriyle sıkıştırılmış DICOM dosyalarını okuyabilir, işleyebilir ve kod çevirebilir; hem kayıpsız hem kayıplı.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -23,37 +23,37 @@ description: C# .NET'te JPEG 2000 sıkıştırmasıyla DICOM dosyalarını okuyu
 <table class="table table-bordered">
 <thead>
 <tr>
-<th>Transfer Sözdizimi</th>
+<th>Transfer Syntax</th>
 <th>UID</th>
-<th>Mod</th>
-<th>Okuma</th>
-<th>Yazma</th>
+<th>Mode</th>
+<th>Read</th>
+<th>Write</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 Yalnızca Kayıpsız</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Kayıpsız</td><td>8-bit RGB, 16-bit monokrom</td><td>16-bit monokrom, 8-bit RGB</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Kayıplı veya kayıpsız</td><td>8-bit RGB, 16-bit monokrom</td><td>16-bit monokrom, 8-bit RGB</td></tr>
-<tr><td>JPEG 2000 Bölüm 2 Çok Bileşenli Yalnızca Kayıpsız</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Kayıpsız</td><td>Desteklenmiyor</td><td>Desteklenmiyor</td></tr>
-<tr><td>JPEG 2000 Bölüm 2 Çok Bileşenli</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Kayıplı veya kayıpsız</td><td>Desteklenmiyor</td><td>Desteklenmiyor</td></tr>
-<tr><td>HTJ2K Yalnızca Kayıpsız</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Kayıpsız</td><td>Monokrom ve renk</td><td>Monokrom ve renk</td></tr>
-<tr><td>HTJ2K RPCL Seçenekli Yalnızca Kayıpsız</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Kayıpsız</td><td>Monokrom ve renk</td><td>Monokrom ve renk</td></tr>
-<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Kayıplı veya kayıpsız</td><td>Monokrom ve renk</td><td>Monokrom ve renk</td></tr>
+<tr><td>JPEG 2000 Sadece Kayıpsız</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Kayıpsız</td><td>Monokrom ve renkli, 1 ila 16 bit</td><td>Monokrom, palet renkli ve RGB, 1 ila 16 bit</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Kayıplı veya kayıpsız</td><td>Monokrom ve renkli, 1 ila 16 bit</td><td>Monokrom ve RGB, 1 ila 16 bit</td></tr>
+<tr><td>JPEG 2000 Part 2 Çok Bileşenli Sadece Kayıpsız</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Kayıpsız</td><td>Desteklenmiyor</td><td>Desteklenmiyor</td></tr>
+<tr><td>JPEG 2000 Part 2 Çok Bileşenli</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Kayıplı veya kayıpsız</td><td>Desteklenmiyor</td><td>Desteklenmiyor</td></tr>
+<tr><td>HTJ2K Sadece Kayıpsız</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Kayıpsız</td><td>Monokrom ve renkli</td><td>Monokrom ve renkli</td></tr>
+<tr><td>RPCL Seçenekli HTJ2K Sadece Kayıpsız</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Kayıpsız</td><td>Monokrom ve renkli</td><td>Monokrom ve renkli</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Kayıplı veya kayıpsız</td><td>Monokrom ve renkli</td><td>Monokrom ve renkli</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="8-Bit ve 16-Bit Piksel Verisi">}}
+{{< blocks/products/pf/feature-page-section h2="1 ila 16 Bit Arasındaki Piksel Verisi">}}
 
-<p>Tıbbi görüntüler, CT (genellikle 12-bit, 16-bit içinde depolanan) ve MRI gibi modalitelerin tam dinamik aralığını yakalamak için genellikle örnek başına 16 bit kullanır. Aspose.Medical, JPEG 2000 için her iki bit derinliğini de destekler:</p>
+<p>Tıbbi görüntüler, CT (genellikle 12-bit, 16-bit içinde saklanır) ve MRI gibi modalitylerin tam dinamik aralığını yakalamak için sıklıkla örnek başına 16 bit kullanır. Aspose.Medical, JPEG 2000 için 1 ila 16 bit arasındaki tüm derinlikleri, 8-bit veya 16-bit örneklerde işler:</p>
 
 <ul>
-<li><strong>Okuma (kodu çözme)</strong>: 16-bit monokrom dosyalar (CT, MRI, X-ray) ve 8-bit üç bileşenli renk dosyaları (RGB, YBR_RCT, YBR_ICT). Palet, CMYK, ICC-profili ve alt örneklenmiş renk kod akışları, sessizce hatalı bir görüntü üretmek yerine açık bir istisna ile reddedilir.</li>
-<li><strong>Yazma (sıkıştırma)</strong>: 16-bit monokrom ve 8-bit RGB görüntüler. 8-bit monokrom ve 16-bit renk kodlaması mevcut değildir; bunlar için HTJ2K veya JPEG XL kullanın, ikisi de monokrom ve renk için her iki bit derinliğini kabul eder.</li>
+<li><strong>Okuma (çözme)</strong>: monokrom dosyalar (CT, MRI, X‑ray), palet renkli dosyalar ve üç bileşenli renk dosyaları (RGB, YBR_RCT, YBR_ICT ve YBR_FULL gibi diğer renk etiketleri, kodlandığı gibi çözülür) 1 ila 16 bit örnek başına, işaretli veya işaretsiz. CMYK, ICC‑profil, JP2 paleti ve alt örneklenmiş renk kod akışları, sessizce hatalı bir görüntü yerine net bir istisna ile reddedilir.</li>
+<li><strong>Yazma (sıkıştırma)</strong>: 1 ila 16 bit örnek başına, işaretli veya işaretsiz monokrom ve RGB görüntüler, ayrıca JPEG 2000 Kayıpsız ile palet renkli görüntüler. YBR görüntüler, RGB'ye çözümlenmedikçe kodlanmaz; bu, kayıplı JPEG YBR dosyalarının yaptığı gibidir.</li>
 </ul>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000 sıkıştırılmış DICOM'u okuyun ve inceleyin - C#</h3>
+ <h3>JPEG 2000 sıkıştırmalı DICOM'i Oku ve İncele - C#</h3>
  <pre><code class="cs">// Open a JPEG 2000 compressed DICOM file (8-bit or 16-bit)
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -75,12 +75,12 @@ Console.WriteLine($"Samples Per Pixel: {pixelData.SamplesPerPixel}");</code></pr
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000'e Dönüştür">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000'e Kod Çevir">}}
 
 <p>Herhangi bir DICOM dosyasını JPEG 2000'e sıkıştırmak veya JPEG 2000 modları arasında dönüştürmek için <code>Transcode</code> metodunu kullanın:</p>
 
 <div class="codeblock" id="code">
- <h3>DICOM'u JPEG 2000 Kayıpsız Sıkıştır - C#</h3>
+ <h3>DICOM'i JPEG 2000 Kayıpsız Sıkıştır - C#</h3>
  <pre><code class="cs">// Load an uncompressed DICOM file
 DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
@@ -90,7 +90,7 @@ lossless.Save("j2k_lossless.dcm");</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>DICOM'u JPEG 2000 Kayıplı Sıkıştır - C#</h3>
+ <h3>DICOM'i JPEG 2000 Kayıplı Sıkıştır - C#</h3>
  <pre><code class="cs">// Load a DICOM file
 DicomFile dicomFile = DicomFile.Open("input.dcm");
 
@@ -101,12 +101,12 @@ lossy.Save("j2k_lossy.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM Dosyalarını Aç">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM Dosyalarını Çöz">}}
 
-<p>İşleme, analiz veya JPEG 2000'ı desteklemeyen sistemlerle uyumluluk için JPEG 2000 dosyalarını sıkıştırılmamış bir transfer sözdizimine açın:</p>
+<p>JPEG 2000 dosyalarını, işleme, analiz veya JPEG 2000'ı desteklemeyen sistemlerle uyumluluk için sıkıştırılmamış bir transfer sözdizimine çözmek:</p>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000'i Sıkıştırılmamış Formata Aç - C#</h3>
+ <h3>JPEG 2000'ı Sıkıştırmasız Hale Çöz - C#</h3>
  <pre><code class="cs">// Load a JPEG 2000 compressed DICOM file
 DicomFile compressed = DicomFile.Open("j2k_compressed.dcm");
 
@@ -115,10 +115,10 @@ DicomFile uncompressed = compressed.Transcode(TransferSyntax.ExplicitVrLittleEnd
 uncompressed.Save("decompressed.dcm");</code></pre>
 </div>
 
-<p>Ayrıca tek adımda açıp diğer sıkıştırma formatlarına dönüştürebilirsiniz:</p>
+<p>Ayrıca tek adımda diğer sıkıştırma formatlarına çözebilir ve kod çevirebilirsiniz:</p>
 
 <div class="codeblock" id="code">
- <h3>Sıkıştırma formatları arasında dönüştür - C#</h3>
+ <h3>Sıkıştırma formatları arasında kod çevirisi - C#</h3>
  <pre><code class="cs">// Convert JPEG 2000 to JPEG-LS Lossless
 DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
 DicomFile jlsFile = j2kFile.Transcode(TransferSyntax.JpegLsLossless);
@@ -127,12 +127,12 @@ jlsFile.Save("jpegls_lossless.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM Görüntülerini Görüntüle">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM Görüntülerini İşle">}}
 
-<p>JPEG 2000 sıkıştırılmış DICOM dosyaları, diğer tüm transfer sözdizimleri gibi, görüntüleme veya dışa aktarma için piksel verisine işlenebilir:</p>
+<p>JPEG 2000 sıkıştırmalı DICOM dosyaları, diğer transfer sözdizimleri gibi, görüntüleme ya da dışa aktarma amacıyla piksel verisine işlenebilir:</p>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000 sıkıştırılmış bir çerçeveyi render et - C#</h3>
+ <h3>JPEG 2000 sıkıştırmalı bir kareyi işle - C#</h3>
  <pre><code class="cs">// Open JPEG 2000 DICOM file
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -153,34 +153,34 @@ image.CopyPixelsTo(pixels);</code></pre>
 <table class="table table-bordered">
 <thead>
 <tr>
-<th>Özellik</th>
-<th>JPEG 2000 Kayıpsız</th>
-<th>JPEG 2000 Kayıplı</th>
+<th>Aspect</th>
+<th>JPEG 2000 Lossless</th>
+<th>JPEG 2000 Lossy</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>Transfer Sözdizimi</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
-<tr><td>Görüntü kalitesi</td><td>Piksel mükemmelliği &mdash; orijinale tamamen aynı</td><td>Görsel olarak benzer, bazı veriler kalıcı olarak kaybedilir</td></tr>
-<tr><td>Sıkıştırma oranı</td><td>Genellikle 2:1 - 3:1</td><td>Genellikle 10:1 - 30:1 veya daha yüksek</td></tr>
-<tr><td>En Uygun</td><td>Tanısal arşivleme, yasal kayıtlar, birincil okuma</td><td>İlk inceleme, tele-tıp, ağ üzerinden iletim</td></tr>
-<tr><td>Geri dönüş güvenliği</td><td>Evet</td><td>Hayır &mdash; yeniden kodlama kaliteyi daha da düşürür</td></tr>
+<tr><td>Transfer Syntax</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
+<tr><td>Görüntü kalitesi</td><td>Piksel tam &mdash; orijinaliyle aynı</td><td>Görsel olarak benzer, bazı veriler kalıcı olarak kaybedilir</td></tr>
+<tr><td>Sıkıştırma oranı</td><td>Genellikle 2:1 ile 3:1</td><td>Genellikle 10:1 ile 30:1 veya daha yüksek</td></tr>
+<tr><td>En İyi Kullanım</td><td>Tanısal arşivleme, yasal kayıtlar, birincil okuma</td><td>Ön inceleme, tele tıp, ağ üzerinden aktarım</td></tr>
+<tr><td>Geri dönüş güvenli</td><td>Evet</td><td>Hayır &mdash; yeniden kodlama kaliteyi daha da düşürür</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Yüksek Hızlı JPEG 2000 (HTJ2K)">}}
+{{< blocks/products/pf/feature-page-section h2="Yüksek Performanslı JPEG 2000 (HTJ2K)">}}
 
-<p>HTJ2K (ISO/IEC 15444-15), JPEG 2000'ın yavaş aritmetik kodlayıcısını daha hızlı bir blok kodlayıcı ile değiştirir. Aynı dalga boyu dönüşümü, ilerleme sırası ve kaliteyi korur ve kod çözme ve kodlama işlemlerini birkaç kat daha hızlı gerçekleştirir. Aspose.Medical, saf .NET'te tüm üç DICOM HTJ2K transfer sözdizimini, monokrom ve renkli görüntüler için uygular ve HTJ2K ile diğer tüm desteklenen sözdizimleri arasında dönüştürme yapar:</p>
+<p>HTJ2K (ISO/IEC 15444-15), JPEG 2000'ın yavaş aritmetik kodlayıcısını daha hızlı bir blok kodlayıcıyla değiştirir. Aynı dalgalet dönüşümü, ilerleme sıraları ve kaliteyi korur ve çözümleme ve kodlamayı birkaç kat daha hızlı yapar. Aspose.Medical, saf .NET'te üç DICOM HTJ2K transfer sözdizimini, monokrom ve renkli görüntüler için uygular ve HTJ2K ile diğer tüm desteklenen sözdizimleri arasında kod çevirisi yapar:</p>
 
 <ul>
-<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; yalnızca kayıpsız</li>
-<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; RPCL ilerleme sırası ile kayıpsız</li>
+<li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; sadece kayıpsız</li>
+<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; RPCL ilerleme sırasıyla kayıpsız</li>
 <li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; kayıplı veya kayıpsız</li>
 </ul>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000'i HTJ2K'ye ve geri dönüştür - C#</h3>
+ <h3>JPEG 2000'ı HTJ2K'ya ve geri kod çevir - C#</h3>
  <pre><code class="cs">// Transcode a JPEG 2000 file to HTJ2K, and back to classic JPEG 2000
 DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
 DicomFile htj2kFile = j2kFile.Transcode(TransferSyntax.HTJ2KLossless);
@@ -216,7 +216,7 @@ uncompressed.Save("decoded.dcm");</code></pre>
 {{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Aspose.Medical .NET için neden tercih edilmeli?" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Neden Aspose.Medical .NET için?" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="Müşteri Listesi" href="https://company.aspose.com/customers" >}}
 {{< blocks/products/pf/slr-element name="Başarı Hikayeleri" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}

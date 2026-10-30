@@ -1,29 +1,29 @@
 ---
 title: C# .NET में DICOM JPEG 2000 संपीड़न | Aspose.Medical
 weight: 2000
-description: C# .NET में JPEG 2000 संपीड़न के साथ DICOM फ़ाइलों को पढ़ें, लिखें और ट्रांसकोड करें। 8-बिट रंग और 16-बिट मोनोक्रोम छवियों, लॉसलेस और लॉसी मोड्स, साथ ही Aspose.Medical API के साथ HTJ2K को सपोर्ट करता है।
+description: C# .NET में JPEG 2000 संपीड़न के साथ DICOM फ़ाइलों को पढ़ें, लिखें और ट्रांसकोड करें। 1 से 16 बिट तक मोनोक्रोम और कलर इमेजेस का समर्थन, लॉसलेस और लॉसी मोड्स, तथा Aspose.Medical API के साथ HTJ2K।
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1=".NET C# में DICOM JPEG 2000 समर्थन" h2="JPEG 2000 संपीड़न के साथ DICOM फ़ाइलों को पढ़ें, लिखें और ट्रांसकोड करें। लॉसलेस और लॉसी मोड्स, 8-बिट रंग और 16-बिट मोनोक्रोम पिक्सेल डेटा, HTJ2K शामिल - सभी शुद्ध .NET में।" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET C# में DICOM JPEG 2000 समर्थन" h2="JPEG 2000 संपीड़न के साथ DICOM फ़ाइलों को पढ़ें, लिखें और ट्रांसकोड करें। लॉसलेस और लॉसी मोड्स, 1 से 16 बिट तक मोनोक्रोम और कलर पिक्सेल डेटा, HTJ2K शामिल — सभी शुद्ध .NET में।" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="मेडिकल इमेजिंग में JPEG 2000">}}
 
-<p><strong>JPEG 2000</strong> (ISO/IEC 15444) मेडिकल इमेजिंग में सबसे अधिक उपयोग किया जाने वाला वेवलेट-आधारित संपीड़न मानक है। पारंपरिक JPEG के विपरीत, यह एक ही कोडेक में लॉसलेस और लॉसी दोनों संपीड़न प्रदान करता है, रुचि-क्षेत्र तक पहुँच के लिए प्रोग्रेसिव डिकोडिंग, और श्रेष्ठ संपीड़न अनुपात &mdash; जिससे यह बड़े अध्ययन को संग्रहीत करने और सीमित नेटवर्क पर छवियों को प्रसारित करने के लिए आदर्श बनता है।</p>
+<p><strong>JPEG 2000</strong> (ISO/IEC 15444) चिकित्सा इमेजिंग में सबसे अधिक उपयोग किया जाने वाला वेवलेट-आधारित संपीड़न मानक है। पारंपरिक JPEG के विपरीत, यह एक ही कोडेक में लॉसलेस और लॉसी दोनों संपीड़न प्रदान करता है, क्षेत्र-ऑफ़-इंटरेस्ट पहुंच के लिए प्रोग्रेसिव डिकोडिंग, और श्रेष्ठ संपीड़न अनुपात &mdash; जिससे यह बड़े अध्ययन को संग्रहित करने और सीमित नेटवर्क पर छवियों को प्रसारित करने के लिए आदर्श बनता है।</p>
 
-<p><strong>Aspose.Medical for .NET</strong> बिना किसी नेटिव निर्भरता के JPEG 2000 कोडेक का शुद्ध C# कार्यान्वयन प्रदान करता है। यह लाइब्रेरी किसी भी चार मानक JPEG 2000 ट्रांसफर सिंटैक्स से संकुचित DICOM फ़ाइलों को पढ़ सकती है, रेंडर कर सकती है और ट्रांसकोड कर सकती है।</p>
+<p><strong>Aspose.Medical for .NET</strong> JPEG 2000 कोडेक का शुद्ध C# कार्यान्वयन प्रदान करता है जिसमें कोई नेटिव निर्भरताएँ नहीं हैं। यह लाइब्रेरी दोनों JPEG 2000 पार्ट 1 ट्रांसफर सिंटैक्स, लॉसलेस और लॉसी के साथ संपीड़ित DICOM फ़ाइलों को पढ़, रेंडर और ट्रांसकोड कर सकती है।</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="समर्थित JPEG 2000 ट्रांसफर सिंटैक्सेस">}}
+{{< blocks/products/pf/feature-page-section h2="समर्थित JPEG 2000 ट्रांसफ़र सिंटैक्स">}}
 
 <table class="table table-bordered">
 <thead>
 <tr>
-<th>Transfer Syntax</th>
+<th>ट्रांसफ़र सिंटैक्स</th>
 <th>UID</th>
 <th>मोड</th>
 <th>पढ़ें</th>
@@ -31,29 +31,29 @@ description: C# .NET में JPEG 2000 संपीड़न के साथ 
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 केवल लॉसलेस</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>लॉसलेस</td><td>8-बिट RGB, 16-बिट मोनोक्रोम</td><td>16-बिट मोनोक्रोम, 8-बिट RGB</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>लॉसी या लॉसलेस</td><td>8-बिट RGB, 16-बिट मोनोक्रोम</td><td>16-बिट मोनोक्रोम, 8-बिट RGB</td></tr>
-<tr><td>JPEG 2000 भाग 2 बहु‑घटक केवल लॉसलेस</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>लॉसलेस</td><td>समर्थित नहीं</td><td>समर्थित नहीं</td></tr>
-<tr><td>JPEG 2000 भाग 2 बहु‑घटक</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>लॉसी या लॉसलेस</td><td>समर्थित नहीं</td><td>समर्थित नहीं</td></tr>
-<tr><td>HTJ2K केवल लॉसलेस</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>लॉसलेस</td><td>मोनोक्रोम और रंग</td><td>मोनोक्रोम और रंग</td></tr>
-<tr><td>HTJ2K RPCL विकल्पों के साथ केवल लॉसलेस</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>लॉसलेस</td><td>मोनोक्रोम और रंग</td><td>मोनोक्रोम और रंग</td></tr>
-<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>लॉसी या लॉसलेस</td><td>मोनोक्रोम और रंग</td><td>मोनोक्रोम और रंग</td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>मोनोक्रोम और रंग, 1 से 16 बिट</td><td>मोनोक्रोम, पैलेट रंग और RGB, 1 से 16 बिट</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy या Lossless</td><td>मोनोक्रोम और रंग, 1 से 16 बिट</td><td>मोनोक्रोम और RGB, 1 से 16 बिट</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>समर्थित नहीं</td><td>समर्थित नहीं</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy या Lossless</td><td>समर्थित नहीं</td><td>समर्थित नहीं</td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>मोनोक्रोम और रंग</td><td>मोनोक्रोम और रंग</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>मोनोक्रोम और रंग</td><td>मोनोक्रोम और रंग</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Lossy या Lossless</td><td>मोनोक्रोम और रंग</td><td>मोनोक्रोम और रंग</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="8-बिट और 16-बिट पिक्सेल डेटा">}}
+{{< blocks/products/pf/feature-page-section h2="पिक्सेल डेटा 1 से 16 बिट">}}
 
-<p>मेडिकल इमेजिंग अक्सर प्रत्येक सैंपल के लिए 16 बिट्स का उपयोग करती है ताकि CT (आमतौर पर 12‑बिट 16‑बिट में संग्रहीत) और MRI जैसी मोडैलिटी की पूरी डायनामिक रेंज को कैप्चर किया जा सके। Aspose.Medical JPEG 2000 के लिए दोनों बिट‑गहराइयों को संभालता है:</p>
+<p>मेडिकल इमेजेज अक्सर 16 बिट प्रति सैंपल का उपयोग करती हैं ताकि CT (आमतौर पर 12‑बिट, 16‑बिट में संग्रहित) और MRI जैसी मोडालिटीज़ की पूरी डायनामिक रेंज को कैप्चर किया जा सके। Aspose.Medical JPEG 2000 के लिए 1 से 16 बिट तक की प्रत्येक गहराई को 8‑बिट या 16‑बिट सैंपल में संभालता है:</p>
 
 <ul>
-<li><strong>रीडिंग (डिकम्प्रेशन)</strong>: 16‑बिट मोनोक्रोम फ़ाइलें (CT, MRI, X‑ray) और 8‑बिट त्रि‑घटक रंग फ़ाइलें (RGB, YBR_RCT, YBR_ICT)। पैलेट, CMYK, ICC‑प्रोफ़ाइल और सब‑सैंप्ल्ड रंग कोड स्ट्रीम को स्पष्ट अपवाद के साथ अस्वीकृत किया जाता है, न कि चुपचाप गलत इमेज के रूप में।</li>
-<li><strong>राइटिंग (कम्प्रेशन)</strong>: 16‑बिट मोनोक्रोम और 8‑बिट RGB छवियां। 8‑बिट मोनोक्रोम और 16‑बिट रंग एन्कोडिंग उपलब्ध नहीं है; इनके लिए HTJ2K या JPEG XL का उपयोग करें, दोनों ही मोनोक्रोम और रंग को किसी भी बिट‑डेप्थ पर स्वीकार करते हैं।</li>
+<li><strong>पढ़ना (डिकम्प्रेशन)</strong>: मोनोक्रोम फ़ाइलें (CT, MRI, X‑ray), पैलेट कलर फ़ाइलें और तीन‑घटक कलर फ़ाइलें (RGB, YBR_RCT, YBR_ICT, और अन्य कलर लेबल जैसे YBR_FULL, कोडेड के रूप में डिकोड) 1 से 16 बिट प्रति सैंपल, साइन्ड या अनसाइन्ड के साथ। CMYK, ICC‑प्रोफ़ाइल, JP2 पैलेट और सब‑सैंप्ल्ड कलर कोड स्ट्रीम को स्पष्ट अपवाद के साथ अस्वीकार किया जाता है, न कि चुपचाप गलत इमेज के रूप में।</li>
+<li><strong>लिखना (कम्प्रेशन)</strong>: मोनोक्रोम और RGB इमेजेस 1 से 16 बिट प्रति सैंपल, साइन्ड या अनसाइन्ड के साथ, तथा पैलेट कलर इमेजेस JPEG 2000 Lossless के साथ। YBR इमेजेस को एन्कोड नहीं किया जाता जब तक कि वे RGB में डिकोड न हों, जैसा कि लॉसी JPEG YBR फ़ाइलें करती हैं।</li>
 </ul>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000 संकुचित DICOM पढ़ें और जांचें - C#</h3>
+ <h3>JPEG 2000 संपीड़ित DICOM को पढ़ें और निरीक्षण करें - C#</h3>
  <pre><code class="cs">// Open a JPEG 2000 compressed DICOM file (8-bit or 16-bit)
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -77,7 +77,7 @@ Console.WriteLine($"Samples Per Pixel: {pixelData.SamplesPerPixel}");</code></pr
 
 {{< blocks/products/pf/feature-page-section h2="JPEG 2000 में ट्रांसकोड करें">}}
 
-<p>किसी भी DICOM फ़ाइल को JPEG 2000 में संकुचित करने या JPEG 2000 मोड्स के बीच परिवर्तित करने के लिए <code>Transcode</code> मेथड का उपयोग करें:</p>
+<p><code>Transcode</code> मेथड का उपयोग करके किसी भी DICOM फ़ाइल को JPEG 2000 में संपीड़ित करें या JPEG 2000 मोड्स के बीच रूपांतरण करें:</p>
 
 <div class="codeblock" id="code">
  <h3>DICOM को JPEG 2000 लॉसलेस में संपीड़ित करें - C#</h3>
@@ -103,10 +103,10 @@ lossy.Save("j2k_lossy.dcm");</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM फ़ाइलों को डिकम्प्रेस करें">}}
 
-<p>प्रोसेसिंग, विश्लेषण, या उन सिस्टमों के साथ संगतता के लिए जो JPEG 2000 को सपोर्ट नहीं करते, JPEG 2000 फ़ाइलों को अनकम्प्रेस्ड ट्रांसफर सिंटैक्स में डिकम्प्रेस करें:</p>
+<p>प्रोसेसिंग, विश्लेषण, या उन सिस्टमों के साथ संगतता के लिए जो JPEG 2000 का समर्थन नहीं करते, JPEG 2000 फ़ाइलों को अनकंप्रेस्ड ट्रांसफ़र सिंटैक्स में डिकम्प्रेस करें:</p>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000 को अनकम्प्रेस्ड में डिकम्प्रेस करें - C#</h3>
+ <h3>JPEG 2000 को अनकंप्रेस्ड में डिकम्प्रेस करें - C#</h3>
  <pre><code class="cs">// Load a JPEG 2000 compressed DICOM file
 DicomFile compressed = DicomFile.Open("j2k_compressed.dcm");
 
@@ -115,10 +115,10 @@ DicomFile uncompressed = compressed.Transcode(TransferSyntax.ExplicitVrLittleEnd
 uncompressed.Save("decompressed.dcm");</code></pre>
 </div>
 
-<p>आप एक ही चरण में डिकम्प्रेस और अन्य संपीड़न फॉर्मेट्स में ट्रांसकोड भी कर सकते हैं:</p>
+<p>आप एक ही चरण में डिकम्प्रेस करके अन्य संपीड़न फ़ॉर्मेट में भी ट्रांसकोड कर सकते हैं:</p>
 
 <div class="codeblock" id="code">
- <h3>संपीड़न फॉर्मेट्स के बीच ट्रांसकोड - C#</h3>
+ <h3>संकुचन फ़ॉर्मेट के बीच ट्रांसकोड - C#</h3>
  <pre><code class="cs">// Convert JPEG 2000 to JPEG-LS Lossless
 DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
 DicomFile jlsFile = j2kFile.Transcode(TransferSyntax.JpegLsLossless);
@@ -127,12 +127,12 @@ jlsFile.Save("jpegls_lossless.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM इमेजेज़ को रेंडर करें">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM इमेजेस को रेंडर करें">}}
 
-<p>JPEG 2000 संकुचित DICOM फ़ाइलों को पिक्सेल डेटा में रेंडर किया जा सकता है ताकि उन्हें प्रदर्शित या निर्यात किया जा सके, ठीक वैसे ही जैसे कोई अन्य ट्रांसफर सिंटैक्स हो।</p>
+<p>JPEG 2000 संपीड़ित DICOM फ़ाइलों को डिस्प्ले या एक्सपोर्ट के लिए पिक्सेल डेटा में रेंडर किया जा सकता है, जैसे अन्य किसी भी ट्रांसफ़र सिंटैक्स की तरह:</p>
 
 <div class="codeblock" id="code">
- <h3>एक JPEG 2000 संकुचित फ्रेम को रेंडर करें - C#</h3>
+ <h3>JPEG 2000 संपीड़ित फ्रेम को रेंडर करें - C#</h3>
  <pre><code class="cs">// Open JPEG 2000 DICOM file
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -148,22 +148,22 @@ image.CopyPixelsTo(pixels);</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="लॉसलेस बनाम लॉसी JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="Lossless बनाम Lossy JPEG 2000">}}
 
 <table class="table table-bordered">
 <thead>
 <tr>
 <th>पहलू</th>
-<th>JPEG 2000 लॉसलेस</th>
-<th>JPEG 2000 लॉसी</th>
+<th>JPEG 2000 Lossless</th>
+<th>JPEG 2000 Lossy</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>ट्रांसफर सिंटैक्स</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
-<tr><td>इमेज क्वालिटी</td><td>पिक्सेल‑परफेक्ट &mdash; मूल के समान</td><td>दृश्य रूप से समान, कुछ डेटा स्थायी रूप से खो गया</td></tr>
-<tr><td>संकुचन अनुपात</td><td>आमतौर पर 2:1 से 3:1</td><td>आमतौर पर 10:1 से 30:1 या अधिक</td></tr>
-<tr><td>सबसे उपयुक्त</td><td>डायग्नोस्टिक अभिलेखन, कानूनी रिकॉर्ड, प्राथमिक पठन</td><td>प्रारंभिक समीक्षा, टेलीमेडिसिन, नेटवर्क ट्रांसमिशन</td></tr>
-<tr><td>राउंड‑ट्रिप सुरक्षित</td><td>हाँ</td><td>नहीं &mdash; पुनः‑एन्कोडिंग से गुणवत्ता और घटती है</td></tr>
+<tr><td>ट्रांसफ़र सिंटैक्स</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
+<tr><td>इमेज गुणवत्ता</td><td>पिक्सेल-परफेक्ट &mdash; मूल के समान</td><td>दृश्य रूप से समान, कुछ डेटा स्थायी रूप से खो गया</td></tr>
+<tr><td>संपीड़न अनुपात</td><td>आमतौर पर 2:1 से 3:1</td><td>आमतौर पर 10:1 से 30:1 या अधिक</td></tr>
+<tr><td>सबसे उपयुक्त</td><td>डायग्नोस्टिक आर्काइवल, कानूनी रिकॉर्ड, प्राइमरी रीडिंग</td><td>प्रारंभिक समीक्षा, टेलिमेडिसिन, नेटवर्क ट्रांसमिशन</td></tr>
+<tr><td>राउंड‑ट्रिप सुरक्षित</td><td>हाँ</td><td>नहीं &mdash; पुनः एन्कोडिंग से गुणवत्ता और घटती है</td></tr>
 </tbody>
 </table>
 
@@ -171,7 +171,7 @@ image.CopyPixelsTo(pixels);</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="हाई‑थ्रूपुट JPEG 2000 (HTJ2K)">}}
 
-<p>HTJ2K (ISO/IEC 15444-15) JPEG 2000 के धीमे अरिथमैटिक कोडर को एक तेज़ ब्लॉक कोडर से बदलता है। यह वही वेवलेट ट्रांसफ़ॉर्म, प्रोग्रेशन क्रम और गुणवत्ता रखता है, और कई गुना तेज़ डिकोड और एन्कोड करता है। Aspose.Medical शुद्ध .NET में सभी तीन DICOM HTJ2K ट्रांसफर सिंटैक्स को लागू करता है, मोनोक्रोम और रंग छवियों के लिए, और HTJ2K तथा अन्य सभी समर्थित सिंटैक्स के बीच ट्रांसकोड करता है:</p>
+<p>HTJ2K (ISO/IEC 15444-15) JPEG 2000 के धीमे एरिथमैटिक कोडर को तेज़ ब्लॉक कोडर से बदलता है। यह वही वेवलेट ट्रांसफ़ॉर्म, प्रोग्रेशन ऑर्डर और क्वालिटी बनाये रखता है, और डिकोड एवं एन्कोड कई गुना तेज़ करता है। Aspose.Medical शुद्ध .NET में सभी तीन DICOM HTJ2K ट्रांसफ़र सिंटैक्स को लागू करता है, मोनोक्रोम और कलर इमेजेज़ के लिए, और HTJ2K को प्रत्येक अन्य समर्थित सिंटैक्स के साथ ट्रांसकोड करता है:</p>
 
 <ul>
 <li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; केवल लॉसलेस</li>
@@ -205,20 +205,20 @@ uncompressed.Save("decoded.dcm");</code></pre>
 
 {{< blocks/products/pf/support-learning-resources >}}
 {{< blocks/products/pf/slr-tab tabTitle="शिक्षण संसाधन" tabId="resources" >}}
-{{< blocks/products/pf/slr-element name="प्रलेखन" href="https://docs.aspose.com/medical/net/" >}}
-{{< blocks/products/pf/slr-element name="सोर्स कोड" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
-{{< blocks/products/pf/slr-element name="API संदर्भ" href="https://reference.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="डॉक्युमेंटेशन" href="https://docs.aspose.com/medical/net/" >}}
+{{< blocks/products/pf/slr-element name="स्रोत कोड" href="https://github.com/aspose-medical/Aspose.Medical-for-.NET" >}}
+{{< blocks/products/pf/slr-element name="API रेफ़रेंसेस" href="https://reference.aspose.com/medical/net/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="उत्पाद समर्थन" tabId="support" >}}
-{{< blocks/products/pf/slr-element name="निःशुल्क समर्थन" href="https://forum.aspose.com/c/medical" >}}
-{{< blocks/products/pf/slr-element name="सशुल्क समर्थन" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-element name="फ़्री समर्थन" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="पेड समर्थन" href="https://helpdesk.aspose.com/" >}}
 {{< blocks/products/pf/slr-element name="ब्लॉग" href="https://blog.aspose.com/category/medical/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="क्यों Aspose.Medical for .NET?" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="ग्राहक सूची" href="https://company.aspose.com/customers" >}}
-{{< blocks/products/pf/slr-element name="सफलता कहानियां" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< blocks/products/pf/slr-element name="सफलता कहानियाँ" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< /blocks/products/pf/support-learning-resources >}}

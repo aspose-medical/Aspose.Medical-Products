@@ -1,20 +1,20 @@
 ---
 title: C# .NET における DICOM JPEG 2000 圧縮 | Aspose.Medical
 weight: 2000
-description: C# .NET で JPEG 2000 圧縮された DICOM ファイルを読み取り、書き込み、トランスコードします。8 ビットカラーおよび 16 ビットモノクロ画像のサポート、ロスレスおよびロッシーモード、さらに Aspose.Medical API による HTJ2K を提供します。
+description: C# .NET で JPEG 2000 圧縮を使用して DICOM ファイルを読み取り、書き込み、トランスコードします。1 から 16 ビットのモノクロおよびカラー画像、ロスレスとロッシーモード、さらに Aspose.Medical API による HTJ2K をサポートします。
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1=".NET C# における DICOM JPEG 2000 サポート" h2="JPEG 2000 圧縮された DICOM ファイルを読み取り、書き込み、トランスコードします。ロスレスおよびロッシーモード、8 ビットカラーおよび 16 ビットモノクロのピクセルデータ、HTJ2K を含み、すべて純粋な .NET で実装されています。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1=".NET C# における DICOM JPEG 2000 サポート" h2="JPEG 2000 圧縮を使用して DICOM ファイルを読み取り、書き込み、トランスコードします。ロスレスとロッシーモード、1 から 16 ビットのモノクロおよびカラー画素データ、HTJ2K を含むすべてが純粋な .NET で実現されます。" logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
-{{< blocks/products/pf/feature-page-section h2="医療画像における JPEG 2000">}}
+{{< blocks/products/pf/feature-page-section h2="医用画像における JPEG 2000">}}
 
-<p><strong>JPEG 2000</strong> (ISO/IEC 15444) は医療画像で最も広く使用されているウェーブレットベースの圧縮規格です。従来の JPEG とは異なり、単一のコーデックでロスレスとロッシーの両方の圧縮を提供し、領域指定アクセス用のプログレッシブデコードと優れた圧縮率を実現します。これにより、大規模な研究のアーカイブや帯域が制限されたネットワークでの画像送信に最適です。</p>
+<p><strong>JPEG 2000</strong>（ISO/IEC 15444）は、医用画像で最も広く使用されているウェーブレットベースの圧縮標準です。従来の JPEG とは異なり、単一コーデックでロスレスとロッシーの両方の圧縮を提供し、領域限定アクセスのためのプログレッシブデコードと優れた圧縮率を実現します。これにより、大規模な研究のアーカイブや制約のあるネットワーク上での画像転送に最適です。</p>
 
-<p><strong>Aspose.Medical for .NET</strong> は、ネイティブ依存なしの純粋な C# 実装による JPEG 2000 コーデックを提供します。このライブラリは、4 つの標準 JPEG 2000 転送構文のいずれかで圧縮された DICOM ファイルを読み取り、レンダリングし、トランスコードできます。</p>
+<p><strong>Aspose.Medical for .NET</strong>は、ネイティブ依存なしの純粋な C# 実装による JPEG 2000 コーデックを提供します。このライブラリは、JPEG 2000 Part 1 の転送構文で圧縮された DICOM ファイル（ロスレスおよびロッシー）を読み取り、レンダリングし、トランスコードできます。</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -31,29 +31,29 @@ description: C# .NET で JPEG 2000 圧縮された DICOM ファイルを読み�
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 ロスレスのみ</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>ロスレス</td><td>8 ビット RGB、16 ビットモノクロ</td><td>16 ビットモノクロ、8 ビット RGB</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>ロッシーまたはロスレス</td><td>8 ビット RGB、16 ビットモノクロ</td><td>16 ビットモノクロ、8 ビット RGB</td></tr>
-<tr><td>JPEG 2000 Part 2 マルチコンポーネント ロスレスのみ</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>ロスレス</td><td>未サポート</td><td>未サポート</td></tr>
-<tr><td>JPEG 2000 Part 2 マルチコンポーネント</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>ロッシーまたはロスレス</td><td>未サポート</td><td>未サポート</td></tr>
-<tr><td>HTJ2K ロスレスのみ</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>ロスレス</td><td>モノクロとカラー</td><td>モノクロとカラー</td></tr>
-<tr><td>HTJ2K RPCL オプション付き ロスレスのみ</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>ロスレス</td><td>モノクロとカラー</td><td>モノクロとカラー</td></tr>
-<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>ロッシーまたはロスレス</td><td>モノクロとカラー</td><td>モノクロとカラー</td></tr>
+<tr><td>JPEG 2000 ロスレスのみ</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>ロスレス</td><td>モノクロおよびカラー、1〜16 ビット</td><td>モノクロ、パレットカラー、RGB、1〜16 ビット</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>ロッシーまたはロスレス</td><td>モノクロおよびカラー、1〜16 ビット</td><td>モノクロおよび RGB、1〜16 ビット</td></tr>
+<tr><td>JPEG 2000 Part 2 マルチコンポーネント ロスレスのみ</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>ロスレス</td><td>非対応</td><td>非対応</td></tr>
+<tr><td>JPEG 2000 Part 2 マルチコンポーネント</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>ロッシーまたはロスレス</td><td>非対応</td><td>非対応</td></tr>
+<tr><td>HTJ2K ロスレスのみ</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>ロスレス</td><td>モノクロおよびカラー</td><td>モノクロおよびカラー</td></tr>
+<tr><td>HTJ2K（RPCL オプション） ロスレスのみ</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>ロスレス</td><td>モノクロおよびカラー</td><td>モノクロおよびカラー</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>ロッシーまたはロスレス</td><td>モノクロおよびカラー</td><td>モノクロおよびカラー</td></tr>
 </tbody>
 </table>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="8 ビットおよび 16 ビットのピクセルデータ">}}
+{{< blocks/products/pf/feature-page-section h2="1 から 16 ビットの画素データ">}}
 
-<p>医療画像は、CT（通常 12 ビットが 16 ビットで格納）や MRI などのモダリティのフルダイナミックレンジを捉えるために、サンプルあたり 16 ビットを使用することが多いです。Aspose.Medical は JPEG 2000 に対して両方のビット深度を処理します。</p>
+<p>医用画像は、CT（通常は 12 ビットを 16 ビットで格納）や MRI などのモダリティの全ダイナミックレンジを捉えるために、サンプルあたり 16 ビットを使用することが多いです。Aspose.Medical は、JPEG 2000 用に 1 から 16 ビットまでのすべての深度を、8 ビットまたは 16 ビットサンプルで処理します。</p>
 
 <ul>
-<li><strong>読み取り（デコンプレッション）</strong>: 16 ビットモノクロファイル（CT、MRI、X線）および 8 ビット三成分カラー（RGB、YBR_RCT、YBR_ICT）ファイルをサポートします。パレット、CMYK、ICC プロファイル、サブサンプリングされたカラーコードストリームは、サイレントに誤った画像になるのを防ぐため、明確な例外で拒否されます。</li>
-<li><strong>書き込み（圧縮）</strong>: 16 ビットモノクロおよび 8 ビット RGB 画像をサポートします。8 ビットモノクロや 16 ビットカラーエンコーディングは利用できません。その場合は HTJ2K または JPEG XL を使用してください。どちらもモノクロとカラーを任意のビット深度で受け入れます。</li>
+<li><strong>読み取り（デ圧縮）</strong>：1〜16 ビット／サンプル、符号付きまたは符号なしのモノクロファイル（CT、MRI、X線）、パレットカラー画像および 3 コンポーネントカラー画像（RGB、YBR_RCT、YBR_ICT、その他 YBR_FULL などのカラーラベル、コード化されたものとしてデコード）です。CMYK、ICC プロファイル、JP2 パレット、サブサンプリングされたカラーコードストリームは、サイレントに誤った画像になる代わりに明確な例外で拒否されます。</li>
+<li><strong>書き込み（圧縮）</strong>：1〜16 ビット／サンプル、符号付きまたは符号なしのモノクロおよび RGB 画像、そして JPEG 2000 ロスレスでのパレットカラー画像です。YBR 画像は、RGB にデコードされる場合を除きエンコードされません（ロッシー JPEG YBR ファイルと同様）。</li>
 </ul>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000 圧縮 DICOM を読み取り・検査する - C#</h3>
+ <h3>JPEG 2000 圧縮 DICOM の読み取りと検査 - C#</h3>
  <pre><code class="cs">// Open a JPEG 2000 compressed DICOM file (8-bit or 16-bit)
 DicomFile dicomFile = DicomFile.Open("j2k_compressed.dcm");
 
@@ -77,10 +77,10 @@ Console.WriteLine($"Samples Per Pixel: {pixelData.SamplesPerPixel}");</code></pr
 
 {{< blocks/products/pf/feature-page-section h2="JPEG 2000 にトランスコード">}}
 
-<p><code>Transcode</code> メソッドを使用して、任意の DICOM ファイルを JPEG 2000 に圧縮したり、JPEG 2000 のモード間で変換したりできます。</p>
+<p><code>Transcode</code> メソッドを使用して任意の DICOM ファイルを JPEG 2000 に圧縮したり、JPEG 2000 モード間で変換したりできます。</p>
 
 <div class="codeblock" id="code">
- <h3>DICOM を JPEG 2000 ロスレスに圧縮する - C#</h3>
+ <h3>DICOM を JPEG 2000 ロスレスに圧縮 - C#</h3>
  <pre><code class="cs">// Load an uncompressed DICOM file
 DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
@@ -90,7 +90,7 @@ lossless.Save("j2k_lossless.dcm");</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>DICOM を JPEG 2000 ロッシーに圧縮する - C#</h3>
+ <h3>DICOM を JPEG 2000 ロッシーに圧縮 - C#</h3>
  <pre><code class="cs">// Load a DICOM file
 DicomFile dicomFile = DicomFile.Open("input.dcm");
 
@@ -101,12 +101,12 @@ lossy.Save("j2k_lossy.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM ファイルをデコンプレッション">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM ファイルのデ圧縮">}}
 
-<p>JPEG 2000 ファイルを非圧縮転送構文にデコンプレッションし、処理・解析、または JPEG 2000 をサポートしないシステムとの互換性を確保します。</p>
+<p>JPEG 2000 ファイルを非圧縮の転送構文にデ圧縮して、処理・解析、または JPEG 2000 をサポートしないシステムとの互換性を確保します。</p>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000 を非圧縮にデコンプレッション - C#</h3>
+ <h3>JPEG 2000 を非圧縮にデ圧縮 - C#</h3>
  <pre><code class="cs">// Load a JPEG 2000 compressed DICOM file
 DicomFile compressed = DicomFile.Open("j2k_compressed.dcm");
 
@@ -115,7 +115,7 @@ DicomFile uncompressed = compressed.Transcode(TransferSyntax.ExplicitVrLittleEnd
 uncompressed.Save("decompressed.dcm");</code></pre>
 </div>
 
-<p>単一の手順でデコンプレッションと他の圧縮形式へのトランスコードを同時に実行することも可能です。</p>
+<p>また、1 歩でデ圧縮と他の圧縮形式へのトランスコードを同時に実行できます。</p>
 
 <div class="codeblock" id="code">
  <h3>圧縮形式間のトランスコード - C#</h3>
@@ -127,9 +127,9 @@ jlsFile.Save("jpegls_lossless.dcm");</code></pre>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM 画像をレンダリング">}}
+{{< blocks/products/pf/feature-page-section h2="JPEG 2000 DICOM 画像のレンダリング">}}
 
-<p>JPEG 2000 圧縮 DICOM ファイルは、他の転送構文と同様に、表示やエクスポート用のピクセルデータにレンダリングできます。</p>
+<p>JPEG 2000 圧縮 DICOM ファイルは、他の転送構文と同様に、表示やエクスポート用の画素データにレンダリングできます。</p>
 
 <div class="codeblock" id="code">
  <h3>JPEG 2000 圧縮フレームをレンダリング - C#</h3>
@@ -160,10 +160,10 @@ image.CopyPixelsTo(pixels);</code></pre>
 </thead>
 <tbody>
 <tr><td>転送構文</td><td><code>Jpeg2000Lossless</code> (1.2.840.10008.1.2.4.90)</td><td><code>Jpeg2000Lossy</code> (1.2.840.10008.1.2.4.91)</td></tr>
-<tr><td>画像品質</td><td>ピクセル単位で完全一致 &mdash; オリジナルと同一</td><td>視覚的に類似、データの一部は永久に失われる</td></tr>
-<tr><td>圧縮率</td><td>通常 2:1〜3:1</td><td>通常 10:1〜30:1 以上</td></tr>
-<tr><td>適した用途</td><td>診断保存、法的記録、一次読影</td><td>予備レビュー、遠隔医療、ネットワーク転送</td></tr>
-<tr><td>ラウンドトリップ安全性</td><td>はい</td><td>いいえ &mdash; 再エンコードにより品質がさらに劣化</td></tr>
+<tr><td>画質</td><td>ピクセル単位で完全一致 &mdash; 元画像と同一</td><td>見た目は類似するが、一部データは永久に失われる</td></tr>
+<tr><td>圧縮率</td><td>通常 2:1 から 3:1</td><td>通常 10:1 から 30:1 以上</td></tr>
+<tr><td>適した用途</td><td>診断用アーカイブ、法的記録、一次読影</td><td>予備的レビュー、遠隔医療、ネットワーク転送</td></tr>
+<tr><td>往復安全性</td><td>はい</td><td>いいえ &mdash; 再エンコードするとさらに品質が低下します</td></tr>
 </tbody>
 </table>
 
@@ -171,16 +171,16 @@ image.CopyPixelsTo(pixels);</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="高速スループット JPEG 2000 (HTJ2K)">}}
 
-<p>HTJ2K (ISO/IEC 15444-15) は、JPEG 2000 の遅い算術コーダを高速ブロックコーダに置き換えます。ウェーブレット変換、プログレッション順序、品質は同じで、デコードおよびエンコードが数倍高速になります。Aspose.Medical は、純粋な .NET で 3 つすべての DICOM HTJ2K 転送構文を実装しており、モノクロとカラー画像をサポートし、HTJ2K と他のすべてのサポート構文間のトランスコードが可能です。</p>
+<p>HTJ2K（ISO/IEC 15444-15）は、JPEG 2000 の遅い算術コーダーを高速なブロックコーダーに置き換えます。ウェーブレット変換、プログレッション順序、品質は同じで、デコードおよびエンコードが数倍速くなります。Aspose.Medical は、純粋な .NET で DICOM HTJ2K の 3 つの転送構文すべてを実装し、モノクロおよびカラー画像に対応し、HTJ2K と他のすべてのサポート構文間のトランスコードを提供します。</p>
 
 <ul>
 <li><code>HTJ2KLossless</code> (1.2.840.10008.1.2.4.201) &mdash; ロスレスのみ</li>
-<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; RPCL プログレッション順序付きロスレス</li>
+<li><code>HTJ2KLosslessRPCL</code> (1.2.840.10008.1.2.4.202) &mdash; RPCL プログレッション順序のロスレス</li>
 <li><code>HTJ2K</code> (1.2.840.10008.1.2.4.203) &mdash; ロッシーまたはロスレス</li>
 </ul>
 
 <div class="codeblock" id="code">
- <h3>JPEG 2000 から HTJ2K へのトランスコードとその逆 - C#</h3>
+ <h3>JPEG 2000 と HTJ2K の相互トランスコード - C#</h3>
  <pre><code class="cs">// Transcode a JPEG 2000 file to HTJ2K, and back to classic JPEG 2000
 DicomFile j2kFile = DicomFile.Open("j2k_lossless.dcm");
 DicomFile htj2kFile = j2kFile.Transcode(TransferSyntax.HTJ2KLossless);
@@ -216,7 +216,7 @@ uncompressed.Save("decoded.dcm");</code></pre>
 {{< blocks/products/pf/slr-element name="ブログ" href="https://blog.aspose.com/category/medical/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle=".NET 用 Aspose.Medical を選ぶ理由は？" tabId="success-stories" >}}
+{{< blocks/products/pf/slr-tab tabTitle=".NET 向け Aspose.Medical を選ぶ理由" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="顧客一覧" href="https://company.aspose.com/customers" >}}
 {{< blocks/products/pf/slr-element name="成功事例" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}

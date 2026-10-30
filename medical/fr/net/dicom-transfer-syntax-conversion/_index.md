@@ -1,20 +1,20 @@
 ---
 title: Conversion de syntaxe de transfert DICOM en C# .NET | Aspose.Medical
 weight: 16000
-description: Transcodez des fichiers DICOM entre syntaxes de transfert en C# .NET. Prise en charge de JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE et des formats non compressés avec l'API Aspose.Medical.
+description: Transcoder des fichiers DICOM entre différentes syntaxes de transfert en C# .NET. Prise en charge de JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG‑LS, RLE et des formats non compressés avec l'API Aspose.Medical.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Conversion de syntaxe de transfert DICOM en .NET C#" h2="Transcodez des fichiers DICOM entre syntaxes de transfert non compressées, JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS et RLE. Bibliothèque .NET pure sans dépendances natives." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="Conversion de syntaxe de transfert DICOM en .NET C#" h2="Transcoder des fichiers DICOM entre les syntaxes de transfert non compressées, JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG‑LS et RLE. Bibliothèque .NET pure sans dépendances natives." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Qu’est‑ce qu’une syntaxe de transfert ?">}}
 
-<p>Une <strong>Transfer Syntax</strong> définit la façon dont les données DICOM sont encodées pour le stockage et la transmission. Elle spécifie trois aspects clés : l’ordre des octets (endianness), si les Value Representations sont explicites ou implicites, et l’algorithme de compression appliqué aux données d’image. Chaque fichier DICOM déclare sa syntaxe de transfert dans l’en‑tête File Meta Information.</p>
+<p>Une <strong>syntaxe de transfert</strong> définit la façon dont les données DICOM sont encodées pour le stockage et la transmission. Elle spécifie trois aspects clés : l’ordre des octets (endianness), si les représentations de valeur sont explicites ou implicites, et l’algorithme de compression appliqué aux données d’image. Chaque fichier DICOM indique sa syntaxe de transfert dans l’en‑tête des informations méta du fichier.</p>
 
-<p>Différents dispositifs médicaux, serveurs PACS et applications de visualisation prennent en charge différents ensembles de syntaxes de transfert. <strong>Aspose.Medical for .NET</strong> fournit la méthode <code>Transcode</code> pour convertir entre les syntaxes de transfert, permettant l’interopérabilité, l’optimisation du stockage et la compatibilité avec les outils de traitement &mdash; le tout dans une bibliothèque .NET pure sans dépendances natives.</p>
+<p>Différents appareils médicaux, serveurs PACS et applications de visualisation prennent en charge différents ensembles de syntaxes de transfert. <strong>Aspose.Medical for .NET</strong> fournit la méthode <code>Transcode</code> pour convertir entre les syntaxes de transfert, permettant l’interopérabilité, l’optimisation du stockage et la compatibilité avec les outils de traitement &mdash; le tout dans une bibliothèque .NET pure sans dépendances natives.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -50,7 +50,7 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 
 {{< blocks/products/pf/feature-page-section h2="Syntaxes de transfert prises en charge">}}
 
-<p>Le tableau suivant répertorie toutes les syntaxes de transfert standard des données d’image DICOM et leur état de prise en charge actuel dans Aspose.Medical for .NET. Tous les codecs pris en charge sont implémentés en C# pur et sont totalement indépendants de la plateforme.</p>
+<p>Le tableau suivant répertorie toutes les syntaxes de transfert d’images DICOM standard et leur état de prise en charge actuel dans Aspose.Medical for .NET. Tous les codecs pris en charge sont implémentés en pur C# et sont entièrement indépendants de la plateforme.</p>
 
 <table class="table table-bordered">
 <thead>
@@ -63,34 +63,34 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 </thead>
 <tbody>
 <tr><td colspan="4"><strong>Non compressé</strong></td></tr>
-<tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>Uncompressed</td><td>Pris en charge</td></tr>
-<tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>Uncompressed</td><td>Pris en charge</td></tr>
-<tr><td>Explicit VR Big Endian</td><td><code>1.2.840.10008.1.2.2</code></td><td>Uncompressed (retired)</td><td>Pris en charge</td></tr>
-<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Uncompressed</td><td>Non pris en charge</td></tr>
+<tr><td>Implicit VR Little Endian</td><td><code>1.2.840.10008.1.2</code></td><td>Non compressé</td><td>Pris en charge</td></tr>
+<tr><td>Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1</code></td><td>Non compressé</td><td>Pris en charge</td></tr>
+<tr><td>Explicit VR Big Endian</td><td><code>1.2.840.10008.1.2.2</code></td><td>Non compressé (retiré)</td><td>Pris en charge</td></tr>
+<tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Non compressé</td><td>Non pris en charge</td></tr>
 <tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>Pris en charge</td></tr>
 <tr><td colspan="4"><strong>JPEG</strong></td></tr>
-<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Lossy, 8-bit</td><td>Pris en charge</td></tr>
-<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Lossy, 12-bit</td><td>Non pris en charge</td></tr>
-<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Lossless</td><td>Pris en charge (8 bits uniquement)</td></tr>
-<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Lossless</td><td>Pris en charge (8 bits uniquement)</td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Avec perte, 8 bits</td><td>Pris en charge</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Avec perte, 12 bits</td><td>Pris en charge</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Sans perte</td><td>Pris en charge</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Sans perte</td><td>Pris en charge</td></tr>
 <tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
-<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Lossless</td><td>Pris en charge</td></tr>
-<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Near-lossless</td><td>Pris en charge</td></tr>
+<tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Sans perte</td><td>Pris en charge</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Quasi‑sans perte</td><td>Pris en charge</td></tr>
 <tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
-<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>Pris en charge (lecture couleur 8 bits et monochrome 16 bits ; écriture monochrome 16 bits ou RGB 8 bits)</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>Pris en charge (lecture couleur 8 bits et monochrome 16 bits ; écriture monochrome 16 bits ou RGB 8 bits)</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>Non pris en charge</td></tr>
-<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy or lossless</td><td>Non pris en charge</td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Sans perte</td><td>Pris en charge</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Avec perte ou sans perte</td><td>Pris en charge</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Sans perte</td><td>Non pris en charge</td></tr>
+<tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Avec perte ou sans perte</td><td>Non pris en charge</td></tr>
 <tr><td colspan="4"><strong>RLE</strong></td></tr>
-<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Lossless</td><td>Pris en charge</td></tr>
-<tr><td colspan="4"><strong>High-Throughput JPEG 2000 (HTJ2K)</strong></td></tr>
-<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>Pris en charge</td></tr>
-<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Lossless</td><td>Pris en charge</td></tr>
-<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Lossy or lossless</td><td>Pris en charge</td></tr>
+<tr><td>RLE Lossless</td><td><code>1.2.840.10008.1.2.5</code></td><td>Sans perte</td><td>Pris en charge</td></tr>
+<tr><td colspan="4"><strong>JPEG 2000 à haut débit (HTJ2K)</strong></td></tr>
+<tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Sans perte</td><td>Pris en charge</td></tr>
+<tr><td>HTJ2K with RPCL Options Lossless Only</td><td><code>1.2.840.10008.1.2.4.202</code></td><td>Sans perte</td><td>Pris en charge</td></tr>
+<tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Avec perte ou sans perte</td><td>Pris en charge</td></tr>
 <tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
-<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Lossless</td><td>Pris en charge</td></tr>
-<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Lossless</td><td>Décodage uniquement (l’encodage nécessite un flux source JPEG, pas les données d’image)</td></tr>
-<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Lossy or lossless</td><td>Pris en charge (mode avec perte)</td></tr>
+<tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Sans perte</td><td>Pris en charge</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Sans perte</td><td>Décodage uniquement (l’encodage nécessite un flux source JPEG, pas les données d’image)</td></tr>
+<tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Avec perte ou sans perte</td><td>Pris en charge (mode avec perte)</td></tr>
 </tbody>
 </table>
 
@@ -150,7 +150,7 @@ jxlLossy.Save("ct_jxl.dcm");</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="Inspecter les propriétés de la syntaxe de transfert">}}
 
-<p>La classe <code>TransferSyntax</code> expose des propriétés qui décrivent les caractéristiques d’encodage. Utilisez‑les pour inspecter la syntaxe de transfert actuelle d’un fichier ou pour sélectionner une syntaxe cible appropriée :</p>
+<p>La classe <code>TransferSyntax</code> expose des propriétés décrivant les caractéristiques d’encodage. Utilisez‑les pour inspecter la syntaxe de transfert actuelle d’un fichier ou pour sélectionner une syntaxe cible appropriée :</p>
 
 <div class="codeblock" id="code">
  <h3>Lire les propriétés de la syntaxe de transfert - C#</h3>
@@ -178,12 +178,12 @@ Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
 </thead>
 <tbody>
 <tr><td><code>Uid</code></td><td><code>Uid</code></td><td>L’identifiant unique de la syntaxe de transfert</td></tr>
-<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Indique si les Value Representations sont explicitement encodées</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Indique si les représentations de valeur sont encodées explicitement</td></tr>
 <tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>Indique si l’ordre des octets est little endian</td></tr>
 <tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>Indique si les données d’image sont encapsulées (compressées)</td></tr>
 <tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>Indique si la méthode de compression est avec perte</td></tr>
 <tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>Indique si la syntaxe utilise la compression deflate</td></tr>
-<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Indique si la syntaxe de transfert est retirée du standard DICOM</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Indique si la syntaxe de transfert est retirée par la norme DICOM</td></tr>
 <tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>L’identifiant ISO de la méthode de compression avec perte</td></tr>
 </tbody>
 </table>
@@ -192,7 +192,7 @@ Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
 
 {{< blocks/products/pf/feature-page-section h2="Compression avec perte vs sans perte">}}
 
-<p>Comprendre la différence entre compression avec perte et sans perte est essentiel lors du transcodage de fichiers DICOM :</p>
+<p>Comprendre la différence entre compression avec perte et sans perte est crucial lors du transcodage des fichiers DICOM :</p>
 
 <table class="table table-bordered">
 <thead>
@@ -203,15 +203,15 @@ Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
 </tr>
 </thead>
 <tbody>
-<tr><td>Qualité d’image</td><td>Pixel‑perfect &mdash; données originales entièrement préservées</td><td>Certaines données perdues de façon permanente afin d’obtenir une taille plus petite</td></tr>
-<tr><td>Ratio de compression</td><td>Typiquement 2 : 1 à 3 : 1</td><td>Typiquement 10 : 1 à 30 : 1 ou plus</td></tr>
-<tr><td>Aller‑retour sûr</td><td>Oui &mdash; décompression et obtention des pixels identiques</td><td>Non &mdash; chaque ré‑encodage avec perte dégrade davantage la qualité</td></tr>
-<tr><td>Cas d’utilisation</td><td>Archivage, diagnostics, dossiers légaux</td><td>Examen préliminaire, télémédecine, transmission réseau</td></tr>
-<tr><td>Codecs pris en charge</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, HTJ2K Lossless, JPEG XL Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000, HTJ2K, JPEG XL</td></tr>
+<tr><td>Qualité d’image</td><td>Pixel‑perfect &mdash; données originales entièrement préservées</td><td>Des données sont définitivement perdues pour réduire la taille</td></tr>
+<tr><td>Taux de compression</td><td>Typiquement de 2:1 à 3:1</td><td>Typiquement de 10:1 à 30:1 ou plus</td></tr>
+<tr><td>Récupération sans perte</td><td>Oui &mdash; décompression restitue les mêmes pixels</td><td>Non &mdash; chaque recompression avec perte dégrade davantage la qualité</td></tr>
+<tr><td>Cas d’utilisation</td><td>Archivage, diagnostics, dossiers légaux</td><td>Revue préliminaire, télémédecine, transmission réseau</td></tr>
+<tr><td>Codecs pris en charge</td><td>JPEG Lossless, JPEG‑LS, JPEG 2000 Lossless, HTJ2K Lossless, JPEG XL Lossless, RLE</td><td>JPEG Baseline, JPEG Extended, JPEG‑LS Near-Lossless, JPEG 2000, HTJ2K, JPEG XL</td></tr>
 </tbody>
 </table>
 
-<p><strong>Important :</strong> Le transcodage d’un fichier compressé avec perte vers une syntaxe sans perte ne restaure pas les données perdues. La détérioration de la qualité due à la compression initiale avec perte est permanente.</p>
+<p><strong>Important :</strong> Le transcodage d’un fichier compressé avec perte vers une syntaxe sans perte ne restaure pas les données perdues. La dégradation de la qualité due à la compression initiale avec perte est permanente.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -224,15 +224,15 @@ Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
 {{< blocks/products/pf/slr-element name="Références API" href="https://reference.aspose.com/medical/net/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
-{{< blocks/products/pf/slr-tab tabTitle="Assistance produit" tabId="support" >}}
-{{< blocks/products/pf/slr-element name="Assistance gratuite" href="https://forum.aspose.com/c/medical" >}}
-{{< blocks/products/pf/slr-element name="Assistance payante" href="https://helpdesk.aspose.com/" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Support produit" tabId="support" >}}
+{{< blocks/products/pf/slr-element name="Support gratuit" href="https://forum.aspose.com/c/medical" >}}
+{{< blocks/products/pf/slr-element name="Support payant" href="https://helpdesk.aspose.com/" >}}
 {{< blocks/products/pf/slr-element name="Blog" href="https://blog.aspose.com/category/medical/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="Pourquoi Aspose.Medical pour .NET ?" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="Liste des clients" href="https://company.aspose.com/customers" >}}
-{{< blocks/products/pf/slr-element name="Histoires de réussite" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< blocks/products/pf/slr-element name="Cas de succès" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< /blocks/products/pf/support-learning-resources >}}

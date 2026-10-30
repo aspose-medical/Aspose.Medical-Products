@@ -1,7 +1,7 @@
 ---
 title: Konwersja składni transferu DICOM w C# .NET | Aspose.Medical
 weight: 16000
-description: Transkoduj pliki DICOM pomiędzy składniami transferu w C# .NET. Obsługa JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE oraz formatów nieskompresowanych przy użyciu API Aspose.Medical.
+description: Transkoduj pliki DICOM między składniami transferu w C# .NET. Obsługa JPEG, JPEG 2000, HTJ2K, JPEG XL, JPEG-LS, RLE oraz formatów nieskompresowanych przy użyciu API Aspose.Medical.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -12,15 +12,15 @@ description: Transkoduj pliki DICOM pomiędzy składniami transferu w C# .NET. O
 
 {{< blocks/products/pf/feature-page-section h2="Czym jest składnia transferu?">}}
 
-<p><strong>Składnia transferu</strong> określa sposób kodowania danych DICOM do przechowywania i transmisji. Definiuje trzy kluczowe aspekty: kolejność bajtów (endianness), czy reprezentacje wartości są explicite czy implicite, oraz algorytm kompresji stosowany do danych pikseli. Każdy plik DICOM deklaruje swoją składnię transferu w nagłówku File Meta Information.</p>
+<p>A <strong>Transfer Syntax</strong> definiuje sposób kodowania danych DICOM do przechowywania i transmisji. Określa trzy kluczowe aspekty: kolejność bajtów (endianness), czy Value Representations są jawne lub niejawne oraz algorytm kompresji stosowany do danych pikseli. Każdy plik DICOM deklaruje swoją składnię transferu w nagłówku File Meta Information.</p>
 
-<p>Różne urządzenia medyczne, serwery PACS i aplikacje przeglądające obsługują różne zestawy składni transferu. <strong>Aspose.Medical for .NET</strong> udostępnia metodę <code>Transcode</code> do konwersji pomiędzy składniami transferu, umożliwiając interoperacyjność, optymalizację przechowywania i kompatybilność z narzędziami przetwarzającymi — wszystko w czystej bibliotece .NET bez zależności natywnych.</p>
+<p>Różne urządzenia medyczne, serwery PACS i aplikacje przeglądające obsługują różne zestawy składni transferu. <strong>Aspose.Medical for .NET</strong> udostępnia metodę <code>Transcode</code>, aby konwertować pomiędzy składniami transferu, umożliwiając interoperacyjność, optymalizację przechowywania i zgodność z narzędziami przetwarzającymi &mdash; wszystko w czystej bibliotece .NET bez zależności natywnych.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Transkoduj plik DICOM w C#">}}
 
-<p>Metoda <code>DicomFile.Transcode</code> konwertuje plik DICOM z bieżącej składni transferu na dowolną obsługiwaną docelową składnię. Metoda zwraca nową instancję <code>DicomFile</code> &mdash; oryginał pozostaje niezmieniony:</p>
+<p>Metoda <code>DicomFile.Transcode</code> konwertuje plik DICOM z jego bieżącej składni transferu na dowolną obsługiwaną docelową składnię. Metoda zwraca nową instancję <code>DicomFile</code> — oryginał pozostaje niezmieniony:</p>
 
 <div class="codeblock" id="code">
  <h3>Podstawowe transkodowanie DICOM - C#</h3>
@@ -36,7 +36,7 @@ DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndi
 uncompressed.Save("uncompressed.dcm");</code></pre>
 </div>
 
-<p>Możesz również transkodować bezpośrednio na poziomie <code>Dataset</code>:</p>
+<p>Możesz także transkodować bezpośrednio na poziomie <code>Dataset</code>:</p>
 
 <div class="codeblock" id="code">
  <h3>Transkoduj Dataset - C#</h3>
@@ -50,7 +50,7 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 
 {{< blocks/products/pf/feature-page-section h2="Obsługiwane składnie transferu">}}
 
-<p>Poniższa tabela wymienia wszystkie standardowe składnie transferu danych obrazu DICOM oraz ich aktualny status wsparcia w Aspose.Medical for .NET. Wszystkie obsługiwane kodeki zostały zaimplementowane w czystym C# i są w pełni niezależne od platformy.</p>
+<p>Poniższa tabela wymienia wszystkie standardowe składnie transferu danych obrazu DICOM oraz ich aktualny status wsparcia w Aspose.Medical for .NET. Wszystkie obsługiwane kodeki są zaimplementowane w czystym C# i są w pełni niezależne od platformy.</p>
 
 <table class="table table-bordered">
 <thead>
@@ -69,16 +69,16 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 <tr><td>Encapsulated Uncompressed Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.98</code></td><td>Nieskompresowane</td><td>Nieobsługiwane</td></tr>
 <tr><td>Deflated Explicit VR Little Endian</td><td><code>1.2.840.10008.1.2.1.99</code></td><td>Deflated</td><td>Wspierane</td></tr>
 <tr><td colspan="4"><strong>JPEG</strong></td></tr>
-<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Stratny, 8-bitowy</td><td>Wspierane</td></tr>
-<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Stratny, 12-bitowy</td><td>Nieobsługiwane</td></tr>
-<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Bezstratny</td><td>Wspierane (tylko 8-bitowe)</td></tr>
-<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Bezstratny</td><td>Wspierane (tylko 8-bitowe)</td></tr>
+<tr><td>JPEG Baseline (Process 1)</td><td><code>1.2.840.10008.1.2.4.50</code></td><td>Stratny, 8-bit</td><td>Wspierane</td></tr>
+<tr><td>JPEG Extended (Process 2 &amp; 4)</td><td><code>1.2.840.10008.1.2.4.51</code></td><td>Stratny, 12-bit</td><td>Wspierane</td></tr>
+<tr><td>JPEG Lossless (Process 14)</td><td><code>1.2.840.10008.1.2.4.57</code></td><td>Bezstratny</td><td>Wspierane</td></tr>
+<tr><td>JPEG Lossless, First-Order Prediction (Process 14, SV1)</td><td><code>1.2.840.10008.1.2.4.70</code></td><td>Bezstratny</td><td>Wspierane</td></tr>
 <tr><td colspan="4"><strong>JPEG-LS</strong></td></tr>
 <tr><td>JPEG-LS Lossless</td><td><code>1.2.840.10008.1.2.4.80</code></td><td>Bezstratny</td><td>Wspierane</td></tr>
-<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Near-lossless</td><td>Wspierane</td></tr>
+<tr><td>JPEG-LS Near-Lossless</td><td><code>1.2.840.10008.1.2.4.81</code></td><td>Bliskie bezstratny</td><td>Wspierane</td></tr>
 <tr><td colspan="4"><strong>JPEG 2000</strong></td></tr>
-<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Bezstratny</td><td>Wspierane (odczyt 8-bitowego koloru i 16-bitowego monochromu; zapis 16-bitowego monochromu lub 8-bitowego RGB)</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Stratny lub bezstratny</td><td>Wspierane (odczyt 8-bitowego koloru i 16-bitowego monochromu; zapis 16-bitowego monochromu lub 8-bitowego RGB)</td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Bezstratny</td><td>Wspierane</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Stratny lub bezstratny</td><td>Wspierane</td></tr>
 <tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Bezstratny</td><td>Nieobsługiwane</td></tr>
 <tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Stratny lub bezstratny</td><td>Nieobsługiwane</td></tr>
 <tr><td colspan="4"><strong>RLE</strong></td></tr>
@@ -89,7 +89,7 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 <tr><td>HTJ2K</td><td><code>1.2.840.10008.1.2.4.203</code></td><td>Stratny lub bezstratny</td><td>Wspierane</td></tr>
 <tr><td colspan="4"><strong>JPEG XL</strong></td></tr>
 <tr><td>JPEG XL Lossless</td><td><code>1.2.840.10008.1.2.4.110</code></td><td>Bezstratny</td><td>Wspierane</td></tr>
-<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Bezstratny</td><td>Tylko dekodowanie (kodowanie wymaga strumienia źródłowego JPEG, nie danych pikseli)</td></tr>
+<tr><td>JPEG XL JPEG Recompression</td><td><code>1.2.840.10008.1.2.4.111</code></td><td>Bezstratny</td><td>Tylko dekodowanie (kodowanie wymaga źródłowego strumienia JPEG, nie danych pikseli)</td></tr>
 <tr><td>JPEG XL</td><td><code>1.2.840.10008.1.2.4.112</code></td><td>Stratny lub bezstratny</td><td>Wspierane (tryb stratny)</td></tr>
 </tbody>
 </table>
@@ -101,7 +101,7 @@ Dataset transcoded = dicomFile.Dataset.Transcode(TransferSyntax.RleLossless);</c
 <p>Różne przepływy pracy wymagają różnych strategii transkodowania. Oto najczęstsze scenariusze:</p>
 
 <div class="codeblock" id="code">
- <h3>Dekompresja w celu przetwarzania - C#</h3>
+ <h3>Dekompresja do przetwarzania - C#</h3>
  <pre><code class="cs">// Decompress any DICOM file to uncompressed format for image processing
 DicomFile dicomFile = DicomFile.Open("compressed.dcm");
 DicomFile uncompressed = dicomFile.Transcode(TransferSyntax.ExplicitVrLittleEndian);
@@ -109,7 +109,7 @@ uncompressed.Save("uncompressed.dcm");</code></pre>
 </div>
 
 <div class="codeblock" id="code">
- <h3>Kompresja w celu archiwizacji - C#</h3>
+ <h3>Kompresja do archiwizacji - C#</h3>
  <pre><code class="cs">// Lossless compression for long-term archival (no quality loss)
 DicomFile dicomFile = DicomFile.Open("uncompressed.dcm");
 
@@ -124,7 +124,7 @@ DicomFile rleArchive = dicomFile.Transcode(TransferSyntax.RleLossless);</code></
 </div>
 
 <div class="codeblock" id="code">
- <h3>Kompresja w celu transmisji sieciowej - C#</h3>
+ <h3>Kompresja do transmisji sieciowej - C#</h3>
  <pre><code class="cs">// Lossy compression for fast transmission (smaller file size)
 DicomFile dicomFile = DicomFile.Open("large_study.dcm");
 DicomFile compressed = dicomFile.Transcode(TransferSyntax.Jpeg2000Lossy);
@@ -178,13 +178,13 @@ Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
 </thead>
 <tbody>
 <tr><td><code>Uid</code></td><td><code>Uid</code></td><td>Unikalny identyfikator składni transferu</td></tr>
-<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Czy reprezentacje wartości są jawnie kodowane</td></tr>
+<tr><td><code>IsExplicitVr</code></td><td><code>bool</code></td><td>Czy Value Representations są jawnie kodowane</td></tr>
 <tr><td><code>IsLittleEndian</code></td><td><code>bool</code></td><td>Czy kolejność bajtów jest little endian</td></tr>
 <tr><td><code>IsEncapsulated</code></td><td><code>bool</code></td><td>Czy dane pikseli są enkapsulowane (skompresowane)</td></tr>
 <tr><td><code>IsLossy</code></td><td><code>bool</code></td><td>Czy metoda kompresji jest stratna</td></tr>
 <tr><td><code>IsDeflate</code></td><td><code>bool</code></td><td>Czy składnia używa kompresji deflate</td></tr>
-<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Czy składnia transferu została wycofana przez standard DICOM</td></tr>
-<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>Identyfikator metody kompresji stratnej w standardzie ISO</td></tr>
+<tr><td><code>IsRetired</code></td><td><code>bool</code></td><td>Czy składnia transferu jest wycofana przez standard DICOM</td></tr>
+<tr><td><code>LossyCompressionMethod</code></td><td><code>LossyCompressionMethods</code></td><td>Identyfikator metody kompresji stratnej według standardu ISO</td></tr>
 </tbody>
 </table>
 
@@ -203,15 +203,15 @@ Console.WriteLine($"Retired: {ts.IsRetired}");</code></pre>
 </tr>
 </thead>
 <tbody>
-<tr><td>Jakość obrazu</td><td>Pixel-perfect &mdash; oryginalne dane w pełni zachowane</td><td>Niektóre dane trwale utracone w celu uzyskania mniejszego rozmiaru</td></tr>
-<tr><td>Współczynnik kompresji</td><td>Zazwyczaj 2:1 do 3:1</td><td>Zazwyczaj 10:1 do 30:1 lub wyższy</td></tr>
-<tr><td>Bezpieczny przy pełnym cyklu</td><td>Tak &mdash; dekompresja i uzyskanie identycznych pikseli</td><td>Nie &mdash; każde ponowne kodowanie stratne dodatkowo obniża jakość</td></tr>
+<tr><td>Jakość obrazu</td><td>Pixel-perfect &mdash; oryginalne dane w pełni zachowane</td><td>Część danych trwale utracona w celu uzyskania mniejszego rozmiaru</td></tr>
+<tr><td>Współczynnik kompresji</td><td>Typowo 2:1 do 3:1</td><td>Typowo 10:1 do 30:1 lub wyższy</td></tr>
+<tr><td>Bezpieczny w pełnym cyklu</td><td>Tak &mdash; dekompresja i uzyskanie identycznych pikseli</td><td>Nie &mdash; każde ponowne kodowanie stratne dodatkowo pogarsza jakość</td></tr>
 <tr><td>Zastosowania</td><td>Archiwizacja, diagnostyka, dokumentacja prawna</td><td>Wstępna ocena, telemedycyna, transmisja sieciowa</td></tr>
-<tr><td>Obsługiwane kodeki</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, HTJ2K Lossless, JPEG XL Lossless, RLE</td><td>JPEG Baseline, JPEG-LS Near-Lossless, JPEG 2000, HTJ2K, JPEG XL</td></tr>
+<tr><td>Obsługiwane kodeki</td><td>JPEG Lossless, JPEG-LS, JPEG 2000 Lossless, HTJ2K Lossless, JPEG XL Lossless, RLE</td><td>JPEG Baseline, JPEG Extended, JPEG-LS Near-Lossless, JPEG 2000, HTJ2K, JPEG XL</td></tr>
 </tbody>
 </table>
 
-<p><strong>Ważne:</strong> Transkodowanie pliku skompresowanego stratnie do składni bezstratnej nie przywraca utraconych danych. Pogorszenie jakości spowodowane pierwotną kompresją stratną jest trwałe.</p>
+<p><strong>Ważne:</strong> Transkodowanie z pliku skompresowanego stratnie do składni bezstratnej nie przywraca utraconych danych. Degradacja jakości wynikająca z pierwotnej kompresji stratnej jest trwała.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 

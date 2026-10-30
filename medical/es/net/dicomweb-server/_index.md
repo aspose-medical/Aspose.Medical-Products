@@ -2,20 +2,20 @@
 title: Servidor DICOMweb en C# .NET - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
 weight: 9200
 
-description: Cree su propio servidor DICOMweb o PACS en C#. Aspose.Medical implementa QIDO-RS, WADO-RS, STOW-RS y los servicios de listas de trabajo en ASP.NET Core; usted conecta el almacenamiento.
+description: Cree su propio servidor DICOMweb o PACS en C#. Aspose.Medical implementa QIDO-RS, WADO-RS, STOW-RS y los servicios de lista de trabajo en ASP.NET Core; usted conecta el almacenamiento.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="Servidor DICOMweb para .NET C#" h2="Agregue puntos finales QIDO-RS, WADO-RS y STOW-RS a un servicio ASP.NET Core. La biblioteca habla el protocolo; su código decide dónde se almacenan los estudios." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="Servidor DICOMweb para .NET C#" h2="Agregue los endpoints QIDO-RS, WADO-RS y STOW-RS a un servicio ASP.NET Core. La biblioteca habla el protocolo; su código decide dónde se almacenan los estudios." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Su propio servidor DICOMweb en C#">}}
 
-<p>Un PACS, un VNA, un archivo en la nube o una plataforma de investigación debe responder a solicitudes DICOMweb: búsquedas QIDO-RS, descargas WADO-RS y cargas STOW-RS, y a menudo también los servicios de listas de trabajo. Cada uno de ellos tiene sus propias rutas, tipos de medio, cuerpos multipartes, reglas de coincidencia y códigos de estado.</p>
+<p>Un PACS, un VNA, un archivo en la nube o una plataforma de investigación debe responder a solicitudes DICOMweb: búsquedas QIDO-RS, descargas WADO-RS y cargas STOW-RS, y a menudo también los servicios de lista de trabajo. Cada uno de ellos tiene sus propias rutas, tipos de medio, cuerpos multipart, reglas de coincidencia y códigos de estado.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> implementa esa parte del protocolo desde la versión 26.10. Lee cada solicitud, la verifica contra el estándar, coincide claves de búsqueda según las reglas DICOM, pagina los resultados, convierte sintaxis de transferencia y escribe la respuesta. Su código hace lo que solo usted puede hacer: almacenar una instancia, encontrar candidatos para una búsqueda y devolver los archivos almacenados. Los visores, modalidades y otros archivos entonces funcionan con su servidor como con cualquier otro servidor DICOMweb, y también lo hace el <a href="/medical/net/dicomweb-client/">cliente DICOMweb</a> de la misma biblioteca.</p>
+<p><strong>Aspose.Medical for .NET</strong> implementa esa parte del protocolo desde la versión 26.10. Lee cada solicitud, la verifica contra el estándar, coincide las claves de búsqueda según las reglas DICOM, pagina los resultados, convierte sintaxis de transferencia y escribe la respuesta. Su código hace lo que solo usted puede hacer: almacenar una instancia, encontrar candidatos para una búsqueda y devolver los archivos almacenados. Los visores, modalidades y otros archivos entonces funcionan con su servidor como con cualquier otro servidor DICOMweb, y también lo hace el <a href="/medical/net/dicomweb-client/">cliente DICOMweb</a> de la misma biblioteca.</p>
 
 <p>El servidor está gestionado en C#. Se ejecuta dondequiera que ASP.NET Core se ejecute: en Windows, en Linux y en un contenedor.</p>
 
@@ -23,7 +23,7 @@ description: Cree su propio servidor DICOMweb o PACS en C#. Aspose.Medical imple
 
 {{< blocks/products/pf/feature-page-section h2="Un servidor completo en ASP.NET Core">}}
 
-<p>Instale el paquete <code>Aspose.Medical.Dicom.Web.AspNetCore</code>. Trae Aspose.Medical con él y conecta los servicios DICOMweb a la inyección de dependencias y al enrutamiento de puntos finales. Este <code>Program.cs</code> es un servidor de Studies funcional; las dos clases que registra se muestran a continuación.</p>
+<p>Instale el paquete <code>Aspose.Medical.Dicom.Web.AspNetCore</code>. Incluye Aspose.Medical y conecta los servicios DICOMweb a la inyección de dependencias y al enrutamiento de endpoints. Este <code>Program.cs</code> es un servidor de Estudios funcional; las dos clases que registra se muestran a continuación.</p>
 
 <div class="codeblock" id="code">
  <h3>Program.cs de un servidor DICOMweb - C#</h3>
@@ -41,13 +41,13 @@ app.MapDicomWeb("/dicomweb");
 app.Run();</code></pre>
 </div>
 
-<p>Cada ruta de Studies ahora responde bajo <code>/dicomweb</code>: <code>/dicomweb/studies</code> para búsqueda y carga, <code>/dicomweb/studies/{study}/series/{series}/instances/{instance}</code> para recuperación, y las rutas para metadatos, fotogramas, datos masivos e imágenes renderizadas. El documento de capacidades en la raíz del servicio enumera exactamente las transacciones que el servidor admite.</p>
+<p>Ahora cada ruta de Studies responde bajo <code>/dicomweb</code>: <code>/dicomweb/studies</code> para búsqueda y carga, <code>/dicomweb/studies/{study}/series/{series}/instances/{instance}</code> para recuperación, y las rutas para metadatos, fotogramas, datos masivos e imágenes renderizadas. El documento de capacidades en la raíz del servicio enumera exactamente las transacciones que el servidor soporta.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Conecte su almacenamiento">}}
 
-<p>El servicio Studies necesita una interfaz con tres métodos: almacenar una instancia, devolver los archivos almacenados y devolver candidatos de búsqueda. Esta implementación mantiene cada instancia como un archivo en una carpeta por estudio y serie.</p>
+<p>El servicio Studies necesita una interfaz con tres métodos: almacenar una instancia, devolver los archivos almacenados y devolver los candidatos de búsqueda. Esta implementación mantiene cada instancia como un archivo en una carpeta por estudio y serie.</p>
 
 <div class="codeblock" id="code">
  <h3>Un archivo de carpetas detrás de QIDO-RS, WADO-RS y STOW-RS - C#</h3>
@@ -113,7 +113,7 @@ public sealed class FolderArchive(string root) : IDicomWebStudiesProvider
 }</code></pre>
 </div>
 
-<p>La biblioteca verifica los UID en cada ruta de solicitud y en cada instancia cargada antes de llamar al proveedor. Una instancia sin UID válidos se informa como fallida y nunca llega a <code>StoreAsync</code>.</p>
+<p>La biblioteca verifica los UID en cada ruta de solicitud y en cada instancia cargada antes de llamar al proveedor. Una instancia sin UID válidos se registra como fallida y nunca llega a <code>StoreAsync</code>.</p>
 
 <p>Una carpeta es suficiente para probar el servidor. Un archivo de producción mantiene los mismos tres métodos y coloca un almacén de objetos detrás de <code>StoreAsync</code> y <code>RetrieveAsync</code> y un índice de base de datos detrás de <code>FindCandidatesAsync</code>.</p>
 
@@ -121,12 +121,12 @@ public sealed class FolderArchive(string root) : IDicomWebStudiesProvider
 
 {{< blocks/products/pf/feature-page-section h2="Búsqueda: la biblioteca aplica las reglas de coincidencia DICOM">}}
 
-<p>La coincidencia QIDO-RS es más que una comparación de cadenas: comodines, rangos de fecha y hora, listas de UID, nombres de personas difusos, valores vacíos y claves dentro de secuencias. El proveedor no implementa nada de eso. Devuelve candidatos en un orden estable y puede devolver más de lo que coincide. La biblioteca aplica la coincidencia DICOM exacta a cada candidato, conserva los campos solicitados y aplica <code>offset</code> y <code>limit</code>. Una respuesta contiene como máximo 1000 resultados por defecto, y <code>DicomWebStandardServiceOptions</code> modifica ese límite.</p>
+<p>La coincidencia QIDO-RS es más que una comparación de cadenas: comodines, rangos de fecha y hora, listas de UID, nombres de persona difusos, valores vacíos y claves dentro de secuencias. El proveedor no implementa nada de ello. Devuelve candidatos en un orden estable, y puede devolver más de los que coinciden. La biblioteca aplica la coincidencia DICOM exacta a cada candidato, mantiene los campos solicitados y aplica <code>offset</code> y <code>limit</code>. Una respuesta contiene como máximo 1000 resultados por defecto, y <code>DicomWebStandardServiceOptions</code> modifica ese límite.</p>
 
 <p>Para mantener rápidas las búsquedas en un archivo grande, pase las claves selectivas a la base de datos. <code>search.Plan.Filter</code> contiene las claves de búsqueda compiladas, con el atributo, el tipo de coincidencia y los valores de cada una:</p>
 
 <div class="codeblock" id="code">
- <h3>Leer un ID de Paciente exacto de una búsqueda - C#</h3>
+ <h3>Leer un Patient ID exacto de una búsqueda - C#</h3>
  <pre><code class="cs">// The Patient ID of a search that asks for one exact value, or null
 static string? ExactPatientId(DicomWebSearchContext search) =&gt;
     search.Plan.Filter
@@ -135,23 +135,23 @@ static string? ExactPatientId(DicomWebSearchContext search) =&gt;
         .FirstOrDefault();</code></pre>
 </div>
 
-<p>Una consulta de base de datos construida de esta manera puede devolver filas extra, por ejemplo cuando ignora una clave que no puede traducir. La coincidencia final en la biblioteca las elimina. No debe descartar coincidencias verdaderas, porque la biblioteca no puede agregarlas de nuevo.</p>
+<p>Una consulta a la base de datos construida de esta manera puede devolver filas extra, por ejemplo cuando ignora una clave que no puede traducir. La coincidencia final en la biblioteca las elimina. No debe descartar coincidencias reales, porque la biblioteca no puede volver a agregarlas.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Almacenamiento: un resultado por cada instancia">}}
+{{< blocks/products/pf/feature-page-section h2="Almacenamiento: un resultado para cada instancia">}}
 
-<p>Una solicitud STOW-RS puede contener cientos de instancias. La biblioteca analiza el cuerpo multipart y llama a <code>StoreAsync</code> para cada instancia sucesivamente, de modo que toda la carga nunca se mantiene en memoria al mismo tiempo. Para cada instancia el proveedor devuelve <code>Stored</code>, <code>Warning</code> para una instancia almacenada con cambios, o <code>Failed</code> con un código de razón DICOM opcional.</p>
+<p>Una solicitud STOW-RS puede contener cientos de instancias. La biblioteca analiza el cuerpo multipart y llama a <code>StoreAsync</code> para cada instancia en turno, de modo que toda la carga nunca se mantiene en memoria de una sola vez. Para cada instancia, el proveedor devuelve <code>Stored</code>, <code>Warning</code> para una instancia almacenada con cambios, o <code>Failed</code> con un código de razón DICOM opcional.</p>
 
-<p>La biblioteca genera el informe STOW-RS a partir de estos resultados y selecciona el estado: 200 cuando cada instancia se almacena, 202 cuando algunas tienen advertencias o fallan, 409 cuando todas fallan. Las instancias en una solicitud para un estudio con nombre que pertenecen a otro estudio son rechazadas antes de que se llame al proveedor.</p>
+<p>La biblioteca genera el informe STOW-RS a partir de estos resultados y selecciona el estado: 200 cuando todas las instancias se almacenan, 202 cuando algunas tienen advertencias o fallan, 409 cuando todas fallan. Las instancias en una solicitud para un estudio nombrado que pertenecen a otro estudio son rechazadas antes de que se invoque al proveedor.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Recuperación: sintaxis de transferencia, fotogramas e imágenes renderizadas">}}
 
-<p>El proveedor devuelve los archivos almacenados, y la biblioteca los entrega en la forma que el cliente solicitó. Un cliente WADO-RS puede solicitar una sintaxis de transferencia en el encabezado <code>Accept</code>, y la biblioteca convierte cada archivo antes de enviarlo, con sus propios códecs, incluyendo HTJ2K y JPEG XL. Los metadatos en DICOM JSON o XML, los datos masivos y los fotogramas individuales provienen del mismo proveedor, sin código adicional.</p>
+<p>El proveedor devuelve los archivos almacenados, y la biblioteca los entrega en la forma que el cliente solicitó. Un cliente WADO-RS puede solicitar una sintaxis de transferencia en el encabezado <code>Accept</code>, y la biblioteca convierte cada archivo antes de enviarlo, con sus propios códecs, incluidos HTJ2K y JPEG XL. Los metadatos en DICOM JSON o XML, los datos masivos y los fotogramas individuales provienen del mismo proveedor, sin código adicional.</p>
 
-<p>Las imágenes renderizadas requieren una clase adicional, porque solo usted decide qué imágenes puede producir el servidor. Esta ofrece JPEG para instancias renderizadas, fotogramas renderizados y miniaturas, y la biblioteca los renderiza:</p>
+<p>Las imágenes renderizadas necesitan una clase adicional, porque solo usted decide qué imágenes puede producir el servidor. Esta ofrece JPEG para instancias renderizadas, fotogramas renderizados y miniaturas, y la biblioteca los renderiza:</p>
 
 <div class="codeblock" id="code">
  <h3>Ofrecer imágenes JPEG renderizadas y miniaturas - C#</h3>
@@ -169,37 +169,37 @@ public sealed class JpegRendering : IDicomWebRepresentationProvider
 }</code></pre>
 </div>
 
-<p>El renderizador incorporado produce JPEG a partir de una instancia de un solo fotograma o de los fotogramas que una solicitud seleccione. Una instancia multi-fotograma renderizada como un todo, otros formatos de imagen, y los parámetros de viewport, ventana y perfil ICC requieren su propio <code>RetrieveAsync</code> en esta clase.</p>
+<p>El renderizador incorporado produce JPEG a partir de una instancia de un solo marco o de los marcos que selecciona una solicitud. Una instancia multi-marco renderizada como un todo, una imagen más ancha o alta que 65500 píxeles (las miniaturas pasan por encima de tales imágenes), otros formatos de imagen y los parámetros de viewport, ventana y perfil ICC requieren su propio <code>RetrieveAsync</code> en esta clase.</p>
 
-<p>Las miniaturas se manejan con cuidado para la privacidad del paciente. El renderizador incorporado crea una miniatura solo a partir de una instancia cuyas atributos Burned In Annotation y Recognizable Visual Features son ambos <code>NO</code>, lo que significa que la propia imagen declara que no muestra datos del paciente. Muchas imágenes no poseen estos atributos, y para ellas el servidor responde 406. Si su archivo necesita miniaturas de esas imágenes, produzcalas en su propio <code>RetrieveAsync</code> y asegúrese de que oculten cualquier dato del paciente.</p>
+<p>Las miniaturas se manejan con cuidado para la privacidad del paciente. El renderizador incorporado crea una miniatura solo a partir de una instancia cuyos atributos Burned In Annotation y Recognizable Visual Features son ambos <code>NO</code>, lo que indica que la propia imagen declara que no muestra datos del paciente. Muchas imágenes no poseen estos atributos, y para ellas el servidor responde 406. Si su archivo necesita miniaturas de dichas imágenes, génerelas en su propio <code>RetrieveAsync</code> y asegúrese de que oculten cualquier dato del paciente.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Listas de trabajo, pasos de procedimiento y los demás servicios">}}
+{{< blocks/products/pf/feature-page-section h2="Listas de trabajo, pasos de procedimiento y los otros servicios">}}
 
 <p>Los demás servicios DICOMweb siguen el mismo modelo: registrar el servicio, implementar su interfaz de almacenamiento.</p>
 
 <ul>
-<li><a href="/medical/net/ups-rs/">UPS-RS</a> listas de trabajo con <code>AddStandardWorklistService</code>: crear, buscar y actualizar elementos de trabajo y cambiar su estado, con las reglas de estado verificadas por la biblioteca y notificaciones de eventos enviadas mediante un WebSocket.</li>
+<li><a href="/medical/net/ups-rs/">UPS-RS</a> listas de trabajo con <code>AddStandardWorklistService</code>: crear, buscar y actualizar ítems de trabajo y cambiar su estado, con las reglas de estado verificadas por la biblioteca y notificaciones de eventos enviadas mediante WebSocket.</li>
 <li>La <a href="/medical/net/modality-worklist/">lista de trabajo de modalidad</a> (MWL-RS) con <code>AddStandardModalityWorklistService</code>, para que las modalidades puedan consultar los pasos de procedimiento programados de su RIS.</li>
-<li>Pasos de procedimiento realizados por la modalidad (MPPS-RS), compromiso de almacenamiento e instancias no pacientes como paletas de colores y protocolos de colgado.</li>
-<li>Recuperación WADO-URI para visores más antiguos, ofrecida por el servicio Studies.</li>
+<li>Pasos de procedimiento realizados por la modalidad (MPPS-RS), compromiso de almacenamiento e instancias no de pacientes como paletas de colores y protocolos de colgado.</li>
+<li>Recuperación WADO-URI para visores antiguos, servida por el servicio Studies.</li>
 </ul>
 
 <p>Cuando el comportamiento estándar de una transacción no se ajusta, registre su propio manejador para ella con <code>AddHandler</code>. La biblioteca sigue enrutando y verificando la solicitud, y las demás transacciones conservan sus manejadores estándar.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="La seguridad y el alojamiento permanecen bajo su control">}}
+{{< blocks/products/pf/feature-page-section h2="La seguridad y el alojamiento permanecen en sus manos">}}
 
-<p>Los puntos finales DICOMweb son puntos finales ordinarios de ASP.NET Core. La autenticación, autorización, CORS, TLS, encabezados reenviados y los límites de tamaño de solicitud se configuran de la misma manera que para el resto de su servicio:</p>
+<p>Los endpoints DICOMweb son endpoints ordinarios de ASP.NET Core. La autenticación, autorización, CORS, TLS, encabezados reenviados y los límites de tamaño de solicitud se configuran de la misma manera que para el resto de su servicio:</p>
 
 <div class="codeblock" id="code">
  <h3>Requerir un usuario autenticado - C#</h3>
  <pre><code class="cs">app.MapDicomWeb("/dicomweb").RequireAuthorization();</code></pre>
 </div>
 
-<p>La parte del protocolo no depende de ASP.NET Core. <code>DicomWebApplication</code> convierte una <code>DicomWebRequest</code> en una respuesta, por lo que los mismos servicios pueden ejecutarse detrás de otro servidor HTTP o en una prueba sin red:</p>
+<p>La parte del protocolo no depende de ASP.NET Core. <code>DicomWebApplication</code> convierte una <code>DicomWebRequest</code> en una respuesta, de modo que los mismos servicios pueden ejecutarse detrás de otro servidor HTTP o en una prueba sin red:</p>
 
 <div class="codeblock" id="code">
  <h3>El mismo servidor sin ASP.NET Core - C#</h3>
@@ -213,13 +213,13 @@ DicomWebApplicationResult result = await application.ProcessAsync(request, cance
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Cliente y servidor de una misma biblioteca">}}
+{{< blocks/products/pf/feature-page-section h2="Cliente y servidor de una sola biblioteca">}}
 
 <p>El <a href="/medical/net/dicomweb-client/">cliente DICOMweb</a> de Aspose.Medical prueba su servidor desde una prueba unitaria o un programa de consola, y cada archivo que el servidor recibe es un <code>DicomFile</code> regular que puede anonimizarse, transcodificarse o renderizarse en el mismo proceso.</p>
 
-<p>La <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/">guía de desarrollo DICOMweb</a> cubre cada servicio e interfaz de almacenamiento, y la <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/aspnet-core/">guía ASP.NET Core</a> cubre el mapeo de puntos finales y WebSockets.</p>
+<p>La <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/">guía para desarrolladores DICOMweb</a> cubre cada servicio e interfaz de almacenamiento, y la <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/aspnet-core/">guía de ASP.NET Core</a> cubre el mapeo de endpoints y WebSockets.</p>
 
-<p>Páginas relacionadas: <a href="/medical/net/dicom-networking/">Redes DICOM</a> para sistemas que envían estudios mediante DIMSE en lugar de HTTP, <a href="/medical/net/anonymization/">anonimización</a> de estudios entrantes, <a href="/medical/net/dicom-transfer-syntax-conversion/">conversión de sintaxis de transferencia</a>, y <a href="/medical/net/dicom-to-json/">DICOM a JSON</a> para el formato que usan los resultados QIDO-RS.</p>
+<p>Páginas relacionadas: <a href="/medical/net/dicom-networking/">Redes DICOM</a> para sistemas que envían estudios mediante DIMSE en lugar de HTTP, <a href="/medical/net/anonymization/">anonimización</a> de estudios entrantes, <a href="/medical/net/dicom-transfer-syntax-conversion/">conversión de sintaxis de transferencia</a>, y <a href="/medical/net/dicom-to-json/">DICOM a JSON</a> para el formato que utilizan los resultados QIDO-RS.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -229,7 +229,7 @@ DicomWebApplicationResult result = await application.ProcessAsync(request, cance
 {{< blocks/products/pf/slr-tab tabTitle="Recursos de aprendizaje" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="Documentación" href="https://docs.aspose.com/medical/net/" >}}
 {{< blocks/products/pf/slr-element name="Guía del desarrollador" href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/" >}}
-{{< blocks/products/pf/slr-element name="Referencias de API" href="https://reference.aspose.com/medical/net/aspose.medical.dicom.web/" >}}
+{{< blocks/products/pf/slr-element name="Referencias API" href="https://reference.aspose.com/medical/net/aspose.medical.dicom.web/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< blocks/products/pf/slr-tab tabTitle="Soporte del producto" tabId="support" >}}
@@ -240,7 +240,7 @@ DicomWebApplicationResult result = await application.ProcessAsync(request, cance
 
 {{< blocks/products/pf/slr-tab tabTitle="¿Por qué Aspose.Medical para .NET?" tabId="success-stories" >}}
 {{< blocks/products/pf/slr-element name="Lista de clientes" href="https://company.aspose.com/customers" >}}
-{{< blocks/products/pf/slr-element name="Casos de éxito" href="https://company.aspose.com/customers/success-stories/" >}}
+{{< blocks/products/pf/slr-element name="Historias de éxito" href="https://company.aspose.com/customers/success-stories/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 
 {{< /blocks/products/pf/support-learning-resources >}}

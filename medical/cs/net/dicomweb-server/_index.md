@@ -1,21 +1,21 @@
 ---
-title: DICOMweb server v C# .NET - QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
+title: DICOMweb Server v C# .NET – QIDO-RS, WADO-RS, STOW-RS | Aspose.Medical
 weight: 9200
 
-description: Vytvořte si vlastní DICOMweb server nebo PACS v C#. Aspose.Medical implementuje QIDO-RS, WADO-RS, STOW-RS a služby pracovního seznamu na ASP.NET Core; vy připojíte úložiště.
+description: Vytvořte si vlastní DICOMweb server nebo PACS v C#. Aspose.Medical implementuje QIDO-RS, WADO-RS, STOW-RS a služby pracovních seznamů na ASP.NET Core; vy připojíte úložiště.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOMweb server pro .NET C#" h2="Přidejte koncové body QIDO-RS, WADO-RS a STOW-RS do služby ASP.NET Core. Knihovna mluví protokolem; váš kód rozhoduje, kde jsou studie uloženy." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="DICOMweb Server pro .NET C#" h2="Přidejte koncové body QIDO-RS, WADO-RS a STOW-RS do služby ASP.NET Core. Knihovna používá protokol; váš kód rozhoduje, kde jsou studie uloženy." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
 {{< blocks/products/pf/feature-page-section h2="Váš vlastní DICOMweb server v C#">}}
 
-<p>PACS, VNA, cloudové archiv nebo výzkumná platforma musí odpovídat na DICOMweb požadavky: vyhledávání QIDO-RS, stahování WADO-RS a nahrávání STOW-RS, a často také služby pracovních seznamů. Každá z nich má své vlastní cesty, typy médií, multipart těla, pravidla shody a stavové kódy.</p>
+<p>PACS, VNA, cloudové úložiště nebo výzkumná platforma musí odpovídat na požadavky DICOMweb: vyhledávání QIDO-RS, stahování WADO-RS a nahrávání STOW-RS, a často také služby pracovních seznamů. Každá z nich má vlastní trasy, typy médií, multipart těla, pravidla porovnávání a stavové kódy.</p>
 
-<p><strong>Aspose.Medical pro .NET</strong> implementuje tuto stranu protokolu od verze 26.10. Čte každý požadavek, kontroluje jej vůči standardu, porovnává klíče vyhledávání podle DICOM pravidel, stránkuje výsledky, převádí přenosové syntaxe a zapisuje odpověď. Váš kód dělá to, co můžete jen vy: uložit instanci, najít kandidáty pro vyhledávání a vrátit uložené soubory. Prohlížeče, modality a další archivy pak spolupracují s vaším serverem jako s jakýmkoli jiným DICOMweb serverem, a taktéž <a href="/medical/net/dicomweb-client/">klient DICOMweb</a> stejné knihovny.</p>
+<p><strong>Aspose.Medical pro .NET</strong> implementuje tuto část protokolu od verze 26.10. Čte každý požadavek, kontroluje jej podle standardu, porovnává klíče vyhledávání podle DICOM pravidel, stránkuje výsledky, převádí transferové syntaxe a zapisuje odpověď. Váš kód dělá to, co může jen vy: uloží instanci, najde kandidáty pro vyhledávání a vrátí uložené soubory. Prohlížeče, modality a další archivy pak pracují s vaším serverem jako s libovolným jiným DICOMweb serverem, a totéž platí pro <a href="/medical/net/dicomweb-client/">DICOMweb klienta</a> téže knihovny.</p>
 
 <p>Server je spravován v C#. Běží kdekoliv, kde běží ASP.NET Core: na Windows, na Linuxu a v kontejneru.</p>
 
@@ -23,10 +23,10 @@ description: Vytvořte si vlastní DICOMweb server nebo PACS v C#. Aspose.Medica
 
 {{< blocks/products/pf/feature-page-section h2="Kompletní server v ASP.NET Core">}}
 
-<p>Nainstalujte balíček <code>Aspose.Medical.Dicom.Web.AspNetCore</code>. Ten přináší Aspose.Medical a propojuje služby DICOMweb s injekcí závislostí a směrováním koncových bodů. Tento <code>Program.cs</code> je funkční server studií; níže jsou zobrazeny dvě třídy, které registruje.</p>
+<p>Nainstalujte balíček <code>Aspose.Medical.Dicom.Web.AspNetCore</code>. Přináší s sebou Aspose.Medical a připojuje služby DICOMweb k dependency injection a směrování koncových bodů. Tento <code>Program.cs</code> je funkční server Studies; níže jsou zobrazeny dvě třídy, které registruje.</p>
 
 <div class="codeblock" id="code">
- <h3>Program.cs DICOMweb serveru - C#</h3>
+ <h3>Program.cs DICOMweb serveru – C#</h3>
  <pre><code class="cs">WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Your storage, and the rendered images your server offers
@@ -41,16 +41,16 @@ app.MapDicomWeb("/dicomweb");
 app.Run();</code></pre>
 </div>
 
-<p>Každá cesta Studies nyní odpovídá pod <code>/dicomweb</code>: <code>/dicomweb/studies</code> pro vyhledávání a nahrávání, <code>/dicomweb/studies/{study}/series/{series}/instances/{instance}</code> pro načítání a cesty pro metadata, snímky, hromadná data a renderované obrázky. Dokument schopností u kořene služby přesně uvádí transakce, které server podporuje.</p>
+<p>Každá trasa Studies nyní odpovídá pod <code>/dicomweb</code>: <code>/dicomweb/studies</code> pro vyhledávání a nahrávání, <code>/dicomweb/studies/{study}/series/{series}/instances/{instance}</code> pro načítání a trasy pro metadata, snímky, bulk data a vykreslené obrázky. Dokument schopností v kořeni služby přesně uvádí transakce, které server podporuje.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Připojte své úložiště">}}
 
-<p>Služba Studies potřebuje jedno rozhraní se třemi metodami: uložit instanci, vrátit uložené soubory a vrátit kandidáty vyhledávání. Tato implementace uchovává každou instanci jako soubor ve složce pro každou studii a sérii.</p>
+<p>Služba Studies potřebuje jedno rozhraní se třemi metodami: uložit instanci, vrátit uložené soubory a vrátit kandidáty pro vyhledávání. Tato implementace uchovává každou instanci jako soubor ve složce pro každou studii a sérii.</p>
 
 <div class="codeblock" id="code">
- <h3>Archiv ve složkách za QIDO-RS, WADO-RS a STOW-RS - C#</h3>
+ <h3>Archiv ve složce za QIDO-RS, WADO-RS a STOW-RS – C#</h3>
  <pre><code class="cs">// Keeps instances as files: archive/&lt;study&gt;/&lt;series&gt;/&lt;instance&gt;.dcm
 public sealed class FolderArchive(string root) : IDicomWebStudiesProvider
 {
@@ -113,20 +113,20 @@ public sealed class FolderArchive(string root) : IDicomWebStudiesProvider
 }</code></pre>
 </div>
 
-<p>Knihovna kontroluje UID v každé cestě požadavku i v každé nahrané instanci, než zavolá poskytovatele. Instance bez platných UID je označena jako selhaná a nikdy nedosáhne <code>StoreAsync</code>.</p>
+<p>Knihovna kontroluje UID v každé cestě požadavku i v každé nahrané instanci před voláním poskytovatele. Instance bez platných UID je zaznamenána jako selhání a nikdy nezasáhne <code>StoreAsync</code>.</p>
 
-<p>Složka stačí pro vyzkoušení serveru. Produkční archiv zachovává stejné tři metody a umisťuje objektové úložiště za <code>StoreAsync</code> a <code>RetrieveAsync</code> a databázový index za <code>FindCandidatesAsync</code>.</p>
+<p>Složka stačí k vyzkoušení serveru. Produkční archiv zachovává stejné tři metody a umisťuje objektové úložiště za <code>StoreAsync</code> a <code>RetrieveAsync</code> a databázový index za <code>FindCandidatesAsync</code>.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< blocks/products/pf/feature-page-section h2="Vyhledávání: knihovna aplikuje DICOM pravidla shody">}}
 
-<p>Shoda QIDO-RS je víc než porovnání řetězců: zástupné znaky, intervaly dat a časů, seznamy UID, fuzzy jména osob, prázdné hodnoty a klíče uvnitř sekvencí. Poskytovatel to neimplementuje. Vrací kandidáty ve stabilním pořadí a může vrátit více než odpovídá. Knihovna aplikuje přesnou DICOM shodu na každého kandidáta, zachovává požadovaná pole a aplikuje <code>offset</code> a <code>limit</code>. Jedna odpověď obsahuje ve výchozím nastavení nejvýše 1000 výsledků a <code>DicomWebStandardServiceOptions</code> tento limit mění.</p>
+<p>Shoda QIDO-RS je víc než porovnání řetězců: zástupné znaky, rozsahy data a času, seznamy UID, fuzzy jména osob, prázdné hodnoty a klíče uvnitř sekvencí. Poskytovatel to neimplementuje. Vrací kandidáty v stabilním pořadí a může vrátit více než odpovídá. Knihovna aplikuje přesnou DICOM shodu na každého kandidáta, zachovává požadovaná pole a používá <code>offset</code> a <code>limit</code>. Jedna odpověď obsahuje standardně maximálně 1000 výsledků a <code>DicomWebStandardServiceOptions</code> tento limit mění.</p>
 
-<p>Aby byly vyhledávání rychlá v rozsáhlém archivu, předejte selektivní klíče databázi. <code>search.Plan.Filter</code> obsahuje zkompilované klíče vyhledávání, s atributem, typem shody a hodnotami každého:</p>
+<p>Aby byly vyhledávání rychlá ve velkém archivu, předávejte selektivní klíče databázi. <code>search.Plan.Filter</code> obsahuje zkompilované vyhledávací klíče s atributem, typem shody a hodnotami každého.</p>
 
 <div class="codeblock" id="code">
- <h3>Načíst přesné Patient ID z vyhledávání - C#</h3>
+ <h3>Načíst přesné Patient ID z vyhledávání – C#</h3>
  <pre><code class="cs">// The Patient ID of a search that asks for one exact value, or null
 static string? ExactPatientId(DicomWebSearchContext search) =&gt;
     search.Plan.Filter
@@ -135,26 +135,26 @@ static string? ExactPatientId(DicomWebSearchContext search) =&gt;
         .FirstOrDefault();</code></pre>
 </div>
 
-<p>Databázový dotaz vytvořený tímto způsobem může vrátit nadbytečné řádky, například když ignoruje klíč, který nedokáže přeložit. Konečná shoda v knihovně je odstraňuje. Nesmí ztratit skutečné shody, protože knihovna je nemůže zpětně přidat.</p>
+<p>Databázový dotaz takto vytvořený může vrátit nadbytečné řádky, například když ignoruje klíč, který nedokáže přeložit. Konečná shoda v knihovně je odstraňuje. Neměly by být zahozeny skutečné shody, protože knihovna je nemůže zpětně přidat.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Uložení: výsledek pro každou instanci">}}
+{{< blocks/products/pf/feature-page-section h2="Ukládání: výsledek pro každou instanci">}}
 
-<p>Požadavek STOW-RS může nést stovky instancí. Knihovna parsuje multipart tělo a volá <code>StoreAsync</code> pro každou instanci postupně, takže celý upload není najednou držen v paměti. Pro každou instanci poskytovatel vrátí <code>Stored</code>, <code>Warning</code> pro instanci uloženou se změnami, nebo <code>Failed</code> s volitelným DICOM kódem důvodu.</p>
+<p>Požadavek STOW-RS může nést stovky instancí. Knihovna parsuje multipart tělo a po sekvenci volá <code>StoreAsync</code> pro každou instanci, takže celý upload není najednou v paměti. Pro každou instanci poskytovatel vrací <code>Stored</code>, <code>Warning</code> pro instanci uloženou se změnami nebo <code>Failed</code> s volitelným DICOM kódem důvodu.</p>
 
-<p>Knihovna sestaví zprávu STOW-RS z těchto výsledků a vybere stav: 200 když je každá instance uložena, 202 když některé mají varování nebo selhaly, 409 když všechny selhaly. Instance v požadavku pro jednu pojmenovanou studii, které patří do jiné studie, jsou odmítnuty před voláním poskytovatele.</p>
+<p>Knihovna vytváří STOW-RS zprávu z těchto výsledků a volí stav: 200, když je každá instance uložena, 202, když některé mají varování nebo selhaly, 409, když všechny selhaly. Instance v požadavku pro jednu pojmenovanou studii, které patří do jiné studie, jsou odmítnuty ještě před voláním poskytovatele.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Načítání: přenosové syntaxe, snímky a renderované obrázky">}}
+{{< blocks/products/pf/feature-page-section h2="Načítání: transferové syntaxi, snímky a vykreslené obrázky">}}
 
-<p>Poskytovatel vrací uložené soubory a knihovna je doručuje ve formě, o kterou klient požádal. WADO-RS klient může požadovat přenosovou syntaxi v hlavičce <code>Accept</code> a knihovna každou soubor před odesláním převede, včetně vlastních kodeků, HTJ2K a JPEG XL. Metadata v DICOM JSON nebo XML, hromadná data a jednotlivé snímky pocházejí od stejného poskytovatele, bez dalšího kódu.</p>
+<p>Poskytovatel vrací uložené soubory a knihovna je doručuje ve formátu, o který klient požádal. WADO-RS klient může požádat o transferovou syntaxi v hlavičce <code>Accept</code> a knihovna každý soubor před odesláním převede, včetně vlastních kodérů, HTJ2K a JPEG XL. Metadata v DICOM JSON nebo XML, bulk data a jednotlivé snímky pocházejí od stejného poskytovatele, bez dalšího kódu.</p>
 
-<p>Renderované obrázky potřebují další třídu, protože jen vy rozhodujete, které obrázky server může vytvořit. Tato nabízí JPEG pro renderované instance, renderované snímky a náhledy, a knihovna je vykresluje:</p>
+<p>Vykreslené obrázky potřebují ještě jednu třídu, protože jen vy rozhodujete, které obrázky server může vytvářet. Tato nabízí JPEG pro vykreslené instance, vykreslené snímky a náhledy a knihovna je vykresluje:</p>
 
 <div class="codeblock" id="code">
- <h3>Nabídnout renderované JPEG obrázky a náhledy - C#</h3>
+ <h3>Nabídnout vykreslené JPEG obrázky a náhledy – C#</h3>
  <pre><code class="cs">// Declares the rendered images the server offers. The library renders them as JPEG.
 public sealed class JpegRendering : IDicomWebRepresentationProvider
 {
@@ -169,40 +169,40 @@ public sealed class JpegRendering : IDicomWebRepresentationProvider
 }</code></pre>
 </div>
 
-<p>Vestavěný renderér vytváří JPEG z jednosnímkové instance nebo ze snímků, které požadavek vybere. Renderovaná multi-snímková instance jako celek, jiné formáty obrázků a parametry viewportu, okna a ICC profilu vyžadují váš vlastní <code>RetrieveAsync</code> v této třídě.</p>
+<p>Vestavěný renderér vytváří JPEG z jednosnímkové instance nebo ze snímků, které požadavek vybere. Vykreslená více-snímková instance jako celek, obrázek širší nebo vyšší než 65500 pixelů (náhledy přesahují takové obrázky), jiné formáty obrázků a parametry viewportu, okna a ICC profilu vyžadují váš vlastní <code>RetrieveAsync</code> v této třídě.</p>
 
-<p>Náhledy jsou zpracovávány s ohledem na soukromí pacienta. Vestavěný renderér vytvoří náhled pouze z instance, jejíž atributy Burned In Annotation a Recognizable Visual Features jsou obě <code>NO</code>, což znamená, že obrázek sám deklaruje, že neobsahuje údaje o pacientovi. Mnoho obrázků tyto atributy nemá, a pro ně server vrací 406. Pokud váš archiv potřebuje náhledy takových obrázků, vytvořte je ve svém vlastním <code>RetrieveAsync</code> a zajistěte, aby skrývaly jakékoli údaje o pacientovi.</p>
+<p>Náhledy jsou zpracovány s ohledem na soukromí pacientů. Vestavěný renderér vytvoří náhled pouze z instance, jejíž atributy Burned In Annotation a Recognizable Visual Features jsou oba <code>NO</code>, což znamená, že obrázek sám deklaruje, že neobsahuje žádná data pacienta. Mnoho obrázků tyto atributy nemá a pro ně server odpovídá 406. Pokud váš archiv potřebuje náhledy takových obrázků, vytvořte je ve svém vlastním <code>RetrieveAsync</code> a zajistěte, aby skryly veškerá data pacienta.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Pracovní seznamy, kroky procedur a další služby">}}
+{{< blocks/products/pf/feature-page-section h2="Pracovní seznamy, kroky procedur a ostatní služby">}}
 
-<p>Další DICOMweb služby následují stejný model: zaregistrovat službu, implementovat její rozhraní úložiště.</p>
+<p>Ostatní služby DICOMweb následují stejný model: zaregistrujte službu, implementujte její rozhraní úložiště.</p>
 
 <ul>
 <li><a href="/medical/net/ups-rs/">UPS-RS</a> pracovní seznamy s <code>AddStandardWorklistService</code>: vytváření, vyhledávání a aktualizace pracovních položek a změna jejich stavu, přičemž pravidla stavu kontroluje knihovna a notifikace událostí jsou odesílány přes WebSocket.</li>
-<li><a href="/medical/net/modality-worklist/">Modality worklist</a> (MWL-RS) s <code>AddStandardModalityWorklistService</code>, aby modality mohly dotazovat naplánované kroky procedur vašeho RIS.</li>
-<li>Modality performed procedure steps (MPPS-RS), závazek úložiště a ne-pacientské instance jako barevné palety a hanging protokoly.</li>
+<li><a href="/medical/net/modality-worklist/">Modality worklist</a> (MWL-RS) s <code>AddStandardModalityWorklistService</code>, aby modality mohly dotazovat naplánované kroky procedur ve vašem RIS.</li>
+<li>Provedené kroky procedur modality (MPPS-RS), závazek úložiště a ne-pacientské instance jako barevné palety a hanging protokoly.</li>
 <li>WADO-URI načítání pro starší prohlížeče, poskytované službou Studies.</li>
 </ul>
 
-<p>Když standardní chování jedné transakce nevyhovuje, zaregistrujte si vlastní obslužnou rutinu pro ni pomocí <code>AddHandler</code>. Knihovna i nadále směruje a kontroluje požadavek a ostatní transakce si zachovají své standardní obslužné rutiny.</p>
+<p>Když standardní chování jedné transakce nevyhovuje, zaregistrujte si vlastní obslužnou rutinu pro ní pomocí <code>AddHandler</code>. Knihovna i nadále směruje a kontroluje požadavek a ostatní transakce si ponechávají své standardní obslužné rutiny.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
-{{< blocks/products/pf/feature-page-section h2="Bezpečnost a hostování zůstávají ve vašich rukou">}}
+{{< blocks/products/pf/feature-page-section h2="Zabezpečení a hostování zůstávají ve vašich rukou">}}
 
-<p>Koncové body DICOMweb jsou běžné ASP.NET Core koncové body. Autentizace, autorizace, CORS, TLS, přeposlané hlavičky a limity velikosti požadavků jsou konfigurovány stejným způsobem jako pro zbytek vaší služby:</p>
+<p>DICOMweb koncové body jsou běžné ASP.NET Core koncové body. Autentizace, autorizace, CORS, TLS, přeposlané hlavičky a limity velikosti požadavků jsou konfigurovány stejným způsobem jako u zbytku vaší služby:</p>
 
 <div class="codeblock" id="code">
- <h3>Vyžadovat ověřeného uživatele - C#</h3>
+ <h3>Požadovat autentizovaného uživatele – C#</h3>
  <pre><code class="cs">app.MapDicomWeb("/dicomweb").RequireAuthorization();</code></pre>
 </div>
 
-<p>Protokolová část nezávisí na ASP.NET Core. <code>DicomWebApplication</code> převádí <code>DicomWebRequest</code> na odpověď, takže stejné služby mohou běžet za jiným HTTP serverem nebo v testu bez sítě:</p>
+<p>Část protokolu nezávisí na ASP.NET Core. <code>DicomWebApplication</code> převádí <code>DicomWebRequest</code> na odpověď, takže stejné služby mohou běžet za jiným HTTP serverem nebo v testu bez sítě.</p>
 
 <div class="codeblock" id="code">
- <h3>Stejný server bez ASP.NET Core - C#</h3>
+ <h3>Stejný server bez ASP.NET Core – C#</h3>
  <pre><code class="cs">DicomWebApplication application = DicomWebApplication.CreateBuilder()
     .AddStandardStudiesService(new FolderArchive("archive"), new JpegRendering())
     .Build();
@@ -215,20 +215,20 @@ DicomWebApplicationResult result = await application.ProcessAsync(request, cance
 
 {{< blocks/products/pf/feature-page-section h2="Klient a server z jedné knihovny">}}
 
-<p><a href="/medical/net/dicomweb-client/">Klient DICOMweb</a> v Aspose.Medical testuje váš server z jednotkového testu nebo konzolového programu a každý soubor, který server přijme, je běžný <code>DicomFile</code>, který lze anonymizovat, transkódovat nebo renderovat ve stejném procesu.</p>
+<p><a href="/medical/net/dicomweb-client/">DICOMweb klient</a> knihovny Aspose.Medical testuje váš server z jednotkového testu nebo konzolové aplikace a každý soubor, který server obdrží, je běžný <code>DicomFile</code>, který může být anonymizován, transkódován nebo vykreslen ve stejném procesu.</p>
 
-<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/">Průvodce vývojem DICOMweb</a> pokrývá každou službu a rozhraní úložiště a <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/aspnet-core/">průvodce ASP.NET Core</a> pokrývá mapování koncových bodů a WebSockets.</p>
+<p><a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/">DICOMweb vývojářská příručka</a> pokrývá všechny služby a rozhraní úložiště a <a href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/aspnet-core/">průvodce ASP.NET Core</a> popisuje mapování koncových bodů a WebSockets.</p>
 
-<p>Související stránky: <a href="/medical/net/dicom-networking/">DICOM networking</a> pro systémy, které odesílají studie přes DIMSE místo HTTP, <a href="/medical/net/anonymization/">anonymizace</a> příchozích studií, <a href="/medical/net/dicom-transfer-syntax-conversion/">převod přenosových syntaxí</a> a <a href="/medical/net/dicom-to-json/">DICOM do JSON</a> pro formát výsledků QIDO-RS.</p>
+<p>Související stránky: <a href="/medical/net/dicom-networking/">DICOM networking</a> pro systémy, které odesílají studie přes DIMSE místo HTTP, <a href="/medical/net/anonymization/">anonymizace</a> příchozích studií, <a href="/medical/net/dicom-transfer-syntax-conversion/">převod transferových syntaxi</a> a <a href="/medical/net/dicom-to-json/">DICOM do JSON</a> pro formát, který používá výsledky QIDO-RS.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/support-learning-resources >}}
-{{< blocks/products/pf/slr-tab tabTitle="Vzdělávací zdroje" tabId="resources" >}}
+{{< blocks/products/pf/slr-tab tabTitle="Učební zdroje" tabId="resources" >}}
 {{< blocks/products/pf/slr-element name="Dokumentace" href="https://docs.aspose.com/medical/net/" >}}
-{{< blocks/products/pf/slr-element name="Průvodce vývojáře" href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/" >}}
+{{< blocks/products/pf/slr-element name="Vývojářská příručka" href="https://docs.aspose.com/medical/net/developer-guide/dicomweb/" >}}
 {{< blocks/products/pf/slr-element name="Reference API" href="https://reference.aspose.com/medical/net/aspose.medical.dicom.web/" >}}
 {{< /blocks/products/pf/slr-tab >}}
 

@@ -1,12 +1,12 @@
 ---
 title: DICOM JPEG 2000 Compression in C# .NET | Aspose.Medical
 weight: 2000
-description: Read, write, and transcode DICOM files with JPEG 2000 compression in C# .NET. Support for 8-bit color and 16-bit monochrome images, lossless and lossy modes, plus HTJ2K with Aspose.Medical API.
+description: Read, write, and transcode DICOM files with JPEG 2000 compression in C# .NET. Support for monochrome and color images from 1 to 16 bits, lossless and lossy modes, plus HTJ2K with Aspose.Medical API.
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/upper-banner h1="DICOM JPEG 2000 Support in .NET C#" h2="Read, write, and transcode DICOM files with JPEG 2000 compression. Lossless and lossy modes, 8-bit color and 16-bit monochrome pixel data, HTJ2K included - all in pure .NET." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
+{{< blocks/products/pf/upper-banner h1="DICOM JPEG 2000 Support in .NET C#" h2="Read, write, and transcode DICOM files with JPEG 2000 compression. Lossless and lossy modes, monochrome and color pixel data from 1 to 16 bits, HTJ2K included - all in pure .NET." logoImageSrc="/medical/images/aspose_medical-brand.svg" pfName="Aspose.Medical" subTitlepfName="for .NET" downloadUrl="https://downloads.aspose.com/medical/net" >}}
 
 {{< blocks/products/pf/main-container pfName="Aspose.Medical" subTitlepfName="for .NET" >}}
 
@@ -14,7 +14,7 @@ description: Read, write, and transcode DICOM files with JPEG 2000 compression i
 
 <p><strong>JPEG 2000</strong> (ISO/IEC 15444) is the most widely used wavelet-based compression standard in medical imaging. Unlike traditional JPEG, it offers both lossless and lossy compression in a single codec, progressive decoding for region-of-interest access, and superior compression ratios &mdash; making it ideal for archiving large studies and transmitting images over constrained networks.</p>
 
-<p><strong>Aspose.Medical for .NET</strong> provides a pure C# implementation of the JPEG 2000 codec with no native dependencies. The library can read, render, and transcode DICOM files compressed with any of the four standard JPEG 2000 transfer syntaxes.</p>
+<p><strong>Aspose.Medical for .NET</strong> provides a pure C# implementation of the JPEG 2000 codec with no native dependencies. The library can read, render, and transcode DICOM files compressed with both JPEG 2000 Part 1 transfer syntaxes, lossless and lossy.</p>
 
 {{< /blocks/products/pf/feature-page-section >}}
 
@@ -31,8 +31,8 @@ description: Read, write, and transcode DICOM files with JPEG 2000 compression i
 </tr>
 </thead>
 <tbody>
-<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>8-bit RGB, 16-bit monochrome</td><td>16-bit monochrome, 8-bit RGB</td></tr>
-<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>8-bit RGB, 16-bit monochrome</td><td>16-bit monochrome, 8-bit RGB</td></tr>
+<tr><td>JPEG 2000 Lossless Only</td><td><code>1.2.840.10008.1.2.4.90</code></td><td>Lossless</td><td>Monochrome and color, 1 to 16 bits</td><td>Monochrome, palette color and RGB, 1 to 16 bits</td></tr>
+<tr><td>JPEG 2000</td><td><code>1.2.840.10008.1.2.4.91</code></td><td>Lossy or lossless</td><td>Monochrome and color, 1 to 16 bits</td><td>Monochrome and RGB, 1 to 16 bits</td></tr>
 <tr><td>JPEG 2000 Part 2 Multi-component Lossless Only</td><td><code>1.2.840.10008.1.2.4.92</code></td><td>Lossless</td><td>Not supported</td><td>Not supported</td></tr>
 <tr><td>JPEG 2000 Part 2 Multi-component</td><td><code>1.2.840.10008.1.2.4.93</code></td><td>Lossy or lossless</td><td>Not supported</td><td>Not supported</td></tr>
 <tr><td>HTJ2K Lossless Only</td><td><code>1.2.840.10008.1.2.4.201</code></td><td>Lossless</td><td>Monochrome and color</td><td>Monochrome and color</td></tr>
@@ -48,8 +48,8 @@ description: Read, write, and transcode DICOM files with JPEG 2000 compression i
 <p>Medical images often use 16 bits per sample to capture the full dynamic range of modalities like CT (typically 12-bit stored in 16-bit) and MRI. Aspose.Medical handles both bit depths for JPEG 2000:</p>
 
 <ul>
-<li><strong>Reading (decompression)</strong>: 16-bit monochrome files (CT, MRI, X-ray) and 8-bit three-component color files (RGB, YBR_RCT, YBR_ICT). Palette, CMYK, ICC-profile and sub-sampled color code streams are rejected with a clear exception instead of a silently wrong image.</li>
-<li><strong>Writing (compression)</strong>: 16-bit monochrome and 8-bit RGB images. 8-bit monochrome and 16-bit color encoding are not available; use HTJ2K or JPEG XL for those, both accept monochrome and color at either bit depth.</li>
+<li><strong>Reading (decompression)</strong>: monochrome files (CT, MRI, X-ray), palette color files and three-component color files (RGB, YBR_RCT, YBR_ICT) with 1 to 16 bits per sample, signed or unsigned. CMYK, ICC-profile, JP2 palette and sub-sampled color code streams are rejected with a clear exception instead of a silently wrong image.</li>
+<li><strong>Writing (compression)</strong>: monochrome and RGB images with 1 to 16 bits per sample, signed or unsigned, and palette color images with JPEG 2000 Lossless. Images labelled YBR are not encoded.</li>
 </ul>
 
 <div class="codeblock" id="code">

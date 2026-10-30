@@ -169,7 +169,7 @@ public sealed class JpegRendering : IDicomWebRepresentationProvider
 }</code></pre>
 </div>
 
-<p>The built-in renderer produces JPEG from a single-frame instance or from the frames a request selects. A rendered multi-frame instance as a whole, other image formats, and the viewport, window and ICC profile parameters need your own <code>RetrieveAsync</code> in this class.</p>
+<p>The built-in renderer produces JPEG from a single-frame instance or from the frames a request selects. A rendered multi-frame instance as a whole, an image wider or taller than 65500 pixels (thumbnails pass over such images), other image formats, and the viewport, window and ICC profile parameters need your own <code>RetrieveAsync</code> in this class.</p>
 
 <p>Thumbnails are handled with care for patient privacy. The built-in renderer makes a thumbnail only from an instance whose Burned In Annotation and Recognizable Visual Features attributes are both <code>NO</code>, which means the image itself declares that it shows no patient data. Many images do not carry these attributes, and for them the server answers 406. If your archive needs thumbnails of such images, produce them in your own <code>RetrieveAsync</code> and make sure they hide any patient data.</p>
 

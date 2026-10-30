@@ -456,7 +456,7 @@ image.CopyPixelsTo(pixels);</code></pre>
      Transcode Between Transfer Syntaxes
     </h2>
     <p>
-     Imaging systems and archives require specific DICOM transfer syntaxes. Aspose.Medical for .NET transcodes between uncompressed formats, JPEG Baseline, JPEG Lossless, JPEG-LS, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL and RLE. HTJ2K and JPEG XL are the two newest options in the DICOM standard, and here they are implemented in .NET like every other codec. Transcoding matters for PACS integration, for archive size and for compatibility between systems. See the <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer syntax conversion page</a> and the <a href="/medical/net/jpeg2000/">JPEG 2000 page</a>.
+     Imaging systems and archives require specific DICOM transfer syntaxes. Aspose.Medical for .NET transcodes between uncompressed formats, JPEG Baseline, JPEG Extended, JPEG Lossless, JPEG-LS, JPEG 2000, HTJ2K (High-Throughput JPEG 2000), JPEG XL and RLE. HTJ2K and JPEG XL are the two newest options in the DICOM standard, and here they are implemented in .NET like every other codec. Transcoding matters for PACS integration, for archive size and for compatibility between systems. See the <a href="/medical/net/dicom-transfer-syntax-conversion/">transfer syntax conversion page</a> and the <a href="/medical/net/jpeg2000/">JPEG 2000 page</a>.
     </p>
     <div class="codeblock" id="code">
      <h3>
